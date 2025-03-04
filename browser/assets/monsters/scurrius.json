@@ -1,0 +1,168 @@
+{
+  "name": "Scurrius",
+  "image": "https://oldschool.runescape.wiki/images/Scurrius.png?e66a5",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Scurrius",
+  "combat_level": 200,
+  "hp": 500,
+  "max_hit": {
+    "melee": 13,
+    "magic": 8,
+    "ranged": 7,
+    "rockfall": 22
+  },
+  "weaknesses": [ "Stab", "Magic" ],
+  "defense": {
+    "melee": {
+      "stab": 20,
+      "slash": 20,
+      "crush": 20
+    },
+    "magic": 10,
+    "ranged": {
+      "arrows": 20,
+      "bolts": 20,
+      "thrown": 20
+    }
+  },
+  "attack_styles": [ "Magic", "Ranged", "Melee" ],
+  "attack_speed": 4,
+  "aggressive": true,
+  "immunities": {
+    "poison": false,
+    "venom": true,
+    "cannons": true,
+    "freeze": "50% resistance"
+  },
+  "gear_setups": {
+    "Magic": {
+      "Weapon": [
+        [ "Tumeken's shadow" ],
+        [ "Kodai wand" ],
+        [ "Sanguinesti staff", "Staff of the dead" ]
+      ],
+      "Special Attack": [
+        [ "Elder maul" ],
+        [ "Voidwaker" ]
+      ],
+      "Helmet": [
+        [ "Virtus mask" ],
+        [ "Ancestral hat" ]
+      ],
+      "Amulet": [
+        [ "Occult necklace" ],
+        [ "Amulet of fury" ]
+      ],
+      "Cape": [
+        [ "Imbued god cape" ]
+      ],
+      "Body": [
+        [ "Ancestral robe top" ],
+        [ "Virtus robe top" ]
+      ],
+      "Legs": [
+        [ "Ancestral robe bottom" ],
+        [ "Virtus robe bottom" ]
+      ],
+      "Gloves": [
+        [ "Tormented bracelet" ],
+        [ "Barrows gloves" ]
+      ],
+      "Boots": [
+        [ "Eternal boots" ],
+        [ "Infinity boots" ]
+      ],
+      "Ring": [
+        [ "Magus ring" ],
+        [ "Ring of suffering (ri)" ]
+      ]
+    },
+    "Melee": {
+      "Weapon": [
+        [ "Scythe of vitur" ],
+        [ "Ghrazi rapier" ],
+        [ "Osmumten's fang" ]
+      ],
+      "Special Attack": [
+        [ "Dragon claws" ],
+        [ "Voidwaker" ]
+      ],
+      "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Torva full helm" ]
+      ],
+      "Amulet": [
+        [ "Amulet of torture" ],
+        [ "Amulet of fury" ]
+      ],
+      "Cape": [
+        [ "Infernal cape" ]
+      ],
+      "Body": [
+        [ "Torva platebody" ],
+        [ "Bandos chestplate" ]
+      ],
+      "Legs": [
+        [ "Torva platelegs" ],
+        [ "Bandos tassets" ]
+      ],
+      "Gloves": [
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves" ]
+      ],
+      "Boots": [
+        [ "Primordial boots" ],
+        [ "Dragon boots" ]
+      ],
+      "Ring": [
+        [ "Berserker ring (i)" ],
+        [ "Lightbearer" ]
+      ]
+    },
+    "Ranged": {
+      "Weapon": [
+        [ "Twisted bow" ],
+        [ "Zaryte crossbow" ]
+      ],
+      "Special Attack": [
+        [ "Dragon claws" ],
+        [ "Voidwaker" ]
+      ],
+      "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Masori mask" ]
+      ],
+      "Amulet": [
+        [ "Necklace of anguish" ],
+        [ "Amulet of glory" ]
+      ],
+      "Cape": [
+        [ "Ava's assembler" ],
+        [ "Max cape" ]
+      ],
+      "Body": [
+        [ "Masori body" ],
+        [ "Armadyl chestplate" ]
+      ],
+      "Legs": [
+        [ "Masori chaps" ],
+        [ "Armadyl chainskirt" ]
+      ],
+      "Gloves": [
+        [ "Zaryte vambraces" ],
+        [ "Barrows gloves" ]
+      ],
+      "Boots": [
+        [ "Pegasian boots" ],
+        [ "Ranger boots" ]
+      ],
+      "Ring": [
+        [ "Venator ring" ],
+        [ "Lightbearer" ]
+      ],
+      "Ammo": [
+        [ "Dragon arrow" ],
+        [ "Amethyst arrow" ]
+      ]
+    }
+  }
+}
