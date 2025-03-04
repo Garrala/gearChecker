@@ -16,8 +16,7 @@ export interface Monster {
   defense: {
     melee: { stab: number; slash: number; crush: number };
     magic: number;
-    ranged: { bolts: number; arrows: number; thrown: number }
-;
+    ranged: { bolts: number; arrows: number; thrown: number };
   };
 
   immunities?: {
