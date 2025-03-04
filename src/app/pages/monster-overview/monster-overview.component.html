@@ -1,0 +1,190 @@
+<div class="monster-overview">
+  <!-- Boss Selector -->
+  <!-- 🔄 Boss List Loading Spinner -->
+  <div *ngIf="isMonsterListLoading" class="spinner-container">
+    <div class="spinner"></div>
+  </div>
+
+  <div *ngIf="!isMonsterListLoading">
+    <div class="boss-picker">
+      <div *ngFor="let monster of monsters" class="monster-box"
+           [class.selected]="monster === selectedMonster"
+           (click)="selectMonster(monster)">
+        <img [src]="monster.image" alt="{{ monster.name }}">
+        <p>{{ monster.name }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔄 Monster Content Loading Spinner -->
+  <div *ngIf="isMonsterDetailsLoading" class="spinner-container">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content" *ngIf="selectedMonster && !isMonsterDetailsLoading">
+
+    <!-- Boss Info -->
+    <div class="left-column">
+      <div class="boss-picture">
+        <img [src]="selectedMonster?.image" alt="{{ selectedMonster?.name }}">
+      </div>
+
+      <div class="boss-info-box">
+        <h3>{{ selectedMonster?.name }}</h3>
+
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="icon">❤️</span> <strong>Hitpoints:</strong> {{ selectedMonster?.hp }}
+          </div>
+          <div class="info-item">
+            <span class="icon">💥</span> <strong>Max Hit:</strong> {{ selectedMonster?.max_hit }}
+          </div>
+          <div class="info-item">
+            <span class="icon">⚔️</span> <strong>Attack Style:</strong> {{ selectedMonster?.attack_styles?.join(', ') }}
+          </div>
+          <div class="info-item">
+            <span class="icon">⏳</span> <strong>Speed:</strong> {{ selectedMonster?.attack_speed }} ticks
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- Defense Section -->
+        <h4>Defense</h4>
+        <div class="defense-grid">
+
+          <!-- Melee Defense (Row 1 - 3 columns) -->
+          <div class="defense-box">
+            🗡️ <strong>Stab:</strong> {{ selectedMonster?.defense?.melee?.stab }}
+          </div>
+          <div class="defense-box">
+            🪓 <strong>Slash:</strong> {{ selectedMonster?.defense?.melee?.slash }}
+          </div>
+          <div class="defense-box">
+            🔨 <strong>Crush:</strong> {{ selectedMonster?.defense?.melee?.crush }}
+          </div>
+
+          <!-- Magic Defense & Magic Weakness (Row 2 - 2 equal columns) -->
+          <div class="immunity-grid full-width">
+
+            <div class="immunity-box">
+              🧙‍♂️ <strong>Magic Defense:</strong> {{ selectedMonster?.defense?.magic }}
+            </div>
+            <div class="immunity-box">
+              🔥 <strong>Weakness:</strong> {{ selectedMonster?.weaknesses?.[0] }}
+            </div>
+          </div>
+
+
+          <!-- Ranged Defense (Row 3 - 3 columns) -->
+          <div class="defense-box">
+            🏹 <strong>Arrows:</strong> {{ selectedMonster?.defense?.ranged?.arrows }}
+          </div>
+          <div class="defense-box">
+            📌 <strong>Bolts:</strong> {{ selectedMonster?.defense?.ranged?.bolts }}
+          </div>
+          <div class="defense-box">
+            🎯 <strong>Thrown:</strong> {{ selectedMonster?.defense?.ranged?.thrown }}
+          </div>
+
+        </div>
+
+
+        <hr />
+
+        <!-- Immunities -->
+        <h4>Immunities</h4>
+        <div class="immunity-grid">
+          <div class="immunity-box">
+            ☠️ <strong>Poison:</strong> ✓ Immune
+          </div>
+          <div class="immunity-box">
+            🟢 <strong>Venom:</strong> ✓ Immune
+          </div>
+          <div class="immunity-box">
+            🏹 <strong>Cannons:</strong> ❌ Not Immune
+          </div>
+          <div class="immunity-box">
+            👻 <strong>Thralls:</strong> ❌ Not Immune
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+    <a [href]="selectedMonster?.wiki_link" class="wiki-link">🔍 View on Wiki</a>
+
+
+
+    <!-- Player Loadout -->
+    <div class="character-loadout">
+      <h3>Your Loadout</h3>
+      <div class="gear-slot" *ngFor="let slot of getGearSlots(selectedMonster)">
+        <img *ngIf="ownedGear[slot]?.[0] && gearData[gearService.getGearCategory(slot)]?.[ownedGear[slot][0]]"
+             [src]="gearData[gearService.getGearCategory(slot)][ownedGear[slot][0]].image"
+             [alt]="ownedGear[slot][0]"
+             class="item-icon">
+        <p *ngIf="ownedGear[slot]">{{ ownedGear[slot][0] || 'None' }}</p> <!-- ✅ Show 'None' if no item -->
+      </div>
+    </div>
+
+
+  </div>
+  <div class="recommended-gear-table">
+    <!-- Gear Setup Tabs -->
+    <div class="gear-tabs">
+      <button *ngFor="let setup of getGearSetups(selectedMonster!)"
+              (click)="selectedSetup = setup"
+              [class.active]="selectedSetup === setup">
+        {{ setup }}
+      </button>
+    </div>
+
+
+    <!-- Recommended Gear Table -->
+    <table class="gear-table" *ngIf="selectedMonster && !isMonsterDetailsLoading">
+      <thead>
+        <tr>
+          <th>Slot</th>
+          <th colspan="4">Item (Most → Least Effective)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Loop over slots -->
+        <tr *ngFor="let slot of getGearSlots(selectedMonster)">
+          <td><strong>{{ slot }}</strong></td>  <!-- Restores the Slot Column -->
+
+          <td *ngFor="let group of getFilledItemGroups(slot, selectedMonster!)">
+            <div class="gear-item-wrapper">
+              <div class="gear-item"
+                   *ngFor="let item of group"
+                   [class.best-owned]="isBestOwnedItem(slot, item)">
+                <!-- ✅ Highlight if it's the best owned item -->
+                <div class="icon-container">
+                  <img *ngIf="gearData?.[gearService.getGearCategory(slot)]?.[item]"
+                       [src]="gearData?.[gearService.getGearCategory(slot)]?.[item]?.image"
+                       [alt]="item"
+                       class="item-icon">
+                  <a *ngIf="gearData?.[gearService.getGearCategory(slot)]?.[item]?.wiki"
+                     [href]="gearData?.[gearService.getGearCategory(slot)]?.[item]?.wiki"
+                     target="_blank" class="wiki-link">🔍</a>
+                </div>
+                <p>{{ item }}</p>
+              </div>
+            </div>
+          </td>
+
+
+
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+</div>

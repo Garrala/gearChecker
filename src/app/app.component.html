@@ -1,0 +1,15 @@
+<nav class="navbar">
+  <div>
+    <a class="navbar-brand" routerLink="/" (click)="$event.preventDefault()">Gear Check</a>
+  </div>
+  <div>
+    <a routerLink="/gear" (click)="navigate('/gear', $event)">Gear Management</a>
+    <a routerLink="/monster" (click)="navigate('/monster', $event)">Beastiary</a>
+
+  </div>
+</nav>
+
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
