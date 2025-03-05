@@ -10,11 +10,11 @@
   margin-bottom: 20px;
 }
 
-  .gear-category h4 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    text-align: center;
-  }
+.gear-category h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+}
 
 .gear-grid {
   display: flex;
@@ -36,35 +36,37 @@
   border: 2px solid gray;
   border-radius: 10px;
   cursor: pointer;
-  transition: transform 0.2s, background 0.3s;
+  transition:
+    transform 0.2s,
+    background 0.3s;
   text-align: center;
 }
 
-  .gear-box img {
-    width: 60px;
-    height: 60px;
-/*    image-rendering: pixelated;*/
-    display: block;
-    margin-bottom: auto; /* Pushes text to the bottom */
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+.gear-box img {
+  width: 60px;
+  height: 60px;
+  /*    image-rendering: pixelated;*/
+  display: block;
+  margin-bottom: auto; /* Pushes text to the bottom */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-  .gear-box p {
-    font-size: 14px; /* Reduce font size slightly */
-    font-weight: bold;
-    margin-top: auto; /* Anchors text to the bottom */
-    padding-top: 5px; /* Small spacing above text */
-    text-align: center;
-    word-wrap: break-word; /* Ensures words break if too long */
-    /*overflow: hidden;*/ /* Prevents text from overflowing the box */
-    white-space: normal; /* Allows text to wrap onto multiple lines */
-    max-width: 100%; /* Ensures it stays within the box */
-  }
+.gear-box p {
+  font-size: 14px; /* Reduce font size slightly */
+  font-weight: bold;
+  margin-top: auto; /* Anchors text to the bottom */
+  padding-top: 5px; /* Small spacing above text */
+  text-align: center;
+  word-wrap: break-word; /* Ensures words break if too long */
+  /*overflow: hidden;*/ /* Prevents text from overflowing the box */
+  white-space: normal; /* Allows text to wrap onto multiple lines */
+  max-width: 100%; /* Ensures it stays within the box */
+}
 
-  .gear-box:hover {
-    transform: scale(1.1);
-  }
+.gear-box:hover {
+  transform: scale(1.1);
+}
 
 .wiki-link {
   position: absolute;
@@ -101,4 +103,3 @@
     transform: rotate(360deg);
   }
 }
-

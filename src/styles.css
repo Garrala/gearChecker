@@ -42,9 +42,9 @@ body {
   font-size: 18px;
 }
 
-  .navbar a:hover {
-    text-decoration: underline;
-  }
+.navbar a:hover {
+  text-decoration: underline;
+}
 
 /* Page Container */
 .container {
@@ -52,7 +52,6 @@ body {
   margin: 20px auto;
   padding: 20px;
 }
-
 
 /* Card Styling */
 .card {
@@ -63,7 +62,7 @@ body {
   border-radius: 8px;
 }
 
-  .card img {
-    max-width: 64px;
-    max-height: 64px;
-  }
+.card img {
+  max-width: 64px;
+  max-height: 64px;
+}

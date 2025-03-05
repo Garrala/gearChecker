@@ -24,7 +24,7 @@
       "thrown": 20
     }
   },
-  "attack_styles": [ "Magic", "Ranged", "Melee" ],
+  "attack_styles": ["Magic", "Ranged", "Melee"],
   "attack_speed": 4,
   "aggressive": true,
   "immunities": {
@@ -36,429 +36,388 @@
   "gear_setups": {
     "Melee (high level)": {
       "Weapon": [
-        [ "Scythe of vitur" ],
-        [ "Soulreaper axe", "Inquisitor's mace" ],
-        [ "Bone mace", "Blade of saeldor", "Ghrazi rapier" ],
-		[ "Abyssal tentacle", "Abyssal whip" ]
+        ["Scythe of vitur"],
+        ["Soulreaper axe", "Inquisitor's mace"],
+        ["Bone mace", "Blade of saeldor", "Ghrazi rapier"],
+        ["Abyssal tentacle", "Abyssal whip"]
       ],
-	  "Shield": [
-		[ "Avernic defender"],
-        [ "Dragon defender" ],
-        [ "Rune defender" ],
-		[ "Toktz-ket-xil" ]
+      "Shield": [
+        ["Avernic defender"],
+        ["Dragon defender"],
+        ["Rune defender"],
+        ["Toktz-ket-xil"]
       ],
       "Special Attack": [
-		[ "Dragon claws" ],
-		[ "Dragon dagger" ],
-        [ "Voidwaker" ],
-		[ "Crystal halberd" ]
+        ["Dragon claws"],
+        ["Dragon dagger"],
+        ["Voidwaker"],
+        ["Crystal halberd"]
       ],
       "Helmet": [
-        [ "Torva full helm" ],
-        [ "Neitiznot faceguard" ],
-        [ "Serpentine helm" ],
-        [ "Void melee helm" ]
+        ["Torva full helm"],
+        ["Neitiznot faceguard"],
+        ["Serpentine helm"],
+        ["Void melee helm"]
       ],
       "Amulet": [
-		[ "Amulet of rancour" ],
-        [ "Amulet of torture" ],
-        [ "Amulet of fury" ],
-		[ "Amulet of glory" ]
+        ["Amulet of rancour"],
+        ["Amulet of torture"],
+        ["Amulet of fury"],
+        ["Amulet of glory"]
       ],
       "Cape": [
-        [ "Infernal cape" ],
-        [ "Fire cape" ],
-		[ "Mythical cape" ],
-		[ "God vestment cloaks" ]
+        ["Infernal cape"],
+        ["Fire cape"],
+        ["Mythical cape"],
+        ["God vestment cloaks"]
       ],
       "Body": [
-        [ "Torva platebody" ],
-        [ "Bandos chestplate" ],
-        [ "Fighter torso" ],
-        [ "Elite void top" ]
+        ["Torva platebody"],
+        ["Bandos chestplate"],
+        ["Fighter torso"],
+        ["Elite void top"]
       ],
       "Legs": [
-        [ "Torva platelegs" ],
-        [ "Bandos tassets" ],
-        [ "Obsidian platelegs" ],
-		[ "Elite void robe" ]
+        ["Torva platelegs"],
+        ["Bandos tassets"],
+        ["Obsidian platelegs"],
+        ["Elite void robe"]
       ],
       "Gloves": [
-        [ "Ferocious gloves" ],
-        [ "Barrows gloves" ],
-		[ "Dragon gloves" ],
-		[ "Void knight gloves" ]
+        ["Ferocious gloves"],
+        ["Barrows gloves"],
+        ["Dragon gloves"],
+        ["Void knight gloves"]
       ],
       "Boots": [
-        [ "Primordial boots" ],
-        [ "Dragon boots" ],
-		[ "Guardian boots" ],
-		[ "Rune boots" ]
+        ["Primordial boots"],
+        ["Dragon boots"],
+        ["Guardian boots"],
+        ["Rune boots"]
       ],
       "Ring": [
-		[ "Ultor ring"],
-		[ "Bellator ring" ],
-        [ "Berserker ring (i)"  ],
-        [ "Lightbearer", "Ring of shadows" ]
+        ["Ultor ring"],
+        ["Bellator ring"],
+        ["Berserker ring (i)"],
+        ["Lightbearer", "Ring of shadows"]
       ],
-	  "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "God blessing" ]
-      ]
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "God blessing"]]
     },
     "Ranged (high level)": {
       "Weapon": [
-        [ "Toxic blowpipe" ],
-        [ "Bone shortbow" ],
-        [ "Twisted bow" ],
-		[ "Zaryte crossbow" ]
+        ["Toxic blowpipe"],
+        ["Bone shortbow"],
+        ["Twisted bow"],
+        ["Zaryte crossbow"]
       ],
-	  "Shield": [
-		[ "Twisted buckler"],
-        [ "Dragonfire ward" ],
-        [ "Odium ward" ],
-		[ "Blessed d'hide shield" ]
+      "Shield": [
+        ["Twisted buckler"],
+        ["Dragonfire ward"],
+        ["Odium ward"],
+        ["Blessed d'hide shield"]
       ],
       "Special Attack": [
-		[ "Zaryte crossbow" ],
-		[ "Toxic blowpipe" ],
-        [ "Dragon thrownaxe" ],
-        [ "Dragon knife" ]
+        ["Zaryte crossbow"],
+        ["Toxic blowpipe"],
+        ["Dragon thrownaxe"],
+        ["Dragon knife"]
       ],
       "Helmet": [
-        [ "Masori mask (f)" ],
-        [ "Void ranger helm" ],
-        [ "Armadyl helmet" ],
-        [ "Karil's coif" ]
+        ["Masori mask (f)"],
+        ["Void ranger helm"],
+        ["Armadyl helmet"],
+        ["Karil's coif"]
       ],
       "Amulet": [
-        [ "Necklace of anguish" ],
-        [ "Amulet of fury" ],
-        [ "Bonecrusher necklace" ],
-        [ "Amulet of glory" ]
+        ["Necklace of anguish"],
+        ["Amulet of fury"],
+        ["Bonecrusher necklace"],
+        ["Amulet of glory"]
       ],
       "Cape": [
-        [ "Dizana's quiver" ],
-		[ "Ava's assembler" ],
-		[ "Max cape" ],
-		[ "Ava's accumulator" ]
+        ["Dizana's quiver"],
+        ["Ava's assembler"],
+        ["Max cape"],
+        ["Ava's accumulator"]
       ],
       "Body": [
-        [ "Masori body (f)" ],
-		[ "Elite void top" ],
-        [ "Armadyl chestplate" ],
-        [ "Karil's leathertop" ]
+        ["Masori body (f)"],
+        ["Elite void top"],
+        ["Armadyl chestplate"],
+        ["Karil's leathertop"]
       ],
       "Legs": [
-        [ "Masori chaps (f)" ],
-		[ "Elite void robe" ],
-        [ "Armadyl chainskirt" ],
-        [ "Karil's leatherskirt" ]
+        ["Masori chaps (f)"],
+        ["Elite void robe"],
+        ["Armadyl chainskirt"],
+        ["Karil's leatherskirt"]
       ],
       "Gloves": [
-		[ "Zaryte vambraces" ],
-        [ "Void knight gloves" ],
-        [ "Barrows gloves" ],
-		[ "Blessed d'hide vambraces" ]
+        ["Zaryte vambraces"],
+        ["Void knight gloves"],
+        ["Barrows gloves"],
+        ["Blessed d'hide vambraces"]
       ],
       "Boots": [
-        [ "Pegasian boots" ],
-        [ "Ranger boots" ],
-        [ "Blessed d'hide boots" ],
-        [ "Aranea boots" ]
+        ["Pegasian boots"],
+        ["Ranger boots"],
+        ["Blessed d'hide boots"],
+        ["Aranea boots"]
       ],
-	  "Ring": [
-        [ "Venator ring" ],
-		[ "Archers ring (i)"],
-		[ "Lightbearer", "Ring of shadows" ],
-        [ "Brimstone ring" ]
+      "Ring": [
+        ["Venator ring"],
+        ["Archers ring (i)"],
+        ["Lightbearer", "Ring of shadows"],
+        ["Brimstone ring"]
       ],
       "Ammo": [
-        [ "Amethyst arrow" ],
-		[ "Dragon arrow" ],
-        [ "Ruby dragon bolts (e)" ],
-        [ "Ruby bolts (e)" ]
+        ["Amethyst arrow"],
+        ["Dragon arrow"],
+        ["Ruby dragon bolts (e)"],
+        ["Ruby bolts (e)"]
       ]
     },
     "Magic (high level)": {
       "Weapon": [
-        [ "Bone staff" ],
-        [ "Tumeken's shadow" ],
-        [ "Kodai wand" ],
-        [ "Trident of the seas" ]
+        ["Bone staff"],
+        ["Tumeken's shadow"],
+        ["Kodai wand"],
+        ["Trident of the seas"]
       ],
-	  "Shield": [
-		[ "Elidnis' ward (f)"],
-        [ "Arcane spirit shield" ],
-        [ "Elidnis' ward" ],
-		[ "Ancient wyvern shield" ]
+      "Shield": [
+        ["Elidnis' ward (f)"],
+        ["Arcane spirit shield"],
+        ["Elidnis' ward"],
+        ["Ancient wyvern shield"]
       ],
-      "Special Attack": [
-        [ "Zaryte crossbow" ],
-        [ "Accursed sceptre" ]
-      ],
+      "Special Attack": [["Zaryte crossbow"], ["Accursed sceptre"]],
       "Helmet": [
-        [ "Ancestral hat" ],
-        [ "Virtus mask" ],
-        [ "Ahrim's hood" ],
-        [ "Bloodbark helm" ]
+        ["Ancestral hat"],
+        ["Virtus mask"],
+        ["Ahrim's hood"],
+        ["Bloodbark helm"]
       ],
       "Amulet": [
-        [ "Occult necklace" ],
-        [ "Amulet of fury" ],
-        [ "Bonecrusher necklace" ],
-        [ "Amulet of glory" ]
+        ["Occult necklace"],
+        ["Amulet of fury"],
+        ["Bonecrusher necklace"],
+        ["Amulet of glory"]
       ],
-      "Cape": [
-        [ "Imbued god cape" ],
-        [ "God capes" ],
-        [ "Ardougne cloak 4" ]
-      ],
+      "Cape": [["Imbued god cape"], ["God capes"], ["Ardougne cloak 4"]],
       "Body": [
-        [ "Ancestral robe top" ],
-        [ "Virtus robe top" ],
-        [ "Ahrim's robetop" ],
-        [ "Bloodbark body" ]
+        ["Ancestral robe top"],
+        ["Virtus robe top"],
+        ["Ahrim's robetop"],
+        ["Bloodbark body"]
       ],
       "Legs": [
-        [ "Ancestral robe bottom" ],
-        [ "Virtus robe bottom" ],
-        [ "Ahrim's robeskirt" ],
-        [ "Bloodbark legs" ]
+        ["Ancestral robe bottom"],
+        ["Virtus robe bottom"],
+        ["Ahrim's robeskirt"],
+        ["Bloodbark legs"]
       ],
       "Gloves": [
-        [ "Tormented bracelet" ],
-        [ "Barrows gloves" ],
-		[ "Dragon gloves" ],
-		[ "Infinity gloves" ]
+        ["Tormented bracelet"],
+        ["Barrows gloves"],
+        ["Dragon gloves"],
+        ["Infinity gloves"]
       ],
-      "Boots": [
-        [ "Pegasian boots" ],
-        [ "Ranger boots" ]
-      ],
+      "Boots": [["Pegasian boots"], ["Ranger boots"]],
       "Ring": [
-        [ "Magus ring" ],
-        [ "Seers ring (i)", "Ring of the gods (i)" ],
-		[ "Brimstone ring" ],
-		[ "Ring of shadows" ]
+        ["Magus ring"],
+        ["Seers ring (i)", "Ring of the gods (i)"],
+        ["Brimstone ring"],
+        ["Ring of shadows"]
       ],
-	  "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "God blessing" ]
-      ]
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "God blessing"]]
     },
     "Melee (mid level)": {
       "Weapon": [
-        [ "Bone mace" ],
-        [ "Sarachnis cudgel" ],
-        [ "Dragon scimitar" ],
-        [ "Granite hammer" ],
-		[ "Rune scimitar" ]
+        ["Bone mace"],
+        ["Sarachnis cudgel"],
+        ["Dragon scimitar"],
+        ["Granite hammer"],
+        ["Rune scimitar"]
       ],
-	  "Shield": [
-		[ "Dragon defender"],
-        [ "Rune defender" ],
-        [ "Toktz-ket-xil" ],
-		[ "Granite shield" ],
-		[ "Rune kiteshield" ]
+      "Shield": [
+        ["Dragon defender"],
+        ["Rune defender"],
+        ["Toktz-ket-xil"],
+        ["Granite shield"],
+        ["Rune kiteshield"]
       ],
-      "Special Attack": [
-        [ "Dragon dagger" ],
-        [ "Crystal halberd" ]
-      ],
+      "Special Attack": [["Dragon dagger"], ["Crystal halberd"]],
       "Helmet": [
-        [ "Void melee helm" ],
-        [ "Helm of neitiznot", "Blood moon helm" ],
-        [ "Berserker helm" ],
-        [ "Rune full helm" ],
-        [ "Adamant full helm" ]
+        ["Void melee helm"],
+        ["Helm of neitiznot", "Blood moon helm"],
+        ["Berserker helm"],
+        ["Rune full helm"],
+        ["Adamant full helm"]
       ],
       "Amulet": [
-        [ "Amulet of fury" ],
-        [ "Amulet of glory" ],
-        [ "Amulet of strength" ],
-        [ "Amulet of power" ],
-        [ "Amulet of accuracy" ]
+        ["Amulet of fury"],
+        ["Amulet of glory"],
+        ["Amulet of strength"],
+        ["Amulet of power"],
+        ["Amulet of accuracy"]
       ],
       "Cape": [
-        [ "Fire cape" ],
-        [ "Obsidian cape" ],
-        [ "Cape of legends" ],
-        [ "God vestment cloaks" ],
-        [ "Any team cape" ]
+        ["Fire cape"],
+        ["Obsidian cape"],
+        ["Cape of legends"],
+        ["God vestment cloaks"],
+        ["Any team cape"]
       ],
       "Body": [
-        [ "Void knight top" ],
-        [ "Fighter torso" ],
-        [ "Proselyte hauberk" ],
-        [ "Granite body" ],
-        [ "Rune platebody" ]
+        ["Void knight top"],
+        ["Fighter torso"],
+        ["Proselyte hauberk"],
+        ["Granite body"],
+        ["Rune platebody"]
       ],
       "Legs": [
-        [ "Void knight robe" ],
-        [ "Dragon platelegs" ],
-        [ "Proselyte cuisse" ],
-        [ "Granite legs" ],
-        [ "Rune platelegs" ]
+        ["Void knight robe"],
+        ["Dragon platelegs"],
+        ["Proselyte cuisse"],
+        ["Granite legs"],
+        ["Rune platelegs"]
       ],
       "Gloves": [
-        [ "Void knight gloves" ],
-        [ "Barrows gloves" ],
-		[ "Rune gloves" ],
-		[ "Regen bracelet" ],
-		[ "Combat bracelet" ]
+        ["Void knight gloves"],
+        ["Barrows gloves"],
+        ["Rune gloves"],
+        ["Regen bracelet"],
+        ["Combat bracelet"]
       ],
       "Boots": [
-        [ "Dragon boots" ],
-        [ "Granite boots" ],
-        [ "Rune boots" ],
-        [ "Spiked manacles" ],
-        [ "Mixed hide boots" ]
+        ["Dragon boots"],
+        ["Granite boots"],
+        ["Rune boots"],
+        ["Spiked manacles"],
+        ["Mixed hide boots"]
       ],
       "Ring": [
-        [ "Berserker ring (i)" ],
-        [ "Lightbearer" ],
-		[ "Ring of recoil" ],
-		[ "Ring of life" ]
+        ["Berserker ring (i)"],
+        ["Lightbearer"],
+        ["Ring of recoil"],
+        ["Ring of life"]
       ],
-	  "Ammo": [
-        [ "Rada's blessing 3", "God blessing" ]
-      ]
+      "Ammo": [["Rada's blessing 3", "God blessing"]]
     },
     "Ranged (mid level)": {
       "Weapon": [
-        [ "Bone shortbow" ],
-        [ "Hunters' sunlight crossbow" ],
-        [ "Magic shortbow (i)" ],
-        [ "Magic shortbow" ],
-        [ "Yew shortbow" ]
+        ["Bone shortbow"],
+        ["Hunters' sunlight crossbow"],
+        ["Magic shortbow (i)"],
+        ["Magic shortbow"],
+        ["Yew shortbow"]
       ],
-	  "Shield": [
-		[ "Book of law"],
-        [ "Unholy book" ]
-      ],
+      "Shield": [["Book of law"], ["Unholy book"]],
       "Helmet": [
-        [ "Void ranger helm" ],
-        [ "Blessed coif" ],
-        [ "Archer helm" ],
-        [ "Snakeskin bandana" ],
-        [ "Coif" ]
+        ["Void ranger helm"],
+        ["Blessed coif"],
+        ["Archer helm"],
+        ["Snakeskin bandana"],
+        ["Coif"]
       ],
       "Amulet": [
-        [ "Amulet of fury" ],
-        [ "Amulet of glory" ],
-        [ "Amulet of power" ],
-        [ "Amulet of accuracy" ]
+        ["Amulet of fury"],
+        ["Amulet of glory"],
+        ["Amulet of power"],
+        ["Amulet of accuracy"]
       ],
       "Cape": [
-        [ "Ava's accumulator" ],
-        [ "Ava's attractor" ],
-        [ "Fire cape" ],
-        [ "Obsidian cape" ],
-        [ "Cape of legends" ]
+        ["Ava's accumulator"],
+        ["Ava's attractor"],
+        ["Fire cape"],
+        ["Obsidian cape"],
+        ["Cape of legends"]
       ],
       "Body": [
-        [ "Void knight top" ],
-        [ "Blessed body" ],
-        [ "Black d'hide body" ],
-        [ "Red d'hide body" ],
-        [ "Blue d'hide body" ]
+        ["Void knight top"],
+        ["Blessed body"],
+        ["Black d'hide body"],
+        ["Red d'hide body"],
+        ["Blue d'hide body"]
       ],
       "Legs": [
-        [ "Void knight robe" ],
-        [ "Blessed chaps" ],
-        [ "Black d'hide chaps" ],
-        [ "Red d'hide chaps" ],
-        [ "Blue d'hide chaps" ]
+        ["Void knight robe"],
+        ["Blessed chaps"],
+        ["Black d'hide chaps"],
+        ["Red d'hide chaps"],
+        ["Blue d'hide chaps"]
       ],
       "Gloves": [
-        [ "Void knight gloves" ],
-        [ "Blessed bracers" ],
-		[ "Black d'hide vambraces" ],
-		[ "Red d'hide vambraces" ],
-		[ "Dragon gloves" ]
+        ["Void knight gloves"],
+        ["Blessed bracers"],
+        ["Black d'hide vambraces"],
+        ["Red d'hide vambraces"],
+        ["Dragon gloves"]
       ],
       "Boots": [
-        [ "Blessed boots" ],
-        [ "Mixed hide boots" ],
-        [ "Shayzien boots (5)" ],
-        [ "Snakeskin boots" ]
+        ["Blessed boots"],
+        ["Mixed hide boots"],
+        ["Shayzien boots (5)"],
+        ["Snakeskin boots"]
       ],
-      "Ring": [
-        [ "Archers ring (i)" ],
-		[ "Ring of recoil" ],
-		[ "Ring of life" ]
-      ],
-	  "Ammo": [
-        [ "Amethyst arrow" ],
-        [ "Moonlight antler bolts" ],
-        [ "Rune arrow" ],
-        [ "Adamant arrow" ]
+      "Ring": [["Archers ring (i)"], ["Ring of recoil"], ["Ring of life"]],
+      "Ammo": [
+        ["Amethyst arrow"],
+        ["Moonlight antler bolts"],
+        ["Rune arrow"],
+        ["Adamant arrow"]
       ]
     },
     "Magic (mid level)": {
       "Weapon": [
-        [ "Bone staff" ],
-        [ "Trident of the seas" ],
-        [ "Warped sceptre" ],
-        [ "Iban's staff" ],
-        [ "Air battlestaff" ]
+        ["Bone staff"],
+        ["Trident of the seas"],
+        ["Warped sceptre"],
+        ["Iban's staff"],
+        ["Air battlestaff"]
       ],
-	  "Shield": [
-		[ "Malediction ward"],
-        [ "Book of darkness" ],
-		[ "Broodoo shield" ]
+      "Shield": [
+        ["Malediction ward"],
+        ["Book of darkness"],
+        ["Broodoo shield"]
       ],
       "Helmet": [
-        [ "Bloodbark helm" ],
-        [ "Elder chaos hood" ],
-        [ "Farseer helm" ],
-        [ "Mystic hat" ],
-		[ "Xerician hat" ]
+        ["Bloodbark helm"],
+        ["Elder chaos hood"],
+        ["Farseer helm"],
+        ["Mystic hat"],
+        ["Xerician hat"]
       ],
       "Amulet": [
-        [ "Occult necklace" ],
-        [ "Amulet of glory" ],
-        [ "Amulet of magic" ],
-        [ "Amulet of power" ],
-        [ "Amulet of accuracy" ]
+        ["Occult necklace"],
+        ["Amulet of glory"],
+        ["Amulet of magic"],
+        ["Amulet of power"],
+        ["Amulet of accuracy"]
       ],
       "Cape": [
-        [ "God capes" ],
-        [ "Fire cape" ],
-        [ "Obsidian cape" ],
-        [ "Cape of legends" ],
-        [ "God vestment cloaks" ]
+        ["God capes"],
+        ["Fire cape"],
+        ["Obsidian cape"],
+        ["Cape of legends"],
+        ["God vestment cloaks"]
       ],
       "Body": [
-        [ "Bloodbark body" ],
-        [ "Elder chaos top" ],
-        [ "Mystic robe top" ],
-        [ "Xerician top" ]
+        ["Bloodbark body"],
+        ["Elder chaos top"],
+        ["Mystic robe top"],
+        ["Xerician top"]
       ],
       "Legs": [
-        [ "Bloodbark legs" ],
-        [ "Elder chaos robe" ],
-        [ "Mystic robe bottom" ],
-        [ "Xerician robe" ]
+        ["Bloodbark legs"],
+        ["Elder chaos robe"],
+        ["Mystic robe bottom"],
+        ["Xerician robe"]
       ],
-      "Gloves": [
-        [ "Rune gloves" ],
-        [ "Bloodbark gauntlets" ],
-		[ "Combat bracelet" ]
-      ],
-      "Boots": [
-        [ "Bloodbark boots" ],
-        [ "Mystic boots" ]
-      ],
-      "Ring": [
-        [ "Seers ring (i)" ],
-		[ "Ring of recoil" ],
-		[ "Ring of life" ]
-      ],
-	  "Ammo": [
-        [ "Rada's blessing 3", "God blessing" ]
-      ]
+      "Gloves": [["Rune gloves"], ["Bloodbark gauntlets"], ["Combat bracelet"]],
+      "Boots": [["Bloodbark boots"], ["Mystic boots"]],
+      "Ring": [["Seers ring (i)"], ["Ring of recoil"], ["Ring of life"]],
+      "Ammo": [["Rada's blessing 3", "God blessing"]]
     }
   }
 }

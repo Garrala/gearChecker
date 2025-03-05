@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable, forkJoin, map } from 'rxjs';
+import { Injectable } from '@angular/core'
+import { HttpClient } from '@angular/common/http'
+import { Observable, forkJoin, map } from 'rxjs'
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class GearService {
   private gearFiles = [
@@ -18,95 +18,91 @@ export class GearService {
     'boots.json',
     'rings.json',
     'ammo.json',
-    'shields.json'
-  ];
+    'shields.json',
+  ]
 
-  private basePath = 'assets/gear/';
+  private basePath = 'assets/gear/'
 
-  ownedGear: { [slot: string]: string[] } = {}; // ✅ Always an object with arrays
- // ✅ Make sure it's always an array
- 
-
+  ownedGear: { [slot: string]: string[] } = {} // ✅ Always an object with arrays
+  // ✅ Make sure it's always an array
 
   constructor(private http: HttpClient) {
-    this.loadOwnedGear();
+    this.loadOwnedGear()
   }
 
   getGearData(): Observable<{ [slot: string]: { [item: string]: any } }> {
-    console.log("Fetching gear data from JSON files...");
-    const requests = this.gearFiles.map(file => {
-      console.log(`Requesting: ${this.basePath + file}`);
-      return this.http.get<{ [item: string]: any }>(this.basePath + file);
-    });
+    console.log('Fetching gear data from JSON files...')
+    const requests = this.gearFiles.map((file) => {
+      console.log(`Requesting: ${this.basePath + file}`)
+      return this.http.get<{ [item: string]: any }>(this.basePath + file)
+    })
 
     return forkJoin(requests).pipe(
-      map(responses => {
-        console.log("Received all gear JSON responses.");
-        const gearData: { [slot: string]: { [item: string]: any } } = {};
+      map((responses) => {
+        console.log('Received all gear JSON responses.')
+        const gearData: { [slot: string]: { [item: string]: any } } = {}
         this.gearFiles.forEach((file, index) => {
-          const slotName = file.replace('.json', ''); // Extract slot name from filename
-          gearData[slotName] = responses[index];
-          console.log(`Loaded data for category: ${slotName}`, responses[index]);
-        });
-        return gearData;
+          const slotName = file.replace('.json', '') // Extract slot name from filename
+          gearData[slotName] = responses[index]
+          console.log(`Loaded data for category: ${slotName}`, responses[index])
+        })
+        return gearData
       })
-    );
+    )
   }
 
   // Toggle gear selection and persist it
   updateOwnedGear(slot: string, item: string) {
     if (!this.ownedGear[slot]) {
-      this.ownedGear[slot] = []; // ✅ Always initialize as an array
+      this.ownedGear[slot] = [] // ✅ Always initialize as an array
     }
 
-    const index = this.ownedGear[slot].indexOf(item);
+    const index = this.ownedGear[slot].indexOf(item)
 
     if (index > -1) {
-      this.ownedGear[slot].splice(index, 1); // ✅ Remove if already selected
+      this.ownedGear[slot].splice(index, 1) // ✅ Remove if already selected
     } else {
-      this.ownedGear[slot].push(item); // ✅ Add if not selected
+      this.ownedGear[slot].push(item) // ✅ Add if not selected
     }
 
-    this.saveOwnedGear(); // ✅ Persist selections
+    this.saveOwnedGear() // ✅ Persist selections
   }
-
 
   getOwnedGear(): { [slot: string]: string[] } {
-    const storedGear = localStorage.getItem("ownedGear");
-    return storedGear ? JSON.parse(storedGear) : {};
+    const storedGear = localStorage.getItem('ownedGear')
+    return storedGear ? JSON.parse(storedGear) : {}
   }
 
-
   private saveOwnedGear() {
-    localStorage.setItem("ownedGear", JSON.stringify(this.ownedGear));
+    localStorage.setItem('ownedGear', JSON.stringify(this.ownedGear))
   }
 
   // Load from local storage
   private loadOwnedGear() {
-    const savedGear = localStorage.getItem("ownedGear");
+    const savedGear = localStorage.getItem('ownedGear')
     if (savedGear) {
-      this.ownedGear = JSON.parse(savedGear);
+      this.ownedGear = JSON.parse(savedGear)
     }
   }
 
   getGearCategory(slot: string): string {
     const slotMap: { [key: string]: string } = {
-      "Weapon": "weapons",
-      "Special Attack": "special_attack",
-      "Helmet": "helmets",
-      "Amulet": "amulets",
-      "Cape": "capes",
-      "Body": "body",
-      "Legs": "legs",
-      "Gloves": "gloves",
-      "Boots": "boots",
-      "Ring": "rings",
-      "Ammo": "ammo",
-      "Shields": "shields"
-    };
+      Weapon: 'weapons',
+      'Special Attack': 'special_attack',
+      Helmet: 'helmets',
+      Amulet: 'amulets',
+      Cape: 'capes',
+      Body: 'body',
+      Legs: 'legs',
+      Gloves: 'gloves',
+      Boots: 'boots',
+      Ring: 'rings',
+      Ammo: 'ammo',
+      Shields: 'shields',
+    }
 
-    const category = slotMap[slot] || slot.toLowerCase(); // 🔍 Normalize slot names
+    const category = slotMap[slot] || slot.toLowerCase() // 🔍 Normalize slot names
     //console.log(`Slot: ${slot} → Category: ${category}`); // ✅ Debugging
-    return category;
+    return category
   }
 }

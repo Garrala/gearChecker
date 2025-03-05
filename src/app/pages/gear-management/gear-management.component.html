@@ -10,13 +10,20 @@
     <div *ngIf="gearData['weapons']" class="gear-category">
       <h4>Weapon</h4>
       <div class="gear-grid">
-        <div *ngFor="let item of objectKeys(gearData['weapons'])"
-             class="gear-box"
-             [class.owned]="ownedGear['Weapon']?.includes(item)"
-             (click)="toggleGear('Weapon', item)">
-          <img [src]="gearData['weapons'][item].image" alt="{{ item }}">
+        <div
+          *ngFor="let item of objectKeys(gearData['weapons'])"
+          class="gear-box"
+          [class.owned]="ownedGear['Weapon']?.includes(item)"
+          (click)="toggleGear('Weapon', item)"
+        >
+          <img [src]="gearData['weapons'][item].image" alt="{{ item }}" />
           <p>{{ item }}</p>
-          <a [href]="gearData['weapons'][item].wiki" target="_blank" class="wiki-link">🔍</a>
+          <a
+            [href]="gearData['weapons'][item].wiki"
+            target="_blank"
+            class="wiki-link"
+            >🔍</a
+          >
         </div>
       </div>
     </div>
@@ -25,13 +32,23 @@
     <div *ngIf="gearData['special_attack']" class="gear-category">
       <h4>Special Attack Weapon</h4>
       <div class="gear-grid">
-        <div *ngFor="let item of objectKeys(gearData['special_attack'])"
-             class="gear-box"
-             [class.owned]="ownedGear['Special Attack']?.includes(item)"
-             (click)="toggleGear('Special Attack', item)">
-          <img [src]="gearData['special_attack'][item].image" alt="{{ item }}">
+        <div
+          *ngFor="let item of objectKeys(gearData['special_attack'])"
+          class="gear-box"
+          [class.owned]="ownedGear['Special Attack']?.includes(item)"
+          (click)="toggleGear('Special Attack', item)"
+        >
+          <img
+            [src]="gearData['special_attack'][item].image"
+            alt="{{ item }}"
+          />
           <p>{{ item }}</p>
-          <a [href]="gearData['special_attack'][item].wiki" target="_blank" class="wiki-link">🔍</a>
+          <a
+            [href]="gearData['special_attack'][item].wiki"
+            target="_blank"
+            class="wiki-link"
+            >🔍</a
+          >
         </div>
       </div>
     </div>
@@ -40,14 +57,25 @@
     <div *ngFor="let slot of armorSlots" class="gear-category">
       <h4>{{ slot }}</h4>
       <div class="gear-grid" *ngIf="gearData[slot.toLowerCase()]">
-        <div *ngFor="let item of objectKeys(gearData[slot.toLowerCase()])"
-             class="gear-box"
-             [class.owned]="ownedGear[slot]?.includes(item)"  
-         (click)="toggleGear(slot, item)">
-      <img [src]="gearData[slot.toLowerCase()][item].image" alt="{{ item }}">
-      <p>{{ item }}</p>
-      <a [href]="gearData[slot.toLowerCase()][item].wiki" target="_blank" class="wiki-link">🔍</a>
-    </div>
+        <div
+          *ngFor="let item of objectKeys(gearData[slot.toLowerCase()])"
+          class="gear-box"
+          [class.owned]="ownedGear[slot]?.includes(item)"
+          (click)="toggleGear(slot, item)"
+        >
+          <img
+            [src]="gearData[slot.toLowerCase()][item].image"
+            alt="{{ item }}"
+          />
+          <p>{{ item }}</p>
+          <a
+            [href]="gearData[slot.toLowerCase()][item].wiki"
+            target="_blank"
+            class="wiki-link"
+            >🔍</a
+          >
+        </div>
       </div>
     </div>
-    </div>
+  </div>
+</div>
