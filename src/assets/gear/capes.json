@@ -10,5 +10,17 @@
   "Max cape": {
     "image": "https://oldschool.runescape.wiki/images/Max_cape.png?23ebf",
     "wiki": "https://oldschool.runescape.wiki/w/Max_cape"
+  },
+  "Dizana's quiver": {
+    "image": "https://oldschool.runescape.wiki/images/Dizana%27s_quiver.png?f8a45",
+    "wiki": "https://oldschool.runescape.wiki/w/Dizana%27s_quiver#Charged"
+  },
+  "Ranging cape": {
+    "image": "https://oldschool.runescape.wiki/images/Ranging_cape%28t%29.png?095ed",
+    "wiki": "https://oldschool.runescape.wiki/w/Ranging_cape#Trimmed"
+  },
+  "Ava's accumulator": {
+    "image": "https://oldschool.runescape.wiki/images/Ava%27s_accumulator.png?2baad",
+    "wiki": "https://oldschool.runescape.wiki/w/Ava%27s_accumulator"
   }
 }

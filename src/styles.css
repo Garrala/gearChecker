@@ -11,22 +11,40 @@ body {
   background-color: #1e1e1e;
   padding: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  gap: 40px;
   position: relative;
   z-index: 10;
 }
 
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 0 15px;
-  }
+/* Left Section - Logo & Title */
+.navbar-brand-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-    .navbar a:hover {
-      text-decoration: underline;
-    }
+.navbar img {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+  .navbar a:hover {
+    text-decoration: underline;
+  }
 
 /* Page Container */
 .container {
@@ -34,6 +52,7 @@ body {
   margin: 20px auto;
   padding: 20px;
 }
+
 
 /* Card Styling */
 .card {

@@ -15,8 +15,6 @@
   width: 100%;
 }
 
-
-
 .monster-box {
   width: 120px; /* Keep them smaller */
   height: 140px;
@@ -76,17 +74,19 @@
 .boss-picture {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  padding: 10px;
   text-align: center;
-  max-width: 100%;
-  height: 100%;
+  width: 100%; /* Ensure it scales to container */
+  height: 300px; /* Fixed height for consistency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
   .boss-picture img {
-    max-width: 80%;
-    max-height: 300px%;
-    border-radius: 8px;
-    object-fit: contain;
+    max-width: 80%; /* Reduce overall size */
+    max-height: 250px; /* Keep them from being too large */
+    object-fit: contain; /* Ensures it keeps proportions */
+    display: block;
   }
 
 .boss-info-box {
@@ -184,8 +184,8 @@
 }
 
 .gear-slot {
-  width: 50px; /* Adjust as needed */
-  height: 50px;
+  width: 40px; /* Adjust as needed */
+  height: 40px;
   background: #222; /* Dark gray */
   border-radius: 5px;
   display: flex;
@@ -200,8 +200,8 @@
   }
 
 .item-icon {
-  width: 60px; /* Adjust this to match your other screen */
-  height: 60px;
+  width: 40px; /* Adjust this to match your other screen */
+  height: 40px;
   display: block;
   margin: auto;
   padding-top: 20px;
@@ -296,14 +296,30 @@
 }
 
 .defense-box {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
   padding: 8px;
   border-radius: 5px;
 }
 
+.defense-box.positive {
+  color: limegreen;
+  font-weight: bold;
+}
+
+.defense-box.negative {
+  color: red;
+  font-weight: bold;
+}
+
+.attack-style-box {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between icons */
+}
+
 .full-width {
   grid-column: span 3; /* Makes Magic defense take full row width */
-  background: rgba(255, 255, 255, 0.15);
+/*  background: rgba(255, 255, 255, 0.15);*/
   font-weight: bold;
 }
 
@@ -323,6 +339,21 @@
   align-items: center;
 }
 
+.boss-link {
+  position: absolute;
+  top: 8px; /* Adjust closer to the top */
+  right: 8px; /* Adjust closer to the right */
+  font-size: 16px;
+  text-decoration: none;
+  color: white; /* Ensure it's visible */
+  background: none; /* Removes background */
+  padding: 0; /* Removes padding */
+}
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
 
 /* Wiki Link (🔍) */
 .wiki-link {
@@ -391,7 +422,7 @@
 
 .half-width {
   grid-column: span 1.5; /* Each takes up half the row */
-  background: rgba(255, 255, 255, 0.15);
+/*  background: rgba(255, 255, 255, 0.15);*/
   font-weight: bold;
 }
 
@@ -402,4 +433,25 @@
   color: white;
   text-shadow: 0px 0px 8px limegreen;
 }
+
+.weakness-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.stat-value {
+  font-weight: bold;
+}
+
+.positive {
+  color: #3e9e27; /* Green for positive values */
+}
+
+.negative {
+  color: #ff4444; /* Red for negative values */
+}
+
+
 

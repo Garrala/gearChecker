@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MonsterService, Monster } from '../../services/monster.service';
 import { GearService } from '../../services/gear.service'; // ✅ Import GearService
 import { NgFor, NgIf } from '@angular/common';
@@ -6,7 +7,7 @@ import { NgFor, NgIf } from '@angular/common';
 @Component({
   selector: 'app-monster-overview',
   standalone: true,
-  imports: [NgFor, NgIf],
+  imports: [NgFor, NgIf, CommonModule],
   templateUrl: './monster-overview.component.html',
   styleUrls: ['./monster-overview.component.css']
 })
@@ -51,7 +52,7 @@ export class MonsterOverviewComponent implements OnInit {
     this.isMonsterDetailsLoading = true; // ✅ Show loading spinner
     setTimeout(() => {
       this.selectedMonster = monster;
-      this.selectedSetup = Object.keys(monster.gear_setups)[0] || 'Magic';
+      this.selectedSetup = Object.keys(monster.gear_setups)[0];
       this.isMonsterDetailsLoading = false; // ✅ Hide spinner once loaded
       console.log("Selected Monster:", this.selectedMonster);
       this.updateLoadout();

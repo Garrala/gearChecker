@@ -1,0 +1,105 @@
+{
+  "name": "Hespori",
+  "image": "https://oldschool.runescape.wiki/images/Hespori.png?83c72",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Hespori",
+  "combat_level": 725,
+  "hp": 500,
+  "max_hit": 41,
+  "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+  "defense": {
+    "melee": {
+      "stab": 150,
+      "slash": 150,
+      "crush": 200
+    },
+    "magic": 200,
+    "ranged": {
+      "arrows": 50,
+      "bolts": 50,
+      "thrown": 50
+    }
+  },
+  "attack_styles": [ "Magic", "Ranged", "Venom" ],
+  "attack_speed": 3,
+  "aggressive": true,
+  "immunities": {
+    "poison": true,
+    "venom": true,
+    "cannons": false,
+    "thralls": false
+  },
+
+  "gear_setups": {
+    "Ranged": {
+      "Weapon": [
+        [ "Twisted bow" ],
+        [ "Bow of faerdhinen" ],
+        [ "Crystal bow" ],
+        [ "Zaryte crossbow" ],
+        [ "Armadyl crossbow" ]
+      ],
+      "Special Attack": [
+        [ "Zaryte crossbow" ]
+      ],
+      "Helmet": [
+        [ "Slayer helmet (i)", "Masori mask (f)" ],
+        [ "Armadyl helmet" ],
+        [ "Crystal helm" ],
+        [ "Robin hood hat" ],
+        [ "Blessed coif" ]
+      ],
+      "Amulet": [
+        [ "Necklace of anguish" ],
+        [ "Bonecrusher necklace" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ]
+      ],
+      "Cape": [
+        [ "Dizana's quiver" ],
+        [ "Ava's assembler" ],
+        [ "Max cape", "Ranging cape" ]
+      ],
+      "Body": [
+        [ "Masori body (f)" ],
+        [ "Armadyl chestplate" ],
+        [ "Crystal body" ],
+        [ "Blessed body" ],
+        [ "Black d'hide body" ]
+      ],
+      "Legs": [
+        [ "Masori chaps (f)" ],
+        [ "Armadyl chainskirt" ],
+        [ "Crystal legs" ],
+        [ "Blessed chaps" ],
+        [ "Black d'hide chaps" ]
+      ],
+      "Gloves": [
+        [ "Zaryte vambraces" ],
+        [ "Barrows gloves" ],
+        [ "Blessed vambraces" ],
+        [ "Black d'hide vambraces" ]
+      ],
+      "Boots": [
+        [ "Pegasian boots" ],
+        [ "Ranger boots", "Devout boots" ],
+        [ "Blessed boots" ],
+        [ "Aranea boots" ],
+        [ "Mixed hide boots" ]
+      ],
+      "Ring": [
+        [ "Venator ring" ],
+        [ "Lightbearer" ],
+        [ "Ring of the gods", "Archers ring (i)" ],
+        [ "Ring of shadows", "Brimstone ring" ],
+        [ "Ring of endurance" ]
+      ],
+      "Ammo": [
+        [ "Dragon arrow" ],
+        [ "Amethyst arrow" ],
+        [ "Rune arrow" ],
+        [ "Diamond dragon bolts (e)", "Ruby dragon bolts (e)" ],
+        [ "Diamond bolts (e)", "Ruby bolts (e)" ]
+      ]
+    }
+  }
+}

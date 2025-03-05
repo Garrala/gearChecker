@@ -27,8 +27,12 @@
     <!-- Boss Info -->
     <div class="left-column">
       <div class="boss-picture">
-        <img [src]="selectedMonster?.image" alt="{{ selectedMonster?.name }}">
+        <div class="icon-container">
+          <a [href]="selectedMonster?.wiki_link" target="_blank" class="boss-link">🔍</a>
+          <img [src]="selectedMonster?.image" alt="{{ selectedMonster?.name }}">
+        </div>
       </div>
+
 
       <div class="boss-info-box">
         <h3>{{ selectedMonster?.name }}</h3>
@@ -38,6 +42,7 @@
             <span class="icon">❤️</span> <strong>Hitpoints:</strong> {{ selectedMonster?.hp }}
           </div>
           <div class="info-item">
+            <img src="https://oldschool.runescape.wiki/images/Crumble_Undead_icon_%28mobile%29.png?3f345">
             <span class="icon">💥</span> <strong>Max Hit:</strong> {{ selectedMonster?.max_hit }}
           </div>
           <div class="info-item">
@@ -56,22 +61,63 @@
 
           <!-- Melee Defense (Row 1 - 3 columns) -->
           <div class="defense-box">
-            🗡️ <strong>Stab:</strong> {{ selectedMonster?.defense?.melee?.stab }}
+            <img src="https://oldschool.runescape.wiki/images/Steel_dagger.png?f410d">
+            <span *ngIf="selectedMonster?.defense?.melee?.stab !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  'positive' : (selectedMonster?.defense?.melee?.stab ?? 0)>
+              0,
+              'negative': (selectedMonster?.defense?.melee?.stab ?? 0) < 0
+              }">
+              {{ (selectedMonster?.defense?.melee?.stab ?? 0) > 0 ? '+' : '' }}
+              {{ selectedMonster?.defense?.melee?.stab ?? 0 }}
+            </span>
+          </div>
+
+          <div class="defense-box">
+            <img src="https://oldschool.runescape.wiki/images/Steel_scimitar.png?0395b">
+            <span *ngIf="selectedMonster?.defense?.melee?.slash !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  'positive' : (selectedMonster?.defense?.melee?.slash ?? 0)>
+              0,
+              'negative': (selectedMonster?.defense?.melee?.slash ?? 0) < 0
+              }">
+              {{ (selectedMonster?.defense?.melee?.slash ?? 0) > 0 ? '+' : '' }}
+              {{ selectedMonster?.defense?.melee?.slash ?? 0 }}
+            </span>
           </div>
           <div class="defense-box">
-            🪓 <strong>Slash:</strong> {{ selectedMonster?.defense?.melee?.slash }}
-          </div>
-          <div class="defense-box">
-            🔨 <strong>Crush:</strong> {{ selectedMonster?.defense?.melee?.crush }}
+            <img src="https://oldschool.runescape.wiki/images/Steel_warhammer.png?1a4de">
+            <span *ngIf="selectedMonster?.defense?.melee?.crush !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  'positive' : (selectedMonster?.defense?.melee?.crush ?? 0)>
+              0,
+              'negative': (selectedMonster?.defense?.melee?.crush ?? 0) < 0
+              }">
+              {{ (selectedMonster?.defense?.melee?.crush ?? 0) > 0 ? '+' : '' }}
+              {{ selectedMonster?.defense?.melee?.crush ?? 0 }}
+            </span>
           </div>
 
           <!-- Magic Defense & Magic Weakness (Row 2 - 2 equal columns) -->
           <div class="immunity-grid full-width">
 
-            <div class="immunity-box">
-              🧙‍♂️ <strong>Magic Defense:</strong> {{ selectedMonster?.defense?.magic }}
+            <div class="defense-box">
+              <img src="https://oldschool.runescape.wiki/images/Magic_defence_icon.png?65b01">
+              <span *ngIf="selectedMonster?.defense?.magic !== undefined"
+                    [ngClass]="{
+                    'stat-value' : true,
+                    'positive' : (selectedMonster?.defense?.magic ?? 0)>
+                0,
+                'negative': (selectedMonster?.defense?.magic ?? 0) < 0
+                }">
+                {{ (selectedMonster?.defense?.magic ?? 0) > 0 ? '+' : '' }}
+                {{ selectedMonster?.defense?.magic ?? 0 }}
+              </span>
             </div>
-            <div class="immunity-box">
+            <div class="defense-box">
               🔥 <strong>Weakness:</strong> {{ selectedMonster?.weaknesses?.[0] }}
             </div>
           </div>
@@ -79,14 +125,45 @@
 
           <!-- Ranged Defense (Row 3 - 3 columns) -->
           <div class="defense-box">
-            🏹 <strong>Arrows:</strong> {{ selectedMonster?.defense?.ranged?.arrows }}
+            <img src="https://oldschool.runescape.wiki/images/Steel_dart.png?3203e">
+            <span *ngIf="selectedMonster?.defense?.ranged?.thrown !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  'positive' : (selectedMonster?.defense?.ranged?.thrown ?? 0)>
+              0,
+              'negative': (selectedMonster?.defense?.ranged?.thrown ?? 0) < 0
+              }">
+              {{ (selectedMonster?.defense?.ranged?.thrown ?? 0) > 0 ? '+' : '' }}
+              {{ selectedMonster?.defense?.ranged?.thrown ?? 0 }}
+            </span>
           </div>
           <div class="defense-box">
-            📌 <strong>Bolts:</strong> {{ selectedMonster?.defense?.ranged?.bolts }}
+            <img src="https://oldschool.runescape.wiki/images/Steel_arrow_5.png?2c4a2">
+            <span *ngIf="selectedMonster?.defense?.ranged?.arrows !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  'positive' : (selectedMonster?.defense?.ranged?.arrows ?? 0)>
+              0,
+              'negative': (selectedMonster?.defense?.ranged?.arrows ?? 0) < 0
+              }">
+              {{ (selectedMonster?.defense?.ranged?.arrows ?? 0) > 0 ? '+' : '' }}
+              {{ selectedMonster?.defense?.ranged?.arrows ?? 0 }}
+            </span>
           </div>
           <div class="defense-box">
-            🎯 <strong>Thrown:</strong> {{ selectedMonster?.defense?.ranged?.thrown }}
+            <img src="https://oldschool.runescape.wiki/images/Steel_bolts_5.png?f1c11">
+            <span *ngIf="selectedMonster?.defense?.ranged?.bolts !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  'positive' : (selectedMonster?.defense?.ranged?.bolts ?? 0)>
+              0,
+              'negative': (selectedMonster?.defense?.ranged?.bolts ?? 0) < 0
+              }">
+              {{ (selectedMonster?.defense?.ranged?.bolts ?? 0) > 0 ? '+' : '' }}
+              {{ selectedMonster?.defense?.ranged?.bolts ?? 0 }}
+            </span>
           </div>
+
 
         </div>
 
@@ -96,17 +173,49 @@
         <!-- Immunities -->
         <h4>Immunities</h4>
         <div class="immunity-grid">
-          <div class="immunity-box">
-            ☠️ <strong>Poison:</strong> ✓ Immune
+          <div class="defense-box">
+            <img src="https://oldschool.runescape.wiki/images/Poison_hitsplat.png?16146">
+            <span *ngIf="selectedMonster?.immunities?.poison !== undefined"
+                  [ngClass]="{
+                'stat-value': true,
+                'positive': selectedMonster?.immunities?.poison,
+                  'negative': !selectedMonster?.immunities?.poison
+              }">
+              {{ selectedMonster?.immunities?.poison ? 'Immune' : '❌ Not Immune' }}
+            </span>
           </div>
-          <div class="immunity-box">
-            🟢 <strong>Venom:</strong> ✓ Immune
+          <div class="defense-box">
+            <img src="https://oldschool.runescape.wiki/images/Venom_hitsplat.png?1977a">
+            <span *ngIf="selectedMonster?.immunities?.venom !== undefined"
+                  [ngClass]="{
+    'stat-value': true,
+    'positive': selectedMonster?.immunities?.venom,
+      'negative': !selectedMonster?.immunities?.venom
+  }">
+              {{ selectedMonster?.immunities?.venom ? 'Immune' : '❌ Not Immune' }}
+            </span>
           </div>
-          <div class="immunity-box">
-            🏹 <strong>Cannons:</strong> ❌ Not Immune
+          <div class="defense-box">
+            <img src="https://oldschool.runescape.wiki/images/Cannon_barrels.png?3c432">
+            <span *ngIf="selectedMonster?.immunities?.cannons !== undefined"
+                  [ngClass]="{
+    'stat-value': true,
+    'positive': selectedMonster?.immunities?.cannons,
+      'negative': !selectedMonster?.immunities?.cannons
+  }">
+              {{ selectedMonster?.immunities?.cannons ? 'Immune' : '❌ Not Immune' }}
+            </span>
           </div>
-          <div class="immunity-box">
-            👻 <strong>Thralls:</strong> ❌ Not Immune
+          <div class="defense-box">
+            <img src="https://oldschool.runescape.wiki/images/Resurrect_Greater_Ghost.png?687f2">
+            <span *ngIf="selectedMonster?.immunities?.thralls !== undefined"
+                  [ngClass]="{
+    'stat-value': true,
+    'positive': selectedMonster?.immunities?.thralls,
+      'negative': !selectedMonster?.immunities?.thralls
+  }">
+              {{ selectedMonster?.immunities?.thralls ? 'Immune' : '❌ Not Immune' }}
+            </span>
           </div>
         </div>
 
@@ -114,10 +223,9 @@
 
 
 
-
     </div>
 
-    <a [href]="selectedMonster?.wiki_link" class="wiki-link">🔍 View on Wiki</a>
+    
 
 
 
@@ -151,7 +259,7 @@
       <thead>
         <tr>
           <th>Slot</th>
-          <th colspan="4">Item (Most → Least Effective)</th>
+          <th colspan="5">Item (Most Effective → Least Effective)</th>
         </tr>
       </thead>
       <tbody>

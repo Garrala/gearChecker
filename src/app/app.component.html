@@ -1,14 +1,14 @@
 <nav class="navbar">
-  <div>
+  <div class="navbar-brand-container">
+    <img src="https://oldschool.runescape.wiki/images/Dragon_med_helm.png?8fa13">
     <a class="navbar-brand" routerLink="/" (click)="$event.preventDefault()">Gear Check</a>
   </div>
-  <div>
+  <div class="navbar-links">
     <a routerLink="/gear" (click)="navigate('/gear', $event)">Gear Management</a>
     <a routerLink="/monster" (click)="navigate('/monster', $event)">Beastiary</a>
-
+    <a routerLink="/roulette" (click)="navigate('/roulette', $event)">Boss Roulette</a>
   </div>
 </nav>
-
 
 <div class="container">
   <router-outlet></router-outlet>
