@@ -244,11 +244,15 @@
 
 .gear-tabs {
   display: flex;
+  position: sticky;
+  top: 0;
   justify-content: center; /* Spread buttons evenly */
   width: 100%; /* Allow it to take full width */
   max-width: 1600px;
   margin: auto;
+  z-index: 1000;
 }
+
 
 .gear-tabs button {
   flex: 1; /* Make each button take equal space */
