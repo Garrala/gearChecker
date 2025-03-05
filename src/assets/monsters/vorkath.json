@@ -4,8 +4,12 @@
   "wiki_link": "https://oldschool.runescape.wiki/w/Vorkath",
   "combat_level": 725,
   "hp": 500,
-  "max_hit": 41,
-  "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+  "max_hit": {
+    "magic": 41
+  },
+  "weaknesses": {
+    "fire": "50%"
+  },
   "defense": {
     "melee": {
       "stab": 150,

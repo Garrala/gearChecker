@@ -10,7 +10,6 @@
     "ranged": 7,
     "rockfall": 22
   },
-  "weaknesses": [],
   "defense": {
     "melee": {
       "stab": 20,
@@ -31,7 +30,7 @@
     "poison": false,
     "venom": true,
     "cannons": true,
-    "freeze": "50% resistance"
+    "thralls": false
   },
   "gear_setups": {
     "Melee (high level)": {
@@ -185,9 +184,9 @@
         ["Trident of the seas"]
       ],
       "Shield": [
-        ["Elidnis' ward (f)"],
+        ["Elidinis' ward (f)"],
         ["Arcane spirit shield"],
-        ["Elidnis' ward"],
+        ["Elidinis' ward"],
         ["Ancient wyvern shield"]
       ],
       "Special Attack": [["Zaryte crossbow"], ["Accursed sceptre"]],

@@ -9,8 +9,8 @@ export interface Monster {
   wiki_link: string
   combat_level: number
   hp: number
-  max_hit: number
-  weaknesses: string[]
+  max_hit: { [key: string]: number }
+  weaknesses: { [key: string]: string }
   attack_styles?: string[]
   attack_speed?: number
   defense: {

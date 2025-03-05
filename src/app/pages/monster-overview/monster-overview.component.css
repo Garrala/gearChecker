@@ -99,6 +99,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  margin-bottom: 25px;
+  align-items: center;
 }
 
 .info-item {
@@ -106,8 +108,25 @@
   padding: 10px;
   border-radius: 5px;
   display: flex;
-  align-items: center;
+  align-items: center; /* Centers everything */
   gap: 8px;
+}
+
+.info-item strong {
+  display: block; /* Moves "Max Hit:" to its own line */
+  /*margin-bottom: 5px;*/ /* Adds some space between title and values */
+}
+
+.info-item div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the icons & values */
+  gap: 10px; /* Adds spacing between the hits */
+}
+
+.info-item img {
+  object-fit: contain;
+  vertical-align: middle;
 }
 
 .character-loadout {
@@ -253,7 +272,6 @@
   z-index: 1000;
 }
 
-
 .gear-tabs button {
   flex: 1; /* Make each button take equal space */
   background: #222;
@@ -300,28 +318,37 @@
   background: rgba(0, 0, 0, 0.2);
   padding: 8px;
   border-radius: 5px;
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center;
+}
+
+.defense-box img {
+  object-fit: contain;
+  vertical-align: middle; /* Keep it aligned with text */
+  margin-right: 5px;
 }
 
 .defense-box.positive {
   color: limegreen;
-  font-weight: bold;
+  /*  font-weight: bold;*/
 }
 
 .defense-box.negative {
   color: red;
-  font-weight: bold;
+  /*  font-weight: bold;*/
 }
 
 .attack-style-box {
   display: flex;
   align-items: center;
-  gap: 5px; /* Space between icons */
+  gap: 10px; /* Space between icons */
 }
 
 .full-width {
   grid-column: span 3; /* Makes Magic defense take full row width */
   /*  background: rgba(255, 255, 255, 0.15);*/
-  font-weight: bold;
+  /*  font-weight: bold;*/
 }
 
 .immunities p {
@@ -334,7 +361,7 @@
   padding: 6px 10px;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 6px;
-  font-weight: bold;
+  /*  font-weight: bold;*/
   display: flex;
   align-items: center;
 }
@@ -395,7 +422,7 @@
 .immunity-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-template-rows: repeat(2, auto); /* 2 rows */
+  grid-template-rows: repeat(1, auto); /* 2 rows */
   gap: 10px;
   text-align: center;
 }
@@ -422,7 +449,7 @@
 .half-width {
   grid-column: span 1.5; /* Each takes up half the row */
   /*  background: rgba(255, 255, 255, 0.15);*/
-  font-weight: bold;
+  /*  font-weight: bold;*/
 }
 
 .owned {
@@ -441,7 +468,9 @@
 }
 
 .stat-value {
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+  /*  font-weight: bold;*/
 }
 
 .positive {
@@ -449,5 +478,5 @@
 }
 
 .negative {
-  color: #ff4444; /* Red for negative values */
+  color: #ff5252; /* Softer, readable red */
 }

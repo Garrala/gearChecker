@@ -4,15 +4,19 @@
   "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
   "combat_level": 725,
   "hp": 500,
-  "max_hit": 41,
-  "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+  "max_hit": {
+    "magic": 41
+  },
+  "weaknesses": {
+    "fire": "50%"
+  },
   "defense": {
     "melee": {
       "stab": 150,
       "slash": 150,
       "crush": 200
     },
-    "magic": 200,
+    "magic": -45,
     "ranged": {
       "arrows": 50,
       "bolts": 50,
@@ -38,9 +42,9 @@
         ["Iban's staff", "Warped sceptre"]
       ],
       "Shield": [
-        ["Tome of fire (Searing pages)", "Elindinis' ward (f)"],
+        ["Tome of fire (Searing pages)", "Elidinis' ward (f)"],
         ["Tome of fire (Burnt pages)", "Arcane spirit shield"],
-        ["Elindinis' ward", "Mage's book"],
+        ["Elidinis' ward", "Mage's book"],
         ["Ancient wyvern shield", "Malediction ward"],
         ["Book of the dead", "Book of darkness"]
       ],

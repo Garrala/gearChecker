@@ -219,4 +219,8 @@ export class MonsterOverviewComponent implements OnInit {
       characterLoadout[slot].includes(item)
     )
   }
+
+  objectKeys(obj: any): string[] {
+    return obj ? Object.keys(obj) : []
+  }
 }

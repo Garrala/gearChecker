@@ -98,7 +98,7 @@ export class GearService {
       Boots: 'boots',
       Ring: 'rings',
       Ammo: 'ammo',
-      Shields: 'shields',
+      Shield: 'shields',
     }
 
     const category = slotMap[slot] || slot.toLowerCase() // 🔍 Normalize slot names
