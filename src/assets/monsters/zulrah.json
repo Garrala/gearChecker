@@ -37,7 +37,13 @@
         ["Ahrim's staff", "Trident of the seas"],
         ["Iban's staff", "Warped sceptre"]
       ],
-      "Special Attack": [],
+      "Shield": [
+        ["Tome of fire (Searing pages)", "Elindinis' ward (f)"],
+        ["Tome of fire (Burnt pages)", "Arcane spirit shield"],
+        ["Elindinis' ward", "Mage's book"],
+        ["Ancient wyvern shield", "Malediction ward"],
+        ["Book of the dead", "Book of darkness"]
+      ],
       "Helmet": [
         ["Slayer helmet (i)", "Ancestral hat"],
         ["Virtus mask"],
@@ -72,13 +78,6 @@
         ["Ahrim's robeskirt", "Blue moon tassets"],
         ["Dragon'hai robe bottom", "Infinity bottoms", "Bloodbark legs"],
         ["Elite void top", "Mystic robe bottom"]
-      ],
-      "Shield": [
-        ["Tome of fire (Searing pages)", "Elindinis' ward (f)"],
-        ["Tome of fire (Burnt pages)", "Arcane spirit shield"],
-        ["Elindinis' ward", "Mage's book"],
-        ["Ancient wyvern shield", "Malediction ward"],
-        ["Book of the dead", "Book of darkness"]
       ],
       "Gloves": [
         ["Tormented bracelet"],
