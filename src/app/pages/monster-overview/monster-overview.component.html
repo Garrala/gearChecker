@@ -351,7 +351,7 @@
 
     <!-- Player Loadout -->
     <div class="character-loadout">
-      <h3>Your Loadout</h3>
+      <h3>Your Loadout <span class="setup-name">- {{ selectedSetup }}</span></h3>
       <div class="gear-grid">
         <!-- Row 1 -->
         <div class="gear-slot blank"></div>
@@ -373,14 +373,22 @@
 
         <!-- Row 3 -->
         <div class="gear-slot weapon">
-          <img *ngIf="ownedGear['Weapon']?.[0]" [src]="gearData['weapons']?.[ownedGear['Weapon'][0]]?.image" [alt]="ownedGear['Weapon'][0]" />
+          <img *ngIf="ownedGear['Weapon']?.[0]"
+               [src]="gearData['weapons']?.[ownedGear['Weapon'][0]]?.image"
+               [alt]="ownedGear['Weapon'][0]" />
         </div>
         <div class="gear-slot body">
-          <img *ngIf="ownedGear['Body']?.[0]" [src]="gearData['body']?.[ownedGear['Body'][0]]?.image" [alt]="ownedGear['Body'][0]" />
+          <img *ngIf="ownedGear['Body']?.[0]"
+               [src]="gearData['body']?.[ownedGear['Body'][0]]?.image"
+               [alt]="ownedGear['Body'][0]" />
         </div>
+        <!-- ✅ Conditionally hide the shield slot if weapon is two-handed -->
         <div class="gear-slot shield">
-          <img *ngIf="ownedGear['Shield']?.[0]" [src]="gearData['shields']?.[ownedGear['Shield'][0]]?.image" [alt]="ownedGear['Shield'][0]" />
+          <img *ngIf="ownedGear['Shield']?.[0]"
+               [src]="gearData['shields']?.[ownedGear['Shield'][0]]?.image"
+               [alt]="ownedGear['Shield'][0]" />
         </div>
+
 
         <!-- Row 4 -->
         <div class="gear-slot special">

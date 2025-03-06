@@ -16,12 +16,17 @@ export class MonsterOverviewComponent implements OnInit {
   selectedMonster: Monster | null = null
   selectedSetup: string = 'Magic' // Default tab
   gearData: {
-    [slot: string]: { [item: string]: { image: string; wiki: string } }
+    [slot: string]: { [item: string]: { image: string; wiki: string; twoHanded: string } }
   } = {} // ✅ Store data from multiple JSONs
   ownedGear: { [key: string]: string[] } = {} // ✅ Store multiple items per slot
   recommendedGear: { [key: string]: string[] } = {}
   isMonsterListLoading: boolean = true
   isMonsterDetailsLoading: boolean = false
+  gearSlots: string[] = [
+    "Helmet", "Cape", "Amulet", "Ammo",
+    "Weapon", "Body", "Shield", "Special Attack",
+    "Legs", "Gloves", "Boots", "Ring"
+  ];
 
   constructor(
     private monsterService: MonsterService,
@@ -162,73 +167,69 @@ export class MonsterOverviewComponent implements OnInit {
   }
 
   updateLoadout() {
-    console.log('🛠 Recommended Gear Check:', localStorage.getItem('recommendedGear'));
+  console.log('🛠 Updating Loadout for:', this.selectedMonster?.name);
 
-    if (!this.selectedMonster || !this.selectedMonster.gear_setups) return;
+  if (!this.selectedMonster || !this.selectedMonster.gear_setups) return;
 
-    console.log('Updating Loadout for:', this.selectedMonster.name);
+  const storedOwnedGear = localStorage.getItem('ownedGear');
+  this.ownedGear = storedOwnedGear ? JSON.parse(storedOwnedGear) : {};
 
-    // ✅ Load ownedGear from storage
-    const storedOwnedGear = localStorage.getItem('ownedGear');
-    this.ownedGear = storedOwnedGear ? JSON.parse(storedOwnedGear) : {};
+  const storedRecommendedGear = localStorage.getItem('recommendedGear');
+  this.recommendedGear = storedRecommendedGear ? JSON.parse(storedRecommendedGear) : {};
 
-    // ✅ Load recommendedGear from storage
-    const storedRecommendedGear = localStorage.getItem('recommendedGear');
-    this.recommendedGear = storedRecommendedGear ? JSON.parse(storedRecommendedGear) : {};
+  const characterLoadout: { [slot: string]: string[] } = {};
 
-    const characterLoadout: { [slot: string]: string[] } = {}; // ✅ Store multiple best items
+  for (const slot of Object.keys(this.selectedMonster.gear_setups[this.selectedSetup])) {
+    const recommendedItems = this.selectedMonster?.gear_setups?.[this.selectedSetup]?.[slot] || [];
+    const slotMapping: { [key: string]: string } = {
+      "Shield": "Shields",
+      "Glove": "Gloves",
+      "Boot": "Boots",
+      "Helmet": "Helmets",
+      "Amulet": "Amulets",
+      "Cape": "Capes",
+      "Body": "Body",
+      "Legs": "Legs",
+      "Ring": "Rings",
+      "Ammo": "Ammo",
+      "Special Attack": "Special Attack"
+    };
 
-    for (const slot of Object.keys(this.selectedMonster.gear_setups[this.selectedSetup])) {
-      const recommendedItems = this.selectedMonster?.gear_setups?.[this.selectedSetup]?.[slot] || [];
-      const slotMapping: { [key: string]: string } = {
-        "Shield": "Shields",
-        "Glove": "Gloves",
-        "Boot": "Boots",
-        "Helmet": "Helmets",
-        "Amulet": "Amulets",
-        "Cape": "Capes",
-        "Body": "Body",
-        "Legs": "Legs",
-        "Ring": "Rings",
-        "Ammo": "Ammo",
-        "Special Attack": "Special Attack"
-      };
+    const normalizedSlot = slotMapping[slot] || slot;
+    const ownedItems = this.ownedGear[normalizedSlot] || [];
 
-      const normalizedSlot = slotMapping[slot] || slot; // Convert singular to plural if needed
-      const ownedItems = this.ownedGear[normalizedSlot] || [];
+    console.log(`🔍 Slot: ${slot}`);
+    console.log('Recommended Items:', recommendedItems);
+    console.log('Owned Items:', ownedItems);
 
-
-      console.log(`🔍 Slot: ${slot}`);
-      console.log('Recommended Items:', recommendedItems);
-      console.log('Owned Items:', ownedItems);
-
-      if (!recommendedItems.length) {
-        characterLoadout[slot] = ['None'];
-        console.log(`⚠️ No recommended items for ${slot}, setting to None`);
-        continue;
-      }
-
-      // ✅ Flatten recommended items in case they are in grouped arrays
-      const flattenedRecommendedItems = recommendedItems.flat();
-
-      // ✅ Find all **owned** items from the recommended list
-      const bestItems = flattenedRecommendedItems.filter(item => ownedItems.includes(item));
-
-      console.log('Flattened Recommended Items:', flattenedRecommendedItems);
-      console.log('Best Matching Items:', bestItems);
-
-      // ✅ If we found matching owned items, store them; otherwise, set "None"
-      characterLoadout[slot] = bestItems.length > 0 ? bestItems : ['None'];
-
-      if (characterLoadout[slot].includes('None')) {
-        console.log(`⚠️ No matching items found for ${slot}, setting to None`);
-      }
+    if (!recommendedItems.length) {
+      characterLoadout[slot] = ['None'];
+      console.log(`⚠️ No recommended items for ${slot}, setting to None`);
+      continue;
     }
 
-    console.log('✅ Final Character Loadout:', characterLoadout);
-    localStorage.setItem('characterLoadout', JSON.stringify(characterLoadout));
-    this.ownedGear = { ...this.ownedGear, ...characterLoadout };
+    const flattenedRecommendedItems = recommendedItems.flat();
+    const bestItems = flattenedRecommendedItems.filter(item => ownedItems.includes(item));
+
+    characterLoadout[slot] = bestItems.length > 0 ? bestItems : ['None'];
+
+    if (characterLoadout[slot].includes('None')) {
+      console.log(`⚠️ No matching items found for ${slot}, setting to None`);
+    }
   }
+
+  // ✅ Check if the weapon is two-handed and clear the shield slot
+  const equippedWeapon = characterLoadout['Weapon']?.[0];
+    if (equippedWeapon && this.gearData['weapons']?.[equippedWeapon]?.twoHanded) {
+    console.log(`⚠️ ${equippedWeapon} is a two-handed weapon. Clearing the shield slot.`);
+    characterLoadout['Shield'] = ['None'];
+  }
+
+  console.log('✅ Final Character Loadout:', characterLoadout);
+  localStorage.setItem('characterLoadout', JSON.stringify(characterLoadout));
+  this.ownedGear = { ...this.ownedGear, ...characterLoadout };
+}
+
 
 
 
