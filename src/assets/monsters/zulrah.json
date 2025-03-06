@@ -96,7 +96,7 @@
         ["Bloodbark boots"],
         ["Wizard boots"]
       ],
-      "Ring": [["Magus ring", "Ring of suffering (ri)"], ["Ring of recoil"]],
+      "Ring": [["Magus ring", "Ring of suffering (i)"], ["Ring of recoil"]],
       "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "God blessing"]]
     },
     "Ranged": {
@@ -153,7 +153,7 @@
         ["Aranea boots"],
         ["Boots of brimstone"]
       ],
-      "Ring": [["Ring of suffering (ri)"], ["Ring of recoil"]],
+      "Ring": [["Ring of suffering (i)"], ["Ring of recoil"]],
       "Ammo": [
         ["Dragon arrow"],
         ["Amethyst arrow"],
