@@ -30,16 +30,11 @@
     <div class="left-column">
       <div class="boss-picture">
         <div class="icon-container">
-          <a
-            [href]="selectedMonster?.wiki_link"
-            target="_blank"
-            class="boss-link"
-            >🔍</a
-          >
-          <img
-            [src]="selectedMonster?.image"
-            alt="{{ selectedMonster?.name }}"
-          />
+          <a [href]="selectedMonster?.wiki_link"
+             target="_blank"
+             class="boss-link">🔍</a>
+          <img [src]="selectedMonster?.image"
+               alt="{{ selectedMonster?.name }}" />
         </div>
       </div>
 
@@ -48,48 +43,34 @@
 
         <div class="info-grid">
           <div class="info-item">
-            <img
-              src="https://oldschool.runescape.wiki/images/Hitpoints_icon.png?a4819"
-              title="Hitpoints"
-            />
+            <img src="https://oldschool.runescape.wiki/images/Hitpoints_icon.png?a4819"
+                 title="Hitpoints" />
             <strong>Hitpoints:</strong>
             {{ selectedMonster?.hp }}
           </div>
           <div class="info-item">
-            <img
-              src="https://oldschool.runescape.wiki/images/Damage_hitsplat_%28max_hit%29.png?a8d79"
-              title="Max Hit"
-            />
+            <img src="https://oldschool.runescape.wiki/images/Damage_hitsplat_%28max_hit%29.png?a8d79"
+                 title="Max Hit" />
             <strong>Max Hit:</strong>
             <div *ngIf="selectedMonster?.max_hit">
-              <div
-                *ngFor="let key of objectKeys(selectedMonster?.max_hit || {})"
-              >
+              <div *ngFor="let key of objectKeys(selectedMonster?.max_hit || {})">
                 <span>
-                  <img
-                    *ngIf="key === 'melee'"
-                    title="Melee"
-                    src="https://oldschool.runescape.wiki/images/Strength_icon.png?e6e0c"
-                    alt="Melee"
-                  />
-                  <img
-                    *ngIf="key === 'magic'"
-                    title="Magic"
-                    src="https://oldschool.runescape.wiki/images/Magic_icon.png"
-                    alt="Magic"
-                  />
-                  <img
-                    *ngIf="key === 'ranged'"
-                    title="Ranged"
-                    src="https://oldschool.runescape.wiki/images/Ranged_icon.png"
-                    alt="Ranged"
-                  />
-                  <img
-                    *ngIf="key === 'rockfall'"
-                    title="Rockfall"
-                    src="https://oldschool.runescape.wiki/images/Pet_rock.png?97482"
-                    alt="Rockfall"
-                  />
+                  <img *ngIf="key === 'melee'"
+                       title="Melee"
+                       src="https://oldschool.runescape.wiki/images/Strength_icon.png?e6e0c"
+                       alt="Melee" />
+                  <img *ngIf="key === 'magic'"
+                       title="Magic"
+                       src="https://oldschool.runescape.wiki/images/Magic_icon.png"
+                       alt="Magic" />
+                  <img *ngIf="key === 'ranged'"
+                       title="Ranged"
+                       src="https://oldschool.runescape.wiki/images/Ranged_icon.png"
+                       alt="Ranged" />
+                  <img *ngIf="key === 'rockfall'"
+                       title="Rockfall"
+                       src="https://oldschool.runescape.wiki/images/Pet_rock.png?97482"
+                       alt="Rockfall" />
 
                   {{ selectedMonster?.max_hit?.[key] ?? 'N/A' }}
                 </span>
@@ -97,53 +78,41 @@
             </div>
           </div>
           <div class="info-item">
-            <img
-              src="https://oldschool.runescape.wiki/images/Combat_icon.png?93d63"
-              title="Attack Style"
-            />
+            <img src="https://oldschool.runescape.wiki/images/Combat_icon.png?93d63"
+                 title="Attack Style" />
             <strong>Attack Style:</strong>
             <span class="attack-style-box">
-              <img
-                *ngIf="(selectedMonster?.attack_styles || []).includes('Magic')"
-                src="https://oldschool.runescape.wiki/images/Magic_icon.png"
-                alt="Magic"
-                title="Magic Attack Style"
-                class="attack-style-icon"
-              />
+              <img *ngIf="(selectedMonster?.attack_styles || []).includes('Magic')"
+                   src="https://oldschool.runescape.wiki/images/Magic_icon.png"
+                   alt="Magic"
+                   title="Magic Attack Style"
+                   class="attack-style-icon" />
 
-              <img
-                *ngIf="
+              <img *ngIf="
                   (selectedMonster?.attack_styles || []).includes('Ranged')
                 "
-                src="https://oldschool.runescape.wiki/images/Ranged_icon.png"
-                alt="Ranged"
-                title="Ranged Attack Style"
-                class="attack-style-icon"
-              />
+                   src="https://oldschool.runescape.wiki/images/Ranged_icon.png"
+                   alt="Ranged"
+                   title="Ranged Attack Style"
+                   class="attack-style-icon" />
 
-              <img
-                *ngIf="(selectedMonster?.attack_styles || []).includes('Melee')"
-                src="https://oldschool.runescape.wiki/images/Strength_icon.png?e6e0c"
-                alt="Melee"
-                title="Melee Attack Style"
-                class="attack-style-icon"
-              />
+              <img *ngIf="(selectedMonster?.attack_styles || []).includes('Melee')"
+                   src="https://oldschool.runescape.wiki/images/Strength_icon.png?e6e0c"
+                   alt="Melee"
+                   title="Melee Attack Style"
+                   class="attack-style-icon" />
 
-              <img
-                *ngIf="(selectedMonster?.attack_styles || []).includes('Venom')"
-                src="https://oldschool.runescape.wiki/images/Venom_hitsplat.png?1977a"
-                alt="Venom"
-                title="Venom Attack Style"
-                class="attack-style-icon"
-              />
+              <img *ngIf="(selectedMonster?.attack_styles || []).includes('Venom')"
+                   src="https://oldschool.runescape.wiki/images/Venom_hitsplat.png?1977a"
+                   alt="Venom"
+                   title="Venom Attack Style"
+                   class="attack-style-icon" />
             </span>
           </div>
 
           <div class="info-item">
-            <img
-              src="https://oldschool.runescape.wiki/images/Attack_Speed_icon.png?c8037"
-              title="Attack Speed"
-            />
+            <img src="https://oldschool.runescape.wiki/images/Attack_Speed_icon.png?c8037"
+                 title="Attack Speed" />
             <strong>Attack Speed:</strong>
             {{ selectedMonster?.attack_speed }} ticks
           </div>
@@ -156,53 +125,47 @@
         <div class="defense-grid">
           <!-- Melee Defense (Row 1 - 3 columns) -->
           <div class="defense-box">
-            <img
-              src="https://oldschool.runescape.wiki/images/Steel_dagger.png?f410d"
-              title="Stab"
-            />
-            <span
-              *ngIf="selectedMonster?.defense?.melee?.stab !== undefined"
-              [ngClass]="{
-                'stat-value': true,
-                positive: (selectedMonster?.defense?.melee?.stab ?? 0) > 0,
-                negative: (selectedMonster?.defense?.melee?.stab ?? 0) < 0,
+            <img src="https://oldschool.runescape.wiki/images/Steel_dagger.png?f410d"
+                 title="Stab" />
+            <span *ngIf="selectedMonster?.defense?.melee?.stab !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (selectedMonster?.defense?.melee?.stab ?? 0)>
+              0,
+              negative: (selectedMonster?.defense?.melee?.stab ?? 0) < 0,
               }"
-            >
+              >
               {{ (selectedMonster?.defense?.melee?.stab ?? 0) > 0 ? '+' : '' }}
               {{ selectedMonster?.defense?.melee?.stab ?? 0 }}
             </span>
           </div>
 
           <div class="defense-box">
-            <img
-              src="https://oldschool.runescape.wiki/images/Steel_scimitar.png?0395b"
-              title="Slash"
-            />
-            <span
-              *ngIf="selectedMonster?.defense?.melee?.slash !== undefined"
-              [ngClass]="{
-                'stat-value': true,
-                positive: (selectedMonster?.defense?.melee?.slash ?? 0) > 0,
-                negative: (selectedMonster?.defense?.melee?.slash ?? 0) < 0,
+            <img src="https://oldschool.runescape.wiki/images/Steel_scimitar.png?0395b"
+                 title="Slash" />
+            <span *ngIf="selectedMonster?.defense?.melee?.slash !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (selectedMonster?.defense?.melee?.slash ?? 0)>
+              0,
+              negative: (selectedMonster?.defense?.melee?.slash ?? 0) < 0,
               }"
-            >
+              >
               {{ (selectedMonster?.defense?.melee?.slash ?? 0) > 0 ? '+' : '' }}
               {{ selectedMonster?.defense?.melee?.slash ?? 0 }}
             </span>
           </div>
           <div class="defense-box">
-            <img
-              src="https://oldschool.runescape.wiki/images/Steel_warhammer.png?1a4de"
-              title="Crush"
-            />
-            <span
-              *ngIf="selectedMonster?.defense?.melee?.crush !== undefined"
-              [ngClass]="{
-                'stat-value': true,
-                positive: (selectedMonster?.defense?.melee?.crush ?? 0) > 0,
-                negative: (selectedMonster?.defense?.melee?.crush ?? 0) < 0,
+            <img src="https://oldschool.runescape.wiki/images/Steel_warhammer.png?1a4de"
+                 title="Crush" />
+            <span *ngIf="selectedMonster?.defense?.melee?.crush !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (selectedMonster?.defense?.melee?.crush ?? 0)>
+              0,
+              negative: (selectedMonster?.defense?.melee?.crush ?? 0) < 0,
               }"
-            >
+              >
               {{ (selectedMonster?.defense?.melee?.crush ?? 0) > 0 ? '+' : '' }}
               {{ selectedMonster?.defense?.melee?.crush ?? 0 }}
             </span>
@@ -211,84 +174,70 @@
           <!-- Magic Defense & Magic Weakness (Row 2 - 2 equal columns) -->
           <div class="immunity-grid full-width">
             <div class="defense-box">
-              <img
-                src="https://oldschool.runescape.wiki/images/Magic_defence_icon.png?65b01"
-                title="Magic Defense"
-              />
-              <span
-                *ngIf="selectedMonster?.defense?.magic !== undefined"
-                [ngClass]="{
-                  'stat-value': true,
-                  positive: (selectedMonster?.defense?.magic ?? 0) > 0,
-                  negative: (selectedMonster?.defense?.magic ?? 0) < 0,
+              <img src="https://oldschool.runescape.wiki/images/Magic_defence_icon.png?65b01"
+                   title="Magic Defense" />
+              <span *ngIf="selectedMonster?.defense?.magic !== undefined"
+                    [ngClass]="{
+                    'stat-value' : true,
+                    positive: (selectedMonster?.defense?.magic ?? 0)>
+                0,
+                negative: (selectedMonster?.defense?.magic ?? 0) < 0,
                 }"
-              >
+                >
                 {{ (selectedMonster?.defense?.magic ?? 0) > 0 ? '+' : '' }}
                 {{ selectedMonster?.defense?.magic ?? 0 }}
               </span>
             </div>
             <div class="defense-box">
               <div>
-                <img
-                  *ngIf="
+                <img *ngIf="
                     !selectedMonster?.weaknesses ||
                     objectKeys(selectedMonster?.weaknesses).length === 0
                   "
-                  src="https://oldschool.runescape.wiki/images/Pure_essence.png?ed4b0"
-                  alt="No Weakness"
-                  title="No Elemental Weakness"
-                />
+                     src="https://oldschool.runescape.wiki/images/Pure_essence.png?ed4b0"
+                     alt="No Weakness"
+                     title="No Elemental Weakness" />
 
-                <span
-                  *ngFor="
+                <span *ngFor="
                     let key of objectKeys(selectedMonster?.weaknesses || {})
-                  "
-                >
-                  <img
-                    *ngIf="key === 'fire'"
-                    src="https://oldschool.runescape.wiki/images/Fire_rune.png?3859a"
-                    alt="Fire Weakness"
-                    title="Fire Weakness"
-                  />
-                  <img
-                    *ngIf="key === 'water'"
-                    src="https://oldschool.runescape.wiki/images/Water_rune.png?75a26"
-                    alt="Water Weakness"
-                    title="Water Weakness"
-                  />
-                  <img
-                    *ngIf="key === 'earth'"
-                    src="https://oldschool.runescape.wiki/images/Earth_rune.png?0b998"
-                    alt="Earth Weakness"
-                    title="Earth Weakness"
-                  />
-                  <img
-                    *ngIf="key === 'air'"
-                    src="https://oldschool.runescape.wiki/images/Air_rune.png?248b4"
-                    alt="Air Weakness"
-                    title="Air Weakness"
-                  />
-                  <span class="negative">{{
+                  ">
+                  <img *ngIf="key === 'fire'"
+                       src="https://oldschool.runescape.wiki/images/Fire_rune.png?3859a"
+                       alt="Fire Weakness"
+                       title="Fire Weakness" />
+                  <img *ngIf="key === 'water'"
+                       src="https://oldschool.runescape.wiki/images/Water_rune.png?75a26"
+                       alt="Water Weakness"
+                       title="Water Weakness" />
+                  <img *ngIf="key === 'earth'"
+                       src="https://oldschool.runescape.wiki/images/Earth_rune.png?0b998"
+                       alt="Earth Weakness"
+                       title="Earth Weakness" />
+                  <img *ngIf="key === 'air'"
+                       src="https://oldschool.runescape.wiki/images/Air_rune.png?248b4"
+                       alt="Air Weakness"
+                       title="Air Weakness" />
+                  <span class="negative">
+                    {{
                     selectedMonster?.weaknesses?.[key] ?? 'None'
-                  }}</span>
+                    }}
+                  </span>
                 </span>
               </div>
             </div>
           </div>
           <!-- Ranged Defense (Row 3 - 3 columns) -->
           <div class="defense-box">
-            <img
-              src="https://oldschool.runescape.wiki/images/Steel_dart.png?3203e"
-              title="Thrown"
-            />
-            <span
-              *ngIf="selectedMonster?.defense?.ranged?.thrown !== undefined"
-              [ngClass]="{
-                'stat-value': true,
-                positive: (selectedMonster?.defense?.ranged?.thrown ?? 0) > 0,
-                negative: (selectedMonster?.defense?.ranged?.thrown ?? 0) < 0,
+            <img src="https://oldschool.runescape.wiki/images/Steel_dart.png?3203e"
+                 title="Thrown" />
+            <span *ngIf="selectedMonster?.defense?.ranged?.thrown !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (selectedMonster?.defense?.ranged?.thrown ?? 0)>
+              0,
+              negative: (selectedMonster?.defense?.ranged?.thrown ?? 0) < 0,
               }"
-            >
+              >
               {{
                 (selectedMonster?.defense?.ranged?.thrown ?? 0) > 0 ? '+' : ''
               }}
@@ -296,18 +245,16 @@
             </span>
           </div>
           <div class="defense-box">
-            <img
-              src="https://oldschool.runescape.wiki/images/Steel_arrow_5.png?2c4a2"
-              title="Arrows"
-            />
-            <span
-              *ngIf="selectedMonster?.defense?.ranged?.arrows !== undefined"
-              [ngClass]="{
-                'stat-value': true,
-                positive: (selectedMonster?.defense?.ranged?.arrows ?? 0) > 0,
-                negative: (selectedMonster?.defense?.ranged?.arrows ?? 0) < 0,
+            <img src="https://oldschool.runescape.wiki/images/Steel_arrow_5.png?2c4a2"
+                 title="Arrows" />
+            <span *ngIf="selectedMonster?.defense?.ranged?.arrows !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (selectedMonster?.defense?.ranged?.arrows ?? 0)>
+              0,
+              negative: (selectedMonster?.defense?.ranged?.arrows ?? 0) < 0,
               }"
-            >
+              >
               {{
                 (selectedMonster?.defense?.ranged?.arrows ?? 0) > 0 ? '+' : ''
               }}
@@ -315,18 +262,16 @@
             </span>
           </div>
           <div class="defense-box">
-            <img
-              src="https://oldschool.runescape.wiki/images/Steel_bolts_5.png?f1c11"
-              title="Bolts"
-            />
-            <span
-              *ngIf="selectedMonster?.defense?.ranged?.bolts !== undefined"
-              [ngClass]="{
-                'stat-value': true,
-                positive: (selectedMonster?.defense?.ranged?.bolts ?? 0) > 0,
-                negative: (selectedMonster?.defense?.ranged?.bolts ?? 0) < 0,
+            <img src="https://oldschool.runescape.wiki/images/Steel_bolts_5.png?f1c11"
+                 title="Bolts" />
+            <span *ngIf="selectedMonster?.defense?.ranged?.bolts !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (selectedMonster?.defense?.ranged?.bolts ?? 0)>
+              0,
+              negative: (selectedMonster?.defense?.ranged?.bolts ?? 0) < 0,
               }"
-            >
+              >
               {{
                 (selectedMonster?.defense?.ranged?.bolts ?? 0) > 0 ? '+' : ''
               }}
@@ -341,54 +286,42 @@
         <h4>Immunities</h4>
         <div class="immunity-grid">
           <div class="defense-box">
-            <img
-              src="https://oldschool.runescape.wiki/images/Poison_hitsplat.png?16146"
-              title="Poison"
-            />
-            <span
-              *ngIf="selectedMonster?.immunities?.poison !== undefined"
-              [ngClass]="{
+            <img src="https://oldschool.runescape.wiki/images/Poison_hitsplat.png?16146"
+                 title="Poison" />
+            <span *ngIf="selectedMonster?.immunities?.poison !== undefined"
+                  [ngClass]="{
                 'stat-value': true,
                 positive: selectedMonster?.immunities?.poison,
                 negative: !selectedMonster?.immunities?.poison,
-              }"
-            >
+              }">
               {{
                 selectedMonster?.immunities?.poison ? 'Immune' : '❌ Not Immune'
               }}
             </span>
           </div>
           <div class="defense-box">
-            <img
-              src="https://oldschool.runescape.wiki/images/Venom_hitsplat.png?1977a"
-              title="Venom"
-            />
-            <span
-              *ngIf="selectedMonster?.immunities?.venom !== undefined"
-              [ngClass]="{
+            <img src="https://oldschool.runescape.wiki/images/Venom_hitsplat.png?1977a"
+                 title="Venom" />
+            <span *ngIf="selectedMonster?.immunities?.venom !== undefined"
+                  [ngClass]="{
                 'stat-value': true,
                 positive: selectedMonster?.immunities?.venom,
                 negative: !selectedMonster?.immunities?.venom,
-              }"
-            >
+              }">
               {{
                 selectedMonster?.immunities?.venom ? 'Immune' : '❌ Not Immune'
               }}
             </span>
           </div>
           <div class="defense-box">
-            <img
-              src="https://oldschool.runescape.wiki/images/Cannon_barrels.png?3c432"
-              title="Cannonable"
-            />
-            <span
-              *ngIf="selectedMonster?.immunities?.cannons !== undefined"
-              [ngClass]="{
+            <img src="https://oldschool.runescape.wiki/images/Cannon_barrels.png?3c432"
+                 title="Cannonable" />
+            <span *ngIf="selectedMonster?.immunities?.cannons !== undefined"
+                  [ngClass]="{
                 'stat-value': true,
                 positive: selectedMonster?.immunities?.cannons,
                 negative: !selectedMonster?.immunities?.cannons,
-              }"
-            >
+              }">
               {{
                 selectedMonster?.immunities?.cannons
                   ? 'Immune'
@@ -397,18 +330,14 @@
             </span>
           </div>
           <div class="defense-box">
-            <img
-              src="https://oldschool.runescape.wiki/images/Resurrect_Greater_Ghost.png?687f2"
-              title="Thralls"
-            />
-            <span
-              *ngIf="selectedMonster?.immunities?.thralls !== undefined"
-              [ngClass]="{
+            <img src="https://oldschool.runescape.wiki/images/Resurrect_Greater_Ghost.png?687f2"
+                 title="Thralls" />
+            <span *ngIf="selectedMonster?.immunities?.thralls !== undefined"
+                  [ngClass]="{
                 'stat-value': true,
                 positive: selectedMonster?.immunities?.thralls,
                 negative: !selectedMonster?.immunities?.thralls,
-              }"
-            >
+              }">
               {{
                 selectedMonster?.immunities?.thralls
                   ? 'Immune'
@@ -423,30 +352,66 @@
     <!-- Player Loadout -->
     <div class="character-loadout">
       <h3>Your Loadout</h3>
-      <div class="gear-slot" *ngFor="let slot of getGearSlots(selectedMonster)">
-        <img
-          *ngIf="
-            ownedGear[slot]?.[0] &&
-            gearData[gearService.getGearCategory(slot)]?.[ownedGear[slot][0]]
-          "
-          [src]="
-            gearData[gearService.getGearCategory(slot)][ownedGear[slot][0]]
-              .image
-          "
-          [alt]="ownedGear[slot][0]"
-          class="item-icon"
-        />
-        <p *ngIf="ownedGear[slot]">{{ ownedGear[slot][0] || 'None' }}</p>
-        <!-- ✅ Show 'None' if no item -->
+      <div class="gear-grid">
+        <!-- Row 1 -->
+        <div class="gear-slot blank"></div>
+        <div class="gear-slot helmet">
+          <img *ngIf="ownedGear['Helmet']?.[0]" [src]="gearData['helmets']?.[ownedGear['Helmet'][0]]?.image" [alt]="ownedGear['Helmet'][0]" />
+        </div>
+        <div class="gear-slot blank"></div>
+
+        <!-- Row 2 -->
+        <div class="gear-slot cape">
+          <img *ngIf="ownedGear['Cape']?.[0]" [src]="gearData['capes']?.[ownedGear['Cape'][0]]?.image" [alt]="ownedGear['Cape'][0]" />
+        </div>
+        <div class="gear-slot amulet">
+          <img *ngIf="ownedGear['Amulet']?.[0]" [src]="gearData['amulets']?.[ownedGear['Amulet'][0]]?.image" [alt]="ownedGear['Amulet'][0]" />
+        </div>
+        <div class="gear-slot ammo">
+          <img *ngIf="ownedGear['Ammo']?.[0]" [src]="gearData['ammo']?.[ownedGear['Ammo'][0]]?.image" [alt]="ownedGear['Ammo'][0]" />
+        </div>
+
+        <!-- Row 3 -->
+        <div class="gear-slot weapon">
+          <img *ngIf="ownedGear['Weapon']?.[0]" [src]="gearData['weapons']?.[ownedGear['Weapon'][0]]?.image" [alt]="ownedGear['Weapon'][0]" />
+        </div>
+        <div class="gear-slot body">
+          <img *ngIf="ownedGear['Body']?.[0]" [src]="gearData['body']?.[ownedGear['Body'][0]]?.image" [alt]="ownedGear['Body'][0]" />
+        </div>
+        <div class="gear-slot shield">
+          <img *ngIf="ownedGear['Shield']?.[0]" [src]="gearData['shields']?.[ownedGear['Shield'][0]]?.image" [alt]="ownedGear['Shield'][0]" />
+        </div>
+
+        <!-- Row 4 -->
+        <div class="gear-slot special">
+          <img *ngIf="ownedGear['Special Attack']?.[0]" [src]="gearData['special_attack']?.[ownedGear['Special Attack'][0]]?.image" [alt]="ownedGear['Special Attack'][0]" />
+        </div>
+        <div class="gear-slot legs">
+          <img *ngIf="ownedGear['Legs']?.[0]" [src]="gearData['legs']?.[ownedGear['Legs'][0]]?.image" [alt]="ownedGear['Legs'][0]" />
+        </div>
+        <div class="gear-slot blank2"></div>
+
+        <!-- Row 5 -->
+        <div class="gear-slot gloves">
+          <img *ngIf="ownedGear['Gloves']?.[0]" [src]="gearData['gloves']?.[ownedGear['Gloves'][0]]?.image" [alt]="ownedGear['Gloves'][0]" />
+        </div>
+        <div class="gear-slot boots">
+          <img *ngIf="ownedGear['Boots']?.[0]" [src]="gearData['boots']?.[ownedGear['Boots'][0]]?.image" [alt]="ownedGear['Boots'][0]" />
+        </div>
+        <div class="gear-slot ring">
+          <img *ngIf="ownedGear['Ring']?.[0]" [src]="gearData['rings']?.[ownedGear['Ring'][0]]?.image" [alt]="ownedGear['Ring'][0]" />
+        </div>
       </div>
     </div>
+
+
   </div>
   <div class="recommended-gear-table">
     <!-- Gear Setup Tabs -->
     <div class="gear-tabs">
       <button
         *ngFor="let setup of getGearSetups(selectedMonster!)"
-        (click)="selectedSetup = setup"
+        (click)="changeSetup(setup)"
         [class.active]="selectedSetup === setup"
       >
         {{ setup }}

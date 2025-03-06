@@ -137,13 +137,108 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 
-.gear-slot {
-  display: flex;
+.gear-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(5, 1fr); /* 5 rows */
+  gap: 15px; /* Increase spacing between items */
+  width: 300px; /* Adjust width to ensure proper spacing */
+  height: 500px; /* Ensure proper height */
+  justify-items: center;
   align-items: center;
-  gap: 10px;
+  background: rgba(20, 20, 20, 0.8); /* Dark background */
+  padding: 15px;
+  border-radius: 10px;
 }
+
+/* 🔹 Individual Gear Slot Styling */
+.gear-slot {
+  width: 50px;
+  height: 50px;
+  background: rgba(20, 20, 20, 0.8);
+  border: 2px solid #7a644d;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+  /* 🔹 Specific Grid Positions for Each Item */
+  .gear-slot.blank {
+    visibility: hidden;
+  }
+  /* Hide blank spots */
+  .gear-slot.helmet {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .gear-slot.cape {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .gear-slot.amulet {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .gear-slot.ammo {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .gear-slot.weapon {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .gear-slot.body {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .gear-slot.shield {
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .gear-slot.special {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .gear-slot.legs {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .gear-slot.blank2 {
+    grid-column: 3;
+    grid-row: 4;
+    visibility: hidden;
+  }
+
+  .gear-slot.gloves {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .gear-slot.boots {
+    grid-column: 2;
+    grid-row: 5;
+  }
+
+  .gear-slot.ring {
+    grid-column: 3;
+    grid-row: 5;
+  }
+
+
 
 .gear-slot img {
   width: 40px;
