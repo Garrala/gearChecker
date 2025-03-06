@@ -356,58 +356,117 @@
         <!-- Row 1 -->
         <div class="gear-slot blank"></div>
         <div class="gear-slot helmet">
-          <img *ngIf="ownedGear['Helmet']?.[0]" [src]="gearData['helmets']?.[ownedGear['Helmet'][0]]?.image" [alt]="ownedGear['Helmet'][0]" />
-        </div>
+		<img [src]="ownedGear['Helmet']?.length 
+           ? gearData['helmets']?.[ownedGear['Helmet'][0]]?.image 
+           : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" 
+     [alt]="ownedGear['Helmet']?.length ? ownedGear['Helmet'][0] : 'No Helmet'" 
+     [attr.title]="ownedGear['Helmet']?.length ? ownedGear['Helmet'][0] : 'No Helmet'" 
+     (error)="handleImageError($event)" />
+
+		
+		</div>
         <div class="gear-slot blank"></div>
 
         <!-- Row 2 -->
         <div class="gear-slot cape">
-          <img *ngIf="ownedGear['Cape']?.[0]" [src]="gearData['capes']?.[ownedGear['Cape'][0]]?.image" [alt]="ownedGear['Cape'][0]" />
+		<img [src]="ownedGear['Cape']?.[0] 
+                 ? gearData['capes']?.[ownedGear['Cape'][0]]?.image 
+                 : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" 
+           [alt]="ownedGear['Cape'][0][0] || 'No Cape'" 
+		   [attr.title]="ownedGear['Cape'][0]?.length ? ownedGear['Cape'][0] : 'No Cape'"
+           (error)="handleImageError($event)" />
+
         </div>
         <div class="gear-slot amulet">
-          <img *ngIf="ownedGear['Amulet']?.[0]" [src]="gearData['amulets']?.[ownedGear['Amulet'][0]]?.image" [alt]="ownedGear['Amulet'][0]" />
+		<img [src]="ownedGear['Amulet']?.[0] 
+                 ? gearData['amulets']?.[ownedGear['Amulet'][0]]?.image 
+                 : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" 
+           [alt]="ownedGear['Amulet'][0] || 'No Amulet'" 
+		   [attr.title]="ownedGear['Amulet'][0]?.length ? ownedGear['Amulet'][0] : 'No Amulet'"
+           (error)="handleImageError($event)" />
+
         </div>
         <div class="gear-slot ammo">
-          <img *ngIf="ownedGear['Ammo']?.[0]" [src]="gearData['ammo']?.[ownedGear['Ammo'][0]]?.image" [alt]="ownedGear['Ammo'][0]" />
+		<img [src]="ownedGear['Ammo']?.[0] 
+                 ? gearData['ammo']?.[ownedGear['Ammo'][0]]?.image 
+                 : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" 
+           [alt]="ownedGear['Ammo'][0] || 'No Ammo'" 
+		   [attr.title]="ownedGear['Ammo'][0]?.length ? ownedGear['Ammo'][0] : 'No Ammo'"
+           (error)="handleImageError($event)" />
+
         </div>
 
         <!-- Row 3 -->
         <div class="gear-slot weapon">
-          <img *ngIf="ownedGear['Weapon']?.[0]"
-               [src]="gearData['weapons']?.[ownedGear['Weapon'][0]]?.image"
-               [alt]="ownedGear['Weapon'][0]" />
+          <img [src]="ownedGear['Weapon']?.[0] 
+                 ? gearData['weapons']?.[ownedGear['Weapon'][0]]?.image 
+                 : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" 
+           [alt]="ownedGear['Weapon'][0] || 'No Weapon'"  
+		   [attr.title]="ownedGear['Weapon'][0]?.length ? ownedGear['Weapon'][0] : 'No Weapon'"
+           (error)="handleImageError($event)" />
         </div>
         <div class="gear-slot body">
-          <img *ngIf="ownedGear['Body']?.[0]"
-               [src]="gearData['body']?.[ownedGear['Body'][0]]?.image"
-               [alt]="ownedGear['Body'][0]" />
+          <img [src]="ownedGear['Body']?.[0] 
+                 ? gearData['body']?.[ownedGear['Body'][0]]?.image 
+                 : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" 
+           [alt]="ownedGear['Body'][0] || 'No Body Armor'"   
+		   [attr.title]="ownedGear['Body'][0]?.length ? ownedGear['Body'][0] : 'No Body'"
+           (error)="handleImageError($event)" />
         </div>
         <!-- ✅ Conditionally hide the shield slot if weapon is two-handed -->
         <div class="gear-slot shield">
-          <img *ngIf="ownedGear['Shield']?.[0]"
-               [src]="gearData['shields']?.[ownedGear['Shield'][0]]?.image"
-               [alt]="ownedGear['Shield'][0]" />
+          <img [src]="ownedGear['Shield']?.length 
+                 ? gearData['shields']?.[ownedGear['Shield'][0]]?.image 
+                 : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" 
+         [alt]="ownedGear['Shield']?.length ? ownedGear['Shield'][0] : 'No Shield'" 
+		 [attr.title]="ownedGear['Shield'][0]?.length ? ownedGear['Shield'][0] : 'No Shield'"
+         (error)="handleImageError($event)" />
         </div>
 
 
         <!-- Row 4 -->
         <div class="gear-slot special">
-          <img *ngIf="ownedGear['Special Attack']?.[0]" [src]="gearData['special_attack']?.[ownedGear['Special Attack'][0]]?.image" [alt]="ownedGear['Special Attack'][0]" />
-        </div>
+		<img [src]="ownedGear['Special Attack']?.length 
+                 ? gearData['special_attack']?.[ownedGear['Special Attack'][0]]?.image 
+                 : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" 
+         [alt]="ownedGear['Special Attack']?.length ? ownedGear['Special Attack'][0] : 'No Special Attack Weapon'" 
+         (error)="handleImageError($event)" />
+		
+		</div>
         <div class="gear-slot legs">
-          <img *ngIf="ownedGear['Legs']?.[0]" [src]="gearData['legs']?.[ownedGear['Legs'][0]]?.image" [alt]="ownedGear['Legs'][0]" />
+		<img [src]="ownedGear['Legs']?.[0] 
+                 ? gearData['legs']?.[ownedGear['Legs'][0]]?.image 
+                 : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" 
+           [alt]="ownedGear['Legs'][0] || 'No Leg Armor'" 
+           (error)="handleImageError($event)" />
+
         </div>
         <div class="gear-slot blank2"></div>
 
         <!-- Row 5 -->
         <div class="gear-slot gloves">
-          <img *ngIf="ownedGear['Gloves']?.[0]" [src]="gearData['gloves']?.[ownedGear['Gloves'][0]]?.image" [alt]="ownedGear['Gloves'][0]" />
+		<img [src]="ownedGear['Gloves']?.[0] 
+                 ? gearData['gloves']?.[ownedGear['Gloves'][0]]?.image 
+                 : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" 
+           [alt]="ownedGear['Gloves'][0] || 'No Gloves'" 
+           (error)="handleImageError($event)" />
+
         </div>
         <div class="gear-slot boots">
-          <img *ngIf="ownedGear['Boots']?.[0]" [src]="gearData['boots']?.[ownedGear['Boots'][0]]?.image" [alt]="ownedGear['Boots'][0]" />
+		<img [src]="ownedGear['Boots']?.[0] 
+                 ? gearData['boots']?.[ownedGear['Boots'][0]]?.image 
+                 : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" 
+           [alt]="ownedGear['Boots'][0] || 'No Boots'" 
+           (error)="handleImageError($event)" />
+
         </div>
         <div class="gear-slot ring">
-          <img *ngIf="ownedGear['Ring']?.[0]" [src]="gearData['rings']?.[ownedGear['Ring'][0]]?.image" [alt]="ownedGear['Ring'][0]" />
+		<img [src]="ownedGear['Ring']?.[0] 
+                 ? gearData['rings']?.[ownedGear['Ring'][0]]?.image 
+                 : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" 
+           [alt]="ownedGear['Ring'][0] || 'No Ring'" 
+           (error)="handleImageError($event)" />
+
         </div>
       </div>
     </div>

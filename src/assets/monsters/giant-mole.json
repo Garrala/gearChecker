@@ -372,7 +372,7 @@
         ["Fire cape"],
         ["Mythical cape"],
         ["Soul cape", "Ardougne cloak 4", "Ardougne cloak 3"],
-        ["Skillcape (t)", "Ardougne cloak 2", "Vestment cloak"]
+        ["Skillcape (t)", "Ardougne cloak 2", "God vestment cloaks"]
       ],
       "Body": [["Dharok's platebody"]],
       "Legs": [["Dharok's platelegs"]],
@@ -414,7 +414,7 @@
       "Cape": [
         ["Fire cape"],
         ["Ardougne cloak 4"],
-        ["Ibsidian cape"],
+        ["Obsidian cape"],
         ["Mixed hide cape"]
       ],
       "Body": [

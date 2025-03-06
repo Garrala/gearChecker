@@ -259,4 +259,10 @@ export class MonsterOverviewComponent implements OnInit {
   objectKeys(obj: any): string[] {
     return obj ? Object.keys(obj) : []
   }
+  
+  handleImageError(event: Event) {
+  const target = event.target as HTMLImageElement;
+  target.src = 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'; // Replace with your fallback image
+}
+
 }
