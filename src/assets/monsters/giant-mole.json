@@ -174,7 +174,7 @@
         ["Max cape", "Ranging cape"]
       ],
       "Body": [["Elite void top"], ["Void knight top"]],
-      "Legs": [["Elite void bottom"], ["Void knight robe"]],
+      "Legs": [["Elite void robe"], ["Void knight robe"]],
       "Gloves": [["Void knight gloves"]],
       "Boots": [
         ["Pegasian boots"],
@@ -258,6 +258,7 @@
     "Ranged (Void)": {
       "Weapon": [["Twisted bow"], ["Bow of faerdhinen"]],
       "Special Attack": [["Elder maul"]],
+	  "Shield": [],
       "Helmet": [["Void ranger helm", "Void melee helm"]],
       "Amulet": [
         ["Necklace of anguish"],
@@ -270,7 +271,7 @@
         ["Max cape", "Ranging cape"]
       ],
       "Body": [["Elite void top"], ["Void knight top"]],
-      "Legs": [["Elite void bottom"], ["Void knight robe"]],
+      "Legs": [["Elite void robe"], ["Void knight robe"]],
       "Gloves": [["Void knight gloves"]],
       "Boots": [
         ["Pegasian boots"],

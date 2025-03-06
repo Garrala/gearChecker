@@ -130,5 +130,9 @@
   "Void mage helm": {
     "image": "https://oldschool.runescape.wiki/images/Void_mage_helm.png?4afbb",
     "wiki": "https://oldschool.runescape.wiki/w/Void_mage_helm"
+  },
+  "Blood moon helm": {
+    "image": "https://oldschool.runescape.wiki/images/Blood_moon_helm.png?07650",
+    "wiki": "https://oldschool.runescape.wiki/w/Blood_moon_helm"
   }
 }

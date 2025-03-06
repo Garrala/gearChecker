@@ -415,11 +415,10 @@
         </div>
         <!-- ✅ Conditionally hide the shield slot if weapon is two-handed -->
         <div class="gear-slot shield">
-          <img [src]="ownedGear['Shield']?.length 
+		 <img [src]="ownedGear['Shield']?.length 
                  ? gearData['shields']?.[ownedGear['Shield'][0]]?.image 
                  : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" 
          [alt]="ownedGear['Shield']?.length ? ownedGear['Shield'][0] : 'No Shield'" 
-		 [attr.title]="ownedGear['Shield'][0]?.length ? ownedGear['Shield'][0] : 'No Shield'"
          (error)="handleImageError($event)" />
         </div>
 
@@ -438,6 +437,7 @@
                  ? gearData['legs']?.[ownedGear['Legs'][0]]?.image 
                  : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" 
            [alt]="ownedGear['Legs'][0] || 'No Leg Armor'" 
+		   [attr.title]="ownedGear['Legs'][0]?.length ? ownedGear['Legs'][0] : 'No Legs'"
            (error)="handleImageError($event)" />
 
         </div>
