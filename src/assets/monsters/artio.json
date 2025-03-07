@@ -2,25 +2,28 @@
   "name": "Artio",
   "image": "https://oldschool.runescape.wiki/images/Artio.png?bfba7",
   "wiki_link": "https://oldschool.runescape.wiki/w/Artio",
-  "combat_level": 725,
-  "hp": 500,
-  "max_hit": 41,
-  "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+  "combat_level": 320,
+  "hp": 450,
+  "max_hit": {
+    "melee": 35,
+    "magic": 50,
+    "ranged": 17
+  },
   "defense": {
     "melee": {
-      "stab": 150,
-      "slash": 150,
-      "crush": 200
+      "stab": 125,
+      "slash": 110,
+      "crush": 110
     },
-    "magic": 200,
+    "magic": 0,
     "ranged": {
-      "arrows": 50,
-      "bolts": 50,
-      "thrown": 50
+      "arrows": 40,
+      "bolts": 40,
+      "thrown": 40
     }
   },
-  "attack_styles": ["Magic", "Ranged", "Venom"],
-  "attack_speed": 3,
+  "attack_styles": ["Melee", "Magic", "Ranged"],
+  "attack_speed": 5,
   "aggressive": true,
   "immunities": {
     "poison": true,
@@ -28,76 +31,140 @@
     "cannons": false,
     "thralls": false
   },
-
   "gear_setups": {
     "Ranged": {
       "Weapon": [
-        ["Twisted bow"],
+        ["Webweaver bow", "Craw's bow"],
         ["Bow of faerdhinen"],
-        ["Crystal bow"],
-        ["Zaryte crossbow"],
-        ["Armadyl crossbow"]
+        ["Zaryte crossbow", "Armadyl crossbow", "Dragon crossbow"],
+        ["Rune crossbow"],
+        ["Magic shortbow (i)"]
       ],
       "Special Attack": [["Zaryte crossbow"]],
+      "Shield": [
+        ["Twisted buckler"],
+        ["Dragonfire ward", "Odium ward"],
+        ["Book of law", "Unholy book"]
+      ],
+      "Ammo": [
+        ["Rada's blessing 4"],
+        ["God blessing", "Rada's blessing 3"],
+        ["Ruby dragon bolts (e)", "Ruby bolts (e)"],
+        ["Broad bolts", "Adamant bolts"],
+        ["Amethyst arrow", "Rune arrow"]
+      ],
       "Helmet": [
-        ["Slayer helmet (i)", "Masori mask (f)"],
-        ["Armadyl helmet"],
+        ["Slayer helmet (i)"],
         ["Crystal helm"],
-        ["Robin hood hat"],
-        ["Blessed coif"]
+        ["Karil's coif"],
+        ["Archer helm"],
+        ["Bloodbark helm", "Farseer helm", "Mitre"]
       ],
       "Amulet": [
         ["Necklace of anguish"],
-        ["Bonecrusher necklace"],
         ["Amulet of fury"],
-        ["Amulet of glory"]
+        ["Amulet of glory"],
+        ["Amulet of power"]
       ],
       "Cape": [
-        ["Dizana's quiver"],
         ["Ava's assembler"],
-        ["Max cape", "Ranging cape"]
+        ["Ava's accumulator"],
+        ["Imbued god cape"],
+        ["Ava's attractor"],
+        ["God capes"]
       ],
       "Body": [
         ["Masori body (f)"],
-        ["Armadyl chestplate"],
+        ["Masori body"],
         ["Crystal body"],
-        ["Blessed body"],
-        ["Black d'hide body"]
+        ["Black d'hide body"],
+        ["Mixed hide top"]
       ],
-      "Legs": [
-        ["Masori chaps (f)"],
-        ["Armadyl chainskirt"],
-        ["Crystal legs"],
-        ["Blessed chaps"],
-        ["Black d'hide chaps"]
-      ],
+      "Legs": [["Black d'hide chaps"], ["Crystal legs"], ["Red d'hide chaps"]],
       "Gloves": [
-        ["Zaryte vambraces"],
         ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Black d'hide vambraces"]
+        ["Black d'hide vambraces"],
+        ["Rune gloves"],
+        ["Red d'hide vambraces"]
       ],
       "Boots": [
-        ["Pegasian boots"],
-        ["Ranger boots", "Devout boots"],
         ["Blessed boots"],
-        ["Aranea boots"],
-        ["Mixed hide boots"]
+        ["Mixed hide boots"],
+        ["Bloodbark boots"],
+        ["Mystic boots"],
+        ["Snakeskin boots"]
       ],
       "Ring": [
-        ["Venator ring"],
-        ["Lightbearer"],
-        ["Ring of the gods", "Archers ring (i)"],
-        ["Ring of shadows", "Brimstone ring"],
-        ["Ring of endurance"]
-      ],
-      "Ammo": [
-        ["Dragon arrow"],
-        ["Amethyst arrow"],
-        ["Rune arrow"],
-        ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
-        ["Diamond bolts (e)", "Ruby bolts (e)"]
+        ["Ring of shadows"],
+        ["Lunar ring"],
+        ["Explorer's ring"],
+        ["Ring of wealth (i)"]
       ]
+    },
+    "Magic": {
+      "Weapon": [
+        ["Accursed sceptre"],
+        ["Thammaron's sceptre", "Tumeken's shadow"],
+        ["Sanguinesti staff", "Trident of the swamp"],
+        ["Trident of the seas"],
+        ["Warped sceptre"]
+      ],
+      "Shield": [
+        ["Elidinis' ward (f)"],
+        ["Book of darkness"],
+        ["Unholy book"],
+        ["Elidinis' ward"]
+      ],
+      "Helmet": [
+        ["Slayer helmet (i)"],
+        ["Ahrim's hood"],
+        ["Bloodbark helm"],
+        ["Mitre"]
+      ],
+      "Amulet": [
+        ["Occult necklace"],
+        ["Amulet of glory"],
+        ["Amulet of power"],
+        ["Amulet of magic"]
+      ],
+      "Cape": [
+        ["Imbued god cape"],
+        ["God capes"],
+        ["Ardougne cloak 4"],
+        ["Vestment cloak"]
+      ],
+      "Body": [
+        ["Ancestral robe top"],
+        ["Virtus robe top"],
+        ["Bloodbark body"],
+        ["Mystic robe top", "Masori body (f)", "Armadyl chestplate"]
+      ],
+      "Legs": [
+        ["Ancestral robe bottom"],
+        ["Virtus robe bottom"],
+        ["Bloodbark legs"],
+        ["Mystic robe bottom", "Masori chaps (f)", "Armadyl chainskirt"]
+      ],
+      "Gloves": [
+        ["Tormented bracelet"],
+        ["Barrows gloves"],
+        ["Rune gloves"],
+        ["Combat bracelet"]
+      ],
+      "Boots": [
+        ["Bloodbark boots"],
+        ["Mystic boots"],
+        ["Ghostly boots"],
+        ["Splitbark boots"],
+        ["Moonclan boots"]
+      ],
+      "Ring": [
+        ["Ring of shadows"],
+        ["Explorer's ring 4"],
+        ["Beacon ring"],
+        ["Ring of wealth (i)"]
+      ],
+      "Ammo": [["Rada's blessing 4"], ["God blessing", "Rada's blessing 3"]]
     }
   }
 }

@@ -103,6 +103,16 @@
   align-items: center;
 }
 
+.info-grid-title {
+  font-size: 16px;
+  margin: 8px;
+}
+
+.boss-title {
+  font-size: 24px;
+  margin-top: 8px;
+}
+
 .info-item {
   background: rgba(0, 0, 0, 0.2);
   padding: 10px;
@@ -152,6 +162,7 @@
   background: rgba(20, 20, 20, 0.8); /* Dark background */
   padding: 15px;
   border-radius: 10px;
+  margin-top: 10%;
 }
 
 /* 🔹 Individual Gear Slot Styling */
@@ -167,82 +178,80 @@
   position: relative;
 }
 
-  /* 🔹 Specific Grid Positions for Each Item */
-  .gear-slot.blank {
-    visibility: hidden;
-  }
-  /* Hide blank spots */
-  .gear-slot.helmet {
-    grid-column: 2;
-    grid-row: 1;
-  }
+/* 🔹 Specific Grid Positions for Each Item */
+.gear-slot.blank {
+  visibility: hidden;
+}
+/* Hide blank spots */
+.gear-slot.helmet {
+  grid-column: 2;
+  grid-row: 1;
+}
 
-  .gear-slot.cape {
-    grid-column: 1;
-    grid-row: 2;
-  }
+.gear-slot.cape {
+  grid-column: 1;
+  grid-row: 2;
+}
 
-  .gear-slot.amulet {
-    grid-column: 2;
-    grid-row: 2;
-  }
+.gear-slot.amulet {
+  grid-column: 2;
+  grid-row: 2;
+}
 
-  .gear-slot.ammo {
-    grid-column: 3;
-    grid-row: 2;
-  }
+.gear-slot.ammo {
+  grid-column: 3;
+  grid-row: 2;
+}
 
-  .gear-slot.weapon {
-    grid-column: 1;
-    grid-row: 3;
-  }
+.gear-slot.weapon {
+  grid-column: 1;
+  grid-row: 3;
+}
 
-  .gear-slot.body {
-    grid-column: 2;
-    grid-row: 3;
-  }
+.gear-slot.body {
+  grid-column: 2;
+  grid-row: 3;
+}
 
-  .gear-slot.shield {
-    grid-column: 3;
-    grid-row: 3;
-  }
+.gear-slot.shield {
+  grid-column: 3;
+  grid-row: 3;
+}
 
-  .gear-slot.special {
-    grid-column: 1;
-    grid-row: 4;
-  }
+.gear-slot.special {
+  grid-column: 1;
+  grid-row: 4;
+}
 
-  .gear-slot.legs {
-    grid-column: 2;
-    grid-row: 4;
-  }
+.gear-slot.legs {
+  grid-column: 2;
+  grid-row: 4;
+}
 
-  .gear-slot.blank2 {
-    grid-column: 3;
-    grid-row: 4;
-    visibility: hidden;
-  }
+.gear-slot.blank2 {
+  grid-column: 3;
+  grid-row: 4;
+  visibility: hidden;
+}
 
-  .gear-slot.gloves {
-    grid-column: 1;
-    grid-row: 5;
-  }
+.gear-slot.gloves {
+  grid-column: 1;
+  grid-row: 5;
+}
 
-  .gear-slot.boots {
-    grid-column: 2;
-    grid-row: 5;
-  }
+.gear-slot.boots {
+  grid-column: 2;
+  grid-row: 5;
+}
 
-  .gear-slot.ring {
-    grid-column: 3;
-    grid-row: 5;
-  }
-
-
+.gear-slot.ring {
+  grid-column: 3;
+  grid-row: 5;
+}
 
 .gear-slot img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 
 /* 🟠 Recommended Gear - Bottom */
@@ -314,7 +323,7 @@
 
 .item-icon {
   width: 40px; /* Adjust this to match your other screen */
-  height: 40px;
+  height: 50px;
   display: block;
   margin: auto;
   padding-top: 20px;

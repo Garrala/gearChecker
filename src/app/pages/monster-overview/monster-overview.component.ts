@@ -16,17 +16,28 @@ export class MonsterOverviewComponent implements OnInit {
   selectedMonster: Monster | null = null
   selectedSetup: string = 'Magic' // Default tab
   gearData: {
-    [slot: string]: { [item: string]: { image: string; wiki: string; twoHanded: string } }
+    [slot: string]: {
+      [item: string]: { image: string; wiki: string; twoHanded: string }
+    }
   } = {} // ✅ Store data from multiple JSONs
   ownedGear: { [key: string]: string[] } = {} // ✅ Store multiple items per slot
   recommendedGear: { [key: string]: string[] } = {}
   isMonsterListLoading: boolean = true
   isMonsterDetailsLoading: boolean = false
   gearSlots: string[] = [
-    "Helmet", "Cape", "Amulet", "Ammo",
-    "Weapon", "Body", "Shield", "Special Attack",
-    "Legs", "Gloves", "Boots", "Ring"
-  ];
+    'Helmet',
+    'Cape',
+    'Amulet',
+    'Ammo',
+    'Weapon',
+    'Body',
+    'Shield',
+    'Special Attack',
+    'Legs',
+    'Gloves',
+    'Boots',
+    'Ring',
+  ]
 
   constructor(
     private monsterService: MonsterService,
@@ -75,7 +86,7 @@ export class MonsterOverviewComponent implements OnInit {
   }
 
   getGearSlots(monster: Monster | null | undefined): string[] {
-    console.log("Current Selected Setup:", this.selectedSetup);
+    console.log('Current Selected Setup:', this.selectedSetup)
 
     if (!monster?.gear_setups || !monster?.gear_setups[this.selectedSetup]) {
       return []
@@ -167,71 +178,80 @@ export class MonsterOverviewComponent implements OnInit {
   }
 
   updateLoadout() {
-  console.log('🛠 Updating Loadout for:', this.selectedMonster?.name);
+    console.log('🛠 Updating Loadout for:', this.selectedMonster?.name)
 
-  if (!this.selectedMonster || !this.selectedMonster.gear_setups) return;
+    if (!this.selectedMonster || !this.selectedMonster.gear_setups) return
 
-  const storedOwnedGear = localStorage.getItem('ownedGear');
-  this.ownedGear = storedOwnedGear ? JSON.parse(storedOwnedGear) : {};
+    const storedOwnedGear = localStorage.getItem('ownedGear')
+    this.ownedGear = storedOwnedGear ? JSON.parse(storedOwnedGear) : {}
 
-  const storedRecommendedGear = localStorage.getItem('recommendedGear');
-  this.recommendedGear = storedRecommendedGear ? JSON.parse(storedRecommendedGear) : {};
+    const storedRecommendedGear = localStorage.getItem('recommendedGear')
+    this.recommendedGear = storedRecommendedGear
+      ? JSON.parse(storedRecommendedGear)
+      : {}
 
-  const characterLoadout: { [slot: string]: string[] } = {};
+    const characterLoadout: { [slot: string]: string[] } = {}
 
-  for (const slot of Object.keys(this.selectedMonster.gear_setups[this.selectedSetup])) {
-    const recommendedItems = this.selectedMonster?.gear_setups?.[this.selectedSetup]?.[slot] || [];
-    const slotMapping: { [key: string]: string } = {
-      "Shield": "Shields",
-      "Glove": "Gloves",
-      "Boot": "Boots",
-      "Helmet": "Helmets",
-      "Amulet": "Amulets",
-      "Cape": "Capes",
-      "Body": "Body",
-      "Legs": "Legs",
-      "Ring": "Rings",
-      "Ammo": "Ammo",
-      "Special Attack": "Special Attack"
-    };
+    for (const slot of Object.keys(
+      this.selectedMonster.gear_setups[this.selectedSetup]
+    )) {
+      const recommendedItems =
+        this.selectedMonster?.gear_setups?.[this.selectedSetup]?.[slot] || []
+      const slotMapping: { [key: string]: string } = {
+        Shield: 'Shields',
+        Glove: 'Gloves',
+        Boot: 'Boots',
+        Helmet: 'Helmets',
+        Amulet: 'Amulets',
+        Cape: 'Capes',
+        Body: 'Body',
+        Legs: 'Legs',
+        Ring: 'Rings',
+        Ammo: 'Ammo',
+        'Special Attack': 'Special Attack',
+      }
 
-    const normalizedSlot = slotMapping[slot] || slot;
-    const ownedItems = this.ownedGear[normalizedSlot] || [];
+      const normalizedSlot = slotMapping[slot] || slot
+      const ownedItems = this.ownedGear[normalizedSlot] || []
 
-    console.log(`🔍 Slot: ${slot}`);
-    console.log('Recommended Items:', recommendedItems);
-    console.log('Owned Items:', ownedItems);
+      console.log(`🔍 Slot: ${slot}`)
+      console.log('Recommended Items:', recommendedItems)
+      console.log('Owned Items:', ownedItems)
 
-    if (!recommendedItems.length) {
-      characterLoadout[slot] = ['None'];
-      console.log(`⚠️ No recommended items for ${slot}, setting to None`);
-      continue;
+      if (!recommendedItems.length) {
+        characterLoadout[slot] = ['None']
+        console.log(`⚠️ No recommended items for ${slot}, setting to None`)
+        continue
+      }
+
+      const flattenedRecommendedItems = recommendedItems.flat()
+      const bestItems = flattenedRecommendedItems.filter((item) =>
+        ownedItems.includes(item)
+      )
+
+      characterLoadout[slot] = bestItems.length > 0 ? bestItems : ['None']
+
+      if (characterLoadout[slot].includes('None')) {
+        console.log(`⚠️ No matching items found for ${slot}, setting to None`)
+      }
     }
 
-    const flattenedRecommendedItems = recommendedItems.flat();
-    const bestItems = flattenedRecommendedItems.filter(item => ownedItems.includes(item));
-
-    characterLoadout[slot] = bestItems.length > 0 ? bestItems : ['None'];
-
-    if (characterLoadout[slot].includes('None')) {
-      console.log(`⚠️ No matching items found for ${slot}, setting to None`);
+    // ✅ Check if the weapon is two-handed and clear the shield slot
+    const equippedWeapon = characterLoadout['Weapon']?.[0]
+    if (
+      equippedWeapon &&
+      this.gearData['weapons']?.[equippedWeapon]?.twoHanded
+    ) {
+      console.log(
+        `⚠️ ${equippedWeapon} is a two-handed weapon. Clearing the shield slot.`
+      )
+      characterLoadout['Shield'] = ['None']
     }
+
+    console.log('✅ Final Character Loadout:', characterLoadout)
+    localStorage.setItem('characterLoadout', JSON.stringify(characterLoadout))
+    this.ownedGear = { ...this.ownedGear, ...characterLoadout }
   }
-
-  // ✅ Check if the weapon is two-handed and clear the shield slot
-  const equippedWeapon = characterLoadout['Weapon']?.[0];
-    if (equippedWeapon && this.gearData['weapons']?.[equippedWeapon]?.twoHanded) {
-    console.log(`⚠️ ${equippedWeapon} is a two-handed weapon. Clearing the shield slot.`);
-    characterLoadout['Shield'] = ['None'];
-  }
-
-  console.log('✅ Final Character Loadout:', characterLoadout);
-  localStorage.setItem('characterLoadout', JSON.stringify(characterLoadout));
-  this.ownedGear = { ...this.ownedGear, ...characterLoadout };
-}
-
-
-
 
   isBestOwnedItem(slot: string, item: string): boolean {
     //console.log("Recommended Gear Before Update:", this.recommendedGear);
@@ -250,19 +270,17 @@ export class MonsterOverviewComponent implements OnInit {
   }
 
   changeSetup(setup: string) {
-    this.selectedSetup = setup;
-    console.log(`🔄 Switching setup to: ${setup}`);
-    this.updateLoadout(); // ✅ Refresh loadout when changing setups
+    this.selectedSetup = setup
+    console.log(`🔄 Switching setup to: ${setup}`)
+    this.updateLoadout() // ✅ Refresh loadout when changing setups
   }
-
 
   objectKeys(obj: any): string[] {
     return obj ? Object.keys(obj) : []
   }
-  
-  handleImageError(event: Event) {
-  const target = event.target as HTMLImageElement;
-  target.src = 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'; // Replace with your fallback image
-}
 
+  handleImageError(event: Event) {
+    const target = event.target as HTMLImageElement
+    target.src = 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c' // Replace with your fallback image
+  }
 }
