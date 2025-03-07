@@ -2,25 +2,26 @@
   "name": "Cal'varion",
   "image": "https://oldschool.runescape.wiki/images/Calvar%27ion.png?6268f",
   "wiki_link": "https://oldschool.runescape.wiki/w/Calvar%27ion",
-  "combat_level": 725,
-  "hp": 500,
-  "max_hit": 41,
-  "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+  "combat_level": 264,
+  "hp": 150,
+  "max_hit": {
+    "melee": 26
+  },
   "defense": {
     "melee": {
-      "stab": 150,
-      "slash": 150,
-      "crush": 200
+      "stab": 130,
+      "slash": 128,
+      "crush": -10
     },
-    "magic": 200,
+    "magic": 198,
     "ranged": {
-      "arrows": 50,
-      "bolts": 50,
-      "thrown": 50
+      "arrows": 211,
+      "bolts": 211,
+      "thrown": 211
     }
   },
-  "attack_styles": ["Magic", "Ranged", "Venom"],
-  "attack_speed": 3,
+  "attack_styles": ["Melee", "Magic"],
+  "attack_speed": 6,
   "aggressive": true,
   "immunities": {
     "poison": true,
@@ -30,74 +31,87 @@
   },
 
   "gear_setups": {
-    "Ranged": {
+    "Melee": {
       "Weapon": [
-        ["Twisted bow"],
-        ["Bow of faerdhinen"],
-        ["Crystal bow"],
-        ["Zaryte crossbow"],
-        ["Armadyl crossbow"]
+        ["Ursine chainmace", "Viggora's chainmace"],
+        ["Inquisitor's mace"],
+        [
+          "Abyssal bludgeon",
+          "Zamorakian hasta",
+          "Soulreaper axe",
+          "Zombie axe"
+        ],
+        ["Sarachnis cudgel", "Elder maul", "Dual macuahuitl"],
+        ["Leaf-bladed battleaxe", "Dragon mace"]
       ],
-      "Special Attack": [["Zaryte crossbow"]],
+      "Special Attack": [
+        ["Elder maul"],
+        ["Dragon mace"],
+        ["Barrelchest anchor"]
+      ],
       "Helmet": [
-        ["Slayer helmet (i)", "Masori mask (f)"],
-        ["Armadyl helmet"],
-        ["Crystal helm"],
-        ["Robin hood hat"],
-        ["Blessed coif"]
+        ["Torva full helm"],
+        ["Serpentine helm"],
+        ["Helm of neitiznot"],
+        ["Berserker helm"],
+        ["Dwarven helmet"]
       ],
       "Amulet": [
-        ["Necklace of anguish"],
-        ["Bonecrusher necklace"],
-        ["Amulet of fury"],
-        ["Amulet of glory"]
+        ["Salve amulet (e)"],
+        ["Salve amulet"],
+        ["Amulet of strength"],
+        ["Amulet of glory"],
+        ["Amulet of power"]
       ],
       "Cape": [
-        ["Dizana's quiver"],
-        ["Ava's assembler"],
-        ["Max cape", "Ranging cape"]
+        ["Infernal cape", "Fire cape"],
+        ["Mythical cape"],
+        ["Mixed hide cape"],
+        ["Skillcape (t)"],
+        ["Ardougne cloak 4"]
       ],
       "Body": [
-        ["Masori body (f)"],
-        ["Armadyl chestplate"],
-        ["Crystal body"],
-        ["Blessed body"],
-        ["Black d'hide body"]
+        ["Fighter torso"],
+        ["Mixed hide top"],
+        ["Black d'hide body"],
+        ["Proselyte hauberk"],
+        ["Monk's robe top"]
       ],
       "Legs": [
-        ["Masori chaps (f)"],
-        ["Armadyl chainskirt"],
-        ["Crystal legs"],
-        ["Blessed chaps"],
-        ["Black d'hide chaps"]
+        ["Torva platelegs"],
+        ["Inquisitor's plateskirt"],
+        ["Black d'hide chaps"],
+        ["Proselyte cuisse"],
+        ["Monk's robe"]
+      ],
+      "Shield": [
+        ["Avernic defender"],
+        ["Dragon defender"],
+        ["Dragonfire shield"],
+        ["Rune defender", "Toktz-ket-xil"],
+        ["Book of war", "Falador shield 4"]
       ],
       "Gloves": [
-        ["Zaryte vambraces"],
+        ["Ferocious gloves"],
         ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Black d'hide vambraces"]
+        ["Rune gloves"],
+        ["Combat bracelet"]
       ],
       "Boots": [
-        ["Pegasian boots"],
-        ["Ranger boots", "Devout boots"],
-        ["Blessed boots"],
-        ["Aranea boots"],
-        ["Mixed hide boots"]
+        ["Dragon boots"],
+        ["Rune boots"],
+        ["Mixed hide boots"],
+        ["Climbing boots"],
+        ["Fremennik sea boots 4"]
       ],
       "Ring": [
-        ["Venator ring"],
-        ["Lightbearer"],
-        ["Ring of the gods", "Archers ring (i)"],
-        ["Ring of shadows", "Brimstone ring"],
-        ["Ring of endurance"]
+        ["Ultor ring"],
+        ["Berserker ring (i)"],
+        ["Ring of shadows"],
+        ["Ring of wealth (i)"],
+        ["Explorer's ring 4"]
       ],
-      "Ammo": [
-        ["Dragon arrow"],
-        ["Amethyst arrow"],
-        ["Rune arrow"],
-        ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
-        ["Diamond bolts (e)", "Ruby bolts (e)"]
-      ]
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]]
     }
   }
 }

@@ -97,7 +97,8 @@
         ["Wizard boots"]
       ],
       "Ring": [["Magus ring", "Ring of suffering (i)"], ["Ring of recoil"]],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "God blessing"]]
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "God blessing"]],
+      "Special Attack": ["N/A"]
     },
     "Ranged": {
       "Weapon": [
@@ -160,7 +161,8 @@
         ["Rune arrow"],
         ["Moonlight antler bolts", "Sunlight antler bolts"],
         ["Bolt rack"]
-      ]
+      ],
+      "Shield": ["N/A"]
     }
   }
 }
