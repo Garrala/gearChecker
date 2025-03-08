@@ -2,25 +2,31 @@
   "name": "Cerberus",
   "image": "https://oldschool.runescape.wiki/images/Cerberus.png?47f4c",
   "wiki_link": "https://oldschool.runescape.wiki/w/Cerberus",
-  "combat_level": 725,
-  "hp": 500,
-  "max_hit": 41,
-  "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+  "combat_level": 318,
+  "hp": 600,
+  "max_hit": {
+    "melee": 23,
+    "ranged": 23,
+    "magic": 23
+  },
+  "weaknesses": {
+    "water": "40%"
+  },
   "defense": {
     "melee": {
-      "stab": 150,
-      "slash": 150,
-      "crush": 200
+      "stab": 50,
+      "slash": 100,
+      "crush": 25
     },
-    "magic": 200,
+    "magic": 100,
     "ranged": {
-      "arrows": 50,
-      "bolts": 50,
-      "thrown": 50
+      "arrows": 100,
+      "bolts": 100,
+      "thrown": 100
     }
   },
-  "attack_styles": ["Magic", "Ranged", "Venom"],
-  "attack_speed": 3,
+  "attack_styles": ["Magic", "Ranged", "Melee"],
+  "attack_speed": 6,
   "aggressive": true,
   "immunities": {
     "poison": true,
@@ -28,75 +34,146 @@
     "cannons": false,
     "thralls": false
   },
-
   "gear_setups": {
-    "Ranged": {
+    "Melee": {
       "Weapon": [
-        ["Twisted bow"],
-        ["Bow of faerdhinen"],
-        ["Crystal bow"],
-        ["Zaryte crossbow"],
-        ["Armadyl crossbow"]
+        ["Scythe of vitur", "Emberlight"],
+        ["Soulreaper axe", "Inquisitor's mace"],
+        ["Arclight"],
+        ["Ghrazi rapier"],
+        ["Osmumten's fang"]
       ],
-      "Special Attack": [["Zaryte crossbow"]],
-      "Helmet": [
-        ["Slayer helmet (i)", "Masori mask (f)"],
-        ["Armadyl helmet"],
-        ["Crystal helm"],
-        ["Robin hood hat"],
-        ["Blessed coif"]
+      "Special Attack": [
+        ["Burning claws"],
+        ["Dragon claws", "Elder maul", "Voidwaker", "Bandos godsword"],
+        ["Emberlight", "Dragon warhammer"],
+        ["Saradomin godsword", "Dragon dagger"],
+        ["Arclight", "Dragon mace"]
       ],
+      "Helmet": [["Slayer helmet (i)"], ["Black mask (i)"]],
       "Amulet": [
-        ["Necklace of anguish"],
-        ["Bonecrusher necklace"],
+        ["Amulet of rancour"],
+        ["Amulet of torture"],
+        ["Amulet of blood fury"],
         ["Amulet of fury"],
         ["Amulet of glory"]
       ],
       "Cape": [
+        ["Infernal cape"],
+        ["Fire cape"],
+        ["Ardougne cloak 4"],
+        ["Ardougne cloak 3"],
+        ["Mythical cape"]
+      ],
+      "Body": [
+        ["Inquisitor's hauberk"],
+        ["Torva platebody"],
+        ["Bandos chestplate"],
+        ["Justiciar chestguard", "Fighter torso"],
+        ["Barrows body"]
+      ],
+      "Legs": [
+        ["Inquisitor's plateskirt"],
+        ["Torva platelegs"],
+        ["Bandos tassets"],
+        ["Justiciar legguards"],
+        ["Barrows legs"]
+      ],
+      "Shield": [
+        ["Avernic defender", "Spectral spirit shield"],
+        ["Dragon defender"],
+        ["Dragonfire shield"],
+        ["Rune defender"]
+      ],
+      "Gloves": [
+        ["Ferocious gloves"],
+        ["Barrows gloves"],
+        ["Dragon gloves"],
+        ["Rune gloves"]
+      ],
+      "Boots": [
+        ["Primordial boots"],
+        ["Echo boots"],
+        ["Guardian boots"],
+        ["Dragon boots"],
+        ["Rune boots"]
+      ],
+      "Ring": [
+        ["Ultor ring"],
+        ["Berserker ring (i)"],
+        ["Brimstone ring"],
+        ["Lightbearer"],
+        ["Ring of suffering (i)", "Ring of the gods (i)"]
+      ],
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]]
+    },
+    "Ranged": {
+      "Weapon": [
+        ["Twisted bow"],
+        ["Scorching bow", "Toxic blowpipe"],
+        ["Bow of faerdhinen"],
+        ["Zaryte crossbow"]
+      ],
+      "Special Attack": [
+        ["Zaryte crossbow"],
+        ["Toxic blowpipe", "Tonalztics of ralos"],
+        ["Saradomin godsword"]
+      ],
+      "Helmet": [["Slayer helmet (i)"], ["Black mask (i)"]],
+      "Amulet": [
+        ["Necklace of anguish"],
+        ["Amulet of fury"],
+        ["Amulet of glory"],
+        ["Amulet of power"]
+      ],
+      "Cape": [
         ["Dizana's quiver"],
         ["Ava's assembler"],
-        ["Max cape", "Ranging cape"]
+        ["Ranging cape"],
+        ["Max cape"],
+        ["Ava's accumulator"]
       ],
       "Body": [
         ["Masori body (f)"],
         ["Armadyl chestplate"],
         ["Crystal body"],
         ["Blessed body"],
-        ["Black d'hide body"]
+        ["Karil's leathertop"]
       ],
       "Legs": [
         ["Masori chaps (f)"],
         ["Armadyl chainskirt"],
         ["Crystal legs"],
         ["Blessed chaps"],
-        ["Black d'hide chaps"]
+        ["Karil's leatherskirt"]
       ],
       "Gloves": [
         ["Zaryte vambraces"],
         ["Barrows gloves"],
         ["Blessed vambraces"],
-        ["Black d'hide vambraces"]
+        ["Dragon gloves"],
+        ["Combat bracelet"]
       ],
       "Boots": [
         ["Pegasian boots"],
-        ["Ranger boots", "Devout boots"],
+        ["Ranger boots"],
         ["Blessed boots"],
-        ["Aranea boots"],
-        ["Mixed hide boots"]
+        ["Shayzien boots (5)"],
+        ["Snakeskin boots"]
       ],
       "Ring": [
+        ["Ring of suffering (i)"],
         ["Venator ring"],
         ["Lightbearer"],
-        ["Ring of the gods", "Archers ring (i)"],
-        ["Ring of shadows", "Brimstone ring"],
-        ["Ring of endurance"]
+        ["Archers ring (i)"],
+        ["Ring of the gods (i)"]
       ],
       "Ammo": [
         ["Dragon arrow"],
         ["Amethyst arrow"],
         ["Rune arrow"],
-        ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
-        ["Diamond bolts (e)", "Ruby bolts (e)"]
+        ["Ruby dragon bolts (e)", "Diamond dragon bolts"],
+        ["Rada's blessing 4"]
       ]
     }
   }

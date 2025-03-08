@@ -2,25 +2,27 @@
   "name": "Commander Zilyana",
   "image": "https://oldschool.runescape.wiki/images/Commander_Zilyana.png?c5eaa",
   "wiki_link": "https://oldschool.runescape.wiki/w/Commander_Zilyana",
-  "combat_level": 725,
+  "combat_level": 596,
   "hp": 500,
-  "max_hit": 41,
-  "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+  "max_hit": {
+    "melee": 27,
+    "magic": 20
+  },
   "defense": {
     "melee": {
-      "stab": 150,
-      "slash": 150,
-      "crush": 200
+      "stab": 100,
+      "slash": 100,
+      "crush": 100
     },
-    "magic": 200,
+    "magic": 100,
     "ranged": {
-      "arrows": 50,
-      "bolts": 50,
-      "thrown": 50
+      "arrows": 100,
+      "bolts": 100,
+      "thrown": 75
     }
   },
-  "attack_styles": ["Magic", "Ranged", "Venom"],
-  "attack_speed": 3,
+  "attack_styles": ["Magic", "Melee"],
+  "attack_speed": 2,
   "aggressive": true,
   "immunities": {
     "poison": true,
@@ -28,75 +30,129 @@
     "cannons": false,
     "thralls": false
   },
-
   "gear_setups": {
+    "Magic": {
+      "Weapon": [["Tumeken's shadow"], ["Sanguinesti staff"]],
+      "Special Attack": [["Eldritch nightmare staff"], ["Accursed sceptre"]],
+      "Helmet": [["Ancestral hat"], ["Virtus mask"]],
+      "Amulet": [["Occult necklace"]],
+      "Cape": [["Imbued saradomin cape"], ["Max cape"]],
+      "Body": [["Ancestral robe top"], ["Virtus robe top"]],
+      "Legs": [["Ancestral robe bottom"], ["Virtus robe bottom"]],
+      "Shield": [["Elidinis' ward (f)"]],
+      "Gloves": [["Tormented bracelet"]],
+      "Boots": [["Eternal boots"], ["Infinity boots", "Aranea boots"]],
+      "Ring": [["Magus ring"], ["Lightbearer"]],
+      "Ammo": [["Unholy blessing"]]
+    },
     "Ranged": {
       "Weapon": [
         ["Twisted bow"],
         ["Bow of faerdhinen"],
-        ["Crystal bow"],
         ["Zaryte crossbow"],
-        ["Armadyl crossbow"]
+        ["Armadyl crossbow", "Dragon hunter crossbow"],
+        ["Dragon crossbow", "Rune crossbow"]
       ],
-      "Special Attack": [["Zaryte crossbow"]],
+      "Special Attack": [
+        ["Toxic blowpipe"],
+        ["Zaryte crossbow"],
+        ["Armadyl crossbow", "Tonalztics of ralos"],
+        ["Dragon crossbow", "Dragon thrownaxe"]
+      ],
       "Helmet": [
-        ["Slayer helmet (i)", "Masori mask (f)"],
-        ["Armadyl helmet"],
+        ["Masori mask (f)", "Slayer helmet (i)"],
         ["Crystal helm"],
-        ["Robin hood hat"],
-        ["Blessed coif"]
+        ["Justiciar faceguard"],
+        ["Verac's helm", "Saradomin coif"],
+        ["Helm of neitiznot"]
       ],
       "Amulet": [
         ["Necklace of anguish"],
-        ["Bonecrusher necklace"],
         ["Amulet of fury"],
-        ["Amulet of glory"]
+        ["Dragonbone necklace", "Bonecrusher necklace"],
+        ["Amulet of glory"],
+        ["Holy symbol", "Unholy symbol"]
       ],
       "Cape": [
         ["Dizana's quiver"],
         ["Ava's assembler"],
-        ["Max cape", "Ranging cape"]
+        ["Max cape", "Ranging cape (t)"],
+        ["Ava's accumulator"],
+        ["Ava's attractor"]
       ],
       "Body": [
         ["Masori body (f)"],
-        ["Armadyl chestplate"],
-        ["Crystal body"],
-        ["Blessed body"],
+        ["Crystal body", "Armadyl chestplate"],
+        ["Saradomin d'hide body", "Zamorak d'hide body"],
+        ["Karil's leathertop"],
         ["Black d'hide body"]
       ],
       "Legs": [
         ["Masori chaps (f)"],
-        ["Armadyl chainskirt"],
-        ["Crystal legs"],
-        ["Blessed chaps"],
+        ["Crystal legs", "Armadyl chainskirt"],
+        ["Saradomin chaps", "Zamorak chaps"],
+        ["Karil's leatherskirt", "Verac's plateskirt"],
         ["Black d'hide chaps"]
+      ],
+      "Shield": [
+        ["Twisted buckler"],
+        ["Dragonfire ward"],
+        ["Odium ward"],
+        ["Crystal shield"]
       ],
       "Gloves": [
         ["Zaryte vambraces"],
         ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Black d'hide vambraces"]
+        ["Saradomin bracers", "Zamorak bracers"]
       ],
       "Boots": [
         ["Pegasian boots"],
-        ["Ranger boots", "Devout boots"],
-        ["Blessed boots"],
+        ["Saradomin d'hide boots", "Zamorak d'hide boots"],
         ["Aranea boots"],
-        ["Mixed hide boots"]
+        ["Ranger boots"],
+        ["Boots of brimstone"]
       ],
       "Ring": [
+        ["Ring of suffering (ri)"],
+        ["Ring of endurance"],
         ["Venator ring"],
-        ["Lightbearer"],
-        ["Ring of the gods", "Archers ring (i)"],
-        ["Ring of shadows", "Brimstone ring"],
-        ["Ring of endurance"]
+        ["Ring of the gods (i)"],
+        ["Explorer's ring 4"]
       ],
       "Ammo": [
         ["Dragon arrow"],
+        ["Diamond dragon bolts (e)"],
+        ["Diamond bolts (e)"]
+      ]
+    },
+    "Solo Ranged Bowfa (No Stamina)": {
+      "Weapon": [["Bow of faerdhinen"]],
+      "Special Attack": [["Toxic blowpipe"]],
+      "Helmet": [["Crystal helm"]],
+      "Amulet": [["Necklace of anguish"], ["Amulet of fury"]],
+      "Cape": [
+        ["Max cape"],
+        ["Ranging cape"],
+        ["Dizana's quiver"],
+        ["Ava's assembler"],
+        ["Ava's accumulator"]
+      ],
+      "Body": [["Crystal body"]],
+      "Legs": [["Crystal legs"]],
+      "Gloves": [
+        ["Zaryte vambraces"],
+        ["Zamorak bracers", "Saradomin bracers"]
+      ],
+      "Boots": [
+        ["Pegasian boots"],
+        ["Ancient d'hide boots"],
+        ["Saradomin d'hide boots", "Zamorak d'hide boots"]
+      ],
+      "Ring": [["Ring of suffering (i)"]],
+      "Ammo": [
+        ["Dragon arrow"],
         ["Amethyst arrow"],
-        ["Rune arrow"],
-        ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
-        ["Diamond bolts (e)", "Ruby bolts (e)"]
+        ["Holy blessing", "Unholy blessing"]
       ]
     }
   }
