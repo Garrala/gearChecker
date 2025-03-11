@@ -2,101 +2,105 @@
   "name": "Deranged Archaeologist",
   "image": "https://oldschool.runescape.wiki/images/Deranged_archaeologist.png?32c7e",
   "wiki_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist",
-  "combat_level": 725,
-  "hp": 500,
-  "max_hit": 41,
-  "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+  "combat_level": 276,
+  "hp": 200,
+  "max_hit": {
+    "melee": 25,
+    "ranged": 25,
+    "special": 56
+  },
   "defense": {
     "melee": {
-      "stab": 150,
-      "slash": 150,
-      "crush": 200
+      "stab": 20,
+      "slash": 20,
+      "crush": 50
     },
-    "magic": 200,
+    "magic": 300,
     "ranged": {
-      "arrows": 50,
-      "bolts": 50,
-      "thrown": 50
+      "arrows": 300,
+      "bolts": 300,
+      "thrown": 300
     }
   },
-  "attack_styles": ["Magic", "Ranged", "Venom"],
+  "attack_styles": ["Melee", "Ranged", "Special"],
   "attack_speed": 3,
   "aggressive": true,
   "immunities": {
-    "poison": true,
-    "venom": true,
+    "poison": false,
+    "venom": false,
     "cannons": false,
     "thralls": false
   },
-
   "gear_setups": {
-    "Ranged": {
+    "Magic": {
       "Weapon": [
-        ["Twisted bow"],
-        ["Bow of faerdhinen"],
-        ["Crystal bow"],
-        ["Zaryte crossbow"],
-        ["Armadyl crossbow"]
+        ["Tumeken's shadow"],
+        ["Harmonised nightmare staff"],
+        ["Sanguinesti staff", "Trident of the swamp", "Trident of the seas"],
+        ["Warped sceptre"],
+        ["Iban's staff"]
       ],
-      "Special Attack": [["Zaryte crossbow"]],
+      "Special Attack": [["N/A"]],
       "Helmet": [
-        ["Slayer helmet (i)", "Masori mask (f)"],
-        ["Armadyl helmet"],
-        ["Crystal helm"],
-        ["Robin hood hat"],
-        ["Blessed coif"]
+        ["Ancestral hat"],
+        ["Virtus mask"],
+        ["Mitre"],
+        ["Helm of neitiznot"],
+        ["Farseer helm"]
       ],
       "Amulet": [
-        ["Necklace of anguish"],
-        ["Bonecrusher necklace"],
+        ["Occult necklace"],
+        ["Dragonbone necklace", "Bonecrusher necklace"],
         ["Amulet of fury"],
         ["Amulet of glory"]
       ],
       "Cape": [
-        ["Dizana's quiver"],
-        ["Ava's assembler"],
-        ["Max cape", "Ranging cape"]
+        ["Imbued god cape"],
+        ["Soul cape"],
+        ["Ardougne cloak 4"],
+        ["Cape of Accomplishment (t)"]
       ],
       "Body": [
-        ["Masori body (f)"],
-        ["Armadyl chestplate"],
-        ["Crystal body"],
-        ["Blessed body"],
-        ["Black d'hide body"]
+        ["Ancestral robe top"],
+        ["Virtus robe top"],
+        ["Zealot's robe top"],
+        ["Vestment robe top"],
+        ["Monk's robe top"]
       ],
       "Legs": [
-        ["Masori chaps (f)"],
-        ["Armadyl chainskirt"],
-        ["Crystal legs"],
-        ["Blessed chaps"],
-        ["Black d'hide chaps"]
+        ["Ancestral robe bottom"],
+        ["Virtus robe bottom"],
+        ["Zealot's robe bottom"],
+        ["Vestment robe legs"],
+        ["Monk's robe"]
+      ],
+      "Shield": [
+        ["Tome of fire", "Elidinis' ward (f)"],
+        ["Elidinis' ward"],
+        ["Arcane spirit shield"],
+        ["Malediction ward"],
+        ["Book of darkness"]
       ],
       "Gloves": [
-        ["Zaryte vambraces"],
+        ["Tormented bracelet"],
+        ["Holy wraps"],
         ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Black d'hide vambraces"]
+        ["Dragon gloves", "Rune gloves"],
+        ["Adamant gloves", "Bloodbark gauntlets", "Combat bracelet"]
       ],
       "Boots": [
-        ["Pegasian boots"],
-        ["Ranger boots", "Devout boots"],
-        ["Blessed boots"],
+        ["Devout boots"],
+        ["Holy sandals"],
+        ["Eternal boots"],
         ["Aranea boots"],
-        ["Mixed hide boots"]
+        ["Infinity boots"]
       ],
       "Ring": [
-        ["Venator ring"],
-        ["Lightbearer"],
-        ["Ring of the gods", "Archers ring (i)"],
-        ["Ring of shadows", "Brimstone ring"],
-        ["Ring of endurance"]
-      ],
-      "Ammo": [
-        ["Dragon arrow"],
-        ["Amethyst arrow"],
-        ["Rune arrow"],
-        ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
-        ["Diamond bolts (e)", "Ruby bolts (e)"]
+        ["Magus ring"],
+        ["Ring of the gods (i)"],
+        ["Ring of suffering (i)"],
+        ["Brimstone ring"],
+        ["Explorer's ring 4"]
       ]
     }
   }

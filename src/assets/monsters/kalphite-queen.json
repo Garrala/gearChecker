@@ -2,33 +2,35 @@
   "name": "Kalphite Queen",
   "image": "https://oldschool.runescape.wiki/images/Kalphite_Queen.png?a4955",
   "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
-  "combat_level": 725,
-  "hp": 500,
-  "max_hit": 41,
-  "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+  "combat_level": 333,
+  "hp": 255,
+  "max_hit": {
+    "melee": 31,
+    "magic": 31,
+    "ranged": 31
+  },
   "defense": {
     "melee": {
-      "stab": 150,
-      "slash": 150,
-      "crush": 200
+      "stab": 50,
+      "slash": 50,
+      "crush": 10
     },
-    "magic": 200,
+    "magic": 100,
     "ranged": {
-      "arrows": 50,
-      "bolts": 50,
-      "thrown": 50
+      "arrows": 100,
+      "bolts": 100,
+      "thrown": 100
     }
   },
-  "attack_styles": ["Magic", "Ranged", "Venom"],
-  "attack_speed": 3,
+  "attack_styles": ["Magic", "Ranged", "Melee"],
+  "attack_speed": 4,
   "aggressive": true,
   "immunities": {
-    "poison": true,
+    "poison": false,
     "venom": true,
     "cannons": false,
     "thralls": false
   },
-
   "gear_setups": {
     "Ranged": {
       "Weapon": [
