@@ -425,6 +425,15 @@
       <h3>
         Your Loadout <span class="setup-name">- {{ selectedSetup }}</span>
       </h3>
+      <label>
+        <input
+          type="checkbox"
+          [checked]="isSlayerHelmEnabled"
+          (change)="toggleSlayerHelm()"
+        />
+        Slayer Helm On Task
+      </label>
+
       <div class="gear-grid">
         <!-- Row 1 -->
         <div class="gear-slot blank"></div>

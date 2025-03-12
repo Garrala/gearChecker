@@ -1,13 +1,14 @@
-import { Component, OnInit } from '@angular/core'
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { MonsterService, Monster } from '../../services/monster.service'
 import { GearService } from '../../services/gear.service' // ✅ Import GearService
 import { NgFor, NgIf } from '@angular/common'
+import { FormsModule } from '@angular/forms'
 
 @Component({
   selector: 'app-monster-overview',
   standalone: true,
-  imports: [NgFor, NgIf, CommonModule],
+  imports: [NgFor, NgIf, CommonModule, FormsModule],
   templateUrl: './monster-overview.component.html',
   styleUrls: ['./monster-overview.component.css'],
 })
@@ -24,6 +25,7 @@ export class MonsterOverviewComponent implements OnInit {
   recommendedGear: { [key: string]: string[] } = {}
   isMonsterListLoading: boolean = true
   isMonsterDetailsLoading: boolean = false
+  isSlayerHelmEnabled: boolean = true
   gearSlots: string[] = [
     'Helmet',
     'Cape',
@@ -41,7 +43,8 @@ export class MonsterOverviewComponent implements OnInit {
 
   constructor(
     private monsterService: MonsterService,
-    public gearService: GearService
+    public gearService: GearService,
+    private cdRef: ChangeDetectorRef
   ) {}
 
   ngOnInit() {
@@ -57,7 +60,7 @@ export class MonsterOverviewComponent implements OnInit {
     const savedGear = localStorage.getItem('ownedGear')
     if (savedGear) {
       this.ownedGear = JSON.parse(savedGear)
-      console.log('Loaded Owned Gear:', this.ownedGear)
+      //console.log('Loaded Owned Gear:', this.ownedGear)
     }
 
     this.loadGearData() // ✅ Load multiple gear files
@@ -75,7 +78,7 @@ export class MonsterOverviewComponent implements OnInit {
       this.selectedMonster = monster
       this.selectedSetup = Object.keys(monster.gear_setups)[0]
       this.isMonsterDetailsLoading = false // ✅ Hide spinner once loaded
-      console.log('Selected Monster:', this.selectedMonster)
+      //console.log('Selected Monster:', this.selectedMonster)
       this.updateLoadout()
     }, 500) // Simulated loading delay
   }
@@ -108,7 +111,7 @@ export class MonsterOverviewComponent implements OnInit {
         ) // ✅ Ensure group is an array
     )
 
-    console.log(`Is gear owned for slot "${slot}"?`, isOwned)
+    //console.log(`Is gear owned for slot "${slot}"?`, isOwned)
     return isOwned
   }
 
@@ -127,17 +130,17 @@ export class MonsterOverviewComponent implements OnInit {
 
   /** ✅ Load all gear files from GearService **/
   loadGearData() {
-    console.log('Fetching gear data...')
+    //console.log('Fetching gear data...')
     this.gearService.getGearData().subscribe((data) => {
       this.gearData = data
-      console.log('Loaded Gear Data:', this.gearData)
+      //console.log('Loaded Gear Data:', this.gearData)
     })
   }
 
   /** ✅ Dynamically adjust the number of columns based on the largest set **/
   getFilledItemGroups(slot: string, monster?: Monster): string[][] {
     if (!monster || !monster.gear_setups?.[this.selectedSetup]?.[slot]) {
-      console.log(`⚠️ No data found for slot: ${slot}. Returning [['N/A']]`)
+      //console.log(`⚠️ No data found for slot: ${slot}. Returning [['N/A']]`)
       return [['N/A']]
     }
 
@@ -182,8 +185,11 @@ export class MonsterOverviewComponent implements OnInit {
 
     if (!this.selectedMonster || !this.selectedMonster.gear_setups) return
 
+    console.log('Loading gear data from localStorage...')
     const storedOwnedGear = localStorage.getItem('ownedGear')
     this.ownedGear = storedOwnedGear ? JSON.parse(storedOwnedGear) : {}
+
+    console.log('Loaded Owned Gear:', this.ownedGear)
 
     const storedRecommendedGear = localStorage.getItem('recommendedGear')
     this.recommendedGear = storedRecommendedGear
@@ -210,9 +216,9 @@ export class MonsterOverviewComponent implements OnInit {
         Ammo: 'Ammo',
         'Special Attack': 'Special Attack',
       }
-
+      console.log('Loaded Recommended Gear:', this.recommendedGear)
       const normalizedSlot = slotMapping[slot] || slot
-      const ownedItems = this.ownedGear[normalizedSlot] || []
+      let ownedItems = this.ownedGear[normalizedSlot] || []
 
       console.log(`🔍 Slot: ${slot}`)
       console.log('Recommended Items:', recommendedItems)
@@ -225,14 +231,19 @@ export class MonsterOverviewComponent implements OnInit {
       }
 
       const flattenedRecommendedItems = recommendedItems.flat()
-      const bestItems = flattenedRecommendedItems.filter((item) =>
+      let bestItems = flattenedRecommendedItems.filter((item) =>
         ownedItems.includes(item)
       )
+      if (!this.isSlayerHelmEnabled) {
+        bestItems = bestItems.filter(
+          (item) => !['Slayer helmet (i)', 'Black mask (i)'].includes(item)
+        )
+      }
 
       characterLoadout[slot] = bestItems.length > 0 ? bestItems : ['None']
 
       if (characterLoadout[slot].includes('None')) {
-        console.log(`⚠️ No matching items found for ${slot}, setting to None`)
+        //console.log(`⚠️ No matching items found for ${slot}, setting to None`)
       }
     }
 
@@ -242,15 +253,20 @@ export class MonsterOverviewComponent implements OnInit {
       equippedWeapon &&
       this.gearData['weapons']?.[equippedWeapon]?.twoHanded
     ) {
-      console.log(
-        `⚠️ ${equippedWeapon} is a two-handed weapon. Clearing the shield slot.`
-      )
+      //console.log(
+      //  `⚠️ ${equippedWeapon} is a two-handed weapon. Clearing the shield slot.`
+      //)
       characterLoadout['Shield'] = ['None']
     }
 
     console.log('✅ Final Character Loadout:', characterLoadout)
     localStorage.setItem('characterLoadout', JSON.stringify(characterLoadout))
     this.ownedGear = { ...this.ownedGear, ...characterLoadout }
+    console.log(
+      'Updated ownedGear after applying characterLoadout:',
+      this.ownedGear
+    )
+    this.cdRef.detectChanges()
   }
 
   isBestOwnedItem(slot: string, item: string): boolean {
@@ -269,9 +285,23 @@ export class MonsterOverviewComponent implements OnInit {
     )
   }
 
+  toggleSlayerHelm() {
+    this.isSlayerHelmEnabled = !this.isSlayerHelmEnabled // ✅ Toggle state
+    console.log('Toggled Slayer Helm:', this.isSlayerHelmEnabled)
+
+    this.updateLoadout()
+
+    // ✅ Force change detection by creating a new reference
+    this.ownedGear = { ...this.ownedGear }
+
+    console.log('Updated ownedGear after toggling Slayer Helm:', this.ownedGear)
+
+    this.cdRef.detectChanges()
+  }
+
   changeSetup(setup: string) {
     this.selectedSetup = setup
-    console.log(`🔄 Switching setup to: ${setup}`)
+    //console.log(`🔄 Switching setup to: ${setup}`)
     this.updateLoadout() // ✅ Refresh loadout when changing setups
   }
 
