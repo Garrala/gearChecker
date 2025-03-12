@@ -41,7 +41,7 @@
         ["Rune crossbow"],
         ["Magic shortbow (i)"]
       ],
-	  "Shield": [
+      "Shield": [
         ["Twisted buckler"],
         ["Dragonfire ward", "Odium ward"],
         ["Book of law", "Unholy book"]
@@ -161,7 +161,7 @@
         ["Ring of wealth (i)"]
       ],
       "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]],
-	  "Special Attack": [ "N/A"]
+      "Special Attack": ["N/A"]
     }
   }
 }

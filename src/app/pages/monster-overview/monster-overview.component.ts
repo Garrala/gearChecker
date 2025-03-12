@@ -185,11 +185,11 @@ export class MonsterOverviewComponent implements OnInit {
 
     if (!this.selectedMonster || !this.selectedMonster.gear_setups) return
 
-    console.log('Loading gear data from localStorage...')
+    //console.log('Loading gear data from localStorage...')
     const storedOwnedGear = localStorage.getItem('ownedGear')
     this.ownedGear = storedOwnedGear ? JSON.parse(storedOwnedGear) : {}
 
-    console.log('Loaded Owned Gear:', this.ownedGear)
+    //console.log('Loaded Owned Gear:', this.ownedGear)
 
     const storedRecommendedGear = localStorage.getItem('recommendedGear')
     this.recommendedGear = storedRecommendedGear
@@ -216,17 +216,17 @@ export class MonsterOverviewComponent implements OnInit {
         Ammo: 'Ammo',
         'Special Attack': 'Special Attack',
       }
-      console.log('Loaded Recommended Gear:', this.recommendedGear)
+      //console.log('Loaded Recommended Gear:', this.recommendedGear)
       const normalizedSlot = slotMapping[slot] || slot
       let ownedItems = this.ownedGear[normalizedSlot] || []
 
-      console.log(`🔍 Slot: ${slot}`)
-      console.log('Recommended Items:', recommendedItems)
-      console.log('Owned Items:', ownedItems)
+      //console.log(`🔍 Slot: ${slot}`)
+      //console.log('Recommended Items:', recommendedItems)
+      //console.log('Owned Items:', ownedItems)
 
       if (!recommendedItems.length) {
         characterLoadout[slot] = ['None']
-        console.log(`⚠️ No recommended items for ${slot}, setting to None`)
+        //console.log(`⚠️ No recommended items for ${slot}, setting to None`)
         continue
       }
 

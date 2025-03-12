@@ -11,7 +11,7 @@
       <h4>Weapon</h4>
       <div class="gear-grid">
         <div
-          *ngFor="let item of objectKeys(gearData['weapons'])"
+          *ngFor="let item of getFilteredItems('weapons')"
           class="gear-box"
           [class.owned]="ownedGear['Weapon']?.includes(item)"
           (click)="toggleGear('Weapon', item)"
@@ -33,7 +33,7 @@
       <h4>Special Attack Weapon</h4>
       <div class="gear-grid">
         <div
-          *ngFor="let item of objectKeys(gearData['special_attack'])"
+          *ngFor="let item of getFilteredItems('special_attack')"
           class="gear-box"
           [class.owned]="ownedGear['Special Attack']?.includes(item)"
           (click)="toggleGear('Special Attack', item)"
@@ -58,7 +58,7 @@
       <h4>{{ slot }}</h4>
       <div class="gear-grid" *ngIf="gearData[slot.toLowerCase()]">
         <div
-          *ngFor="let item of objectKeys(gearData[slot.toLowerCase()])"
+          *ngFor="let item of getFilteredItems(slot.toLowerCase())"
           class="gear-box"
           [class.owned]="ownedGear[slot]?.includes(item)"
           (click)="toggleGear(slot, item)"

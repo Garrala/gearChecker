@@ -62,6 +62,13 @@ export class GearManagementComponent implements OnInit {
     localStorage.setItem('ownedGear', JSON.stringify(this.ownedGear)) // ✅ Persist
   }
 
+  getFilteredItems(slot: string): string[] {
+    if (!this.gearData[slot]) return []
+
+    // Get all items, but exclude the first one (which is N/A)
+    return Object.keys(this.gearData[slot]).slice(1)
+  }
+
   objectKeys(obj: any): string[] {
     return Object.keys(obj)
   }

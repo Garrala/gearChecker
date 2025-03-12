@@ -667,16 +667,15 @@
           <td>
             <strong>{{ slot }}</strong>
           </td>
-          <!-- Restores the Slot Column -->
 
+          <!-- ✅ Apply best-owned class to recommended items only -->
           <td *ngFor="let group of getFilledItemGroups(slot, selectedMonster!)">
             <div class="gear-item-wrapper">
               <div
                 class="gear-item"
                 *ngFor="let item of group"
-                [class.best-owned]="isBestOwnedItem(slot, item)"
+                [ngClass]="{ 'best-owned': isBestOwnedItem(slot, item) }"
               >
-                <!-- ✅ Highlight if it's the best owned item -->
                 <div class="icon-container">
                   <img
                     *ngIf="

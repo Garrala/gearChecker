@@ -76,7 +76,7 @@
         ["Tyrannical ring (i)"]
       ],
       "Ammo": [["Dragon arrow"], ["Amethyst arrow"]],
-	  "Shield": ["N/A"],
+      "Shield": ["N/A"],
       "Special Attack": ["N/A"]
     },
     "Phase 1 Magic": {
@@ -147,7 +147,7 @@
       "Boots": [["Primordial boots"], ["Dragon boots"], ["Rune boots"]],
       "Gloves": [["Ferocious gloves"], ["Barrows gloves"], ["Dragon gloves"]],
       "Ammo": [["Rada's blessing 4"], ["God blessing"]],
-	  "Shield": ["N/A"],
+      "Shield": ["N/A"],
       "Special Attack": ["N/A"]
     },
     "Phase 2 Melee - No defense reduction": {
@@ -356,7 +356,7 @@
         ["Dragon darts"],
         ["Amethyst darts"]
       ],
-	  "Shield": ["N/A"]
+      "Shield": ["N/A"]
     }
   }
 }

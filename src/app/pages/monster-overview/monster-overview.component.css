@@ -584,3 +584,19 @@
 .negative {
   color: #ff5252; /* Softer, readable red */
 }
+
+/* ✅ Highlight owned items in the recommended gear table */
+/*.recommended-gear-table .best-owned {
+  border: 2px solid limegreen !important;
+  background-color: rgba(0, 255, 0, 0.2);
+  box-shadow: 0px 0px 10px limegreen;
+}*/
+
+/* ✅ Stronger Glow Effect for Owned Gear */
+.recommended-gear-table .best-owned img {
+  filter: drop-shadow(0px 0px 10px #00ff00) drop-shadow(0px 0px 18px #00ff00);
+}
+
+/* ✅ Make glow even stronger on hover */
+.recommended-gear-table .best-owned img:hover {
+}
