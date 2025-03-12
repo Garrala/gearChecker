@@ -1,14 +1,25 @@
 <div class="monster-overview">
-  <!-- Boss Selector -->
   <!-- 🔄 Boss List Loading Spinner -->
   <div *ngIf="isMonsterListLoading" class="spinner-container">
     <div class="spinner"></div>
   </div>
 
   <div *ngIf="!isMonsterListLoading">
+    <!-- Category Selector -->
+    <div class="category-selector">
+      <button
+        *ngFor="let category of bossCategories"
+        (click)="toggleCategory(category)"
+        [class.active]="selectedCategories.includes(category)"
+      >
+        {{ category }}
+      </button>
+    </div>
+
+    <!-- Boss Selector -->
     <div class="boss-picker">
       <div
-        *ngFor="let monster of monsters"
+        *ngFor="let monster of filteredMonsters()"
         class="monster-box"
         [class.selected]="monster === selectedMonster"
         (click)="selectMonster(monster)"
@@ -457,7 +468,7 @@
           [checked]="isSlayerHelmEnabled"
           (change)="toggleSlayerHelm()"
         />
-        Slayer Helm On Task
+        Toggle Slayer Helm
       </label>
 
       <div class="gear-grid">

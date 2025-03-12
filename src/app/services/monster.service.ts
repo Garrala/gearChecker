@@ -6,7 +6,7 @@ import { map, switchMap } from 'rxjs/operators'
 export interface Monster {
   name: string
   image: string
-  category?: string
+  category: string
   bosses: {
     name: string
     image: string

@@ -42,6 +42,17 @@ export class MonsterOverviewComponent implements OnInit {
     'Ring',
   ]
 
+  //Boss filtering
+  selectedCategories: string[] = []
+  bossCategories = [
+    'World Bosses',
+    'Wilderness Bosses',
+    'Instanced Bosses',
+    'Desert Treasure II',
+    'Sporadic Bosses',
+    'Slayer Bosses',
+  ]
+
   constructor(
     private monsterService: MonsterService,
     public gearService: GearService,
@@ -330,5 +341,27 @@ export class MonsterOverviewComponent implements OnInit {
   switchBoss(index: number) {
     if (!this.isMultiBoss(this.selectedMonster)) return
     this.selectedBossIndex = index
+  }
+
+  toggleCategory(category: string) {
+    console.log('called toggle category with', category)
+    console.log('selected Categories before', this.selectedCategories)
+    if (this.selectedCategories.includes(category)) {
+      this.selectedCategories = this.selectedCategories.filter(
+        (c) => c !== category
+      )
+    } else {
+      this.selectedCategories.push(category)
+    }
+    console.log('selected Categories after', this.selectedCategories)
+  }
+
+  filteredMonsters(): Monster[] {
+    if (this.selectedCategories.length === 0) {
+      return this.monsters
+    }
+    return this.monsters.filter((monster) =>
+      this.selectedCategories.includes(monster.category)
+    )
   }
 }

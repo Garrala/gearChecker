@@ -39,7 +39,7 @@
 
 .monster-box.selected {
   border-color: limegreen;
-  background: rgba(0, 255, 0, 0.2);
+  background: rgba(0, 255, 0, 0.3);
 }
 
 .monster-box:hover {
@@ -410,10 +410,10 @@
 }
 
 .gear-tabs button.active {
-  background: limegreen;
-  color: black;
+  background: rgba(0, 255, 0, 0.3);
+  /*    color: black;*/
   font-weight: bold;
-  border-color: limegreen;
+  border-color: rgba(0, 255, 0, 0.3);
 }
 
 .recommended-gear-table {
@@ -596,20 +596,23 @@
 
 .boss-selector {
   display: flex;
-  /*  position: sticky;*/
   top: 0;
+  flex-wrap: wrap;
   justify-content: center; /* Spread buttons evenly */
   width: 100%; /* Allow it to take full width */
   max-width: 1600px;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   z-index: 1000;
+  gap: 2px;
+  min-height: 40px;
 }
 
 .boss-selector button {
   flex: 1; /* Make each button take equal space */
   background: #222;
   color: white;
-  border: 2px solid gray;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 12px 0; /* Adjust padding for a clean look */
   font-size: 16px;
   font-weight: bold;
@@ -617,20 +620,57 @@
   transition: all 0.2s ease-in-out;
   text-align: center;
   border-radius: 0;
-}
-
-.boss-selector button:not(:last-child) {
-  border-right: none; /* Remove double borders */
+  border-radius: 6px;
 }
 
 .boss-selector button:hover {
   background: #444;
-  border-color: white;
+  border-color: rgba(0, 255, 0, 0.3);
 }
 
 .boss-selector button.active {
+  background: rgba(0, 255, 0, 0.3);
+  /*      color: black;*/
+  font-weight: bold;
+  border-color: rgba(0, 255, 0, 0.3);
+}
+
+.category-selector {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 12px; /* Space between buttons */
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px; /* Soft rounded corners */
+}
+
+.category-selector button {
+  padding: 12px 18px;
+  background: linear-gradient(to bottom, #333, #111); /* Subtle gradient */
+  color: white;
+  border: 2px solid #666;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+  border-radius: 6px; /* Rounded corners */
+  font-size: 14px;
+  text-transform: uppercase; /* Makes it feel more structured */
+}
+
+.category-selector button:hover {
+  background: linear-gradient(
+    to bottom,
+    #444,
+    #222
+  ); /* Slightly lighter hover effect */
+  border-color: white;
+}
+
+.category-selector button.active {
   background: limegreen;
   color: black;
-  font-weight: bold;
   border-color: limegreen;
+  transform: scale(1.05); /* Slight pop effect */
+  box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); /* Glow effect */
 }
