@@ -2,33 +2,40 @@
   "name": "Chaos Fanatic",
   "image": "https://oldschool.runescape.wiki/images/Chaos_Fanatic.png?8871d",
   "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Fanatic",
-  "combat_level": 202,
-  "hp": 225,
-  "max_hit": {
-    "magic": 31
-  },
-  "defense": {
-    "melee": {
-      "stab": 260,
-      "slash": 260,
-      "crush": 250
-    },
-    "magic": 280,
-    "ranged": {
-      "arrows": 80,
-      "bolts": 80,
-      "thrown": 80
+  "bosses": [
+    {
+      "name": "Chaos Fanatic",
+      "image": "https://oldschool.runescape.wiki/images/Chaos_Fanatic.png?8871d",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Fanatic",
+      "combat_level": 202,
+      "hp": 225,
+      "max_hit": {
+        "magic": 31
+      },
+      "defense": {
+        "melee": {
+          "stab": 260,
+          "slash": 260,
+          "crush": 250
+        },
+        "magic": 280,
+        "ranged": {
+          "arrows": 80,
+          "bolts": 80,
+          "thrown": 80
+        }
+      },
+      "attack_styles": ["Magic"],
+      "attack_speed": 2,
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "venom": false,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic"],
-  "attack_speed": 2,
-  "aggressive": true,
-  "immunities": {
-    "poison": false,
-    "venom": false,
-    "cannons": false,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Ranged": {
       "Weapon": [

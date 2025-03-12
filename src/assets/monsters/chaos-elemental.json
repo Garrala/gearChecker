@@ -2,36 +2,42 @@
   "name": "Chaos Elemental",
   "image": "https://oldschool.runescape.wiki/images/Chaos_Elemental.png?c170c",
   "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Elemental",
-  "combat_level": 305,
-  "hp": 250,
-  "max_hit": {
-    "magic": 28,
-    "ranged": 28,
-    "melee": 28
-  },
-  "defense": {
-    "melee": {
-      "stab": 70,
-      "slash": 70,
-      "crush": 70
-    },
-    "magic": 70,
-    "ranged": {
-      "arrows": 70,
-      "bolts": 70,
-      "thrown": 70
+  "bosses": [
+    {
+      "name": "Chaos Elemental",
+      "image": "https://oldschool.runescape.wiki/images/Chaos_Elemental.png?c170c",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Elemental",
+      "combat_level": 305,
+      "hp": 250,
+      "max_hit": {
+        "magic": 28,
+        "ranged": 28,
+        "melee": 28
+      },
+      "defense": {
+        "melee": {
+          "stab": 70,
+          "slash": 70,
+          "crush": 70
+        },
+        "magic": 70,
+        "ranged": {
+          "arrows": 70,
+          "bolts": 70,
+          "thrown": 70
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Melee"],
+      "attack_speed": 4,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic", "Ranged", "Melee"],
-  "attack_speed": 4,
-  "aggressive": true,
-  "immunities": {
-    "poison": true,
-    "venom": true,
-    "cannons": false,
-    "thralls": false
-  },
-
+  ],
   "gear_setups": {
     "Ranged": {
       "Weapon": [

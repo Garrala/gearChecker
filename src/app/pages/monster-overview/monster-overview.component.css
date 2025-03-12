@@ -79,6 +79,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .boss-picture img {
@@ -322,7 +323,6 @@
 }
 
 .item-icon {
-  width: 40px; /* Adjust this to match your other screen */
   height: 50px;
   display: block;
   margin: auto;
@@ -331,8 +331,18 @@
 
 /* 🔹 A wrapper to make sure images NEVER break layout */
 .icon-container {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center; /* Ensures image is centered */
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.icon-container img {
+  max-width: 80%; /* Scale image properly */
+  max-height: 230px; /* Keeps it from being too large */
+  object-fit: contain;
+  display: block;
 }
 
 /* 🔹 Align text and images neatly */
@@ -471,7 +481,6 @@
 }
 
 .boss-link {
-  position: absolute;
   top: 8px; /* Adjust closer to the top */
   right: 8px; /* Adjust closer to the right */
   font-size: 16px;
@@ -481,14 +490,9 @@
   padding: 0; /* Removes padding */
 }
 
-.icon-container {
-  position: relative;
-  display: inline-block;
-}
-
 /* Wiki Link (🔍) */
 .wiki-link {
-  position: absolute;
+  position: static;
   top: 2px;
   right: -32px;
   font-size: 16px; /* Adjust to match */
@@ -585,18 +589,48 @@
   color: #ff5252; /* Softer, readable red */
 }
 
-/* ✅ Highlight owned items in the recommended gear table */
-/*.recommended-gear-table .best-owned {
-  border: 2px solid limegreen !important;
-  background-color: rgba(0, 255, 0, 0.2);
-  box-shadow: 0px 0px 10px limegreen;
-}*/
-
 /* ✅ Stronger Glow Effect for Owned Gear */
 .recommended-gear-table .best-owned img {
   filter: drop-shadow(0px 0px 10px #00ff00) drop-shadow(0px 0px 18px #00ff00);
 }
 
-/* ✅ Make glow even stronger on hover */
-.recommended-gear-table .best-owned img:hover {
+.boss-selector {
+  display: flex;
+  /*  position: sticky;*/
+  top: 0;
+  justify-content: center; /* Spread buttons evenly */
+  width: 100%; /* Allow it to take full width */
+  max-width: 1600px;
+  margin-top: 10px;
+  z-index: 1000;
+}
+
+.boss-selector button {
+  flex: 1; /* Make each button take equal space */
+  background: #222;
+  color: white;
+  border: 2px solid gray;
+  padding: 12px 0; /* Adjust padding for a clean look */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  border-radius: 0;
+}
+
+.boss-selector button:not(:last-child) {
+  border-right: none; /* Remove double borders */
+}
+
+.boss-selector button:hover {
+  background: #444;
+  border-color: white;
+}
+
+.boss-selector button.active {
+  background: limegreen;
+  color: black;
+  font-weight: bold;
+  border-color: limegreen;
 }

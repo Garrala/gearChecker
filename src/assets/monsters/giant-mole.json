@@ -2,32 +2,39 @@
   "name": "Giant Mole",
   "image": "https://oldschool.runescape.wiki/images/Giant_Mole.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Giant_Mole",
-  "combat_level": 230,
-  "hp": 200,
-  "max_hit": 21,
-  "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
-  "defense": {
-    "melee": {
-      "stab": 60,
-      "slash": 80,
-      "crush": 100
-    },
-    "magic": 80,
-    "ranged": {
-      "arrows": 60,
-      "bolts": 60,
-      "thrown": 60
+  "bosses": [
+    {
+      "name": "Giant Mole",
+      "image": "https://oldschool.runescape.wiki/images/Giant_Mole.png",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Giant_Mole",
+      "combat_level": 230,
+      "hp": 200,
+      "max_hit": 21,
+      "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+      "defense": {
+        "melee": {
+          "stab": 60,
+          "slash": 80,
+          "crush": 100
+        },
+        "magic": 80,
+        "ranged": {
+          "arrows": 60,
+          "bolts": 60,
+          "thrown": 60
+        }
+      },
+      "attack_styles": ["Magic", "Ranged"],
+      "attack_speed": 3,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic", "Ranged"],
-  "attack_speed": 3,
-  "aggressive": true,
-  "immunities": {
-    "poison": true,
-    "venom": true,
-    "cannons": false,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Ranged": {
       "Weapon": [

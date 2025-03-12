@@ -2,34 +2,41 @@
   "name": "Crazy Archeologist",
   "image": "https://oldschool.runescape.wiki/images/Crazy_archaeologist.png?3ecc9",
   "wiki_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist",
-  "combat_level": 204,
-  "hp": 225,
-  "max_hit": {
-    "ranged": 14,
-    "special": 24
-  },
-  "defense": {
-    "melee": {
-      "stab": 5,
-      "slash": 5,
-      "crush": 30
-    },
-    "magic": 250,
-    "ranged": {
-      "arrows": 250,
-      "bolts": 250,
-      "thrown": 250
+  "bosses": [
+    {
+      "name": "Crazy Archeologist",
+      "image": "https://oldschool.runescape.wiki/images/Crazy_archaeologist.png?3ecc9",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist",
+      "combat_level": 204,
+      "hp": 225,
+      "max_hit": {
+        "ranged": 14,
+        "special": 24
+      },
+      "defense": {
+        "melee": {
+          "stab": 5,
+          "slash": 5,
+          "crush": 30
+        },
+        "magic": 250,
+        "ranged": {
+          "arrows": 250,
+          "bolts": 250,
+          "thrown": 250
+        }
+      },
+      "attack_styles": ["Ranged", "Special"],
+      "attack_speed": 3,
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "venom": false,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Ranged", "Special"],
-  "attack_speed": 3,
-  "aggressive": true,
-  "immunities": {
-    "poison": false,
-    "venom": false,
-    "cannons": false,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Magic": {
       "Weapon": [

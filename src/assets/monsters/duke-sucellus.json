@@ -2,35 +2,42 @@
   "name": "Duke Sucellus",
   "image": "https://oldschool.runescape.wiki/images/Duke_Sucellus.png?d588a",
   "wiki_link": "https://oldschool.runescape.wiki/w/Duke_Sucellus#Awake",
-  "combat_level": 758,
-  "hp": 440,
-  "max_hit": {
-    "melee": 56,
-    "magic": 48,
-    "gaze": 101
-  },
-  "defense": {
-    "melee": {
-      "stab": 255,
-      "slash": 45,
-      "crush": 190
-    },
-    "magic": 440,
-    "ranged": {
-      "arrows": 320,
-      "bolts": 320,
-      "thrown": 320
+  "bosses": [
+    {
+      "name": "Duke Sucellus",
+      "image": "https://oldschool.runescape.wiki/images/Duke_Sucellus.png?d588a",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Duke_Sucellus#Awake",
+      "combat_level": 758,
+      "hp": 440,
+      "max_hit": {
+        "melee": 56,
+        "magic": 48,
+        "gaze": 101
+      },
+      "defense": {
+        "melee": {
+          "stab": 255,
+          "slash": 45,
+          "crush": 190
+        },
+        "magic": 440,
+        "ranged": {
+          "arrows": 320,
+          "bolts": 320,
+          "thrown": 320
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Gaze"],
+      "attack_speed": 3,
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic", "Ranged", "Gaze"],
-  "attack_speed": 3,
-  "aggressive": true,
-  "immunities": {
-    "poison": false,
-    "venom": true,
-    "cannons": true,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Melee": {
       "Weapon": [

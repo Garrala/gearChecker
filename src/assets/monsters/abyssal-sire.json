@@ -1,35 +1,157 @@
 {
   "name": "Abyssal Sire",
   "image": "https://oldschool.runescape.wiki/images/Abyssal_Sire_%28phase_1%29.png?0db8f",
-  "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
-  "combat_level": 350,
-  "hp": 400,
-  "max_hit": {
-    "melee": 66,
-    "explosion": 96
-  },
-  "defense": {
-    "melee": {
-      "stab": 40,
-      "slash": 60,
-      "crush": 50
+  "bosses": [
+    {
+      "name": "Abyssal Sire (Phase 1)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+      "image": "https://oldschool.runescape.wiki/images/Abyssal_Sire_%28phase_1%29.png?0db8f",
+      "combat_level": 350,
+      "hp": 400,
+      "max_hit": {
+        "melee": 66,
+        "explosion": 96
+      },
+      "weaknesses": {
+        "magic": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 40,
+          "slash": 60,
+          "crush": 50
+        },
+        "magic": 20,
+        "ranged": {
+          "arrows": 60,
+          "bolts": 60,
+          "thrown": 60
+        }
+      },
+      "attack_styles": ["Melee"],
+      "attack_speed": 7,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     },
-    "magic": 20,
-    "ranged": {
-      "arrows": 60,
-      "bolts": 60,
-      "thrown": 60
+    {
+      "name": "Abyssal Sire (Phase 2)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+      "image": "https://oldschool.runescape.wiki/images/Abyssal_Sire.png?d2205",
+      "combat_level": 350,
+      "hp": 400,
+      "max_hit": {
+        "melee": 66,
+        "explosion": 96,
+        "tentacles": 30
+      },
+      "weaknesses": {
+        "magic": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 40,
+          "slash": 60,
+          "crush": 50
+        },
+        "magic": 20,
+        "ranged": {
+          "arrows": 60,
+          "bolts": 60,
+          "thrown": 60
+        }
+      },
+      "attack_styles": ["Melee", "Magic"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
+    },
+    {
+      "name": "Abyssal Sire (Phase 3 Stage 1)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+      "image": "https://oldschool.runescape.wiki/images/Abyssal_Sire_%28phase_3%2C_stage_1%29.png?3f1a1",
+      "combat_level": 350,
+      "hp": 400,
+      "max_hit": {
+        "melee": 66,
+        "explosion": 96,
+        "tentacles": 30,
+        "shadow_blast": 50
+      },
+      "weaknesses": {
+        "magic": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 40,
+          "slash": 60,
+          "crush": 50
+        },
+        "magic": 20,
+        "ranged": {
+          "arrows": 60,
+          "bolts": 60,
+          "thrown": 60
+        }
+      },
+      "attack_styles": ["Melee", "Magic", "Ranged"],
+      "attack_speed": 5,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
+    },
+    {
+      "name": "Abyssal Sire (Phase 3 Stage 2)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+      "image": "https://oldschool.runescape.wiki/images/Abyssal_Sire_%28phase_3%2C_stage_2%29.png?d509f",
+      "combat_level": 350,
+      "hp": 400,
+      "max_hit": {
+        "melee": 66,
+        "explosion": 96,
+        "tentacles": 30,
+        "shadow_blast": 50
+      },
+      "weaknesses": {
+        "magic": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 40,
+          "slash": 60,
+          "crush": 50
+        },
+        "magic": 20,
+        "ranged": {
+          "arrows": 60,
+          "bolts": 60,
+          "thrown": 60
+        }
+      },
+      "attack_styles": ["Melee", "Magic", "Ranged"],
+      "attack_speed": 5,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Melee"],
-  "attack_speed": 7,
-  "aggressive": false,
-  "immunities": {
-    "poison": true,
-    "venom": true,
-    "cannons": false,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Phase 1 Ranged": {
       "Weapon": [

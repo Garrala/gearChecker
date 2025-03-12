@@ -1,38 +1,44 @@
 {
   "name": "Amoxliatl",
   "image": "https://oldschool.runescape.wiki/images/Amoxliatl.png?01b12",
-  "wiki_link": "https://oldschool.runescape.wiki/w/Amoxliatl",
-  "combat_level": 263,
-  "hp": 520,
-  "max_hit": {
-    "magic": 22,
-    "ice": 34
-  },
-  "weaknesses": {
-    "fire": "30%"
-  },
-  "defense": {
-    "melee": {
-      "stab": 100,
-      "slash": 100,
-      "crush": 40
-    },
-    "magic": 100,
-    "ranged": {
-      "arrows": 200,
-      "bolts": 200,
-      "thrown": 200
+  "bosses": [
+    {
+      "name": "Amoxliatl",
+      "image": "https://oldschool.runescape.wiki/images/Amoxliatl.png?01b12",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Amoxliatl",
+      "combat_level": 263,
+      "hp": 520,
+      "max_hit": {
+        "magic": 22,
+        "ice": 34
+      },
+      "weaknesses": {
+        "fire": "30%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 100,
+          "slash": 100,
+          "crush": 40
+        },
+        "magic": 100,
+        "ranged": {
+          "arrows": 200,
+          "bolts": 200,
+          "thrown": 200
+        }
+      },
+      "attack_styles": ["Magic"],
+      "attack_speed": 8,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic"],
-  "attack_speed": 8,
-  "aggressive": true,
-  "immunities": {
-    "poison": true,
-    "venom": true,
-    "cannons": true,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Melee": {
       "Weapon": [

@@ -2,36 +2,43 @@
   "name": "Zulrah",
   "image": "https://oldschool.runescape.wiki/images/Zulrah_%28serpentine%29.png?29a54",
   "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
-  "combat_level": 725,
-  "hp": 500,
-  "max_hit": {
-    "magic": 41
-  },
-  "weaknesses": {
-    "fire": "50%"
-  },
-  "defense": {
-    "melee": {
-      "stab": 150,
-      "slash": 150,
-      "crush": 200
-    },
-    "magic": -45,
-    "ranged": {
-      "arrows": 50,
-      "bolts": 50,
-      "thrown": 50
+  "bosses": [
+    {
+      "name": "Zulrah",
+      "image": "https://oldschool.runescape.wiki/images/Zulrah_%28serpentine%29.png?29a54",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
+      "combat_level": 725,
+      "hp": 500,
+      "max_hit": {
+        "magic": 41
+      },
+      "weaknesses": {
+        "fire": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 150,
+          "slash": 150,
+          "crush": 200
+        },
+        "magic": -45,
+        "ranged": {
+          "arrows": 50,
+          "bolts": 50,
+          "thrown": 50
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_speed": 3,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic", "Ranged", "Venom"],
-  "attack_speed": 3,
-  "aggressive": true,
-  "immunities": {
-    "poison": true,
-    "venom": true,
-    "cannons": false,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Magic": {
       "Weapon": [

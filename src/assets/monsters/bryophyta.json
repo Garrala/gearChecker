@@ -2,35 +2,42 @@
   "name": "Bryophyta",
   "image": "https://oldschool.runescape.wiki/images/Bryophyta.png?08bc8",
   "wiki_link": "https://oldschool.runescape.wiki/w/Bryophyta",
-  "combat_level": 128,
-  "hp": 115,
-  "max_hit": {
-    "magic": 16,
-    "melee": 16,
-    "poison": 8
-  },
-  "defense": {
-    "melee": {
-      "stab": 0,
-      "slash": 0,
-      "crush": 0
-    },
-    "magic": 0,
-    "ranged": {
-      "arrows": 0,
-      "bolts": 0,
-      "thrown": 0
+  "bosses": [
+    {
+      "name": "Bryophyta",
+      "image": "https://oldschool.runescape.wiki/images/Bryophyta.png?08bc8",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Bryophyta",
+      "combat_level": 128,
+      "hp": 115,
+      "max_hit": {
+        "magic": 16,
+        "melee": 16,
+        "poison": 8
+      },
+      "defense": {
+        "melee": {
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
+        },
+        "magic": 0,
+        "ranged": {
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
+        }
+      },
+      "attack_styles": ["Magic", "Melee", "Poison"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "venom": false,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic", "Melee", "Poison"],
-  "attack_speed": 6,
-  "aggressive": true,
-  "immunities": {
-    "poison": false,
-    "venom": false,
-    "cannons": false,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "F2P Melee Setup": {
       "Weapon": ["Rune scimitar"],

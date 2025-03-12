@@ -2,36 +2,42 @@
   "name": "Callisto",
   "image": "https://oldschool.runescape.wiki/images/Callisto.png?bfba7",
   "wiki_link": "https://oldschool.runescape.wiki/w/Callisto",
-  "combat_level": 470,
-  "hp": 1000,
-  "max_hit": {
-    "melee": 55,
-    "ranged": 31,
-    "special": 60
-  },
-  "defense": {
-    "melee": {
-      "stab": 150,
-      "slash": 130,
-      "crush": 125
-    },
-    "magic": 0,
-    "ranged": {
-      "arrows": 50,
-      "bolts": 50,
-      "thrown": 50
+  "bosses": [
+    {
+      "name": "Callisto",
+      "image": "https://oldschool.runescape.wiki/images/Callisto.png?bfba7",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Callisto",
+      "combat_level": 470,
+      "hp": 1000,
+      "max_hit": {
+        "melee": 55,
+        "ranged": 31,
+        "special": 60
+      },
+      "defense": {
+        "melee": {
+          "stab": 150,
+          "slash": 130,
+          "crush": 125
+        },
+        "magic": 0,
+        "ranged": {
+          "arrows": 50,
+          "bolts": 50,
+          "thrown": 50
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Melee"],
+      "attack_speed": 4,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic", "Ranged", "Melee"],
-  "attack_speed": 4,
-  "aggressive": true,
-  "immunities": {
-    "poison": true,
-    "venom": true,
-    "cannons": false,
-    "thralls": false
-  },
-
+  ],
   "gear_setups": {
     "Ranged": {
       "Weapon": [

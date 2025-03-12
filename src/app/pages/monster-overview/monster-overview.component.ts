@@ -16,6 +16,7 @@ export class MonsterOverviewComponent implements OnInit {
   monsters: Monster[] = []
   selectedMonster: Monster | null = null
   selectedSetup: string = 'Magic' // Default tab
+  selectedBossIndex: number = 0 // ✅ Track current boss in multi-boss fights
   gearData: {
     [slot: string]: {
       [item: string]: { image: string; wiki: string; twoHanded: string }
@@ -65,7 +66,7 @@ export class MonsterOverviewComponent implements OnInit {
 
     this.loadGearData() // ✅ Load multiple gear files
   }
-
+  /** ✅ Select a monster and reset boss index **/
   selectMonster(monster: Monster) {
     if (this.selectedMonster === monster) {
       // ✅ Clicking again hides the details
@@ -76,6 +77,7 @@ export class MonsterOverviewComponent implements OnInit {
     this.isMonsterDetailsLoading = true // ✅ Show loading spinner
     setTimeout(() => {
       this.selectedMonster = monster
+      this.selectedBossIndex = 0
       this.selectedSetup = Object.keys(monster.gear_setups)[0]
       this.isMonsterDetailsLoading = false // ✅ Hide spinner once loaded
       //console.log('Selected Monster:', this.selectedMonster)
@@ -83,18 +85,18 @@ export class MonsterOverviewComponent implements OnInit {
     }, 500) // Simulated loading delay
   }
 
-  getGearSetups(monster?: Monster) {
+  getGearSetups() {
     //console.log("Fetching gear setups for:", monster?.name);
-    return monster ? Object.keys(monster.gear_setups) : []
+    return this.selectedMonster?.gear_setups
+      ? Object.keys(this.selectedMonster.gear_setups)
+      : []
   }
 
-  getGearSlots(monster: Monster | null | undefined): string[] {
-    console.log('Current Selected Setup:', this.selectedSetup)
-
-    if (!monster?.gear_setups || !monster?.gear_setups[this.selectedSetup]) {
-      return []
-    }
-    return Object.keys(monster.gear_setups[this.selectedSetup])
+  getGearSlots(): string[] {
+    if (!this.selectedMonster || !this.selectedMonster.gear_setups) return []
+    return Object.keys(
+      this.selectedMonster.gear_setups[this.selectedSetup] || {}
+    )
   }
 
   isGearOwned(slot: string): boolean {
@@ -312,5 +314,21 @@ export class MonsterOverviewComponent implements OnInit {
   handleImageError(event: Event) {
     const target = event.target as HTMLImageElement
     target.src = 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c' // Replace with your fallback image
+  }
+
+  /** ✅ Checks if the selected monster has multiple bosses **/
+  isMultiBoss(monster: Monster | null): boolean {
+    return !!monster?.bosses && monster.bosses.length > 1
+  }
+
+  getSelectedBoss(): Monster['bosses'][0] | null {
+    if (!this.selectedMonster) return null
+    return this.selectedMonster.bosses[this.selectedBossIndex]
+  }
+
+  /** ✅ Switch bosses in a multi-boss encounter **/
+  switchBoss(index: number) {
+    if (!this.isMultiBoss(this.selectedMonster)) return
+    this.selectedBossIndex = index
   }
 }

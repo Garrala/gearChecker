@@ -2,38 +2,45 @@
   "name": "Araxxor",
   "image": "https://oldschool.runescape.wiki/images/Araxxor.png?35d2e",
   "wiki_link": "https://oldschool.runescape.wiki/w/Araxxor",
-  "combat_level": 890,
-  "hp": 1020,
-  "max_hit": {
-    "melee": 38,
-    "magic": 21,
-    "ranged": 34
-  },
-  "weaknesses": {
-    "fire": "50%"
-  },
-  "defense": {
-    "melee": {
-      "stab": 160,
-      "slash": 75,
-      "crush": 15
-    },
-    "magic": 237,
-    "ranged": {
-      "arrows": 218,
-      "bolts": 218,
-      "thrown": 218
+  "bosses": [
+    {
+      "name": "Araxxor",
+      "image": "https://oldschool.runescape.wiki/images/Araxxor.png?35d2e",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Araxxor",
+      "combat_level": 890,
+      "hp": 1020,
+      "max_hit": {
+        "melee": 38,
+        "magic": 21,
+        "ranged": 34
+      },
+      "weaknesses": {
+        "fire": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 160,
+          "slash": 75,
+          "crush": 15
+        },
+        "magic": 237,
+        "ranged": {
+          "arrows": 218,
+          "bolts": 218,
+          "thrown": 218
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic", "Ranged", "Venom"],
-  "attack_speed": 6,
-  "aggressive": true,
-  "immunities": {
-    "poison": true,
-    "venom": true,
-    "cannons": true,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Melee": {
       "Weapon": [

@@ -2,36 +2,43 @@
   "name": "Scurrius",
   "image": "https://oldschool.runescape.wiki/images/Scurrius.png?e66a5",
   "wiki_link": "https://oldschool.runescape.wiki/w/Scurrius",
-  "combat_level": 200,
-  "hp": 500,
-  "max_hit": {
-    "melee": 13,
-    "magic": 8,
-    "ranged": 7,
-    "rockfall": 22
-  },
-  "defense": {
-    "melee": {
-      "stab": 20,
-      "slash": 20,
-      "crush": 20
-    },
-    "magic": 10,
-    "ranged": {
-      "arrows": 20,
-      "bolts": 20,
-      "thrown": 20
+  "bosses": [
+    {
+      "name": "Scurrius",
+      "image": "https://oldschool.runescape.wiki/images/Scurrius.png?e66a5",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Scurrius",
+      "combat_level": 200,
+      "hp": 500,
+      "max_hit": {
+        "melee": 13,
+        "magic": 8,
+        "ranged": 7,
+        "rockfall": 22
+      },
+      "defense": {
+        "melee": {
+          "stab": 20,
+          "slash": 20,
+          "crush": 20
+        },
+        "magic": 10,
+        "ranged": {
+          "arrows": 20,
+          "bolts": 20,
+          "thrown": 20
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Melee"],
+      "attack_speed": 4,
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic", "Ranged", "Melee"],
-  "attack_speed": 4,
-  "aggressive": true,
-  "immunities": {
-    "poison": false,
-    "venom": true,
-    "cannons": true,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Melee (high level)": {
       "Weapon": [

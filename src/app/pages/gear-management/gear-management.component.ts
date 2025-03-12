@@ -54,9 +54,40 @@ export class GearManagementComponent implements OnInit {
     const index = this.ownedGear[slot].indexOf(item)
 
     if (index > -1) {
-      this.ownedGear[slot].splice(index, 1) // ✅ Remove if already selected
+      // ✅ Remove from both Weapon and Special Attack categories if it exists
+      this.ownedGear[slot].splice(index, 1)
+      if (
+        slot === 'Weapon' &&
+        this.ownedGear['Special Attack']?.includes(item)
+      ) {
+        this.ownedGear['Special Attack'].splice(
+          this.ownedGear['Special Attack'].indexOf(item),
+          1
+        )
+      }
+      if (
+        slot === 'Special Attack' &&
+        this.ownedGear['Weapon']?.includes(item)
+      ) {
+        this.ownedGear['Weapon'].splice(
+          this.ownedGear['Weapon'].indexOf(item),
+          1
+        )
+      }
     } else {
-      this.ownedGear[slot].push(item) // ✅ Add if not selected
+      // ✅ Add to both Weapon and Special Attack categories if not selected
+      this.ownedGear[slot].push(item)
+      if (slot === 'Weapon') {
+        if (!this.ownedGear['Special Attack'])
+          this.ownedGear['Special Attack'] = []
+        if (!this.ownedGear['Special Attack'].includes(item))
+          this.ownedGear['Special Attack'].push(item)
+      }
+      if (slot === 'Special Attack') {
+        if (!this.ownedGear['Weapon']) this.ownedGear['Weapon'] = []
+        if (!this.ownedGear['Weapon'].includes(item))
+          this.ownedGear['Weapon'].push(item)
+      }
     }
 
     localStorage.setItem('ownedGear', JSON.stringify(this.ownedGear)) // ✅ Persist

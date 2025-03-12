@@ -2,32 +2,39 @@
   "name": "The Mimic",
   "image": "https://oldschool.runescape.wiki/images/The_Mimic.png?b45f4",
   "wiki_link": "https://oldschool.runescape.wiki/w/The_Mimic",
-  "combat_level": 725,
-  "hp": 500,
-  "max_hit": 41,
-  "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
-  "defense": {
-    "melee": {
-      "stab": 150,
-      "slash": 150,
-      "crush": 200
-    },
-    "magic": 200,
-    "ranged": {
-      "arrows": 50,
-      "bolts": 50,
-      "thrown": 50
+  "bosses": [
+    {
+      "name": "The Mimic",
+      "image": "https://oldschool.runescape.wiki/images/The_Mimic.png?b45f4",
+      "wiki_link": "https://oldschool.runescape.wiki/w/The_Mimic",
+      "combat_level": 725,
+      "hp": 500,
+      "max_hit": 41,
+      "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+      "defense": {
+        "melee": {
+          "stab": 150,
+          "slash": 150,
+          "crush": 200
+        },
+        "magic": 200,
+        "ranged": {
+          "arrows": 50,
+          "bolts": 50,
+          "thrown": 50
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_speed": 3,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic", "Ranged", "Venom"],
-  "attack_speed": 3,
-  "aggressive": true,
-  "immunities": {
-    "poison": true,
-    "venom": true,
-    "cannons": false,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Ranged": {
       "Weapon": [

@@ -2,34 +2,41 @@
   "name": "General Graardor",
   "image": "https://oldschool.runescape.wiki/images/General_Graardor.png?4dd90",
   "wiki_link": "https://oldschool.runescape.wiki/w/General_Graardor",
-  "combat_level": 624,
-  "hp": 255,
-  "max_hit": {
-    "melee": 60,
-    "ranged": 35
-  },
-  "defense": {
-    "melee": {
-      "stab": 90,
-      "slash": 90,
-      "crush": 90
-    },
-    "magic": 298,
-    "ranged": {
-      "arrows": 90,
-      "bolts": 90,
-      "thrown": 90
+  "bosses": [
+    {
+      "name": "General Graardor",
+      "image": "https://oldschool.runescape.wiki/images/General_Graardor.png?4dd90",
+      "wiki_link": "https://oldschool.runescape.wiki/w/General_Graardor",
+      "combat_level": 624,
+      "hp": 255,
+      "max_hit": {
+        "melee": 60,
+        "ranged": 35
+      },
+      "defense": {
+        "melee": {
+          "stab": 90,
+          "slash": 90,
+          "crush": 90
+        },
+        "magic": 298,
+        "ranged": {
+          "arrows": 90,
+          "bolts": 90,
+          "thrown": 90
+        }
+      },
+      "attack_styles": ["Melee", "Ranged"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic", "Ranged"],
-  "attack_speed": 6,
-  "aggressive": true,
-  "immunities": {
-    "poison": true,
-    "venom": true,
-    "cannons": false,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Melee Tank": {
       "Weapon": [

@@ -2,35 +2,42 @@
   "name": "Kalphite Queen",
   "image": "https://oldschool.runescape.wiki/images/Kalphite_Queen.png?a4955",
   "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
-  "combat_level": 333,
-  "hp": 255,
-  "max_hit": {
-    "melee": 31,
-    "magic": 31,
-    "ranged": 31
-  },
-  "defense": {
-    "melee": {
-      "stab": 50,
-      "slash": 50,
-      "crush": 10
-    },
-    "magic": 100,
-    "ranged": {
-      "arrows": 100,
-      "bolts": 100,
-      "thrown": 100
+  "bosses": [
+    {
+      "name": "Kalphite Queen",
+      "image": "https://oldschool.runescape.wiki/images/Kalphite_Queen.png?a4955",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
+      "combat_level": 333,
+      "hp": 255,
+      "max_hit": {
+        "melee": 31,
+        "magic": 31,
+        "ranged": 31
+      },
+      "defense": {
+        "melee": {
+          "stab": 50,
+          "slash": 50,
+          "crush": 10
+        },
+        "magic": 100,
+        "ranged": {
+          "arrows": 100,
+          "bolts": 100,
+          "thrown": 100
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Melee"],
+      "attack_speed": 4,
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic", "Ranged", "Melee"],
-  "attack_speed": 4,
-  "aggressive": true,
-  "immunities": {
-    "poison": false,
-    "venom": true,
-    "cannons": false,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Ranged": {
       "Weapon": [

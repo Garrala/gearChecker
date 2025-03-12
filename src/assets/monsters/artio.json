@@ -2,35 +2,42 @@
   "name": "Artio",
   "image": "https://oldschool.runescape.wiki/images/Artio.png?bfba7",
   "wiki_link": "https://oldschool.runescape.wiki/w/Artio",
-  "combat_level": 320,
-  "hp": 450,
-  "max_hit": {
-    "melee": 35,
-    "magic": 50,
-    "ranged": 17
-  },
-  "defense": {
-    "melee": {
-      "stab": 125,
-      "slash": 110,
-      "crush": 110
-    },
-    "magic": 0,
-    "ranged": {
-      "arrows": 40,
-      "bolts": 40,
-      "thrown": 40
+  "bosses": [
+    {
+      "name": "Artio",
+      "image": "https://oldschool.runescape.wiki/images/Artio.png?bfba7",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Artio",
+      "combat_level": 320,
+      "hp": 450,
+      "max_hit": {
+        "melee": 35,
+        "magic": 50,
+        "ranged": 17
+      },
+      "defense": {
+        "melee": {
+          "stab": 125,
+          "slash": 110,
+          "crush": 110
+        },
+        "magic": 0,
+        "ranged": {
+          "arrows": 40,
+          "bolts": 40,
+          "thrown": 40
+        }
+      },
+      "attack_styles": ["Melee", "Magic", "Ranged"],
+      "attack_speed": 5,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Melee", "Magic", "Ranged"],
-  "attack_speed": 5,
-  "aggressive": true,
-  "immunities": {
-    "poison": true,
-    "venom": true,
-    "cannons": false,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Ranged": {
       "Weapon": [

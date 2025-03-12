@@ -2,35 +2,42 @@
   "name": "Grotesque Guardians",
   "image": "https://oldschool.runescape.wiki/images/Dusk_%282nd_form%29.png?d4047",
   "wiki_link": "https://oldschool.runescape.wiki/w/Grotesque_Guardians/Strategies",
-  "combat_level": 248,
-  "hp": 450,
-  "max_hit": {
-    "melee": 15,
-    "special": 33,
-    "ranged": 15
-  },
-  "defense": {
-    "melee": {
-      "stab": 0,
-      "slash": 0,
-      "crush": 0
-    },
-    "magic": 0,
-    "ranged": {
-      "arrows": 0,
-      "bolts": 0,
-      "thrown": 0
+  "bosses": [
+    {
+      "name": "Grotesque Guardians",
+      "image": "https://oldschool.runescape.wiki/images/Dusk_%282nd_form%29.png?d4047",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Grotesque_Guardians/Strategies",
+      "combat_level": 248,
+      "hp": 450,
+      "max_hit": {
+        "melee": 15,
+        "special": 33,
+        "ranged": 15
+      },
+      "defense": {
+        "melee": {
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
+        },
+        "magic": 0,
+        "ranged": {
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
+        }
+      },
+      "attack_styles": ["Melee", "Ranged", "Special"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Melee", "Ranged", "Special"],
-  "attack_speed": 6,
-  "aggressive": true,
-  "immunities": {
-    "poison": true,
-    "venom": true,
-    "cannons": false,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Ranged Switches": {
       "Weapon": [

@@ -6,25 +6,29 @@ import { map, switchMap } from 'rxjs/operators'
 export interface Monster {
   name: string
   image: string
-  wiki_link: string
-  combat_level: number
-  hp: number
-  max_hit: { [key: string]: number }
-  weaknesses: { [key: string]: string }
-  attack_styles?: string[]
-  attack_speed?: number
-  defense: {
-    melee: { stab: number; slash: number; crush: number }
-    magic: number
-    ranged: { bolts: number; arrows: number; thrown: number }
-  }
-
-  immunities?: {
-    poison?: boolean
-    venom?: boolean
-    cannons?: boolean
-    thralls?: boolean
-  }
+  category?: string
+  bosses: {
+    name: string
+    image: string
+    wiki_link: string
+    combat_level: number
+    hp: number
+    max_hit: { [key: string]: number }
+    weaknesses: { [key: string]: string }
+    attack_styles?: string[]
+    attack_speed?: number
+    defense: {
+      melee: { stab: number; slash: number; crush: number }
+      magic: number
+      ranged: { bolts: number; arrows: number; thrown: number }
+    }
+    immunities?: {
+      poison?: boolean
+      venom?: boolean
+      cannons?: boolean
+      thralls?: boolean
+    }
+  }[]
   gear_setups: { [tab: string]: { [slot: string]: string[] } }
 }
 

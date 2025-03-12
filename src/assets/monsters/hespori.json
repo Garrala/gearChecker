@@ -2,38 +2,45 @@
   "name": "Hespori",
   "image": "https://oldschool.runescape.wiki/images/Hespori.png?83c72",
   "wiki_link": "https://oldschool.runescape.wiki/w/Hespori",
-  "combat_level": 725,
-  "hp": 300,
-  "max_hit": {
-    "ranged": 16,
-    "magic": 14,
-    "special": 40
-  },
-  "weaknesses": {
-    "fire": "100%"
-  },
-  "defense": {
-    "melee": {
-      "stab": 60,
-      "slash": 20,
-      "crush": 60
-    },
-    "magic": 80,
-    "ranged": {
-      "arrows": 80,
-      "bolts": 80,
-      "thrown": 80
+  "bosses": [
+    {
+      "name": "Hespori",
+      "image": "https://oldschool.runescape.wiki/images/Hespori.png?83c72",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Hespori",
+      "combat_level": 725,
+      "hp": 300,
+      "max_hit": {
+        "ranged": 16,
+        "magic": 14,
+        "special": 40
+      },
+      "weaknesses": {
+        "fire": "100%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 60,
+          "slash": 20,
+          "crush": 60
+        },
+        "magic": 80,
+        "ranged": {
+          "arrows": 80,
+          "bolts": 80,
+          "thrown": 80
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Poison", "Special"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic", "Ranged", "Poison", "Special"],
-  "attack_speed": 6,
-  "aggressive": true,
-  "immunities": {
-    "poison": true,
-    "venom": true,
-    "cannons": true,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Entry Level": {
       "Weapon": [["Dragon scimitar"], ["Zombie axe"]],

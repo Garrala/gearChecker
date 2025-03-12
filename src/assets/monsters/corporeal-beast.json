@@ -2,35 +2,42 @@
   "name": "Corporeal Beast",
   "image": "https://oldschool.runescape.wiki/images/Corporeal_Beast.png?52ebb",
   "wiki_link": "https://oldschool.runescape.wiki/w/Corporeal_Beast",
-  "combat_level": 785,
-  "hp": 2000,
-  "max_hit": {
-    "melee": 33,
-    "magic": 65,
-    "stomp": 51
-  },
-  "defense": {
-    "melee": {
-      "stab": 25,
-      "slash": 200,
-      "crush": 100
-    },
-    "magic": 150,
-    "ranged": {
-      "arrows": 230,
-      "bolts": 100,
-      "thrown": 230
+  "bosses": [
+    {
+      "name": "Corporeal Beast",
+      "image": "https://oldschool.runescape.wiki/images/Corporeal_Beast.png?52ebb",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Corporeal_Beast",
+      "combat_level": 785,
+      "hp": 2000,
+      "max_hit": {
+        "melee": 33,
+        "magic": 65,
+        "stomp": 51
+      },
+      "defense": {
+        "melee": {
+          "stab": 25,
+          "slash": 200,
+          "crush": 100
+        },
+        "magic": 150,
+        "ranged": {
+          "arrows": 230,
+          "bolts": 100,
+          "thrown": 230
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Stomp"],
+      "attack_speed": 4,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic", "Ranged", "Stomp"],
-  "attack_speed": 4,
-  "aggressive": true,
-  "immunities": {
-    "poison": true,
-    "venom": true,
-    "cannons": false,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Solo / Duo Melee": {
       "Weapon": [

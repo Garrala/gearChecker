@@ -2,38 +2,45 @@
   "name": "Cerberus",
   "image": "https://oldschool.runescape.wiki/images/Cerberus.png?47f4c",
   "wiki_link": "https://oldschool.runescape.wiki/w/Cerberus",
-  "combat_level": 318,
-  "hp": 600,
-  "max_hit": {
-    "melee": 23,
-    "ranged": 23,
-    "magic": 23
-  },
-  "weaknesses": {
-    "water": "40%"
-  },
-  "defense": {
-    "melee": {
-      "stab": 50,
-      "slash": 100,
-      "crush": 25
-    },
-    "magic": 100,
-    "ranged": {
-      "arrows": 100,
-      "bolts": 100,
-      "thrown": 100
+  "bosses": [
+    {
+      "name": "Cerberus",
+      "image": "https://oldschool.runescape.wiki/images/Cerberus.png?47f4c",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Cerberus",
+      "combat_level": 318,
+      "hp": 600,
+      "max_hit": {
+        "melee": 23,
+        "ranged": 23,
+        "magic": 23
+      },
+      "weaknesses": {
+        "water": "40%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 50,
+          "slash": 100,
+          "crush": 25
+        },
+        "magic": 100,
+        "ranged": {
+          "arrows": 100,
+          "bolts": 100,
+          "thrown": 100
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Melee"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic", "Ranged", "Melee"],
-  "attack_speed": 6,
-  "aggressive": true,
-  "immunities": {
-    "poison": true,
-    "venom": true,
-    "cannons": false,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Melee": {
       "Weapon": [

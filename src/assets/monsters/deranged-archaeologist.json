@@ -2,35 +2,42 @@
   "name": "Deranged Archaeologist",
   "image": "https://oldschool.runescape.wiki/images/Deranged_archaeologist.png?32c7e",
   "wiki_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist",
-  "combat_level": 276,
-  "hp": 200,
-  "max_hit": {
-    "melee": 25,
-    "ranged": 25,
-    "special": 56
-  },
-  "defense": {
-    "melee": {
-      "stab": 20,
-      "slash": 20,
-      "crush": 50
-    },
-    "magic": 300,
-    "ranged": {
-      "arrows": 300,
-      "bolts": 300,
-      "thrown": 300
+  "bosses": [
+    {
+      "name": "Deranged Archaeologist",
+      "image": "https://oldschool.runescape.wiki/images/Deranged_archaeologist.png?32c7e",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist",
+      "combat_level": 276,
+      "hp": 200,
+      "max_hit": {
+        "melee": 25,
+        "ranged": 25,
+        "special": 56
+      },
+      "defense": {
+        "melee": {
+          "stab": 20,
+          "slash": 20,
+          "crush": 50
+        },
+        "magic": 300,
+        "ranged": {
+          "arrows": 300,
+          "bolts": 300,
+          "thrown": 300
+        }
+      },
+      "attack_styles": ["Melee", "Ranged", "Special"],
+      "attack_speed": 3,
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "venom": false,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Melee", "Ranged", "Special"],
-  "attack_speed": 3,
-  "aggressive": true,
-  "immunities": {
-    "poison": false,
-    "venom": false,
-    "cannons": false,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Magic": {
       "Weapon": [

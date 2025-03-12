@@ -2,34 +2,41 @@
   "name": "Commander Zilyana",
   "image": "https://oldschool.runescape.wiki/images/Commander_Zilyana.png?c5eaa",
   "wiki_link": "https://oldschool.runescape.wiki/w/Commander_Zilyana",
-  "combat_level": 596,
-  "hp": 500,
-  "max_hit": {
-    "melee": 27,
-    "magic": 20
-  },
-  "defense": {
-    "melee": {
-      "stab": 100,
-      "slash": 100,
-      "crush": 100
-    },
-    "magic": 100,
-    "ranged": {
-      "arrows": 100,
-      "bolts": 100,
-      "thrown": 75
+  "bosses": [
+    {
+      "name": "Commander Zilyana",
+      "image": "https://oldschool.runescape.wiki/images/Commander_Zilyana.png?c5eaa",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Commander_Zilyana",
+      "combat_level": 596,
+      "hp": 500,
+      "max_hit": {
+        "melee": 27,
+        "magic": 20
+      },
+      "defense": {
+        "melee": {
+          "stab": 100,
+          "slash": 100,
+          "crush": 100
+        },
+        "magic": 100,
+        "ranged": {
+          "arrows": 100,
+          "bolts": 100,
+          "thrown": 75
+        }
+      },
+      "attack_styles": ["Magic", "Melee"],
+      "attack_speed": 2,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic", "Melee"],
-  "attack_speed": 2,
-  "aggressive": true,
-  "immunities": {
-    "poison": true,
-    "venom": true,
-    "cannons": false,
-    "thralls": false
-  },
+  ],
   "gear_setups": {
     "Magic": {
       "Weapon": [["Tumeken's shadow"], ["Sanguinesti staff"]],

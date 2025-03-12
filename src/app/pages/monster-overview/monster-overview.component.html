@@ -29,22 +29,32 @@
     <!-- Boss Info -->
     <div class="left-column">
       <div class="boss-picture">
+        <!-- 🔹 Boss Selector (If Multi-Boss) -->
+        <div *ngIf="isMultiBoss(selectedMonster)" class="boss-selector">
+          <button
+            *ngFor="let boss of selectedMonster?.bosses; let i = index"
+            (click)="switchBoss(i)"
+            [class.active]="selectedBossIndex === i"
+          >
+            {{ boss.name }}
+          </button>
+        </div>
         <div class="icon-container">
+          <img
+            [src]="getSelectedBoss()?.image"
+            alt="{{ getSelectedBoss()?.name }}"
+          />
           <a
-            [href]="selectedMonster?.wiki_link"
+            [href]="getSelectedBoss()?.wiki_link"
             target="_blank"
             class="boss-link"
             >🔍</a
           >
-          <img
-            [src]="selectedMonster?.image"
-            alt="{{ selectedMonster?.name }}"
-          />
         </div>
       </div>
 
       <div class="boss-info-box">
-        <h3 class="boss-title">{{ selectedMonster?.name }}</h3>
+        <h3 class="boss-title">{{ getSelectedBoss()?.name }}</h3>
 
         <div class="info-grid">
           <div class="info-item">
@@ -53,7 +63,7 @@
               title="Hitpoints"
             />
             <strong>Hitpoints:</strong>
-            {{ selectedMonster?.hp }}
+            {{ getSelectedBoss()?.hp }}
           </div>
           <div class="info-item">
             <img
@@ -61,9 +71,9 @@
               title="Max Hit"
             />
             <strong>Max Hit:</strong>
-            <div *ngIf="selectedMonster?.max_hit">
+            <div *ngIf="getSelectedBoss()?.max_hit">
               <div
-                *ngFor="let key of objectKeys(selectedMonster?.max_hit || {})"
+                *ngFor="let key of objectKeys(getSelectedBoss()?.max_hit || {})"
               >
                 <span>
                   <img
@@ -91,7 +101,7 @@
                     alt="Rockfall"
                   />
 
-                  {{ selectedMonster?.max_hit?.[key] ?? 'N/A' }}
+                  {{ getSelectedBoss()?.max_hit?.[key] ?? 'N/A' }}
                 </span>
               </div>
             </div>
@@ -104,7 +114,9 @@
             <strong>Attack Style:</strong>
             <span class="attack-style-box">
               <img
-                *ngIf="(selectedMonster?.attack_styles || []).includes('Magic')"
+                *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Magic')
+                "
                 src="https://oldschool.runescape.wiki/images/Magic_icon.png"
                 alt="Magic"
                 title="Magic Attack Style"
@@ -113,7 +125,7 @@
 
               <img
                 *ngIf="
-                  (selectedMonster?.attack_styles || []).includes('Ranged')
+                  (getSelectedBoss()?.attack_styles || []).includes('Ranged')
                 "
                 src="https://oldschool.runescape.wiki/images/Ranged_icon.png"
                 alt="Ranged"
@@ -122,7 +134,9 @@
               />
 
               <img
-                *ngIf="(selectedMonster?.attack_styles || []).includes('Melee')"
+                *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Melee')
+                "
                 src="https://oldschool.runescape.wiki/images/Strength_icon.png?e6e0c"
                 alt="Melee"
                 title="Melee Attack Style"
@@ -130,7 +144,9 @@
               />
 
               <img
-                *ngIf="(selectedMonster?.attack_styles || []).includes('Venom')"
+                *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Venom')
+                "
                 src="https://oldschool.runescape.wiki/images/Venom_hitsplat.png?1977a"
                 alt="Venom"
                 title="Venom Attack Style"
@@ -145,7 +161,7 @@
               title="Attack Speed"
             />
             <strong>Attack Speed:</strong>
-            {{ selectedMonster?.attack_speed }} ticks
+            {{ getSelectedBoss()?.attack_speed }} ticks
           </div>
         </div>
 
@@ -161,15 +177,17 @@
               title="Stab"
             />
             <span
-              *ngIf="selectedMonster?.defense?.melee?.stab !== undefined"
+              *ngIf="getSelectedBoss()?.defense?.melee?.stab !== undefined"
               [ngClass]="{
                 'stat-value': true,
-                positive: (selectedMonster?.defense?.melee?.stab ?? 0) > 0,
-                negative: (selectedMonster?.defense?.melee?.stab ?? 0) < 0,
+                positive: (getSelectedBoss()?.defense?.melee?.stab ?? 0) > 0,
+                negative: (getSelectedBoss()?.defense?.melee?.stab ?? 0) < 0,
               }"
             >
-              {{ (selectedMonster?.defense?.melee?.stab ?? 0) > 0 ? '+' : '' }}
-              {{ selectedMonster?.defense?.melee?.stab ?? 0 }}
+              {{
+                (getSelectedBoss()?.defense?.melee?.stab ?? 0) > 0 ? '+' : ''
+              }}
+              {{ getSelectedBoss()?.defense?.melee?.stab ?? 0 }}
             </span>
           </div>
 
@@ -179,15 +197,17 @@
               title="Slash"
             />
             <span
-              *ngIf="selectedMonster?.defense?.melee?.slash !== undefined"
+              *ngIf="getSelectedBoss()?.defense?.melee?.slash !== undefined"
               [ngClass]="{
                 'stat-value': true,
-                positive: (selectedMonster?.defense?.melee?.slash ?? 0) > 0,
-                negative: (selectedMonster?.defense?.melee?.slash ?? 0) < 0,
+                positive: (getSelectedBoss()?.defense?.melee?.slash ?? 0) > 0,
+                negative: (getSelectedBoss()?.defense?.melee?.slash ?? 0) < 0,
               }"
             >
-              {{ (selectedMonster?.defense?.melee?.slash ?? 0) > 0 ? '+' : '' }}
-              {{ selectedMonster?.defense?.melee?.slash ?? 0 }}
+              {{
+                (getSelectedBoss()?.defense?.melee?.slash ?? 0) > 0 ? '+' : ''
+              }}
+              {{ getSelectedBoss()?.defense?.melee?.slash ?? 0 }}
             </span>
           </div>
           <div class="defense-box">
@@ -196,15 +216,17 @@
               title="Crush"
             />
             <span
-              *ngIf="selectedMonster?.defense?.melee?.crush !== undefined"
+              *ngIf="getSelectedBoss()?.defense?.melee?.crush !== undefined"
               [ngClass]="{
                 'stat-value': true,
-                positive: (selectedMonster?.defense?.melee?.crush ?? 0) > 0,
-                negative: (selectedMonster?.defense?.melee?.crush ?? 0) < 0,
+                positive: (getSelectedBoss()?.defense?.melee?.crush ?? 0) > 0,
+                negative: (getSelectedBoss()?.defense?.melee?.crush ?? 0) < 0,
               }"
             >
-              {{ (selectedMonster?.defense?.melee?.crush ?? 0) > 0 ? '+' : '' }}
-              {{ selectedMonster?.defense?.melee?.crush ?? 0 }}
+              {{
+                (getSelectedBoss()?.defense?.melee?.crush ?? 0) > 0 ? '+' : ''
+              }}
+              {{ getSelectedBoss()?.defense?.melee?.crush ?? 0 }}
             </span>
           </div>
 
@@ -216,23 +238,23 @@
                 title="Magic Defense"
               />
               <span
-                *ngIf="selectedMonster?.defense?.magic !== undefined"
+                *ngIf="getSelectedBoss()?.defense?.magic !== undefined"
                 [ngClass]="{
                   'stat-value': true,
-                  positive: (selectedMonster?.defense?.magic ?? 0) > 0,
-                  negative: (selectedMonster?.defense?.magic ?? 0) < 0,
+                  positive: (getSelectedBoss()?.defense?.magic ?? 0) > 0,
+                  negative: (getSelectedBoss()?.defense?.magic ?? 0) < 0,
                 }"
               >
-                {{ (selectedMonster?.defense?.magic ?? 0) > 0 ? '+' : '' }}
-                {{ selectedMonster?.defense?.magic ?? 0 }}
+                {{ (getSelectedBoss()?.defense?.magic ?? 0) > 0 ? '+' : '' }}
+                {{ getSelectedBoss()?.defense?.magic ?? 0 }}
               </span>
             </div>
             <div class="defense-box">
               <div>
                 <img
                   *ngIf="
-                    !selectedMonster?.weaknesses ||
-                    objectKeys(selectedMonster?.weaknesses).length === 0
+                    !getSelectedBoss()?.weaknesses ||
+                    objectKeys(getSelectedBoss()?.weaknesses).length === 0
                   "
                   src="https://oldschool.runescape.wiki/images/Pure_essence.png?ed4b0"
                   alt="No Weakness"
@@ -241,7 +263,7 @@
 
                 <span
                   *ngFor="
-                    let key of objectKeys(selectedMonster?.weaknesses || {})
+                    let key of objectKeys(getSelectedBoss()?.weaknesses || {})
                   "
                 >
                   <img
@@ -269,7 +291,7 @@
                     title="Air Weakness"
                   />
                   <span class="negative">
-                    {{ selectedMonster?.weaknesses?.[key] ?? 'None' }}
+                    {{ getSelectedBoss()?.weaknesses?.[key] ?? 'None' }}
                   </span>
                 </span>
               </div>
@@ -282,17 +304,17 @@
               title="Thrown"
             />
             <span
-              *ngIf="selectedMonster?.defense?.ranged?.thrown !== undefined"
+              *ngIf="getSelectedBoss()?.defense?.ranged?.thrown !== undefined"
               [ngClass]="{
                 'stat-value': true,
-                positive: (selectedMonster?.defense?.ranged?.thrown ?? 0) > 0,
-                negative: (selectedMonster?.defense?.ranged?.thrown ?? 0) < 0,
+                positive: (getSelectedBoss()?.defense?.ranged?.thrown ?? 0) > 0,
+                negative: (getSelectedBoss()?.defense?.ranged?.thrown ?? 0) < 0,
               }"
             >
               {{
-                (selectedMonster?.defense?.ranged?.thrown ?? 0) > 0 ? '+' : ''
+                (getSelectedBoss()?.defense?.ranged?.thrown ?? 0) > 0 ? '+' : ''
               }}
-              {{ selectedMonster?.defense?.ranged?.thrown ?? 0 }}
+              {{ getSelectedBoss()?.defense?.ranged?.thrown ?? 0 }}
             </span>
           </div>
           <div class="defense-box">
@@ -301,17 +323,17 @@
               title="Arrows"
             />
             <span
-              *ngIf="selectedMonster?.defense?.ranged?.arrows !== undefined"
+              *ngIf="getSelectedBoss()?.defense?.ranged?.arrows !== undefined"
               [ngClass]="{
                 'stat-value': true,
-                positive: (selectedMonster?.defense?.ranged?.arrows ?? 0) > 0,
-                negative: (selectedMonster?.defense?.ranged?.arrows ?? 0) < 0,
+                positive: (getSelectedBoss()?.defense?.ranged?.arrows ?? 0) > 0,
+                negative: (getSelectedBoss()?.defense?.ranged?.arrows ?? 0) < 0,
               }"
             >
               {{
-                (selectedMonster?.defense?.ranged?.arrows ?? 0) > 0 ? '+' : ''
+                (getSelectedBoss()?.defense?.ranged?.arrows ?? 0) > 0 ? '+' : ''
               }}
-              {{ selectedMonster?.defense?.ranged?.arrows ?? 0 }}
+              {{ getSelectedBoss()?.defense?.ranged?.arrows ?? 0 }}
             </span>
           </div>
           <div class="defense-box">
@@ -320,17 +342,17 @@
               title="Bolts"
             />
             <span
-              *ngIf="selectedMonster?.defense?.ranged?.bolts !== undefined"
+              *ngIf="getSelectedBoss()?.defense?.ranged?.bolts !== undefined"
               [ngClass]="{
                 'stat-value': true,
-                positive: (selectedMonster?.defense?.ranged?.bolts ?? 0) > 0,
-                negative: (selectedMonster?.defense?.ranged?.bolts ?? 0) < 0,
+                positive: (getSelectedBoss()?.defense?.ranged?.bolts ?? 0) > 0,
+                negative: (getSelectedBoss()?.defense?.ranged?.bolts ?? 0) < 0,
               }"
             >
               {{
-                (selectedMonster?.defense?.ranged?.bolts ?? 0) > 0 ? '+' : ''
+                (getSelectedBoss()?.defense?.ranged?.bolts ?? 0) > 0 ? '+' : ''
               }}
-              {{ selectedMonster?.defense?.ranged?.bolts ?? 0 }}
+              {{ getSelectedBoss()?.defense?.ranged?.bolts ?? 0 }}
             </span>
           </div>
         </div>
@@ -346,15 +368,17 @@
               title="Poison"
             />
             <span
-              *ngIf="selectedMonster?.immunities?.poison !== undefined"
+              *ngIf="getSelectedBoss()?.immunities?.poison !== undefined"
               [ngClass]="{
                 'stat-value': true,
-                positive: selectedMonster?.immunities?.poison,
-                negative: !selectedMonster?.immunities?.poison,
+                positive: getSelectedBoss()?.immunities?.poison,
+                negative: !getSelectedBoss()?.immunities?.poison,
               }"
             >
               {{
-                selectedMonster?.immunities?.poison ? 'Immune' : '❌ Not Immune'
+                getSelectedBoss()?.immunities?.poison
+                  ? 'Immune'
+                  : '❌ Not Immune'
               }}
             </span>
           </div>
@@ -364,15 +388,17 @@
               title="Venom"
             />
             <span
-              *ngIf="selectedMonster?.immunities?.venom !== undefined"
+              *ngIf="getSelectedBoss()?.immunities?.venom !== undefined"
               [ngClass]="{
                 'stat-value': true,
-                positive: selectedMonster?.immunities?.venom,
-                negative: !selectedMonster?.immunities?.venom,
+                positive: getSelectedBoss()?.immunities?.venom,
+                negative: !getSelectedBoss()?.immunities?.venom,
               }"
             >
               {{
-                selectedMonster?.immunities?.venom ? 'Immune' : '❌ Not Immune'
+                getSelectedBoss()?.immunities?.venom
+                  ? 'Immune'
+                  : '❌ Not Immune'
               }}
             </span>
           </div>
@@ -382,15 +408,15 @@
               title="Cannonable"
             />
             <span
-              *ngIf="selectedMonster?.immunities?.cannons !== undefined"
+              *ngIf="getSelectedBoss()?.immunities?.cannons !== undefined"
               [ngClass]="{
                 'stat-value': true,
-                positive: selectedMonster?.immunities?.cannons,
-                negative: !selectedMonster?.immunities?.cannons,
+                positive: getSelectedBoss()?.immunities?.cannons,
+                negative: !getSelectedBoss()?.immunities?.cannons,
               }"
             >
               {{
-                selectedMonster?.immunities?.cannons
+                getSelectedBoss()?.immunities?.cannons
                   ? 'Immune'
                   : '❌ Not Immune'
               }}
@@ -402,15 +428,15 @@
               title="Thralls"
             />
             <span
-              *ngIf="selectedMonster?.immunities?.thralls !== undefined"
+              *ngIf="getSelectedBoss()?.immunities?.thralls !== undefined"
               [ngClass]="{
                 'stat-value': true,
-                positive: selectedMonster?.immunities?.thralls,
-                negative: !selectedMonster?.immunities?.thralls,
+                positive: getSelectedBoss()?.immunities?.thralls,
+                negative: !getSelectedBoss()?.immunities?.thralls,
               }"
             >
               {{
-                selectedMonster?.immunities?.thralls
+                getSelectedBoss()?.immunities?.thralls
                   ? 'Immune'
                   : '❌ Not Immune'
               }}
@@ -638,11 +664,12 @@
       </div>
     </div>
   </div>
+
   <div class="recommended-gear-table">
     <!-- Gear Setup Tabs -->
     <div class="gear-tabs">
       <button
-        *ngFor="let setup of getGearSetups(selectedMonster!)"
+        *ngFor="let setup of getGearSetups()"
         (click)="changeSetup(setup)"
         [class.active]="selectedSetup === setup"
       >
@@ -663,7 +690,7 @@
       </thead>
       <tbody>
         <!-- Loop over slots -->
-        <tr *ngFor="let slot of getGearSlots(selectedMonster)">
+        <tr *ngFor="let slot of getGearSlots()">
           <td>
             <strong>{{ slot }}</strong>
           </td>

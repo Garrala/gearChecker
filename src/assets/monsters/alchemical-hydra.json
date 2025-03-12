@@ -1,36 +1,41 @@
 {
   "name": "Alchemical Hydra",
   "image": "https://oldschool.runescape.wiki/images/Alchemical_Hydra_%28serpentine%29.png?925dd",
-  "wiki_link": "https://oldschool.runescape.wiki/w/Alchemical_Hydra",
-  "combat_level": 426,
-  "hp": 1100,
-  "max_hit": {
-    "default": 34,
-    "empowered": 52
-  },
-  "defense": {
-    "melee": {
-      "stab": 75,
-      "slash": 150,
-      "crush": 150
-    },
-    "magic": 150,
-    "ranged": {
-      "arrows": 45,
-      "bolts": 45,
-      "thrown": 45
+  "bosses": [
+    {
+      "name": "Alchemical Hydra",
+      "image": "https://oldschool.runescape.wiki/images/Alchemical_Hydra_%28serpentine%29.png?925dd",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Alchemical_Hydra#Serpentine",
+      "combat_level": 426,
+      "hp": 1100,
+      "max_hit": {
+        "default": 34,
+        "empowered": 52
+      },
+      "defense": {
+        "melee": {
+          "stab": 75,
+          "slash": 150,
+          "crush": 150
+        },
+        "magic": 150,
+        "ranged": {
+          "arrows": 45,
+          "bolts": 45,
+          "thrown": 45
+        }
+      },
+      "attack_styles": ["Magic", "Ranged"],
+      "attack_speed": 3,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     }
-  },
-  "attack_styles": ["Magic", "Ranged"],
-  "attack_speed": 3,
-  "aggressive": true,
-  "immunities": {
-    "poison": true,
-    "venom": true,
-    "cannons": false,
-    "thralls": false
-  },
-
+  ],
   "gear_setups": {
     "Ranged": {
       "Weapon": [
