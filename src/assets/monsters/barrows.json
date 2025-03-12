@@ -192,7 +192,8 @@
         ["Amethyst arrow", "Rune arrow"],
         ["Bolt rack"],
         ["Adamant arrow", "Broad arrows"]
-      ]
+      ],
+	  "Shield": [ "N/A" ]
     }
   }
 }

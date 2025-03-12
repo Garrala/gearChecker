@@ -164,7 +164,8 @@
         ["Beacon ring"],
         ["Ring of wealth (i)"]
       ],
-      "Ammo": [["Rada's blessing 4"], ["God blessing", "Rada's blessing 3"]]
+      "Ammo": [["Rada's blessing 4"], ["God blessing", "Rada's blessing 3"]],
+	  "Special Attack": ["N/A"]
     }
   }
 }

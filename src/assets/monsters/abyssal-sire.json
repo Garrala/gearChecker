@@ -30,7 +30,6 @@
     "cannons": false,
     "thralls": false
   },
-
   "gear_setups": {
     "Phase 1 Ranged": {
       "Weapon": [
@@ -77,6 +76,7 @@
         ["Tyrannical ring (i)"]
       ],
       "Ammo": [["Dragon arrow"], ["Amethyst arrow"]],
+	  "Shield": ["N/A"],
       "Special Attack": ["N/A"]
     },
     "Phase 1 Magic": {
@@ -146,7 +146,9 @@
       "Ring": [["Ultor ring"], ["Berserker ring (i)"], ["Lightbearer"]],
       "Boots": [["Primordial boots"], ["Dragon boots"], ["Rune boots"]],
       "Gloves": [["Ferocious gloves"], ["Barrows gloves"], ["Dragon gloves"]],
-      "Ammo": [["Rada's blessing 4"], ["God blessing"]]
+      "Ammo": [["Rada's blessing 4"], ["God blessing"]],
+	  "Shield": ["N/A"],
+      "Special Attack": ["N/A"]
     },
     "Phase 2 Melee - No defense reduction": {
       "Weapon": [["Emberlight"], ["Osmumten's fang"]],
@@ -353,7 +355,8 @@
         ["Rune arrow"],
         ["Dragon darts"],
         ["Amethyst darts"]
-      ]
+      ],
+	  "Shield": ["N/A"]
     }
   }
 }

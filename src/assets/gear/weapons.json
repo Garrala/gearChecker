@@ -233,5 +233,150 @@
     "image": "https://oldschool.runescape.wiki/images/Air_battlestaff.png?248b4",
     "wiki": "https://oldschool.runescape.wiki/w/Air_battlestaff",
     "twoHanded": false
+  },
+  "Scorching bow": {
+    "image": "https://oldschool.runescape.wiki/images/Scorching_bow.png?f649a",
+    "wiki": "https://oldschool.runescape.wiki/w/Scorching_bow",
+	"twoHanded": true
+  },
+  "Webweaver bow": {
+    "image": "https://oldschool.runescape.wiki/images/Webweaver_bow.png?dd2ac",
+    "wiki": "https://oldschool.runescape.wiki/w/Webweaver_bow#Charged",
+	"twoHanded": true
+  },
+  "Craw's bow": {
+    "image": "https://oldschool.runescape.wiki/images/Craw%27s_bow.png?5352a",
+    "wiki": "https://oldschool.runescape.wiki/w/Craw%27s_bow#Charged",
+	"twoHanded": true
+  },
+  "Blood ancient sceptre": {
+    "image": "https://oldschool.runescape.wiki/images/Blood_ancient_sceptre.png?3616e",
+    "wiki": "https://oldschool.runescape.wiki/w/Blood_ancient_sceptre",
+	"twoHanded": false
+  },
+  "Ancient sceptre": {
+    "image": "https://oldschool.runescape.wiki/images/Ancient_sceptre.png?7a41c",
+    "wiki": "https://oldschool.runescape.wiki/w/Ancient_sceptre",
+	"twoHanded": false
+  },
+  "Noxious halberd": {
+    "image": "https://oldschool.runescape.wiki/images/Noxious_halberd.png?8bfab",
+    "wiki": "https://oldschool.runescape.wiki/w/Noxious_halberd",
+	"twoHanded": true
+  },
+  "Emberlight": {
+    "image": "https://oldschool.runescape.wiki/images/Emberlight.png?77ca0",
+    "wiki": "https://oldschool.runescape.wiki/w/Emberlight",
+	"twoHanded": false
+  },
+  "Arclight": {
+    "image": "https://oldschool.runescape.wiki/images/Arclight.png?a892a",
+    "wiki": "https://oldschool.runescape.wiki/w/Arclight#Charged",
+	"twoHanded": false
+  },
+  "Dragon hunter crossbow": {
+    "image": "https://oldschool.runescape.wiki/images/Dragon_hunter_crossbow.png?cc5f3",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_hunter_crossbow",
+	"twoHanded": false
+  },
+  "Eclipse atlatl": {
+    "image": "https://oldschool.runescape.wiki/images/Eclipse_atlatl.png?77621",
+    "wiki": "https://oldschool.runescape.wiki/w/Eclipse_atlatl",
+	"twoHanded": true
+  },
+  "Dragon hunter lance": {
+    "image": "https://oldschool.runescape.wiki/images/Dragon_hunter_lance.png?cc5f3",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_hunter_lance",
+	"twoHanded": false
+  },
+  "Dual macuahuitl": {
+    "image": "https://oldschool.runescape.wiki/images/Dual_macuahuitl.png?77621",
+    "wiki": "https://oldschool.runescape.wiki/w/Dual_macuahuitl",
+	"twoHanded": true
+  },
+  "Abyssal bludgeon": {
+    "image": "https://oldschool.runescape.wiki/images/Abyssal_bludgeon.png?b10f5",
+    "wiki": "https://oldschool.runescape.wiki/w/Abyssal_bludgeon",
+	"twoHanded": true
+  },
+  "Glacial temotli": {
+    "image": "https://oldschool.runescape.wiki/images/Glacial_temotli.png?4836f",
+    "wiki": "https://oldschool.runescape.wiki/w/Glacial_temotli",
+	"twoHanded": true
+  },
+  "Saradomin sword": {
+    "image": "https://oldschool.runescape.wiki/images/Saradomin_sword.png?c943f",
+    "wiki": "https://oldschool.runescape.wiki/w/Saradomin_sword",
+	"twoHanded": true
+  },
+  "Dragon mace": {
+    "image": "https://oldschool.runescape.wiki/images/Dragon_mace.png?cc5f3",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_mace",
+	"twoHanded": false
+  },
+  "Ursine chainmace (u)": {
+    "image": "https://oldschool.runescape.wiki/images/Ursine_chainmace_%28u%29.png?26d89",
+    "wiki": "https://oldschool.runescape.wiki/w/Ursine_chainmace#Uncharged",
+	"twoHanded": false
+  },
+  "Saradomin's blessed sword": {
+    "image": "https://oldschool.runescape.wiki/images/Saradomin%27s_blessed_sword.png?11815",
+    "wiki": "https://oldschool.runescape.wiki/w/Saradomin%27s_blessed_sword",
+	"twoHanded": true
+  },
+  "Dragon crossbow": {
+    "image": "https://oldschool.runescape.wiki/images/Dragon_crossbow.png?c85b3",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_crossbow",
+	"twoHanded": false
+  },
+  "Rune crossbow": {
+    "image": "https://oldschool.runescape.wiki/images/Rune_crossbow.png?eec05",
+    "wiki": "https://oldschool.runescape.wiki/w/Rune_crossbow",
+	"twoHanded": false
+  },
+  "Accursed sceptre": {
+    "image": "https://oldschool.runescape.wiki/images/Accursed_sceptre.png?7a41c",
+    "wiki": "https://oldschool.runescape.wiki/w/Accursed_sceptre#Charged",
+	"twoHanded": false
+  },
+  "Thammaron's sceptre": {
+    "image": "https://oldschool.runescape.wiki/images/Thammaron%27s_sceptre_%28u%29.png?9074d",
+    "wiki": "https://oldschool.runescape.wiki/w/Thammaron%27s_sceptre",
+	"twoHanded": false
+  },
+  "Staff of air": {
+    "image": "https://oldschool.runescape.wiki/images/Staff_of_air.png?e8969",
+    "wiki": "https://oldschool.runescape.wiki/w/Staff_of_air",
+	"twoHanded": false
+  },
+  "Iban's staff (u)": {
+    "image": "https://oldschool.runescape.wiki/images/Iban%27s_staff_%28u%29.png?1940c",
+    "wiki": "https://oldschool.runescape.wiki/w/Iban%27s_staff_(u)",
+	"twoHanded": false
+  },
+  "Maple shortbow": {
+    "image": "https://oldschool.runescape.wiki/images/Maple_shortbow.png?717ea",
+    "wiki": "https://oldschool.runescape.wiki/w/Maple_shortbow",
+	"twoHanded": true
+  },
+  "Ursine chainmace": {
+    "image": "https://oldschool.runescape.wiki/images/Ursine_chainmace.png?26d89",
+    "wiki": "https://oldschool.runescape.wiki/w/Ursine_chainmace#Charged",
+	"twoHanded": false
+  },
+  "Viggora's chainmace": {
+    "image": "https://oldschool.runescape.wiki/images/Viggora%27s_chainmace.png?a7de8",
+    "wiki": "https://oldschool.runescape.wiki/w/Viggora%27s_chainmace#Charged",
+	"twoHanded": false
+  },
+  "Elder maul": {
+    "image": "https://oldschool.runescape.wiki/images/Elder_maul.png?0a875",
+    "wiki": "https://oldschool.runescape.wiki/w/Elder_maul",
+	"twoHanded": true
+  },
+  "Leaf-bladed battleaxe": {
+    "image": "https://oldschool.runescape.wiki/images/Leaf-bladed_battleaxe.png?fa8bd",
+    "wiki": "https://oldschool.runescape.wiki/w/Leaf-bladed_battleaxe",
+	"twoHanded": false
   }
 }
