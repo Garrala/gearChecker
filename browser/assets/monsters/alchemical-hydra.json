@@ -1,0 +1,170 @@
+{
+  "name": "Alchemical Hydra",
+  "category": "Slayer Bosses",
+  "image": "https://oldschool.runescape.wiki/images/Alchemical_Hydra_%28serpentine%29.png?925dd",
+  "bosses": [
+    {
+      "name": "Alchemical Hydra",
+      "image": "https://oldschool.runescape.wiki/images/Alchemical_Hydra_%28serpentine%29.png?925dd",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Alchemical_Hydra#Serpentine",
+      "combat_level": 426,
+      "hp": 1100,
+      "max_hit": {
+        "default": 34,
+        "empowered": 52
+      },
+      "defense": {
+        "melee": {
+          "stab": 75,
+          "slash": 150,
+          "crush": 150
+        },
+        "magic": 150,
+        "ranged": {
+          "arrows": 45,
+          "bolts": 45,
+          "thrown": 45
+        }
+      },
+      "attack_styles": ["Magic", "Ranged"],
+      "attack_speed": 3,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
+    }
+  ],
+  "gear_setups": {
+    "Ranged": {
+      "Weapon": [
+        ["Twisted bow"],
+        ["Toxic blowpipe", "Dragon hunter crossbow"],
+        ["Bow of faerdhinen"],
+        ["Eclipse atlatl"]
+      ],
+      "Special Attack": [
+        ["Zaryte crossbow"],
+        ["Tonalztics of ralos"],
+        ["Toxic blowpipe"],
+        ["Dragon warhammer"]
+      ],
+      "Helmet": [["Slayer helmet (i)"]],
+      "Amulet": [
+        ["Necklace of anguish"],
+        ["Dragonbone necklace"],
+        ["Amulet of fury"],
+        ["Amulet of glory"]
+      ],
+      "Cape": [
+        ["Dizana's quiver"],
+        ["Ava's assembler"],
+        ["Max cape", "Ranging cape(t)"],
+        ["Ava's accumulator", "Ranging cape"]
+      ],
+      "Body": [
+        ["Masori body (f)"],
+        ["Crystal body", "Eclipse moon chestplate"],
+        ["Hueycoatl hide body"],
+        ["Blessed body"]
+      ],
+      "Legs": [
+        ["Masori chaps (f)"],
+        ["Crystal legs", "Eclipse moon tassets"],
+        ["Hueycoatl hide chaps"],
+        ["Blessed chaps"]
+      ],
+      "Shield": [
+        ["Twisted buckler"],
+        ["Dragonfire ward"],
+        ["Odium ward"],
+        ["Book of law"]
+      ],
+      "Gloves": [
+        ["Zaryte vambraces"],
+        ["Blessed bracers", "Hueycoatl hide vambraces"],
+        ["Barrows gloves"],
+        ["Black d'hide vambraces"]
+      ],
+      "Boots": [
+        ["Pegasian boots"],
+        ["Devout boots"],
+        ["Blessed boots", "Aranea boots"],
+        ["Boots of brimstone"],
+        ["Boots of stone"]
+      ],
+      "Ring": [
+        ["Lightbearer"],
+        ["Venator ring"],
+        ["Ring of the gods (i)"],
+        ["Ring of suffering (i)"],
+        ["Archers ring (i)"]
+      ],
+      "Ammo": [
+        ["Dragon arrow", "Ruby dragon bolts (e)", "Atlatl darts"],
+        ["Ruby bolts (e)"],
+        ["Rada's blessing 4"],
+        ["Rada's blessing 3", "God blessing"]
+      ]
+    },
+    "Melee": {
+      "Weapon": [
+        ["Dragon hunter lance"],
+        ["Scythe of vitur"],
+        ["Osmumten's fang", "Ghrazi rapier"],
+        ["Blade of saeldor", "Inquisitor's mace"],
+        ["Zamorakian hasta"]
+      ],
+      "Special Attack": [
+        ["Bandos godsword", "Burning claws"],
+        ["Dragon claws"],
+        ["Voidwaker"],
+        ["Dragon dagger"]
+      ],
+      "Helmet": [["Slayer helmet (i)"]],
+      "Amulet": [
+        ["Amulet of rancour"],
+        ["Amulet of torture"],
+        ["Amulet of blood fury"],
+        ["Amulet of fury"]
+      ],
+      "Cape": [["Infernal cape"], ["Fire cape"], ["Ardougne cloak 4"]],
+      "Body": [
+        ["Torva platebody"],
+        ["Bandos chestplate", "Blood moon chestplate", "Fighter torse"],
+        ["Inquisitor's hauberk"],
+        ["Mixed hide top"]
+      ],
+      "Legs": [
+        ["Torva platelegs"],
+        ["Bandos tassets", "Blood moon tassets"],
+        ["Inquisitor's plateskirt"],
+        ["Obsidian platelegs"],
+        ["Mixed hide legs"]
+      ],
+      "Shield": [
+        ["Avernic defender"],
+        ["Dragon defender"],
+        ["Rune defender"],
+        ["Adamant defender"],
+        ["Dragonfire shield"]
+      ],
+      "Gloves": [["Ferocious gloves"], ["Barrows gloves"], ["Dragon gloves"]],
+      "Boots": [
+        ["Primordial boots"],
+        ["Aranea boots", "Dragon boots", "Echo boots"],
+        ["Granite boots"],
+        ["Devout boots"],
+        ["Boots of brimstone"]
+      ],
+      "Ring": [
+        ["Lightbearer", "Ultor ring"],
+        ["Berserker ring (i)"],
+        ["Brimstone ring"]
+      ],
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Any god blessing"]]
+    }
+  }
+}

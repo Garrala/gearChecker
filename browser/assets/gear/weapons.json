@@ -1,82 +1,387 @@
 {
+  "N/A": {
+    "image": "https://oldschool.runescape.wiki/images/Bank_filler.png?f928c",
+    "wiki": "",
+    "twoHanded": false
+  },
   "Twisted bow": {
     "image": "https://oldschool.runescape.wiki/images/Twisted_bow.png",
-    "wiki": "https://oldschool.runescape.wiki/w/Twisted_bow"
+    "wiki": "https://oldschool.runescape.wiki/w/Twisted_bow",
+    "twoHanded": true
   },
   "Bow of faerdhinen": {
     "image": "https://oldschool.runescape.wiki/images/Bow_of_faerdhinen.png",
-    "wiki": "https://oldschool.runescape.wiki/w/Bow_of_faerdhinen"
+    "wiki": "https://oldschool.runescape.wiki/w/Bow_of_faerdhinen",
+    "twoHanded": true
   },
   "Zaryte crossbow": {
     "image": "https://oldschool.runescape.wiki/images/Zaryte_crossbow.png",
-    "wiki": "https://oldschool.runescape.wiki/w/Zaryte_crossbow"
+    "wiki": "https://oldschool.runescape.wiki/w/Zaryte_crossbow",
+    "twoHanded": false
   },
   "Tumeken's shadow": {
     "image": "https://oldschool.runescape.wiki/images/Tumeken%27s_shadow.png",
-    "wiki": "https://oldschool.runescape.wiki/w/Tumeken%27s_shadow"
+    "wiki": "https://oldschool.runescape.wiki/w/Tumeken%27s_shadow",
+    "twoHanded": true
   },
   "Kodai wand": {
     "image": "https://oldschool.runescape.wiki/images/Kodai_wand.png",
-    "wiki": "https://oldschool.runescape.wiki/w/Kodai_wand"
+    "wiki": "https://oldschool.runescape.wiki/w/Kodai_wand",
+    "twoHanded": false
   },
   "Osmumten's fang": {
     "image": "https://oldschool.runescape.wiki/images/Osmumten%27s_fang.png?8bfab",
-    "wiki": "https://oldschool.runescape.wiki/w/Osmumten%27s_fang"
+    "wiki": "https://oldschool.runescape.wiki/w/Osmumten%27s_fang",
+    "twoHanded": false
   },
   "Ghrazi rapier": {
     "image": "https://oldschool.runescape.wiki/images/Ghrazi_rapier.png?d2266",
-    "wiki": "https://oldschool.runescape.wiki/w/Ghrazi_rapier"
+    "wiki": "https://oldschool.runescape.wiki/w/Ghrazi_rapier",
+    "twoHanded": false
   },
   "Harmonised nightmare staff": {
     "image": "https://oldschool.runescape.wiki/images/Harmonised_nightmare_staff.png?20d11",
-    "wiki": "https://oldschool.runescape.wiki/w/Harmonised_nightmare_staff"
+    "wiki": "https://oldschool.runescape.wiki/w/Harmonised_nightmare_staff",
+    "twoHanded": false
   },
   "Sanguinesti staff": {
     "image": "https://oldschool.runescape.wiki/images/Sanguinesti_staff_%28uncharged%29.png?dcaa9",
-    "wiki": "https://oldschool.runescape.wiki/w/Sanguinesti_staff"
+    "wiki": "https://oldschool.runescape.wiki/w/Sanguinesti_staff",
+    "twoHanded": false
   },
   "Staff of the dead": {
     "image": "https://oldschool.runescape.wiki/images/Staff_of_the_dead_detail.png?aa8b8",
-    "wiki": "https://oldschool.runescape.wiki/w/Staff_of_the_dead"
+    "wiki": "https://oldschool.runescape.wiki/w/Staff_of_the_dead",
+    "twoHanded": false
   },
   "Trident of the swamp": {
     "image": "https://oldschool.runescape.wiki/images/Trident_of_the_swamp.png?79f0d",
-    "wiki": "https://oldschool.runescape.wiki/w/Trident_of_the_swamp"
+    "wiki": "https://oldschool.runescape.wiki/w/Trident_of_the_swamp",
+    "twoHanded": false
   },
   "Smoke battlestaff": {
     "image": "https://oldschool.runescape.wiki/images/Smoke_battlestaff.png?52875",
-    "wiki": "https://oldschool.runescape.wiki/w/Smoke_battlestaff"
+    "wiki": "https://oldschool.runescape.wiki/w/Smoke_battlestaff",
+    "twoHanded": false
   },
   "Ahrim's staff": {
     "image": "https://oldschool.runescape.wiki/images/Ahrim%27s_staff.png?248b4",
-    "wiki": "https://oldschool.runescape.wiki/w/Ahrim%27s_staff"
+    "wiki": "https://oldschool.runescape.wiki/w/Ahrim%27s_staff",
+    "twoHanded": false
   },
   "Trident of the seas": {
     "image": "https://oldschool.runescape.wiki/images/Trident_of_the_seas_%28full%29.png?03aa0",
-    "wiki": "https://oldschool.runescape.wiki/w/Trident_of_the_seas#Charged"
+    "wiki": "https://oldschool.runescape.wiki/w/Trident_of_the_seas#Charged",
+    "twoHanded": false
   },
   "Iban's staff": {
     "image": "https://oldschool.runescape.wiki/images/Iban%27s_staff.png?7331d",
-    "wiki": "https://oldschool.runescape.wiki/w/Iban%27s_staff"
+    "wiki": "https://oldschool.runescape.wiki/w/Iban%27s_staff",
+    "twoHanded": false
   },
   "Warped sceptre": {
     "image": "https://oldschool.runescape.wiki/images/Warped_sceptre.png?5051f",
-    "wiki": "https://oldschool.runescape.wiki/w/Warped_sceptre#Charged"
+    "wiki": "https://oldschool.runescape.wiki/w/Warped_sceptre#Charged",
+    "twoHanded": false
   },
   "Toxic blowpipe": {
     "image": "https://oldschool.runescape.wiki/images/Toxic_blowpipe.png?79f0d",
-    "wiki": "https://oldschool.runescape.wiki/w/Toxic_blowpipe#Charged"
+    "wiki": "https://oldschool.runescape.wiki/w/Toxic_blowpipe#Charged",
+    "twoHanded": true
   },
   "Hunters' sunlight crossbow": {
     "image": "https://oldschool.runescape.wiki/images/Hunters%27_sunlight_crossbow.png?b12ad",
-    "wiki": "https://oldschool.runescape.wiki/w/Hunters%27_sunlight_crossbow"
+    "wiki": "https://oldschool.runescape.wiki/w/Hunters%27_sunlight_crossbow",
+    "twoHanded": false
   },
   "Magic shortbow (i)": {
     "image": "https://oldschool.runescape.wiki/images/Magic_shortbow_%28i%29.png?88e2c",
-    "wiki": "https://oldschool.runescape.wiki/w/Magic_shortbow_(i)"
+    "wiki": "https://oldschool.runescape.wiki/w/Magic_shortbow_(i)",
+    "twoHanded": true
   },
   "Karil's crossbow": {
     "image": "https://oldschool.runescape.wiki/images/Karil%27s_crossbow.png?49f5e",
-    "wiki": "https://oldschool.runescape.wiki/w/Karil%27s_crossbow"
+    "wiki": "https://oldschool.runescape.wiki/w/Karil%27s_crossbow",
+    "twoHanded": true
+  },
+  "Crystal bow": {
+    "image": "https://oldschool.runescape.wiki/images/Crystal_bow.png?5580c",
+    "wiki": "https://oldschool.runescape.wiki/w/Crystal_bow#Active",
+    "twoHanded": true
+  },
+  "Armadyl crossbow": {
+    "image": "https://oldschool.runescape.wiki/images/Armadyl_crossbow.png?c60fb",
+    "wiki": "https://oldschool.runescape.wiki/w/Armadyl_crossbow",
+    "twoHanded": false
+  },
+  "Mystic smoke staff": {
+    "image": "https://oldschool.runescape.wiki/images/Mystic_smoke_staff.png?85699",
+    "wiki": "https://oldschool.runescape.wiki/w/Mystic_smoke_staff",
+    "twoHanded": false
+  },
+  "Twinflame staff": {
+    "image": "https://oldschool.runescape.wiki/images/Twinflame_staff.png?12e98",
+    "wiki": "https://oldschool.runescape.wiki/w/Twinflame_staff",
+    "twoHanded": false
+  },
+  "Mystic mist staff": {
+    "image": "https://oldschool.runescape.wiki/images/Mystic_mist_staff.png?b3ec1",
+    "wiki": "https://oldschool.runescape.wiki/w/Mystic_mist_staff",
+    "twoHanded": false
+  },
+  "Zamorakian hasta": {
+    "image": "https://oldschool.runescape.wiki/images/Zamorakian_hasta.png?37c64",
+    "wiki": "https://oldschool.runescape.wiki/w/Zamorakian_hasta",
+    "twoHanded": false
+  },
+  "Blade of saeldor": {
+    "image": "https://oldschool.runescape.wiki/images/Blade_of_saeldor.png?8a5fa",
+    "wiki": "https://oldschool.runescape.wiki/w/Blade_of_saeldor#Charged",
+    "twoHanded": false
+  },
+  "Abyssal dagger": {
+    "image": "https://oldschool.runescape.wiki/images/Abyssal_dagger_%28p%2B%2B%29.png?c04be",
+    "wiki": "https://oldschool.runescape.wiki/w/Abyssal_dagger#Poison++",
+    "twoHanded": false
+  },
+  "Dharok's greataxe": {
+    "image": "https://oldschool.runescape.wiki/images/Dharok%27s_greataxe.png?3043c",
+    "wiki": "https://oldschool.runescape.wiki/w/Dharok%27s_greataxe",
+    "twoHanded": true
+  },
+  "Zombie axe": {
+    "image": "https://oldschool.runescape.wiki/images/Zombie_axe.png?bd219",
+    "wiki": "https://oldschool.runescape.wiki/w/Zombie_axe",
+    "twoHanded": false
+  },
+  "Abyssal whip": {
+    "image": "https://oldschool.runescape.wiki/images/Abyssal_whip.png?727e9",
+    "wiki": "https://oldschool.runescape.wiki/w/Abyssal_whip",
+    "twoHanded": false
+  },
+  "Dragon sword": {
+    "image": "https://oldschool.runescape.wiki/images/Dragon_sword.png?cc5f3",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_sword",
+    "twoHanded": false
+  },
+  "Leaf-bladed sword": {
+    "image": "https://oldschool.runescape.wiki/images/Leaf-bladed_sword.png?fa8bd",
+    "wiki": "https://oldschool.runescape.wiki/w/Leaf-bladed_sword",
+    "twoHanded": false
+  },
+  "Scythe of vitur": {
+    "image": "https://oldschool.runescape.wiki/images/Scythe_of_vitur_%28uncharged%29.png?c82f9",
+    "wiki": "https://oldschool.runescape.wiki/w/Scythe_of_vitur#Charged",
+    "twoHanded": true
+  },
+  "Soulreaper axe": {
+    "image": "https://oldschool.runescape.wiki/images/Soulreaper_axe.png?3f17a",
+    "wiki": "https://oldschool.runescape.wiki/w/Soulreaper_axe",
+    "twoHanded": false
+  },
+  "Inquisitor's mace": {
+    "image": "https://oldschool.runescape.wiki/images/Inquisitor%27s_mace.png?13f14",
+    "wiki": "https://oldschool.runescape.wiki/w/Inquisitor%27s_mace",
+    "twoHanded": false
+  },
+  "Abyssal tentacle": {
+    "image": "https://oldschool.runescape.wiki/images/Abyssal_tentacle.png?c04be",
+    "wiki": "https://oldschool.runescape.wiki/w/Abyssal_tentacle",
+    "twoHanded": false
+  },
+  "Bone shortbow": {
+    "image": "https://oldschool.runescape.wiki/images/Bone_shortbow.png?f9a93",
+    "wiki": "https://oldschool.runescape.wiki/w/Bone_shortbow",
+    "twoHanded": true
+  },
+  "Bone staff": {
+    "image": "https://oldschool.runescape.wiki/images/Bone_staff.png?f9a93",
+    "wiki": "https://oldschool.runescape.wiki/w/Bone_staff",
+    "twoHanded": false
+  },
+  "Bone mace": {
+    "image": "https://oldschool.runescape.wiki/images/Bone_mace.png?f9a93",
+    "wiki": "https://oldschool.runescape.wiki/w/Bone_mace",
+    "twoHanded": false
+  },
+  "Sarachnis cudgel": {
+    "image": "https://oldschool.runescape.wiki/images/Sarachnis_cudgel.png?c4e91",
+    "wiki": "https://oldschool.runescape.wiki/w/Sarachnis_cudgel",
+    "twoHanded": false
+  },
+  "Dragon scimitar": {
+    "image": "https://oldschool.runescape.wiki/images/Dragon_scimitar.png?cc5f3",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_scimitar",
+    "twoHanded": false
+  },
+  "Granite hammer": {
+    "image": "https://oldschool.runescape.wiki/images/Granite_hammer.png?e75c0",
+    "wiki": "https://oldschool.runescape.wiki/w/Granite_hammer",
+    "twoHanded": false
+  },
+  "Rune scimitar": {
+    "image": "https://oldschool.runescape.wiki/images/Rune_scimitar.png?a6726",
+    "wiki": "https://oldschool.runescape.wiki/w/Rune_scimitar",
+    "twoHanded": false
+  },
+  "Magic shortbow": {
+    "image": "https://oldschool.runescape.wiki/images/Magic_shortbow.png?ed6d0",
+    "wiki": "https://oldschool.runescape.wiki/w/Magic_shortbow",
+    "twoHanded": true
+  },
+  "Yew shortbow": {
+    "image": "https://oldschool.runescape.wiki/images/Yew_shortbow.png?faa5d",
+    "wiki": "https://oldschool.runescape.wiki/w/Yew_shortbow",
+    "twoHanded": true
+  },
+  "Air battlestaff": {
+    "image": "https://oldschool.runescape.wiki/images/Air_battlestaff.png?248b4",
+    "wiki": "https://oldschool.runescape.wiki/w/Air_battlestaff",
+    "twoHanded": false
+  },
+  "Scorching bow": {
+    "image": "https://oldschool.runescape.wiki/images/Scorching_bow.png?f649a",
+    "wiki": "https://oldschool.runescape.wiki/w/Scorching_bow",
+    "twoHanded": true
+  },
+  "Webweaver bow": {
+    "image": "https://oldschool.runescape.wiki/images/Webweaver_bow.png?dd2ac",
+    "wiki": "https://oldschool.runescape.wiki/w/Webweaver_bow#Charged",
+    "twoHanded": true
+  },
+  "Craw's bow": {
+    "image": "https://oldschool.runescape.wiki/images/Craw%27s_bow.png?5352a",
+    "wiki": "https://oldschool.runescape.wiki/w/Craw%27s_bow#Charged",
+    "twoHanded": true
+  },
+  "Blood ancient sceptre": {
+    "image": "https://oldschool.runescape.wiki/images/Blood_ancient_sceptre.png?3616e",
+    "wiki": "https://oldschool.runescape.wiki/w/Blood_ancient_sceptre",
+    "twoHanded": false
+  },
+  "Ancient sceptre": {
+    "image": "https://oldschool.runescape.wiki/images/Ancient_sceptre.png?7a41c",
+    "wiki": "https://oldschool.runescape.wiki/w/Ancient_sceptre",
+    "twoHanded": false
+  },
+  "Noxious halberd": {
+    "image": "https://oldschool.runescape.wiki/images/Noxious_halberd.png?8bfab",
+    "wiki": "https://oldschool.runescape.wiki/w/Noxious_halberd",
+    "twoHanded": true
+  },
+  "Emberlight": {
+    "image": "https://oldschool.runescape.wiki/images/Emberlight.png?77ca0",
+    "wiki": "https://oldschool.runescape.wiki/w/Emberlight",
+    "twoHanded": false
+  },
+  "Arclight": {
+    "image": "https://oldschool.runescape.wiki/images/Arclight.png?a892a",
+    "wiki": "https://oldschool.runescape.wiki/w/Arclight#Charged",
+    "twoHanded": false
+  },
+  "Dragon hunter crossbow": {
+    "image": "https://oldschool.runescape.wiki/images/Dragon_hunter_crossbow.png?cc5f3",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_hunter_crossbow",
+    "twoHanded": false
+  },
+  "Eclipse atlatl": {
+    "image": "https://oldschool.runescape.wiki/images/Eclipse_atlatl.png?77621",
+    "wiki": "https://oldschool.runescape.wiki/w/Eclipse_atlatl",
+    "twoHanded": true
+  },
+  "Dragon hunter lance": {
+    "image": "https://oldschool.runescape.wiki/images/Dragon_hunter_lance.png?cc5f3",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_hunter_lance",
+    "twoHanded": false
+  },
+  "Dual macuahuitl": {
+    "image": "https://oldschool.runescape.wiki/images/Dual_macuahuitl.png?77621",
+    "wiki": "https://oldschool.runescape.wiki/w/Dual_macuahuitl",
+    "twoHanded": true
+  },
+  "Abyssal bludgeon": {
+    "image": "https://oldschool.runescape.wiki/images/Abyssal_bludgeon.png?b10f5",
+    "wiki": "https://oldschool.runescape.wiki/w/Abyssal_bludgeon",
+    "twoHanded": true
+  },
+  "Glacial temotli": {
+    "image": "https://oldschool.runescape.wiki/images/Glacial_temotli.png?4836f",
+    "wiki": "https://oldschool.runescape.wiki/w/Glacial_temotli",
+    "twoHanded": true
+  },
+  "Saradomin sword": {
+    "image": "https://oldschool.runescape.wiki/images/Saradomin_sword.png?c943f",
+    "wiki": "https://oldschool.runescape.wiki/w/Saradomin_sword",
+    "twoHanded": true
+  },
+  "Dragon mace": {
+    "image": "https://oldschool.runescape.wiki/images/Dragon_mace.png?cc5f3",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_mace",
+    "twoHanded": false
+  },
+  "Ursine chainmace (u)": {
+    "image": "https://oldschool.runescape.wiki/images/Ursine_chainmace_%28u%29.png?26d89",
+    "wiki": "https://oldschool.runescape.wiki/w/Ursine_chainmace#Uncharged",
+    "twoHanded": false
+  },
+  "Saradomin's blessed sword": {
+    "image": "https://oldschool.runescape.wiki/images/Saradomin%27s_blessed_sword.png?11815",
+    "wiki": "https://oldschool.runescape.wiki/w/Saradomin%27s_blessed_sword",
+    "twoHanded": true
+  },
+  "Dragon crossbow": {
+    "image": "https://oldschool.runescape.wiki/images/Dragon_crossbow.png?c85b3",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_crossbow",
+    "twoHanded": false
+  },
+  "Rune crossbow": {
+    "image": "https://oldschool.runescape.wiki/images/Rune_crossbow.png?eec05",
+    "wiki": "https://oldschool.runescape.wiki/w/Rune_crossbow",
+    "twoHanded": false
+  },
+  "Accursed sceptre": {
+    "image": "https://oldschool.runescape.wiki/images/Accursed_sceptre.png?7a41c",
+    "wiki": "https://oldschool.runescape.wiki/w/Accursed_sceptre#Charged",
+    "twoHanded": false
+  },
+  "Thammaron's sceptre": {
+    "image": "https://oldschool.runescape.wiki/images/Thammaron%27s_sceptre_%28u%29.png?9074d",
+    "wiki": "https://oldschool.runescape.wiki/w/Thammaron%27s_sceptre",
+    "twoHanded": false
+  },
+  "Staff of air": {
+    "image": "https://oldschool.runescape.wiki/images/Staff_of_air.png?e8969",
+    "wiki": "https://oldschool.runescape.wiki/w/Staff_of_air",
+    "twoHanded": false
+  },
+  "Iban's staff (u)": {
+    "image": "https://oldschool.runescape.wiki/images/Iban%27s_staff_%28u%29.png?1940c",
+    "wiki": "https://oldschool.runescape.wiki/w/Iban%27s_staff_(u)",
+    "twoHanded": false
+  },
+  "Maple shortbow": {
+    "image": "https://oldschool.runescape.wiki/images/Maple_shortbow.png?717ea",
+    "wiki": "https://oldschool.runescape.wiki/w/Maple_shortbow",
+    "twoHanded": true
+  },
+  "Ursine chainmace": {
+    "image": "https://oldschool.runescape.wiki/images/Ursine_chainmace.png?26d89",
+    "wiki": "https://oldschool.runescape.wiki/w/Ursine_chainmace#Charged",
+    "twoHanded": false
+  },
+  "Viggora's chainmace": {
+    "image": "https://oldschool.runescape.wiki/images/Viggora%27s_chainmace.png?a7de8",
+    "wiki": "https://oldschool.runescape.wiki/w/Viggora%27s_chainmace#Charged",
+    "twoHanded": false
+  },
+  "Elder maul": {
+    "image": "https://oldschool.runescape.wiki/images/Elder_maul.png?0a875",
+    "wiki": "https://oldschool.runescape.wiki/w/Elder_maul",
+    "twoHanded": true
+  },
+  "Leaf-bladed battleaxe": {
+    "image": "https://oldschool.runescape.wiki/images/Leaf-bladed_battleaxe.png?fa8bd",
+    "wiki": "https://oldschool.runescape.wiki/w/Leaf-bladed_battleaxe",
+    "twoHanded": false
   }
 }

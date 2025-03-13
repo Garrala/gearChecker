@@ -1,4 +1,8 @@
 {
+  "N/A": {
+    "image": "https://oldschool.runescape.wiki/images/Bank_filler.png?f928c",
+    "wiki": ""
+  },
   "Masori body": {
     "image": "https://oldschool.runescape.wiki/images/Masori_body.png",
     "wiki": "https://oldschool.runescape.wiki/w/Masori_body"
@@ -14,5 +18,109 @@
   "Virtus robe top": {
     "image": "https://oldschool.runescape.wiki/images/Virtus_robe_top.png?3a5cd",
     "wiki": "https://oldschool.runescape.wiki/w/Virtus_robe_top"
+  },
+  "Ahrim's robetop": {
+    "image": "https://oldschool.runescape.wiki/images/Ahrim%27s_robetop.png?248b4",
+    "wiki": "https://oldschool.runescape.wiki/w/Ahrim%27s_robetop"
+  },
+  "Blue moon chestplate": {
+    "image": "https://oldschool.runescape.wiki/images/Blue_moon_chestplate.png?07650",
+    "wiki": "https://oldschool.runescape.wiki/w/Blue_moon_chestplate"
+  },
+  "Dagon'hai robe top": {
+    "image": "https://oldschool.runescape.wiki/images/Dagon%27hai_robe_top.png?1c69a",
+    "wiki": "https://oldschool.runescape.wiki/w/Dagon%27hai_robe_top"
+  },
+  "Infinity top": {
+    "image": "https://oldschool.runescape.wiki/images/Infinity_top.png?19317",
+    "wiki": "https://oldschool.runescape.wiki/w/Infinity_top"
+  },
+  "Bloodbark body": {
+    "image": "https://oldschool.runescape.wiki/images/Bloodbark_body.png?3d4c6",
+    "wiki": "https://oldschool.runescape.wiki/w/Bloodbark_body"
+  },
+  "Elite void top": {
+    "image": "https://oldschool.runescape.wiki/images/Elite_void_top.png?7a7c0",
+    "wiki": "https://oldschool.runescape.wiki/w/Elite_void_top"
+  },
+  "Mystic robe top": {
+    "image": "https://oldschool.runescape.wiki/images/Mystic_robe_top.png?acae8",
+    "wiki": "https://oldschool.runescape.wiki/w/Mystic_robe_top"
+  },
+  "Masori body (f)": {
+    "image": "https://oldschool.runescape.wiki/images/Masori_body_%28f%29.png?6da96",
+    "wiki": "https://oldschool.runescape.wiki/w/Masori_body_(f)"
+  },
+  "Crystal body": {
+    "image": "https://oldschool.runescape.wiki/images/Crystal_body.png?c7b9f",
+    "wiki": "https://oldschool.runescape.wiki/w/Crystal_body"
+  },
+  "Karil's leathertop": {
+    "image": "https://oldschool.runescape.wiki/images/Karil%27s_leathertop.png?6d393",
+    "wiki": "https://oldschool.runescape.wiki/w/Karil%27s_leathertop"
+  },
+  "Blessed body": {
+    "image": "https://oldschool.runescape.wiki/images/Ancient_d%27hide_body.png?8d9e1",
+    "wiki": "https://oldschool.runescape.wiki/w/Ancient_d%27hide_body"
+  },
+  "Black d'hide body": {
+    "image": "https://oldschool.runescape.wiki/images/Black_d%27hide_body.png?db3d9",
+    "wiki": "https://oldschool.runescape.wiki/w/Black_d%27hide_body"
+  },
+  "Torva platebody": {
+    "image": "https://oldschool.runescape.wiki/images/Torva_platebody.png?9d2f1",
+    "wiki": "https://oldschool.runescape.wiki/w/Torva_platebody#Restored"
+  },
+  "Bandos chestplate": {
+    "image": "https://oldschool.runescape.wiki/images/Bandos_chestplate.png?f928c",
+    "wiki": "https://oldschool.runescape.wiki/w/Bandos_chestplate"
+  },
+  "Fighter torso": {
+    "image": "https://oldschool.runescape.wiki/images/Fighter_torso.png?97fe8",
+    "wiki": "https://oldschool.runescape.wiki/w/Fighter_torso"
+  },
+  "Void knight top": {
+    "image": "https://oldschool.runescape.wiki/images/Void_knight_top.png?a7de8",
+    "wiki": "https://oldschool.runescape.wiki/w/Void_knight_top"
+  },
+  "Proselyte hauberk": {
+    "image": "https://oldschool.runescape.wiki/images/Proselyte_hauberk.png?64f1b",
+    "wiki": "https://oldschool.runescape.wiki/w/Proselyte_hauberk"
+  },
+  "Granite body": {
+    "image": "https://oldschool.runescape.wiki/images/Granite_body.png?e75c0",
+    "wiki": "https://oldschool.runescape.wiki/w/Granite_body"
+  },
+  "Rune platebody": {
+    "image": "https://oldschool.runescape.wiki/images/Rune_platebody.png?e8496",
+    "wiki": "https://oldschool.runescape.wiki/w/Rune_platebody"
+  },
+  "Red d'hide body": {
+    "image": "https://oldschool.runescape.wiki/images/Red_d%27hide_body.png?6f783",
+    "wiki": "https://oldschool.runescape.wiki/w/Red_d%27hide_body"
+  },
+  "Blue d'hide body": {
+    "image": "https://oldschool.runescape.wiki/images/Blue_d%27hide_body.png?3b913",
+    "wiki": "https://oldschool.runescape.wiki/w/Blue_d%27hide_body"
+  },
+  "Elder chaos top": {
+    "image": "https://oldschool.runescape.wiki/images/Elder_chaos_top.png?7a7c0",
+    "wiki": "https://oldschool.runescape.wiki/w/Elder_chaos_top"
+  },
+  "Xerician top": {
+    "image": "https://oldschool.runescape.wiki/images/Xerician_top.png?022de",
+    "wiki": "https://oldschool.runescape.wiki/w/Xerician_top"
+  },
+  "Obsidian platebody": {
+    "image": "https://oldschool.runescape.wiki/images/Obsidian_platebody.png?e6c2a",
+    "wiki": "https://oldschool.runescape.wiki/w/Obsidian_platebody"
+  },
+  "Dharok's platebody": {
+    "image": "https://oldschool.runescape.wiki/images/Dharok%27s_platebody.png?4806b",
+    "wiki": "https://oldschool.runescape.wiki/w/Dharok%27s_platebody"
+  },
+  "Monk's robe top": {
+    "image": "https://oldschool.runescape.wiki/images/Monk%27s_robe_top.png?7027d",
+    "wiki": "https://oldschool.runescape.wiki/w/Monk%27s_robe_top"
   }
 }

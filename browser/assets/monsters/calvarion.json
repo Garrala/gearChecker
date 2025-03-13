@@ -1,0 +1,124 @@
+{
+  "name": "Cal'varion",
+  "category": "Wilderness Bosses",
+  "image": "https://oldschool.runescape.wiki/images/Calvar%27ion.png?6268f",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Calvar%27ion",
+  "bosses": [
+    {
+      "name": "Cal'varion",
+      "image": "https://oldschool.runescape.wiki/images/Calvar%27ion.png?6268f",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Calvar%27ion",
+      "combat_level": 264,
+      "hp": 150,
+      "max_hit": {
+        "melee": 26
+      },
+      "defense": {
+        "melee": {
+          "stab": 130,
+          "slash": 128,
+          "crush": -10
+        },
+        "magic": 198,
+        "ranged": {
+          "arrows": 211,
+          "bolts": 211,
+          "thrown": 211
+        }
+      },
+      "attack_styles": ["Melee", "Magic"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
+    }
+  ],
+  "gear_setups": {
+    "Melee": {
+      "Weapon": [
+        ["Ursine chainmace", "Viggora's chainmace"],
+        ["Inquisitor's mace"],
+        [
+          "Abyssal bludgeon",
+          "Zamorakian hasta",
+          "Soulreaper axe",
+          "Zombie axe"
+        ],
+        ["Sarachnis cudgel", "Elder maul", "Dual macuahuitl"],
+        ["Leaf-bladed battleaxe", "Dragon mace"]
+      ],
+      "Special Attack": [
+        ["Elder maul"],
+        ["Dragon mace"],
+        ["Barrelchest anchor"]
+      ],
+      "Helmet": [
+        ["Torva full helm"],
+        ["Serpentine helm"],
+        ["Helm of neitiznot"],
+        ["Berserker helm"],
+        ["Dwarven helmet"]
+      ],
+      "Amulet": [
+        ["Salve amulet (e)"],
+        ["Salve amulet"],
+        ["Amulet of strength"],
+        ["Amulet of glory"],
+        ["Amulet of power"]
+      ],
+      "Cape": [
+        ["Infernal cape", "Fire cape"],
+        ["Mythical cape"],
+        ["Mixed hide cape"],
+        ["Skillcape (t)"],
+        ["Ardougne cloak 4"]
+      ],
+      "Body": [
+        ["Fighter torso"],
+        ["Mixed hide top"],
+        ["Black d'hide body"],
+        ["Proselyte hauberk"],
+        ["Monk's robe top"]
+      ],
+      "Legs": [
+        ["Torva platelegs"],
+        ["Inquisitor's plateskirt"],
+        ["Black d'hide chaps"],
+        ["Proselyte cuisse"],
+        ["Monk's robe"]
+      ],
+      "Shield": [
+        ["Avernic defender"],
+        ["Dragon defender"],
+        ["Dragonfire shield"],
+        ["Rune defender", "Toktz-ket-xil"],
+        ["Book of war", "Falador shield 4"]
+      ],
+      "Gloves": [
+        ["Ferocious gloves"],
+        ["Barrows gloves"],
+        ["Rune gloves"],
+        ["Combat bracelet"]
+      ],
+      "Boots": [
+        ["Dragon boots"],
+        ["Rune boots"],
+        ["Mixed hide boots"],
+        ["Climbing boots"],
+        ["Fremennik sea boots 4"]
+      ],
+      "Ring": [
+        ["Ultor ring"],
+        ["Berserker ring (i)"],
+        ["Ring of shadows"],
+        ["Ring of wealth (i)"],
+        ["Explorer's ring 4"]
+      ],
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]]
+    }
+  }
+}

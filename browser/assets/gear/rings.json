@@ -1,4 +1,8 @@
 {
+  "N/A": {
+    "image": "https://oldschool.runescape.wiki/images/Bank_filler.png?f928c",
+    "wiki": ""
+  },
   "Lightbearer": {
     "image": "https://oldschool.runescape.wiki/images/Lightbearer.png",
     "wiki": "https://oldschool.runescape.wiki/w/Lightbearer"
@@ -10,5 +14,61 @@
   "Venator ring": {
     "image": "https://oldschool.runescape.wiki/images/Venator_ring.png?895b0",
     "wiki": "https://oldschool.runescape.wiki/w/Venator_ring"
+  },
+  "Ring of recoil": {
+    "image": "https://oldschool.runescape.wiki/images/Ring_of_recoil.png?4e1b1",
+    "wiki": "https://oldschool.runescape.wiki/w/Ring_of_recoil"
+  },
+  "Ring of life": {
+    "image": "https://oldschool.runescape.wiki/images/Ring_of_life.png?4e1b1",
+    "wiki": "https://oldschool.runescape.wiki/w/Ring_of_life"
+  },
+  "Archers ring (i)": {
+    "image": "https://oldschool.runescape.wiki/images/Archers_ring_%28i%29.png?1f712",
+    "wiki": "https://oldschool.runescape.wiki/w/Archers_ring_(i)"
+  },
+  "Ring of the gods": {
+    "image": "https://oldschool.runescape.wiki/images/Ring_of_the_gods.png?4e1b1",
+    "wiki": "https://oldschool.runescape.wiki/w/Ring_of_the_gods"
+  },
+  "Ring of shadows": {
+    "image": "https://oldschool.runescape.wiki/images/Ring_of_shadows_%28uncharged%29.png?7f747",
+    "wiki": "https://oldschool.runescape.wiki/w/Ring_of_shadows#Uncharged"
+  },
+  "Brimstone ring": {
+    "image": "https://oldschool.runescape.wiki/images/Brimstone_ring.png?3d026",
+    "wiki": "https://oldschool.runescape.wiki/w/Brimstone_ring"
+  },
+  "Ring of endurance": {
+    "image": "https://oldschool.runescape.wiki/images/Ring_of_endurance_%28uncharged%29.png?4e1b1",
+    "wiki": "https://oldschool.runescape.wiki/w/Ring_of_endurance"
+  },
+  "Ring of the gods (i)": {
+    "image": "https://oldschool.runescape.wiki/images/Ring_of_the_gods_%28i%29.png?c76a5",
+    "wiki": "https://oldschool.runescape.wiki/w/Ring_of_the_gods_(i)"
+  },
+  "Magus ring": {
+    "image": "https://oldschool.runescape.wiki/images/Magus_ring.png?c1c46",
+    "wiki": "https://oldschool.runescape.wiki/w/Magus_ring"
+  },
+  "Ultor ring": {
+    "image": "https://oldschool.runescape.wiki/images/Ultor_ring.png?895b0",
+    "wiki": "https://oldschool.runescape.wiki/w/Ultor_ring"
+  },
+  "Ring of suffering (i)": {
+    "image": "https://oldschool.runescape.wiki/images/Ring_of_suffering_%28i%29.png?2f9db",
+    "wiki": "https://oldschool.runescape.wiki/w/Ring_of_suffering_(i)"
+  },
+  "Berserker ring (i)": {
+    "image": "https://oldschool.runescape.wiki/images/Berserker_ring_%28i%29.png?356fd",
+    "wiki": "https://oldschool.runescape.wiki/w/Berserker_ring_(i)"
+  },
+  "Warrior ring (i)": {
+    "image": "https://oldschool.runescape.wiki/images/Warrior_ring_%28i%29.png?b7686",
+    "wiki": "https://oldschool.runescape.wiki/w/Warrior_ring_(i)"
+  },
+  "Bellator ring": {
+    "image": "https://oldschool.runescape.wiki/images/Bellator_ring.png?d6a37",
+    "wiki": "https://oldschool.runescape.wiki/w/Bellator_ring"
   }
 }

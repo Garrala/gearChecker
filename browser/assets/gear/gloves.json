@@ -1,4 +1,8 @@
 {
+  "N/A": {
+    "image": "https://oldschool.runescape.wiki/images/Bank_filler.png?f928c",
+    "wiki": ""
+  },
   "Barrows gloves": {
     "image": "https://oldschool.runescape.wiki/images/Barrows_gloves.png",
     "wiki": "https://oldschool.runescape.wiki/w/Barrows_gloves"
@@ -6,5 +10,53 @@
   "Zaryte vambraces": {
     "image": "https://oldschool.runescape.wiki/images/Zaryte_vambraces.png?5828d",
     "wiki": "https://oldschool.runescape.wiki/w/Zaryte_vambraces"
+  },
+  "Blessed vambraces": {
+    "image": "https://oldschool.runescape.wiki/images/Ancient_bracers.png?15de7",
+    "wiki": "https://oldschool.runescape.wiki/w/Ancient_bracers"
+  },
+  "Black d'hide vambraces": {
+    "image": "https://oldschool.runescape.wiki/images/Black_d%27hide_vambraces.png?db3d9",
+    "wiki": "https://oldschool.runescape.wiki/w/Black_d%27hide_vambraces"
+  },
+  "Tormented bracelet": {
+    "image": "https://oldschool.runescape.wiki/images/Tormented_bracelet.png?c9227",
+    "wiki": "https://oldschool.runescape.wiki/w/Tormented_bracelet"
+  },
+  "Void knight gloves": {
+    "image": "https://oldschool.runescape.wiki/images/Void_knight_gloves.png?75a26",
+    "wiki": "https://oldschool.runescape.wiki/w/Void_knight_gloves"
+  },
+  "Ferocious gloves": {
+    "image": "https://oldschool.runescape.wiki/images/Ferocious_gloves.png?97fe8",
+    "wiki": "https://oldschool.runescape.wiki/w/Ferocious_gloves"
+  },
+  "Dragon gloves": {
+    "image": "https://oldschool.runescape.wiki/images/Dragon_gloves.png?8fa13",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_gloves"
+  },
+  "Rune gloves": {
+    "image": "https://oldschool.runescape.wiki/images/Rune_gloves.png?ce07d",
+    "wiki": "https://oldschool.runescape.wiki/w/Rune_gloves"
+  },
+  "Regen bracelet": {
+    "image": "https://oldschool.runescape.wiki/images/Regen_bracelet.png?2e2e3",
+    "wiki": "https://oldschool.runescape.wiki/w/Regen_bracelet"
+  },
+  "Combat bracelet": {
+    "image": "https://oldschool.runescape.wiki/images/Combat_bracelet.png?43e7d",
+    "wiki": "https://oldschool.runescape.wiki/w/Combat_bracelet#(4)"
+  },
+  "Infinity gloves": {
+    "image": "https://oldschool.runescape.wiki/images/Infinity_gloves.png?13f14",
+    "wiki": "https://oldschool.runescape.wiki/w/Infinity_gloves"
+  },
+  "Red d'hide vambraces": {
+    "image": "https://oldschool.runescape.wiki/images/Red_d%27hide_vambraces.png?77caa",
+    "wiki": "https://oldschool.runescape.wiki/w/Red_d%27hide_vambraces"
+  },
+  "Bloodbark gauntlets": {
+    "image": "https://oldschool.runescape.wiki/images/Bloodbark_gauntlets.png?d13d3",
+    "wiki": "https://oldschool.runescape.wiki/w/Bloodbark_gauntlets"
   }
 }
