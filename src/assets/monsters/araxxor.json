@@ -75,21 +75,21 @@
         ["Infernal cape"],
         ["Fire cape"],
         ["Mythical cape"],
-        ["Ardougne cloak"]
+        ["Ardougne cloak 4"]
       ],
       "Body": [
         ["Inquisitor's hauberk"],
         ["Torva platebody"],
         ["Bandos chestplate"],
         ["Blood moon chestplate", "Fighter torso"],
-        ["Barrows equipment"]
+        ["Barrows body"]
       ],
       "Legs": [
         ["Inquisitor's plateskirt"],
         ["Torva platelegs"],
         ["Bandos tassets"],
         ["Blood moon tassets"],
-        ["Barrows equipment"]
+        ["Barrows legs"]
       ],
       "Gloves": [
         ["Ferocious gloves"],

@@ -210,7 +210,7 @@
         ["Bonecrusher necklace"],
         ["Amulet of glory"]
       ],
-      "Cape": [["Imbued god cape"], ["God capes"], ["Ardougne cloak 4"]],
+      "Cape": [["Imbued god cape"], ["God cape"], ["Ardougne cloak 4"]],
       "Body": [
         ["Ancestral robe top"],
         ["Virtus robe top"],
@@ -403,7 +403,7 @@
         ["Amulet of accuracy"]
       ],
       "Cape": [
-        ["God capes"],
+        ["God cape"],
         ["Fire cape"],
         ["Obsidian cape"],
         ["Cape of legends"],

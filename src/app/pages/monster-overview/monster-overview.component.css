@@ -410,10 +410,10 @@
 }
 
 .gear-tabs button.active {
-  background: rgba(0, 255, 0, 0.3);
-  /*    color: black;*/
+  background: #1a7c1a;
+  color: white;
   font-weight: bold;
-  border-color: rgba(0, 255, 0, 0.3);
+  border-color: #1a7c1a;
 }
 
 .recommended-gear-table {

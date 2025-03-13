@@ -51,6 +51,12 @@
         ["Ghrazi rapier"],
         ["Osmumten's fang"]
       ],
+      "Shield": [
+        ["Avernic defender", "Spectral spirit shield"],
+        ["Dragon defender"],
+        ["Dragonfire shield"],
+        ["Rune defender"]
+      ],
       "Special Attack": [
         ["Burning claws"],
         ["Dragon claws", "Elder maul", "Voidwaker", "Bandos godsword"],
@@ -86,12 +92,6 @@
         ["Bandos tassets"],
         ["Justiciar legguards"],
         ["Barrows legs"]
-      ],
-      "Shield": [
-        ["Avernic defender", "Spectral spirit shield"],
-        ["Dragon defender"],
-        ["Dragonfire shield"],
-        ["Rune defender"]
       ],
       "Gloves": [
         ["Ferocious gloves"],

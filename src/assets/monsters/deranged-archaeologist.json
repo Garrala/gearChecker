@@ -55,7 +55,6 @@
         ["Malediction ward"],
         ["Book of darkness"]
       ],
-      "Special Attack": [["N/A"]],
       "Helmet": [
         ["Ancestral hat"],
         ["Virtus mask"],
@@ -73,7 +72,7 @@
         ["Imbued god cape"],
         ["Soul cape"],
         ["Ardougne cloak 4"],
-        ["Cape of Accomplishment (t)"]
+        ["Skillcape (t)"]
       ],
       "Body": [
         ["Ancestral robe top"],
@@ -110,7 +109,8 @@
         ["Brimstone ring"],
         ["Explorer's ring 4"]
       ],
-	  "Ammo": [ "N/A"]
+	  "Ammo": [ "N/A"],
+      "Special Attack": [["N/A"]]
     }
   }
 }
