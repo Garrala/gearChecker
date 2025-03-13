@@ -3,10 +3,10 @@ name: Deploy Angular to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  
 
 permissions:
-  contents: write
+  contents: write  
 
 jobs:
   build-and-deploy:
@@ -24,6 +24,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install Angular CLI  
+        run: npm install -g @angular/cli
+
       - name: Build Angular app
         run: ng build --configuration production --base-href /gearChecker/ --output-path docs
 
@@ -31,4 +34,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: docs
+          folder: docs  
