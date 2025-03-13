@@ -48,6 +48,13 @@
         ["Warped sceptre"],
         ["Iban's staff"]
       ],
+      "Shield": [
+        ["Tome of fire", "Elidinis' ward (f)"],
+        ["Elidinis' ward"],
+        ["Arcane spirit shield"],
+        ["Malediction ward"],
+        ["Book of darkness"]
+      ],
       "Special Attack": [["N/A"]],
       "Helmet": [
         ["Ancestral hat"],
@@ -82,13 +89,6 @@
         ["Vestment robe legs"],
         ["Monk's robe"]
       ],
-      "Shield": [
-        ["Tome of fire", "Elidinis' ward (f)"],
-        ["Elidinis' ward"],
-        ["Arcane spirit shield"],
-        ["Malediction ward"],
-        ["Book of darkness"]
-      ],
       "Gloves": [
         ["Tormented bracelet"],
         ["Holy wraps"],
@@ -109,7 +109,8 @@
         ["Ring of suffering (i)"],
         ["Brimstone ring"],
         ["Explorer's ring 4"]
-      ]
+      ],
+	  "Ammo": [ "N/A"]
     }
   }
 }

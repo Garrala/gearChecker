@@ -41,13 +41,13 @@
   "gear_setups": {
     "Magic": {
       "Weapon": [["Tumeken's shadow"], ["Sanguinesti staff"]],
+	  "Shield": [["Elidinis' ward (f)"]],
       "Special Attack": [["Eldritch nightmare staff"], ["Accursed sceptre"]],
       "Helmet": [["Ancestral hat"], ["Virtus mask"]],
       "Amulet": [["Occult necklace"]],
       "Cape": [["Imbued saradomin cape"], ["Max cape"]],
       "Body": [["Ancestral robe top"], ["Virtus robe top"]],
       "Legs": [["Ancestral robe bottom"], ["Virtus robe bottom"]],
-      "Shield": [["Elidinis' ward (f)"]],
       "Gloves": [["Tormented bracelet"]],
       "Boots": [["Eternal boots"], ["Infinity boots", "Aranea boots"]],
       "Ring": [["Magus ring"], ["Lightbearer"]],
@@ -60,6 +60,12 @@
         ["Zaryte crossbow"],
         ["Armadyl crossbow", "Dragon hunter crossbow"],
         ["Dragon crossbow", "Rune crossbow"]
+      ],
+      "Shield": [
+        ["Twisted buckler"],
+        ["Dragonfire ward"],
+        ["Odium ward"],
+        ["Crystal shield"]
       ],
       "Special Attack": [
         ["Toxic blowpipe"],
@@ -101,12 +107,6 @@
         ["Saradomin chaps", "Zamorak chaps"],
         ["Karil's leatherskirt", "Verac's plateskirt"],
         ["Black d'hide chaps"]
-      ],
-      "Shield": [
-        ["Twisted buckler"],
-        ["Dragonfire ward"],
-        ["Odium ward"],
-        ["Crystal shield"]
       ],
       "Gloves": [
         ["Zaryte vambraces"],
@@ -161,6 +161,9 @@
         ["Dragon arrow"],
         ["Amethyst arrow"],
         ["Holy blessing", "Unholy blessing"]
+      ],
+      "Shield": [
+        ["N/A"]
       ]
     }
   }

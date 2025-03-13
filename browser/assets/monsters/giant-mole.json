@@ -104,7 +104,8 @@
         ["Rune arrow"],
         ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
         ["Diamond bolts (e)", "Ruby bolts (e)"]
-      ]
+      ],
+	  "Shield": ["N/A"]
     },
     "Magic": {
       "Weapon": [
@@ -165,7 +166,8 @@
         ["Ring of the gods (i)"],
         ["Ring of endurance"]
       ],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "God blessing"]]
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "God blessing"]],
+	  "Special Attack": ["N/A"]
     },
     "Ranged (Void)": {
       "Weapon": [["Twisted bow"], ["Bow of faerdhinen"]],
@@ -196,7 +198,8 @@
         ["Ring of shadows", "Brimstone ring"],
         ["Ring of endurance"]
       ],
-      "Ammo": [["Dragon arrow"], ["Amethyst arrow"]]
+      "Ammo": [["Dragon arrow"], ["Amethyst arrow"]],
+	  "Shield": ["N/A"]
     },
     "Melee": {
       "Weapon": [
@@ -266,7 +269,6 @@
     "Ranged (Void)": {
       "Weapon": [["Twisted bow"], ["Bow of faerdhinen"]],
       "Special Attack": [["Elder maul"]],
-      "Shield": [],
       "Helmet": [["Void ranger helm", "Void melee helm"]],
       "Amulet": [
         ["Necklace of anguish"],
@@ -293,7 +295,8 @@
         ["Ring of shadows", "Brimstone ring"],
         ["Ring of endurance"]
       ],
-      "Ammo": [["Dragon arrow"], ["Amethyst arrow"]]
+      "Ammo": [["Dragon arrow"], ["Amethyst arrow"]],
+	  "Shield": []
     },
     "Melee": {
       "Weapon": [
@@ -399,7 +402,8 @@
         ["Ring of shadows", "Brimstone ring"],
         ["Ring of endurance"]
       ],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "God blessing"]]
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "God blessing"]],
+	  "Shield": []
     },
     "Melee (Budget)": {
       "Weapon": [
