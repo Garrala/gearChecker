@@ -1,0 +1,485 @@
+{
+  "name": "Abyssal Sire",
+  "category": "Slayer Bosses",
+  "image": "https://oldschool.runescape.wiki/images/Abyssal_Sire_%28phase_1%29.png?0db8f",
+  "bosses": [
+    {
+      "name": "Abyssal Sire (Phase 1)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+      "image": "https://oldschool.runescape.wiki/images/Abyssal_Sire_%28phase_1%29.png?0db8f",
+      "combat_level": 350,
+      "hp": 400,
+      "max_hit": {
+        "melee": 66,
+        "explosion": 96
+      },
+      "weaknesses": {
+        "magic": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 40,
+          "slash": 60,
+          "crush": 50
+        },
+        "magic": 20,
+        "ranged": {
+          "arrows": 60,
+          "bolts": 60,
+          "thrown": 60
+        }
+      },
+      "attack_styles": ["Melee"],
+      "attack_speed": 7,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
+    },
+    {
+      "name": "Abyssal Sire (Phase 2)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+      "image": "https://oldschool.runescape.wiki/images/Abyssal_Sire.png?d2205",
+      "combat_level": 350,
+      "hp": 400,
+      "max_hit": {
+        "melee": 66,
+        "explosion": 96,
+        "tentacles": 30
+      },
+      "weaknesses": {
+        "magic": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 40,
+          "slash": 60,
+          "crush": 50
+        },
+        "magic": 20,
+        "ranged": {
+          "arrows": 60,
+          "bolts": 60,
+          "thrown": 60
+        }
+      },
+      "attack_styles": ["Melee", "Magic"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
+    },
+    {
+      "name": "Abyssal Sire (Phase 3 Stage 1)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+      "image": "https://oldschool.runescape.wiki/images/Abyssal_Sire_%28phase_3%2C_stage_1%29.png?3f1a1",
+      "combat_level": 350,
+      "hp": 400,
+      "max_hit": {
+        "melee": 66,
+        "explosion": 96,
+        "tentacles": 30,
+        "shadow_blast": 50
+      },
+      "weaknesses": {
+        "magic": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 40,
+          "slash": 60,
+          "crush": 50
+        },
+        "magic": 20,
+        "ranged": {
+          "arrows": 60,
+          "bolts": 60,
+          "thrown": 60
+        }
+      },
+      "attack_styles": ["Melee", "Magic", "Ranged"],
+      "attack_speed": 5,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
+    },
+    {
+      "name": "Abyssal Sire (Phase 3 Stage 2)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+      "image": "https://oldschool.runescape.wiki/images/Abyssal_Sire_%28phase_3%2C_stage_2%29.png?d509f",
+      "combat_level": 350,
+      "hp": 400,
+      "max_hit": {
+        "melee": 66,
+        "explosion": 96,
+        "tentacles": 30,
+        "shadow_blast": 50
+      },
+      "weaknesses": {
+        "magic": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 40,
+          "slash": 60,
+          "crush": 50
+        },
+        "magic": 20,
+        "ranged": {
+          "arrows": 60,
+          "bolts": 60,
+          "thrown": 60
+        }
+      },
+      "attack_styles": ["Melee", "Magic", "Ranged"],
+      "attack_speed": 5,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
+    }
+  ],
+  "gear_setups": {
+    "Phase 1 Ranged": {
+      "Weapon": [
+        ["Scorching bow"],
+        ["Bow of faerdhinen"],
+        ["Toxic blowpipe"],
+        ["Webweaver bow", "Craw's bow"],
+        ["Crystal bow"]
+      ],
+      "Helmet": [["Slayer helmet (i)"], ["Black mask (i)"]],
+      "Amulet": [
+        ["Necklace of anguish"],
+        ["Amulet of fury"],
+        ["Amulet of glory"]
+      ],
+      "Cape": [["Dizana's quiver"], ["Ava's assembler"]],
+      "Body": [
+        ["Masori body (f)"],
+        ["Crystal body"],
+        ["Blessed body"],
+        ["Black d'hide body"]
+      ],
+      "Legs": [
+        ["Masori chaps (f)"],
+        ["Crystal legs"],
+        ["Blessed chaps", "Black d'hide chaps"]
+      ],
+      "Gloves": [
+        ["Zaryte vambraces"],
+        ["Barrows gloves"],
+        ["Blessed vambraces", "Black d'hide vambraces"]
+      ],
+      "Boots": [
+        ["Pegasian boots"],
+        ["Ranger boots"],
+        ["Blessed boots"],
+        ["Aranea boots"],
+        ["Mixed hide boots"]
+      ],
+      "Ring": [
+        ["Venator ring"],
+        ["Archers ring (i)"],
+        ["Ring of suffering (i)"],
+        ["Tyrannical ring (i)"]
+      ],
+      "Ammo": [["Dragon arrow"], ["Amethyst arrow"]],
+      "Shield": ["N/A"],
+      "Special Attack": ["N/A"]
+    },
+    "Phase 1 Magic": {
+      "Weapon": [
+        ["Tumeken's shadow"],
+        ["Sanguinesti staff"],
+        ["Trident of the swamp"],
+        ["Trident of the seas"],
+        ["Blood ancient sceptre", "Ancient sceptre"]
+      ],
+      "Helmet": [["Slayer helmet (i)"], ["Black mask (i)"]],
+      "Amulet": [["Occult necklace"]],
+      "Cape": [["Imbued god cape"]],
+      "Body": [["Ancestral robe top"], ["Virtus robe top"], ["Bloodbark body"]],
+      "Legs": [
+        ["Ancestral robe bottom"],
+        ["Virtus robe bottom"],
+        ["Bloodbark legs"]
+      ],
+      "Shield": [
+        ["Elidinis' ward (f)"],
+        ["Elidinis' ward", "Arcane spirit shield"],
+        ["Ancient wyvern shield", "Malediction ward", "Mage's book"]
+      ],
+      "Gloves": [["Tormented bracelet"], ["Bloodbark gauntlets"]],
+      "Boots": [["Eternal boots"], ["Echo boots"], ["Guardian boots"]],
+      "Ring": [
+        ["Magnus ring", "Lightbearer"],
+        ["Seers ring (i)"],
+        ["Brimstone ring"]
+      ],
+      "Ammo": ["Rada's blessing 4"],
+      "Special Attack": ["N/A"]
+    },
+    "Phase 1 Melee": {
+      "Weapon": [["Noxious halberd"]],
+      "Helmet": [["Slayer helmet (i)"], ["Black mask (i)"]],
+      "Amulet": [
+        ["Amulet of rancour"],
+        ["Amulet of torture"],
+        ["Amulet of fury"],
+        ["Amulet of glory"]
+      ],
+      "Cape": [
+        ["Infernal cape"],
+        ["Fire cape"],
+        ["Max cape", "Hitpoints cape"]
+      ],
+      "Body": [
+        ["Torva platebody"],
+        ["Bandos chestplate"],
+        ["Blood moon chestplate"],
+        ["Fighter torso"]
+      ],
+      "Legs": [
+        ["Torva platelegs"],
+        ["Bandos tassets"],
+        ["Blood moon tassets"],
+        ["Obsidian platelegs"]
+      ],
+      "Shield": [
+        ["Avernic defender"],
+        ["Dragon defender"],
+        ["Rune defender"],
+        ["Dragonfire shield"]
+      ],
+      "Ring": [["Ultor ring"], ["Berserker ring (i)"], ["Lightbearer"]],
+      "Boots": [["Primordial boots"], ["Dragon boots"], ["Rune boots"]],
+      "Gloves": [["Ferocious gloves"], ["Barrows gloves"], ["Dragon gloves"]],
+      "Ammo": [["Rada's blessing 4"], ["God blessing"]],
+      "Shield": ["N/A"],
+      "Special Attack": ["N/A"]
+    },
+    "Phase 2 Melee - No defense reduction": {
+      "Weapon": [["Emberlight"], ["Osmumten's fang"]],
+      "Special Attack": [
+        ["Burning claws"],
+        ["Voidwaker"],
+        ["Dragon claws", "Crystal halberd"],
+        ["Dragon dagger"],
+        ["Abyssal dagger"]
+      ],
+      "Helmet": [["Slayer helmet (i)"], ["Black mask (i)"]],
+      "Amulet": [
+        ["Amulet of rancour"],
+        ["Amulet of torture"],
+        ["Amulet of fury"],
+        ["Amulet of glory"]
+      ],
+      "Cape": [
+        ["Infernal cape"],
+        ["Fire cape"],
+        ["Ardougne cloak 4"],
+        ["Max cape", "Hitpoints cape"]
+      ],
+      "Body": [
+        ["Torva platebody"],
+        ["Bandos chestplate"],
+        ["Justiciar chestguard"],
+        ["Barrows body"],
+        ["Fighter torso"]
+      ],
+      "Legs": [
+        ["Torva platelegs"],
+        ["Bandos tassets"],
+        ["Justiciar legguards"],
+        ["Barrows legs"],
+        ["Obsidian platelegs"]
+      ],
+      "Shield": [
+        ["Avernic defender"],
+        ["Dragon defender"],
+        ["Dragonfire shield"],
+        ["Rune defender"]
+      ],
+      "Ring": [["Lightbearer"]],
+      "Boots": [
+        ["Primordial boots"],
+        ["Dragon boots"],
+        ["Echo boots"],
+        ["Guardian boots"],
+        ["Rune boots"]
+      ],
+      "Gloves": [["Ferocious gloves"], ["Barrows gloves"], ["Dragon gloves"]],
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "God blessing"]]
+    },
+    "Phase 2 Melee - Defense reduction": {
+      "Weapon": [
+        ["Emberlight"],
+        ["Scythe of vitur"],
+        ["Arclight"],
+        ["Ghrazi rapier"],
+        ["Zamorakian hasta"]
+      ],
+      "Special Attack": [
+        ["Elder maul"],
+        ["Dragon warhammer"],
+        ["Emberlight"],
+        ["Arclight"],
+        ["Bandos godsword"]
+      ],
+      "Helmet": [["Slayer helmet (i)"], ["Black mask (i)"]],
+      "Amulet": [
+        ["Amulet of rancour"],
+        ["Amulet of torture"],
+        ["Amulet of fury"],
+        ["Amulet of glory"]
+      ],
+      "Cape": [
+        ["Infernal cape"],
+        ["Fire cape"],
+        ["Ardougne cloak 4"],
+        ["Max cape", "Hitpoints cape"]
+      ],
+      "Body": [
+        ["Torva platebody"],
+        ["Bandos chestplate"],
+        ["Justiciar chestguard"],
+        ["Barrows body"],
+        ["Fighter torso"]
+      ],
+      "Legs": [
+        ["Torva platelegs"],
+        ["Bandos tassets"],
+        ["Justiciar legguards"],
+        ["Barrows legs"],
+        ["Obsidian platelegs"]
+      ],
+      "Shield": [
+        ["Avernic defender"],
+        ["Dragon defender"],
+        ["Dragonfire shield"],
+        ["Rune defender"]
+      ],
+      "Ring": [
+        ["Ultor ring"],
+        ["Bellator ring"],
+        ["Lightbearer"],
+        ["Berserker ring (i)"],
+        ["Ring of suffering (i)"]
+      ],
+      "Boots": [
+        ["Primordial boots"],
+        ["Dragon boots"],
+        ["Echo boots"],
+        ["Guardian boots"],
+        ["Rune boots"]
+      ],
+      "Gloves": [["Ferocious gloves"], ["Barrows gloves"], ["Dragon gloves"]],
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "God blessing"]]
+    },
+    "Phase 2 Magic": {
+      "Weapon": [["Tumeken's shadow"]],
+      "Special Attack": [["Eldritch nightmare staff"], ["Accursed sceptre"]],
+      "Helmet": [["Slayer helmet (i)"], ["Black mask (i)"]],
+      "Amulet": [["Occult necklace"], ["Amulet of fury"], ["Amulet of glory"]],
+      "Cape": [
+        ["Imbued god cape"],
+        ["God capes"],
+        ["Max cape"],
+        ["Infernal cape"]
+      ],
+      "Body": [["Ancestral robe top"], ["Virtus robe top"]],
+      "Legs": [["Ancestral robe bottom"], ["Virtus robe bottom"]],
+      "Shield": [
+        ["Elidinis' ward (f)"],
+        ["Elidinis' ward"],
+        ["Ancient wyvern shield", "Malediction ward", "Mage's book"]
+      ],
+      "Ring": [
+        ["Magus ring", "Lightbearer"],
+        ["Seers ring (i)"],
+        ["Brimstone ring"]
+      ],
+      "Boots": [["Eternal boots"], ["Echo boots"], ["Guardian boots"]],
+      "Gloves": [["Tormented bracelet"]],
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "God blessing"]]
+    },
+    "Phase 2 Ranged": {
+      "Weapon": [
+        ["Scorching bow"],
+        ["Twisted bow"],
+        ["Toxic blowpipe"],
+        ["Bow of faerdhinen"],
+        ["Toxic blowpipe"]
+      ],
+      "Special Attack": [
+        ["Elder maul", "Bandos godsword"],
+        ["Toxic blowpipe"],
+        ["Dragon claws"]
+      ],
+      "Helmet": [["Slayer helmet (i)"], ["Black mask (i)"]],
+      "Amulet": [
+        ["Necklace of anguish"],
+        ["Amulet of fury"],
+        ["Amulet of glory"]
+      ],
+      "Cape": [
+        ["Dizana's quiver"],
+        ["Ava's assembler"],
+        ["Max cape"],
+        ["Ranging cape"],
+        ["Infernal cape", "Mythical cape"]
+      ],
+      "Body": [
+        ["Masori body (f)"],
+        ["Armadyl chestplate"],
+        ["Crystal body"],
+        ["Blessed body"],
+        ["Karil's leathertop"]
+      ],
+      "Legs": [
+        ["Masori chaps (f)"],
+        ["Armadyl chainskirt"],
+        ["Crystal legs"],
+        ["Blessed chaps"],
+        ["Karil's leatherskirt"]
+      ],
+      "Gloves": [["Zaryte vambraces"], ["Barrows gloves"], ["Combat bracelet"]],
+      "Boots": [
+        ["Pegasian boots"],
+        ["Ranger boots"],
+        ["Blessed boots"],
+        ["Aranea boots"],
+        ["Mixed hide boots"]
+      ],
+      "Ring": [
+        ["Venator ring"],
+        ["Archers ring (i)"],
+        ["Ring of suffering (i)"],
+        ["Tyrannical ring (i)"]
+      ],
+      "Ammo": [
+        ["Dragon arrow"],
+        ["Amethyst arrow"],
+        ["Rune arrow"],
+        ["Dragon darts"],
+        ["Amethyst darts"]
+      ],
+      "Shield": ["N/A"]
+    }
+  }
+}
