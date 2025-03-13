@@ -84,18 +84,22 @@ export class BossRouletteComponent implements OnInit {
 
   /** ✅ Reveal the selected boss + the 2 they didn't pick **/
   revealBoss(chosenBoss: Monster, index: number) {
-    if (this.selectedCard) return // Prevent multiple selections
+    if (this.selectedCard) return; // Prevent multiple selections
 
-    this.selectedCard = chosenBoss
-    this.revealedBosses.push(chosenBoss)
+    this.selectedCard = chosenBoss;
+    this.revealedBosses = [chosenBoss]; // Start by revealing the selected card
 
-    // Flip the first selected card
+    // Flip the first selected card instantly
+    this.cdRef.detectChanges();
+
+    // Delay flipping the remaining cards for a smooth animation
     setTimeout(() => {
-      this.revealedBosses = [...this.rouletteChoices]
-      this.cdRef.detectChanges()
-      this.launchConfetti()
-    }, 600) // Delay for a smoother reveal
+      this.revealedBosses = [...this.rouletteChoices]; // Flip all cards
+      this.cdRef.detectChanges();
+      this.launchConfetti(); // Launch confetti after reveal
+    }, 500); // Small delay to make the reveal smoother
   }
+
 
   /** ✅ Reset the roulette **/
   resetRoulette() {
