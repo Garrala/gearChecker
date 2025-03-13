@@ -51,7 +51,7 @@
       "Amulet": [["Amulet of strength"], ["Amulet of fury"]],
       "Cape": [["Fire cape"], ["Mixed hide cape"]],
       "Body": [
-        ["Barrows top", "Fighter torso", "Bandos chestplate"],
+        ["Barrows body", "Fighter torso", "Bandos chestplate"],
         ["Black d'hide body"]
       ],
       "Legs": [
@@ -100,11 +100,11 @@
         ["Purging staff"],
         ["Ancient sceptre"]
       ],
-      "Shield": [["Tome of fire"], ["Mage’s book"]],
+      "Shield": [["Tome of fire"], ["Mage's book"]],
       "Helmet": [
         ["Ancestral hat"],
         ["Virtus mask"],
-        ["Ahrim’s hood"],
+        ["Ahrim's hood"],
         ["Void mage helm"]
       ],
       "Amulet": [["Occult necklace"], ["Amulet of fury"]],
@@ -112,7 +112,7 @@
       "Body": [
         ["Ancestral robe top"],
         ["Virtus robe top"],
-        ["Ahrim’s robetop"],
+        ["Ahrim's robetop"],
         ["Elite void top"]
       ],
       "Legs": [

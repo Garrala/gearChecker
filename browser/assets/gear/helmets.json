@@ -138,5 +138,65 @@
   "Blood moon helm": {
     "image": "https://oldschool.runescape.wiki/images/Blood_moon_helm.png?07650",
     "wiki": "https://oldschool.runescape.wiki/w/Blood_moon_helm"
+  },
+  "Inquisitor's great helm": {
+    "image": "https://oldschool.runescape.wiki/images/Inquisitor%27s_great_helm.png?e75c0",
+    "wiki": "https://oldschool.runescape.wiki/w/Inquisitor%27s_great_helm"
+  },
+  "Mitre": {
+    "image": "https://oldschool.runescape.wiki/images/Ancient_mitre.png?0b6b6",
+    "wiki": "https://oldschool.runescape.wiki/w/Ancient_mitre"
+  },
+  "Dagon'hai hat": {
+    "image": "https://oldschool.runescape.wiki/images/Dagon%27hai_hat.png?8d6a6",
+    "wiki": "https://oldschool.runescape.wiki/w/Dagon%27hai_hat"
+  },
+  "Barrows helm": {
+    "image": "https://oldschool.runescape.wiki/images/Torag%27s_helm.png?c9227",
+    "wiki": "https://oldschool.runescape.wiki/w/Torag%27s_helm"
+  },
+  "Dwarven helmet": {
+    "image": "https://oldschool.runescape.wiki/images/Dwarven_helmet.png?5eb13",
+    "wiki": "https://oldschool.runescape.wiki/w/Dwarven_helmet"
+  },
+  "Verac's helm": {
+    "image": "https://oldschool.runescape.wiki/images/Verac%27s_helm.png?e3acf",
+    "wiki": "https://oldschool.runescape.wiki/w/Verac%27s_helm"
+  },
+  "Justiciar faceguard": {
+    "image": "https://oldschool.runescape.wiki/images/Justiciar_faceguard.png?fb842",
+    "wiki": "https://oldschool.runescape.wiki/w/Justiciar_faceguard"
+  },
+  "Saradomin coif": {
+    "image": "https://oldschool.runescape.wiki/images/Saradomin_coif.png?0ee99",
+    "wiki": "https://oldschool.runescape.wiki/w/Saradomin_coif"
+  },
+  "Zombie helmet": {
+    "image": "https://oldschool.runescape.wiki/images/Zombie_helmet.png?7e5c9",
+    "wiki": "https://oldschool.runescape.wiki/w/Zombie_helmet"
+  },
+  "Fremennik hat": {
+    "image": "https://oldschool.runescape.wiki/images/Fremennik_hat.png?c83d6",
+    "wiki": "https://oldschool.runescape.wiki/w/Fremennik_hat"
+  },
+  "Guthan's helm": {
+    "image": "https://oldschool.runescape.wiki/images/Guthan%27s_helm.png?e75c0",
+    "wiki": "https://oldschool.runescape.wiki/w/Guthan%27s_helm"
+  },
+  "3rd age mage hat": {
+    "image": "https://oldschool.runescape.wiki/images/3rd_age_mage_hat.png?a4ed9",
+    "wiki": "https://oldschool.runescape.wiki/w/3rd_age_mage_hat"
+  },
+  "Bandos coif": {
+    "image": "https://oldschool.runescape.wiki/images/Bandos_coif.png?f928c",
+    "wiki": "https://oldschool.runescape.wiki/w/Bandos_coif"
+  },
+  "Slayer helmet": {
+    "image": "https://oldschool.runescape.wiki/images/Slayer_helmet.png?7fb98",
+    "wiki": "https://oldschool.runescape.wiki/w/Slayer_helmet"
+  },
+  "Black mask": {
+    "image": "https://oldschool.runescape.wiki/images/Black_mask.png?db3d9",
+    "wiki": "https://oldschool.runescape.wiki/w/Black_mask"
   }
 }

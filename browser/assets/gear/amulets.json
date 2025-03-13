@@ -46,5 +46,37 @@
   "Amulet of magic": {
     "image": "https://oldschool.runescape.wiki/images/Amulet_of_magic.png?15de7",
     "wiki": "https://oldschool.runescape.wiki/w/Amulet_of_magic"
+  },
+  "Dragonbone necklace": {
+    "image": "https://oldschool.runescape.wiki/images/Dragonbone_necklace.png?8fa13",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragonbone_necklace"
+  },
+  "Amulet of blood fury": {
+    "image": "https://oldschool.runescape.wiki/images/Amulet_of_blood_fury.png?ec289",
+    "wiki": "https://oldschool.runescape.wiki/w/Amulet_of_blood_fury"
+  },
+  "Amulet of the damned": {
+    "image": "https://oldschool.runescape.wiki/images/Amulet_of_the_damned_%28full%29.png?45b61",
+    "wiki": "https://oldschool.runescape.wiki/w/Amulet_of_the_damned"
+  },
+  "Holy symbol": {
+    "image": "https://oldschool.runescape.wiki/images/Holy_symbol.png?e2748",
+    "wiki": "https://oldschool.runescape.wiki/w/Holy_symbol"
+  },
+  "Unholy symbol": {
+    "image": "https://oldschool.runescape.wiki/images/Unholy_symbol.png?4a467",
+    "wiki": "https://oldschool.runescape.wiki/w/Unholy_symbol"
+  },
+  "https://oldschool.runescape.wiki/w/Salve_amulet(ei)": {
+    "image": "https://oldschool.runescape.wiki/images/Salve_amulet%28ei%29.png?a8fa6",
+    "wiki": "https://oldschool.runescape.wiki/w/Salve_amulet(ei)"
+  },
+  "Salve amulet (e)": {
+    "image": "https://oldschool.runescape.wiki/images/Salve_amulet_%28e%29.png?a8fa6",
+    "wiki": "https://oldschool.runescape.wiki/w/Salve_amulet_(e)"
+  },
+  "Salve amulet": {
+    "image": "https://oldschool.runescape.wiki/images/Salve_amulet.png?a8fa6",
+    "wiki": "https://oldschool.runescape.wiki/w/Salve_amulet"
   }
 }

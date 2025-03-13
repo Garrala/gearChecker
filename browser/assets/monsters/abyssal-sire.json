@@ -210,6 +210,11 @@
         ["Trident of the seas"],
         ["Blood ancient sceptre", "Ancient sceptre"]
       ],
+      "Shield": [
+        ["Elidinis' ward (f)"],
+        ["Elidinis' ward", "Arcane spirit shield"],
+        ["Ancient wyvern shield", "Malediction ward", "Mage's book"]
+      ],
       "Helmet": [["Slayer helmet (i)"], ["Black mask (i)"]],
       "Amulet": [["Occult necklace"]],
       "Cape": [["Imbued god cape"]],
@@ -218,11 +223,6 @@
         ["Ancestral robe bottom"],
         ["Virtus robe bottom"],
         ["Bloodbark legs"]
-      ],
-      "Shield": [
-        ["Elidinis' ward (f)"],
-        ["Elidinis' ward", "Arcane spirit shield"],
-        ["Ancient wyvern shield", "Malediction ward", "Mage's book"]
       ],
       "Gloves": [["Tormented bracelet"], ["Bloodbark gauntlets"]],
       "Boots": [["Eternal boots"], ["Echo boots"], ["Guardian boots"]],
@@ -236,6 +236,12 @@
     },
     "Phase 1 Melee": {
       "Weapon": [["Noxious halberd"]],
+      "Shield": [
+        ["Avernic defender"],
+        ["Dragon defender"],
+        ["Rune defender"],
+        ["Dragonfire shield"]
+      ],
       "Helmet": [["Slayer helmet (i)"], ["Black mask (i)"]],
       "Amulet": [
         ["Amulet of rancour"],
@@ -260,12 +266,6 @@
         ["Blood moon tassets"],
         ["Obsidian platelegs"]
       ],
-      "Shield": [
-        ["Avernic defender"],
-        ["Dragon defender"],
-        ["Rune defender"],
-        ["Dragonfire shield"]
-      ],
       "Ring": [["Ultor ring"], ["Berserker ring (i)"], ["Lightbearer"]],
       "Boots": [["Primordial boots"], ["Dragon boots"], ["Rune boots"]],
       "Gloves": [["Ferocious gloves"], ["Barrows gloves"], ["Dragon gloves"]],
@@ -275,6 +275,12 @@
     },
     "Phase 2 Melee - No defense reduction": {
       "Weapon": [["Emberlight"], ["Osmumten's fang"]],
+      "Shield": [
+        ["Avernic defender"],
+        ["Dragon defender"],
+        ["Dragonfire shield"],
+        ["Rune defender"]
+      ],
       "Special Attack": [
         ["Burning claws"],
         ["Voidwaker"],
@@ -309,12 +315,6 @@
         ["Barrows legs"],
         ["Obsidian platelegs"]
       ],
-      "Shield": [
-        ["Avernic defender"],
-        ["Dragon defender"],
-        ["Dragonfire shield"],
-        ["Rune defender"]
-      ],
       "Ring": [["Lightbearer"]],
       "Boots": [
         ["Primordial boots"],
@@ -333,6 +333,12 @@
         ["Arclight"],
         ["Ghrazi rapier"],
         ["Zamorakian hasta"]
+      ],
+      "Shield": [
+        ["Avernic defender"],
+        ["Dragon defender"],
+        ["Dragonfire shield"],
+        ["Rune defender"]
       ],
       "Special Attack": [
         ["Elder maul"],
@@ -368,12 +374,6 @@
         ["Barrows legs"],
         ["Obsidian platelegs"]
       ],
-      "Shield": [
-        ["Avernic defender"],
-        ["Dragon defender"],
-        ["Dragonfire shield"],
-        ["Rune defender"]
-      ],
       "Ring": [
         ["Ultor ring"],
         ["Bellator ring"],
@@ -393,22 +393,22 @@
     },
     "Phase 2 Magic": {
       "Weapon": [["Tumeken's shadow"]],
+	  "Shield": [
+        ["Elidinis' ward (f)"],
+        ["Elidinis' ward"],
+        ["Ancient wyvern shield", "Malediction ward", "Mage's book"]
+      ],
       "Special Attack": [["Eldritch nightmare staff"], ["Accursed sceptre"]],
       "Helmet": [["Slayer helmet (i)"], ["Black mask (i)"]],
       "Amulet": [["Occult necklace"], ["Amulet of fury"], ["Amulet of glory"]],
       "Cape": [
         ["Imbued god cape"],
-        ["God capes"],
+        ["God cape"],
         ["Max cape"],
         ["Infernal cape"]
       ],
       "Body": [["Ancestral robe top"], ["Virtus robe top"]],
       "Legs": [["Ancestral robe bottom"], ["Virtus robe bottom"]],
-      "Shield": [
-        ["Elidinis' ward (f)"],
-        ["Elidinis' ward"],
-        ["Ancient wyvern shield", "Malediction ward", "Mage's book"]
-      ],
       "Ring": [
         ["Magus ring", "Lightbearer"],
         ["Seers ring (i)"],
@@ -441,7 +441,7 @@
         ["Dizana's quiver"],
         ["Ava's assembler"],
         ["Max cape"],
-        ["Ranging cape"],
+        ["Ranging cape (t)"],
         ["Infernal cape", "Mythical cape"]
       ],
       "Body": [
