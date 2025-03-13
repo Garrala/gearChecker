@@ -53,6 +53,12 @@ export class MonsterOverviewComponent implements OnInit {
     'Slayer Bosses',
   ]
 
+  //Item filtering
+  itemSearchQuery: string = ''
+  filteredBosses: Monster[] = []
+  suggestedItems: { name: string; image: string }[] = []
+  allItems: { name: string; image: string }[] = []
+
   constructor(
     private monsterService: MonsterService,
     public gearService: GearService,
@@ -65,6 +71,8 @@ export class MonsterOverviewComponent implements OnInit {
     console.log('Fetching Monsters...')
     this.monsterService.getMonsters().subscribe((data) => {
       this.monsters = data
+      this.filteredBosses = data
+      this.extractAllItems()
       this.isMonsterListLoading = false // ✅ Boss list loaded
       //console.log('Fetched Monsters Data:', this.monsters)
     })
@@ -357,11 +365,96 @@ export class MonsterOverviewComponent implements OnInit {
   }
 
   filteredMonsters(): Monster[] {
-    if (this.selectedCategories.length === 0) {
-      return this.monsters
+    let monsters = this.monsters
+
+    // Filter by category if categories are selected
+    if (this.selectedCategories.length > 0) {
+      monsters = monsters.filter((monster) =>
+        this.selectedCategories.includes(monster.category)
+      )
     }
-    return this.monsters.filter((monster) =>
-      this.selectedCategories.includes(monster.category)
+
+    // Filter by item if an item search is active
+    const query = this.itemSearchQuery.trim().toLowerCase()
+    if (query) {
+      monsters = monsters.filter((monster) =>
+        Object.values(monster.gear_setups || {}).some((setup) =>
+          Object.values(setup).some((gearSlots) =>
+            gearSlots.some((group) =>
+              (Array.isArray(group) ? group : [group]).some((item) =>
+                item.toLowerCase().includes(query)
+              )
+            )
+          )
+        )
+      )
+    }
+
+    return monsters
+  }
+
+  /** Extract all unique items from bosses for autocomplete **/
+  extractAllItems() {
+    const itemSet = new Set<string>()
+
+    this.monsters.forEach((monster) => {
+      Object.values(monster.gear_setups || {}).forEach((setup) => {
+        Object.values(setup).forEach((gearSlots) => {
+          gearSlots.forEach((group) => {
+            const items = Array.isArray(group) ? group : [group]
+            items.forEach((item) => itemSet.add(item))
+          })
+        })
+      })
+    })
+
+    // Convert to array with placeholder images (Replace with real ones if available)
+    this.allItems = Array.from(itemSet).map((item) => ({
+      name: item,
+      image: `https://oldschool.runescape.wiki/images/${item.replace(/ /g, '_')}.png`,
+    }))
+  }
+
+  /** Filters suggestions for autocomplete **/
+  updateSuggestions() {
+    const query = this.itemSearchQuery.trim().toLowerCase()
+
+    if (!query) {
+      this.suggestedItems = []
+      return
+    }
+
+    this.suggestedItems = this.allItems
+      .filter((item) => item.name.toLowerCase().includes(query))
+      .slice(0, 5) // Limit to 5 suggestions
+  }
+
+  /** Select an item from autocomplete **/
+  selectSuggestedItem(item: { name: string; image: string }) {
+    this.itemSearchQuery = item.name
+    this.suggestedItems = []
+    this.filterByItem()
+  }
+
+  /** Filter bosses based on selected gear item **/
+  filterByItem() {
+    const query = this.itemSearchQuery.trim().toLowerCase()
+
+    if (!query) {
+      this.filteredBosses = this.monsters
+      return
+    }
+
+    this.filteredBosses = this.monsters.filter((monster) =>
+      Object.values(monster.gear_setups || {}).some((setup) =>
+        Object.values(setup).some((gearSlots) =>
+          gearSlots.some((group) =>
+            (Array.isArray(group) ? group : [group]).some((item) =>
+              item.toLowerCase().includes(query)
+            )
+          )
+        )
+      )
     )
   }
 }
