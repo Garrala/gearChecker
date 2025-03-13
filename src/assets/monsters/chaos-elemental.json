@@ -48,7 +48,6 @@
         ["Toxic blowpipe"],
         ["Armadyl crossbow"]
       ],
-      "Special Attack": [],
       "Helmet": [
         ["Slayer helmet (i)"],
         ["Blessed coif"],
@@ -99,7 +98,8 @@
         ["Dragon arrow", "Amethyst arrow"],
         ["Diamond bolts (e)"],
         ["Broad bolts"]
-      ]
+      ],
+      "Special Attack": []
     },
     "Melee": {
       "Weapon": [
@@ -113,7 +113,7 @@
         ["Ursine chainmace"],
         ["Voidwaker"],
         ["Dragon claws"],
-        ["Dragon dagger (p++)"],
+        ["Dragon dagger"],
         ["Crystal halberd"]
       ],
       "Helmet": [

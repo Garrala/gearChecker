@@ -383,5 +383,45 @@
     "image": "https://oldschool.runescape.wiki/images/Leaf-bladed_battleaxe.png?fa8bd",
     "wiki": "https://oldschool.runescape.wiki/w/Leaf-bladed_battleaxe",
     "twoHanded": false
+  },
+  "Zamorakian spear": {
+    "image": "https://oldschool.runescape.wiki/images/Zamorakian_spear.png?420f4",
+    "wiki": "https://oldschool.runescape.wiki/w/Zamorakian_spear",
+	"twoHanded": true
+  },
+  "Dragon spear": {
+    "image": "https://oldschool.runescape.wiki/images/Dragon_spear.png?cc5f3",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_spear",
+	"twoHanded": true
+  },
+  "Toxic staff of the dead": {
+    "image": "https://oldschool.runescape.wiki/images/Toxic_staff_of_the_dead.png?632be",
+    "wiki": "https://oldschool.runescape.wiki/w/Toxic_staff_of_the_dead#Charged",
+	"twoHanded": false
+  },
+  "Void knight mace": {
+    "image": "https://oldschool.runescape.wiki/images/Void_knight_mace.png?75a26",
+    "wiki": "https://oldschool.runescape.wiki/w/Void_knight_mace",
+	"twoHanded": false
+  },
+  "Guthan's warspear": {
+    "image": "https://oldschool.runescape.wiki/images/Guthan%27s_warspear.png?06911",
+    "wiki": "https://oldschool.runescape.wiki/w/Guthan%27s_warspear",
+	"twoHanded": true
+  },
+  "Venator bow": {
+    "image": "https://oldschool.runescape.wiki/images/Venator_bow.png?6600c",
+    "wiki": "https://oldschool.runescape.wiki/w/Venator_bow#Charged",
+	"twoHanded": true
+  },
+  "Purging staff": {
+    "image": "https://oldschool.runescape.wiki/images/Purging_staff.png?80ac4",
+    "wiki": "https://oldschool.runescape.wiki/w/Purging_staff",
+	"twoHanded": false
+  },
+  "Verac's flail": {
+    "image": "https://oldschool.runescape.wiki/images/Verac%27s_flail.png?f4ddf",
+    "wiki": "https://oldschool.runescape.wiki/w/Verac%27s_flail",
+	"twoHanded": true
   }
 }
