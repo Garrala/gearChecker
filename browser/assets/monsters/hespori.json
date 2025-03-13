@@ -1,0 +1,131 @@
+{
+  "name": "Hespori",
+  "category": "Sporadic Bosses",
+  "image": "https://oldschool.runescape.wiki/images/Hespori.png?83c72",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Hespori",
+  "bosses": [
+    {
+      "name": "Hespori",
+      "image": "https://oldschool.runescape.wiki/images/Hespori.png?83c72",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Hespori",
+      "combat_level": 725,
+      "hp": 300,
+      "max_hit": {
+        "ranged": 16,
+        "magic": 14,
+        "special": 40
+      },
+      "weaknesses": {
+        "fire": "100%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 60,
+          "slash": 20,
+          "crush": 60
+        },
+        "magic": 80,
+        "ranged": {
+          "arrows": 80,
+          "bolts": 80,
+          "thrown": 80
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Poison", "Special"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      }
+    }
+  ],
+  "gear_setups": {
+    "Entry Level": {
+      "Weapon": [["Dragon scimitar"], ["Zombie axe"]],
+      "Shield": [["Dragon defender"], ["Rune defender"]],
+      "Special Attack": [["Dragon dagger"], ["Crystal halberd"]],
+      "Helmet": [["Helm of neitiznot"]],
+      "Amulet": [["Amulet of strength"], ["Amulet of fury"]],
+      "Cape": [["Fire cape"], ["Mixed hide cape"]],
+      "Body": [
+        ["Barrows top", "Fighter torso", "Bandos chestplate"],
+        ["Black d'hide body"]
+      ],
+      "Legs": [
+        ["Blood moon tassets", "Bandos tassets"],
+        ["Barrows legs"],
+        ["Black d'hide chaps"]
+      ],
+      "Gloves": [["Barrows gloves"]],
+      "Boots": [["Dragon boots"], ["Mixed hide boots"]],
+      "Ring": [["Berserker ring (i)"]],
+      "Ammo": [["Rada's blessing 3/2", "God blessing"]]
+    },
+    "Best-in-Slot": {
+      "Weapon": [
+        ["Scythe of vitur"],
+        ["Soulreaper axe"],
+        ["Blade of saeldor"],
+        ["Noxious halberd", "Abyssal tentacle"],
+        ["Abyssal whip"]
+      ],
+      "Shield": [["Avernic defender"], ["Dragon defender"]],
+      "Special Attack": [
+        ["Dragon claws"],
+        ["Burning claws"],
+        ["Dragon dagger"],
+        ["Voidwaker"]
+      ],
+      "Helmet": [["Torva full helm"], ["Neitiznot faceguard"]],
+      "Amulet": [["Amulet of rancour"], ["Amulet of torture"]],
+      "Cape": [["Infernal cape"], ["Fire cape"]],
+      "Body": [
+        ["Torva platebody"],
+        ["Blood moon chestplate", "Fighter torso", "Bandos chestplate"]
+      ],
+      "Legs": [["Torva platelegs"], ["Blood moon tassets", "Bandos tassets"]],
+      "Gloves": [["Ferocious gloves"], ["Barrows gloves"]],
+      "Boots": [["Primordial boots"], ["Dragon boots"]],
+      "Ring": [["Ultor ring"], ["Berserker ring (i)"]],
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]]
+    },
+    "Best-in-Slot Mage": {
+      "Weapon": [
+        ["Harmonised nightmare staff"],
+        ["Twinflame staff"],
+        ["Staff of the dead"],
+        ["Purging staff"],
+        ["Ancient sceptre (with Mage’s book)"]
+      ],
+      "Shield": [["Tome of fire"], ["Mage’s book"]],
+      "Helmet": [
+        ["Ancestral hat"],
+        ["Virtus mask"],
+        ["Ahrim’s hood"],
+        ["Void mage helm"]
+      ],
+      "Amulet": [["Occult necklace"], ["Amulet of fury"]],
+      "Cape": [["Imbued god cape"], ["God cape"]],
+      "Body": [
+        ["Ancestral robe top"],
+        ["Virtus robe top"],
+        ["Ahrim’s robetop"],
+        ["Elite void top"]
+      ],
+      "Legs": [
+        ["Ancestral robe bottom"],
+        ["Virtus robe bottom"],
+        ["Ahrim’s robeskirt"],
+        ["Elite void robe"]
+      ],
+      "Gloves": [["Tormented bracelet"], ["Void knight gloves"]],
+      "Boots": [["Eternal boots"], ["Infinity boots"], ["Aranea boots"]],
+      "Ring": [["Magus ring"], ["Seers ring (i)"]],
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]],
+      "Special Attack": [["N/A"]]
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "name": "Zulrah",
+  "category": "Instanced Bosses",
+  "image": "https://oldschool.runescape.wiki/images/Zulrah_%28serpentine%29.png?29a54",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
+  "bosses": [
+    {
+      "name": "Zulrah",
+      "image": "https://oldschool.runescape.wiki/images/Zulrah_%28serpentine%29.png?29a54",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
+      "combat_level": 725,
+      "hp": 500,
+      "max_hit": {
+        "magic": 41
+      },
+      "weaknesses": {
+        "fire": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 150,
+          "slash": 150,
+          "crush": 200
+        },
+        "magic": -45,
+        "ranged": {
+          "arrows": 50,
+          "bolts": 50,
+          "thrown": 50
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_speed": 3,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
+    }
+  ],
+  "gear_setups": {
+    "Magic": {
+      "Weapon": [
+        ["Tumeken's shadow", "Harmonised nightmare staff"],
+        ["Sanguinesti staff", "Staff of the dead"],
+        ["Trident of the swamp", "Smoke battlestaff"],
+        ["Ahrim's staff", "Trident of the seas"],
+        ["Iban's staff", "Warped sceptre"]
+      ],
+      "Shield": [
+        ["Tome of fire (Searing pages)", "Elidinis' ward (f)"],
+        ["Tome of fire (Burnt pages)", "Arcane spirit shield"],
+        ["Elidinis' ward", "Mage's book"],
+        ["Ancient wyvern shield", "Malediction ward"],
+        ["Book of the dead", "Book of darkness"]
+      ],
+      "Helmet": [
+        ["Slayer helmet (i)", "Ancestral hat"],
+        ["Virtus mask"],
+        ["Serpentine helm", "Ahrim's hood", "Blue moon helm"],
+        ["Infinity hat", "Bloodbark helm"],
+        ["Void mage helm", "Mystic hat"]
+      ],
+      "Amulet": [
+        ["Occult necklace"],
+        ["Amulet of fury"],
+        ["Bonecrusher necklace"],
+        ["Amulet of glory"],
+        ["Amulet of power"]
+      ],
+      "Cape": [
+        ["Imbued god cape"],
+        ["God capes"],
+        ["Ardougne cloak 4"],
+        ["Ardougne cloak 3"],
+        ["Skillcape (t)"]
+      ],
+      "Body": [
+        ["Ancestral robe top"],
+        ["Virtus robe top"],
+        ["Ahrim's robetop", "Blue moon chestplate"],
+        ["Dagon'hai robe top", "Infinity top", "Bloodbark body"],
+        ["Elite void top", "Mystic robe top"]
+      ],
+      "Legs": [
+        ["Ancestral robe bottom"],
+        ["Virtus robe bottom"],
+        ["Ahrim's robeskirt", "Blue moon tassets"],
+        ["Dragon'hai robe bottom", "Infinity bottoms", "Bloodbark legs"],
+        ["Elite void robe", "Mystic robe bottom"]
+      ],
+      "Gloves": [
+        ["Tormented bracelet"],
+        ["Barrows gloves"],
+        ["Regen bracelet", "Combat bracelet"],
+        ["Void knight gloves"]
+      ],
+      "Boots": [
+        ["Eternal boots"],
+        ["Infinity boots", "Aranea boots"],
+        ["Boots of brimstone"],
+        ["Bloodbark boots"],
+        ["Wizard boots"]
+      ],
+      "Ring": [["Magus ring", "Ring of suffering (i)"], ["Ring of recoil"]],
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "God blessing"]],
+      "Special Attack": ["N/A"]
+    },
+    "Ranged": {
+      "Weapon": [
+        ["Twisted bow", "Toxic blowpipe"],
+        ["Bow of faerdhinen"],
+        ["Hunters' sunlight crossbow"],
+        ["Magic shortbow (i)"],
+        ["Karil's crossbow"]
+      ],
+      "Special Attack": [
+        ["Tonalztics of ralos"],
+        ["Toxic blowpipe"],
+        ["Magic comp bow", "Magic longbow"]
+      ],
+      "Helmet": [
+        ["Slayer helmet (i)", "Masori mask (f)"],
+        ["Crystal helm"],
+        ["Serpentine helm", "Armadyl helmet"],
+        ["Blessed coif"],
+        ["Void ranger helm", "Archer helm"]
+      ],
+      "Amulet": [
+        ["Necklace of anguish"],
+        ["Amulet of fury"],
+        ["Amulet of glory"]
+      ],
+      "Cape": [["Ava's assembler"], ["Ava's accumulator"], ["Ranging cape"]],
+      "Body": [
+        ["Masori body (f)"],
+        ["Crystal body"],
+        ["Armadyl chestplate"],
+        ["Karil's leathertop", "Blessed body"],
+        ["Elite void top", "Black d'hide body"]
+      ],
+      "Legs": [
+        ["Masori chaps (f)"],
+        ["Crystal legs"],
+        ["Armadyl chainskirt"],
+        ["Karil's leatherskirt", "Blessed chaps"],
+        ["Elite void robe", "Black d'hide chaps"]
+      ],
+      "Gloves": [
+        ["Zaryte vambraces"],
+        ["Barrows gloves"],
+        ["Dragon gloves"],
+        ["Blessed vambraces"],
+        ["Void knight gloves", "Black d'hide vambraces"]
+      ],
+      "Boots": [
+        ["Pegasian boots"],
+        ["Ranger boots"],
+        ["Blessed boots"],
+        ["Aranea boots"],
+        ["Boots of brimstone"]
+      ],
+      "Ring": [["Ring of suffering (i)"], ["Ring of recoil"]],
+      "Ammo": [
+        ["Dragon arrow"],
+        ["Amethyst arrow"],
+        ["Rune arrow"],
+        ["Moonlight antler bolts", "Sunlight antler bolts"],
+        ["Bolt rack"]
+      ],
+      "Shield": ["N/A"]
+    }
+  }
+}

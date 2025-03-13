@@ -1,0 +1,152 @@
+{
+  "name": "Araxxor",
+  "category": "Slayer Bosses",
+  "image": "https://oldschool.runescape.wiki/images/Araxxor.png?35d2e",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Araxxor",
+  "bosses": [
+    {
+      "name": "Araxxor",
+      "image": "https://oldschool.runescape.wiki/images/Araxxor.png?35d2e",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Araxxor",
+      "combat_level": 890,
+      "hp": 1020,
+      "max_hit": {
+        "melee": 38,
+        "magic": 21,
+        "ranged": 34
+      },
+      "weaknesses": {
+        "fire": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 160,
+          "slash": 75,
+          "crush": 15
+        },
+        "magic": 237,
+        "ranged": {
+          "arrows": 218,
+          "bolts": 218,
+          "thrown": 218
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      }
+    }
+  ],
+  "gear_setups": {
+    "Melee": {
+      "Weapon": [
+        ["Scythe of vitur"],
+        ["Inquisitor's mace", "Soulreaper axe", "Inquisitor's mace"],
+        ["Abyssal bludgeon", "Ursine chainmace (u)"],
+        ["Saradomin's blessed sword", "Zamorakian hasta", "Sarachnis cudgel"],
+        ["Saradomin sword", "Zombie axe", "Dual macuahuitl"]
+      ],
+      "Shield": [
+        ["Avernic defender"],
+        ["Dragon defender"],
+        ["Rune defender", "Toktz-ket-xil"]
+      ],
+      "Special Attack": [
+        ["Elder maul", "Dragon warhammer"],
+        ["Burning claws", "Dragon claws"],
+        ["Voidwaker"],
+        ["Bandos godsword"],
+        ["Saradomin godsword", "Ancient godsword", "Ancient mace"]
+      ],
+      "Helmet": [["Slayer helmet (i)"], ["Serpentine helm"]],
+      "Amulet": [
+        ["Amulet of rancour"],
+        ["Amulet of torture"],
+        ["Amulet of blood fury"],
+        ["Amulet of fury"],
+        ["Amulet of glory"]
+      ],
+      "Cape": [
+        ["Infernal cape"],
+        ["Fire cape"],
+        ["Mythical cape"],
+        ["Ardougne cloak"]
+      ],
+      "Body": [
+        ["Inquisitor's hauberk"],
+        ["Torva platebody"],
+        ["Bandos chestplate"],
+        ["Blood moon chestplate", "Fighter torso"],
+        ["Barrows equipment"]
+      ],
+      "Legs": [
+        ["Inquisitor's plateskirt"],
+        ["Torva platelegs"],
+        ["Bandos tassets"],
+        ["Blood moon tassets"],
+        ["Barrows equipment"]
+      ],
+      "Gloves": [
+        ["Ferocious gloves"],
+        ["Barrows gloves"],
+        ["Dragon gloves"],
+        ["Rune gloves"]
+      ],
+      "Boots": [
+        ["Primordial boots"],
+        ["Dragon boots", "Aranea boots"],
+        ["Echo boots", "Guardian boots"],
+        ["Rune boots", "Mixed hide boots"]
+      ],
+      "Ring": [
+        ["Ultor ring"],
+        ["Berserker ring (i)"],
+        ["Ring of suffering (ri)"],
+        ["Lightbearer"]
+      ],
+      "Ammo": [
+        ["Rada's blessing 4"],
+        ["Rada's blessing 3", "Rada's blessing 2", "God blessing"],
+        ["Dragon javelin"],
+        ["Moonlight antler bolts"],
+        ["Broad bolts"]
+      ]
+    },
+    "Ranged": {
+      "Weapon": [["Twisted bow"]],
+      "Special Attack": [
+        ["Elder maul"],
+        ["Dragon warhammer"],
+        ["Zaryte crossbow"]
+      ],
+      "Helmet": [["Slayer helmet (i)"]],
+      "Amulet": [["Necklace of anguish"], ["Amulet of fury"]],
+      "Cape": [
+        ["Dizana's quiver"],
+        ["Ava's assembler"],
+        ["Max cape", "Ranging cape (t)"]
+      ],
+      "Body": [["Masori body (f)"]],
+      "Legs": [["Masori chaps (f)"]],
+      "Gloves": [
+        ["Zaryte vambraces"],
+        ["Barrows gloves"],
+        ["Blessed vambraces"]
+      ],
+      "Boots": [
+        ["Aranea boots"],
+        ["Pegasian boots"],
+        ["Ranger boots", "Devout boots"],
+        ["Blessed boots"]
+      ],
+      "Ring": [["Lightbearer"], ["Ring of the gods (i)", "Archers ring (i)"]],
+      "Ammo": [["Dragon arrow"], ["Amethyst arrow"]],
+      "Shield": ["N/A"]
+    }
+  }
+}
