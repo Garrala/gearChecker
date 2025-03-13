@@ -30,6 +30,7 @@ export interface Monster {
     }
   }[]
   gear_setups: { [tab: string]: { [slot: string]: string[] } }
+  selected?: boolean
 }
 
 @Injectable({

@@ -735,3 +735,8 @@
 .autocomplete-item:hover {
   background: rgba(0, 255, 0, 0.3);
 }
+
+h1 {
+  text-align: center;
+  width: 100%;
+}

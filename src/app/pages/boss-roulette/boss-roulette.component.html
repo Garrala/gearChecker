@@ -1,0 +1,103 @@
+<div *ngIf="!isRoulettePhase">
+  <div *ngIf="isMonsterListLoading" class="spinner-container">
+    <div class="spinner"></div>
+  </div>
+
+  <div *ngIf="!isMonsterListLoading">
+    <h1>Select Bosses for the Roulette</h1>
+    <!-- Item Search -->
+    <div class="item-filter">
+      <input
+        type="text"
+        [(ngModel)]="itemSearchQuery"
+        (input)="updateSuggestions()"
+        placeholder="Search by item..."
+      />
+
+      <!-- Autocomplete Dropdown -->
+      <div class="autocomplete-dropdown" *ngIf="suggestedItems.length > 0">
+        <div
+          class="autocomplete-item"
+          *ngFor="let item of suggestedItems"
+          (click)="selectSuggestedItem(item)"
+        >
+          <img
+            [src]="item.image"
+            alt="{{ item.name }}"
+            onerror="this.src='https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'"
+          />
+          <span>{{ item.name }}</span>
+        </div>
+      </div>
+    </div>
+    <!-- Category Selector -->
+    <div class="category-selector">
+      <button
+        *ngFor="let category of bossCategories"
+        (click)="toggleCategory(category)"
+        [class.active]="selectedCategories.includes(category)"
+      >
+        {{ category }}
+      </button>
+    </div>
+
+    <!-- Boss Selection -->
+    <div class="boss-picker">
+      <div
+        *ngFor="let boss of filteredMonsters()"
+        class="monster-box"
+        [class.selected]="boss.selected"
+        (click)="toggleBossSelection(boss)"
+      >
+        <img [src]="boss.image" alt="{{ boss.name }}" />
+        <span>{{ boss.name }}</span>
+      </div>
+    </div>
+
+    <div class="start-roulette-container">
+      <button [disabled]="selectedBosses.length < 2" (click)="startRoulette()">
+        🎲 Start Roulette
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ROULETTE PHASE -->
+<!-- Ensure the roulette UI only shows after selection -->
+<div *ngIf="isRoulettePhase">
+  <div class="npc-dialogue">
+    <img
+      src="https://oldschool.runescape.wiki/images/Mysterious_Old_Man_chathead.png?a0eb8"
+    />
+    <h2>
+      Ah, so you are there. I hoped you would talk to me, I get so lonely. Here,
+      have a present!
+    </h2>
+  </div>
+  <div class="roulette-cards">
+    <div
+      class="card"
+      *ngFor="let boss of rouletteChoices; let i = index"
+      (click)="revealBoss(boss, i)"
+      [class.flipped]="revealedBosses.includes(boss)"
+      [class.selected]="boss === selectedCard"
+    >
+      <img
+        *ngIf="revealedBosses.includes(boss)"
+        class="show"
+        [src]="boss.image"
+        alt="{{ boss.name }}"
+      />
+      <div *ngIf="!revealedBosses.includes(boss)" class="hidden-card">
+        <img
+          src="https://oldschool.runescape.wiki/images/Mystery_box_detail.png?0e275"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="selectedCard" class="result-container">
+    <h3>You got {{ selectedCard.name }}!</h3>
+    <button (click)="resetRoulette()">Try Again</button>
+  </div>
+</div>
