@@ -8,4 +8,5 @@ export const routes: Routes = [
   { path: 'gear', component: GearManagementComponent },
   { path: 'monster', component: MonsterOverviewComponent },
   { path: 'roulette', component: BossRouletteComponent },
+  { path: '**', redirectTo: 'gear', pathMatch: 'full' },
 ]
