@@ -94,6 +94,66 @@
   margin: 50px auto;
 }
 
+.item-filter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+  .item-filter input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+    .item-filter input:focus {
+      border-color: rgba(0, 255, 0, 0.3);
+      box-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+    }
+
+/* Autocomplete Dropdown */
+.autocomplete-dropdown {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  background: #111;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* Individual Autocomplete Item */
+.autocomplete-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+  .autocomplete-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+
+  .autocomplete-item:hover {
+    background: rgba(0, 255, 0, 0.3);
+  }
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -103,3 +163,41 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  text-align: center;
+  width: 100%;
+}
+
+p {
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  padding: 12px 18px;
+  background: linear-gradient(to bottom, #333, #111); /* Subtle gradient */
+  color: white;
+  border: 2px solid #666;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+  border-radius: 6px; /* Rounded corners */
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-transform: uppercase; /* Makes it feel more structured */
+}
+
+  button:hover {
+    background: linear-gradient( to bottom, #444, #222 ); /* Slightly lighter hover effect */
+    border-color: rgba(0, 255, 0, 0.3);
+  }
+
+  button:active {
+    background: rgba(0, 255, 0, 0.3);
+    border-color: rgba(0, 255, 0, 0.3);
+    transform: scale(1.05); /* Slight pop effect */
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); /* Glow effect */
+  }
+
+

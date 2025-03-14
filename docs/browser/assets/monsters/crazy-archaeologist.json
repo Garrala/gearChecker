@@ -47,7 +47,13 @@
         ["Trident of the seas"],
         ["Warped sceptre", "Iban's staff (u)"]
       ],
-      "Special Attack": ["N/A"],
+      "Shield": [
+        ["Elidinis' ward (f)", "Elidinis' ward"],
+        ["Book of darkness"],
+        ["Unholy book"],
+        ["Tome of fire"],
+        ["Broodoo shield"]
+      ],
       "Helmet": [
         ["Slayer helmet (i)"],
         ["Bloodbark helm"],
@@ -63,8 +69,8 @@
         ["Amulet of power"]
       ],
       "Cape": [
-        ["Imbued god capes"],
-        ["God capes"],
+        ["Imbued god cape"],
+        ["God cape"],
         ["Ardougne cloak 4"],
         ["Ardougne cloak 3"],
         ["Ardougne cloak 2"]
@@ -82,13 +88,6 @@
         ["Xerician robe"],
         ["Zamorak monk bottom"],
         ["Monk's robe"]
-      ],
-      "Shield": [
-        ["Elidinis' ward (f)", "Elidinis' ward"],
-        ["Book of darkness"],
-        ["Unholy book"],
-        ["Tome of fire"],
-        ["Broodoo shield"]
       ],
       "Gloves": [
         ["Tormented bracelet"],
@@ -108,7 +107,8 @@
         ["Beacon ring"],
         ["Ring of wealth (i)"]
       ],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]]
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]],
+	  "Special Attack": ["N/A"]
     }
   }
 }

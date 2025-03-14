@@ -1,79 +1,94 @@
 <div class="container">
-  <h2>Gear Management</h2>
+  <h1>Gear Management</h1>
   <p>Select the gear you own:</p>
 
   <!-- Show spinner if still loading -->
   <div class="loading-spinner" *ngIf="loading"></div>
 
   <div class="gear-container" *ngIf="!loading">
+    <!-- Item Search -->
+    <div class="item-filter">
+      <input type="text"
+             [(ngModel)]="itemSearchQuery"
+             (input)="filterByItem()"
+             placeholder="Search by item..." />
+
+      <!-- Autocomplete Dropdown -->
+      <div class="autocomplete-dropdown" *ngIf="suggestedItems.length > 0">
+        <div class="autocomplete-item"
+             *ngFor="let item of suggestedItems"
+             (click)="selectSuggestedItem(item)">
+          <img [src]="item.image"
+               alt="{{ item.name }}"
+               onerror="this.src='https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" />
+          <span>{{ item.name }}</span>
+        </div>
+      </div>
+    </div>
     <!-- Weapon Slot (Top) -->
     <div *ngIf="gearData['weapons']" class="gear-category">
-      <h4>Weapon</h4>
+      <div class="gear-header">
+        <h2>Weapon</h2>
+        <button (click)="toggleAllGearInSlot('weapons')">
+          Toggle Weapons
+        </button>
+      </div>
       <div class="gear-grid">
-        <div
-          *ngFor="let item of getFilteredItems('weapons')"
-          class="gear-box"
-          [class.owned]="ownedGear['Weapon']?.includes(item)"
-          (click)="toggleGear('Weapon', item)"
-        >
+        <div *ngFor="let item of getFilteredItems('weapons')"
+             class="gear-box"
+             [class.owned]="ownedGear['Weapon']?.includes(item)"
+             (click)="toggleGear('Weapon', item)">
           <img [src]="gearData['weapons'][item].image" alt="{{ item }}" />
           <p>{{ item }}</p>
-          <a
-            [href]="gearData['weapons'][item].wiki"
-            target="_blank"
-            class="wiki-link"
-            >🔍</a
-          >
+          <a [href]="gearData['weapons'][item].wiki"
+             target="_blank"
+             class="wiki-link">🔍</a>
         </div>
       </div>
     </div>
 
     <!-- Special Attack Weapons -->
     <div *ngIf="gearData['special_attack']" class="gear-category">
-      <h4>Special Attack Weapon</h4>
+      <div class="gear-header">
+        <h2>Special Attack Weapon</h2>
+        <button (click)="toggleAllGearInSlot('special_attack')">
+          Toggle Special Attack Weapons
+        </button>
+      </div>
       <div class="gear-grid">
-        <div
-          *ngFor="let item of getFilteredItems('special_attack')"
-          class="gear-box"
-          [class.owned]="ownedGear['Special Attack']?.includes(item)"
-          (click)="toggleGear('Special Attack', item)"
-        >
-          <img
-            [src]="gearData['special_attack'][item].image"
-            alt="{{ item }}"
-          />
+        <div *ngFor="let item of getFilteredItems('special_attack')"
+             class="gear-box"
+             [class.owned]="ownedGear['Special Attack']?.includes(item)"
+             (click)="toggleGear('Special Attack', item)">
+          <img [src]="gearData['special_attack'][item].image"
+               alt="{{ item }}" />
           <p>{{ item }}</p>
-          <a
-            [href]="gearData['special_attack'][item].wiki"
-            target="_blank"
-            class="wiki-link"
-            >🔍</a
-          >
+          <a [href]="gearData['special_attack'][item].wiki"
+             target="_blank"
+             class="wiki-link">🔍</a>
         </div>
       </div>
     </div>
 
     <!-- Armor Slots -->
     <div *ngFor="let slot of armorSlots" class="gear-category">
-      <h4>{{ slot }}</h4>
+      <div class="gear-header">
+        <h2>{{ slot }}</h2>
+        <button (click)="toggleAllGearInSlot(slot.toLowerCase())">
+          Toggle {{ slot }}
+        </button>
+      </div>
       <div class="gear-grid" *ngIf="gearData[slot.toLowerCase()]">
-        <div
-          *ngFor="let item of getFilteredItems(slot.toLowerCase())"
-          class="gear-box"
-          [class.owned]="ownedGear[slot]?.includes(item)"
-          (click)="toggleGear(slot, item)"
-        >
-          <img
-            [src]="gearData[slot.toLowerCase()][item].image"
-            alt="{{ item }}"
-          />
+        <div *ngFor="let item of getFilteredItems(slot.toLowerCase())"
+             class="gear-box"
+             [class.owned]="ownedGear[slot]?.includes(item)"
+             (click)="toggleGear(slot, item)">
+          <img [src]="gearData[slot.toLowerCase()][item].image"
+               alt="{{ item }}" />
           <p>{{ item }}</p>
-          <a
-            [href]="gearData[slot.toLowerCase()][item].wiki"
-            target="_blank"
-            class="wiki-link"
-            >🔍</a
-          >
+          <a [href]="gearData[slot.toLowerCase()][item].wiki"
+             target="_blank"
+             class="wiki-link">🔍</a>
         </div>
       </div>
     </div>

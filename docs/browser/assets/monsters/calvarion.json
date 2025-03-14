@@ -51,6 +51,13 @@
         ["Sarachnis cudgel", "Elder maul", "Dual macuahuitl"],
         ["Leaf-bladed battleaxe", "Dragon mace"]
       ],
+      "Shield": [
+        ["Avernic defender"],
+        ["Dragon defender"],
+        ["Dragonfire shield"],
+        ["Rune defender", "Toktz-ket-xil"],
+        ["Book of war", "Falador shield 4"]
+      ],
       "Special Attack": [
         ["Elder maul"],
         ["Dragon mace"],
@@ -90,13 +97,6 @@
         ["Black d'hide chaps"],
         ["Proselyte cuisse"],
         ["Monk's robe"]
-      ],
-      "Shield": [
-        ["Avernic defender"],
-        ["Dragon defender"],
-        ["Dragonfire shield"],
-        ["Rune defender", "Toktz-ket-xil"],
-        ["Book of war", "Falador shield 4"]
       ],
       "Gloves": [
         ["Ferocious gloves"],

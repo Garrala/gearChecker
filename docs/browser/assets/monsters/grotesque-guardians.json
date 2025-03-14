@@ -40,66 +40,6 @@
     }
   ],
   "gear_setups": {
-    "Ranged Switches": {
-      "Weapon": [
-        ["Venator bow", "Toxic blowpipe"],
-        ["Eclipse atlatl"],
-        ["Bow of faerdhinen"],
-        ["Hunters' sunlight crossbow"],
-        ["Magic shortbow (i)"]
-      ],
-      "Shield": [["Twisted buckler"], ["Dragonfire ward"], ["Odium ward"]],
-      "Special Attack": [
-        ["Toxic blowpipe"],
-        ["Eclipse atlatl"],
-        ["Atlatl dart"]
-      ],
-      "Helmet": [
-        ["Slayer helmet (i)", "Black mask (i)"],
-        ["Slayer helmet", "Black mask"]
-      ],
-      "Amulet": [["Necklace of anguish"]],
-      "Cape": [
-        ["Dizana's quiver"],
-        ["Ava's assembler"],
-        ["Ava's accumulator"],
-        ["Ranging cape (t)"]
-      ],
-      "Body": [
-        ["Masori body (f)"],
-        ["Eclipse moon chestplate"],
-        ["Crystal body"],
-        ["Blessed body", "Karil's leathertop"],
-        ["Black d'hide body"]
-      ],
-      "Legs": [
-        ["Masori chaps (f)"],
-        ["Eclipse moon tassets"],
-        ["Crystal legs"],
-        ["Blessed chaps", "Karil's leatherskirt"],
-        ["Black d'hide chaps"]
-      ],
-      "Gloves": [
-        ["Zaryte vambraces"],
-        ["Barrows gloves"],
-        ["Dragon gloves"],
-        ["Rune gloves"]
-      ],
-      "Boots": [
-        ["Pegasian boots"],
-        ["Ranger boots"],
-        ["Aranea boots"],
-        ["Blessed boots"]
-      ],
-      "Ring": [["Venator ring"]],
-      "Ammo": [
-        ["Dragon arrow"],
-        ["Atlatl dart"],
-        ["Rada's blessing 4"],
-        ["Moonlight antler bolts", "Sunlight antler bolts"],
-        ["Amethyst arrow", "Rune arrow"]
-      ]
-    },
     "Melee": {
       "Weapon": [
         ["Scythe of vitur"],
@@ -171,6 +111,65 @@
         ["Ring of suffering (i)", "Archers ring (i)"],
         ["Treasonous ring (i)", "Warrior ring (i)", "Tyrannical ring (i)"]
       ],
+      "Ammo": [
+        ["Dragon arrow"],
+        ["Atlatl dart"],
+        ["Rada's blessing 4"],
+        ["Moonlight antler bolts", "Sunlight antler bolts"],
+        ["Amethyst arrow", "Rune arrow"]
+      ]
+    },
+	"Ranged Switches": {
+      "Weapon": [
+        ["Venator bow", "Toxic blowpipe"],
+        ["Eclipse atlatl"],
+        ["Bow of faerdhinen"],
+        ["Hunters' sunlight crossbow"],
+        ["Magic shortbow (i)"]
+      ],
+      "Shield": [["Twisted buckler"], ["Dragonfire ward"], ["Odium ward"]],
+      "Special Attack": [
+        ["Toxic blowpipe"],
+        ["Eclipse atlatl"]
+      ],
+      "Helmet": [
+        ["Slayer helmet (i)", "Black mask (i)"],
+        ["Slayer helmet", "Black mask"]
+      ],
+      "Amulet": [["Necklace of anguish"]],
+      "Cape": [
+        ["Dizana's quiver"],
+        ["Ava's assembler"],
+        ["Ava's accumulator"],
+        ["Ranging cape (t)"]
+      ],
+      "Body": [
+        ["Masori body (f)"],
+        ["Eclipse moon chestplate"],
+        ["Crystal body"],
+        ["Blessed body", "Karil's leathertop"],
+        ["Black d'hide body"]
+      ],
+      "Legs": [
+        ["Masori chaps (f)"],
+        ["Eclipse moon tassets"],
+        ["Crystal legs"],
+        ["Blessed chaps", "Karil's leatherskirt"],
+        ["Black d'hide chaps"]
+      ],
+      "Gloves": [
+        ["Zaryte vambraces"],
+        ["Barrows gloves"],
+        ["Dragon gloves"],
+        ["Rune gloves"]
+      ],
+      "Boots": [
+        ["Pegasian boots"],
+        ["Ranger boots"],
+        ["Aranea boots"],
+        ["Blessed boots"]
+      ],
+      "Ring": [["Venator ring"]],
       "Ammo": [
         ["Dragon arrow"],
         ["Atlatl dart"],

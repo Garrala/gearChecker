@@ -20,14 +20,14 @@
     "wiki": "https://oldschool.runescape.wiki/w/Dizana%27s_quiver#Charged"
   },
   "Ranging cape": {
-    "image": "https://oldschool.runescape.wiki/images/Ranging_cape%28t%29.png?095ed",
-    "wiki": "https://oldschool.runescape.wiki/w/Ranging_cape#Trimmed"
+    "image": "https://oldschool.runescape.wiki/images/Ranging_cape.png?095ed",
+    "wiki": "https://oldschool.runescape.wiki/w/Ranging_cape#Untrimmed"
   },
   "Ava's accumulator": {
     "image": "https://oldschool.runescape.wiki/images/Ava%27s_accumulator.png?2baad",
     "wiki": "https://oldschool.runescape.wiki/w/Ava%27s_accumulator"
   },
-  "God capes": {
+  "God cape": {
     "image": "https://oldschool.runescape.wiki/images/Saradomin_cape.png?b8a3f",
     "wiki": "https://oldschool.runescape.wiki/w/Saradomin_cape"
   },
@@ -79,6 +79,10 @@
     "image": "https://oldschool.runescape.wiki/images/Hitpoints_cape%28t%29.png?53fc0",
     "wiki": "https://oldschool.runescape.wiki/w/Hitpoints_cape#Trimmed"
   },
+  "Skillcape": {
+    "image": "https://oldschool.runescape.wiki/images/Hitpoints_cape.png?28729",
+    "wiki": "https://oldschool.runescape.wiki/w/Hitpoints_cape"
+  },
   "Mythical cape": {
     "image": "https://oldschool.runescape.wiki/images/Mythical_cape.png?3ed38",
     "wiki": "https://oldschool.runescape.wiki/w/Mythical_cape"
@@ -90,5 +94,33 @@
   "Mixed hide cape": {
     "image": "https://oldschool.runescape.wiki/images/Mixed_hide_cape.png?6da66",
     "wiki": "https://oldschool.runescape.wiki/w/Mixed_hide_cape"
+  },
+  "Hitpoints cape": {
+    "image": "https://oldschool.runescape.wiki/images/Hitpoints_cape%28t%29.png?53fc0",
+    "wiki": "https://oldschool.runescape.wiki/w/Hitpoints_cape#Trimmed"
+  },
+  "Ranging cape (t)": {
+    "image": "https://oldschool.runescape.wiki/images/Ranging_cape%28t%29.png?095ed",
+    "wiki": "https://oldschool.runescape.wiki/w/Ranging_cape#Trimmed"
+  },
+  "Vestment cloak": {
+    "image": "https://oldschool.runescape.wiki/images/Saradomin_cloak.png?20d63",
+    "wiki": "https://oldschool.runescape.wiki/w/Saradomin_cloak"
+  },
+  "Red cape": {
+    "image": "https://oldschool.runescape.wiki/images/Red_cape.png?cb76b",
+    "wiki": "https://oldschool.runescape.wiki/w/Red_cape"
+  },
+  "Imbued saradomin cape": {
+    "image": "https://oldschool.runescape.wiki/images/Imbued_saradomin_cape.png?f36f9",
+    "wiki": "https://oldschool.runescape.wiki/w/Imbued_saradomin_cape"
+  },
+  "Blessed dizana's quiver": {
+    "image": "https://oldschool.runescape.wiki/images/Blessed_dizana%27s_quiver.png?d1dee",
+    "wiki": "https://oldschool.runescape.wiki/w/Blessed_dizana%27s_quiver"
+  },
+  "Prayer cape": {
+    "image": "https://oldschool.runescape.wiki/images/Prayer_cape%28t%29.png?219da",
+    "wiki": "https://oldschool.runescape.wiki/w/Prayer_cape#Trimmed"
   }
 }

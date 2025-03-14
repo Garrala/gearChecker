@@ -48,7 +48,12 @@
         ["Toxic blowpipe"],
         ["Armadyl crossbow"]
       ],
-      "Special Attack": [],
+	  "Shield": [
+        ["Book of law"],
+        ["Unholy book"],
+        ["Black d'hide shield"],
+        ["Book of balance"]
+      ],
       "Helmet": [
         ["Slayer helmet (i)"],
         ["Blessed coif"],
@@ -61,7 +66,7 @@
         ["Dizana's quiver"],
         ["Ava's assembler"],
         ["Ava's accumulator", "Ardougne cloak 4"],
-        ["Ranging cape(t)"],
+        ["Ranging cape (t)"],
         ["Vestment cloak"]
       ],
       "Body": [
@@ -72,12 +77,6 @@
         ["Red d'hide body"]
       ],
       "Legs": [["Blessed chaps"], ["Crystal legs"], ["Black d'hide chaps"]],
-      "Shield": [
-        ["Book of law"],
-        ["Unholy book"],
-        ["Black d'hide shield"],
-        ["Book of balance"]
-      ],
       "Gloves": [
         ["Barrows gloves"],
         ["Blessed vambraces"],
@@ -99,7 +98,8 @@
         ["Dragon arrow", "Amethyst arrow"],
         ["Diamond bolts (e)"],
         ["Broad bolts"]
-      ]
+      ],
+      "Special Attack": ["N/A"]
     },
     "Melee": {
       "Weapon": [
@@ -109,11 +109,18 @@
         ["Abyssal tentacle", "Abyssal whip"],
         ["Verac's flail"]
       ],
+      "Shield": [
+        ["Avernic defender"],
+        ["Dragon defender"],
+        ["Dragonfire shield"],
+        ["Rune defender"],
+        ["Unholy book"]
+      ],
       "Special Attack": [
         ["Ursine chainmace"],
         ["Voidwaker"],
         ["Dragon claws"],
-        ["Dragon dagger (p++)"],
+        ["Dragon dagger"],
         ["Crystal halberd"]
       ],
       "Helmet": [
@@ -145,13 +152,6 @@
         ["Proselyte cuisse"],
         ["Verac's plateskirt"]
       ],
-      "Shield": [
-        ["Avernic defender"],
-        ["Dragon defender"],
-        ["Dragonfire shield"],
-        ["Rune defender"],
-        ["Unholy book"]
-      ],
       "Gloves": [["Barrows gloves"], ["Rune gloves"], ["Combat bracelet"]],
       "Boots": [["Dragon boots"], ["Rune boots"], ["Climbing boots"]],
       "Ring": [
@@ -161,7 +161,7 @@
         ["Ring of recoil", "Explorer's ring 4"],
         ["Ring of wealth (i)"]
       ],
-      "Ammo": []
+      "Ammo": ["N/A"]
     }
   }
 }

@@ -393,41 +393,51 @@ export class MonsterOverviewComponent implements OnInit {
     return monsters
   }
 
-  /** Extract all unique items from bosses for autocomplete **/
+  /** ✅ Extract all unique items from bosses for autocomplete with images **/
   extractAllItems() {
-    const itemSet = new Set<string>()
+    const itemSet = new Set<{ name: string; image: string }>();
 
     this.monsters.forEach((monster) => {
       Object.values(monster.gear_setups || {}).forEach((setup) => {
-        Object.values(setup).forEach((gearSlots) => {
+        Object.entries(setup).forEach(([slot, gearSlots]) => {
           gearSlots.forEach((group) => {
-            const items = Array.isArray(group) ? group : [group]
-            items.forEach((item) => itemSet.add(item))
-          })
-        })
-      })
-    })
+            const items = Array.isArray(group) ? group : [group];
+            items.forEach((item) => {
+              itemSet.add({
+                name: item,
+                image: this.gearData[slot]?.[item]?.image ||
+                  `https://oldschool.runescape.wiki/images/${item.replace(/ /g, '_')}.png`,
+              });
+            });
+          });
+        });
+      });
+    });
 
-    // Convert to array with placeholder images (Replace with real ones if available)
-    this.allItems = Array.from(itemSet).map((item) => ({
-      name: item,
-      image: `https://oldschool.runescape.wiki/images/${item.replace(/ /g, '_')}.png`,
-    }))
+    this.allItems = Array.from(itemSet);
   }
 
-  /** Filters suggestions for autocomplete **/
+  /** Filters suggestions for autocomplete (ensures unique items) **/
   updateSuggestions() {
-    const query = this.itemSearchQuery.trim().toLowerCase()
+    const query = this.itemSearchQuery.trim().toLowerCase();
 
     if (!query) {
-      this.suggestedItems = []
-      return
+      this.suggestedItems = [];
+      return;
     }
 
-    this.suggestedItems = this.allItems
-      .filter((item) => item.name.toLowerCase().includes(query))
-      .slice(0, 5) // Limit to 5 suggestions
+    // ✅ Use a Set to ensure unique items
+    const uniqueItems = new Map<string, { name: string; image: string }>();
+
+    this.allItems.forEach((item) => {
+      if (item.name.toLowerCase().includes(query) && !uniqueItems.has(item.name)) {
+        uniqueItems.set(item.name, item);
+      }
+    });
+
+    this.suggestedItems = Array.from(uniqueItems.values()).slice(0, 5); // Limit to 5 suggestions
   }
+
 
   /** Select an item from autocomplete **/
   selectSuggestedItem(item: { name: string; image: string }) {

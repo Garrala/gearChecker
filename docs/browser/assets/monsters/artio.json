@@ -54,13 +54,6 @@
         ["Dragonfire ward", "Odium ward"],
         ["Book of law", "Unholy book"]
       ],
-      "Ammo": [
-        ["Rada's blessing 4"],
-        ["God blessing", "Rada's blessing 3"],
-        ["Ruby dragon bolts (e)", "Ruby bolts (e)"],
-        ["Broad bolts", "Adamant bolts"],
-        ["Amethyst arrow", "Rune arrow"]
-      ],
       "Helmet": [
         ["Slayer helmet (i)"],
         ["Crystal helm"],
@@ -79,7 +72,7 @@
         ["Ava's accumulator"],
         ["Imbued god cape"],
         ["Ava's attractor"],
-        ["God capes"]
+        ["God cape"]
       ],
       "Body": [
         ["Masori body (f)"],
@@ -107,6 +100,13 @@
         ["Lunar ring"],
         ["Explorer's ring"],
         ["Ring of wealth (i)"]
+      ],
+      "Ammo": [
+        ["Rada's blessing 4"],
+        ["God blessing", "Rada's blessing 3"],
+        ["Ruby dragon bolts (e)", "Ruby bolts (e)"],
+        ["Broad bolts", "Adamant bolts"],
+        ["Amethyst arrow", "Rune arrow"]
       ]
     },
     "Magic": {
@@ -137,7 +137,7 @@
       ],
       "Cape": [
         ["Imbued god cape"],
-        ["God capes"],
+        ["God cape"],
         ["Ardougne cloak 4"],
         ["Vestment cloak"]
       ],

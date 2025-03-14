@@ -48,7 +48,13 @@
         ["Warped sceptre"],
         ["Iban's staff"]
       ],
-      "Special Attack": [["N/A"]],
+      "Shield": [
+        ["Tome of fire", "Elidinis' ward (f)"],
+        ["Elidinis' ward"],
+        ["Arcane spirit shield"],
+        ["Malediction ward"],
+        ["Book of darkness"]
+      ],
       "Helmet": [
         ["Ancestral hat"],
         ["Virtus mask"],
@@ -66,7 +72,7 @@
         ["Imbued god cape"],
         ["Soul cape"],
         ["Ardougne cloak 4"],
-        ["Cape of Accomplishment (t)"]
+        ["Skillcape (t)"]
       ],
       "Body": [
         ["Ancestral robe top"],
@@ -81,13 +87,6 @@
         ["Zealot's robe bottom"],
         ["Vestment robe legs"],
         ["Monk's robe"]
-      ],
-      "Shield": [
-        ["Tome of fire", "Elidinis' ward (f)"],
-        ["Elidinis' ward"],
-        ["Arcane spirit shield"],
-        ["Malediction ward"],
-        ["Book of darkness"]
       ],
       "Gloves": [
         ["Tormented bracelet"],
@@ -109,7 +108,9 @@
         ["Ring of suffering (i)"],
         ["Brimstone ring"],
         ["Explorer's ring 4"]
-      ]
+      ],
+	  "Ammo": [ "N/A"],
+      "Special Attack": [["N/A"]]
     }
   }
 }

@@ -42,14 +42,14 @@
   "gear_setups": {
     "Hybrid (All Kings)": {
       "Weapon": [
-        ["Scythe of Vitur", "Tumeken's shadow", "Twisted bow"],
+        ["Scythe of vitur", "Tumeken's shadow", "Twisted bow"],
         [
           "Inquisitor's mace",
           "Ghrazi rapier",
-          "Blade of Saeldor",
+          "Blade of saeldor",
           "Noxious halberd",
           "Sanguinesti staff",
-          "Bow of Faerdhinen"
+          "Bow of faerdhinen"
         ],
         [
           "Osmumten's fang",
@@ -60,7 +60,7 @@
         [
           "Abyssal whip",
           "Trident of the seas",
-          "Eclipse attal",
+          "Eclipse atlatl",
           "Hunters' sunlight crossbow"
         ],
         [
@@ -70,6 +70,13 @@
           "Crystal bow",
           "Magic shortbow (i)"
         ]
+      ],
+      "Shield": [
+        ["Spectral spirit shield"],
+        ["Avernic defender"],
+        ["Dragon defender"],
+        ["Dragonfire shield"],
+        ["Crystal shield", "Toktz-ket-xil"]
       ],
       "Special Attack": [
         ["Saradomin godsword"],
@@ -109,13 +116,6 @@
         ["Bandos tassets", "Armadyl chainskirt"],
         ["Crystal legs", "Eclipse moon tassets"],
         ["Verac's plateskirt", "Blessed chaps"]
-      ],
-      "Shield": [
-        ["Spectral spirit shield"],
-        ["Avernic defender"],
-        ["Dragon defender"],
-        ["Dragonfire shield"],
-        ["Crystal shield", "Toktz-ket-xil"]
       ],
       "Gloves": [
         ["Ferocious gloves", "Tormented bracelet", "Zaryte vambraces"],
@@ -175,7 +175,7 @@
       "Cape": [
         ["Imbued god cape"],
         ["Infernal cape", "Fire cape"],
-        ["Cape of accomplishment"],
+        ["Skillcape"],
         ["Ardougne cloak 4"],
         ["Vestment cloak"]
       ],
@@ -224,6 +224,13 @@
         ["Hunters' sunlight crossbow"],
         ["Rune crossbow"]
       ],
+      "Shield": [
+        ["Elysian spirit shield", "Twisted buckler"],
+        ["Crystal shield", "Odium ward"],
+        ["Granite shield"],
+        ["Spirit shield"],
+        ["Rune kiteshield"]
+      ],
       "Special Attack": [["Toxic blowpipe"]],
       "Helmet": [
         ["Slayer helmet (i)", "Black mask (i)"],
@@ -238,7 +245,7 @@
       ],
       "Cape": [
         ["Dizana's quiver"],
-        ["Ava's assembler", "Ranging cape(t)"],
+        ["Ava's assembler", "Ranging cape (t)"],
         ["Ava's accumulator"]
       ],
       "Body": [
@@ -254,13 +261,6 @@
         ["Armadyl chainskirt", "Karil's leatherskirt"],
         ["Blessed chaps"],
         ["Black d'hide chaps"]
-      ],
-      "Shield": [
-        ["Elysian spirit shield", "Twisted buckler"],
-        ["Crystal shield", "Odium ward"],
-        ["Granite shield"],
-        ["Spirit shield"],
-        ["Rune kiteshield"]
       ],
       "Gloves": [
         ["Zaryte vambraces"],

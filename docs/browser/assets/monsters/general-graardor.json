@@ -47,6 +47,13 @@
         ["Zamorakian hasta"],
         ["Abyssal whip"]
       ],
+      "Shield": [
+        ["Elysian spirit shield"],
+        ["Spectral spirit shield"],
+        ["Dragonfire shield"],
+        ["Avernic defender"],
+        ["Toktz-ket-xil", "Crystal shield"]
+      ],
       "Special Attack": [
         ["Saradomin godsword", "Voidwaker"],
         ["Ancient godsword", "Dragon claws"],
@@ -88,13 +95,6 @@
         ["Verac's plateskirt"],
         ["Guthan's chainskirt"]
       ],
-      "Shield": [
-        ["Elysian spirit shield"],
-        ["Spectral spirit shield"],
-        ["Dragonfire shield"],
-        ["Avernic defender"],
-        ["Toktz-ket-xil", "Crystal shield"]
-      ],
       "Gloves": [["Barrows gloves"], ["Regen bracelet"]],
       "Boots": [
         ["Echo boots"],
@@ -119,6 +119,13 @@
         ["Dragon hunter crossbow"],
         ["Dragon crossbow"],
         ["Rune crossbow"]
+      ],
+      "Shield": [
+        ["Elysian spirit shield"],
+        ["Spectral spirit shield"],
+        ["Dragonfire shield"],
+        ["Crystal shield"],
+        ["Blessed spirit shield", "Dragon sq shield"]
       ],
       "Special Attack": [["Zaryte crossbow"]],
       "Helmet": [
@@ -153,19 +160,6 @@
         ["Armadyl chainskirt"],
         ["Karil's leatherskirt"]
       ],
-      "Shield": [
-        ["Elysian spirit shield"],
-        ["Spectral spirit shield"],
-        ["Dragonfire shield"],
-        ["Crystal shield"],
-        ["Blessed spirit shield", "Dragon sq shield"]
-      ],
-      "Ammo": [
-        ["Diamond dragon bolts (e)"],
-        ["Diamond bolts (e)"],
-        ["Amethyst broad bolts"],
-        ["Runite bolts", "Broad bolts"]
-      ],
       "Gloves": [
         ["Zaryte vambraces"],
         ["Barrows gloves"],
@@ -186,6 +180,12 @@
         ["Ring of the gods (i)"],
         ["Archers ring (i)", "Ring of shadows"],
         ["Brimstone ring", "Ring of life"]
+      ],
+      "Ammo": [
+        ["Diamond dragon bolts (e)"],
+        ["Diamond bolts (e)"],
+        ["Amethyst broad bolts"],
+        ["Runite bolts", "Broad bolts"]
       ]
     },
     "Melee Attacker": {
@@ -195,6 +195,13 @@
         ["Inquisitor's mace", "Ghrazi rapier", "Blade of saeldor"],
         ["Abyssal tentacle"],
         ["Abyssal whip"]
+      ],
+      "Shield": [
+        ["Avernic defender"],
+        ["Dragon defender"],
+        ["Rune defender"],
+        ["Dragonfire shield"],
+        ["Elysian spirit shield"]
       ],
       "Special Attack": [
         ["Voidwaker"],
@@ -238,13 +245,6 @@
         ["Verac's plateskirt"],
         ["Karil's leatherskirt"]
       ],
-      "Shield": [
-        ["Avernic defender"],
-        ["Dragon defender"],
-        ["Rune defender"],
-        ["Dragonfire shield"],
-        ["Elysian spirit shield"]
-      ],
       "Gloves": [
         ["Ferocious gloves"],
         ["Barrows gloves"],
@@ -276,6 +276,13 @@
         ["Zamorakian hasta"],
         ["Abyssal whip", "Guthan's warspear"]
       ],
+      "Shield": [
+        ["Elysian spirit shield"],
+        ["Dragonfire shield"],
+        ["Avernic defender"],
+        ["Spectral spirit shield"],
+        ["Toktz-ket-xil", "Crystal shield"]
+      ],
       "Special Attack": [
         ["Voidwaker"],
         ["Saradomin godsword"],
@@ -302,7 +309,7 @@
         ["Fire cape"],
         ["Max cape"],
         ["Defence cape"],
-        ["Cape of Accomplishment", "Obsidian cape"]
+        ["Skillcape", "Obsidian cape"]
       ],
       "Body": [
         ["Masori body (f)"],
@@ -317,13 +324,6 @@
         ["Bandos tassets"],
         ["Verac's plateskirt"],
         ["Guthan's chainskirt"]
-      ],
-      "Shield": [
-        ["Elysian spirit shield"],
-        ["Dragonfire shield"],
-        ["Avernic defender"],
-        ["Spectral spirit shield"],
-        ["Toktz-ket-xil", "Crystal shield"]
       ],
       "Gloves": [["Barrows gloves"], ["Ferocious gloves"], ["Regen bracelet"]],
       "Boots": [
@@ -348,8 +348,15 @@
         ["Sanguinesti staff"],
         ["Trident of the swamp"]
       ],
+      "Shield": [
+        ["Elidinis' ward (f)"],
+        ["Arcane spirit shield"],
+        ["Elidinis' ward"],
+        ["Ancient wyvern shield"],
+        ["Mage's book", "Malediction ward", "Book of darkness"]
+      ],
       "Special Attack": [
-        ["Zamorakian hasta (for minions)"],
+        ["Zamorakian hasta"],
         ["Accursed sceptre"]
       ],
       "Helmet": [
@@ -376,13 +383,6 @@
         ["Virtus robe bottom"],
         ["Ahrim's robeskirt"]
       ],
-      "Shield": [
-        ["Elidinis' ward (f)"],
-        ["Arcane spirit shield"],
-        ["Elidinis' ward"],
-        ["Ancient wyvern shield"],
-        ["Mage's book", "Malediction ward", "Book of darkness"]
-      ],
       "Gloves": [["Tormented bracelet"], ["Barrows gloves"]],
       "Boots": [
         ["Eternal boots"],
@@ -403,6 +403,12 @@
         ["Armadyl crossbow"],
         ["Dragon crossbow"],
         ["Rune crossbow"]
+      ],
+      "Shield": [
+        ["Dragonfire ward"],
+        ["Twisted buckler"],
+        ["Odium ward"],
+        ["Book of law"]
       ],
       "Special Attack": [["Toxic blowpipe"]],
       "Helmet": [
@@ -425,12 +431,6 @@
         ["Masori chaps"],
         ["Armadyl chainskirt"],
         ["Karil's leatherskirt"]
-      ],
-      "Shield": [
-        ["Dragonfire ward"],
-        ["Twisted buckler"],
-        ["Odium ward"],
-        ["Book of law"]
       ],
       "Gloves": [["Zaryte vambraces"], ["Bandos bracers", "Barrows gloves"]],
       "Boots": [["Pegasian boots", "Bandos d'hide boots"], ["Blessed boots"]],
@@ -465,7 +465,8 @@
         ["Archers ring (i)"],
         ["Brimstone ring"]
       ],
-      "Ammo": [["Dragon arrow"], ["Amethyst arrow"]]
+      "Ammo": [["Dragon arrow"], ["Amethyst arrow"]],
+	  "Shield": ["N/A"]
     }
   }
 }

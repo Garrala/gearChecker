@@ -43,10 +43,10 @@
         ["Webweaver bow", "Craw's bow"],
         ["Twisted bow"],
         ["Bow of faerdhinen"],
-        ["Toxic blowpipe", "Hunters' sunlight"],
+        ["Toxic blowpipe", "Hunters' sunlight crossbow"],
         ["Dragon crossbow", "Rune crossbow"]
       ],
-      "Special Attack": [],
+	  "Shield": [["Book of law"], ["Unholy book"], ["Black d'hide shield"]],
       "Helmet": [
         ["Slayer helmet (i)", "Black mask (i)"],
         ["Blessed coif"],
@@ -68,16 +68,15 @@
       "Body": [
         ["Masori body (f)"],
         ["Crystal body"],
-        ["Blessed d'hide body"],
+        ["Blessed body"],
         ["Black d'hide body"]
       ],
       "Legs": [
         ["Masori chaps (f)"],
         ["Crystal legs"],
-        ["Blessed d'hide chaps"],
+        ["Blessed chaps"],
         ["Black d'hide chaps"]
       ],
-      "Shield": [["Book of law"], ["Unholy book"], ["Black d'hide shield"]],
       "Gloves": [
         ["Barrows gloves"],
         ["Blessed vambraces"],
@@ -96,7 +95,8 @@
         ["Moonlight antler bolts"],
         ["Diamond dragon bolts (e)"],
         ["Diamond bolts (e)"]
-      ]
+      ],
+      "Special Attack": []
     }
   }
 }

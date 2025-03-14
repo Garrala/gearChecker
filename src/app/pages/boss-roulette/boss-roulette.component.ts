@@ -4,6 +4,7 @@ import { MonsterService, Monster } from '../../services/monster.service'
 import { NgFor, NgIf } from '@angular/common'
 import { FormsModule } from '@angular/forms'
 import confetti from 'canvas-confetti'
+import { GearService } from '../../services/gear.service'
 
 @Component({
   selector: 'boss-roulette',
@@ -14,6 +15,7 @@ import confetti from 'canvas-confetti'
 })
 export class BossRouletteComponent implements OnInit {
   monsters: Monster[] = []
+  gearData: { [slot: string]: { [item: string]: { image: string } } } = {};
   selectedBosses: Monster[] = []
   rouletteChoices: Monster[] = []
   revealedBosses: Monster[] = []
@@ -39,6 +41,7 @@ export class BossRouletteComponent implements OnInit {
 
   constructor(
     private monsterService: MonsterService,
+    private gearService: GearService,
     private cdRef: ChangeDetectorRef
   ) {}
 
@@ -46,7 +49,7 @@ export class BossRouletteComponent implements OnInit {
     this.monsterService.getMonsters().subscribe((data) => {
       this.monsters = data.map((monster) => ({ ...monster, selected: false })) // ✅ Ensure selection state
       this.filteredBosses = data
-      this.extractAllItems()
+      this.loadGearData();
       this.isMonsterListLoading = false
     })
   }
@@ -126,41 +129,73 @@ export class BossRouletteComponent implements OnInit {
     console.log('selected Categories after', this.selectedCategories)
   }
 
-  /** Extract all unique items from bosses for autocomplete **/
+  /** ✅ Load gear data from GearService **/
+  loadGearData() {
+    this.gearService.getGearData().subscribe((data) => {
+      this.gearData = data;
+      this.extractAllItems(); // ✅ Extract items only after loading gearData
+      this.isMonsterListLoading = false;
+    });
+  }
+
+  /** ✅ Extract all unique items from bosses for search/autocomplete **/
   extractAllItems() {
-    const itemSet = new Set<string>()
+    const itemMap = new Map<string, { name: string; image: string }>();
 
     this.monsters.forEach((monster) => {
       Object.values(monster.gear_setups || {}).forEach((setup) => {
         Object.values(setup).forEach((gearSlots) => {
           gearSlots.forEach((group) => {
-            const items = Array.isArray(group) ? group : [group]
-            items.forEach((item) => itemSet.add(item))
-          })
-        })
-      })
-    })
+            const items = Array.isArray(group) ? group : [group];
 
-    // Convert to array with placeholder images (Replace with real ones if available)
-    this.allItems = Array.from(itemSet).map((item) => ({
-      name: item,
-      image: `https://oldschool.runescape.wiki/images/${item.replace(/ /g, '_')}.png`,
-    }))
+            items.forEach((item) => {
+              if (!itemMap.has(item)) {
+                // ✅ Pull the image from gearData if available, else use a fallback
+                let itemImage = 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c';
+
+                Object.keys(this.gearData).forEach((slot) => {
+                  if (this.gearData[slot][item]?.image) {
+                    itemImage = this.gearData[slot][item].image;
+                  }
+                });
+
+                itemMap.set(item, {
+                  name: item,
+                  image: itemImage,
+                });
+              }
+            });
+          });
+        });
+      });
+    });
+
+    this.allItems = Array.from(itemMap.values()); // ✅ Convert Map to array to ensure uniqueness
   }
 
-  /** Filters suggestions for autocomplete **/
+  /** ✅ Filters suggestions for autocomplete (ensures unique items) **/
   updateSuggestions() {
-    const query = this.itemSearchQuery.trim().toLowerCase()
+    const query = this.itemSearchQuery.trim().toLowerCase();
 
     if (!query) {
-      this.suggestedItems = []
-      return
+      this.suggestedItems = [];
+      return;
     }
 
-    this.suggestedItems = this.allItems
-      .filter((item) => item.name.toLowerCase().includes(query))
-      .slice(0, 5) // Limit to 5 suggestions
+    // ✅ Use a Map to ensure unique items
+    const uniqueItems = new Map<string, { name: string; image: string }>();
+
+    this.allItems.forEach((item) => {
+      if (item.name.toLowerCase().includes(query) && !uniqueItems.has(item.name)) {
+        uniqueItems.set(item.name, item);
+      }
+    });
+
+    this.suggestedItems = Array.from(uniqueItems.values()).slice(0, 5); // Limit to 5 suggestions
   }
+
+
+
 
   /** Select an item from autocomplete **/
   selectSuggestedItem(item: { name: string; image: string }) {

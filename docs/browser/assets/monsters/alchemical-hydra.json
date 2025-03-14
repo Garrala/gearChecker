@@ -61,7 +61,7 @@
       "Cape": [
         ["Dizana's quiver"],
         ["Ava's assembler"],
-        ["Max cape", "Ranging cape(t)"],
+        ["Max cape", "Ranging cape (t)"],
         ["Ava's accumulator", "Ranging cape"]
       ],
       "Body": [
@@ -107,7 +107,8 @@
         ["Ruby bolts (e)"],
         ["Rada's blessing 4"],
         ["Rada's blessing 3", "God blessing"]
-      ]
+      ],
+	  "Shield": ["N/A"]
     },
     "Melee": {
       "Weapon": [
@@ -116,6 +117,13 @@
         ["Osmumten's fang", "Ghrazi rapier"],
         ["Blade of saeldor", "Inquisitor's mace"],
         ["Zamorakian hasta"]
+      ],
+      "Shield": [
+        ["Avernic defender"],
+        ["Dragon defender"],
+        ["Rune defender"],
+        ["Adamant defender"],
+        ["Dragonfire shield"]
       ],
       "Special Attack": [
         ["Bandos godsword", "Burning claws"],
@@ -133,7 +141,7 @@
       "Cape": [["Infernal cape"], ["Fire cape"], ["Ardougne cloak 4"]],
       "Body": [
         ["Torva platebody"],
-        ["Bandos chestplate", "Blood moon chestplate", "Fighter torse"],
+        ["Bandos chestplate", "Blood moon chestplate", "Fighter torso"],
         ["Inquisitor's hauberk"],
         ["Mixed hide top"]
       ],
@@ -143,13 +151,6 @@
         ["Inquisitor's plateskirt"],
         ["Obsidian platelegs"],
         ["Mixed hide legs"]
-      ],
-      "Shield": [
-        ["Avernic defender"],
-        ["Dragon defender"],
-        ["Rune defender"],
-        ["Adamant defender"],
-        ["Dragonfire shield"]
       ],
       "Gloves": [["Ferocious gloves"], ["Barrows gloves"], ["Dragon gloves"]],
       "Boots": [
