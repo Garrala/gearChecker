@@ -37,74 +37,80 @@
     }
   ],
   "gear_setups": {
-    "Ranged": {
+    "Magic": {
       "Weapon": [
-        ["Twisted bow"],
-        ["Bow of faerdhinen"],
-        ["Crystal bow"],
-        ["Zaryte crossbow"],
-        ["Armadyl crossbow"]
+        [ "Tumeken's shadow" ],
+        [ "Sanguinesti staff" ],
+        [ "Trident of the swamp" ],
+        [ "Trident of the seas" ],
+        [ "Harmonised nightmare staff", "Warped sceptre", "Slayer's staff (e)" ]
       ],
-      "Special Attack": [["Zaryte crossbow"]],
+      "Shield": [
+        [ "Elidinis' ward (f)", "Tome of fire" ],
+        [ "Elidinis' ward", "Arcane spirit shield" ],
+        [ "Malediction ward", "Ancient wyvern shield", "Mage's book" ],
+        [ "Elysian spirit shield", "Spectral spirit shield" ],
+        [ "Dragonfire ward" ]
+      ],
+      "Special Attack": [
+        [ "Volatile nightmare staff" ],
+        [ "Eldritch nightmare staff" ],
+        [ "Toxic blowpipe" ],
+        [ "Accursed sceptre (a)" ]
+      ],
       "Helmet": [
-        ["Slayer helmet (i)", "Masori mask (f)"],
-        ["Armadyl helmet"],
-        ["Crystal helm"],
-        ["Robin hood hat"],
-        ["Blessed coif"]
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ]
       ],
       "Amulet": [
-        ["Necklace of anguish"],
-        ["Bonecrusher necklace"],
-        ["Amulet of fury"],
-        ["Amulet of glory"]
+        [ "Occult necklace" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ]
       ],
       "Cape": [
-        ["Dizana's quiver"],
-        ["Ava's assembler"],
-        ["Max cape", "Ranging cape"]
+        [ "Imbued god cape" ],
+        [ "God cape" ],
+        [ "Infernal cape", "Fire cape" ],
+        [ "Hitpoints cape (t)" ],
+        [ "Ardougne cloak" ]
       ],
       "Body": [
-        ["Masori body (f)"],
-        ["Armadyl chestplate"],
-        ["Crystal body"],
-        ["Blessed body"],
-        ["Black d'hide body"]
+        [ "Ancestral robe top" ],
+        [ "Virtus robe top" ],
+        [ "Ahrim's robetop", "Blue moon chestplate" ],
+        [ "Masori body (f)" ],
+        [ "Armadyl chestplate", "Karil's leathertop", "Blessed body", "Elite void top" ]
       ],
       "Legs": [
-        ["Masori chaps (f)"],
-        ["Armadyl chainskirt"],
-        ["Crystal legs"],
-        ["Blessed chaps"],
-        ["Black d'hide chaps"]
+        [ "Ancestral robe bottom" ],
+        [ "Virtus robe bottom" ],
+        [ "Ahrim's robeskirt", "Blue moon tassets" ],
+        [ "Masori chaps (f)" ],
+        [ "Armadyl chainskirt", "Karil's leatherskirt", "Elite void robe", "Blessed chaps" ]
       ],
       "Gloves": [
-        ["Zaryte vambraces"],
-        ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Black d'hide vambraces"]
+        [ "Tormented bracelet", "Bracelet of slaughter" ],
+        [ "Regen bracelet" ],
+        [ "Barrows gloves" ],
+        [ "Infinity gloves" ],
+        [ "Combat bracelet" ]
       ],
       "Boots": [
-        ["Pegasian boots"],
-        ["Ranger boots", "Devout boots"],
-        ["Blessed boots"],
-        ["Aranea boots"],
-        ["Mixed hide boots"]
+        [ "Eternal boots" ],
+        [ "Infinity boots", "Aranea boots" ],
+        [ "Boots of brimstone" ],
+        [ "Silly jester boots", "Bloodbark boots" ],
+        [ "Mystic boots", "Wizard boots" ]
       ],
       "Ring": [
-        ["Venator ring"],
-        ["Lightbearer"],
-        ["Ring of the gods", "Archers ring (i)"],
-        ["Ring of shadows", "Brimstone ring"],
-        ["Ring of endurance"]
+        [ "Magus ring" ],
+        [ "Ring of suffering (i)" ],
+        [ "Seers ring (i)" ],
+        [ "Brimstone ring" ],
+        [ "Ring of shadows" ]
       ],
-      "Ammo": [
-        ["Dragon arrow"],
-        ["Amethyst arrow"],
-        ["Rune arrow"],
-        ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
-        ["Diamond bolts (e)", "Ruby bolts (e)"]
-      ]
+      "Ammo": [ "N/A" ]
     }
   }
 }

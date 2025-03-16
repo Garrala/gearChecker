@@ -85,6 +85,7 @@ export class MonsterOverviewComponent implements OnInit {
 
     this.loadGearData() // ✅ Load multiple gear files
   }
+
   /** ✅ Select a monster and reset boss index **/
   selectMonster(monster: Monster) {
     if (this.selectedMonster === monster) {
@@ -98,14 +99,12 @@ export class MonsterOverviewComponent implements OnInit {
       this.selectedMonster = monster
       this.selectedBossIndex = 0
       this.selectedSetup = Object.keys(monster.gear_setups)[0]
-      this.isMonsterDetailsLoading = false // ✅ Hide spinner once loaded
-      //console.log('Selected Monster:', this.selectedMonster)
+      this.isMonsterDetailsLoading = false 
       this.updateLoadout()
     }, 500) // Simulated loading delay
   }
 
   getGearSetups() {
-    //console.log("Fetching gear setups for:", monster?.name);
     return this.selectedMonster?.gear_setups
       ? Object.keys(this.selectedMonster.gear_setups)
       : []
@@ -123,16 +122,14 @@ export class MonsterOverviewComponent implements OnInit {
 
     const recommendedList =
       this.selectedMonster.gear_setups[this.selectedSetup][slot] || []
-    const ownedItems = this.ownedGear[slot] || [] // Ensure it's an array
+    const ownedItems = this.ownedGear[slot] || [] 
 
     const isOwned = recommendedList.some(
       (group) =>
         (Array.isArray(group) ? group : [group]).some((item) =>
           ownedItems.includes(item)
-        ) // ✅ Ensure group is an array
+        ) 
     )
-
-    //console.log(`Is gear owned for slot "${slot}"?`, isOwned)
     return isOwned
   }
 
@@ -154,14 +151,12 @@ export class MonsterOverviewComponent implements OnInit {
     //console.log('Fetching gear data...')
     this.gearService.getGearData().subscribe((data) => {
       this.gearData = data
-      //console.log('Loaded Gear Data:', this.gearData)
     })
   }
 
   /** ✅ Dynamically adjust the number of columns based on the largest set **/
   getFilledItemGroups(slot: string, monster?: Monster): string[][] {
     if (!monster || !monster.gear_setups?.[this.selectedSetup]?.[slot]) {
-      //console.log(`⚠️ No data found for slot: ${slot}. Returning [['N/A']]`)
       return [['N/A']]
     }
 
@@ -169,8 +164,6 @@ export class MonsterOverviewComponent implements OnInit {
     const items: string[][] = itemsRaw.map((group) =>
       Array.isArray(group) ? group : [group]
     )
-
-    //console.log('🔍 Recommended items for', slot, ':', items)
 
     // ✅ Find the max column count based on the largest item set across all slots
     const maxColumns = Math.max(
@@ -192,12 +185,6 @@ export class MonsterOverviewComponent implements OnInit {
       'recommendedGear',
       JSON.stringify(this.recommendedGear)
     )
-    //console.log("Saved Recommended Gear:", this.recommendedGear);
-
-    //console.log(
-    //  `✅ Saved Recommended Gear for ${slot}:`,
-    //  this.recommendedGear[slot]
-    //)
     return filledItems
   }
 
@@ -237,17 +224,11 @@ export class MonsterOverviewComponent implements OnInit {
         Ammo: 'Ammo',
         'Special Attack': 'Special Attack',
       }
-      //console.log('Loaded Recommended Gear:', this.recommendedGear)
       const normalizedSlot = slotMapping[slot] || slot
       let ownedItems = this.ownedGear[normalizedSlot] || []
 
-      //console.log(`🔍 Slot: ${slot}`)
-      //console.log('Recommended Items:', recommendedItems)
-      //console.log('Owned Items:', ownedItems)
-
       if (!recommendedItems.length) {
         characterLoadout[slot] = ['None']
-        //console.log(`⚠️ No recommended items for ${slot}, setting to None`)
         continue
       }
 
@@ -264,7 +245,6 @@ export class MonsterOverviewComponent implements OnInit {
       characterLoadout[slot] = bestItems.length > 0 ? bestItems : ['None']
 
       if (characterLoadout[slot].includes('None')) {
-        //console.log(`⚠️ No matching items found for ${slot}, setting to None`)
       }
     }
 
@@ -274,9 +254,6 @@ export class MonsterOverviewComponent implements OnInit {
       equippedWeapon &&
       this.gearData['weapons']?.[equippedWeapon]?.twoHanded
     ) {
-      //console.log(
-      //  `⚠️ ${equippedWeapon} is a two-handed weapon. Clearing the shield slot.`
-      //)
       characterLoadout['Shield'] = ['None']
     }
 
