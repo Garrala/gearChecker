@@ -38,7 +38,7 @@
 .roulette-cards {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 30px;
   margin-top: 20px;
 }
 
@@ -348,7 +348,7 @@ h1 {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 button {
