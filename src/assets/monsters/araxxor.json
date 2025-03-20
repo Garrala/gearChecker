@@ -40,6 +40,43 @@
         "cannons": true,
         "thralls": false
       }
+    },
+	{
+      "name": "Araxxor (Enraged)",
+      "image": "https://oldschool.runescape.wiki/images/Araxxor_%28enraged%29.png?418cf",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Araxxor#Enraged",
+      "combat_level": 890,
+      "hp": 1020,
+      "max_hit": {
+        "melee": 38,
+        "magic": 21,
+        "ranged": 34
+      },
+      "weaknesses": {
+        "fire": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 160,
+          "slash": 75,
+          "crush": 15
+        },
+        "magic": 237,
+        "ranged": {
+          "arrows": 218,
+          "bolts": 218,
+          "thrown": 218
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      }
     }
   ],
   "gear_setups": {

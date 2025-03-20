@@ -4,7 +4,7 @@
   "image": "https://oldschool.runescape.wiki/images/Alchemical_Hydra_%28serpentine%29.png?925dd",
   "bosses": [
     {
-      "name": "Alchemical Hydra",
+      "name": "Alchemical Hydra (Serpentine)",
       "image": "https://oldschool.runescape.wiki/images/Alchemical_Hydra_%28serpentine%29.png?925dd",
       "wiki_link": "https://oldschool.runescape.wiki/w/Alchemical_Hydra#Serpentine",
       "combat_level": 426,
@@ -32,6 +32,111 @@
       "immunities": {
         "poison": true,
         "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
+    },
+    {
+      "name": "Alchemical Hydra (Electric)",
+      "image": "https://oldschool.runescape.wiki/images/Alchemical_Hydra_%28electric%29.png?925dd",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Alchemical_Hydra#Electric",
+      "combat_level": 98,
+      "hp": 100,
+      "max_hit": {
+        "magic": 20
+      },
+      "weaknesses": {
+        "air": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 103,
+          "slash": 85,
+          "crush": 117
+        },
+        "magic": 73,
+        "ranged": {
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
+        }
+      },
+      "attack_styles": ["Magic"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "venom": false,
+        "cannons": false,
+        "thralls": false
+      }
+    },
+    {
+      "name": "Alchemical Hydra (Fire)",
+      "image": "https://oldschool.runescape.wiki/images/Alchemical_Hydra_%28fire%29.png?925dd",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Alchemical_Hydra#Fire",
+      "combat_level": 98,
+      "hp": 100,
+      "max_hit": {
+        "magic": 20
+      },
+      "weaknesses": {
+        "air": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 103,
+          "slash": 85,
+          "crush": 117
+        },
+        "magic": 73,
+        "ranged": {
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
+        }
+      },
+      "attack_styles": ["Magic"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "venom": false,
+        "cannons": false,
+        "thralls": false
+      }
+    },
+    {
+      "name": "Alchemical Hydra (Extinguished)",
+      "image": "https://oldschool.runescape.wiki/images/Alchemical_Hydra_%28extinguished%29.png?925dd",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Alchemical_Hydra#Extinguished",
+      "combat_level": 98,
+      "hp": 100,
+      "max_hit": {
+        "magic": 20
+      },
+      "weaknesses": {
+        "air": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 103,
+          "slash": 85,
+          "crush": 117
+        },
+        "magic": 73,
+        "ranged": {
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
+        }
+      },
+      "attack_styles": ["Magic"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "venom": false,
         "cannons": false,
         "thralls": false
       }

@@ -48,23 +48,23 @@
         "magic": 20
       },
       "weaknesses": {
-        "ranged": "100%"
+        "air": "50%"
       },
       "defense": {
         "melee": {
-          "stab": 100,
-          "slash": 100,
-          "crush": 100
+          "stab": 103,
+          "slash": 85,
+          "crush": 117
         },
-        "magic": 0,
+        "magic": 73,
         "ranged": {
-          "arrows": 200,
-          "bolts": 200,
-          "thrown": 200
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
         }
       },
       "attack_styles": ["Magic"],
-      "attack_speed": 7,
+      "attack_speed": 6,
       "aggressive": true,
       "immunities": {
         "poison": false,
@@ -80,26 +80,26 @@
       "combat_level": 98,
       "hp": 100,
       "max_hit": {
-        "magic": 20
+        "ranged": 20
       },
       "weaknesses": {
-        "ranged": "100%"
+        "air": "50%"
       },
       "defense": {
         "melee": {
-          "stab": 100,
-          "slash": 100,
-          "crush": 100
+          "stab": 79,
+          "slash": 71,
+          "crush": 90
         },
-        "magic": 0,
+        "magic": 106,
         "ranged": {
-          "arrows": 200,
-          "bolts": 200,
-          "thrown": 200
+          "arrows": 100,
+          "bolts": 100,
+          "thrown": 100
         }
       },
-      "attack_styles": ["Magic"],
-      "attack_speed": 7,
+      "attack_styles": ["Ranged"],
+      "attack_speed": 4,
       "aggressive": true,
       "immunities": {
         "poison": false,
@@ -111,31 +111,31 @@
 
     {
       "name": "Guthan the Infested",
-      "image": "https://oldschool.runescape.wiki/images/Karil_the_Tainted.png?33092",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Karil_the_Tainted",
-      "combat_level": 98,
+      "image": "https://oldschool.runescape.wiki/images/Guthan_the_Infested.png?33092",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Guthan_the_Infested",
+      "combat_level": 115,
       "hp": 100,
       "max_hit": {
-        "magic": 20
+        "melee": 24
       },
       "weaknesses": {
-        "ranged": "100%"
+        "air": "50%"
       },
       "defense": {
         "melee": {
-          "stab": 100,
-          "slash": 100,
-          "crush": 100
+          "stab": 259,
+          "slash": 257,
+          "crush": 241
         },
-        "magic": 0,
+        "magic": -11,
         "ranged": {
-          "arrows": 200,
-          "bolts": 200,
-          "thrown": 200
+          "arrows": 250,
+          "bolts": 250,
+          "thrown": 250
         }
       },
-      "attack_styles": ["Magic"],
-      "attack_speed": 7,
+      "attack_styles": ["Melee"],
+      "attack_speed": 5,
       "aggressive": true,
       "immunities": {
         "poison": false,
@@ -147,31 +147,31 @@
 
     {
       "name": "Torag the Corrupted",
-      "image": "https://oldschool.runescape.wiki/images/Karil_the_Tainted.png?33092",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Karil_the_Tainted",
-      "combat_level": 98,
+      "image": "https://oldschool.runescape.wiki/images/Torag_the_Corrupted.png?33092",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Torag_the_Corrupted",
+      "combat_level": 115,
       "hp": 100,
       "max_hit": {
-        "magic": 20
+        "melee": 23
       },
       "weaknesses": {
-        "ranged": "100%"
+        "air": "50%"
       },
       "defense": {
         "melee": {
-          "stab": 100,
-          "slash": 100,
-          "crush": 100
+          "stab": 221,
+          "slash": 235,
+          "crush": 222
         },
         "magic": 0,
         "ranged": {
-          "arrows": 200,
-          "bolts": 200,
-          "thrown": 200
+          "arrows": 221,
+          "bolts": 221,
+          "thrown": 221
         }
       },
-      "attack_styles": ["Magic"],
-      "attack_speed": 7,
+      "attack_styles": ["Melee"],
+      "attack_speed": 5,
       "aggressive": true,
       "immunities": {
         "poison": false,
@@ -183,31 +183,32 @@
 
     {
       "name": "Verac the Defiled",
-      "image": "https://oldschool.runescape.wiki/images/Karil_the_Tainted.png?33092",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Karil_the_Tainted",
-      "combat_level": 98,
+      "image": "https://oldschool.runescape.wiki/images/Verac_the_Defiled.png?33092",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Verac_the_Defiled",
+      "combat_level": 115,
       "hp": 100,
       "max_hit": {
-        "magic": 20
+        "magic": 23,
+		"prayMelee": 15
       },
       "weaknesses": {
-        "ranged": "100%"
+        "air": "50%"
       },
       "defense": {
         "melee": {
-          "stab": 100,
-          "slash": 100,
-          "crush": 100
+          "stab": 227,
+          "slash": 230,
+          "crush": 221
         },
         "magic": 0,
         "ranged": {
-          "arrows": 200,
-          "bolts": 200,
-          "thrown": 200
+          "arrows": 225,
+          "bolts": 225,
+          "thrown": 225
         }
       },
-      "attack_styles": ["Magic"],
-      "attack_speed": 7,
+      "attack_styles": ["Melee"],
+      "attack_speed": 5,
       "aggressive": true,
       "immunities": {
         "poison": false,
