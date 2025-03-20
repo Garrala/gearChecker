@@ -270,7 +270,6 @@
       "Boots": [["Primordial boots"], ["Dragon boots"], ["Rune boots"]],
       "Gloves": [["Ferocious gloves"], ["Barrows gloves"], ["Dragon gloves"]],
       "Ammo": [["Rada's blessing 4"], ["God blessing"]],
-      "Shield": ["N/A"],
       "Special Attack": ["N/A"]
     },
     "Phase 2 Melee - No defense reduction": {

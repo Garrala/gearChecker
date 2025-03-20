@@ -272,7 +272,7 @@
       "Ring": [["Magus ring"], ["Seers ring (i)"], ["Ring of shadows"]],
       "Ammo": [
         ["Rada's blessing 4"],
-        ["God blessing", "Rada's blessing 2 or 3"]
+        ["God blessing", "Rada's blessing 3", "Rada's blessing 2"]
       ]
     },
     "Tank & Lower Level": {
@@ -302,7 +302,7 @@
         ["Amulet of power"],
         ["Holy symbol"]
       ],
-      "Cape": [["Imbued god cape"], ["God cape"], ["Fire cape"], ["God cloak"]],
+      "Cape": [["Imbued god cape"], ["God cape"], ["Fire cape"], ["God vestment cloaks"]],
       "Body": [
         ["Barrows body"],
         ["Dragon chainbody"],
@@ -369,7 +369,7 @@
       "Boots": [["Blessed boots"]],
       "Ring": [["Ring of dueling"]],
       "Ammo": [
-        ["Rada's blessing"],
+        ["Rada's blessing 4"],
         ["Moonlight antler bolts", "Sunlight antler bolts"],
         ["Amethyst arrow", "Rune arrow"],
         ["Bolt rack"],

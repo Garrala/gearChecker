@@ -92,12 +92,12 @@
       ],
       "Ring": [
         ["Ring of shadows"],
-        ["Explorer's ring"],
+        ["Explorer's ring 4"],
         ["Ring of wealth (i)"]
       ],
       "Ammo": [
         ["Rada's blessing 4"],
-        ["Rada's blessing 3/2", "God blessing"],
+        ["Rada's blessing 3", "Rada's blessing 2", "God blessing"],
         ["Ruby dragon bolts (e)", "Ruby bolts (e)"],
         ["Amethyst arrow", "Rune arrow"],
         ["Broad bolts", "Adamant bolts"]
@@ -167,7 +167,7 @@
         ["Beacon ring"],
         ["Ring of wealth (i)"]
       ],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]],
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]],
       "Special Attack": ["N/A"]
     }
   }

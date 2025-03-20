@@ -109,7 +109,7 @@
         ["Berserker ring (i)"],
         ["Brimstone ring"]
       ],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]]
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]]
     },
     "Solo / Duo Stat Draining": {
       "Weapon": [
@@ -173,7 +173,7 @@
         ["Granite boots"]
       ],
       "Ring": [["Ultor ring"], ["Berserker ring (i)"], ["Brimstone ring"]],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]],
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]],
       "Shield": ["N/A"]
     },
     "Solo / Duo Fewer stat drains": {
@@ -219,7 +219,7 @@
         ["Berserker ring (i)"],
         ["Brimstone ring"]
       ],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]],
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]],
       "Shield": ["N/A"]
     },
     "Team Melee": {
@@ -282,7 +282,7 @@
         ["Granite boots"]
       ],
       "Ring": [["Ultor ring"], ["Berserker ring (i)"], ["Brimstone ring"]],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]],
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]],
       "Shield": ["N/A"]
     },
     "Mass Melee": {
@@ -343,7 +343,7 @@
         ["Granite boots"]
       ],
       "Ring": [["Ultor ring"], ["Berserker ring (i)"], ["Brimstone ring"]],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]],
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]],
       "Shield": ["N/A"]
     },
     "Mass Ranged": {

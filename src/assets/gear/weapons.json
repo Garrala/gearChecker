@@ -423,5 +423,45 @@
     "image": "https://oldschool.runescape.wiki/images/Verac%27s_flail.png?f4ddf",
     "wiki": "https://oldschool.runescape.wiki/w/Verac%27s_flail",
 	"twoHanded": true
+  },
+  "Keris partisan of breaching": {
+    "image": "https://oldschool.runescape.wiki/images/Keris_partisan_of_breaching.png?01e9b",
+    "wiki": "https://oldschool.runescape.wiki/w/Keris_partisan_of_breaching",
+	"twoHanded": false
+  },
+  "Keris partisan": {
+    "image": "https://oldschool.runescape.wiki/images/Keris_partisan.png?01e9b",
+    "wiki": "https://oldschool.runescape.wiki/w/Keris_partisan",
+	"twoHanded": false
+  },
+  "Colossal blade": {
+    "image": "https://oldschool.runescape.wiki/images/Colossal_blade.png?b30d1",
+    "wiki": "https://oldschool.runescape.wiki/w/Colossal_blade",
+	"twoHanded": true
+  },
+  "Tecu salamander": {
+    "image": "https://oldschool.runescape.wiki/images/Tecu_salamander.png?c8f35",
+    "wiki": "https://oldschool.runescape.wiki/w/Tecu_salamander",
+	"twoHanded": true
+  },
+  "Black salamander": {
+    "image": "https://oldschool.runescape.wiki/images/Black_salamander.png?1b793",
+    "wiki": "https://oldschool.runescape.wiki/w/Black_salamander",
+	"twoHanded": true
+  },
+  "Red salamander": {
+    "image": "https://oldschool.runescape.wiki/images/Red_salamander.png?77caa",
+    "wiki": "https://oldschool.runescape.wiki/w/Red_salamander",
+	"twoHanded": true
+  },
+  "Barrelchest anchor": {
+    "image": "https://oldschool.runescape.wiki/images/Barrelchest_anchor.png?fefbc",
+    "wiki": "https://oldschool.runescape.wiki/w/Barrelchest_anchor",
+	"twoHanded": true
+  },
+  "Tzhaar-ket-om": {
+    "image": "https://oldschool.runescape.wiki/images/Tzhaar-ket-om.png?08f42",
+    "wiki": "https://oldschool.runescape.wiki/w/Tzhaar-ket-om",
+	"twoHanded": true
   }
 }

@@ -140,7 +140,7 @@
       "Ammo": [
         ["Dragon arrow", "Amethyst arrow", "Moonlight antler bolts"],
         ["Rada's blessing 4"],
-        ["Rada's blessing 3/2", "God blessing"]
+        ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]
       ]
     },
     "Magic (Rex Only)": {
@@ -213,7 +213,7 @@
         ["Ring of shadows"],
         ["Explorer's ring"]
       ],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]],
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]],
       "Special Attack": ["N/A"]
     },
     "Ranged (Prime only)": {
@@ -281,11 +281,11 @@
         ["Archers ring (i)", "Ring of shadows"],
         ["Ring of the gods (i)"],
         ["Brimstone ring"],
-        ["Explorer's ring"]
+        ["Explorer's ring 4"]
       ],
       "Ammo": [
         ["Dragon arrow", "Amethyst arrow"],
-        ["Rada's blessing 3/2", "God blessing"],
+        ["Rada's blessing 3", "Rada's blessing 2", "God blessing"],
         ["Moonlight antler bolts"],
         ["Diamond bolts (e)"],
         ["Runite bolts"]

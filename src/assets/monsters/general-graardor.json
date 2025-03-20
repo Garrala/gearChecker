@@ -104,7 +104,7 @@
         ["Dragon boots"]
       ],
       "Ring": [
-        ["Lightbearer", "Ring of suffering (ri)"],
+        ["Lightbearer", "Ring of suffering (i)"],
         ["Ultor ring"],
         ["Ring of the gods (i)"],
         ["Berserker ring (i)"],
@@ -175,7 +175,7 @@
         ["Holy sandals"]
       ],
       "Ring": [
-        ["Ring of suffering (ri)", "Lightbearer"],
+        ["Ring of suffering (i)", "Lightbearer"],
         ["Venator ring"],
         ["Ring of the gods (i)"],
         ["Archers ring (i)", "Ring of shadows"],
@@ -262,7 +262,7 @@
       "Ring": [
         ["Lightbearer", "Ultor ring"],
         ["Berserker ring (i)"],
-        ["Ring of suffering (ri)"],
+        ["Ring of suffering (i)"],
         ["Ring of the gods (i)"],
         ["Brimstone ring"]
       ],
@@ -335,7 +335,7 @@
       ],
       "Ring": [
         ["Lightbearer"],
-        ["Ring of suffering (ri)"],
+        ["Ring of suffering (i)"],
         ["Berserker ring (i)"],
         ["Ring of the gods (i)"],
         ["Ring of life"]
@@ -393,7 +393,7 @@
         ["Magus ring"],
         ["Seers ring (i)"],
         ["Brimstone ring"],
-        ["Ring of the gods (i)", "Ring of suffering (ri)"]
+        ["Ring of the gods (i)", "Ring of suffering (i)"]
       ],
       "Ammo": [["War blessing"]]
     },
@@ -439,7 +439,7 @@
         ["Archers ring (i)"],
         ["Ring of shadows"],
         ["Brimstone ring"],
-        ["Ring of the gods (i)", "Ring of suffering (ri)"]
+        ["Ring of the gods (i)", "Ring of suffering (i)"]
       ],
       "Ammo": [["Diamond dragon bolts (e)"], ["Diamond bolts (e)"]]
     },

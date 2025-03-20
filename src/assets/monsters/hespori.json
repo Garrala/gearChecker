@@ -62,7 +62,7 @@
       "Gloves": [["Barrows gloves"]],
       "Boots": [["Dragon boots"], ["Mixed hide boots"]],
       "Ring": [["Berserker ring (i)"]],
-      "Ammo": [["Rada's blessing 3/2", "God blessing"]]
+      "Ammo": [["Rada's blessing 3", "Rada's blessing 2", "God blessing"]]
     },
     "Best-in-Slot": {
       "Weapon": [
@@ -90,7 +90,7 @@
       "Gloves": [["Ferocious gloves"], ["Barrows gloves"]],
       "Boots": [["Primordial boots"], ["Dragon boots"]],
       "Ring": [["Ultor ring"], ["Berserker ring (i)"]],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]]
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]]
     },
     "Best-in-Slot Mage": {
       "Weapon": [
@@ -124,7 +124,7 @@
       "Gloves": [["Tormented bracelet"], ["Void knight gloves"]],
       "Boots": [["Eternal boots"], ["Infinity boots"], ["Aranea boots"]],
       "Ring": [["Magus ring"], ["Seers ring (i)"]],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]],
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]],
       "Special Attack": [["N/A"]]
     }
   }
