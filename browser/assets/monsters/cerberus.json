@@ -113,7 +113,7 @@
         ["Lightbearer"],
         ["Ring of suffering (i)", "Ring of the gods (i)"]
       ],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3/2", "God blessing"]]
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]]
     },
     "Ranged": {
       "Weapon": [
@@ -180,7 +180,7 @@
         ["Dragon arrow"],
         ["Amethyst arrow"],
         ["Rune arrow"],
-        ["Ruby dragon bolts (e)", "Diamond dragon bolts"],
+        ["Ruby dragon bolts (e)", "Diamond dragon bolts (e)"],
         ["Rada's blessing 4"]
       ],
 	  "Shield": [ "N/A" ]

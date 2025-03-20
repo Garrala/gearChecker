@@ -45,6 +45,12 @@
         ["Bow of faerdhinen"],
         ["Eclipse atlatl"]
       ],
+      "Shield": [
+        ["Twisted buckler"],
+        ["Dragonfire ward"],
+        ["Odium ward"],
+        ["Book of law"]
+      ],
       "Special Attack": [
         ["Zaryte crossbow"],
         ["Tonalztics of ralos"],
@@ -76,15 +82,9 @@
         ["Hueycoatl hide chaps"],
         ["Blessed chaps"]
       ],
-      "Shield": [
-        ["Twisted buckler"],
-        ["Dragonfire ward"],
-        ["Odium ward"],
-        ["Book of law"]
-      ],
       "Gloves": [
         ["Zaryte vambraces"],
-        ["Blessed bracers", "Hueycoatl hide vambraces"],
+        ["Blessed vambraces", "Hueycoatl hide vambraces"],
         ["Barrows gloves"],
         ["Black d'hide vambraces"]
       ],
@@ -107,8 +107,7 @@
         ["Ruby bolts (e)"],
         ["Rada's blessing 4"],
         ["Rada's blessing 3", "God blessing"]
-      ],
-	  "Shield": ["N/A"]
+      ]
     },
     "Melee": {
       "Weapon": [
@@ -165,7 +164,7 @@
         ["Berserker ring (i)"],
         ["Brimstone ring"]
       ],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Any god blessing"]]
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "God blessing"]]
     }
   }
 }

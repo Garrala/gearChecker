@@ -75,7 +75,7 @@
         [ "Infernal cape" ],
         [ "Fire cape", "Mythical cape" ],
         [ "Max cape" ],
-        [ "Ranging Cape", "Dizana's quiver", "Ava's assembler'" ]
+        [ "Ranging cape", "Dizana's quiver", "Ava's assembler" ]
       ],
       "Body": [
         [ "Torva platebody", "Inquisitor's hauberk" ],
@@ -103,7 +103,7 @@
       ],
       "Ring": [
         [ "Ultor ring" ],
-        [ "Berserker ring (i)", "Ring of suffering (ri)" ],
+        [ "Berserker ring (i)", "Ring of suffering (i)" ],
         [ "Tyrannical ring (i)" ],
         [ "Brimstone ring" ],
         [ "Ring of shadows" ]
@@ -125,7 +125,6 @@
         [ "Book of law" ],
         [ "Unholy book" ]
       ],
-      "Special Attack": [ "N/A" ],
       "Helmet": [
         [ "Slayer helmet (i)" ],
         [ "Masori mask (f)" ],
@@ -171,7 +170,7 @@
         [ "Blessed boots" ]
       ],
       "Ring": [
-        [ "Ring of suffering (ri)" ],
+        [ "Ring of suffering (i)" ],
         [ "Venator ring" ],
         [ "Archers ring (i)" ],
         [ "Brimstone ring" ],
@@ -183,7 +182,8 @@
         [ "Diamond dragon bolts (e)", "Dragon arrow" ],
         [ "Amethyst broad bolts", "Amethyst arrow" ],
         [ "Runite bolts", "Rune arrow" ]
-      ]
+      ],
+      "Special Attack": [ "N/A" ]
     },
     "Magic (0 switches)": {
       "Weapon": [
@@ -215,7 +215,7 @@
       ],
       "Cape": [
         [ "Imbued god cape" ],
-        [ "God capes" ],
+        [ "God cape" ],
         [ "Ardougne cloak 4" ],
         [ "Infernal cape" ],
         [ "Fire cape" ]
@@ -251,7 +251,6 @@
       "Weapon": [
         [ "Verac's flail" ]
       ],
-      "Special Attack": [ "N/A" ],
       "Helmet": [
         [ "Verac's helm" ]
       ],
@@ -294,7 +293,9 @@
       "Ammo": [
         [ "Rada's blessing 4" ],
         [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
-      ]
+      ],
+      "Special Attack": [ "N/A" ],
+	  "Shield": [ "N/A" ]
     },
     "Flinching": {
       "Weapon": [
@@ -308,7 +309,7 @@
         [ "Dragon defender" ]
       ],
       "Special Attack": [
-        [ "Bone dagger (p++)" ],
+        [ "Bone dagger" ],
         [ "Arclight" ],
         [ "Darklight" ],
         [ "Barrelchest anchor" ]
@@ -349,7 +350,7 @@
         [ "Berserker ring (i)" ],
         [ "Brimstone ring" ],
         [ "Ring of shadows" ],
-        [ "Explorer's ring" ]
+        [ "Explorer's ring 4" ]
       ],
       "Ammo": [
         [ "Irit tar" ],
@@ -369,7 +370,7 @@
         [ "Dragon defender" ]
       ],
       "Special Attack": [
-        [ "Bone dagger (p++)" ],
+        [ "Bone dagger" ],
         [ "Arclight" ],
         [ "Darklight" ],
         [ "Barrelchest anchor" ]
@@ -430,7 +431,7 @@
       "Shield": [
         [ "Book of law" ],
         [ "Unholy book" ],
-        [ "Blessed shield" ],
+        [ "Blessed d'hide shield" ],
         [ "Black d'hide shield" ],
         [ "Broodoo shield" ]
       ],
@@ -535,7 +536,7 @@
         [ "Dragon boots" ]
       ],
       "Ring": [
-        [ "Ring of suffering (ri)" ],
+        [ "Ring of suffering (i)" ],
         [ "Ultor ring" ],
         [ "Berserker ring (i)" ],
         [ "Tyrannical ring (i)" ],
