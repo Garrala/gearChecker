@@ -35,6 +35,38 @@
         "cannons": false,
         "thralls": false
       }
+    },
+	{
+      "name": "Cal'varion (Enraged)",
+      "image": "https://oldschool.runescape.wiki/images/Calvar%27ion_%28enraged%29.png?6268f",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Calvar%27ion#Enraged",
+      "combat_level": 264,
+      "hp": 150,
+      "max_hit": {
+        "melee": 26
+      },
+      "defense": {
+        "melee": {
+          "stab": 130,
+          "slash": 128,
+          "crush": -10
+        },
+        "magic": 198,
+        "ranged": {
+          "arrows": 211,
+          "bolts": 211,
+          "thrown": 211
+        }
+      },
+      "attack_styles": ["Melee", "Magic"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     }
   ],
   "gear_setups": {

@@ -5,15 +5,14 @@
   "wiki_link": "https://oldschool.runescape.wiki/w/Grotesque_Guardians/Strategies",
   "bosses": [
     {
-      "name": "Grotesque Guardians",
+      "name": "Dusk",
       "image": "https://oldschool.runescape.wiki/images/Dusk_%282nd_form%29.png?d4047",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Grotesque_Guardians/Strategies",
-      "combat_level": 248,
+      "wiki_link": "https://oldschool.runescape.wiki/w/Dusk#Second_form",
+      "combat_level": 328,
       "hp": 450,
       "max_hit": {
-        "melee": 15,
-        "special": 33,
-        "ranged": 15
+        "melee": 26,
+        "special": 65
       },
       "defense": {
         "melee": {
@@ -28,7 +27,39 @@
           "thrown": 0
         }
       },
-      "attack_styles": ["Melee", "Ranged", "Special"],
+      "attack_styles": ["Melee", "Special"],
+      "attack_speed": 6,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
+    },
+	{
+      "name": "Dawn",
+      "image": "https://oldschool.runescape.wiki/images/Dawn.png?8b8ea",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Dawn",
+      "combat_level": 228,
+      "hp": 450,
+      "max_hit": {
+        "ranged": 15
+      },
+      "defense": {
+        "melee": {
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
+        },
+        "magic": 80,
+        "ranged": {
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
+        }
+      },
+      "attack_styles": ["Ranged"],
       "attack_speed": 6,
       "aggressive": true,
       "immunities": {

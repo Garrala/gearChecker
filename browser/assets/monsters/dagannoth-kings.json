@@ -5,9 +5,77 @@
   "wiki_link": "https://oldschool.runescape.wiki/w/Dagannoth_Kings/Strategies",
   "bosses": [
     {
-      "name": "Dagannoth Kings",
+      "name": "Dagannoth Prime",
       "image": "https://oldschool.runescape.wiki/images/Dagannoth_Prime.png?945b1",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Dagannoth_Kings/Strategies",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Dagannoth_Prime",
+      "combat_level": 303,
+      "hp": 500,
+      "max_hit": {
+        "magic": 50,
+        "melee": 26,
+        "ranged": 30
+      },
+      "defense": {
+        "melee": {
+          "stab": 255,
+          "slash": 255,
+          "crush": 255
+        },
+        "magic": 255,
+        "ranged": {
+          "arrows": 10,
+          "bolts": 10,
+          "thrown": 10
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Melee", "Poison"],
+      "attack_speed": 4,
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
+    },
+	{
+      "name": "Dagannoth Rex",
+      "image": "https://oldschool.runescape.wiki/images/Dagannoth_Rex.png?a99a9",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Dagannoth_Rex",
+      "combat_level": 303,
+      "hp": 500,
+      "max_hit": {
+        "magic": 50,
+        "melee": 26,
+        "ranged": 30
+      },
+      "defense": {
+        "melee": {
+          "stab": 255,
+          "slash": 255,
+          "crush": 255
+        },
+        "magic": 255,
+        "ranged": {
+          "arrows": 10,
+          "bolts": 10,
+          "thrown": 10
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Melee", "Poison"],
+      "attack_speed": 4,
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
+    },
+	{
+      "name": "Dagannoth Supreme",
+      "image": "https://oldschool.runescape.wiki/images/Dagannoth_Supreme.png?81f00",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Dagannoth_Supreme",
       "combat_level": 303,
       "hp": 500,
       "max_hit": {
