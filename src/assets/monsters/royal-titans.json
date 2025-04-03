@@ -34,6 +34,37 @@
         "cannons": false,
         "thralls": false
       }
+    },
+	{
+      "name": "Branda the Ice Queen",
+      "image": "https://oldschool.runescape.wiki/images/Branda_the_Fire_Queen.png?0687c",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Royal_Titans/Strategies",
+      "combat_level": 725,
+      "hp": 500,
+      "max_hit": 41,
+      "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+      "defense": {
+        "melee": {
+          "stab": 150,
+          "slash": 150,
+          "crush": 200
+        },
+        "magic": 200,
+        "ranged": {
+          "arrows": 50,
+          "bolts": 50,
+          "thrown": 50
+        }
+      },
+      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_speed": 3,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
     }
   ],
   "gear_setups": {
@@ -104,7 +135,8 @@
         ["Rune arrow"],
         ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
         ["Diamond bolts (e)", "Ruby bolts (e)"]
-      ]
+      ],
+	  "Shield": [[ "N/A" ]]
     }
   }
 }

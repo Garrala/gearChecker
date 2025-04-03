@@ -5,13 +5,84 @@
   "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
   "bosses": [
     {
-      "name": "Zulrah",
+      "name": "Zulrah (Serpentine)",
       "image": "https://oldschool.runescape.wiki/images/Zulrah_%28serpentine%29.png?29a54",
       "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
       "combat_level": 725,
       "hp": 500,
       "max_hit": {
-        "magic": 41
+        "ranged": 41
+      },
+      "weaknesses": {
+        "fire": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 150,
+          "slash": 150,
+          "crush": 200
+        },
+        "magic": -45,
+        "ranged": {
+          "arrows": 50,
+          "bolts": 50,
+          "thrown": 50
+        }
+      },
+      "attack_styles": ["Ranged", "Venom"],
+      "attack_speed": 3,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
+    },
+	{
+      "name": "Zulrah (Magma)",
+      "image": "https://oldschool.runescape.wiki/images/Zulrah_%28magma%29.png?fd984",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
+      "combat_level": 725,
+      "hp": 500,
+      "max_hit": {
+        "typeless": 30
+      },
+      "weaknesses": {
+        "fire": "50%"
+      },
+      "defense": {
+        "melee": {
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
+        },
+        "magic": 300,
+        "ranged": {
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
+        }
+      },
+      "attack_styles": ["Typeless", "Venom"],
+      "attack_speed": 3,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      }
+    },
+	{
+      "name": "Zulrah (Tanzanite)",
+      "image": "https://oldschool.runescape.wiki/images/Zulrah_%28tanzanite%29.png?fd984",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
+      "combat_level": 725,
+      "hp": 500,
+      "max_hit": {
+        "magic": 41,
+		"ranged": 41
       },
       "weaknesses": {
         "fire": "50%"
