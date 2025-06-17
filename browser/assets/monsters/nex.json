@@ -39,71 +39,119 @@
   "gear_setups": {
     "Ranged": {
       "Weapon": [
-        ["Twisted bow"],
-        ["Bow of faerdhinen"],
-        ["Crystal bow"],
-        ["Zaryte crossbow"],
-        ["Armadyl crossbow"]
+        [ "Zaryte crossbow", "Twisted bow" ],
+        [ "Armadyl crossbow", "Toxic blowpipe" ],
+        [ "Dragon hunter crossbow", "Dragon crossbow" ]
       ],
-      "Special Attack": [["Zaryte crossbow"]],
+      "Shield": [
+        [ "Twisted buckler" ],
+        [ "Elysian spirit shield" ],
+        [ "Dragonfire ward", "Odium ward" ]
+      ],
+      "Special Attack": [
+        [ "Zaryte crossbow" ],
+        [ "Armadyl crossbow", "Voidwaker" ],
+        [ "Toxic blowpipe" ]
+      ],
       "Helmet": [
-        ["Slayer helmet (i)", "Masori mask (f)"],
-        ["Armadyl helmet"],
-        ["Crystal helm"],
-        ["Robin hood hat"],
-        ["Blessed coif"]
+        [ "Masori mask (f)" ],
+        [ "Armadyl helmet" ],
+        [ "Slayer helmet (i)", "Blessed coif" ]
       ],
       "Amulet": [
-        ["Necklace of anguish"],
-        ["Bonecrusher necklace"],
-        ["Amulet of fury"],
-        ["Amulet of glory"]
+        [ "Necklace of anguish" ],
+        [ "Amulet of fury" ]
       ],
       "Cape": [
-        ["Dizana's quiver"],
-        ["Ava's assembler"],
-        ["Max cape", "Ranging cape"]
+        [ "Blessed Dizana's quiver", "Dizana's quiver" ],
+        [ "Ava's assembler" ],
+        [ "Max cape", "Ranging cape (t)" ]
       ],
       "Body": [
-        ["Masori body (f)"],
-        ["Armadyl chestplate"],
-        ["Crystal body"],
-        ["Blessed body"],
-        ["Black d'hide body"]
+        [ "Masori body (f)" ],
+        [ "Armadyl chestplate" ],
+        [ "Eclipse moon chestplate", "Karil's leathertop", "Blessed Body" ]
       ],
       "Legs": [
-        ["Masori chaps (f)"],
-        ["Armadyl chainskirt"],
-        ["Crystal legs"],
-        ["Blessed chaps"],
-        ["Black d'hide chaps"]
+        [ "Masori chaps (f)" ],
+        [ "Armadyl chainskirt" ],
+        [ "Eclipse moon tassets", "Karil's leatherskirt", "Blessed chaps" ]
       ],
       "Gloves": [
-        ["Zaryte vambraces"],
-        ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Black d'hide vambraces"]
+        [ "Zaryte vambraces" ],
+        [ "Barrows gloves" ],
+        [ "Blessed vambraces" ]
       ],
       "Boots": [
-        ["Pegasian boots"],
-        ["Ranger boots", "Devout boots"],
-        ["Blessed boots"],
-        ["Aranea boots"],
-        ["Mixed hide boots"]
+        [ "Pegasian boots" ],
+        [ "Blessed boots" ]
       ],
       "Ring": [
-        ["Venator ring"],
-        ["Lightbearer"],
-        ["Ring of the gods", "Archers ring (i)"],
-        ["Ring of shadows", "Brimstone ring"],
-        ["Ring of endurance"]
+        [ "Lightbearer" ],
+        [ "Venator ring" ],
+        [ "Archers ring (i)" ]
       ],
       "Ammo": [
-        ["Dragon arrow"],
-        ["Amethyst arrow"],
-        ["Rune arrow"],
-        ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
-        ["Diamond bolts (e)", "Ruby bolts (e)"]
+        [ "Ruby dragon bolts (e)", "Dragon arrow" ],
+        [ "Ruby bolts (e)" ]
+      ]
+    },
+    "Hybrid": {
+      "Weapon": [
+        [ "Osmumten's fang" ]
+      ],
+      "Shield": [
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Elysian spirit shield" ]
+      ],
+      "Special Attack": [
+        [ "Zaryte crossbow" ],
+        [ "Voidwaker" ],
+        [ "Osmumten's fang" ]
+      ],
+      "Helmet": [
+        [ "Torva full helm" ],
+        [ "Neitiznot faceguard" ],
+        [ "Serpentine helm", "Eclipse moon helm" ]
+      ],
+      "Amulet": [
+        [ "Amulet of blood fury" ],
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ]
+      ],
+      "Cape": [
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Max cape" ]
+      ],
+      "Body": [
+        [ "Torva platebody" ],
+        [ "Masori body (f)" ],
+        [ "Eclipse moon chestplate" ]
+      ],
+      "Legs": [
+        [ "Torva platelegs" ],
+        [ "Masori chaps (f)" ],
+        [ "Eclipse moon tassets" ]
+      ],
+      "Gloves": [
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves" ]
+      ],
+      "Boots": [
+        [ "Primordial boots" ],
+        [ "Aranea boots" ],
+        [ "Dragon boots" ]
+      ],
+      "Ring": [
+        [ "Lightbearer" ],
+        [ "Ultor ring" ],
+        [ "Brimstone ring", "Berserker ring (i)" ]
+      ],
+      "Ammo": [
+        [ "Dragon arrow" ],
+        [ "Ruby dragon bolts (e)" ]
       ]
     }
   }

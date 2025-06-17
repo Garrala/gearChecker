@@ -71,6 +71,97 @@
     }
   ],
   "gear_setups": {
+    "Melee": {
+      "Weapon": [
+        [ "Scythe of vitur" ],
+        [
+          "Soulreaper axe",
+          "Ghrazi rapier",
+          "Blade of saeldor",
+          "Inquisitor's mace"
+        ],
+        [ "Noxious halberd", "Abyssal tentacle" ],
+        [ "Osmumten's fang", "Abyssal whip", "Abyssal bludgeon" ],
+        [ "Zamorakian hasta", "Dragon scimitar" ]
+      ],
+      "Shield": [
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Dragonfire shield" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Special Attack": [
+        [ "Dragon claws", "Burning claws" ],
+        [ "Dragon dagger" ],
+        [ "Toxic blowpipe" ],
+        [ "Saradomin godsword" ],
+        [ "Crystal halberd" ]
+      ],
+      "Helmet": [
+        [ "Slayer helmet (i)", "Black mask (i)" ],
+        [ "Slayer helmet", "Black mask" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Amulet": [
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of fury", "Amulet of blood fury" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of strength" ]
+      ],
+      "Cape": [
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Ranging cape (t)" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Body": [
+        [ "Torva platebody" ],
+        [ "Bandos chestplate" ],
+        [ "Blood moon chestplate", "Fighter torso" ],
+        [ "Obsidian platebody", "Eclipse moon chestplate" ],
+        [ "Black d'hide body" ]
+      ],
+      "Legs": [
+        [ "Torva platelegs" ],
+        [ "Bandos tassets", "Blood moon tassets" ],
+        [ "Obsidian platelegs", "Eclipse moon tassets" ],
+        [ "Verac's plateskirt" ],
+        [ "Dragon platelegs" ]
+      ],
+      "Gloves": [
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves" ],
+        [ "Dragon gloves" ],
+        [ "Rune gloves" ],
+        [ "N/A" ]
+      ],
+      "Boots": [
+        [ "Primordial boots" ],
+        [ "Dragon boots", "Aranea boots" ],
+        [ "Echo boots", "Guardian boots" ],
+        [ "Rune boots", "Mixed hide boots" ],
+        [ "Climbing boots" ]
+      ],
+      "Ring": [
+        [ "Ultor ring" ],
+        [ "Bellator ring", "Berserker ring (i)", "Lightbearer" ],
+        [ "Brimstone ring" ],
+        [ "Ring of suffering (i)", "Archers ring (i)" ],
+        [ "Treasonous ring (i)", "Warrior ring (i)", "Tyrannical ring (i)" ]
+      ],
+      "Ammo": [
+        [ "Dragon arrow" ],
+        [ "Atlatl darts" ],
+        [ "Rada's blessing 4" ],
+        [ "Moonlight antler bolts", "Sunlight antler bolts" ],
+        [ "Amethyst arrow", "Rune arrow" ]
+      ]
+    },
     "Ranged Switches": {
       "Weapon": [
         [ "Venator bow", "Toxic blowpipe" ],
@@ -126,89 +217,6 @@
         [ "Blessed boots" ]
       ],
       "Ring": [ [ "Venator ring" ] ],
-      "Ammo": [
-        [ "Dragon arrow" ],
-        [ "Atlatl darts" ],
-        [ "Rada's blessing 4" ],
-        [ "Moonlight antler bolts", "Sunlight antler bolts" ],
-        [ "Amethyst arrow", "Rune arrow" ]
-      ]
-    },
-    "Melee": {
-      "Weapon": [
-        [ "Scythe of vitur" ],
-        [
-          "Soulreaper axe",
-          "Ghrazi rapier",
-          "Blade of saeldor",
-          "Inquisitor's mace"
-        ],
-        [ "Noxious halberd", "Abyssal tentacle" ],
-        [ "Osmumten's fang", "Abyssal whip", "Abyssal bludgeon" ],
-        [ "Zamorakian hasta", "Dragon scimitar" ]
-      ],
-      "Shield": [
-        [ "Avernic defender" ],
-        [ "Dragon defender" ],
-        [ "Dragonfire shield" ]
-      ],
-      "Special Attack": [
-        [ "Dragon claws", "Burning claws" ],
-        [ "Dragon dagger" ],
-        [ "Toxic blowpipe" ],
-        [ "Saradomin godsword" ],
-        [ "Crystal halberd" ]
-      ],
-      "Helmet": [
-        [ "Slayer helmet (i)", "Black mask (i)" ],
-        [ "Slayer helmet", "Black mask" ]
-      ],
-      "Amulet": [
-        [ "Amulet of rancour" ],
-        [ "Amulet of torture" ],
-        [ "Amulet of fury", "Amulet of blood fury" ],
-        [ "Amulet of glory" ],
-        [ "Amulet of strength" ]
-      ],
-      "Cape": [
-        [ "Infernal cape" ],
-        [ "Fire cape" ],
-        [ "Ranging cape (t)" ]
-      ],
-      "Body": [
-        [ "Torva platebody" ],
-        [ "Bandos chestplate" ],
-        [ "Blood moon chestplate", "Fighter torso" ],
-        [ "Obsidian platebody", "Eclipse moon chestplate" ],
-        [ "Black d'hide body" ]
-      ],
-      "Legs": [
-        [ "Torva platelegs" ],
-        [ "Bandos tassets", "Blood moon tassets" ],
-        [ "Obsidian platelegs", "Eclipse moon tassets" ],
-        [ "Verac's plateskirt" ],
-        [ "Dragon platelegs" ]
-      ],
-      "Gloves": [
-        [ "Ferocious gloves" ],
-        [ "Barrows gloves" ],
-        [ "Dragon gloves" ],
-        [ "Rune gloves" ]
-      ],
-      "Boots": [
-        [ "Primordial boots" ],
-        [ "Dragon boots", "Aranea boots" ],
-        [ "Echo boots", "Guardian boots" ],
-        [ "Rune boots", "Mixed hide boots" ],
-        [ "Climbing boots" ]
-      ],
-      "Ring": [
-        [ "Ultor ring" ],
-        [ "Bellator ring", "Berserker ring (i)", "Lightbearer" ],
-        [ "Brimstone ring" ],
-        [ "Ring of suffering (i)", "Archers ring (i)" ],
-        [ "Treasonous ring (i)", "Warrior ring (i)", "Tyrannical ring (i)" ]
-      ],
       "Ammo": [
         [ "Dragon arrow" ],
         [ "Atlatl darts" ],
