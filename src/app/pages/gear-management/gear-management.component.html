@@ -1,6 +1,11 @@
 <div class="container">
   <h1>Gear Management</h1>
-  <p>Select the gear you own:</p>
+  <p>Select the gear you own or import it:</p>
+  <div class="import-export-controls">
+    <button (click)="exportOwnedGear()">📤 Export Gear</button>
+    <button (click)="fileInput.click()">📥 Import Gear</button>
+    <input type="file" accept=".json" #fileInput (change)="importOwnedGear($event)" hidden />
+  </div>
 
   <!-- Show spinner if still loading -->
   <div class="loading-spinner" *ngIf="loading"></div>

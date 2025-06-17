@@ -239,5 +239,81 @@ export class GearManagementComponent implements OnInit {
 
     this.cdRef.detectChanges();
   }
+  
+  // Export owned gear as a downloadable JSON file
+	exportOwnedGear() {
+  // Only export the slots that are relevant (uppercased labels used in UI)
+  const validSlots = [
+    'Weapon',
+    'Special Attack',
+    'Shields',
+    'Helmets',
+    'Amulets',
+    'Capes',
+    'Body',
+    'Legs',
+    'Gloves',
+    'Boots',
+    'Rings',
+    'Ammo'
+  ];
+
+  const filteredOwnedGear: { [slot: string]: string[] } = {};
+
+  for (const slot of validSlots) {
+    if (Array.isArray(this.ownedGear[slot]) && this.ownedGear[slot].length > 0) {
+      filteredOwnedGear[slot] = this.ownedGear[slot];
+    }
+  }
+
+  const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(filteredOwnedGear, null, 2));
+  const downloadAnchorNode = document.createElement('a');
+  downloadAnchorNode.setAttribute('href', dataStr);
+  downloadAnchorNode.setAttribute('download', 'ownedGear.json');
+  document.body.appendChild(downloadAnchorNode);
+  downloadAnchorNode.click();
+  downloadAnchorNode.remove();
+}
+
+
+	// Import gear from uploaded JSON
+	importOwnedGear(event: any) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const imported = JSON.parse(reader.result as string);
+      const validSlots = [
+        'Weapon',
+        'Special Attack',
+        'Shields',
+        'Helmets',
+        'Amulets',
+        'Capes',
+        'Body',
+        'Legs',
+        'Gloves',
+        'Boots',
+        'Rings',
+        'Ammo'
+      ];
+
+      const sanitized: { [slot: string]: string[] } = {};
+      for (const slot of validSlots) {
+        sanitized[slot] = Array.isArray(imported[slot]) ? imported[slot] : [];
+      }
+
+      this.ownedGear = sanitized;
+      localStorage.setItem('ownedGear', JSON.stringify(this.ownedGear));
+      this.cdRef.detectChanges();
+    } catch (err) {
+      alert('Error reading gear file.');
+    }
+  };
+  reader.readAsText(file);
+}
+
 
 }
