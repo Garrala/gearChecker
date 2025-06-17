@@ -37,73 +37,170 @@
     }
   ],
   "gear_setups": {
-    "Ranged": {
+    "Magic & Ranged": {
       "Weapon": [
-        ["Twisted bow"],
-        ["Bow of faerdhinen"],
-        ["Crystal bow"],
-        ["Zaryte crossbow"],
-        ["Armadyl crossbow"]
+        [ "Tumeken's shadow", "Twisted bow" ],
+        [ "Harmonised nightmare staff", "Bow of faerdhinen" ],
+        [ "Kodai wand", "Nightmare staff", "Zaryte crossbow", "Armadyl crossbow", "Dragon hunter crossbow", "Dragon crossbow" ],
+        [ "Sanguinesti staff", "Trident of the swamp", "Trident of the seas", "Toxic staff of the dead", "Toxic blowpipe", "Crystal bow" ],
+        [ "Ancient sceptre", "Rune crossbow" ]
       ],
-      "Special Attack": [["Zaryte crossbow"]],
+      "Shield": [
+        [ "Elidinis' ward (f)", "Tome of fire" ],
+        [ "Arcane spirit shield" ],
+        [ "Ancient wyvern shield", "Elidinis' ward" ],
+        [ "Malediction ward" ],
+        [ "Mage's book" ]
+      ],
+      "Special Attack": [
+        [ "Zaryte crossbow" ],
+        [ "Armadyl crossbow" ],
+        [ "Elder maul" ],
+        [ "Toxic blowpipe" ],
+        [ "N/A" ]
+      ],
       "Helmet": [
-        ["Slayer helmet (i)", "Masori mask (f)"],
-        ["Armadyl helmet"],
-        ["Crystal helm"],
-        ["Robin hood hat"],
-        ["Blessed coif"]
+        [ "Slayer helmet (i)", "Ancestral hat", "Masori mask (f)" ],
+        [ "Virtus mask", "Ahrim's hood", "Armadyl helmet" ],
+        [ "Infinity hat", "Bloodbark helm", "Blessed coif" ],
+        [ "Farseer helm", "Karil's coif" ],
+        [ "Helm of neitiznot" ]
       ],
       "Amulet": [
-        ["Necklace of anguish"],
-        ["Bonecrusher necklace"],
-        ["Amulet of fury"],
-        ["Amulet of glory"]
+        [ "Occult necklace", "Necklace of anguish" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of the damned" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ]
       ],
       "Cape": [
-        ["Dizana's quiver"],
-        ["Ava's assembler"],
-        ["Max cape", "Ranging cape"]
+        [ "Imbued god cape", "Dizana's quiver" ],
+        [ "God cape", "Ava's assembler" ],
+        [ "Skillcape", "Ava's accumulator" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
-        ["Masori body (f)"],
-        ["Armadyl chestplate"],
-        ["Crystal body"],
-        ["Blessed body"],
-        ["Black d'hide body"]
+        [ "Ancestral robe top", "Masori body (f)" ],
+        [ "Virtus robe top", "Masori body" ],
+        [ "Ahrim's robetop", "Armadyl chestplate" ],
+        [ "Dagon'hai robe top", "Karil's leathertop" ],
+        [ "Infinity top", "Blessed body" ]
       ],
       "Legs": [
-        ["Masori chaps (f)"],
-        ["Armadyl chainskirt"],
-        ["Crystal legs"],
-        ["Blessed chaps"],
-        ["Black d'hide chaps"]
+        [ "Ancestral robe bottom", "Masori chaps (f)" ],
+        [ "Virtus robe bottom", "Masori chaps (f)" ],
+        [ "Ahrim's robeskirt", "Armadyl chainskirt" ],
+        [ "Dagon'hai robe bottom", "Karil's leatherskirt" ],
+        [ "Infinity bottoms", "Blessed chaps" ]
       ],
       "Gloves": [
-        ["Zaryte vambraces"],
-        ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Black d'hide vambraces"]
+        [ "Tormented bracelet", "Zaryte vambraces" ],
+        [ "Barrows gloves" ],
+        [ "Regen bracelet" ],
+        [ "Combat bracelet" ],
+        [ "N/A" ]
       ],
       "Boots": [
-        ["Pegasian boots"],
-        ["Ranger boots", "Devout boots"],
-        ["Blessed boots"],
-        ["Aranea boots"],
-        ["Mixed hide boots"]
+        [ "Eternal boots", "Pegasian boots" ],
+        [ "Aranea boots" ],
+        [ "Infinity boots", "Ranger boots" ],
+        [ "Bloodbark boots", "Blessed boots" ],
+        [ "Boots of brimstone" ]
       ],
       "Ring": [
-        ["Venator ring"],
-        ["Lightbearer"],
-        ["Ring of the gods", "Archers ring (i)"],
-        ["Ring of shadows", "Brimstone ring"],
-        ["Ring of endurance"]
+        [ "Lightbearer" ],
+        [ "Ring of suffering (i)" ],
+        [ "Ring of shadows" ],
+        [ "Brimstone ring" ],
+        [ "Explorer's ring 4" ]
       ],
       "Ammo": [
-        ["Dragon arrow"],
-        ["Amethyst arrow"],
-        ["Rune arrow"],
-        ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
-        ["Diamond bolts (e)", "Ruby bolts (e)"]
+        [ "Dragon arrow", "Sapphire dragon bolts (e)", "Ruby dragon bolts (e)" ],
+        [ "Amethyst arrow", "Diamond dragon bolts (e)", "Sapphire bolts (e)" ],
+        [ "Rune arrow", "Diamond bolts (e)" ],
+        [ "Rada's blessing 4" ],
+        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+      ]
+    },
+    "Ranged Only": {
+      "Weapon": [
+        [ "Zaryte crossbow", "Twisted bow" ],
+        [ "Armadyl crossbow", "Bow of faerdhinen" ],
+        [ "Dragon hunter crossbow", "Dragon crossbow", "Toxic blowpipe", "Crystal bow" ],
+        [ "Rune crossbow" ]
+      ],
+      "Shield": [
+        [ "Twisted buckler" ],
+        [ "Dragonfire ward" ],
+        [ "Odium ward" ],
+        [ "Book of law" ]
+      ],
+      "Special Attack": [
+        [ "Zaryte crossbow" ],
+        [ "Armadyl crossbow" ],
+        [ "Elder maul" ],
+        [ "Dragon warhammer" ]
+      ],
+      "Helmet": [
+        [ "Slayer helmet (i)", "Masori mask (f)" ],
+        [ "Crystal helm" ],
+        [ "Armadyl helmet" ],
+        [ "Blessed coif" ],
+        [ "Karil's coif" ]
+      ],
+      "Amulet": [
+        [ "Necklace of anguish" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ]
+      ],
+      "Cape": [
+        [ "Dizana's quiver" ],
+        [ "Ava's assembler" ],
+        [ "Ava's accumulator" ],
+        [ "Skillcape" ]
+      ],
+      "Body": [
+        [ "Masori body (f)" ],
+        [ "Crystal body" ],
+        [ "Armadyl chestplate" ],
+        [ "Karil's leathertop" ],
+        [ "Blessed body" ]
+      ],
+      "Legs": [
+        [ "Masori chaps (f)" ],
+        [ "Crystal legs" ],
+        [ "Armadyl chainskirt" ],
+        [ "Karil's leatherskirt" ],
+        [ "Blessed chaps" ]
+      ],
+      "Gloves": [
+        [ "Zaryte vambraces" ],
+        [ "Barrows gloves" ],
+        [ "Regen bracelet" ],
+        [ "Blessed bracers" ],
+        [ "Combat bracelet" ]
+      ],
+      "Boots": [
+        [ "Pegasian boots" ],
+        [ "Ranger boots" ],
+        [ "Blessed boots" ],
+        [ "Boots of brimstone" ]
+      ],
+      "Ring": [
+        [ "Lightbearer" ],
+        [ "Venator ring" ],
+        [ "Archers ring (i)" ],
+        [ "Ring of suffering (i)" ],
+        [ "Ring of shadows" ]
+      ],
+      "Ammo": [
+        [ "Dragon arrow", "Sapphire dragon bolts (e)", "Ruby dragon bolts (e)" ],
+        [ "Amethyst arrow", "Diamond dragon bolts (e)", "Sapphire bolts (e)" ],
+        [ "Rune arrow", "Diamond bolts (e)" ],
+        [ "Rada's blessing 4" ],
+        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ]
     }
   }

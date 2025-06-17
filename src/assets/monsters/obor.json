@@ -11,7 +11,7 @@
       "combat_level": 725,
       "hp": 500,
       "max_hit": 41,
-      "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
       "defense": {
         "melee": {
           "stab": 150,
@@ -25,7 +25,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_styles": [ "Magic", "Ranged", "Venom" ],
       "attack_speed": 3,
       "aggressive": true,
       "immunities": {
@@ -37,74 +37,47 @@
     }
   ],
   "gear_setups": {
-    "Ranged": {
-      "Weapon": [
-        ["Twisted bow"],
-        ["Bow of faerdhinen"],
-        ["Crystal bow"],
-        ["Zaryte crossbow"],
-        ["Armadyl crossbow"]
-      ],
-      "Special Attack": [["Zaryte crossbow"]],
-      "Helmet": [
-        ["Slayer helmet (i)", "Masori mask (f)"],
-        ["Armadyl helmet"],
-        ["Crystal helm"],
-        ["Robin hood hat"],
-        ["Blessed coif"]
-      ],
-      "Amulet": [
-        ["Necklace of anguish"],
-        ["Bonecrusher necklace"],
-        ["Amulet of fury"],
-        ["Amulet of glory"]
-      ],
-      "Cape": [
-        ["Dizana's quiver"],
-        ["Ava's assembler"],
-        ["Max cape", "Ranging cape"]
-      ],
-      "Body": [
-        ["Masori body (f)"],
-        ["Armadyl chestplate"],
-        ["Crystal body"],
-        ["Blessed body"],
-        ["Black d'hide body"]
-      ],
-      "Legs": [
-        ["Masori chaps (f)"],
-        ["Armadyl chainskirt"],
-        ["Crystal legs"],
-        ["Blessed chaps"],
-        ["Black d'hide chaps"]
-      ],
-      "Gloves": [
-        ["Zaryte vambraces"],
-        ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Black d'hide vambraces"]
-      ],
-      "Boots": [
-        ["Pegasian boots"],
-        ["Ranger boots", "Devout boots"],
-        ["Blessed boots"],
-        ["Aranea boots"],
-        ["Mixed hide boots"]
-      ],
-      "Ring": [
-        ["Venator ring"],
-        ["Lightbearer"],
-        ["Ring of the gods", "Archers ring (i)"],
-        ["Ring of shadows", "Brimstone ring"],
-        ["Ring of endurance"]
-      ],
-      "Ammo": [
-        ["Dragon arrow"],
-        ["Amethyst arrow"],
-        ["Rune arrow"],
-        ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
-        ["Diamond bolts (e)", "Ruby bolts (e)"]
-      ]
+    "F2P Melee Setup": {
+      "Weapon": [ "Rune scimitar" ],
+      "Helmet": [ "Rune full helm" ],
+      "Shield": [ "Rune kiteshield" ],
+      "Amulet": [ "Amulet of power" ],
+      "Cape": [ "Red cape" ],
+      "Body": [ "Green d'hide body" ],
+      "Legs": [ "Green d'hide chaps" ],
+      "Gloves": [ "Green d'hide vambraces" ],
+      "Boots": [ "Fancy boots" ],
+      "Ring": [ "N/A" ],
+      "Ammo": [ "N/A" ],
+      "Special Attack": [ "N/A" ]
+    },
+    "F2P Ranged Setup": {
+      "Weapon": [ "Maple shortbow" ],
+      "Helmet": [ "Coif" ],
+      "Amulet": [ "Amulet of power" ],
+      "Cape": [ "Red cape" ],
+      "Body": [ "Green d'hide body" ],
+      "Legs": [ "Green d'hide chaps" ],
+      "Gloves": [ "Green d'hide vambraces" ],
+      "Boots": [ "Fancy boots" ],
+      "Ring": [ "N/A" ],
+      "Ammo": [ "Adamant arrows" ],
+      "Shield": [ "N/A" ],
+      "Special Attack": [ "N/A" ]
+    },
+    "Members Magic Setup": {
+      "Weapon": [ "Trident of the seas" ],
+      "Shield": [ "Mage's book" ],
+      "Helmet": [ "Void mage helm" ],
+      "Amulet": [ "Occult necklace", "Amulet of glory" ],
+      "Cape": [ "Imbued god cape" ],
+      "Body": [ "Elite void top", "Void knight top" ],
+      "Legs": [ "Elite void robe", "Void knight robe" ],
+      "Gloves": [ "Void knight gloves" ],
+      "Boots": [ "Infinity boots" ],
+      "Ring": [ "Seers ring (i)" ],
+      "Ammo": [ "Rada's blessing 3" ],
+      "Special Attack": [ "N/A" ]
     }
   }
 }
