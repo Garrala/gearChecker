@@ -4,6 +4,8 @@ import { MonsterService, Monster } from '../../services/monster.service'
 import { GearService } from '../../services/gear.service' // ✅ Import GearService
 import { NgFor, NgIf } from '@angular/common'
 import { FormsModule } from '@angular/forms'
+import { ActivatedRoute, Router } from '@angular/router';
+import { ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-monster-overview',
@@ -59,10 +61,14 @@ export class MonsterOverviewComponent implements OnInit {
   suggestedItems: { name: string; image: string }[] = []
   allItems: { name: string; image: string }[] = []
 
+  @ViewChild('monsterDetails') monsterDetailsRef!: ElementRef;
+
   constructor(
     private monsterService: MonsterService,
     public gearService: GearService,
-    private cdRef: ChangeDetectorRef
+    private cdRef: ChangeDetectorRef, 
+	private route: ActivatedRoute,
+	private router: Router
   ) {}
 
   ngOnInit() {
@@ -74,8 +80,21 @@ export class MonsterOverviewComponent implements OnInit {
       this.filteredBosses = data
       this.extractAllItems()
       this.isMonsterListLoading = false // ✅ Boss list loaded
+	  
+	  this.route.paramMap.subscribe((params) => {
+        const monsterName = params.get('name');
+        if (monsterName) {
+          const decoded = decodeURIComponent(monsterName);
+          const match = this.monsters.find(m => m.slug === monsterName);
+          if (match) {
+            this.selectMonster(match);
+          }
+        }
+      });
       //console.log('Fetched Monsters Data:', this.monsters)
     })
+	
+	
 
     const savedGear = localStorage.getItem('ownedGear')
     if (savedGear) {
@@ -90,18 +109,34 @@ export class MonsterOverviewComponent implements OnInit {
   selectMonster(monster: Monster) {
     if (this.selectedMonster === monster) {
       // ✅ Clicking again hides the details
+	  this.router.navigate(['/monster']);
       this.selectedMonster = null
       return
     }
 
     this.isMonsterDetailsLoading = true // ✅ Show loading spinner
+    // Delay setting monster and running logic
+  setTimeout(() => {
+    this.selectedMonster = monster;
+    this.selectedBossIndex = 0;
+    this.selectedSetup = Object.keys(monster.gear_setups)[0];
+    this.isMonsterDetailsLoading = false;
+    this.updateLoadout();
+
+    // Ensure DOM is updated before trying to scroll
     setTimeout(() => {
-      this.selectedMonster = monster
-      this.selectedBossIndex = 0
-      this.selectedSetup = Object.keys(monster.gear_setups)[0]
-      this.isMonsterDetailsLoading = false 
-      this.updateLoadout()
-    }, 500) // Simulated loading delay
+      this.cdRef.detectChanges();
+      if (this.monsterDetailsRef) {
+        this.monsterDetailsRef.nativeElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
+    }, 100); // Small extra delay to ensure DOM ready
+
+  }, 500); // Simulate loading delay
+
+  this.router.navigate(['/monster', monster.slug]);
   }
 
   getGearSetups() {

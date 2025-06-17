@@ -62,7 +62,7 @@
   </div>
 
   <!-- Main Content -->
-  <div class="main-content" *ngIf="selectedMonster && !isMonsterDetailsLoading">
+  <div class="main-content" *ngIf="selectedMonster && !isMonsterDetailsLoading" #monsterDetails>
     <!-- Boss Info -->
     <div class="left-column">
       <div class="boss-picture">
@@ -131,13 +131,30 @@
                     src="https://oldschool.runescape.wiki/images/Ranged_icon.png"
                     alt="Ranged"
                   />
+				  <img
+                    *ngIf="key === 'special attack'"
+                    title="Special Attack"
+                    src="https://oldschool.runescape.wiki/images/Special_attack_orb.png?27d06"
+                    alt="Special Attack"
+                  />
                   <img
                     *ngIf="key === 'rockfall'"
                     title="Rockfall"
                     src="https://oldschool.runescape.wiki/images/Pet_rock.png?97482"
                     alt="Rockfall"
                   />
-
+				  <img
+                    *ngIf="key === 'typeless'"
+                    title="Typeless"
+                    src="https://oldschool.runescape.wiki/images/Protect_from_all.png?944a7"
+                    alt="Typeless"
+                  />
+				  <img
+                    *ngIf="key === 'dragonfire'"
+                    title="Dragonfire"
+                    src="https://oldschool.runescape.wiki/images/Fire_Surge.png?76ce4"
+                    alt="Dragonfire"
+                  />
                   {{ getSelectedBoss()?.max_hit?.[key] ?? 'N/A' }}
                 </span>
               </div>
@@ -150,6 +167,16 @@
             />
             <strong>Attack Style:</strong>
             <span class="attack-style-box">
+			
+			<img
+                *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Melee')
+                "
+                src="https://oldschool.runescape.wiki/images/Strength_icon.png?e6e0c"
+                alt="Melee"
+                title="Melee Attack Style"
+                class="attack-style-icon"
+              />
               <img
                 *ngIf="
                   (getSelectedBoss()?.attack_styles || []).includes('Magic')
@@ -169,14 +196,34 @@
                 title="Ranged Attack Style"
                 class="attack-style-icon"
               />
-
-              <img
+			  
+			  <img
                 *ngIf="
-                  (getSelectedBoss()?.attack_styles || []).includes('Melee')
+                  (getSelectedBoss()?.attack_styles || []).includes('Special Attack')
                 "
-                src="https://oldschool.runescape.wiki/images/Strength_icon.png?e6e0c"
-                alt="Melee"
-                title="Melee Attack Style"
+                src="https://oldschool.runescape.wiki/images/Special_attack_orb.png?27d06"
+                alt="Special Attack"
+                title="Special Attack"
+                class="attack-style-icon"
+              />
+
+			  <img
+                *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Dragonfire')
+                "
+                src="https://oldschool.runescape.wiki/images/Fire_Surge.png?76ce4"
+                alt="Dragonfire"
+                title="Dragonfire"
+                class="attack-style-icon"
+              />
+                
+			  <img
+                *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Typeless')
+                "
+                src="https://oldschool.runescape.wiki/images/Protect_from_all.png?944a7"
+                alt="Typeless"
+                title="Typeless Attack Style"
                 class="attack-style-icon"
               />
 
@@ -186,9 +233,11 @@
                 "
                 src="https://oldschool.runescape.wiki/images/Venom_hitsplat.png?1977a"
                 alt="Venom"
-                title="Venom Attack Style"
+                title="Venom"
                 class="attack-style-icon"
               />
+			  
+			  
             </span>
           </div>
 

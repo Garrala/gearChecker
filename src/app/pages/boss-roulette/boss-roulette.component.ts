@@ -5,6 +5,7 @@ import { NgFor, NgIf } from '@angular/common'
 import { FormsModule } from '@angular/forms'
 import confetti from 'canvas-confetti'
 import { GearService } from '../../services/gear.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'boss-roulette',
@@ -42,7 +43,8 @@ export class BossRouletteComponent implements OnInit {
   constructor(
     private monsterService: MonsterService,
     private gearService: GearService,
-    private cdRef: ChangeDetectorRef
+    private cdRef: ChangeDetectorRef,
+	private router: Router
   ) {}
 
   ngOnInit() {
@@ -293,4 +295,14 @@ export class BossRouletteComponent implements OnInit {
       colors: ['#ffcc00', '#ff5733', '#33ff57', '#3383ff', '#ff33a6'],
     })
   }
+  
+  goToBeastiary(boss: Monster) {
+    if (!boss.slug) {
+      const fallbackSlug = boss.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/g, '');
+      this.router.navigate(['/monster', fallbackSlug]);
+    } else {
+      this.router.navigate(['/monster', boss.slug]);
+    }
+  }
+
 }

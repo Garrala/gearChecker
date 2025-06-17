@@ -199,5 +199,12 @@ button {
     transform: scale(1.05); /* Slight pop effect */
     box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); /* Glow effect */
   }
+  
+  .import-export-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
 
 

@@ -104,7 +104,8 @@
         ["Rune arrow"],
         ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
         ["Diamond bolts (e)", "Ruby bolts (e)"]
-      ]
+      ],
+	  "Shield": [[ "N/A" ]]
     }
   }
 }

@@ -7,6 +7,7 @@ export interface Monster {
   name: string
   image: string
   category: string
+  slug: string;
   bosses: {
     name: string
     image: string
@@ -42,11 +43,26 @@ export class MonsterService {
   constructor(private http: HttpClient) {}
 
   getMonsters(): Observable<Monster[]> {
-    return this.http.get<string[]>(this.monsterListUrl).pipe(
-      switchMap((monsterFiles) => {
-        const urls = monsterFiles.map((file) => `assets/monsters/${file}.json`)
-        return forkJoin(urls.map((url) => this.http.get<Monster>(url)))
-      })
+  return this.http.get<string[]>(this.monsterListUrl).pipe(
+    switchMap((monsterFiles) => {
+      const urls = monsterFiles.map((file) => `assets/monsters/${file}.json`)
+      return forkJoin(urls.map((url) => this.http.get<Monster>(url)))
+    }),
+    map((monsters) =>
+      monsters.map((monster) => ({
+        ...monster,
+        slug: this.generateSlug(monster.name),
+      }))
+      )
     )
+  }
+
+  
+  private generateSlug(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/['"]/g, '')           // remove apostrophes and quotes
+    .replace(/[^a-z0-9]+/g, '-')    // replace non-alphanumerics with dash
+    .replace(/(^-|-$)+/g, '')       // remove leading/trailing dashes
   }
 }

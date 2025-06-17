@@ -86,6 +86,9 @@
 
   <div *ngIf="selectedCard" class="result-container">
     <h3>You got {{ selectedCard.name }}!</h3>
-    <button (click)="resetRoulette()">Try Again</button>
+	<div class="button-row">
+	  <button (click)="goToBeastiary(selectedCard)">View in Beastiary</button>
+      <button (click)="resetRoulette()">Try Again</button>
+	</div>
   </div>
 </div>

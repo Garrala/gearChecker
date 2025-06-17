@@ -284,7 +284,7 @@
   background-color: #c2b18d;
   border: 5px solid #575040;
   border-radius: 5px;
-  padding: 40px;
+  padding: 20px;
 }
 
 .npc-dialogue img {
@@ -365,3 +365,11 @@ button {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
+
+.button-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
