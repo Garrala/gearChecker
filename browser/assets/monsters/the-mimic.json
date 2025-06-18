@@ -37,75 +37,165 @@
     }
   ],
   "gear_setups": {
-    "Ranged": {
-      "Weapon": [
-        ["Twisted bow"],
-        ["Bow of faerdhinen"],
-        ["Crystal bow"],
-        ["Zaryte crossbow"],
-        ["Armadyl crossbow"]
-      ],
-      "Special Attack": [["Zaryte crossbow"]],
+    "Magic": {
       "Helmet": [
-        ["Slayer helmet (i)", "Masori mask (f)"],
-        ["Armadyl helmet"],
-        ["Crystal helm"],
-        ["Robin hood hat"],
-        ["Blessed coif"]
+        [ "Ancestral hat" ],
+        [ "Virtus mask" ],
+        [ "Void mage helm" ],
+        [ "Ahrim's hood" ],
+        [ "Infinity hat" ]
       ],
       "Amulet": [
-        ["Necklace of anguish"],
-        ["Bonecrusher necklace"],
-        ["Amulet of fury"],
-        ["Amulet of glory"]
+        [ "Occult necklace" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of magic" ],
+        [ "Amulet of power" ]
       ],
       "Cape": [
-        ["Dizana's quiver"],
-        ["Ava's assembler"],
-        ["Max cape", "Ranging cape"]
+        [ "Imbued god cape" ],
+        [ "God capes" ],
+        [ "Ardougne cloak 4" ],
+        [ "Ardougne cloak 3" ],
+        [ "Ardougne cloak 2" ]
       ],
       "Body": [
-        ["Masori body (f)"],
-        ["Armadyl chestplate"],
-        ["Crystal body"],
-        ["Blessed body"],
-        ["Black d'hide body"]
+        [ "Ancestral robe top" ],
+        [ "Virtus robe top" ],
+        [ "Elite void top", "Void knight top" ],
+        [ "Ahrim's robetop" ],
+        [ "Infinity top" ]
       ],
       "Legs": [
-        ["Masori chaps (f)"],
-        ["Armadyl chainskirt"],
-        ["Crystal legs"],
-        ["Blessed chaps"],
-        ["Black d'hide chaps"]
+        [ "Ancestral robe bottom" ],
+        [ "Virtus robe bottom" ],
+        [ "Elite void robe", "Void knight robe" ],
+        [ "Ahrim's robeskirt" ],
+        [ "Infinity bottoms" ]
       ],
-      "Gloves": [
-        ["Zaryte vambraces"],
-        ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Black d'hide vambraces"]
+      "Weapon": [
+        [ "Tumeken's shadow" ],
+        [ "Sanguinesti staff" ],
+        [ "Trident of the swamp" ],
+        [ "Trident of the seas" ]
       ],
-      "Boots": [
-        ["Pegasian boots"],
-        ["Ranger boots", "Devout boots"],
-        ["Blessed boots"],
-        ["Aranea boots"],
-        ["Mixed hide boots"]
-      ],
-      "Ring": [
-        ["Venator ring"],
-        ["Lightbearer"],
-        ["Ring of the gods", "Archers ring (i)"],
-        ["Ring of shadows", "Brimstone ring"],
-        ["Ring of endurance"]
+      "Shield": [
+        [ "Elidinis' ward (f)" ],
+        [ "Elidinis' ward" ],
+        [ "Arcane spirit shield" ],
+        [ "Ancient wyvern shield", "Mage's book" ],
+        [ "Malediction ward" ]
       ],
       "Ammo": [
-        ["Dragon arrow"],
-        ["Amethyst arrow"],
-        ["Rune arrow"],
-        ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
-        ["Diamond bolts (e)", "Ruby bolts (e)"]
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 2 or 3", "God blessing" ]
       ],
-	  "Shield": [[ "N/A" ]]
+      "Gloves": [
+        [ "Tormented bracelet" ],
+        [ "Void knight gloves" ],
+        [ "Barrows gloves" ],
+        [ "Dragon gloves" ],
+        [ "Rune gloves" ]
+      ],
+      "Boots": [
+        [ "Eternal boots" ],
+        [ "Infinity boots", "Aranea boots" ],
+        [ "Bloodbark boots", "Wizard boots" ],
+        [ "Mystic boots" ],
+        [ "Splitbark boots" ]
+      ],
+      "Ring": [
+        [ "Magus ring" ],
+        [ "Seers ring (i)" ],
+        [ "Brimstone ring" ],
+        [ "Ring of suffering (ri)" ],
+        [ "Lunar ring", "Ring of the gods (i)" ]
+      ],
+      "Special Attack": [
+        [ "Voidwaker" ],
+        [ "Dragon claws" ],
+        [ "Dragon dagger(p++)" ]
+      ]
+    },
+    "Ranged": {
+      "Helmet": [
+        [ "Masori mask (f)" ],
+        [ "Armadyl helmet", "Crystal helm" ],
+        [ "Void ranger helm" ],
+        [ "Blessed coif" ],
+        [ "Archer helm" ]
+      ],
+      "Amulet": [
+        [ "Necklace of anguish" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ]
+      ],
+      "Cape": [
+        [ "Dizana's quiver" ],
+        [ "Ava's assembler" ],
+        [ "Ava's accumulator" ],
+        [ "Ranging cape(t)" ],
+        [ "Ava's attractor" ]
+      ],
+      "Body": [
+        [ "Masori body (f)" ],
+        [ "Armadyl chestplate", "Crystal body" ],
+        [ "Elite void top", "Void knight top" ],
+        [ "Karil's leathertop" ],
+        [ "Blessed body" ]
+      ],
+      "Legs": [
+        [ "Masori chaps (f)" ],
+        [ "Armadyl chainskirt", "Crystal legs" ],
+        [ "Elite void robe", "Void knight robe" ],
+        [ "Karil's leatherskirt" ],
+        [ "Blessed chaps" ]
+      ],
+      "Weapon": [
+        [ "Twisted bow" ],
+        [ "Toxic blowpipe" ],
+        [ "Bow of faerdhinen" ],
+        [ "Toxic blowpipe" ],
+        [ "Zaryte crossbow", "Armadyl crossbow", "Dragon crossbow", "Rune crossbow" ]
+      ],
+      "Shield": [
+        [ "Twisted buckler" ],
+        [ "Dragonfire ward" ],
+        [ "Odium ward" ],
+        [ "Book of law" ],
+        [ "Unholy book" ]
+      ],
+      "Ammo": [
+        [ "Dragon arrow", "Amethyst arrow", "Rune arrow" ],
+        [ "Rada's blessing 4", "Rada's blessing 2 or 3", "God blessing" ],
+        [ "Diamond dragon bolts (e)", "Diamond bolts (e)" ]
+      ],
+      "Gloves": [
+        [ "Zaryte vambraces" ],
+        [ "Barrows gloves" ],
+        [ "Void knight gloves" ],
+        [ "Ranger gloves" ],
+        [ "Blessed vambraces" ]
+      ],
+      "Boots": [
+        [ "Pegasian boots" ],
+        [ "Ranger boots" ],
+        [ "Blessed boots" ],
+        [ "Aranea boots" ],
+        [ "Mixed hide boots" ]
+      ],
+      "Ring": [
+        [ "Venator ring" ],
+        [ "Archers ring (i)" ],
+        [ "Ring of suffering (ri)", "Ring of shadows" ],
+        [ "Brimstone ring" ],
+        [ "Ring of the gods (i)" ]
+      ],
+      "Special Attack": [
+        [ "Voidwaker" ],
+        [ "Dragon claws" ],
+        [ "Dragon dagger(p++)" ]
+      ]
     }
   }
 }

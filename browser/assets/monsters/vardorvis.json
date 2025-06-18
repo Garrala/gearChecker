@@ -37,75 +37,89 @@
     }
   ],
   "gear_setups": {
-    "Ranged": {
-      "Weapon": [
-        ["Twisted bow"],
-        ["Bow of faerdhinen"],
-        ["Crystal bow"],
-        ["Zaryte crossbow"],
-        ["Armadyl crossbow"]
-      ],
-      "Special Attack": [["Zaryte crossbow"]],
+    "Melee": {
       "Helmet": [
-        ["Slayer helmet (i)", "Masori mask (f)"],
-        ["Armadyl helmet"],
-        ["Crystal helm"],
-        ["Robin hood hat"],
-        ["Blessed coif"]
+        [ "Slayer helmet (i)", "Oathplate helm" ],
+        [ "Torva full helm" ],
+        [ "Neitiznot faceguard" ],
+        [ "Serpentine helm" ],
+        [ "Justiciar faceguard" ]
       ],
       "Amulet": [
-        ["Necklace of anguish"],
-        ["Bonecrusher necklace"],
-        ["Amulet of fury"],
-        ["Amulet of glory"]
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of blood fury" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ]
       ],
       "Cape": [
-        ["Dizana's quiver"],
-        ["Ava's assembler"],
-        ["Max cape", "Ranging cape"]
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Mythical cape" ],
+        [ "Ardougne cloak 4" ],
+        [ "Skillcape (t)" ]
       ],
       "Body": [
-        ["Masori body (f)"],
-        ["Armadyl chestplate"],
-        ["Crystal body"],
-        ["Blessed body"],
-        ["Black d'hide body"]
+        [ "Oathplate chest" ],
+        [ "Torva platebody" ],
+        [ "Bandos chestplate" ],
+        [ "Fighter torso", "Blood moon chestplate" ],
+        [ "Justiciar chestguard" ]
       ],
       "Legs": [
-        ["Masori chaps (f)"],
-        ["Armadyl chainskirt"],
-        ["Crystal legs"],
-        ["Blessed chaps"],
-        ["Black d'hide chaps"]
+        [ "Oathplate legs" ],
+        [ "Torva platelegs" ],
+        [ "Bandos tassets", "Justiciar legguards" ],
+        [ "Blood moon tassets", "Barrows legs" ],
+        [ "Obsidian platelegs", "Dragon platelegs" ]
       ],
-      "Gloves": [
-        ["Zaryte vambraces"],
-        ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Black d'hide vambraces"]
+      "Weapon": [
+        [ "Soulreaper axe", "Scythe of vitur" ],
+        [ "Blade of saeldor", "Noxious halberd" ],
+        [ "Abyssal tentacle" ],
+        [ "Abyssal whip" ],
+        [ "Zombie axe" ]
       ],
-      "Boots": [
-        ["Pegasian boots"],
-        ["Ranger boots", "Devout boots"],
-        ["Blessed boots"],
-        ["Aranea boots"],
-        ["Mixed hide boots"]
-      ],
-      "Ring": [
-        ["Venator ring"],
-        ["Lightbearer"],
-        ["Ring of the gods", "Archers ring (i)"],
-        ["Ring of shadows", "Brimstone ring"],
-        ["Ring of endurance"]
+      "Shield": [
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Dragonfire shield" ],
+        [ "Rune defender" ],
+        [ "Adamant defender" ]
       ],
       "Ammo": [
-        ["Dragon arrow"],
-        ["Amethyst arrow"],
-        ["Rune arrow"],
-        ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
-        ["Diamond bolts (e)", "Ruby bolts (e)"]
+        [ "Rada's blessing 4" ],
+        [ "Ghommal's lucky penny" ],
+        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ],
-	  "Shield": [[ "N/A" ]]
+      "Gloves": [
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves" ],
+        [ "Dragon gloves" ],
+        [ "Rune gloves" ],
+        [ "Regen bracelet" ]
+      ],
+      "Boots": [
+        [ "Echo boots" ],
+        [ "Primordial boots" ],
+        [ "Dragon boots", "Guardian boots" ],
+        [ "Aranea boots", "Spiked manacles", "Granite boots" ],
+        [ "Rune boots" ]
+      ],
+      "Ring": [
+        [ "Bellator ring" ],
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "Ring of suffering (ri)" ],
+        [ "Lightbearer" ]
+      ],
+      "Special Attack": [
+        [ "Dragon claws", "Burning claws" ],
+        [ "Voidwaker" ],
+        [ "Ancient godsword" ],
+        [ "Saradomin godsword", "Ursine chainmace" ],
+        [ "Abyssal dagger", "Dragon dagger" ]
+      ]
     }
   }
 }

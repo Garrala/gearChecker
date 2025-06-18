@@ -37,75 +37,79 @@
     }
   ],
   "gear_setups": {
-    "Ranged": {
-      "Weapon": [
-        ["Twisted bow"],
-        ["Bow of faerdhinen"],
-        ["Crystal bow"],
-        ["Zaryte crossbow"],
-        ["Armadyl crossbow"]
-      ],
-      "Special Attack": [["Zaryte crossbow"]],
+    "Magic": {
       "Helmet": [
-        ["Slayer helmet (i)", "Masori mask (f)"],
-        ["Armadyl helmet"],
-        ["Crystal helm"],
-        ["Robin hood hat"],
-        ["Blessed coif"]
+        [ "Slayer helmet (i)" ],
+        [ "Bloodbark helm" ],
+        [ "Mitre" ],
+        [ "Farseer helm" ],
+        [ "Mystic hat" ]
       ],
       "Amulet": [
-        ["Necklace of anguish"],
-        ["Bonecrusher necklace"],
-        ["Amulet of fury"],
-        ["Amulet of glory"]
+        [ "Occult necklace" ],
+        [ "God stole" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ],
+        [ "Unholy symbol" ]
       ],
       "Cape": [
-        ["Dizana's quiver"],
-        ["Ava's assembler"],
-        ["Max cape", "Ranging cape"]
+        [ "Imbued god cape" ],
+        [ "Ardougne cloak" ],
+        [ "God capes" ],
+        [ "Vestment cloak" ]
       ],
       "Body": [
-        ["Masori body (f)"],
-        ["Armadyl chestplate"],
-        ["Crystal body"],
-        ["Blessed body"],
-        ["Black d'hide body"]
+        [ "Bloodbark body" ],
+        [ "Monk's robe top" ],
+        [ "Zamorak monk top" ],
+        [ "Mystic robe top" ],
+        [ "Xerician top" ]
       ],
       "Legs": [
-        ["Masori chaps (f)"],
-        ["Armadyl chainskirt"],
-        ["Crystal legs"],
-        ["Blessed chaps"],
-        ["Black d'hide chaps"]
+        [ "Bloodbark legs" ],
+        [ "Monk's robe" ],
+        [ "Zamorak monk bottom" ],
+        [ "Mystic robe bottom" ],
+        [ "Xerician robe" ]
       ],
-      "Gloves": [
-        ["Zaryte vambraces"],
-        ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Black d'hide vambraces"]
+      "Weapon": [
+        [ "Accursed sceptre", "Thammaron's sceptre" ],
+        [ "Sanguinesti staff" ],
+        [ "Trident of the swamp" ],
+        [ "Trident of the seas" ],
+        [ "Iban's staff" ]
       ],
-      "Boots": [
-        ["Pegasian boots"],
-        ["Ranger boots", "Devout boots"],
-        ["Blessed boots"],
-        ["Aranea boots"],
-        ["Mixed hide boots"]
-      ],
-      "Ring": [
-        ["Venator ring"],
-        ["Lightbearer"],
-        ["Ring of the gods", "Archers ring (i)"],
-        ["Ring of shadows", "Brimstone ring"],
-        ["Ring of endurance"]
+      "Shield": [
+        [ "Elidinis' ward (f)" ],
+        [ "Elidinis' ward", "Malediction ward", "Ancient wyvern shield" ],
+        [ "Book of darkness" ],
+        [ "God book" ],
+        [ "Broodoo shield" ]
       ],
       "Ammo": [
-        ["Dragon arrow"],
-        ["Amethyst arrow"],
-        ["Rune arrow"],
-        ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
-        ["Diamond bolts (e)", "Ruby bolts (e)"]
+        [ "Rada's blessing 4" ],
+        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ],
-	  "Shield": [[ "N/A" ]]
+      "Gloves": [
+        [ "Tormented bracelet" ],
+        [ "Barrows gloves", "Dragon gloves" ],
+        [ "Rune gloves", "Adamant gloves" ],
+        [ "Combat bracelet" ]
+      ],
+      "Boots": [
+        [ "Bloodbark boots", "Mystic boots" ],
+        [ "Ghostly boots" ],
+        [ "Splitbark boots" ],
+        [ "Moonclan boots" ]
+      ],
+      "Ring": [
+        [ "Ring of shadows (uncharged)" ],
+        [ "Explorer's ring 4" ],
+        [ "Beacon ring" ],
+        [ "Ring of recoil" ],
+        [ "Ring of wealth (i)" ]
+      ],
+      "Special Attack": [ [ "N/A" ] ]
     }
   }
 }
