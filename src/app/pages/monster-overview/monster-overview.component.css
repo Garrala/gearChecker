@@ -142,12 +142,13 @@
 
 .character-loadout {
   background: rgba(255, 255, 255, 0.1);
-  padding: 10px;
+/*  padding: 10px;*/
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: 98%;
   position: relative;
 }
 

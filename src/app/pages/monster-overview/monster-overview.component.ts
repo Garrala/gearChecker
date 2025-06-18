@@ -107,36 +107,38 @@ export class MonsterOverviewComponent implements OnInit {
 
   /** ✅ Select a monster and reset boss index **/
   selectMonster(monster: Monster) {
-    if (this.selectedMonster === monster) {
+    const currentSlug = this.selectedMonster?.slug;
+    const isSameMonster = currentSlug === monster.slug;
+    const targetUrl = `/monster/${monster.slug}`;
+
+    if (isSameMonster) {
       // ✅ Clicking again hides the details
-	  this.router.navigate(['/monster']);
       this.selectedMonster = null
       return
     }
 
     this.isMonsterDetailsLoading = true // ✅ Show loading spinner
-    // Delay setting monster and running logic
-  setTimeout(() => {
-    this.selectedMonster = monster;
-    this.selectedBossIndex = 0;
-    this.selectedSetup = Object.keys(monster.gear_setups)[0];
-    this.isMonsterDetailsLoading = false;
-    this.updateLoadout();
 
-    // Ensure DOM is updated before trying to scroll
+    if (this.router.url !== targetUrl) {
+      this.router.navigate([targetUrl]);
+    }
+
+    // Delay setting monster and running logic
     setTimeout(() => {
-      this.cdRef.detectChanges();
-      if (this.monsterDetailsRef) {
-        this.monsterDetailsRef.nativeElement.scrollIntoView({
+      this.selectedMonster = monster;
+      this.selectedBossIndex = 0;
+      this.selectedSetup = Object.keys(monster.gear_setups)[0];
+      this.isMonsterDetailsLoading = false;
+      this.updateLoadout();
+
+      setTimeout(() => {
+        this.cdRef.detectChanges();
+        this.monsterDetailsRef?.nativeElement.scrollIntoView({
           behavior: 'smooth',
           block: 'start',
         });
-      }
-    }, 100); // Small extra delay to ensure DOM ready
-
-  }, 500); // Simulate loading delay
-
-  this.router.navigate(['/monster', monster.slug]);
+      }, 100);
+    }, 100);
   }
 
   getGearSetups() {
@@ -147,9 +149,60 @@ export class MonsterOverviewComponent implements OnInit {
 
   getGearSlots(): string[] {
     if (!this.selectedMonster || !this.selectedMonster.gear_setups) return []
-    return Object.keys(
+    const rawSlots = Object.keys(
       this.selectedMonster.gear_setups[this.selectedSetup] || {}
     )
+
+    const preferredOrder = [
+      'Weapon',
+      'Special Attack',
+      'Shield',
+      'Helmet',
+      'Amulet',
+      'Cape',
+      'Body',
+      'Legs',
+      'Gloves',
+      'Boots',
+      'Ring',
+      'Ammo',
+    ]
+
+    // Custom sort: by index in preferredOrder, unknowns at end, N/A at very end
+    return rawSlots
+      .sort((a, b) => {
+        const aIndex = preferredOrder.indexOf(a)
+        const bIndex = preferredOrder.indexOf(b)
+
+        // First, prioritize defined order
+        if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex
+        if (aIndex !== -1) return -1
+        if (bIndex !== -1) return 1
+
+        // Otherwise keep default
+        return a.localeCompare(b)
+      })
+      .sort((a, b) => {
+        const isAEmpty =
+          this.selectedMonster!.gear_setups[this.selectedSetup][a].every(
+            (group: string[] | string) =>
+              Array.isArray(group)
+                ? group.every((item) => item === 'N/A')
+                : group === 'N/A'
+          )
+        const isBEmpty =
+          this.selectedMonster!.gear_setups[this.selectedSetup][b].every(
+            (group: string[] | string) =>
+              Array.isArray(group)
+                ? group.every((item) => item === 'N/A')
+                : group === 'N/A'
+          )
+
+        // Push all-N/A slots to bottom
+        if (isAEmpty && !isBEmpty) return 1
+        if (!isAEmpty && isBEmpty) return -1
+        return 0
+      })
   }
 
   isGearOwned(slot: string): boolean {
@@ -456,7 +509,7 @@ export class MonsterOverviewComponent implements OnInit {
     this.itemSearchQuery = item.name
     this.suggestedItems = []
     this.filterByItem()
-  }
+  }                                      
 
   /** Filter bosses based on selected gear item **/
   filterByItem() {

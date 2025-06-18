@@ -37,75 +37,137 @@
     }
   ],
   "gear_setups": {
-    "Ranged": {
+    "Melee": {
       "Weapon": [
-        ["Twisted bow"],
-        ["Bow of faerdhinen"],
-        ["Crystal bow"],
-        ["Zaryte crossbow"],
-        ["Armadyl crossbow"]
+        [ "Scythe of vitur", "Inquisitor's mace" ],
+        [ "Soulreaper axe" ],
+        [ "Abyssal bludgeon" ],
+        [ "Dual macuahuitl", "Ursine chainmace (u)", "Sarachnis cudgel" ],
+        [ "Zombie axe", "Zamorakian hasta" ]
       ],
-      "Special Attack": [["Zaryte crossbow"]],
+      "Special Attack": [
+        [ "Elder maul", "Saradomin godsword" ],
+        [ "Dragon warhammer" ],
+        [ "Bandos godsword" ],
+        [ "Dragon claws" ],
+        [ "Dragon mace" ]
+      ],
+      "Shield": [
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Rune defender" ],
+        [ "Dragonfire shield" ],
+        [ "Toktz-ket-xil" ]
+      ],
       "Helmet": [
-        ["Slayer helmet (i)", "Masori mask (f)"],
-        ["Armadyl helmet"],
-        ["Crystal helm"],
-        ["Robin hood hat"],
-        ["Blessed coif"]
+        [ "Inquisitor's great helm" ],
+        [ "Torva full helm" ],
+        [ "Neitiznot faceguard" ],
+        [ "Serpentine helm", "Blood moon helm" ],
+        [ "Helm of neitiznot" ]
       ],
       "Amulet": [
-        ["Necklace of anguish"],
-        ["Bonecrusher necklace"],
-        ["Amulet of fury"],
-        ["Amulet of glory"]
+        [ "Amulet of rancour" ],
+        [ "Amulet of blood fury" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ]
       ],
       "Cape": [
-        ["Dizana's quiver"],
-        ["Ava's assembler"],
-        ["Max cape", "Ranging cape"]
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Mythical cape" ],
+        [ "Obsidian cape" ]
       ],
       "Body": [
-        ["Masori body (f)"],
-        ["Armadyl chestplate"],
-        ["Crystal body"],
-        ["Blessed body"],
-        ["Black d'hide body"]
+        [ "Inquisitor's hauberk" ],
+        [ "Torva platebody" ],
+        [ "Bandos chestplate" ],
+        [ "Blood moon chestplate" ],
+        [ "Fighter torso" ]
       ],
       "Legs": [
-        ["Masori chaps (f)"],
-        ["Armadyl chainskirt"],
-        ["Crystal legs"],
-        ["Blessed chaps"],
-        ["Black d'hide chaps"]
+        [ "Inquisitor's plateskirt" ],
+        [ "Torva platelegs" ],
+        [ "Bandos tassets" ],
+        [ "Blood moon tassets" ],
+        [ "Obsidian platelegs" ]
       ],
       "Gloves": [
-        ["Zaryte vambraces"],
-        ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Black d'hide vambraces"]
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves" ],
+        [ "Granite gloves" ],
+        [ "Combat bracelet" ]
       ],
       "Boots": [
-        ["Pegasian boots"],
-        ["Ranger boots", "Devout boots"],
-        ["Blessed boots"],
-        ["Aranea boots"],
-        ["Mixed hide boots"]
+        [ "Primordial boots" ],
+        [ "Dragon boots" ],
+        [ "Echo boots" ],
+        [ "Guardian boots" ]
       ],
       "Ring": [
-        ["Venator ring"],
-        ["Lightbearer"],
-        ["Ring of the gods", "Archers ring (i)"],
-        ["Ring of shadows", "Brimstone ring"],
-        ["Ring of endurance"]
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "Brimstone ring" ],
+        [ "Tyrannical ring (i)", "Ring of shadows" ],
+        [ "Ring of suffering (i)" ]
       ],
       "Ammo": [
-        ["Dragon arrow"],
-        ["Amethyst arrow"],
-        ["Rune arrow"],
-        ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
-        ["Diamond bolts (e)", "Ruby bolts (e)"]
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3" ],
+        [ "God blessing" ]
+      ]
+    },
+    "Mage": {
+      "Weapon": [
+        [ "Tumeken's shadow", "Harmonised nightmare staff" ],
+        [ "Sanguinesti staff" ],
+        [ "Twinflame staff" ],
+        [ "Trident of the swamp" ],
+        [ "Trident of the seas" ]
       ],
-	  "Shield": [[ "N/A" ]]
+      "Shield": [
+        [ "Tome of fire" ],
+        [ "Elidinis' ward (f)" ],
+        [ "Tome of fire" ],
+        [ "Arcane spirit shield", "Elidinis' ward" ],
+        [ "Mage's book", "Ancient wyvern shield", "Malediction ward" ]
+      ],
+      "Special Attack": [ "N/A" ],
+      "Helmet": [
+        [ "Ancestral hat" ],
+        [ "Virtus mask" ],
+        [ "Ahrim's hood" ]
+      ],
+      "Amulet": [
+        [ "Occult necklace" ]
+      ],
+      "Cape": [
+        [ "Imbued god cape" ]
+      ],
+      "Body": [
+        [ "Ancestral robe top" ],
+        [ "Virtus robe top" ],
+        [ "Ahrim's robetop" ]
+      ],
+      "Legs": [
+        [ "Ancestral robe bottom" ],
+        [ "Virtus robe bottom" ],
+        [ "Ahrim's robeskirt" ]
+      ],
+      "Gloves": [
+        [ "Tormented bracelet" ]
+      ],
+      "Boots": [
+        [ "Eternal boots" ]
+      ],
+      "Ring": [
+        [ "Magus ring" ],
+        [ "Lightbearer" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ]
+      ]
     }
   }
 }

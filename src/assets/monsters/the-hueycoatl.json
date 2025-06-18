@@ -37,75 +37,85 @@
     }
   ],
   "gear_setups": {
-    "Ranged": {
-      "Weapon": [
-        ["Twisted bow"],
-        ["Bow of faerdhinen"],
-        ["Crystal bow"],
-        ["Zaryte crossbow"],
-        ["Armadyl crossbow"]
-      ],
-      "Special Attack": [["Zaryte crossbow"]],
+    "Melee": {
       "Helmet": [
-        ["Slayer helmet (i)", "Masori mask (f)"],
-        ["Armadyl helmet"],
-        ["Crystal helm"],
-        ["Robin hood hat"],
-        ["Blessed coif"]
+        [ "Inquisitor's great helm", "Torva full helm" ],
+        [ "Neitiznot faceguard" ],
+        [ "Serpentine helm", "Blood moon helm" ],
+        [ "Helm of neitiznot", "Obsidian helmet" ],
+        [ "Proselyte sallet", "Initiate sallet" ]
       ],
       "Amulet": [
-        ["Necklace of anguish"],
-        ["Bonecrusher necklace"],
-        ["Amulet of fury"],
-        ["Amulet of glory"]
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ]
       ],
       "Cape": [
-        ["Dizana's quiver"],
-        ["Ava's assembler"],
-        ["Max cape", "Ranging cape"]
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Mythical cape" ],
+        [ "Ardougne cloak" ],
+        [ "N/A" ]
       ],
       "Body": [
-        ["Masori body (f)"],
-        ["Armadyl chestplate"],
-        ["Crystal body"],
-        ["Blessed body"],
-        ["Black d'hide body"]
+        [ "Inquisitor's hauberk", "Torva platebody" ],
+        [ "Bandos chestplate", "Blood moon chestplate", "Fighter torso" ],
+        [ "Obsidian platebody", "Mixed hide top" ],
+        [ "Proselyte hauberk" ],
+        [ "Initiate hauberk", "Monk's robe top" ]
       ],
       "Legs": [
-        ["Masori chaps (f)"],
-        ["Armadyl chainskirt"],
-        ["Crystal legs"],
-        ["Blessed chaps"],
-        ["Black d'hide chaps"]
+        [ "Inquisitor's plateskirt", "Torva platelegs" ],
+        [ "Bandos tassets", "Blood moon tassets" ],
+        [ "Obsidian platelegs", "Fremennik kilt" ],
+        [ "Proselyte cuisse" ],
+        [ "Initiate cuisse", "Monk's robe" ]
+      ],
+      "Weapon": [
+        [ "Scythe of vitur", "Dragon hunter lance" ],
+        [ "Inquisitor's mace", "Soulreaper axe" ],
+        [ "Dual macuahuitl" ],
+        [ "Abyssal bludgeon", "Zamorakian hasta", "Ursine chainmace (u)" ],
+        [ "Sarachnis cudgel", "Zombie axe", "Dragon mace" ]
+      ],
+      "Shield": [
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Rune defender" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Special Attack": [
+        [ "Dragon claws" ],
+        [ "Burning claws" ],
+        [ "Ursine chainmace" ],
+        [ "Dragon dagger" ],
+        [ "N/A" ]
       ],
       "Gloves": [
-        ["Zaryte vambraces"],
-        ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Black d'hide vambraces"]
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves" ],
+        [ "Rune gloves" ],
+        [ "Regen bracelet" ],
+        [ "Combat bracelet" ]
       ],
       "Boots": [
-        ["Pegasian boots"],
-        ["Ranger boots", "Devout boots"],
-        ["Blessed boots"],
-        ["Aranea boots"],
-        ["Mixed hide boots"]
+        [ "Primordial boots" ],
+        [ "Dragon boots" ],
+        [ "Aranea boots" ],
+        [ "Rune boots" ],
+        [ "Mixed hide boots" ]
       ],
       "Ring": [
-        ["Venator ring"],
-        ["Lightbearer"],
-        ["Ring of the gods", "Archers ring (i)"],
-        ["Ring of shadows", "Brimstone ring"],
-        ["Ring of endurance"]
-      ],
-      "Ammo": [
-        ["Dragon arrow"],
-        ["Amethyst arrow"],
-        ["Rune arrow"],
-        ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
-        ["Diamond bolts (e)", "Ruby bolts (e)"]
-      ],
-	  "Shield": [[ "N/A" ]]
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "Lightbearer" ],
+        [ "Ring of shadows" ],
+        [ "Explorer's ring" ]
+      ]
     }
+
   }
 }

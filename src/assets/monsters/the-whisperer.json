@@ -37,75 +37,83 @@
     }
   ],
   "gear_setups": {
-    "Ranged": {
-      "Weapon": [
-        ["Twisted bow"],
-        ["Bow of faerdhinen"],
-        ["Crystal bow"],
-        ["Zaryte crossbow"],
-        ["Armadyl crossbow"]
-      ],
-      "Special Attack": [["Zaryte crossbow"]],
+    "Magic": {
       "Helmet": [
-        ["Slayer helmet (i)", "Masori mask (f)"],
-        ["Armadyl helmet"],
-        ["Crystal helm"],
-        ["Robin hood hat"],
-        ["Blessed coif"]
+        [ "Slayer helmet (i)", "Ancestral hat" ],
+        [ "Virtus mask" ],
+        [ "Ahrim's hood", "Blue moon helm", "Bloodbark helm" ],
+        [ "Void mage helm" ],
+        [ "Dagon'hai hat", "Elder chaos hood" ]
       ],
       "Amulet": [
-        ["Necklace of anguish"],
-        ["Bonecrusher necklace"],
-        ["Amulet of fury"],
-        ["Amulet of glory"]
+        [ "Occult necklace" ],
+        [ "Amulet of fury", "Amulet of glory" ]
       ],
       "Cape": [
-        ["Dizana's quiver"],
-        ["Ava's assembler"],
-        ["Max cape", "Ranging cape"]
+        [ "Imbued god cape" ],
+        [ "God cape" ],
+        [ "Ardougne cloak 4" ],
+        [ "Skillcape" ]
       ],
       "Body": [
-        ["Masori body (f)"],
-        ["Armadyl chestplate"],
-        ["Crystal body"],
-        ["Blessed body"],
-        ["Black d'hide body"]
+        [ "Ancestral robe top" ],
+        [ "Virtus robe top" ],
+        [ "Ahrim's robetop", "Blue moon chestplate", "Bloodbark body" ],
+        [ "Elite void top" ],
+        [ "Dagon'hai robe top", "Elder chaos top" ]
       ],
       "Legs": [
-        ["Masori chaps (f)"],
-        ["Armadyl chainskirt"],
-        ["Crystal legs"],
-        ["Blessed chaps"],
-        ["Black d'hide chaps"]
+        [ "Ancestral robe bottom" ],
+        [ "Virtus robe bottom" ],
+        [ "Ahrim's robeskirt", "Blue moon tassets", "Bloodbark legs" ],
+        [ "Elite void robe" ],
+        [ "Dagon'hai robe bottom", "Elder chaos robe" ]
       ],
-      "Gloves": [
-        ["Zaryte vambraces"],
-        ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Black d'hide vambraces"]
+      "Weapon": [
+        [ "Tumeken's shadow", "Venator bow" ],
+        [ "Sanguinesti staff", "Trident of the swamp" ],
+        [ "Trident of the seas" ],
+        [ "Harmonised nightmare staff" ],
+        [ "Warped sceptre" ]
       ],
-      "Boots": [
-        ["Pegasian boots"],
-        ["Ranger boots", "Devout boots"],
-        ["Blessed boots"],
-        ["Aranea boots"],
-        ["Mixed hide boots"]
-      ],
-      "Ring": [
-        ["Venator ring"],
-        ["Lightbearer"],
-        ["Ring of the gods", "Archers ring (i)"],
-        ["Ring of shadows", "Brimstone ring"],
-        ["Ring of endurance"]
+      "Shield": [
+        [ "Elidinis' ward (f)" ],
+        [ "Arcane spirit shield", "Elidinis' ward", "Tome of fire" ],
+        [ "Ancient wyvern shield", "Malediction ward", "Mage's book" ],
+        [ "Book of darkness" ],
+        [ "Unholy book" ]
       ],
       "Ammo": [
-        ["Dragon arrow"],
-        ["Amethyst arrow"],
-        ["Rune arrow"],
-        ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
-        ["Diamond bolts (e)", "Ruby bolts (e)"]
+        [ "Rada's blessing 4", "Rune arrow" ],
+        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ],
-	  "Shield": [[ "N/A" ]]
+      "Gloves": [
+        [ "Tormented bracelet" ],
+        [ "Void knight gloves" ],
+        [ "Barrows gloves" ],
+        [ "Regen bracelet" ],
+        [ "Combat bracelet" ]
+      ],
+      "Boots": [
+        [ "Eternal boots" ],
+        [ "Infinity boots", "Aranea boots" ],
+        [ "Bloodbark boots" ],
+        [ "Boots of brimstone" ],
+        [ "Wizard boots" ]
+      ],
+      "Ring": [
+        [ "Magus ring" ],
+        [ "Lightbearer" ],
+        [ "Ring of the gods (i)" ],
+        [ "Ring of suffering (ri)" ],
+        [ "Seers ring (i)" ]
+      ],
+      "Special Attack": [
+        [ "Eldritch nightmare staff" ],
+        [ "Accursed sceptre" ],
+        [ "Toxic blowpipe", "Seercull" ],
+        [ "Rune thrownaxe" ]
+      ]
     }
   }
 }

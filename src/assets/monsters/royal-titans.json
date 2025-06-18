@@ -68,56 +68,205 @@
     }
   ],
   "gear_setups": {
-    "Best in slot": {
-      "Weapon": [
-        [ "Scythe of vitur", "Soulreaper axe", "Toxic blowpipe", "Twiflange staff" ],
-        [ "Inquisitor's mace", "Bow of faerdhinen", "Purging staff" ],
-        [ "Dual macuahuitl", "Eclipse atlatl", "Blue moon spear" ],
-        [ "Noxious halberd", "Scorching bow", "Kodai wand" ],
-        [ "Ghrazi rapier", "Armadyl crossbow", "Ancient sceptre" ]
-      ],
-      "Shield": [
-        [ "Avernic defender", "Twisted buckler" ],
-        [ "Dragon defender" ]
-      ],
-      "Special Attack": [
-        [ "Dragon claws", "Zaryte crossbow" ],
-        [ "Burning claws" ],
-        [ "Crystal halberd" ],
-        [ "Dragon dagger(p++)" ]
-      ],
+    "Melee (Low Level)": {
       "Helmet": [
         [ "Slayer helmet (i)" ],
-        [ "Torva full helm", "Masori mask (f)", "Ancestral hat" ],
-        [ "Inquisitor's great helm", "Crystal helm", "Virtus mask" ],
-        [ "Blood moon helm", "Armadyl helmet", "Blue moon helm" ],
-        [ "Neitiznot faceguard", "Eclipse moon helm" ]
+        [ "Blood moon helm" ],
+        [ "Helm of neitiznot", "Eclipse moon helm" ]
       ],
       "Amulet": [
-        [ "Amulet of rancour", "Necklace of anguish", "Occult necklace" ],
-        [ "Amulet of torture", "Amulet of fury" ],
-        [ "Dragonbone necklace" ],
+        [ "Amulet of fury" ],
         [ "Amulet of glory" ]
       ],
       "Cape": [
-        [ "Infernal cape", "Dizana's quiver", "Imbued god cape" ],
-        [ "Fire cape", "Ava's assembler", "God cape" ],
+        [ "Fire cape" ],
         [ "Mythical cape" ]
       ],
       "Body": [
-        [ "Torva platebody", "Masori body (f)", "Ancestral robe top" ],
-        [ "Inquisitor's hauberk", "Crystal body", "Virtus robe top" ],
-        [ "Blood moon chestplate", "Armadyl chestplate", "Blue moon chestplate" ],
-        [ "Bandos chestplate", "Eclipse moon chestplate" ]
+        [ "Blood moon chestplate" ],
+        [ "Fighter torso" ],
+        [ "Eclipse moon chestplate", "Blue moon chestplate" ]
       ],
       "Legs": [
-        [ "Torva platelegs", "Masori chaps (f)", "Ancestral robe bottom" ],
-        [ "Inquisitor's plateskirt", "Crystal legs", "Virtus robe bottom" ],
-        [ "Blood moon tassets", "Armadyl chainskirt", "Blue moon tassets" ],
-        [ "Bandos tassets", "Eclipse moon tassets" ]
+        [ "Blood moon tassets" ],
+        [ "Eclipse moon tassets", "Blue moon tassets" ],
+        [ "Obsidian platelegs" ]
+      ],
+      "Weapon": [
+        [ "Dual macuahuitl" ],
+        [ "Abyssal tentacle", "Abyssal whip" ],
+        [ "Zombie axe", "Sarachnis cudgel" ],
+        [ "Dragon scimitar" ]
+      ],
+      "Shield": [
+        [ "Dragon defender" ],
+        [ "Rune defender" ]
       ],
       "Gloves": [
-        [ "Ferocious gloves", "Zaryte vambraces", "Tormented bracelet" ],
+        [ "Barrows gloves" ],
+        [ "Combat bracelet" ]
+      ],
+      "Boots": [
+        [ "Dragon boots" ],
+        [ "Rune boots", "Climbing boots" ]
+      ],
+      "Ring": [
+        [ "Berserker ring (i)" ],
+        [ "Lightbearer" ],
+        [ "Warrior ring (i)" ],
+        [ "Explorer's ring" ]
+      ],
+      "Ammo": [ "N/A" ],
+      "Special Attack": [
+        [ "Dragon dagger", "Crystal halberd" ],
+        [ "Dragon halberd" ]
+      ]
+    },
+    "Ranged (Low Level)": {
+      "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Eclipse moon helm" ]
+      ],
+      "Amulet": [
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ]
+      ],
+      "Cape": [
+        [ "Ava's assembler" ],
+        [ "Ava's accumulator" ]
+      ],
+      "Body": [
+        [ "Eclipse moon chestplate" ],
+        [ "Ancient d'hide body", "Hueycoatl hide body" ],
+        [ "Karil's leathertop" ],
+        [ "Black d'hide body" ]
+      ],
+      "Legs": [
+        [ "Eclipse moon tassets" ],
+        [ "Ancient chaps", "Hueycoatl hide chaps" ],
+        [ "Karil's leatherskirt" ],
+        [ "Black d'hide chaps" ]
+      ],
+      "Weapon": [
+        [ "Eclipse attlatl", "Toxic blowpipe" ],
+        [ "Dragon crossbow", "Rune crossbow" ],
+        [ "Hunters' sunlight crossbow" ],
+        [ "Karil's crossbow", "Magic shortbow (i)" ]
+      ],
+      "Shield": [ "N/A" ],
+      "Gloves": [
+        [ "Barrows gloves" ],
+        [ "Combat bracelet" ]
+      ],
+      "Boots": [
+        [ "Aranea boots" ],
+        [ "Dragon boots" ]
+      ],
+      "Ring": [
+        [ "Berserker ring (i)" ],
+        [ "Lightbearer" ]
+      ],
+      "Ammo": [
+        [ "Attlatl dart", "Blessing" ],
+        [ "Ruby dragon bolts (e)", "Ruby bolts (e)" ],
+        [ "Moonlight antler bolts", "Sunlight antler bolts" ],
+        [ "Bolt rack", "Amethyst arrow", "Rune arrow" ]
+      ],
+      "Special Attack": [
+        [ "Toxic blowpipe" ],
+        [ "Magic shortbow (i)" ]
+      ]
+    },
+    "Minimal gear switching": {
+      "Helmet": [
+        [ "Void melee helm", "Void ranger helm", "Void mage helm" ],
+        [ "Blue moon helm" ]
+      ],
+      "Amulet": [
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ]
+      ],
+      "Cape": [
+        [ "Ava's assembler" ],
+        [ "Ava's accumulator" ]
+      ],
+      "Body": [
+        [ "Elite void top", "Void knight top" ],
+        [ "Blue moon chestplate" ]
+      ],
+      "Legs": [
+        [ "Elite void robe", "Void knight robe" ],
+        [ "Blue moon tassets" ]
+      ],
+      "Weapon": [
+        [ "Twinflame staff" ],
+        [ "Purging staff" ],
+        [ "Kodai wand" ],
+        [ "Ancient sceptre", "Master wand" ],
+        [ "Ancient staff" ]
+      ],
+      "Shield": [
+        [ "Dragon defender" ],
+        [ "Mage's book" ],
+        [ "Unholy book", "Book of darkness" ]
+      ],
+      "Gloves": [
+        [ "Void knight gloves" ],
+        [ "Barrows gloves" ]
+      ],
+      "Boots": [
+        [ "Aranea boots" ],
+        [ "Dragon boots" ],
+        [ "Climbing boots" ]
+      ],
+      "Ring": [ "N/A" ],
+      "Ammo": [ "N/A" ],
+      "Special Attack": [ "N/A" ]
+    },
+    "Melee (High level)": {
+      "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Torva full helm", "Oathplate helm" ],
+        [ "Inquisitor's great helm" ],
+        [ "Neitiznot faceguard", "Serpentine helm" ],
+        [ "Blood moon helm" ]
+      ],
+      "Amulet": [
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of fury" ]
+      ],
+      "Cape": [
+        [ "Infernal cape" ],
+        [ "Fire cape" ]
+      ],
+      "Body": [
+        [ "Torva platebody", "Oathplate chest" ],
+        [ "Inquisitor's hauberk" ],
+        [ "Blood moon chestplate", "Bandos chestplate", "Fighter torso" ]
+      ],
+      "Legs": [
+        [ "Torva platelegs", "Oathplate legs" ],
+        [ "Inquisitor's plateskirt" ],
+        [ "Blood moon tassets", "Bandos tassets" ]
+      ],
+      "Weapon": [
+        [ "Scythe of vitur" ],
+        [ "Inquisitor's mace", "Soulreaper axe" ],
+        [ "Blade of saeldor", "Ghrazi rapier" ],
+        [ "Noxious halberd", "Dual macuahuitl" ],
+        [ "Abyssal tentacle" ]
+      ],
+      "Shield": [
+        [ "Avernic defender" ],
+        [ "Dragon defender" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3" ]
+      ],
+      "Gloves": [
+        [ "Ferocious gloves" ],
         [ "Barrows gloves" ]
       ],
       "Boots": [
@@ -130,14 +279,63 @@
         [ "Berserker ring (i)" ],
         [ "Lightbearer" ]
       ],
-      "Ammo": [
-        ["Dragon arrow"],
-        ["Amethyst arrow"],
-        ["Rune arrow"],
-        ["Diamond dragon bolts (e)", "Ruby dragon bolts (e)"],
-        ["Diamond bolts (e)", "Ruby bolts (e)"]
+      "Special Attack": [
+        [ "Dragon claws" ],
+        [ "Burning claws" ],
+        [ "Crystal halberd" ]
+      ]
+    },
+    "Ranged (High Level)": {
+      "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Masori mask (f)" ],
+        [ "Crystal helm" ],
+        [ "Eclipse moon helm" ]
       ],
-	  "Shield": [[ "N/A" ]]
+      "Amulet": [
+        [ "Necklace of anguish" ],
+        [ "Amulet of fury" ]
+      ],
+      "Cape": [
+        [ "Dizana's quiver" ],
+        [ "Ava's assembler" ]
+      ],
+      "Body": [
+        [ "Masori body (f)" ],
+        [ "Masori body" ],
+        [ "Crystal body" ]
+      ],
+      "Legs": [
+        [ "Masori chaps (f)" ],
+        [ "Masori chaps" ],
+        [ "Crystal legs" ]
+      ],
+      "Weapon": [
+        [ "Toxic blowpipe" ],
+        [ "Bow of faerdhinen" ],
+        [ "Twisted bow" ],
+        [ "Eclipse attlatl", "Zaryte crossbow" ],
+        [ "Armadyl crossbow" ]
+      ],
+      "Shield": [
+        [ "Twisted buckler" ],
+        [ "Dragonfire ward" ],
+        [ "Odium ward" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4", "Ruby dragon bolts (e)" ],
+        [ "Blessing" ],
+        [ "Attlatl dart" ]
+      ],
+      "Gloves": [
+        [ "Zaryte vambraces" ],
+        [ "Barrows gloves" ]
+      ],
+      "Boots": [ "N/A" ],
+      "Ring": [ "N/A" ],
+      "Special Attack": [
+        [ "Zaryte crossbow" ]
+      ]
     }
   }
 }
