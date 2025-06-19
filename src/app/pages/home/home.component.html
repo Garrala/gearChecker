@@ -14,10 +14,11 @@
         <span>Gear Management</span>
       </h2>
       <p>
-        Select the weapons, armor, and gear you own. This lets the app recommend the best setup available to you when facing any boss.
-        Easily import/export your gear list for backup or sharing.
+        Mark the weapons, armor, and gear you own.
+        Instantly see which setups work best for your inventory.
+        Import or export your gear list anytime.
       </p>
-      <a routerLink="/gear" (click)="navigate('/gear', $event)" class="nav-link">→ Manage My Gear</a>
+      <a routerLink="/gear" (click)="navigate('/gear', $event)" class="nav-link">Manage My Gear</a>
     </div>
 
     <!-- Beastiary -->
@@ -27,9 +28,10 @@
         <span>Beastiary</span>
       </h2>
       <p>
-        Browse a curated list of bosses with detailed stats, weaknesses, and defense values. Instantly see your optimal gear setup for each boss.
+        Browse every boss with detailed stats, weaknesses, and gear recommendations.
+        Tap any monster to dive into optimal setups and loadouts.
       </p>
-      <a routerLink="/monster" (click)="navigate('/monster', $event)" class="nav-link">→ View Monsters</a>
+      <a routerLink="/monster" (click)="navigate('/monster', $event)" class="nav-link">View Monsters</a>
     </div>
 
     <!-- Boss Roulette -->
@@ -39,9 +41,10 @@
         <span>Boss Roulette</span>
       </h2>
       <p>
-        Can’t decide who to fight next? Let the Mysterious Old Man choose for you. Pick a few bosses and spin the wheel for your next challenge.
+        Can't decide who to fight? Let the Mysterious Old Man choose for you.
+        Pick a few bosses and spin the wheel to reveal your next target.
       </p>
-      <a routerLink="/roulette" (click)="navigate('/roulette', $event)" class="nav-link">→ Try the Roulette</a>
+      <a routerLink="/roulette" (click)="navigate('/roulette', $event)" class="nav-link">Try the Roulette</a>
     </div>
   </div>
 </div>

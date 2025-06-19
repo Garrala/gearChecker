@@ -244,17 +244,18 @@ button {
   transition: transform 0.3s ease;
 }
 
+.import-export-controls button {
+  width: 90%;
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
   .import-export-controls {
     flex-direction: column;
     align-items: center;
     gap: 10px;
   }
-
-  .import-export-controls button {
-    width: 90%;
-    max-width: 300px;
-  }
 }
-
 

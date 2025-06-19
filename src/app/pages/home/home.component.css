@@ -14,7 +14,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 0;
 }
 
@@ -83,19 +83,36 @@
   }
 
 .nav-link {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #333;
+  display: block; /* make it a block element so width applies */
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto; /* center horizontally */
+  padding: 12px 18px;
+  background: linear-gradient(to bottom, #333, #111);
   color: white;
+  text-align: center;
+  border: 2px solid #666;
   border-radius: 6px;
+  font-weight: bold;
   text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
   transition: all 0.2s ease-in-out;
 }
 
   .nav-link:hover {
-    background: limegreen;
-    color: black;
+    background: linear-gradient(to bottom, #444, #222);
+    border-color: rgba(0, 255, 0, 0.3);
+    color: white;
   }
+
+  .nav-link:active {
+    background: rgba(0, 255, 0, 0.3);
+    border-color: rgba(0, 255, 0, 0.3);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5);
+  }
+
 
 .feature-icon {
   width: 40px;
@@ -104,6 +121,25 @@
   margin-right: 8px;
   border-radius: 4px;
   object-fit: contain;
+}
+
+.home-button {
+  width: 100%;
+  max-width: 220px;
+  min-width: 180px;
+}
+
+button.home-button {
+  text-align: center;
+  margin: 0 auto;
+}
+.tagline {
+  font-style: italic;
+  color: #b1fcb1; /* light mint green */
+  font-size: 1.4rem;
+  text-shadow: 0 0 6px #59d659; /* cooler, less neon glow */
+  min-height: 1.5em;
+  transition: opacity 0.4s ease-in-out;
 }
 
 

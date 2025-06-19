@@ -31,20 +31,16 @@ export class GearService {
   }
 
   getGearData(): Observable<{ [slot: string]: { [item: string]: any } }> {
-    console.log('Fetching gear data from JSON files...')
     const requests = this.gearFiles.map((file) => {
-      console.log(`Requesting: ${this.basePath + file}`)
       return this.http.get<{ [item: string]: any }>(this.basePath + file)
     })
 
     return forkJoin(requests).pipe(
       map((responses) => {
-        console.log('Received all gear JSON responses.')
         const gearData: { [slot: string]: { [item: string]: any } } = {}
         this.gearFiles.forEach((file, index) => {
           const slotName = file.replace('.json', '') // Extract slot name from filename
           gearData[slotName] = responses[index]
-          console.log(`Loaded data for category: ${slotName}`, responses[index])
         })
         return gearData
       })
@@ -101,8 +97,7 @@ export class GearService {
       Shield: 'shields',
     }
 
-    const category = slotMap[slot] || slot.toLowerCase() // 🔍 Normalize slot names
-    //console.log(`Slot: ${slot} → Category: ${category}`); // ✅ Debugging
+    const category = slotMap[slot] || slot.toLowerCase() 
     return category
   }
 }

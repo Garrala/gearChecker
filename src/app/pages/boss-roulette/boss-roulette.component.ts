@@ -61,8 +61,7 @@ export class BossRouletteComponent implements OnInit {
   /** ✅ Toggle Boss Selection **/
   toggleBossSelection(boss: Monster) {
     boss.selected = !boss.selected // ✅ Toggle selection
-    this.selectedBosses = this.monsters.filter((b) => b.selected) // ✅ Update selected list
-    console.log('Selected Bosses:', this.selectedBosses)
+    this.selectedBosses = this.monsters.filter((b) => b.selected) 
   }
 
   /** ✅ Start the Roulette (must have at least 2 selected) **/
@@ -72,7 +71,6 @@ export class BossRouletteComponent implements OnInit {
       return
     }
 
-    console.log('Starting Roulette with Selected Bosses:', this.selectedBosses)
 
     this.isRoulettePhase = true // ✅ Set the phase
     this.revealedBosses = []
@@ -81,9 +79,6 @@ export class BossRouletteComponent implements OnInit {
     let shuffled = [...this.selectedBosses].sort(() => 0.5 - Math.random())
     this.rouletteChoices = shuffled.slice(0, Math.min(3, shuffled.length))
 
-    console.log('Shuffled deck', shuffled)
-    console.log('Roulette choices', this.rouletteChoices)
-    console.log('Roulette Phase', this.isRoulettePhase)
 
     this.cdRef.detectChanges() // ✅ Force UI update
     setTimeout(() => this.cdRef.detectChanges(), 100) // ✅ Ensure update propagation
@@ -121,8 +116,6 @@ export class BossRouletteComponent implements OnInit {
   }
 
   toggleCategory(category: string) {
-    console.log('called toggle category with', category)
-    console.log('selected Categories before', this.selectedCategories)
     if (this.selectedCategories.includes(category)) {
       this.selectedCategories = this.selectedCategories.filter(
         (c) => c !== category
@@ -130,7 +123,6 @@ export class BossRouletteComponent implements OnInit {
     } else {
       this.selectedCategories.push(category)
     }
-    console.log('selected Categories after', this.selectedCategories)
   }
 
   /** ✅ Load gear data from GearService **/
@@ -232,10 +224,6 @@ export class BossRouletteComponent implements OnInit {
 
   filteredMonsters(): Monster[] {
     let monsters = this.monsters
-    console.log(
-      'Filtered Monsters Called. Roulette Phase:',
-      this.isRoulettePhase
-    )
 
     // Always show selected bosses, even if filters remove them
     if (this.selectedCategories.length > 0) {

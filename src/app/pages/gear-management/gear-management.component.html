@@ -59,7 +59,8 @@
           <p>{{ item }}</p>
           <a [href]="gearData['weapons'][item].wiki"
              target="_blank"
-             class="wiki-link">🔍</a>
+             class="wiki-link"
+             (click)="$event.stopPropagation()">🔍</a>
         </div>
       </div>
     </div>
@@ -85,7 +86,8 @@
           <p>{{ item }}</p>
           <a [href]="gearData['special_attack'][item].wiki"
              target="_blank"
-             class="wiki-link">🔍</a>
+             class="wiki-link"
+             (click)="$event.stopPropagation()">🔍</a>
         </div>
       </div>
     </div>
@@ -110,7 +112,8 @@
             <p>{{ item }}</p>
             <a [href]="gearData[slot.toLowerCase()][item].wiki"
                target="_blank"
-               class="wiki-link">🔍</a>
+               class="wiki-link"
+               (click)="$event.stopPropagation()">🔍</a>
           </div>
         </div>
       </div>

@@ -206,7 +206,6 @@ export class GearManagementComponent implements OnInit {
 
   /** ✅ Select or Deselect All Items in a Category **/
   toggleAllGearInSlot(slot: string) {
-    console.log(`🔄 Normalized slot name: ${slot}`);
     
     if (!this.filteredGearData[slot]) {
       console.warn(`⚠️ No data found for slot: ${slot}`);
@@ -222,7 +221,6 @@ export class GearManagementComponent implements OnInit {
       (item) => item !== "N/A"
     );
 
-    console.log(`🔹 Items in ${slot}:`, allItems);
 
     if (slot === "weapons") slot = "Weapon";
     if (slot === "special_attack") slot = "Special Attack";
@@ -241,14 +239,11 @@ export class GearManagementComponent implements OnInit {
     const allSelected = allItems.length > 0 && allItems.every((item) => this.ownedGear[slot].includes(item));
 
     if (allSelected) {
-      console.log(`❌ Deselecting all in ${slot}`);
       this.ownedGear[slot] = [];
     } else {
-      console.log(`✅ Selecting all in ${slot}`);
       this.ownedGear[slot] = [...allItems];
     }
 
-    console.log(`📌 Updated ownedGear[${slot}]:`, this.ownedGear[slot]);
 
     localStorage.setItem("ownedGear", JSON.stringify(this.ownedGear)); // ✅ Persist
 
