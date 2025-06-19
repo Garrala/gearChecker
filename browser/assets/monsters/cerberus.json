@@ -24,7 +24,7 @@
           "slash": 100,
           "crush": 25
         },
-        "magic": 100,
+        "magic": 65,
         "ranged": {
           "arrows": 100,
           "bolts": 100,
@@ -46,10 +46,10 @@
     "Melee": {
       "Weapon": [
         ["Scythe of vitur", "Emberlight"],
-        ["Soulreaper axe", "Inquisitor's mace"],
-        ["Arclight"],
-        ["Ghrazi rapier"],
-        ["Osmumten's fang"]
+        [ "Soulreaper axe", "Inquisitor's mace" ],
+        [ "Osmumten's fang" ],
+        ["Arclight", "Abyssal bludgeon"],
+        ["Ghrazi rapier"]
       ],
       "Shield": [
         ["Avernic defender", "Spectral spirit shield"],
@@ -58,11 +58,11 @@
         ["Rune defender"]
       ],
       "Special Attack": [
+        [ "Dragon claws", "Elder maul" ],
+        [ "Voidwaker" ],
         ["Burning claws"],
-        ["Dragon claws", "Elder maul", "Voidwaker", "Bandos godsword"],
-        ["Emberlight", "Dragon warhammer"],
-        ["Saradomin godsword", "Dragon dagger"],
-        ["Arclight", "Dragon mace"]
+        [ "Dragon warhammer", "Bandos godsword" ],
+        [ "Emberlight", "Saradomin godsword", "Dragon dagger" ]
       ],
       "Helmet": [["Slayer helmet (i)"], ["Black mask (i)"]],
       "Amulet": [
@@ -82,14 +82,14 @@
       "Body": [
         ["Inquisitor's hauberk"],
         ["Torva platebody"],
-        ["Bandos chestplate"],
+        ["Oathplate chest","Bandos chestplate"],
         ["Justiciar chestguard", "Fighter torso"],
         ["Barrows body"]
       ],
       "Legs": [
         ["Inquisitor's plateskirt"],
         ["Torva platelegs"],
-        ["Bandos tassets"],
+        ["Oathplate legs", "Bandos tassets"],
         ["Justiciar legguards"],
         ["Barrows legs"]
       ],
@@ -137,8 +137,7 @@
       "Cape": [
         ["Dizana's quiver"],
         ["Ava's assembler"],
-        ["Ranging cape"],
-        ["Max cape"],
+        [ "Ranging cape", "Max cape" ],
         ["Ava's accumulator"]
       ],
       "Body": [

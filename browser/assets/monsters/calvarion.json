@@ -77,7 +77,6 @@
         [
           "Abyssal bludgeon",
           "Zamorakian hasta",
-          "Soulreaper axe",
           "Zombie axe"
         ],
         ["Sarachnis cudgel", "Elder maul", "Dual macuahuitl"],
@@ -91,14 +90,13 @@
         ["Book of war", "Falador shield 4"]
       ],
       "Special Attack": [
-        ["Elder maul"],
-        ["Dragon mace"],
-        ["Barrelchest anchor"]
+        [ "Ursine chainmace" ],
+        [ "Abyssal bludgeon" ],
+        [ "Elder maul" ],
+        [ "Dragon mace" ]
       ],
       "Helmet": [
-        ["Torva full helm"],
-        ["Serpentine helm"],
-        ["Helm of neitiznot"],
+        ["Helm of neitiznot", "Zombie helm"],
         ["Berserker helm"],
         ["Dwarven helmet"]
       ],
@@ -124,14 +122,11 @@
         ["Monk's robe top"]
       ],
       "Legs": [
-        ["Torva platelegs"],
-        ["Inquisitor's plateskirt"],
         ["Black d'hide chaps"],
-        ["Proselyte cuisse"],
+        ["Proselyte cuisse", "Proselyte tasset"],
         ["Monk's robe"]
       ],
       "Gloves": [
-        ["Ferocious gloves"],
         ["Barrows gloves"],
         ["Rune gloves"],
         ["Combat bracelet"]

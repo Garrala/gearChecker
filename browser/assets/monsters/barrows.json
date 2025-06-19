@@ -10,7 +10,8 @@
       "combat_level": 115,
       "hp": 100,
       "max_hit": {
-        "melee": 29
+        "melee": 29,
+        "1 Hp":  57
       },
       "weaknesses": {
         "air": "50%"
@@ -188,8 +189,8 @@
       "combat_level": 115,
       "hp": 100,
       "max_hit": {
-        "magic": 23,
-		"prayMelee": 15
+        "melee": 23,
+		    "Pray Melee": 15
       },
       "weaknesses": {
         "air": "50%"
@@ -303,7 +304,13 @@
         ["Amulet of power"],
         ["Holy symbol"]
       ],
-      "Cape": [["Imbued god cape"], ["God cape"], ["Fire cape"], ["God vestment cloaks"]],
+      "Cape": [
+        [ "Imbued god cape" ],
+        [ "God cape" ],
+        [ "Fire cape" ],
+        [ "Ardougne cloak 4", "Ardougne cloak 3" ],
+        [ "God vestment cloaks" ]
+      ],
       "Body": [
         ["Barrows body"],
         ["Dragon chainbody"],
@@ -319,7 +326,7 @@
       "Gloves": [["Barrows gloves"], ["Rune gloves"], ["Combat bracelet"]],
       "Boots": [["Dragon boots"], ["Rune boots"], ["Climbing boots"]],
       "Ring": [["Berserker ring (i)"], ["Ring of dueling"]],
-      "Ammo": [["Rada's blessing 2"]],
+      "Ammo": [ [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ] ],
       "Special Attack": [["N/A"]]
     },
     "Ranged (Ahrim)": {
@@ -335,7 +342,11 @@
         ["Magic shortbow (i)"],
         ["Dragon dagger"]
       ],
-      "Helmet": [["Void ranger helm"], ["Blessed coif"]],
+      "Helmet": [
+        [ "Masori mask (f)", "Masori mask" ],
+        [ "Void ranger helm" ],
+        [ "Blessed coif" ]
+      ],
       "Amulet": [
         ["Necklace of anguish"],
         ["Amulet of fury"],
@@ -350,16 +361,18 @@
         ["Ava's attractor"]
       ],
       "Body": [
-        ["Elite void top"],
-        ["Void knight top"],
-        ["Blessed body"],
-        ["Black d'hide body"]
+        [ "Masori body (f)", "Masori body" ],
+        [ "Elite void top" ],
+        [ "Void knight top" ],
+        [ "Blessed body" ],
+        [ "Black d'hide body" ]
       ],
       "Legs": [
-        ["Elite void robe"],
-        ["Void knight robe"],
-        ["Blessed chaps"],
-        ["Black d'hide chaps"]
+        [ "Masori chaps (f)", "Masori chaps" ],
+        [ "Elite void robe" ],
+        [ "Void knight robe" ],
+        [ "Blessed chaps" ],
+        [ "Black d'hide chaps" ]
       ],
       "Gloves": [
         ["Void knight gloves"],
@@ -370,7 +383,7 @@
       "Boots": [["Blessed boots"]],
       "Ring": [["Ring of dueling"]],
       "Ammo": [
-        ["Rada's blessing 4"],
+        [ "Rada's blessing 4", "Rada's blessing 3", "Rada's blessing 2", "God blessing" ],
         ["Moonlight antler bolts", "Sunlight antler bolts"],
         ["Amethyst arrow", "Rune arrow"],
         ["Bolt rack"],

@@ -103,7 +103,7 @@
       ],
       "Ammo": [
         ["Rada's blessing 4"],
-        ["God blessing", "Rada's blessing 3"],
+        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ],
         ["Ruby dragon bolts (e)", "Ruby bolts (e)"],
         ["Broad bolts", "Adamant bolts"],
         ["Amethyst arrow", "Rune arrow"]
@@ -172,7 +172,10 @@
         ["Beacon ring"],
         ["Ring of wealth (i)"]
       ],
-      "Ammo": [["Rada's blessing 4"], ["God blessing", "Rada's blessing 3"]],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+      ],
       "Special Attack": ["N/A"]
     }
   }

@@ -202,5 +202,14 @@
   "Initiate cuisse": {
     "image": "https://oldschool.runescape.wiki/images/Initiate_cuisse.png?13f14",
     "wiki": "https://oldschool.runescape.wiki/w/Initiate_cuisse"
+  },
+  "Oathplate legs": {
+    "image": "https://oldschool.runescape.wiki/images/Oathplate_legs.png?045b8",
+    "wiki": "https://oldschool.runescape.wiki/w/Oathplate_legs"
+  },
+  "Proselyte tasset": {
+    "image": "https://oldschool.runescape.wiki/images/Proselyte_tasset.png?b8388",
+    "wiki": "https://oldschool.runescape.wiki/w/Proselyte_tasset"
   }
+
 }
