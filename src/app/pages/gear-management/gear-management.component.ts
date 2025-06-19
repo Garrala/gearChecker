@@ -2,6 +2,7 @@ import { ChangeDetectorRef, Component, OnInit } from '@angular/core'
 import { GearService } from '../../services/gear.service'
 import { NgFor, NgIf } from '@angular/common'
 import { FormsModule } from '@angular/forms'
+import { ViewChildren, ElementRef, QueryList } from '@angular/core';
 
 @Component({
   selector: 'app-gear-management',
@@ -46,6 +47,9 @@ export class GearManagementComponent implements OnInit {
   allItems: { name: string; image: string }[] = []
   filteredGearData: { [slot: string]: { [item: string]: any } } = {};
   collapsedSections: { [key: string]: boolean } = {};
+  highlightedIndex: number = -1;
+
+  @ViewChildren('itemRef') itemElements!: QueryList<ElementRef>;
   constructor(private gearService: GearService, private cdRef: ChangeDetectorRef) { }
 
   ngOnInit() {
@@ -64,6 +68,7 @@ export class GearManagementComponent implements OnInit {
     this.gearService.getGearData().subscribe((data) => {
       this.gearData = data
       this.filteredGearData = { ...data };
+      this.extractAllItems();
       this.loading = false // Hide spinner once data is loaded
     })
   }
@@ -146,6 +151,7 @@ export class GearManagementComponent implements OnInit {
   selectSuggestedItem(item: { name: string; image: string }) {
     this.itemSearchQuery = item.name
     this.suggestedItems = []
+    this.highlightedIndex = -1;
     this.filterByItem()
   }
 
@@ -178,20 +184,25 @@ export class GearManagementComponent implements OnInit {
 
   /** ✅ Extract all items from gearData for search/autocomplete **/
   extractAllItems() {
-    const itemSet = new Set<{ name: string; image: string }>();
+    const seen = new Set(); // For checking duplicate names
+    const all: { name: string; image: string }[] = [];
 
     Object.keys(this.gearData).forEach((slot) => {
       Object.keys(this.gearData[slot]).forEach((item) => {
-        itemSet.add({
-          name: item,
-          image: this.gearData[slot][item]?.image ||
-            'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c',
-        });
+        if (!seen.has(item)) {
+          seen.add(item);
+          all.push({
+            name: item,
+            image: this.gearData[slot][item]?.image ||
+              'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c',
+          });
+        }
       });
     });
 
-    this.filteredGearData = { ...this.gearData }; 
+    this.allItems = all; // ✅ THIS was missing
   }
+
 
   /** ✅ Select or Deselect All Items in a Category **/
   toggleAllGearInSlot(slot: string) {
@@ -336,5 +347,29 @@ export class GearManagementComponent implements OnInit {
     }
   }
 
+  handleKeyDown(event: KeyboardEvent) {
+    if (this.suggestedItems.length === 0) return;
+
+    if (event.key === 'ArrowDown') {
+      this.highlightedIndex = (this.highlightedIndex + 1) % this.suggestedItems.length;
+      event.preventDefault();
+    } else if (event.key === 'ArrowUp') {
+      this.highlightedIndex =
+        (this.highlightedIndex - 1 + this.suggestedItems.length) % this.suggestedItems.length;
+      event.preventDefault();
+    } else if (event.key === 'Enter' && this.highlightedIndex >= 0) {
+      const item = this.suggestedItems[this.highlightedIndex];
+      this.selectSuggestedItem(item);
+      return;
+    }
+
+    // Scroll to highlighted element
+    setTimeout(() => {
+      const el = this.itemElements.get(this.highlightedIndex);
+      if (el) {
+        el.nativeElement.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+    }, 0);
+  }
 
 }

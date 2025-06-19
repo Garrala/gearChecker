@@ -8,25 +8,22 @@
     <h1>Beastiary</h1>
     <!-- Item Search -->
     <div class="item-filter">
-      <input
-        type="text"
-        [(ngModel)]="itemSearchQuery"
-        (input)="updateSuggestions()"
-        placeholder="Search by item..."
-      />
+      <input type="text"
+             [(ngModel)]="itemSearchQuery"
+             (input)="updateSuggestions(); highlightedIndex = -1"
+             (keydown)="handleKeyDown($event)"
+             placeholder="Search by item..." />
 
       <!-- Autocomplete Dropdown -->
       <div class="autocomplete-dropdown" *ngIf="suggestedItems.length > 0">
-        <div
-          class="autocomplete-item"
-          *ngFor="let item of suggestedItems"
-          (click)="selectSuggestedItem(item)"
-        >
-          <img
-            [src]="item.image"
-            alt="{{ item.name }}"
-            onerror="this.src='https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'"
-          />
+        <div class="autocomplete-item"
+             *ngFor="let item of suggestedItems; let i = index"
+             #itemRef
+             [class.highlighted]="i === highlightedIndex"
+             (click)="selectSuggestedItem(item)">
+          <img [src]="item.image"
+               alt="{{ item.name }}"
+               onerror="this.src='https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" />
           <span>{{ item.name }}</span>
         </div>
       </div>

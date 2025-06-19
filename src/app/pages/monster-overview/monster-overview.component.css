@@ -737,6 +737,12 @@
   background: rgba(0, 255, 0, 0.3);
 }
 
+  .autocomplete-item.highlighted {
+    background: rgba(0, 255, 0, 0.3);
+    border-left: 4px solid limegreen;
+  }
+
+
 h1 {
   text-align: center;
   width: 100%;

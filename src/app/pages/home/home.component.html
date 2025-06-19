@@ -17,7 +17,7 @@
         Select the weapons, armor, and gear you own. This lets the app recommend the best setup available to you when facing any boss.
         Easily import/export your gear list for backup or sharing.
       </p>
-      <a routerLink="/gear" class="nav-link">→ Manage My Gear</a>
+      <a routerLink="/gear" (click)="navigate('/gear', $event)" class="nav-link">→ Manage My Gear</a>
     </div>
 
     <!-- Beastiary -->
@@ -29,7 +29,7 @@
       <p>
         Browse a curated list of bosses with detailed stats, weaknesses, and defense values. Instantly see your optimal gear setup for each boss.
       </p>
-      <a routerLink="/monster" class="nav-link">→ View Monsters</a>
+      <a routerLink="/monster" (click)="navigate('/monster', $event)" class="nav-link">→ View Monsters</a>
     </div>
 
     <!-- Boss Roulette -->

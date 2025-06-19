@@ -5,49 +5,52 @@
 
   <div *ngIf="!isMonsterListLoading">
     <h1>Select Bosses for the Roulette</h1>
-    <!-- Item Search -->
-    <div class="item-filter">
-      <input type="text"
-             [(ngModel)]="itemSearchQuery"
-             (input)="updateSuggestions()"
-             placeholder="Search by item..." />
+      <!-- Item Search -->
+      <div class="item-filter">
+        <input type="text"
+               [(ngModel)]="itemSearchQuery"
+               (input)="updateSuggestions(); filterByItem(); highlightedIndex = -1"
+               (keydown)="handleKeyDown($event)"
+               placeholder="Search by item..." />
 
-      <!-- Autocomplete Dropdown -->
-      <div class="autocomplete-dropdown" *ngIf="suggestedItems.length > 0">
-        <div class="autocomplete-item"
-             *ngFor="let item of suggestedItems"
-             (click)="selectSuggestedItem(item)">
-          <img [src]="item.image"
-               alt="{{ item.name }}"
-               onerror="this.src='https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" />
-          <span>{{ item.name }}</span>
+        <!-- Autocomplete Dropdown -->
+        <div class="autocomplete-dropdown" *ngIf="suggestedItems.length > 0">
+          <div class="autocomplete-item"
+               *ngFor="let item of suggestedItems; let i = index"
+               #itemRef
+               [class.highlighted]="i === highlightedIndex"
+               (click)="selectSuggestedItem(item)">
+            <img [src]="item.image"
+                 alt="{{ item.name }}"
+                 onerror="this.src='https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" />
+            <span>{{ item.name }}</span>
+          </div>
+        </div>
+      </div>
+      <!-- Category Selector -->
+      <div class="category-selector">
+        <button *ngFor="let category of bossCategories"
+                (click)="toggleCategory(category)"
+                [class.active]="selectedCategories.includes(category)">
+          {{ category }}
+        </button>
+      </div>
+      <div class="start-roulette-container">
+        <button [disabled]="selectedBosses.length < 2" (click)="startRoulette()">
+          🎲 Start Roulette
+        </button>
+      </div>
+      <!-- Boss Selection -->
+      <div class="boss-picker">
+        <div *ngFor="let boss of filteredMonsters()"
+             class="monster-box"
+             [class.selected]="boss.selected"
+             (click)="toggleBossSelection(boss)">
+          <img [src]="boss.image" alt="{{ boss.name }}" />
+          <span>{{ boss.name }}</span>
         </div>
       </div>
     </div>
-    <!-- Category Selector -->
-    <div class="category-selector">
-      <button *ngFor="let category of bossCategories"
-              (click)="toggleCategory(category)"
-              [class.active]="selectedCategories.includes(category)">
-        {{ category }}
-      </button>
-    </div>
-    <div class="start-roulette-container">
-      <button [disabled]="selectedBosses.length < 2" (click)="startRoulette()">
-        🎲 Start Roulette
-      </button>
-    </div>
-    <!-- Boss Selection -->
-    <div class="boss-picker">
-      <div *ngFor="let boss of filteredMonsters()"
-           class="monster-box"
-           [class.selected]="boss.selected"
-           (click)="toggleBossSelection(boss)">
-        <img [src]="boss.image" alt="{{ boss.name }}" />
-        <span>{{ boss.name }}</span>
-      </div>
-    </div>
-  </div>
 </div>
 
 <!-- ROULETTE PHASE -->

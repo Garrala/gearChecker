@@ -17,13 +17,16 @@
     <div class="item-filter">
       <input type="text"
              [(ngModel)]="itemSearchQuery"
-             (input)="filterByItem()"
+             (input)="updateSuggestions(); filterByItem(); highlightedIndex = -1"
+             (keydown)="handleKeyDown($event)"
              placeholder="Search by item..." />
 
       <!-- Autocomplete Dropdown -->
       <div class="autocomplete-dropdown" *ngIf="suggestedItems.length > 0">
         <div class="autocomplete-item"
-             *ngFor="let item of suggestedItems"
+             *ngFor="let item of suggestedItems; let i = index"
+             #itemRef
+             [class.highlighted]="i === highlightedIndex"
              (click)="selectSuggestedItem(item)">
           <img [src]="item.image"
                alt="{{ item.name }}"

@@ -1,11 +1,11 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { MonsterService, Monster } from '../../services/monster.service'
-import { GearService } from '../../services/gear.service' // ✅ Import GearService
+import { GearService } from '../../services/gear.service' 
 import { NgFor, NgIf } from '@angular/common'
 import { FormsModule } from '@angular/forms'
 import { ActivatedRoute, Router } from '@angular/router';
-import { ViewChild, ElementRef } from '@angular/core';
+import { ViewChild, ElementRef, ViewChildren, QueryList } from '@angular/core';
 
 @Component({
   selector: 'app-monster-overview',
@@ -18,13 +18,13 @@ export class MonsterOverviewComponent implements OnInit {
   monsters: Monster[] = []
   selectedMonster: Monster | null = null
   selectedSetup: string = 'Magic' // Default tab
-  selectedBossIndex: number = 0 // ✅ Track current boss in multi-boss fights
+  selectedBossIndex: number = 0 //  Track current boss in multi-boss fights
   gearData: {
     [slot: string]: {
       [item: string]: { image: string; wiki: string; twoHanded: string }
     }
-  } = {} // ✅ Store data from multiple JSONs
-  ownedGear: { [key: string]: string[] } = {} // ✅ Store multiple items per slot
+  } = {} //  Store data from multiple JSONs
+  ownedGear: { [key: string]: string[] } = {} //  Store multiple items per slot
   recommendedGear: { [key: string]: string[] } = {}
   isMonsterListLoading: boolean = true
   isMonsterDetailsLoading: boolean = false
@@ -60,8 +60,10 @@ export class MonsterOverviewComponent implements OnInit {
   filteredBosses: Monster[] = []
   suggestedItems: { name: string; image: string }[] = []
   allItems: { name: string; image: string }[] = []
+  highlightedIndex: number = -1;
 
   @ViewChild('monsterDetails') monsterDetailsRef!: ElementRef;
+  @ViewChildren('itemRef') itemElements!: QueryList<ElementRef>;
 
   constructor(
     private monsterService: MonsterService,
@@ -79,7 +81,7 @@ export class MonsterOverviewComponent implements OnInit {
       this.monsters = data
       this.filteredBosses = data
       this.extractAllItems()
-      this.isMonsterListLoading = false // ✅ Boss list loaded
+      this.isMonsterListLoading = false //  Boss list loaded
 	  
 	  this.route.paramMap.subscribe((params) => {
         const monsterName = params.get('name');
@@ -102,22 +104,22 @@ export class MonsterOverviewComponent implements OnInit {
       //console.log('Loaded Owned Gear:', this.ownedGear)
     }
 
-    this.loadGearData() // ✅ Load multiple gear files
+    this.loadGearData() //  Load multiple gear files
   }
 
-  /** ✅ Select a monster and reset boss index **/
+  /**  Select a monster and reset boss index **/
   selectMonster(monster: Monster) {
     const currentSlug = this.selectedMonster?.slug;
     const isSameMonster = currentSlug === monster.slug;
     const targetUrl = `/monster/${monster.slug}`;
 
     if (isSameMonster) {
-      // ✅ Clicking again hides the details
+      //  Clicking again hides the details
       this.selectedMonster = null
       return
     }
 
-    this.isMonsterDetailsLoading = true // ✅ Show loading spinner
+    this.isMonsterDetailsLoading = true //  Show loading spinner
 
     if (this.router.url !== targetUrl) {
       this.router.navigate([targetUrl]);
@@ -224,7 +226,7 @@ export class MonsterOverviewComponent implements OnInit {
   getBestAvailableGear(slot: string): string[] {
     if (!this.selectedMonster || !this.selectedSetup) return ['None']
 
-    // ✅ Load the final loadout from storage
+    //  Load the final loadout from storage
     const characterLoadout = JSON.parse(
       localStorage.getItem('characterLoadout') || '{}'
     )
@@ -234,7 +236,7 @@ export class MonsterOverviewComponent implements OnInit {
       : ['None']
   }
 
-  /** ✅ Load all gear files from GearService **/
+  /**  Load all gear files from GearService **/
   loadGearData() {
     //console.log('Fetching gear data...')
     this.gearService.getGearData().subscribe((data) => {
@@ -242,7 +244,7 @@ export class MonsterOverviewComponent implements OnInit {
     })
   }
 
-  /** ✅ Dynamically adjust the number of columns based on the largest set **/
+  /**  Dynamically adjust the number of columns based on the largest set **/
   getFilledItemGroups(slot: string, monster?: Monster): string[][] {
     if (!monster || !monster.gear_setups?.[this.selectedSetup]?.[slot]) {
       return [['N/A']]
@@ -253,7 +255,7 @@ export class MonsterOverviewComponent implements OnInit {
       Array.isArray(group) ? group : [group]
     )
 
-    // ✅ Find the max column count based on the largest item set across all slots
+    //  Find the max column count based on the largest item set across all slots
     const maxColumns = Math.max(
       ...Object.values(monster.gear_setups[this.selectedSetup]).map(
         (set) => set.length
@@ -261,13 +263,13 @@ export class MonsterOverviewComponent implements OnInit {
       1
     )
 
-    // ✅ Fill up the remaining spots with "N/A" if needed
+    //  Fill up the remaining spots with "N/A" if needed
     const filledItems: string[][] = [...items]
     while (filledItems.length < maxColumns) {
       filledItems.push(['N/A'])
     }
 
-    // 🔥 Save **all** recommended items for the slot
+    //  Save **all** recommended items for the slot
     this.recommendedGear[slot] = filledItems.map((group) => group[0]) // ✅ Store **array** of items per slot
     localStorage.setItem(
       'recommendedGear',
@@ -531,5 +533,30 @@ export class MonsterOverviewComponent implements OnInit {
         )
       )
     )
+  }
+
+  handleKeyDown(event: KeyboardEvent) {
+    if (this.suggestedItems.length === 0) return;
+
+    if (event.key === 'ArrowDown') {
+      this.highlightedIndex = (this.highlightedIndex + 1) % this.suggestedItems.length;
+      event.preventDefault();
+    } else if (event.key === 'ArrowUp') {
+      this.highlightedIndex =
+        (this.highlightedIndex - 1 + this.suggestedItems.length) % this.suggestedItems.length;
+      event.preventDefault();
+    } else if (event.key === 'Enter' && this.highlightedIndex >= 0) {
+      const item = this.suggestedItems[this.highlightedIndex];
+      this.selectSuggestedItem(item);
+      return;
+    }
+
+    // Scroll selected item into view
+    setTimeout(() => {
+      const el = this.itemElements.get(this.highlightedIndex);
+      if (el) {
+        el.nativeElement.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+    }, 0);
   }
 }

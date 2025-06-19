@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core'
+import { ChangeDetectorRef, Component, OnInit, ViewChildren, QueryList, ElementRef } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { MonsterService, Monster } from '../../services/monster.service'
 import { NgFor, NgIf } from '@angular/common'
@@ -39,12 +39,15 @@ export class BossRouletteComponent implements OnInit {
   filteredBosses: Monster[] = []
   suggestedItems: { name: string; image: string }[] = []
   allItems: { name: string; image: string }[] = []
+  highlightedIndex: number = -1;
+
+  @ViewChildren('itemRef') itemElements!: QueryList<ElementRef>;
 
   constructor(
     private monsterService: MonsterService,
     private gearService: GearService,
     private cdRef: ChangeDetectorRef,
-	private router: Router
+	  private router: Router
   ) {}
 
   ngOnInit() {
@@ -304,4 +307,28 @@ export class BossRouletteComponent implements OnInit {
     }
   }
 
+  handleKeyDown(event: KeyboardEvent) {
+    if (this.suggestedItems.length === 0) return;
+
+    if (event.key === 'ArrowDown') {
+      this.highlightedIndex = (this.highlightedIndex + 1) % this.suggestedItems.length;
+      event.preventDefault();
+    } else if (event.key === 'ArrowUp') {
+      this.highlightedIndex =
+        (this.highlightedIndex - 1 + this.suggestedItems.length) % this.suggestedItems.length;
+      event.preventDefault();
+    } else if (event.key === 'Enter' && this.highlightedIndex >= 0) {
+      const item = this.suggestedItems[this.highlightedIndex];
+      this.selectSuggestedItem(item);
+      return;
+    }
+
+    // Scroll selected item into view
+    setTimeout(() => {
+      const el = this.itemElements.get(this.highlightedIndex);
+      if (el) {
+        el.nativeElement.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+    }, 0);
+  }
 }
