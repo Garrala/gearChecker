@@ -30,15 +30,25 @@
         </div>
       </div>
     </div>
+
+    <div class="import-export-controls">
+      <button (click)="collapseAllSections()">Collapse All</button>
+      <button (click)="expandAllSections()">Expand All</button>
+    </div>
+
+
     <!-- Weapon Slot (Top) -->
     <div *ngIf="getFilteredItems('weapons').length > 0" class="gear-category">
       <div class="gear-header">
-        <h2>Weapon</h2>
+        <h2 (click)="toggleSection('Weapon')" class="collapsible-header">
+          <span class="arrow">{{ collapsedSections['weapons'] ?  '▲' : '▼' }}</span>
+          Weapons
+        </h2>
         <button *ngIf="!itemSearchQuery" (click)="toggleAllGearInSlot('weapons')">
           Toggle Weapons
         </button>
       </div>
-      <div class="gear-grid">
+      <div class="gear-grid" *ngIf="!collapsedSections['Weapon']">
         <div *ngFor="let item of getFilteredItems('weapons')"
              class="gear-box"
              [class.owned]="ownedGear['Weapon']?.includes(item)"
@@ -55,12 +65,15 @@
     <!-- Special Attack Weapons -->
     <div *ngIf="getFilteredItems('special_attack').length > 0" class="gear-category">
       <div class="gear-header">
-        <h2>Special Attack Weapon</h2>
+        <h2 (click)="toggleSection('Special Attack')" class="collapsible-header">
+          <span class="arrow">{{ collapsedSections['Special Attack'] ? '▲' : '▼' }}</span>
+          Special Attack Weapons
+        </h2>
         <button *ngIf="!itemSearchQuery" (click)="toggleAllGearInSlot('special_attack')">
           Toggle Special Attack Weapons
         </button>
       </div>
-      <div class="gear-grid">
+      <div class="gear-grid" *ngIf="!collapsedSections['Special Attack']">
         <div *ngFor="let item of getFilteredItems('special_attack')"
              class="gear-box"
              [class.owned]="ownedGear['Special Attack']?.includes(item)"
@@ -78,13 +91,14 @@
     <!-- Armor Slots -->
     <div *ngFor="let slot of armorSlots">
       <div *ngIf="getFilteredItems(slot.toLowerCase()).length > 0" class="gear-category">
-        <div class="gear-header">
+        <div class="gear-header collapsible" (click)="toggleSection(slot)">
+          <span class="arrow">{{ collapsedSections[slot] ? '▲' : '▼' }}</span>
           <h2>{{ slot }}</h2>
-          <button *ngIf="!itemSearchQuery" (click)="toggleAllGearInSlot(slot.toLowerCase())">
-            Toggle {{ slot }}
-          </button>
         </div>
-        <div class="gear-grid" *ngIf="gearData[slot.toLowerCase()]">
+        <button *ngIf="!itemSearchQuery" (click)="toggleAllGearInSlot(slot.toLowerCase())">
+          Toggle {{ slot }}
+        </button>
+        <div class="gear-grid" *ngIf="!collapsedSections[slot]">
           <div *ngFor="let item of getFilteredItems(slot.toLowerCase())"
                class="gear-box"
                [class.owned]="ownedGear[slot]?.includes(item)"

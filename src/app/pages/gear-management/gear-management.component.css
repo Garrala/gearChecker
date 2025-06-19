@@ -207,4 +207,20 @@ button {
   margin-bottom: 20px;
 }
 
+.collapsible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  font-size: 18px;
+  opacity: 0.6;
+  transition: transform 0.3s ease;
+}
+
 

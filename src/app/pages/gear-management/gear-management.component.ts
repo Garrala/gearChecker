@@ -45,6 +45,7 @@ export class GearManagementComponent implements OnInit {
   suggestedItems: { name: string; image: string }[] = []
   allItems: { name: string; image: string }[] = []
   filteredGearData: { [slot: string]: { [item: string]: any } } = {};
+  collapsedSections: { [key: string]: boolean } = {};
   constructor(private gearService: GearService, private cdRef: ChangeDetectorRef) { }
 
   ngOnInit() {
@@ -54,6 +55,9 @@ export class GearManagementComponent implements OnInit {
     if (savedGear) {
       this.ownedGear = JSON.parse(savedGear)
     }
+
+    const savedCollapse = localStorage.getItem('collapsedSections');
+    if (savedCollapse) this.collapsedSections = JSON.parse(savedCollapse);
   }
 
   loadGearData() {
@@ -313,7 +317,24 @@ export class GearManagementComponent implements OnInit {
     }
   };
   reader.readAsText(file);
-}
+  }
+
+  toggleSection(slot: string): void {
+    this.collapsedSections[slot] = !this.collapsedSections[slot];
+    localStorage.setItem('collapsedSections', JSON.stringify(this.collapsedSections));
+  }
+
+  collapseAllSections() {
+    for (let key of this.armorSlots.concat(['Weapon', 'Special Attack'])) {
+      this.collapsedSections[key] = true;
+    }
+  }
+
+  expandAllSections() {
+    for (let key of this.armorSlots.concat(['Weapon', 'Special Attack'])) {
+      this.collapsedSections[key] = false;
+    }
+  }
 
 
 }

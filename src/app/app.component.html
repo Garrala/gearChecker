@@ -1,28 +1,21 @@
 <nav class="navbar">
+  <div class="navbar-spacer"></div>
   <div class="navbar-brand-container">
-    <img
-      src="https://oldschool.runescape.wiki/images/Dragon_med_helm.png?8fa13"
-    />
-    <h4 class="navbar-brand"
-      >Gear Check</h4
-    >
+    <img src="https://oldschool.runescape.wiki/images/Dragon_med_helm.png?8fa13" />
+    <h4 class="navbar-brand">
+      Gear Check
+    </h4>
   </div>
-  
+
   <!-- Hamburger (only shown on mobile) -->
   <button class="hamburger" (click)="isMenuOpen = !isMenuOpen">
     {{ isMenuOpen ? '✖' : '☰' }}
   </button>
-  
+
   <div class="navbar-links" [class.mobile-open]="isMenuOpen">
-    <a routerLink="/gear" (click)="navigate('/gear', $event)"
-      >Gear Management</a
-    >
-    <a routerLink="/monster" (click)="navigate('/monster', $event)"
-      >Beastiary</a
-    >
-    <a routerLink="/roulette" (click)="navigate('/roulette', $event)"
-      >Boss Roulette</a
-    >
+    <a routerLink="/gear" (click)="navigate('/gear', $event)">Gear Management</a>
+    <a routerLink="/monster" (click)="navigate('/monster', $event)">Beastiary</a>
+    <a routerLink="/roulette" (click)="navigate('/roulette', $event)">Boss Roulette</a>
   </div>
 </nav>
 
