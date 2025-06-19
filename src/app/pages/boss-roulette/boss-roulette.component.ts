@@ -49,11 +49,9 @@ export class BossRouletteComponent implements OnInit {
 
   ngOnInit() {
     this.monsterService.getMonsters().subscribe((data) => {
-      this.isMonsterListLoading = true
       this.monsters = data.map((monster) => ({ ...monster, selected: false })) // ✅ Ensure selection state
       this.filteredBosses = data
       this.loadGearData();
-      this.isMonsterListLoading = false
     })
   }
 

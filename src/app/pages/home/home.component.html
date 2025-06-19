@@ -1,0 +1,48 @@
+
+<div class="home-container">
+  <div class="hero">
+    <img src="https://oldschool.runescape.wiki/images/Dragon_med_helm.png?8fa13" alt="App Logo" />
+    <h1>Gear Check</h1>
+    <p class="tagline">Know what to wear, before you’re there.</p>
+  </div>
+
+  <div class="feature-grid">
+    <!-- Gear Management -->
+    <div class="feature-card">
+      <h2>
+        <img class="feature-icon" src="https://oldschool.runescape.wiki/images/Worn_Equipment.png?124cf" />
+        <span>Gear Management</span>
+      </h2>
+      <p>
+        Select the weapons, armor, and gear you own. This lets the app recommend the best setup available to you when facing any boss.
+        Easily import/export your gear list for backup or sharing.
+      </p>
+      <a routerLink="/gear" class="nav-link">→ Manage My Gear</a>
+    </div>
+
+    <!-- Beastiary -->
+    <div class="feature-card">
+      <h2>
+        <img class="feature-icon" src="https://oldschool.runescape.wiki/images/Mr._Mordaut_chathead.png?26eca" />
+        <span>Beastiary</span>
+      </h2>
+      <p>
+        Browse a curated list of bosses with detailed stats, weaknesses, and defense values. Instantly see your optimal gear setup for each boss.
+      </p>
+      <a routerLink="/monster" class="nav-link">→ View Monsters</a>
+    </div>
+
+    <!-- Boss Roulette -->
+    <div class="feature-card">
+      <h2>
+        <img class="feature-icon" src="https://oldschool.runescape.wiki/images/Mystery_box.png?246bf" />
+        <span>Boss Roulette</span>
+      </h2>
+      <p>
+        Can’t decide who to fight next? Let the Mysterious Old Man choose for you. Pick a few bosses and spin the wheel for your next challenge.
+      </p>
+      <a routerLink="/roulette" (click)="navigate('/roulette', $event)" class="nav-link">→ Try the Roulette</a>
+    </div>
+  </div>
+</div>
+

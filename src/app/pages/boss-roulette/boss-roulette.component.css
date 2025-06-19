@@ -373,3 +373,47 @@ button {
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .roulette-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .roulette-cards .card {
+      width: 80vw;
+      height: auto;
+      max-width: 300px;
+    }
+
+      .roulette-cards .card img,
+      .roulette-cards .card .hidden-card {
+        max-height: 200px;
+        max-width: 100%;
+      }
+
+  .npc-dialogue {
+    flex-direction: column;
+    text-align: center;
+  }
+
+    .npc-dialogue img {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    .npc-dialogue h2 {
+      font-size: 1.3rem;
+    }
+
+  .category-selector {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+    .category-selector button {
+      width: 90%;
+      max-width: 300px;
+    }
+}
+

@@ -2,8 +2,10 @@
   <h1>Gear Management</h1>
   <p>Select the gear you own or import it:</p>
   <div class="import-export-controls">
-    <button (click)="exportOwnedGear()">📤 Export Gear</button>
-    <button (click)="fileInput.click()">📥 Import Gear</button>
+    <button (click)="exportOwnedGear()">Export Gear</button>
+    <button (click)="fileInput.click()">Import Gear</button>
+    <button (click)="collapseAllSections()">Collapse All</button>
+    <button (click)="expandAllSections()">Expand All</button>
     <input type="file" accept=".json" #fileInput (change)="importOwnedGear($event)" hidden />
   </div>
 
@@ -31,17 +33,12 @@
       </div>
     </div>
 
-    <div class="import-export-controls">
-      <button (click)="collapseAllSections()">Collapse All</button>
-      <button (click)="expandAllSections()">Expand All</button>
-    </div>
-
 
     <!-- Weapon Slot (Top) -->
     <div *ngIf="getFilteredItems('weapons').length > 0" class="gear-category">
       <div class="gear-header">
         <h2 (click)="toggleSection('Weapon')" class="collapsible-header">
-          <span class="arrow">{{ collapsedSections['weapons'] ?  '▲' : '▼' }}</span>
+          <span class="arrow">{{ collapsedSections['Weapon'] ?  '▲' : '▼' }}</span>
           Weapons
         </h2>
         <button *ngIf="!itemSearchQuery" (click)="toggleAllGearInSlot('weapons')">

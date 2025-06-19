@@ -6,6 +6,20 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.home-background {
+  background: url('/assets/runescapeWallpaper.jpg') center center / cover no-repeat fixed;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.home-background-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Navbar */
 .navbar {
   background-color: #1e1e1e;
@@ -32,6 +46,7 @@ body {
   gap: 10px;
   flex: 1;
   text-align: center;
+  padding-left: 44px;
 }
 
 .navbar-brand {
@@ -62,9 +77,29 @@ body {
   user-select: none;
 }
 
-  .navbar a:hover {
-    color: limegreen;
+
+.nav-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+  .nav-item img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
   }
+
+.navbar a:hover img {
+  filter: drop-shadow(0 0 5px limegreen);
+}
+
 
 /* Hamburger button */
 .hamburger {
@@ -76,6 +111,7 @@ body {
   color: white;
   cursor: pointer;
   transition: all 0.2s ease;
+  align-self: center;
 }
 
   .hamburger:hover {
@@ -96,7 +132,6 @@ body {
     justify-content: center;
     flex: 1;
     margin: 0;
-    padding-left: 44px;
   }
 
   .navbar-links {
@@ -107,12 +142,17 @@ body {
     padding-top: 10px;
   }
 
-    .navbar-links.mobile-open {
-      display: flex;
-    }
+  .navbar-links.mobile-open {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centers horizontally */
+  }
+
+  .nav-item {
+    justify-content: center; /* ensures icon + text are centered together */
+  }
 
   .navbar a {
-    padding: 8px;
     width: 100%;
   }
 

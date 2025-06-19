@@ -754,73 +754,64 @@
   <div class="recommended-gear-table">
     <!-- Gear Setup Tabs -->
     <div class="gear-tabs">
-      <button
-        *ngFor="let setup of getGearSetups()"
-        (click)="changeSetup(setup)"
-        [class.active]="selectedSetup === setup"
-      >
+      <button *ngFor="let setup of getGearSetups()"
+              (click)="changeSetup(setup)"
+              [class.active]="selectedSetup === setup">
         {{ setup }}
       </button>
     </div>
 
     <!-- Recommended Gear Table -->
-    <table
-      class="gear-table"
-      *ngIf="selectedMonster && !isMonsterDetailsLoading"
-    >
-      <thead>
-        <tr>
-          <th>Slot</th>
-          <th colspan="6">Item (Most Effective → Least Effective)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Loop over slots -->
-        <tr *ngFor="let slot of getGearSlots()">
-          <td>
-            <strong>{{ slot }}</strong>
-          </td>
+    <div class="table-scroll-wrapper">
+      <table class="gear-table"
+              *ngIf="selectedMonster && !isMonsterDetailsLoading">
+        <thead>
+          <tr>
+            <th>Slot</th>
+            <th colspan="6">Item (Most Effective → Least Effective)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Loop over slots -->
+          <tr *ngFor="let slot of getGearSlots()">
+            <td>
+              <strong>{{ slot }}</strong>
+            </td>
 
-          <!-- ✅ Apply best-owned class to recommended items only -->
-          <td *ngFor="let group of getFilledItemGroups(slot, selectedMonster!)">
-            <div class="gear-item-wrapper">
-              <div
-                class="gear-item"
-                *ngFor="let item of group"
-                [ngClass]="{ 'best-owned': isBestOwnedItem(slot, item) }"
-              >
-                <div class="icon-container">
-                  <img
-                    *ngIf="
+            <!-- ✅ Apply best-owned class to recommended items only -->
+            <td *ngFor="let group of getFilledItemGroups(slot, selectedMonster!)">
+              <div class="gear-item-wrapper">
+                <div class="gear-item"
+                      *ngFor="let item of group"
+                      [ngClass]="{ 'best-owned': isBestOwnedItem(slot, item) }">
+                  <div class="icon-container">
+                    <img *ngIf="
                       gearData?.[gearService.getGearCategory(slot)]?.[item]
                     "
-                    [src]="
+                          [src]="
                       gearData?.[gearService.getGearCategory(slot)]?.[item]
                         ?.image
                     "
-                    [alt]="item"
-                    class="item-icon"
-                  />
-                  <a
-                    *ngIf="
+                          [alt]="item"
+                          class="item-icon" />
+                    <a *ngIf="
                       gearData?.[gearService.getGearCategory(slot)]?.[item]
                         ?.wiki
                     "
-                    [href]="
+                        [href]="
                       gearData?.[gearService.getGearCategory(slot)]?.[item]
                         ?.wiki
                     "
-                    target="_blank"
-                    class="wiki-link"
-                    >🔍</a
-                  >
+                        target="_blank"
+                        class="wiki-link">🔍</a>
+                  </div>
+                  <p>{{ item }}</p>
                 </div>
-                <p>{{ item }}</p>
               </div>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
   </div>
-</div>

@@ -741,3 +741,40 @@ h1 {
   text-align: center;
   width: 100%;
 }
+
+/*mobile stuff*/
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .left-column {
+    order: 1;
+  }
+
+  .character-loadout {
+    order: 2;
+    margin-top: 20px;
+  }
+
+  .table-scroll-wrapper {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .gear-table {
+    min-width: 800px; /* prevent squashing on narrow viewports */
+  }
+
+  .category-selector {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+    .category-selector button {
+      width: 90%;
+      max-width: 300px;
+    }
+}
+

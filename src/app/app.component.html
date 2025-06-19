@@ -1,24 +1,37 @@
-<nav class="navbar">
-  <div class="navbar-spacer"></div>
-  <div class="navbar-brand-container">
-    <img src="https://oldschool.runescape.wiki/images/Dragon_med_helm.png?8fa13" />
-    <h4 class="navbar-brand">
-      Gear Check
-    </h4>
+<div [ngClass]="{ 'home-background': router.url === '/' }">
+  <div [ngClass]="{ 'home-background-overlay': router.url === '/' }">
+    <nav class="navbar">
+      <div class="navbar-spacer"></div>
+      <a class="navbar-brand-container" routerLink="/" (click)="navigate('/', $event)">
+        <img src="https://oldschool.runescape.wiki/images/Dragon_med_helm.png?8fa13" />
+        <h4 class="navbar-brand">Gear Check</h4>
+      </a>
+
+      <!-- Hamburger (only shown on mobile) -->
+      <button class="hamburger" (click)="isMenuOpen = !isMenuOpen">
+        {{ isMenuOpen ? '✖' : '☰' }}
+      </button>
+
+      <div class="navbar-links" [class.mobile-open]="isMenuOpen">
+        <a routerLink="/gear" (click)="navigate('/gear', $event)" class="nav-item">
+          <img src="https://oldschool.runescape.wiki/images/Worn_Equipment.png?124cf" alt="Gear Icon" />
+          <span>Gear Management</span>
+        </a>
+
+        <a routerLink="/monster" (click)="navigate('/monster', $event)" class="nav-item">
+          <img src="https://oldschool.runescape.wiki/images/Mr._Mordaut_chathead.png?26eca" alt="Monster Icon" />
+          <span>Beastiary</span>
+        </a>
+
+        <a routerLink="/roulette" (click)="navigate('/roulette', $event)" class="nav-item">
+          <img src="https://oldschool.runescape.wiki/images/Mystery_box.png?246bf" alt="Roulette Icon" />
+          <span>Boss Roulette</span>
+        </a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
   </div>
-
-  <!-- Hamburger (only shown on mobile) -->
-  <button class="hamburger" (click)="isMenuOpen = !isMenuOpen">
-    {{ isMenuOpen ? '✖' : '☰' }}
-  </button>
-
-  <div class="navbar-links" [class.mobile-open]="isMenuOpen">
-    <a routerLink="/gear" (click)="navigate('/gear', $event)">Gear Management</a>
-    <a routerLink="/monster" (click)="navigate('/monster', $event)">Beastiary</a>
-    <a routerLink="/roulette" (click)="navigate('/roulette', $event)">Boss Roulette</a>
-  </div>
-</nav>
-
-<div class="container">
-  <router-outlet></router-outlet>
 </div>
