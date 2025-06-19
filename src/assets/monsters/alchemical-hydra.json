@@ -27,7 +27,7 @@
         }
       },
       "attack_styles": ["Magic", "Ranged"],
-      "attack_speed": 3,
+      "attack_speed": 6,
       "aggressive": true,
       "immunities": {
         "poison": true,
@@ -41,32 +41,33 @@
       "image": "https://oldschool.runescape.wiki/images/Alchemical_Hydra_%28electric%29.png?925dd",
       "wiki_link": "https://oldschool.runescape.wiki/w/Alchemical_Hydra#Electric",
       "combat_level": 98,
-      "hp": 100,
+      "hp": 1100,
       "max_hit": {
-        "magic": 20
+        "default": 35,
+        "empowered": 52
       },
       "weaknesses": {
-        "air": "50%"
+        
       },
       "defense": {
         "melee": {
-          "stab": 103,
-          "slash": 85,
-          "crush": 117
+          "stab": 75,
+          "slash": 150,
+          "crush": 150
         },
-        "magic": 73,
+        "magic": 150,
         "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
+          "arrows": 45,
+          "bolts": 45,
+          "thrown": 45
         }
       },
-      "attack_styles": ["Magic"],
+      "attack_styles": ["Ranged", "Magic"],
       "attack_speed": 6,
       "aggressive": true,
       "immunities": {
-        "poison": false,
-        "venom": false,
+        "poison": true,
+        "venom": true,
         "cannons": false,
         "thralls": false
       }
@@ -76,32 +77,32 @@
       "image": "https://oldschool.runescape.wiki/images/Alchemical_Hydra_%28fire%29.png?925dd",
       "wiki_link": "https://oldschool.runescape.wiki/w/Alchemical_Hydra#Fire",
       "combat_level": 98,
-      "hp": 100,
+      "hp": 1100,
       "max_hit": {
-        "magic": 20
+        "default": 35,
+        "empowered": 52
       },
       "weaknesses": {
-        "air": "50%"
       },
       "defense": {
         "melee": {
-          "stab": 103,
-          "slash": 85,
-          "crush": 117
+          "stab": 75,
+          "slash": 150,
+          "crush": 150
         },
-        "magic": 73,
+        "magic": 150,
         "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
+          "arrows": 45,
+          "bolts": 45,
+          "thrown": 45
         }
       },
-      "attack_styles": ["Magic"],
+      "attack_styles": ["Ranged", "Magic"],
       "attack_speed": 6,
       "aggressive": true,
       "immunities": {
-        "poison": false,
-        "venom": false,
+        "poison": true,
+        "venom": true,
         "cannons": false,
         "thralls": false
       }
@@ -111,32 +112,31 @@
       "image": "https://oldschool.runescape.wiki/images/Alchemical_Hydra_%28extinguished%29.png?925dd",
       "wiki_link": "https://oldschool.runescape.wiki/w/Alchemical_Hydra#Extinguished",
       "combat_level": 98,
-      "hp": 100,
+      "hp": 1100,
       "max_hit": {
-        "magic": 20
+        "default": 55
       },
       "weaknesses": {
-        "air": "50%"
       },
       "defense": {
         "melee": {
-          "stab": 103,
-          "slash": 85,
-          "crush": 117
+          "stab": 75,
+          "slash": 150,
+          "crush": 150
         },
-        "magic": 73,
+        "magic": 150,
         "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
+          "arrows": 45,
+          "bolts": 45,
+          "thrown": 45
         }
       },
-      "attack_styles": ["Magic"],
+      "attack_styles": ["Ranged", "Magic"],
       "attack_speed": 6,
       "aggressive": true,
       "immunities": {
-        "poison": false,
-        "venom": false,
+        "poison": true,
+        "venom": true,
         "cannons": false,
         "thralls": false
       }
@@ -162,7 +162,10 @@
         ["Toxic blowpipe"],
         ["Dragon warhammer"]
       ],
-      "Helmet": [["Slayer helmet (i)"]],
+      "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ]
+      ],
       "Amulet": [
         ["Necklace of anguish"],
         ["Dragonbone necklace"],
@@ -211,16 +214,16 @@
         ["Dragon arrow", "Ruby dragon bolts (e)", "Atlatl darts"],
         ["Ruby bolts (e)"],
         ["Rada's blessing 4"],
-        ["Rada's blessing 3", "God blessing"]
+        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
       ]
     },
     "Melee": {
       "Weapon": [
-        ["Dragon hunter lance"],
-        ["Scythe of vitur"],
+        [ "Scythe of vitur", "Dragon hunter lance" ],
         ["Osmumten's fang", "Ghrazi rapier"],
         ["Blade of saeldor", "Inquisitor's mace"],
-        ["Zamorakian hasta"]
+        [ "Abyssal dagger", "Noxious halberd", "Zamorakian hasta" ],
+        [ "Dragon sword", "Dual macuahuitl" ]
       ],
       "Shield": [
         ["Avernic defender"],
@@ -232,31 +235,43 @@
       "Special Attack": [
         ["Bandos godsword", "Burning claws"],
         ["Dragon claws"],
-        ["Voidwaker"],
-        ["Dragon dagger"]
+        [ "Voidwaker", "Saradomin godsword" ],
+        [ "Elder maul", "Dragon warhammer" ],
+        ["Dragon dagger", "Abyssal dagger"]
       ],
-      "Helmet": [["Slayer helmet (i)"]],
+      "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ]
+      ],
       "Amulet": [
-        ["Amulet of rancour"],
-        ["Amulet of torture"],
-        ["Amulet of blood fury"],
-        ["Amulet of fury"]
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of blood fury" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ]
       ],
       "Cape": [["Infernal cape"], ["Fire cape"], ["Ardougne cloak 4"]],
       "Body": [
         ["Torva platebody"],
         ["Bandos chestplate", "Blood moon chestplate", "Fighter torso"],
         ["Inquisitor's hauberk"],
-        ["Mixed hide top"]
+        [ "Mixed hide top" ],
+        [ "Obsidian platebody" ]
       ],
       "Legs": [
         ["Torva platelegs"],
         ["Bandos tassets", "Blood moon tassets"],
-        ["Inquisitor's plateskirt"],
-        ["Obsidian platelegs"],
-        ["Mixed hide legs"]
+        [ "Inquisitor's plateskirt" ],
+        [ "Mixed hide legs" ],
+        ["Obsidian platelegs"]
+        
       ],
-      "Gloves": [["Ferocious gloves"], ["Barrows gloves"], ["Dragon gloves"]],
+      "Gloves": [
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves" ],
+        [ "Dragon gloves" ],
+        [ "Regen bracelet" ]
+      ],
       "Boots": [
         ["Primordial boots"],
         ["Aranea boots", "Dragon boots", "Echo boots"],
@@ -267,9 +282,14 @@
       "Ring": [
         ["Lightbearer", "Ultor ring"],
         ["Berserker ring (i)"],
-        ["Brimstone ring"]
+        [ "Brimstone ring" ],
+        [ "Treasonous ring (i)", "Ring of shadows" ],
+        [ "Ring of the gods (i)" ]
       ],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "God blessing"]]
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+      ]
     }
   }
 }

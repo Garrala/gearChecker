@@ -110,48 +110,70 @@
                 *ngFor="let key of objectKeys(getSelectedBoss()?.max_hit || {})"
               >
                 <span>
-                  <img
-                    *ngIf="key === 'melee'"
-                    title="Melee"
-                    src="https://oldschool.runescape.wiki/images/Strength_icon.png?e6e0c"
-                    alt="Melee"
-                  />
-                  <img
-                    *ngIf="key === 'magic'"
-                    title="Magic"
-                    src="https://oldschool.runescape.wiki/images/Magic_icon.png"
-                    alt="Magic"
-                  />
-                  <img
-                    *ngIf="key === 'ranged'"
-                    title="Ranged"
-                    src="https://oldschool.runescape.wiki/images/Ranged_icon.png"
-                    alt="Ranged"
-                  />
-				  <img
-                    *ngIf="key === 'special attack'"
-                    title="Special Attack"
-                    src="https://oldschool.runescape.wiki/images/Special_attack_orb.png?27d06"
-                    alt="Special Attack"
-                  />
-                  <img
-                    *ngIf="key === 'rockfall'"
-                    title="Rockfall"
-                    src="https://oldschool.runescape.wiki/images/Pet_rock.png?97482"
-                    alt="Rockfall"
-                  />
-				  <img
-                    *ngIf="key === 'typeless'"
-                    title="Typeless"
-                    src="https://oldschool.runescape.wiki/images/Protect_from_all.png?944a7"
-                    alt="Typeless"
-                  />
-				  <img
-                    *ngIf="key === 'dragonfire'"
-                    title="Dragonfire"
-                    src="https://oldschool.runescape.wiki/images/Fire_Surge.png?76ce4"
-                    alt="Dragonfire"
-                  />
+                  <img *ngIf="key === 'melee'"
+                       title="Melee"
+                       src="https://oldschool.runescape.wiki/images/Strength_icon.png?e6e0c"
+                       alt="Melee" />
+                  <img *ngIf="key === 'magic'"
+                       title="Magic"
+                       src="https://oldschool.runescape.wiki/images/Magic_icon.png"
+                       alt="Magic" />
+                  <img *ngIf="key === 'ranged'"
+                       title="Ranged"
+                       src="https://oldschool.runescape.wiki/images/Ranged_icon.png"
+                       alt="Ranged" />
+                  <img *ngIf="key === 'special attack'"
+                       title="Special Attack"
+                       src="https://oldschool.runescape.wiki/images/Special_attack_orb.png?27d06"
+                       alt="Special Attack" />
+                  <img *ngIf="key === 'rockfall'"
+                       title="Rockfall"
+                       src="https://oldschool.runescape.wiki/images/Pet_rock.png?97482"
+                       alt="Rockfall" />
+                  <img *ngIf="key === 'typeless'"
+                       title="Typeless"
+                       src="https://oldschool.runescape.wiki/images/Protect_from_all.png?944a7"
+                       alt="Typeless" />
+                  <img *ngIf="key === 'dragonfire'"
+                       title="Dragonfire"
+                       src="https://oldschool.runescape.wiki/images/Fire_Surge.png?76ce4"
+                       alt="Dragonfire" />
+                  <img *ngIf="key === 'explosion'"
+                       title="Explosion"
+                       src="https://oldschool.runescape.wiki/images/Retribution.png?724d1"
+                       alt="Explosion" />
+                  <img *ngIf="key === 'tentacles'"
+                       title="Tentacles"
+                       src="https://oldschool.runescape.wiki/images/Abyssal_tentacle.png?c04be"
+                       alt="Tentacles" />
+                  <img *ngIf="key === 'shadow_blast'"
+                       title="Shadow Blast"
+                       src="https://oldschool.runescape.wiki/images/Special_attack_orb.png?27d06"
+                       alt="Shadow Blast" />
+                  <img *ngIf="key === 'default'"
+                       title="Default"
+                       src="https://oldschool.runescape.wiki/images/Retribution.png?724d1"
+                       alt="Default" />
+                  <img *ngIf="key === 'empowered'"
+                       title="Empowered"
+                       src="https://oldschool.runescape.wiki/images/Smite.png?d9143"
+                       alt="Empowered" />
+                  <img *ngIf="key === 'Icicle Crash'"
+                       title="Icicle Crash"
+                       src="https://oldschool.runescape.wiki/images/Ice_Barrage.png?3f12e"
+                       alt="Icicle Crash" />
+                  <img *ngIf="key === 'Pray Melee'"
+                       title="Pray Melee"
+                       src="https://oldschool.runescape.wiki/images/Protect_from_Melee_overhead.png?e8059"
+                       alt="Pray Melee" />
+                  <img *ngIf="key === '1 Hp'"
+                       title="1 Hp"
+                       src="https://oldschool.runescape.wiki/images/Vengeance.png?38cbe"
+                       alt="1 Hp" />
+                  <img *ngIf="key === 'poison'"
+                       title="Poison"
+                       src="https://oldschool.runescape.wiki/images/Poison_hitsplat.png?16146"
+                       alt="Poison" />
                   {{ getSelectedBoss()?.max_hit?.[key] ?? 'N/A' }}
                 </span>
               </div>

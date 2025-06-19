@@ -128,17 +128,28 @@
   /*margin-bottom: 5px;*/ /* Adds some space between title and values */
 }
 
-.info-item div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Centers the icons & values */
-  gap: 10px; /* Adds spacing between the hits */
-}
+  .info-item div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 4px;
+  }
 
-.info-item img {
-  object-fit: contain;
-  vertical-align: middle;
-}
+    .info-item div > span {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: bold;
+    }
+
+  .info-item img {
+    object-fit: contain;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+  }
 
 .character-loadout {
   background: rgba(255, 255, 255, 0.1);

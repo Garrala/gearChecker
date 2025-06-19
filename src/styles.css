@@ -33,15 +33,6 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.navbar::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(145deg, rgba(255,255,255,0.03), rgba(0,255,0,0.02));
-  pointer-events: none;
-  z-index: -1;
-}
-
 /* Filler spacer for layout */
 .navbar-spacer {
   flex: 1;
@@ -55,7 +46,6 @@ body {
   gap: 10px;
   flex: 1;
   text-align: center;
-  padding-left: 44px;
 }
 
 .navbar-brand {

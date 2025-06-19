@@ -74,9 +74,7 @@ export class MonsterOverviewComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    console.log('Initializing MonsterOverviewComponent...')
 
-    console.log('Fetching Monsters...')
     this.monsterService.getMonsters().subscribe((data) => {
       this.monsters = data
       this.filteredBosses = data
@@ -93,7 +91,6 @@ export class MonsterOverviewComponent implements OnInit {
           }
         }
       });
-      //console.log('Fetched Monsters Data:', this.monsters)
     })
 	
 	
@@ -101,7 +98,6 @@ export class MonsterOverviewComponent implements OnInit {
     const savedGear = localStorage.getItem('ownedGear')
     if (savedGear) {
       this.ownedGear = JSON.parse(savedGear)
-      //console.log('Loaded Owned Gear:', this.ownedGear)
     }
 
     this.loadGearData() //  Load multiple gear files
@@ -238,7 +234,6 @@ export class MonsterOverviewComponent implements OnInit {
 
   /**  Load all gear files from GearService **/
   loadGearData() {
-    //console.log('Fetching gear data...')
     this.gearService.getGearData().subscribe((data) => {
       this.gearData = data
     })
@@ -279,15 +274,12 @@ export class MonsterOverviewComponent implements OnInit {
   }
 
   updateLoadout() {
-    console.log('🛠 Updating Loadout for:', this.selectedMonster?.name)
 
     if (!this.selectedMonster || !this.selectedMonster.gear_setups) return
 
-    //console.log('Loading gear data from localStorage...')
     const storedOwnedGear = localStorage.getItem('ownedGear')
     this.ownedGear = storedOwnedGear ? JSON.parse(storedOwnedGear) : {}
 
-    //console.log('Loaded Owned Gear:', this.ownedGear)
 
     const storedRecommendedGear = localStorage.getItem('recommendedGear')
     this.recommendedGear = storedRecommendedGear
@@ -347,20 +339,14 @@ export class MonsterOverviewComponent implements OnInit {
       characterLoadout['Shield'] = ['None']
     }
 
-    console.log('✅ Final Character Loadout:', characterLoadout)
     localStorage.setItem('characterLoadout', JSON.stringify(characterLoadout))
     this.ownedGear = { ...this.ownedGear, ...characterLoadout }
-    console.log(
-      'Updated ownedGear after applying characterLoadout:',
-      this.ownedGear
-    )
+    
     this.cdRef.detectChanges()
   }
 
   isBestOwnedItem(slot: string, item: string): boolean {
-    //console.log("Recommended Gear Before Update:", this.recommendedGear);
-    //console.log("Owned Gear Before Update:", this.ownedGear);
-    //console.log("Applying Loadout Logic...");
+    
 
     const characterLoadout = JSON.parse(
       localStorage.getItem('characterLoadout') || '{}'
@@ -375,21 +361,18 @@ export class MonsterOverviewComponent implements OnInit {
 
   toggleSlayerHelm() {
     this.isSlayerHelmEnabled = !this.isSlayerHelmEnabled // ✅ Toggle state
-    console.log('Toggled Slayer Helm:', this.isSlayerHelmEnabled)
+    
 
     this.updateLoadout()
 
     // ✅ Force change detection by creating a new reference
     this.ownedGear = { ...this.ownedGear }
 
-    console.log('Updated ownedGear after toggling Slayer Helm:', this.ownedGear)
-
     this.cdRef.detectChanges()
   }
 
   changeSetup(setup: string) {
     this.selectedSetup = setup
-    //console.log(`🔄 Switching setup to: ${setup}`)
     this.updateLoadout() // ✅ Refresh loadout when changing setups
   }
 
@@ -419,8 +402,6 @@ export class MonsterOverviewComponent implements OnInit {
   }
 
   toggleCategory(category: string) {
-    console.log('called toggle category with', category)
-    console.log('selected Categories before', this.selectedCategories)
     if (this.selectedCategories.includes(category)) {
       this.selectedCategories = this.selectedCategories.filter(
         (c) => c !== category
@@ -428,7 +409,6 @@ export class MonsterOverviewComponent implements OnInit {
     } else {
       this.selectedCategories.push(category)
     }
-    console.log('selected Categories after', this.selectedCategories)
   }
 
   filteredMonsters(): Monster[] {

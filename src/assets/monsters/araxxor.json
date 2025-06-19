@@ -83,10 +83,10 @@
     "Melee": {
       "Weapon": [
         ["Scythe of vitur"],
-        ["Inquisitor's mace", "Soulreaper axe", "Inquisitor's mace"],
+        ["Inquisitor's mace", "Soulreaper axe"],
         ["Abyssal bludgeon", "Ursine chainmace (u)"],
         ["Saradomin's blessed sword", "Zamorakian hasta", "Sarachnis cudgel"],
-        ["Saradomin sword", "Zombie axe", "Dual macuahuitl"]
+        [ "Dual macuahuitl", "Saradomin sword", "Zombie axe" ]
       ],
       "Shield": [
         ["Avernic defender"],
@@ -94,8 +94,8 @@
         ["Rune defender", "Toktz-ket-xil"]
       ],
       "Special Attack": [
-        ["Elder maul", "Dragon warhammer"],
-        ["Burning claws", "Dragon claws"],
+        [ "Elder maul", "Dragon claws"  ],
+        [ "Dragon warhammer", "Burning claws" ],
         ["Voidwaker"],
         ["Bandos godsword"],
         ["Saradomin godsword", "Ancient godsword", "Ancient mace"]
@@ -116,14 +116,14 @@
       ],
       "Body": [
         ["Inquisitor's hauberk"],
-        ["Torva platebody"],
+        ["Torva platebody", "Oathplate chest"],
         ["Bandos chestplate"],
         ["Blood moon chestplate", "Fighter torso"],
         ["Barrows body"]
       ],
       "Legs": [
         ["Inquisitor's plateskirt"],
-        ["Torva platelegs"],
+        ["Torva platelegs", "Oathplate legs"],
         ["Bandos tassets"],
         ["Blood moon tassets"],
         ["Barrows legs"]
@@ -165,7 +165,7 @@
       "Amulet": [["Necklace of anguish"], ["Amulet of fury"]],
       "Cape": [
         ["Dizana's quiver"],
-        ["Ava's assembler"],
+        [ "Ava's assembler", "Ava's accumulator", "Ava's attractor" ],
         ["Max cape", "Ranging cape (t)"]
       ],
       "Body": [["Masori body (f)"]],
