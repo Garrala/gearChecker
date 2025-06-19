@@ -1,18 +1,20 @@
 <div class="container">
-  <h1>Gear Management</h1>
-  <p>Select the gear you own or import it:</p>
-  <div class="import-export-controls">
-    <button (click)="exportOwnedGear()">Export Gear</button>
-    <button (click)="fileInput.click()">Import Gear</button>
-    <button (click)="collapseAllSections()">Collapse All</button>
-    <button (click)="expandAllSections()">Expand All</button>
-    <input type="file" accept=".json" #fileInput (change)="importOwnedGear($event)" hidden />
+  <div *ngIf="loading" class="spinner-container">
+    <div class="spinner"></div>
   </div>
 
-  <!-- Show spinner if still loading -->
-  <div class="loading-spinner" *ngIf="loading"></div>
-
   <div class="gear-container" *ngIf="!loading">
+    <h1>Gear Management</h1>
+
+    <p>Select the gear you own or import it:</p>
+    <div class="import-export-controls">
+      <button (click)="exportOwnedGear()">Export Gear</button>
+      <button (click)="fileInput.click()">Import Gear</button>
+      <button (click)="collapseAllSections()">Collapse All</button>
+      <button (click)="expandAllSections()">Expand All</button>
+      <input type="file" accept=".json" #fileInput (change)="importOwnedGear($event)" hidden />
+    </div>
+
     <!-- Item Search -->
     <div class="item-filter">
       <input type="text"
