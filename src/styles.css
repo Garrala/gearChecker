@@ -14,7 +14,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 40px;
-
+  flex-wrap: wrap;
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -54,21 +54,35 @@ body {
 
 /* Responsive Navbar */
 @media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  
   .navbar {
-    flex-direction: column;
+    flex-direction: row; /* Keep it horizontal */
+    justify-content: space-between; /* Spread out brand and hamburger */
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
   }
 
   .navbar-links {
+    display: none;
     flex-direction: column;
     text-align: center;
+    width: 100%;
     gap: 10px;
   }
 
   .navbar a {
     padding: 8px;
     width: 100%;
+  }
+  
+  .navbar-links.mobile-open {
+    display: flex;
   }
 }
 
@@ -91,4 +105,34 @@ body {
 .card img {
   max-width: 64px;
   max-height: 64px;
+}
+
+
+
+@media (min-width: 769px) {
+  /* --- Hamburger button --- */
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .navbar-links {
+    display: flex !important; /* force show */
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
 }

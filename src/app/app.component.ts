@@ -11,11 +11,13 @@ import { Router } from '@angular/router'
 })
 export class AppComponent {
   title = 'Gear Check'
+  isMenuOpen = false;
 
   constructor(private router: Router) {}
 
   navigate(route: string, event: MouseEvent) {
     event.preventDefault() // Prevents default `<a>` behavior
+	this.isMenuOpen = false; 
     this.router.navigate([route])
   }
 }

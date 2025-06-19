@@ -7,7 +7,13 @@
       >Gear Check</h4
     >
   </div>
-  <div class="navbar-links">
+  
+  <!-- Hamburger (only shown on mobile) -->
+  <button class="hamburger" (click)="isMenuOpen = !isMenuOpen">
+    {{ isMenuOpen ? '✖' : '☰' }}
+  </button>
+  
+  <div class="navbar-links" [class.mobile-open]="isMenuOpen">
     <a routerLink="/gear" (click)="navigate('/gear', $event)"
       >Gear Management</a
     >
