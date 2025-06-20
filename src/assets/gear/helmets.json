@@ -1,206 +1,206 @@
 {
   "N/A": {
-    "image": "https://oldschool.runescape.wiki/images/Bank_filler.png?f928c",
+    "image": "/assets/gear-icons/n-a.png",
     "wiki": ""
   },
   "Slayer helmet (i)": {
-    "image": "https://oldschool.runescape.wiki/images/Slayer_helmet_%28i%29.png",
+    "image": "/assets/gear-icons/slayer-helmet-i.png",
     "wiki": "https://oldschool.runescape.wiki/w/Slayer_helmet"
   },
   "Masori mask": {
-    "image": "https://oldschool.runescape.wiki/images/Masori_mask.png",
+    "image": "/assets/gear-icons/masori-mask.png",
     "wiki": "https://oldschool.runescape.wiki/w/Masori_mask"
   },
   "Armadyl helmet": {
-    "image": "https://oldschool.runescape.wiki/images/Armadyl_helmet.png",
+    "image": "/assets/gear-icons/armadyl-helmet.png",
     "wiki": "https://oldschool.runescape.wiki/w/Armadyl_helmet"
   },
   "Virtus mask": {
-    "image": "https://oldschool.runescape.wiki/images/Virtus_mask.png?3a5cd",
+    "image": "/assets/gear-icons/virtus-mask.png",
     "wiki": "https://oldschool.runescape.wiki/w/Virtus_mask"
   },
   "Dharok's helm": {
-    "image": "https://oldschool.runescape.wiki/images/Dharok%27s_helm.png",
+    "image": "/assets/gear-icons/dharok-s-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Dharok%27s_helm"
   },
   "Void ranger helm": {
-    "image": "https://oldschool.runescape.wiki/images/Void_ranger_helm.png",
+    "image": "/assets/gear-icons/void-ranger-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Void_ranger_helm"
   },
   "Ancestral hat": {
-    "image": "https://oldschool.runescape.wiki/images/Ancestral_hat.png?ec289",
+    "image": "/assets/gear-icons/ancestral-hat.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ancestral_hat"
   },
   "Masori mask (f)": {
-    "image": "https://oldschool.runescape.wiki/images/Masori_mask_%28f%29.png?44891",
+    "image": "/assets/gear-icons/masori-mask-f.png",
     "wiki": "https://oldschool.runescape.wiki/w/Masori_mask_(f)"
   },
   "Crystal helm": {
-    "image": "https://oldschool.runescape.wiki/images/Crystal_helm.png?41e4e",
+    "image": "/assets/gear-icons/crystal-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Crystal_helm#Active"
   },
   "Robin hood hat": {
-    "image": "https://oldschool.runescape.wiki/images/Robin_hood_hat.png?dd602",
+    "image": "/assets/gear-icons/robin-hood-hat.png",
     "wiki": "https://oldschool.runescape.wiki/w/Robin_hood_hat"
   },
   "Blessed coif": {
-    "image": "https://oldschool.runescape.wiki/images/Ancient_coif.png?0b6b6",
+    "image": "/assets/gear-icons/blessed-coif.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ancient_coif"
   },
   "Ahrim's hood": {
-    "image": "https://oldschool.runescape.wiki/images/Ahrim%27s_hood.png?8d9e1",
+    "image": "/assets/gear-icons/ahrim''s-hood.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ahrim%27s_hood"
   },
   "Bloodbark helm": {
-    "image": "https://oldschool.runescape.wiki/images/Bloodbark_helm.png?d13d3",
+    "image": "/assets/gear-icons/bloodbark-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Bloodbark_helm"
   },
   "Mystic hat": {
-    "image": "https://oldschool.runescape.wiki/images/Mystic_hat.png?246bf",
+    "image": "/assets/gear-icons/mystic-hat.png",
     "wiki": "https://oldschool.runescape.wiki/w/Mystic_hat"
   },
   "Void melee helm": {
-    "image": "https://oldschool.runescape.wiki/images/Void_melee_helm.png?07275",
+    "image": "/assets/gear-icons/void-melee-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Void_melee_helm"
   },
   "Torva full helm": {
-    "image": "https://oldschool.runescape.wiki/images/Torva_full_helm.png?96920",
+    "image": "/assets/gear-icons/torva-full-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Torva_full_helm#Restored"
   },
   "Neitiznot faceguard": {
-    "image": "https://oldschool.runescape.wiki/images/Neitiznot_faceguard.png?0ec9b",
+    "image": "/assets/gear-icons/neitiznot-faceguard.png",
     "wiki": "https://oldschool.runescape.wiki/w/Neitiznot_faceguard"
   },
   "Helm of neitiznot": {
-    "image": "https://oldschool.runescape.wiki/images/Helm_of_neitiznot.png?28729",
+    "image": "/assets/gear-icons/helm-of-neitiznot.png",
     "wiki": "https://oldschool.runescape.wiki/w/Helm_of_neitiznot"
   },
   "Serpentine helm": {
-    "image": "https://oldschool.runescape.wiki/images/Serpentine_helm.png?c82f9",
+    "image": "/assets/gear-icons/serpentine-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Serpentine_helm#Charged"
   },
   "Black mask (i)": {
-    "image": "https://oldschool.runescape.wiki/images/Black_mask_%28i%29.png?db3d9",
+    "image": "/assets/gear-icons/black-mask-i.png",
     "wiki": "https://oldschool.runescape.wiki/w/Black_mask_(i)"
   },
   "Karil's coif": {
-    "image": "https://oldschool.runescape.wiki/images/Karil%27s_coif.png?49f5e",
+    "image": "/assets/gear-icons/karil-s-coif.png",
     "wiki": "https://oldschool.runescape.wiki/w/Karil%27s_coif"
   },
   "Berserker helm": {
-    "image": "https://oldschool.runescape.wiki/images/Berserker_helm.png?3be33",
+    "image": "/assets/gear-icons/berserker-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Berserker_helm"
   },
   "Rune full helm": {
-    "image": "https://oldschool.runescape.wiki/images/Rune_full_helm.png?ce07d",
+    "image": "/assets/gear-icons/rune-full-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Rune_full_helm"
   },
   "Adamant full helm": {
-    "image": "https://oldschool.runescape.wiki/images/Adamant_full_helm.png?63d9c",
+    "image": "/assets/gear-icons/adamant-full-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Adamant_full_helm"
   },
   "Archer helm": {
-    "image": "https://oldschool.runescape.wiki/images/Archer_helm.png?c0a17",
+    "image": "/assets/gear-icons/archer-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Archer_helm"
   },
   "Snakeskin bandana": {
-    "image": "https://oldschool.runescape.wiki/images/Snakeskin_bandana.png?44c1f",
+    "image": "/assets/gear-icons/snakeskin-bandana.png",
     "wiki": "https://oldschool.runescape.wiki/w/Snakeskin_bandana"
   },
   "Coif": {
-    "image": "https://oldschool.runescape.wiki/images/Coif.png?09bb0",
+    "image": "/assets/gear-icons/coif.png",
     "wiki": "https://oldschool.runescape.wiki/w/Coif"
   },
   "Elder chaos hood": {
-    "image": "https://oldschool.runescape.wiki/images/Elder_chaos_hood.png?0a875",
+    "image": "/assets/gear-icons/elder-chaos-hood.png",
     "wiki": "https://oldschool.runescape.wiki/w/Elder_chaos_hood"
   },
   "Farseer helm": {
-    "image": "https://oldschool.runescape.wiki/images/Farseer_helm.png?97fe8",
+    "image": "/assets/gear-icons/farseer-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Farseer_helm"
   },
   "Xerician hat": {
-    "image": "https://oldschool.runescape.wiki/images/Xerician_hat.png?022de",
+    "image": "/assets/gear-icons/xerician-hat.png",
     "wiki": "https://oldschool.runescape.wiki/w/Xerician_hat"
   },
   "Blue moon helm": {
-    "image": "https://oldschool.runescape.wiki/images/Blue_moon_helm.png?07650",
+    "image": "/assets/gear-icons/blue-moon-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Xerician_hat"
   },
   "Infinity hat": {
-    "image": "https://oldschool.runescape.wiki/images/Infinity_hat.png?19317",
+    "image": "/assets/gear-icons/infinity-hat.png",
     "wiki": "https://oldschool.runescape.wiki/w/Infinity_hat"
   },
   "Void mage helm": {
-    "image": "https://oldschool.runescape.wiki/images/Void_mage_helm.png?4afbb",
+    "image": "/assets/gear-icons/void-mage-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Void_mage_helm"
   },
   "Blood moon helm": {
-    "image": "https://oldschool.runescape.wiki/images/Blood_moon_helm.png?07650",
+    "image": "/assets/gear-icons/blood-moon-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Blood_moon_helm"
   },
   "Inquisitor's great helm": {
-    "image": "https://oldschool.runescape.wiki/images/Inquisitor%27s_great_helm.png?e75c0",
+    "image": "/assets/gear-icons/inquisitor-s-great-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Inquisitor%27s_great_helm"
   },
   "Mitre": {
-    "image": "https://oldschool.runescape.wiki/images/Ancient_mitre.png?0b6b6",
+    "image": "/assets/gear-icons/mitre.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ancient_mitre"
   },
   "Dagon'hai hat": {
-    "image": "https://oldschool.runescape.wiki/images/Dagon%27hai_hat.png?8d6a6",
+    "image": "/assets/gear-icons/dagon-hai-hat.png",
     "wiki": "https://oldschool.runescape.wiki/w/Dagon%27hai_hat"
   },
   "Barrows helm": {
-    "image": "https://oldschool.runescape.wiki/images/Torag%27s_helm.png?c9227",
+    "image": "/assets/gear-icons/barrows-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Torag%27s_helm"
   },
   "Dwarven helmet": {
-    "image": "https://oldschool.runescape.wiki/images/Dwarven_helmet.png?5eb13",
+    "image": "/assets/gear-icons/dwarven-helmet.png",
     "wiki": "https://oldschool.runescape.wiki/w/Dwarven_helmet"
   },
   "Verac's helm": {
-    "image": "https://oldschool.runescape.wiki/images/Verac%27s_helm.png?e3acf",
+    "image": "/assets/gear-icons/verac-s-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Verac%27s_helm"
   },
   "Justiciar faceguard": {
-    "image": "https://oldschool.runescape.wiki/images/Justiciar_faceguard.png?fb842",
+    "image": "/assets/gear-icons/justiciar-faceguard.png",
     "wiki": "https://oldschool.runescape.wiki/w/Justiciar_faceguard"
   },
   "Saradomin coif": {
-    "image": "https://oldschool.runescape.wiki/images/Saradomin_coif.png?0ee99",
+    "image": "/assets/gear-icons/saradomin-coif.png",
     "wiki": "https://oldschool.runescape.wiki/w/Saradomin_coif"
   },
   "Zombie helmet": {
-    "image": "https://oldschool.runescape.wiki/images/Zombie_helmet.png?7e5c9",
+    "image": "/assets/gear-icons/zombie-helmet.png",
     "wiki": "https://oldschool.runescape.wiki/w/Zombie_helmet"
   },
   "Fremennik hat": {
-    "image": "https://oldschool.runescape.wiki/images/Fremennik_hat.png?c83d6",
+    "image": "/assets/gear-icons/fremennik-hat.png",
     "wiki": "https://oldschool.runescape.wiki/w/Fremennik_hat"
   },
   "Guthan's helm": {
-    "image": "https://oldschool.runescape.wiki/images/Guthan%27s_helm.png?e75c0",
+    "image": "/assets/gear-icons/guthan-s-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Guthan%27s_helm"
   },
   "3rd age mage hat": {
-    "image": "https://oldschool.runescape.wiki/images/3rd_age_mage_hat.png?a4ed9",
+    "image": "/assets/gear-icons/3rd-age-mage-hat.png",
     "wiki": "https://oldschool.runescape.wiki/w/3rd_age_mage_hat"
   },
   "Bandos coif": {
-    "image": "https://oldschool.runescape.wiki/images/Bandos_coif.png?f928c",
+    "image": "/assets/gear-icons/bandos-coif.png",
     "wiki": "https://oldschool.runescape.wiki/w/Bandos_coif"
   },
   "Slayer helmet": {
-    "image": "https://oldschool.runescape.wiki/images/Slayer_helmet.png?7fb98",
+    "image": "/assets/gear-icons/slayer-helmet.png",
     "wiki": "https://oldschool.runescape.wiki/w/Slayer_helmet"
   },
   "Black mask": {
-    "image": "https://oldschool.runescape.wiki/images/Black_mask.png?db3d9",
+    "image": "/assets/gear-icons/black-mask.png",
     "wiki": "https://oldschool.runescape.wiki/w/Black_mask"
   },
   "Oathplate helm": {
-    "image": "https://oldschool.runescape.wiki/images/Oathplate_helm.png?e3d92",
+    "image": "/assets/gear-icons/oathplate-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Oathplate_helm"
   }
 }

@@ -18,3 +18,11 @@ This app helps players determine their **best possible gear setup** based on wha
 - **Search by item** to see what bosses use it in their best-in-slot setups.  
 
 ---
+
+To Deploy:
+
+Connect to server
+git pull
+npm install
+ng build --configuration produiction 
+pm2 restart all

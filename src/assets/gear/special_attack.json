@@ -1,146 +1,146 @@
 {
   "N/A": {
-    "image": "https://oldschool.runescape.wiki/images/Bank_filler.png?f928c",
+    "image": "/assets/gear-icons/n-a.png",
     "wiki": ""
   },
   "Dragon claws": {
-    "image": "https://oldschool.runescape.wiki/images/Dragon_claws.png",
+    "image": "/assets/gear-icons/dragon-claws.png",
     "wiki": "https://oldschool.runescape.wiki/w/Dragon_claws"
   },
   "Dragon dagger": {
-    "image": "https://oldschool.runescape.wiki/images/Dragon_dagger%28p%2B%2B%29.png?97441",
+    "image": "/assets/gear-icons/dragon-dagger.png",
     "wiki": "https://oldschool.runescape.wiki/w/Dragon_dagger#Poison++"
   },
   "Elder maul": {
-    "image": "https://oldschool.runescape.wiki/images/Elder_maul.png",
+    "image": "/assets/gear-icons/elder-maul.png",
     "wiki": "https://oldschool.runescape.wiki/w/Elder_maul"
   },
   "Voidwaker": {
-    "image": "https://oldschool.runescape.wiki/images/Voidwaker.png",
+    "image": "/assets/gear-icons/voidwaker.png",
     "wiki": "https://oldschool.runescape.wiki/w/Voidwaker"
   },
   "Toxic blowpipe": {
-    "image": "https://oldschool.runescape.wiki/images/Toxic_blowpipe.png?79f0d",
+    "image": "/assets/gear-icons/toxic-blowpipe.png",
     "wiki": "https://oldschool.runescape.wiki/w/Toxic_blowpipe#Charged"
   },
   "Zaryte crossbow": {
-    "image": "https://oldschool.runescape.wiki/images/Zaryte_crossbow.png",
+    "image": "/assets/gear-icons/zaryte-crossbow.png",
     "wiki": "https://oldschool.runescape.wiki/w/Zaryte_crossbow"
   },
   "Osmumten's fang": {
-    "image": "https://oldschool.runescape.wiki/images/Osmumten%27s_fang.png?8bfab",
+    "image": "/assets/gear-icons/osmumten-s-fang.png",
     "wiki": "https://oldschool.runescape.wiki/w/Osmumten%27s_fang"
   },
   "Tonalztics of ralos": {
-    "image": "https://oldschool.runescape.wiki/images/Tonalztics_of_ralos_%28uncharged%29.png?942fb",
+    "image": "/assets/gear-icons/tonalztics-of-ralos.png",
     "wiki": "https://oldschool.runescape.wiki/w/Tonalztics_of_ralos"
   },
   "Magic comp bow": {
-    "image": "https://oldschool.runescape.wiki/images/Magic_comp_bow.png?8bd5a",
+    "image": "/assets/gear-icons/magic-comp-bow.png",
     "wiki": "https://oldschool.runescape.wiki/w/Magic_comp_bow"
   },
   "Magic longbow": {
-    "image": "https://oldschool.runescape.wiki/images/Magic_longbow.png?8bd5a",
+    "image": "/assets/gear-icons/magic-longbow.png",
     "wiki": "https://oldschool.runescape.wiki/w/Magic_longbow"
   },
   "Crystal halberd": {
-    "image": "https://oldschool.runescape.wiki/images/Crystal_halberd.png?9e4ab",
+    "image": "/assets/gear-icons/crystal-halberd.png",
     "wiki": "https://oldschool.runescape.wiki/w/Crystal_halberd"
   },
   "Dragon thrownaxe": {
-    "image": "https://oldschool.runescape.wiki/images/Dragon_thrownaxe.png?8fa13",
+    "image": "/assets/gear-icons/dragon-thrownaxe.png",
     "wiki": "https://oldschool.runescape.wiki/w/Dragon_thrownaxe"
   },
   "Dragon knife": {
-    "image": "https://oldschool.runescape.wiki/images/Dragon_knife.png?8fa13",
+    "image": "/assets/gear-icons/dragon-knife.png",
     "wiki": "https://oldschool.runescape.wiki/w/Dragon_knife"
   },
   "Accursed sceptre": {
-    "image": "https://oldschool.runescape.wiki/images/Accursed_sceptre.png?7a41c",
+    "image": "/assets/gear-icons/accursed-sceptre.png",
     "wiki": "https://oldschool.runescape.wiki/w/Accursed_sceptre#Charged"
   },
   "Abyssal dagger": {
-    "image": "https://oldschool.runescape.wiki/images/Abyssal_dagger_%28p%2B%2B%29.png?c04be",
+    "image": "/assets/gear-icons/abyssal-dagger.png",
     "wiki": "https://oldschool.runescape.wiki/w/Abyssal_dagger#Poison++"
   },
   "Burning claws": {
-    "image": "https://oldschool.runescape.wiki/images/Burning_claws.png?8d51d",
+    "image": "/assets/gear-icons/burning-claws.png",
     "wiki": "https://oldschool.runescape.wiki/w/Burning_claws"
   },
   "Emberlight": {
-    "image": "https://oldschool.runescape.wiki/images/Emberlight.png?77ca0",
+    "image": "/assets/gear-icons/emberlight.png",
     "wiki": "https://oldschool.runescape.wiki/w/Emberlight"
   },
   "Arclight": {
-    "image": "https://oldschool.runescape.wiki/images/Arclight.png?a892a",
+    "image": "/assets/gear-icons/arclight.png",
     "wiki": "https://oldschool.runescape.wiki/w/Arclight#Charged"
   },
   "Dragon warhammer": {
-    "image": "https://oldschool.runescape.wiki/images/Dragon_warhammer.png?73103",
+    "image": "/assets/gear-icons/dragon-warhammer.png",
     "wiki": "https://oldschool.runescape.wiki/w/Dragon_warhammer"
   },
   "Bandos godsword": {
-    "image": "https://oldschool.runescape.wiki/images/Bandos_godsword.png?22c06",
+    "image": "/assets/gear-icons/bandos-godsword.png",
     "wiki": "https://oldschool.runescape.wiki/w/Bandos_godsword"
   },
   "Eldritch nightmare staff": {
-    "image": "https://oldschool.runescape.wiki/images/Eldritch_nightmare_staff.png?0a875",
+    "image": "/assets/gear-icons/eldritch-nightmare-staff.png",
     "wiki": "https://oldschool.runescape.wiki/w/Eldritch_nightmare_staff"
   },
   "Saradomin godsword": {
-    "image": "https://oldschool.runescape.wiki/images/Saradomin_godsword.png?11815",
+    "image": "/assets/gear-icons/saradomin-godsword.png",
     "wiki": "https://oldschool.runescape.wiki/w/Saradomin_godsword"
   },
   "Dragon mace": {
-    "image": "https://oldschool.runescape.wiki/images/Dragon_mace.png?cc5f3",
+    "image": "/assets/gear-icons/dragon-mace.png",
     "wiki": "https://oldschool.runescape.wiki/w/Dragon_mace"
   },
   "Ancient godsword": {
-    "image": "https://oldschool.runescape.wiki/images/Ancient_godsword.png?d99b1",
+    "image": "/assets/gear-icons/ancient-godsword.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ancient_godsword"
   },
   "Ancient mace": {
-    "image": "https://oldschool.runescape.wiki/images/Ancient_mace.png?0b6b6",
+    "image": "/assets/gear-icons/ancient-mace.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ancient_mace"
   },
   "Magic shortbow (i)": {
-    "image": "https://oldschool.runescape.wiki/images/Magic_shortbow_%28i%29.png?88e2c",
+    "image": "/assets/gear-icons/magic-shortbow-i.png",
     "wiki": "https://oldschool.runescape.wiki/w/Magic_shortbow_(i)"
   },
   "Barrelchest anchor": {
-    "image": "https://oldschool.runescape.wiki/images/Barrelchest_anchor.png?fefbc",
+    "image": "/assets/gear-icons/barrelchest-anchor.png",
     "wiki": "https://oldschool.runescape.wiki/w/Barrelchest_anchor"
   },
   "Ursine chainmace": {
-    "image": "https://oldschool.runescape.wiki/images/Ursine_chainmace.png?26d89",
+    "image": "/assets/gear-icons/ursine-chainmace.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ursine_chainmace#Charged"
   },
   "Armadyl crossbow": {
-    "image": "https://oldschool.runescape.wiki/images/Armadyl_crossbow.png?c60fb",
+    "image": "/assets/gear-icons/armadyl-crossbow.png",
     "wiki": "https://oldschool.runescape.wiki/w/Armadyl_crossbow"
   },
   "Dragon crossbow": {
-    "image": "https://oldschool.runescape.wiki/images/Dragon_crossbow.png?c85b3",
+    "image": "/assets/gear-icons/dragon-crossbow.png",
     "wiki": "https://oldschool.runescape.wiki/w/Dragon_crossbow"
   },
   "Zamorakian hasta": {
-    "image": "https://oldschool.runescape.wiki/images/Zamorakian_hasta.png?37c64",
+    "image": "/assets/gear-icons/zamorakian-hasta.png",
     "wiki": "https://oldschool.runescape.wiki/w/Zamorakian_hasta"
   },
   "Eclipse atlatl": {
-    "image": "https://oldschool.runescape.wiki/images/Eclipse_atlatl.png?77621",
+    "image": "/assets/gear-icons/eclipse-atlatl.png",
     "wiki": "https://oldschool.runescape.wiki/w/Eclipse_atlatl"
   },
   "Bone dagger": {
-    "image": "https://oldschool.runescape.wiki/images/Bone_dagger_%28p%2B%2B%29.png?6b752",
+    "image": "/assets/gear-icons/bone-dagger.png",
     "wiki": "https://oldschool.runescape.wiki/w/Bone_dagger#Poison++"
   },
   "Darklight": {
-    "image": "https://oldschool.runescape.wiki/images/Darklight.png?3a184",
+    "image": "/assets/gear-icons/darklight.png",
     "wiki": "https://oldschool.runescape.wiki/w/Darklight"
   },
   "Abyssal bludgeon": {
-    "image": "https://oldschool.runescape.wiki/images/Abyssal_bludgeon.png?b10f5",
+    "image": "/assets/gear-icons/abyssal-bludgeon.png",
     "wiki": "https://oldschool.runescape.wiki/w/Abyssal_bludgeon"
   }
 }

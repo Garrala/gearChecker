@@ -1,134 +1,161 @@
 {
   "N/A": {
-    "image": "https://oldschool.runescape.wiki/images/Bank_filler.png?f928c",
-    "wiki": ""
+    "image": "/assets/gear-icons/n-a.png",
+    "wiki": "",
+    "ammoType": "N/A"
   },
-  "Dragon arrow": {
-    "image": "https://oldschool.runescape.wiki/images/Dragon_arrow_5.png?2bd1d",
-    "wiki": "https://oldschool.runescape.wiki/w/Dragon_arrow"
+  "Dragon arrows": {
+    "image": "/assets/gear-icons/dragon-arrows.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_arrow",
+    "ammoType": "arrow"
   },
-  "Amethyst arrow": {
-    "image": "https://oldschool.runescape.wiki/images/Amethyst_arrow_5.png?544e3",
-    "wiki": "https://oldschool.runescape.wiki/w/Amethyst_arrow"
+  "Amethyst arrows": {
+    "image": "/assets/gear-icons/amethyst-arrows.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Amethyst_arrow",
+    "ammoType": "arrow"
   },
-  "Rune arrow": {
-    "image": "https://oldschool.runescape.wiki/images/Rune_arrow_5.png?31136",
-    "wiki": "https://oldschool.runescape.wiki/w/Rune_arrow"
+  "Rune arrows": {
+    "image": "/assets/gear-icons/rune-arrows.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Rune_arrow",
+    "ammoType": "arrow"
   },
   "Moonlight antler bolts": {
-    "image": "https://oldschool.runescape.wiki/images/Moonlight_antler_bolts_5.png?ceb8e",
-    "wiki": "https://oldschool.runescape.wiki/w/Moonlight_antler_bolts"
+    "image": "/assets/gear-icons/moonlight-antler-bolts.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Moonlight_antler_bolts",
+    "ammoType": "bolt"
   },
   "Sunlight antler bolts": {
-    "image": "https://oldschool.runescape.wiki/images/Sunlight_antler_bolts_5.png?a4120",
-    "wiki": "https://oldschool.runescape.wiki/w/Sunlight_antler_bolts"
+    "image": "/assets/gear-icons/sunlight-antler-bolts.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Sunlight_antler_bolts",
+    "ammoType": "bolt"
   },
   "Bolt rack": {
-    "image": "https://oldschool.runescape.wiki/images/Bolt_rack_5.png?07bfb",
-    "wiki": "https://oldschool.runescape.wiki/w/Bolt_rack"
+    "image": "/assets/gear-icons/bolt-rack.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Bolt_rack",
+    "ammoType": "karils"
   },
   "Rada's blessing 4": {
-    "image": "https://oldschool.runescape.wiki/images/Rada%27s_blessing_4.png?b8388",
-    "wiki": "https://oldschool.runescape.wiki/w/Rada%27s_blessing_4"
+    "image": "/assets/gear-icons/rada-s-blessing-4.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Rada%27s_blessing_4",
+    "ammoType": "blessing"
   },
   "Rada's blessing 3": {
-    "image": "https://oldschool.runescape.wiki/images/Rada%27s_blessing_3.png?219da",
-    "wiki": "https://oldschool.runescape.wiki/w/Rada%27s_blessing_3"
+    "image": "/assets/gear-icons/rada-s-blessing-3.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Rada%27s_blessing_3",
+    "ammoType": "blessing"
   },
   "God blessing": {
-    "image": "https://oldschool.runescape.wiki/images/Peaceful_blessing.png?219da",
-    "wiki": "https://oldschool.runescape.wiki/w/Peaceful_blessing"
+    "image": "/assets/gear-icons/god-blessing.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Peaceful_blessing",
+    "ammoType": "blessing"
   },
   "Diamond dragon bolts (e)": {
-    "image": "https://oldschool.runescape.wiki/images/Diamond_dragon_bolts_%28e%29_5.png?7cc39",
-    "wiki": "https://oldschool.runescape.wiki/w/Diamond_dragon_bolts_(e)"
+    "image": "/assets/gear-icons/diamond-dragon-bolts-e.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Diamond_dragon_bolts_(e)",
+    "ammoType": "bolt"
   },
   "Ruby dragon bolts (e)": {
-    "image": "https://oldschool.runescape.wiki/images/Ruby_dragon_bolts_%28e%29_5.png?8d2f7",
-    "wiki": "https://oldschool.runescape.wiki/w/Ruby_dragon_bolts_(e)"
+    "image": "/assets/gear-icons/ruby-dragon-bolts-e.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Ruby_dragon_bolts_(e)",
+    "ammoType": "bolt"
   },
   "Diamond bolts (e)": {
-    "image": "https://oldschool.runescape.wiki/images/Diamond_bolts_%28e%29_5.png?1cc37",
-    "wiki": "https://oldschool.runescape.wiki/w/Diamond_bolts_(e)"
+    "image": "/assets/gear-icons/diamond-bolts-e.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Diamond_bolts_(e)",
+    "ammoType": "bolt"
   },
   "Ruby bolts (e)": {
-    "image": "https://oldschool.runescape.wiki/images/Ruby_bolts_%28e%29_5.png?d7b7e",
-    "wiki": "https://oldschool.runescape.wiki/w/Ruby_bolts_(e)"
-  },
-  "Adamant arrow": {
-    "image": "https://oldschool.runescape.wiki/images/Adamant_arrow_5.png?d0b33",
-    "wiki": "https://oldschool.runescape.wiki/w/Adamant_arrow"
+    "image": "/assets/gear-icons/ruby-bolts-e.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Ruby_bolts_(e)",
+    "ammoType": "bolt"
   },
   "Dragon darts": {
-    "image": "https://oldschool.runescape.wiki/images/Dragon_dart.png?cc5f3",
-    "wiki": "https://oldschool.runescape.wiki/w/Dragon_dart"
+    "image": "/assets/gear-icons/dragon-darts.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_dart",
+    "ammoType": "dart"
   },
   "Amethyst darts": {
-    "image": "https://oldschool.runescape.wiki/images/Amethyst_dart.png?248b4",
-    "wiki": "https://oldschool.runescape.wiki/w/Amethyst_dart"
+    "image": "/assets/gear-icons/amethyst-darts.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Amethyst_dart",
+    "ammoType": "dart"
   },
   "Atlatl darts": {
-    "image": "https://oldschool.runescape.wiki/images/Atlatl_dart_5.png?290ac",
-    "wiki": "https://oldschool.runescape.wiki/w/Atlatl_dart"
+    "image": "/assets/gear-icons/atlatl-darts.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Atlatl_dart",
+    "ammoType": "atlatl"
   },
   "Ghommal's lucky penny": {
-    "image": "https://oldschool.runescape.wiki/images/Ghommal%27s_lucky_penny.png?98e07",
-    "wiki": "https://oldschool.runescape.wiki/w/Ghommal%27s_lucky_penny"
+    "image": "/assets/gear-icons/ghommal-s-lucky-penny.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Ghommal%27s_lucky_penny",
+    "ammoType": "blessing"
   },
   "Rada's blessing 2": {
-    "image": "https://oldschool.runescape.wiki/images/Rada%27s_blessing_2.png?9a45f",
-    "wiki": "https://oldschool.runescape.wiki/w/Rada%27s_blessing_2"
+    "image": "/assets/gear-icons/rada-s-blessing-2.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Rada%27s_blessing_2",
+    "ammoType": "blessing"
   },
   "Dragon javelin": {
-    "image": "https://oldschool.runescape.wiki/images/Dragon_javelin.png?cc5f3",
-    "wiki": "https://oldschool.runescape.wiki/w/Dragon_javelin"
+    "image": "/assets/gear-icons/dragon-javelin.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_javelin",
+    "ammoType": "javelin"
   },
   "Broad bolts": {
-    "image": "https://oldschool.runescape.wiki/images/Broad_bolts_5.png?e50a2",
-    "wiki": "https://oldschool.runescape.wiki/w/Broad_bolts"
+    "image": "/assets/gear-icons/broad-bolts.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Broad_bolts",
+    "ammoType": "bolt"
   },
   "Adamant bolts": {
-    "image": "https://oldschool.runescape.wiki/images/Adamant_bolts_5.png?9c874",
-    "wiki": "https://oldschool.runescape.wiki/w/Adamant_bolts"
+    "image": "/assets/gear-icons/adamant-bolts.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Adamant_bolts",
+    "ammoType": "bolt"
   },
   "Adamant arrows": {
-    "image": "https://oldschool.runescape.wiki/images/Adamant_arrow_5.png?d0b33",
-    "wiki": "https://oldschool.runescape.wiki/w/Adamant_arrow"
+    "image": "/assets/gear-icons/adamant-arrows.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Adamant_arrow",
+    "ammoType": "arrow"
   },
   "Broad arrows": {
-    "image": "https://oldschool.runescape.wiki/images/Broad_arrows_5.png?7488c",
-    "wiki": "https://oldschool.runescape.wiki/w/Broad_arrows"
+    "image": "/assets/gear-icons/broad-arrows.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Broad_arrows",
+    "ammoType": "arrow"
   },
   "Unholy blessing": {
-    "image": "https://oldschool.runescape.wiki/images/Unholy_blessing.png?4a467",
-    "wiki": "https://oldschool.runescape.wiki/w/Unholy_blessing"
+    "image": "/assets/gear-icons/unholy-blessing.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Unholy_blessing",
+    "ammoType": "blessing"
   },
   "Holy blessing": {
-    "image": "https://oldschool.runescape.wiki/images/Holy_blessing.png?53fc0",
-    "wiki": "https://oldschool.runescape.wiki/w/Holy_blessing"
+    "image": "/assets/gear-icons/holy-blessing.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Holy_blessing",
+    "ammoType": "blessing"
   },
   "Runite bolts": {
-    "image": "https://oldschool.runescape.wiki/images/Runite_bolts_5.png?09305",
-    "wiki": "https://oldschool.runescape.wiki/w/Runite_bolts"
+    "image": "/assets/gear-icons/runite-bolts.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Runite_bolts",
+    "ammoType": "bolt"
   },
   "War blessing": {
-    "image": "https://oldschool.runescape.wiki/images/War_blessing.png?b7686",
-    "wiki": "https://oldschool.runescape.wiki/w/War_blessing"
+    "image": "/assets/gear-icons/war-blessing.png",
+    "wiki": "https://oldschool.runescape.wiki/w/War_blessing",
+    "ammoType": "blessing"
   },
   "Amethyst broad bolts": {
-    "image": "https://oldschool.runescape.wiki/images/Amethyst_broad_bolts_5.png?8e6f7",
-    "wiki": "https://oldschool.runescape.wiki/w/Amethyst_broad_bolts"
+    "image": "/assets/gear-icons/amethyst-broad-bolts.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Amethyst_broad_bolts",
+    "ammoType": "bolt"
   },
   "Irit tar": {
-    "image": "https://oldschool.runescape.wiki/images/Irit_tar.png?b1cc8",
+    "image": "/assets/gear-icons/irit-tar.png",
     "wiki": "https://oldschool.runescape.wiki/w/Irit_tar"
   },
   "Harralander tar": {
-    "image": "https://oldschool.runescape.wiki/images/Harralander_tar.png?20d11",
-    "wiki": "https://oldschool.runescape.wiki/w/Harralander_tar"
+    "image": "/assets/gear-icons/harralander-tar.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Harralander_tar",
+    "ammoType": "tar"
   },
   "Tarromin tar": {
-    "image": "https://oldschool.runescape.wiki/images/Tarromin_tar.png?d511d",
-    "wiki": "https://oldschool.runescape.wiki/w/Tarromin_tar"
+    "image": "/assets/gear-icons/tarromin-tar.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Tarromin_tar",
+    "ammoType": "tar"
   }
 }
