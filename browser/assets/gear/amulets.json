@@ -1,86 +1,86 @@
 {
   "N/A": {
-    "image": "https://oldschool.runescape.wiki/images/Bank_filler.png?f928c",
+    "image": "/assets/gear-icons/n-a.png",
     "wiki": ""
   },
   "Necklace of anguish": {
-    "image": "https://oldschool.runescape.wiki/images/Necklace_of_anguish.png?1f378",
+    "image": "/assets/gear-icons/necklace-of-anguish.png",
     "wiki": "https://oldschool.runescape.wiki/w/Necklace_of_anguish"
   },
   "Amulet of fury": {
-    "image": "https://oldschool.runescape.wiki/images/Amulet_of_fury.png?248b4",
+    "image": "/assets/gear-icons/amulet-of-fury.png",
     "wiki": "https://oldschool.runescape.wiki/w/Amulet_of_fury"
   },
   "Amulet of torture": {
-    "image": "https://oldschool.runescape.wiki/images/Amulet_of_torture.png?ec289",
+    "image": "/assets/gear-icons/amulet-of-torture.png",
     "wiki": "https://oldschool.runescape.wiki/w/Amulet_of_torture"
   },
   "Amulet of glory": {
-    "image": "https://oldschool.runescape.wiki/images/Amulet_of_glory.png",
+    "image": "/assets/gear-icons/amulet-of-glory.png",
     "wiki": "https://oldschool.runescape.wiki/w/Amulet_of_glory"
   },
   "Occult necklace": {
-    "image": "https://oldschool.runescape.wiki/images/Occult_necklace.png",
+    "image": "/assets/gear-icons/occult-necklace.png",
     "wiki": "https://oldschool.runescape.wiki/w/Occult_necklace"
   },
   "Bonecrusher necklace": {
-    "image": "https://oldschool.runescape.wiki/images/Bonecrusher_necklace.png?9ae5a",
+    "image": "/assets/gear-icons/bonecrusher-necklace.png",
     "wiki": "https://oldschool.runescape.wiki/w/Bonecrusher_necklace"
   },
   "Amulet of power": {
-    "image": "https://oldschool.runescape.wiki/images/Amulet_of_power.png?248b4",
+    "image": "/assets/gear-icons/amulet-of-power.png",
     "wiki": "https://oldschool.runescape.wiki/w/Amulet_of_power"
   },
   "Amulet of rancour": {
-    "image": "https://oldschool.runescape.wiki/images/Amulet_of_rancour.png?8bfab",
+    "image": "/assets/gear-icons/amulet-of-rancour.png",
     "wiki": "https://oldschool.runescape.wiki/w/Amulet_of_rancour"
   },
   "Amulet of strength": {
-    "image": "https://oldschool.runescape.wiki/images/Amulet_of_strength.png?15de7",
+    "image": "/assets/gear-icons/amulet-of-strength.png",
     "wiki": "https://oldschool.runescape.wiki/w/Amulet_of_strength"
   },
   "Amulet of accuracy": {
-    "image": "https://oldschool.runescape.wiki/images/Amulet_of_accuracy.png?d8729",
+    "image": "/assets/gear-icons/amulet-of-accuracy.png",
     "wiki": "https://oldschool.runescape.wiki/w/Amulet_of_accuracy"
   },
   "Amulet of magic": {
-    "image": "https://oldschool.runescape.wiki/images/Amulet_of_magic.png?15de7",
+    "image": "/assets/gear-icons/amulet-of-magic.png",
     "wiki": "https://oldschool.runescape.wiki/w/Amulet_of_magic"
   },
   "Dragonbone necklace": {
-    "image": "https://oldschool.runescape.wiki/images/Dragonbone_necklace.png?8fa13",
+    "image": "/assets/gear-icons/dragonbone-necklace.png",
     "wiki": "https://oldschool.runescape.wiki/w/Dragonbone_necklace"
   },
   "Amulet of blood fury": {
-    "image": "https://oldschool.runescape.wiki/images/Amulet_of_blood_fury.png?ec289",
+    "image": "/assets/gear-icons/amulet-of-blood-fury.png",
     "wiki": "https://oldschool.runescape.wiki/w/Amulet_of_blood_fury"
   },
   "Amulet of the damned": {
-    "image": "https://oldschool.runescape.wiki/images/Amulet_of_the_damned_%28full%29.png?45b61",
+    "image": "/assets/gear-icons/amulet-of-the-damned.png",
     "wiki": "https://oldschool.runescape.wiki/w/Amulet_of_the_damned"
   },
   "Holy symbol": {
-    "image": "https://oldschool.runescape.wiki/images/Holy_symbol.png?e2748",
+    "image": "/assets/gear-icons/holy-symbol.png",
     "wiki": "https://oldschool.runescape.wiki/w/Holy_symbol"
   },
   "Unholy symbol": {
-    "image": "https://oldschool.runescape.wiki/images/Unholy_symbol.png?4a467",
+    "image": "/assets/gear-icons/unholy-symbol.png",
     "wiki": "https://oldschool.runescape.wiki/w/Unholy_symbol"
   },
   "Salve amulet (ei)": {
-    "image": "https://oldschool.runescape.wiki/images/Salve_amulet%28ei%29.png?a8fa6",
+    "image": "/assets/gear-icons/salve-amulet-ei.png",
     "wiki": "https://oldschool.runescape.wiki/w/Salve_amulet(ei)"
   },
   "Salve amulet (e)": {
-    "image": "https://oldschool.runescape.wiki/images/Salve_amulet_%28e%29.png?a8fa6",
+    "image": "/assets/gear-icons/salve-amulet-e.png",
     "wiki": "https://oldschool.runescape.wiki/w/Salve_amulet_(e)"
   },
   "Salve amulet": {
-    "image": "https://oldschool.runescape.wiki/images/Salve_amulet.png?a8fa6",
+    "image": "/assets/gear-icons/salve-amulet.png",
     "wiki": "https://oldschool.runescape.wiki/w/Salve_amulet"
   },
   "3rd age amulet": {
-    "image": "https://oldschool.runescape.wiki/images/3rd_age_amulet.png?6fa46",
+    "image": "/assets/gear-icons/3rd-age-amulet.png",
     "wiki": "https://oldschool.runescape.wiki/w/3rd_age_amulet"
   }
 }

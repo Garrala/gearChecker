@@ -1,98 +1,98 @@
 {
   "N/A": {
-    "image": "https://oldschool.runescape.wiki/images/Bank_filler.png?f928c",
+    "image": "/assets/gear-icons/n-a.png",
     "wiki": ""
   },
   "Barrows gloves": {
-    "image": "https://oldschool.runescape.wiki/images/Barrows_gloves.png",
+    "image": "/assets/gear-icons/barrows-gloves.png",
     "wiki": "https://oldschool.runescape.wiki/w/Barrows_gloves"
   },
   "Zaryte vambraces": {
-    "image": "https://oldschool.runescape.wiki/images/Zaryte_vambraces.png?5828d",
+    "image": "/assets/gear-icons/zaryte-vambraces.png",
     "wiki": "https://oldschool.runescape.wiki/w/Zaryte_vambraces"
   },
   "Blessed vambraces": {
-    "image": "https://oldschool.runescape.wiki/images/Ancient_bracers.png?15de7",
+    "image": "/assets/gear-icons/blessed-vambraces.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ancient_bracers"
   },
   "Black d'hide vambraces": {
-    "image": "https://oldschool.runescape.wiki/images/Black_d%27hide_vambraces.png?db3d9",
+    "image": "/assets/gear-icons/black-d-hide-vambraces.png",
     "wiki": "https://oldschool.runescape.wiki/w/Black_d%27hide_vambraces"
   },
   "Tormented bracelet": {
-    "image": "https://oldschool.runescape.wiki/images/Tormented_bracelet.png?c9227",
+    "image": "/assets/gear-icons/tormented-bracelet.png",
     "wiki": "https://oldschool.runescape.wiki/w/Tormented_bracelet"
   },
   "Void knight gloves": {
-    "image": "https://oldschool.runescape.wiki/images/Void_knight_gloves.png?75a26",
+    "image": "/assets/gear-icons/void-knight-gloves.png",
     "wiki": "https://oldschool.runescape.wiki/w/Void_knight_gloves"
   },
   "Ferocious gloves": {
-    "image": "https://oldschool.runescape.wiki/images/Ferocious_gloves.png?97fe8",
+    "image": "/assets/gear-icons/ferocious-gloves.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ferocious_gloves"
   },
   "Dragon gloves": {
-    "image": "https://oldschool.runescape.wiki/images/Dragon_gloves.png?8fa13",
+    "image": "/assets/gear-icons/dragon-gloves.png",
     "wiki": "https://oldschool.runescape.wiki/w/Dragon_gloves"
   },
   "Rune gloves": {
-    "image": "https://oldschool.runescape.wiki/images/Rune_gloves.png?ce07d",
+    "image": "/assets/gear-icons/rune-gloves.png",
     "wiki": "https://oldschool.runescape.wiki/w/Rune_gloves"
   },
   "Regen bracelet": {
-    "image": "https://oldschool.runescape.wiki/images/Regen_bracelet.png?2e2e3",
+    "image": "/assets/gear-icons/regen-bracelet.png",
     "wiki": "https://oldschool.runescape.wiki/w/Regen_bracelet"
   },
   "Combat bracelet": {
-    "image": "https://oldschool.runescape.wiki/images/Combat_bracelet.png?43e7d",
+    "image": "/assets/gear-icons/combat-bracelet.png",
     "wiki": "https://oldschool.runescape.wiki/w/Combat_bracelet#(4)"
   },
   "Infinity gloves": {
-    "image": "https://oldschool.runescape.wiki/images/Infinity_gloves.png?13f14",
+    "image": "/assets/gear-icons/infinity-gloves.png",
     "wiki": "https://oldschool.runescape.wiki/w/Infinity_gloves"
   },
   "Red d'hide vambraces": {
-    "image": "https://oldschool.runescape.wiki/images/Red_d%27hide_vambraces.png?77caa",
+    "image": "/assets/gear-icons/red-d-hide-vambraces.png",
     "wiki": "https://oldschool.runescape.wiki/w/Red_d%27hide_vambraces"
   },
   "Bloodbark gauntlets": {
-    "image": "https://oldschool.runescape.wiki/images/Bloodbark_gauntlets.png?d13d3",
+    "image": "/assets/gear-icons/bloodbark-gauntlets.png",
     "wiki": "https://oldschool.runescape.wiki/w/Bloodbark_gauntlets"
   },
   "Hueycoatl hide vambraces": {
-    "image": "https://oldschool.runescape.wiki/images/Hueycoatl_hide_vambraces.png?3e0c3",
+    "image": "/assets/gear-icons/hueycoatl-hide-vambraces.png",
     "wiki": "https://oldschool.runescape.wiki/w/Hueycoatl_hide_vambraces"
   },
   "Green d'hide vambraces": {
-    "image": "https://oldschool.runescape.wiki/images/Green_d%27hide_vambraces.png?4e070",
+    "image": "/assets/gear-icons/green-d-hide-vambraces.png",
     "wiki": "https://oldschool.runescape.wiki/w/Green_d%27hide_vambraces"
   },
   "Saradomin bracers": {
-    "image": "https://oldschool.runescape.wiki/images/Saradomin_bracers.png?0ee99",
+    "image": "/assets/gear-icons/saradomin-bracers.png",
     "wiki": "https://oldschool.runescape.wiki/w/Saradomin_bracers"
   },
   "Zamorak bracers": {
-    "image": "https://oldschool.runescape.wiki/images/Zamorak_bracers.png?1bd0f",
+    "image": "/assets/gear-icons/zamorak-bracers.png",
     "wiki": "https://oldschool.runescape.wiki/w/Zamorak_bracers"
   },
   "Ranger gloves": {
-    "image": "https://oldschool.runescape.wiki/images/Ranger_gloves.png?095ed",
+    "image": "/assets/gear-icons/ranger-gloves.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ranger_gloves"
   },
   "Holy wraps": {
-    "image": "https://oldschool.runescape.wiki/images/Holy_wraps.png?53fc0",
+    "image": "/assets/gear-icons/holy-wraps.png",
     "wiki": "https://oldschool.runescape.wiki/w/Holy_wraps"
   },
   "Adamant gloves": {
-    "image": "https://oldschool.runescape.wiki/images/Adamant_gloves.png?63d9c",
+    "image": "/assets/gear-icons/adamant-gloves.png",
     "wiki": "https://oldschool.runescape.wiki/w/Adamant_gloves"
   },
   "Bandos bracers": {
-    "image": "https://oldschool.runescape.wiki/images/Bandos_bracers.png?f928c",
+    "image": "/assets/gear-icons/bandos-bracers.png",
     "wiki": "https://oldschool.runescape.wiki/w/Bandos_bracers"
   },
   "Granite gloves": {
-    "image": "https://oldschool.runescape.wiki/images/Granite_gloves.png?fee90",
+    "image": "/assets/gear-icons/granite-gloves.png",
     "wiki": "https://oldschool.runescape.wiki/w/Granite_gloves"
   }
 }

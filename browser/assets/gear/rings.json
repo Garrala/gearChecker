@@ -1,110 +1,106 @@
 {
   "N/A": {
-    "image": "https://oldschool.runescape.wiki/images/Bank_filler.png?f928c",
+    "image": "/assets/gear-icons/n-a.png",
     "wiki": ""
   },
   "Lightbearer": {
-    "image": "https://oldschool.runescape.wiki/images/Lightbearer.png",
+    "image": "/assets/gear-icons/lightbearer.png",
     "wiki": "https://oldschool.runescape.wiki/w/Lightbearer"
   },
   "Seers ring (i)": {
-    "image": "https://oldschool.runescape.wiki/images/Seers_ring_%28i%29.png",
+    "image": "/assets/gear-icons/seers-ring-i.png",
     "wiki": "https://oldschool.runescape.wiki/w/Seers_ring"
   },
   "Venator ring": {
-    "image": "https://oldschool.runescape.wiki/images/Venator_ring.png?895b0",
+    "image": "/assets/gear-icons/venator-ring.png",
     "wiki": "https://oldschool.runescape.wiki/w/Venator_ring"
   },
   "Ring of recoil": {
-    "image": "https://oldschool.runescape.wiki/images/Ring_of_recoil.png?4e1b1",
+    "image": "/assets/gear-icons/ring-of-recoil.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ring_of_recoil"
   },
   "Ring of life": {
-    "image": "https://oldschool.runescape.wiki/images/Ring_of_life.png?4e1b1",
+    "image": "/assets/gear-icons/ring-of-life.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ring_of_life"
   },
   "Archers ring (i)": {
-    "image": "https://oldschool.runescape.wiki/images/Archers_ring_%28i%29.png?1f712",
+    "image": "/assets/gear-icons/archers-ring-i.png",
     "wiki": "https://oldschool.runescape.wiki/w/Archers_ring_(i)"
   },
   "Ring of the gods": {
-    "image": "https://oldschool.runescape.wiki/images/Ring_of_the_gods.png?4e1b1",
+    "image": "/assets/gear-icons/ring-of-the-gods.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ring_of_the_gods"
   },
   "Ring of shadows": {
-    "image": "https://oldschool.runescape.wiki/images/Ring_of_shadows_%28uncharged%29.png?7f747",
+    "image": "/assets/gear-icons/ring-of-shadows.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ring_of_shadows#Uncharged"
   },
   "Brimstone ring": {
-    "image": "https://oldschool.runescape.wiki/images/Brimstone_ring.png?3d026",
+    "image": "/assets/gear-icons/brimstone-ring.png",
     "wiki": "https://oldschool.runescape.wiki/w/Brimstone_ring"
   },
   "Ring of endurance": {
-    "image": "https://oldschool.runescape.wiki/images/Ring_of_endurance_%28uncharged%29.png?4e1b1",
+    "image": "/assets/gear-icons/ring-of-endurance.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ring_of_endurance"
   },
   "Ring of the gods (i)": {
-    "image": "https://oldschool.runescape.wiki/images/Ring_of_the_gods_%28i%29.png?c76a5",
+    "image": "/assets/gear-icons/ring-of-the-gods-i.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ring_of_the_gods_(i)"
   },
   "Magus ring": {
-    "image": "https://oldschool.runescape.wiki/images/Magus_ring.png?c1c46",
+    "image": "/assets/gear-icons/magus-ring.png",
     "wiki": "https://oldschool.runescape.wiki/w/Magus_ring"
   },
   "Ultor ring": {
-    "image": "https://oldschool.runescape.wiki/images/Ultor_ring.png?895b0",
+    "image": "/assets/gear-icons/ultor-ring.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ultor_ring"
   },
   "Ring of suffering (i)": {
-    "image": "https://oldschool.runescape.wiki/images/Ring_of_suffering_%28i%29.png?2f9db",
+    "image": "/assets/gear-icons/ring-of-suffering-i.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ring_of_suffering_(i)"
   },
   "Berserker ring (i)": {
-    "image": "https://oldschool.runescape.wiki/images/Berserker_ring_%28i%29.png?356fd",
+    "image": "/assets/gear-icons/berserker-ring-i.png",
     "wiki": "https://oldschool.runescape.wiki/w/Berserker_ring_(i)"
   },
   "Warrior ring (i)": {
-    "image": "https://oldschool.runescape.wiki/images/Warrior_ring_%28i%29.png?b7686",
+    "image": "/assets/gear-icons/warrior-ring-i.png",
     "wiki": "https://oldschool.runescape.wiki/w/Warrior_ring_(i)"
   },
   "Bellator ring": {
-    "image": "https://oldschool.runescape.wiki/images/Bellator_ring.png?d6a37",
+    "image": "/assets/gear-icons/bellator-ring.png",
     "wiki": "https://oldschool.runescape.wiki/w/Bellator_ring"
   },
   "Tyrannical ring (i)": {
-    "image": "https://oldschool.runescape.wiki/images/Tyrannical_ring_%28i%29.png?08f42",
+    "image": "/assets/gear-icons/tyrannical-ring-i.png",
     "wiki": "https://oldschool.runescape.wiki/w/Tyrannical_ring_(i)"
   },
-  "Magus ring": {
-    "image": "https://oldschool.runescape.wiki/images/Magus_ring.png?c1c46",
-    "wiki": "https://oldschool.runescape.wiki/w/Magus_ring"
-  },
   "Explorer's ring 4": {
-    "image": "https://oldschool.runescape.wiki/images/Explorer%27s_ring_4.png?b8cf0",
+    "image": "/assets/gear-icons/explorer-s-ring-4.png",
     "wiki": "https://oldschool.runescape.wiki/w/Explorer%27s_ring_4"
   },
   "Ring of wealth (i)": {
-    "image": "https://oldschool.runescape.wiki/images/Ring_of_wealth_%28i%29.png?4e1b1",
+    "image": "/assets/gear-icons/ring-of-wealth-i.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ring_of_wealth_(i)#(i5)"
   },
   "Beacon ring": {
-    "image": "https://oldschool.runescape.wiki/images/Beacon_ring.png?3be33",
+    "image": "/assets/gear-icons/beacon-ring.png",
     "wiki": "https://oldschool.runescape.wiki/w/Beacon_ring"
   },
   "Explorer's ring 1": {
-    "image": "https://oldschool.runescape.wiki/images/Explorer%27s_ring_1.png?b8cf0",
+    "image": "/assets/gear-icons/explorer-s-ring-1.png",
     "wiki": "https://oldschool.runescape.wiki/w/Explorer%27s_ring_1"
   },
   "Lunar ring": {
-    "image": "https://oldschool.runescape.wiki/images/Lunar_ring.png?6dc61",
+    "image": "/assets/gear-icons/lunar-ring.png",
     "wiki": "https://oldschool.runescape.wiki/w/Lunar_ring"
   },
   "Ring of dueling": {
-    "image": "https://oldschool.runescape.wiki/images/Ring_of_dueling%288%29.png?3f71e",
+    "image": "/assets/gear-icons/ring-of-dueling.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ring_of_dueling#(8)"
   },
   "Treasonous ring (i)": {
-    "image": "https://oldschool.runescape.wiki/images/Treasonous_ring_%28i%29.png?849c7",
+    "image": "/assets/gear-icons/treasonous-ring-i.png",
     "wiki": "https://oldschool.runescape.wiki/w/Treasonous_ring_(i)"
   }
 }
