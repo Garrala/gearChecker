@@ -1,17 +1,17 @@
 {
   "name": "The Nightmare",
   "category": "Instanced Bosses",
-  "image": "https://oldschool.runescape.wiki/images/The_Nightmare.png?0128a",
+  "image": "assets/monster-icons/the_nightmare.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/The_Nightmare#Active",
   "bosses": [
     {
       "name": "The Nightmare",
-      "image": "https://oldschool.runescape.wiki/images/The_Nightmare.png?0128a",
+      "image": "assets/monster-icons/the_nightmare.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/The_Nightmare#Active",
       "combat_level": 725,
       "hp": 500,
       "max_hit": 41,
-      "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
       "defense": {
         "melee": {
           "stab": 150,
@@ -25,7 +25,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_styles": [ "Magic", "Ranged", "Venom" ],
       "attack_speed": 3,
       "aggressive": true,
       "immunities": {

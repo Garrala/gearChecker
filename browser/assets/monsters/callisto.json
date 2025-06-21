@@ -1,12 +1,12 @@
 {
   "name": "Callisto",
   "category": "Wilderness Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Callisto.png?bfba7",
+  "image": "assets/monster-icons/callisto.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Callisto",
   "bosses": [
     {
       "name": "Callisto",
-      "image": "https://oldschool.runescape.wiki/images/Callisto.png?bfba7",
+      "image": "assets/monster-icons/callisto.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Callisto",
       "combat_level": 470,
       "hp": 1000,
@@ -28,7 +28,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Melee"],
+      "attack_styles": [ "Magic", "Ranged", "Melee" ],
       "attack_speed": 4,
       "aggressive": true,
       "immunities": {
@@ -42,133 +42,140 @@
   "gear_setups": {
     "Ranged": {
       "Weapon": [
-        ["Webweaver bow", "Craw's bow"],
-        ["Bow of faerdhinen"],
-        ["Zaryte crossbow", "Armadyl crossbow", "Dragon crossbow"],
-        ["Rune crossbow"],
-        ["Magic shortbow (i)"]
+        [ "Webweaver bow", "Craw's bow" ],
+        [ "Bow of faerdhinen" ],
+        [ "Zaryte crossbow", "Armadyl crossbow", "Dragon crossbow" ],
+        [ "Rune crossbow" ],
+        [ "Magic shortbow (i)" ]
       ],
       "Shield": [
-        ["Twisted buckler"],
-        ["Dragonfire ward", "Odium ward"],
-        ["Book of law", "Unholy book"]
+        [ "Twisted buckler" ],
+        [ "Dragonfire ward", "Odium ward" ],
+        [ "Book of law", "Unholy book" ]
       ],
-      "Special Attack": [["Zaryte crossbow"]],
+      "Special Attack": [ [ "Zaryte crossbow" ] ],
       "Helmet": [
-        ["Slayer helmet (i)"],
-        ["Crystal helm"],
-        ["Karil's coif"],
-        ["Archer helm"]
+        [ "Slayer helmet (i)" ],
+        [ "Crystal helm" ],
+        [ "Karil's coif" ],
+        [ "Archer helm" ]
       ],
       "Amulet": [
-        ["Necklace of anguish"],
-        ["Amulet of fury"],
-        ["Amulet of glory"],
-        ["Amulet of power"]
+        [ "Necklace of anguish" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ]
       ],
       "Cape": [
-        ["Ava's assembler"],
-        ["Ava's accumulator"],
-        ["Ranging cape"],
-        ["Ava's attractor"]
+        [ "Ava's assembler" ],
+        [ "Ava's accumulator" ],
+        [ "Ranging cape" ],
+        [ "Ava's attractor" ]
       ],
       "Body": [
-        ["Masori body (f)"],
-        ["Crystal body"],
-        ["Masori body"],
-        ["Black d'hide body"]
+        [ "Masori body (f)" ],
+        [ "Crystal body" ],
+        [ "Masori body" ],
+        [ "Black d'hide body" ]
       ],
-      "Legs": [["Black d'hide chaps"], ["Crystal legs"], ["Red d'hide chaps"]],
+      "Legs": [
+        [ "Black d'hide chaps" ],
+        [ "Crystal legs" ],
+        [ "Red d'hide chaps" ]
+      ],
       "Gloves": [
-        ["Barrows gloves"],
-        ["Black d'hide vambraces"],
-        ["Red d'hide vambraces"]
+        [ "Barrows gloves" ],
+        [ "Black d'hide vambraces" ],
+        [ "Red d'hide vambraces" ]
       ],
       "Boots": [
-        ["Blessed boots"],
-        ["Mixed hide boots"],
-        ["Shayzien boots (5)"],
-        ["Snakeskin boots"]
+        [ "Blessed boots" ],
+        [ "Mixed hide boots" ],
+        [ "Shayzien boots (5)" ],
+        [ "Snakeskin boots" ]
       ],
       "Ring": [
-        ["Ring of shadows"],
-        ["Explorer's ring 4"],
-        ["Ring of wealth (i)"]
+        [ "Ring of shadows" ],
+        [ "Explorer's ring 4" ],
+        [ "Ring of wealth (i)" ]
       ],
       "Ammo": [
-        ["Rada's blessing 4"],
-        ["Rada's blessing 3", "Rada's blessing 2", "God blessing"],
-        ["Ruby dragon bolts (e)", "Ruby bolts (e)"],
-        ["Amethyst arrow", "Rune arrow"],
-        ["Broad bolts", "Adamant bolts"]
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ],
+        [ "Ruby dragon bolts (e)", "Ruby bolts (e)" ],
+        [ "Amethyst arrow", "Rune arrow" ],
+        [ "Broad bolts", "Adamant bolts" ]
       ]
     },
     "Magic": {
       "Weapon": [
-        ["Accursed sceptre"],
-        ["Thammaron's sceptre", "Tumeken's shadow"],
-        ["Sanguinesti staff", "Trident of the swamp"],
-        ["Trident of the seas"],
-        ["Warped sceptre"]
+        [ "Accursed sceptre" ],
+        [ "Thammaron's sceptre", "Tumeken's shadow" ],
+        [ "Sanguinesti staff", "Trident of the swamp" ],
+        [ "Trident of the seas" ],
+        [ "Warped sceptre" ]
       ],
       "Shield": [
-        ["Elidinis' ward (f)"],
-        ["Elidinis' ward"],
-        ["Book of darkness"],
-        ["Unholy book"],
-        ["Broodoo shield"]
+        [ "Elidinis' ward (f)" ],
+        [ "Elidinis' ward" ],
+        [ "Book of darkness" ],
+        [ "Unholy book" ],
+        [ "Broodoo shield" ]
       ],
       "Helmet": [
-        ["Slayer helmet (i)"],
-        ["Ancestral hat"],
-        ["Farseer helm"],
-        ["Mitre"]
+        [ "Slayer helmet (i)" ],
+        [ "Ancestral hat" ],
+        [ "Farseer helm" ],
+        [ "Mitre" ]
       ],
       "Amulet": [
-        ["Occult necklace"],
-        ["Amulet of glory"],
-        ["Amulet of power"],
-        ["Amulet of magic"]
+        [ "Occult necklace" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ],
+        [ "Amulet of magic" ]
       ],
       "Cape": [
-        ["Imbued god cape"],
-        ["God cape"],
-        ["Ardougne cloak 4"],
-        ["Vestment cloak"]
+        [ "Imbued god cape" ],
+        [ "God cape" ],
+        [ "Ardougne cloak 4" ],
+        [ "Vestment cloak" ]
       ],
       "Body": [
-        ["Ancestral robe top"],
-        ["Virtus robe top"],
-        ["Ahrim's robetop"],
-        ["Mystic robe top", "Masori body (f)", "Armadyl chestplate"]
+        [ "Ancestral robe top" ],
+        [ "Virtus robe top" ],
+        [ "Ahrim's robetop" ],
+        [ "Mystic robe top", "Masori body (f)", "Armadyl chestplate" ]
       ],
       "Legs": [
-        ["Ancestral robe bottom"],
-        ["Virtus robe bottom"],
-        ["Ahrim's robeskirt"],
-        ["Mystic robe bottom", "Masori chaps (f)", "Armadyl chainskirt"]
+        [ "Ancestral robe bottom" ],
+        [ "Virtus robe bottom" ],
+        [ "Ahrim's robeskirt" ],
+        [ "Mystic robe bottom", "Masori chaps (f)", "Armadyl chainskirt" ]
       ],
       "Gloves": [
-        ["Tormented bracelet"],
-        ["Barrows gloves"],
-        ["Rune gloves"],
-        ["Combat bracelet"]
+        [ "Tormented bracelet" ],
+        [ "Barrows gloves" ],
+        [ "Rune gloves" ],
+        [ "Combat bracelet" ]
       ],
       "Boots": [
-        ["Bloodbark boots"],
-        ["Mystic boots"],
-        ["Ghostly boots"],
-        ["Splitbark boots"],
-        ["Moonclan boots"]
+        [ "Bloodbark boots" ],
+        [ "Mystic boots" ],
+        [ "Ghostly boots" ],
+        [ "Splitbark boots" ],
+        [ "Moonclan boots" ]
       ],
       "Ring": [
-        ["Ring of shadows"],
-        ["Explorer's ring 4"],
-        ["Beacon ring"],
-        ["Ring of wealth (i)"]
+        [ "Ring of shadows" ],
+        [ "Explorer's ring 4" ],
+        [ "Beacon ring" ],
+        [ "Ring of wealth (i)" ]
       ],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]],
-      "Special Attack": ["N/A"]
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+      ],
+      "Special Attack": [ "N/A" ]
     }
   }
 }

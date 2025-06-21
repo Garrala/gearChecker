@@ -1,12 +1,12 @@
 {
   "name": "Araxxor",
   "category": "Slayer Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Araxxor.png?35d2e",
+  "image": "assets/monster-icons/araxxor.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Araxxor",
   "bosses": [
     {
       "name": "Araxxor",
-      "image": "https://oldschool.runescape.wiki/images/Araxxor.png?35d2e",
+      "image": "assets/monster-icons/araxxor.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Araxxor",
       "combat_level": 890,
       "hp": 1020,
@@ -31,7 +31,7 @@
           "thrown": 218
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_styles": [ "Magic", "Ranged", "Venom" ],
       "attack_speed": 6,
       "aggressive": true,
       "immunities": {
@@ -41,9 +41,9 @@
         "thralls": false
       }
     },
-	{
+    {
       "name": "Araxxor (Enraged)",
-      "image": "https://oldschool.runescape.wiki/images/Araxxor_%28enraged%29.png?418cf",
+      "image": "assets/monster-icons/araxxor__enraged_.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Araxxor#Enraged",
       "combat_level": 890,
       "hp": 1020,
@@ -68,7 +68,7 @@
           "thrown": 218
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_styles": [ "Magic", "Ranged", "Venom" ],
       "attack_speed": 6,
       "aggressive": true,
       "immunities": {
@@ -82,108 +82,120 @@
   "gear_setups": {
     "Melee": {
       "Weapon": [
-        ["Scythe of vitur"],
-        ["Inquisitor's mace", "Soulreaper axe"],
-        ["Abyssal bludgeon", "Ursine chainmace (u)"],
-        ["Saradomin's blessed sword", "Zamorakian hasta", "Sarachnis cudgel"],
+        [ "Scythe of vitur" ],
+        [ "Inquisitor's mace", "Soulreaper axe" ],
+        [ "Abyssal bludgeon", "Ursine chainmace (u)" ],
+        [ "Saradomin's blessed sword", "Zamorakian hasta", "Sarachnis cudgel" ],
         [ "Dual macuahuitl", "Saradomin sword", "Zombie axe" ]
       ],
       "Shield": [
-        ["Avernic defender"],
-        ["Dragon defender"],
-        ["Rune defender", "Toktz-ket-xil"]
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Rune defender", "Toktz-ket-xil" ]
       ],
       "Special Attack": [
-        [ "Elder maul", "Dragon claws"  ],
+        [ "Elder maul", "Dragon claws" ],
         [ "Dragon warhammer", "Burning claws" ],
-        ["Voidwaker"],
-        ["Bandos godsword"],
-        ["Saradomin godsword", "Ancient godsword", "Ancient mace"]
+        [ "Voidwaker" ],
+        [ "Bandos godsword" ],
+        [ "Saradomin godsword", "Ancient godsword", "Ancient mace" ]
       ],
-      "Helmet": [["Slayer helmet (i)"], ["Serpentine helm"]],
+      "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Serpentine helm" ]
+      ],
       "Amulet": [
-        ["Amulet of rancour"],
-        ["Amulet of torture"],
-        ["Amulet of blood fury"],
-        ["Amulet of fury"],
-        ["Amulet of glory"]
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of blood fury" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ]
       ],
       "Cape": [
-        ["Infernal cape"],
-        ["Fire cape"],
-        ["Mythical cape"],
-        ["Ardougne cloak 4"]
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Mythical cape" ],
+        [ "Ardougne cloak 4" ]
       ],
       "Body": [
-        ["Inquisitor's hauberk"],
-        ["Torva platebody", "Oathplate chest"],
-        ["Bandos chestplate"],
-        ["Blood moon chestplate", "Fighter torso"],
-        ["Barrows body"]
+        [ "Inquisitor's hauberk" ],
+        [ "Torva platebody", "Oathplate chest" ],
+        [ "Bandos chestplate" ],
+        [ "Blood moon chestplate", "Fighter torso" ],
+        [ "Barrows body" ]
       ],
       "Legs": [
-        ["Inquisitor's plateskirt"],
-        ["Torva platelegs", "Oathplate legs"],
-        ["Bandos tassets"],
-        ["Blood moon tassets"],
-        ["Barrows legs"]
+        [ "Inquisitor's plateskirt" ],
+        [ "Torva platelegs", "Oathplate legs" ],
+        [ "Bandos tassets" ],
+        [ "Blood moon tassets" ],
+        [ "Barrows legs" ]
       ],
       "Gloves": [
-        ["Ferocious gloves"],
-        ["Barrows gloves"],
-        ["Dragon gloves"],
-        ["Rune gloves"]
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves" ],
+        [ "Dragon gloves" ],
+        [ "Rune gloves" ]
       ],
       "Boots": [
-        ["Primordial boots"],
-        ["Dragon boots", "Aranea boots"],
-        ["Echo boots", "Guardian boots"],
-        ["Rune boots", "Mixed hide boots"]
+        [ "Primordial boots" ],
+        [ "Dragon boots", "Aranea boots" ],
+        [ "Echo boots", "Guardian boots" ],
+        [ "Rune boots", "Mixed hide boots" ]
       ],
       "Ring": [
-        ["Ultor ring"],
-        ["Berserker ring (i)"],
-        ["Ring of suffering (i)"],
-        ["Lightbearer"]
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "Ring of suffering (i)" ],
+        [ "Lightbearer" ]
       ],
       "Ammo": [
-        ["Rada's blessing 4"],
-        ["Rada's blessing 3", "Rada's blessing 2", "God blessing"],
-        ["Dragon javelin"],
-        ["Moonlight antler bolts"],
-        ["Broad bolts"]
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ],
+        [ "Dragon javelin" ],
+        [ "Moonlight antler bolts" ],
+        [ "Broad bolts" ]
       ]
     },
     "Ranged": {
-      "Weapon": [["Twisted bow"]],
+      "Weapon": [ [ "Twisted bow" ] ],
       "Special Attack": [
-        ["Elder maul"],
-        ["Dragon warhammer"],
-        ["Zaryte crossbow"]
+        [ "Elder maul" ],
+        [ "Dragon warhammer" ],
+        [ "Zaryte crossbow" ]
       ],
-      "Helmet": [["Slayer helmet (i)"]],
-      "Amulet": [["Necklace of anguish"], ["Amulet of fury"]],
+      "Helmet": [ [ "Slayer helmet (i)" ] ],
+      "Amulet": [
+        [ "Necklace of anguish" ],
+        [ "Amulet of fury" ]
+      ],
       "Cape": [
-        ["Dizana's quiver"],
+        [ "Dizana's quiver" ],
         [ "Ava's assembler", "Ava's accumulator", "Ava's attractor" ],
-        ["Max cape", "Ranging cape (t)"]
+        [ "Max cape", "Ranging cape (t)" ]
       ],
-      "Body": [["Masori body (f)"]],
-      "Legs": [["Masori chaps (f)"]],
+      "Body": [ [ "Masori body (f)" ] ],
+      "Legs": [ [ "Masori chaps (f)" ] ],
       "Gloves": [
-        ["Zaryte vambraces"],
-        ["Barrows gloves"],
-        ["Blessed vambraces"]
+        [ "Zaryte vambraces" ],
+        [ "Barrows gloves" ],
+        [ "Blessed vambraces" ]
       ],
       "Boots": [
-        ["Aranea boots"],
-        ["Pegasian boots"],
-        ["Ranger boots", "Devout boots"],
-        ["Blessed boots"]
+        [ "Aranea boots" ],
+        [ "Pegasian boots" ],
+        [ "Ranger boots", "Devout boots" ],
+        [ "Blessed boots" ]
       ],
-      "Ring": [["Lightbearer"], ["Ring of the gods (i)", "Archers ring (i)"]],
-      "Ammo": [["Dragon arrows"], ["Amethyst arrows"]],
-      "Shield": ["N/A"]
+      "Ring": [
+        [ "Lightbearer" ],
+        [ "Ring of the gods (i)", "Archers ring (i)" ]
+      ],
+      "Ammo": [
+        [ "Dragon arrows" ],
+        [ "Amethyst arrows" ]
+      ],
+      "Shield": [ "N/A" ]
     }
   }
 }

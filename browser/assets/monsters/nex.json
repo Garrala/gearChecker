@@ -1,17 +1,17 @@
 {
   "name": "Nex",
   "category": "World Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Nex.png?2a1b3",
+  "image": "assets/monster-icons/nex.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Nex",
   "bosses": [
     {
       "name": "Nex",
-      "image": "https://oldschool.runescape.wiki/images/Nex.png?2a1b3",
+      "image": "assets/monster-icons/nex.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Nex",
       "combat_level": 725,
       "hp": 500,
       "max_hit": 41,
-      "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
       "defense": {
         "melee": {
           "stab": 150,
@@ -25,7 +25,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_styles": [ "Magic", "Ranged", "Venom" ],
       "attack_speed": 3,
       "aggressive": true,
       "immunities": {
@@ -92,7 +92,7 @@
         [ "Archers ring (i)" ]
       ],
       "Ammo": [
-        [ "Ruby dragon bolts (e)", "Dragon arrow" ],
+        [ "Ruby dragon bolts (e)", "Dragon arrows" ],
         [ "Ruby bolts (e)" ]
       ]
     },
@@ -150,7 +150,7 @@
         [ "Brimstone ring", "Berserker ring (i)" ]
       ],
       "Ammo": [
-        [ "Dragon arrow" ],
+        [ "Dragon arrows" ],
         [ "Ruby dragon bolts (e)" ]
       ]
     }

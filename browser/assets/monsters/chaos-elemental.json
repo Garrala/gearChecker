@@ -1,12 +1,12 @@
 {
   "name": "Chaos Elemental",
   "category": "Wilderness Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Chaos_Elemental.png?c170c",
+  "image": "assets/monster-icons/chaos_elemental.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Elemental",
   "bosses": [
     {
       "name": "Chaos Elemental",
-      "image": "https://oldschool.runescape.wiki/images/Chaos_Elemental.png?c170c",
+      "image": "assets/monster-icons/chaos_elemental.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Elemental",
       "combat_level": 305,
       "hp": 250,
@@ -28,7 +28,7 @@
           "thrown": 70
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Melee"],
+      "attack_styles": [ "Magic", "Ranged", "Melee" ],
       "attack_speed": 4,
       "aggressive": true,
       "immunities": {
@@ -42,64 +42,71 @@
   "gear_setups": {
     "Ranged": {
       "Weapon": [
-        ["Webweaver bow", "Craw's bow"],
-        ["Twisted bow"],
-        ["Bow of faerdhinen"],
-        ["Toxic blowpipe"],
-        ["Armadyl crossbow"]
+        [ "Webweaver bow", "Craw's bow" ],
+        [ "Twisted bow" ],
+        [ "Bow of faerdhinen" ],
+        [ "Toxic blowpipe" ],
+        [ "Armadyl crossbow" ]
       ],
-	  "Shield": [
-        ["Book of law"],
-        ["Unholy book"],
-        ["Black d'hide shield"],
-        ["Book of balance"]
+      "Shield": [
+        [ "Book of law" ],
+        [ "Unholy book" ],
+        [ "Black d'hide shield" ],
+        [ "Book of balance" ]
       ],
       "Helmet": [
-        ["Slayer helmet (i)"],
-        ["Blessed coif"],
-        ["Karil's coif"],
-        ["Archer helm"],
-        ["Snakeskin bandana"]
+        [ "Slayer helmet (i)" ],
+        [ "Blessed coif" ],
+        [ "Karil's coif" ],
+        [ "Archer helm" ],
+        [ "Snakeskin bandana" ]
       ],
-      "Amulet": [["Necklace of anguish"], ["Amulet of glory"]],
+      "Amulet": [
+        [ "Necklace of anguish" ],
+        [ "Amulet of glory" ]
+      ],
       "Cape": [
-        ["Dizana's quiver"],
-        ["Ava's assembler"],
-        ["Ava's accumulator", "Ardougne cloak 4"],
-        ["Ranging cape (t)"],
-        ["Vestment cloak"]
+        [ "Dizana's quiver" ],
+        [ "Ava's assembler" ],
+        [ "Ava's accumulator", "Ardougne cloak 4" ],
+        [ "Ranging cape (t)" ],
+        [ "Vestment cloak" ]
       ],
       "Body": [
-        ["Masori body (f)"],
-        ["Crystal body"],
-        ["Blessed body"],
-        ["Black d'hide body"],
-        ["Red d'hide body"]
+        [ "Masori body (f)" ],
+        [ "Crystal body" ],
+        [ "Blessed body" ],
+        [ "Black d'hide body" ],
+        [ "Red d'hide body" ]
       ],
-      "Legs": [["Blessed chaps"], ["Crystal legs"], ["Black d'hide chaps"]],
+      "Legs": [
+        [ "Blessed chaps" ],
+        [ "Crystal legs" ],
+        [ "Black d'hide chaps" ]
+      ],
       "Gloves": [
-        ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Black d'hide vambraces"]
+        [ "Barrows gloves" ],
+        [ "Blessed vambraces" ],
+        [ "Black d'hide vambraces" ]
       ],
       "Boots": [
-        ["Mixed hide boots"],
-        ["Snakeskin boots"],
-        ["Fremennik sea boots 4"]
+        [ "Mixed hide boots" ],
+        [ "Snakeskin boots" ],
+        [ "Fremennik sea boots 4" ]
       ],
       "Ring": [
-        ["Ring of suffering (i)"],
-        ["Ring of shadows"],
-        ["Ring of wealth (i)", "Explorer's ring 4"]
+        [ "Ring of suffering (i)" ],
+        [ "Ring of shadows" ],
+        [ "Ring of wealth (i)", "Explorer's ring 4" ]
       ],
       "Ammo": [
-        ["Rada's blessing 4"],
+        [ "Rada's blessing 4" ],
         [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ],
-        ["Dragon arrow", "Amethyst arrow"],
-        ["Diamond bolts (e)"],
-        ["Broad bolts"]
+        [ "Dragon arrows", "Amethyst arrows" ],
+        [ "Diamond bolts (e)" ],
+        [ "Broad bolts" ]
       ],
-      "Special Attack": ["N/A"]
+      "Special Attack": [ "N/A" ]
     },
     "Melee": {
       "Weapon": [

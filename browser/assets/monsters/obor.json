@@ -1,12 +1,12 @@
 {
   "name": "Obor",
   "category": "Sporadic Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Obor.png?08bc8",
+  "image": "assets/monster-icons/obor.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Obor",
   "bosses": [
     {
       "name": "Obor",
-      "image": "https://oldschool.runescape.wiki/images/Obor.png?08bc8",
+      "image": "assets/monster-icons/obor.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Obor",
       "combat_level": 725,
       "hp": 500,

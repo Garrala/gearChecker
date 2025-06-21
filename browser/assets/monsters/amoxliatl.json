@@ -1,11 +1,11 @@
 {
   "name": "Amoxliatl",
   "category": "Instanced Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Amoxliatl.png?01b12",
+  "image": "assets/monster-icons/amoxliatl.png",
   "bosses": [
     {
       "name": "Amoxliatl",
-      "image": "https://oldschool.runescape.wiki/images/Amoxliatl.png?01b12",
+      "image": "assets/monster-icons/amoxliatl.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Amoxliatl",
       "combat_level": 263,
       "hp": 520,
@@ -29,7 +29,7 @@
           "thrown": 200
         }
       },
-      "attack_styles": ["Magic"],
+      "attack_styles": [ "Magic" ],
       "attack_speed": 8,
       "aggressive": true,
       "immunities": {
@@ -43,8 +43,8 @@
   "gear_setups": {
     "Melee": {
       "Weapon": [
-        ["Scythe of vitur"],
-        ["Dual macuahuitl", "Inquisitor's mace"],
+        [ "Scythe of vitur" ],
+        [ "Dual macuahuitl", "Inquisitor's mace" ],
         [
           "Soulreaper axe",
           "Abyssal bludgeon",
@@ -52,79 +52,79 @@
           "Ursine chainmace (u)",
           "Zamorakian hasta"
         ],
-        ["Sarachnis cudgel", "Glacial temotli", "Saradomin sword"],
-        ["Zombie axe", "Dragon mace"]
+        [ "Sarachnis cudgel", "Glacial temotli", "Saradomin sword" ],
+        [ "Zombie axe", "Dragon mace" ]
       ],
       "Shield": [
-        ["Avernic defender"],
-        ["Dragon defender"],
-        ["Rune defender"],
-        ["Dragonfire shield"],
-        ["Adamant defender", "Toktz-ket-xil"]
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Rune defender" ],
+        [ "Dragonfire shield" ],
+        [ "Adamant defender", "Toktz-ket-xil" ]
       ],
       "Special Attack": [
-        ["Burning claws", "Dragon claws"],
-        ["Dragon dagger"],
-        ["Crystal halberd", "Saradomin godsword"],
-        ["Dragon mace"]
+        [ "Burning claws", "Dragon claws" ],
+        [ "Dragon dagger" ],
+        [ "Crystal halberd", "Saradomin godsword" ],
+        [ "Dragon mace" ]
       ],
       "Helmet": [
-        ["Slayer helmet (i)", "Inquisitor's great helm", "Torva full helm"],
-        ["Blood moon helm"],
-        ["Neitiznot faceguard"],
-        ["Zombie helmet", "Helm of neitiznot"],
-        ["Berserker helm"]
+        [ "Slayer helmet (i)", "Inquisitor's great helm", "Torva full helm" ],
+        [ "Blood moon helm" ],
+        [ "Neitiznot faceguard" ],
+        [ "Zombie helmet", "Helm of neitiznot" ],
+        [ "Berserker helm" ]
       ],
       "Amulet": [
-        ["Amulet of rancour"],
-        ["Amulet of torture"],
-        ["Amulet of fury"],
-        ["Amulet of strength"],
-        ["Amulet of glory"]
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of strength" ],
+        [ "Amulet of glory" ]
       ],
       "Cape": [
-        ["Infernal cape"],
-        ["Fire cape"],
-        ["Mythical cape"],
-        ["Ardougne cloak 4", "Mixed hide cape"],
-        ["Skillcape (t)"]
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Mythical cape" ],
+        [ "Ardougne cloak 4", "Mixed hide cape" ],
+        [ "Skillcape (t)" ]
       ],
       "Body": [
-        ["Inquisitor's hauberk", "Torva platebody"],
-        ["Blood moon chestplate"],
-        ["Bandos chestplate", "Fighter torso"],
-        ["Obsidian platebody", "Proselyte hauberk"],
-        ["Monk's robe top"]
+        [ "Inquisitor's hauberk", "Torva platebody" ],
+        [ "Blood moon chestplate" ],
+        [ "Bandos chestplate", "Fighter torso" ],
+        [ "Obsidian platebody", "Proselyte hauberk" ],
+        [ "Monk's robe top" ]
       ],
       "Legs": [
-        ["Inquisitor's plateskirt", "Torva platelegs"],
-        ["Blood moon tassets"],
-        ["Bandos tassets"],
-        ["Obsidian platelegs", "Proselyte cuisse"],
-        ["Monk's robe"]
+        [ "Inquisitor's plateskirt", "Torva platelegs" ],
+        [ "Blood moon tassets" ],
+        [ "Bandos tassets" ],
+        [ "Obsidian platelegs", "Proselyte cuisse" ],
+        [ "Monk's robe" ]
       ],
       "Gloves": [
-        ["Ferocious gloves"],
-        ["Barrows gloves"],
-        ["Dragon gloves"],
-        ["Rune gloves"],
-        ["Combat bracelet"]
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves" ],
+        [ "Dragon gloves" ],
+        [ "Rune gloves" ],
+        [ "Combat bracelet" ]
       ],
       "Boots": [
-        ["Primordial boots"],
-        ["Aranea boots", "Dragon boots", "Spiked manacles"],
-        ["Echo boots", "Guardian boots", "Granite boots"],
-        ["Mixed hide boots", "Rune boots", "Climbing boots"]
+        [ "Primordial boots" ],
+        [ "Aranea boots", "Dragon boots", "Spiked manacles" ],
+        [ "Echo boots", "Guardian boots", "Granite boots" ],
+        [ "Mixed hide boots", "Rune boots", "Climbing boots" ]
       ],
       "Ring": [
-        ["Ultor ring"],
-        ["Berserker ring (i)"],
-        ["Lightbearer"],
-        ["Tyrannical ring (i)"],
-        ["Explorer's ring 1"]
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "Lightbearer" ],
+        [ "Tyrannical ring (i)" ],
+        [ "Explorer's ring 1" ]
       ],
       "Ammo": [
-        ["Ghommal's lucky penny", "Rada's blessing 4"],
+        [ "Ghommal's lucky penny", "Rada's blessing 4" ],
         [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
       ]
     }

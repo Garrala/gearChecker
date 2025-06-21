@@ -1,17 +1,17 @@
 {
   "name": "The Mimic",
   "category": "Sporadic Bosses",
-  "image": "https://oldschool.runescape.wiki/images/The_Mimic.png?b45f4",
+  "image": "assets/monster-icons/the_mimic.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/The_Mimic",
   "bosses": [
     {
       "name": "The Mimic",
-      "image": "https://oldschool.runescape.wiki/images/The_Mimic.png?b45f4",
+      "image": "assets/monster-icons/the_mimic.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/The_Mimic",
       "combat_level": 725,
       "hp": 500,
       "max_hit": 41,
-      "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
       "defense": {
         "melee": {
           "stab": 150,
@@ -25,7 +25,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_styles": [ "Magic", "Ranged", "Venom" ],
       "attack_speed": 3,
       "aggressive": true,
       "immunities": {
@@ -166,8 +166,8 @@
         [ "Unholy book" ]
       ],
       "Ammo": [
-        [ "Dragon arrow", "Amethyst arrow", "Rune arrow" ],
-        [ "Rada's blessing 4", "Rada's blessing 2 or 3", "God blessing" ],
+        [ "Dragon arrows", "Amethyst arrows", "Rune arrows" ],
+        [ "Rada's blessing 4", "Rada's blessing 3", "Rada's blessing 2", "God blessing" ],
         [ "Diamond dragon bolts (e)", "Diamond bolts (e)" ]
       ],
       "Gloves": [

@@ -1,17 +1,17 @@
 {
   "name": "Kree'arra",
   "category": "World Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Kree%27arra.png?ba75c",
+  "image": "assets/monster-icons/kree_arra.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Kree%27arra",
   "bosses": [
     {
       "name": "Kree'arra",
-      "image": "https://oldschool.runescape.wiki/images/Kree%27arra.png?ba75c",
+      "image": "assets/monster-icons/kree_arra.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Kree%27arra",
       "combat_level": 725,
       "hp": 500,
       "max_hit": 41,
-      "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
       "defense": {
         "melee": {
           "stab": 150,
@@ -25,7 +25,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_styles": [ "Magic", "Ranged", "Venom" ],
       "attack_speed": 3,
       "aggressive": true,
       "immunities": {
@@ -154,8 +154,8 @@
         [ "Ring of life" ]
       ],
       "Ammo": [
-        [ "Dragon arrow" ],
-        [ "Amethyst arrow" ],
+        [ "Dragon arrows" ],
+        [ "Amethyst arrows" ],
         [ "Diamond dragon bolts (e)" ],
         [ "Diamond bolts (e)" ],
         [ "Mith grapple" ]
@@ -237,8 +237,8 @@
         [ "Brimstone ring" ]
       ],
       "Ammo": [
-        [ "Dragon arrow", "Diamond dragon bolts (e)" ],
-        [ "Amethyst arrow", "Diamond bolts (e)" ],
+        [ "Dragon arrows", "Diamond dragon bolts (e)" ],
+        [ "Amethyst arrows", "Diamond bolts (e)" ],
         [ "Broad bolts" ],
         [ "Ruby bolts (e)" ]
       ]
@@ -306,9 +306,9 @@
         [ "Brimstone ring" ]
       ],
       "Ammo": [
-        [ "Dragon arrow", "Rada's blessing 4" ],
-        [ "Amethyst arrow", "Unholy blessing", "Honourable blessing" ],
-        ["Rune arrow" ]
+        [ "Dragon arrows", "Rada's blessing 4" ],
+        [ "Amethyst arrows", "Unholy blessing", "Honourable blessing" ],
+        [ "Rune arrows" ]
       ],
       "Shield": [ "N/A" ]
     }

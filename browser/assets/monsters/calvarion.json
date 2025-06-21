@@ -1,12 +1,12 @@
 {
   "name": "Cal'varion",
   "category": "Wilderness Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Calvar%27ion.png?6268f",
+  "image": "assets/monster-icons/cal_varion.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Calvar%27ion",
   "bosses": [
     {
       "name": "Cal'varion",
-      "image": "https://oldschool.runescape.wiki/images/Calvar%27ion.png?6268f",
+      "image": "assets/monster-icons/cal_varion.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Calvar%27ion",
       "combat_level": 264,
       "hp": 150,
@@ -26,7 +26,7 @@
           "thrown": 211
         }
       },
-      "attack_styles": ["Melee", "Magic"],
+      "attack_styles": [ "Melee", "Magic" ],
       "attack_speed": 6,
       "aggressive": true,
       "immunities": {
@@ -36,9 +36,9 @@
         "thralls": false
       }
     },
-	{
+    {
       "name": "Cal'varion (Enraged)",
-      "image": "https://oldschool.runescape.wiki/images/Calvar%27ion_%28enraged%29.png?6268f",
+      "image": "assets/monster-icons/cal_varion__enraged_.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Calvar%27ion#Enraged",
       "combat_level": 264,
       "hp": 150,
@@ -58,7 +58,7 @@
           "thrown": 211
         }
       },
-      "attack_styles": ["Melee", "Magic"],
+      "attack_styles": [ "Melee", "Magic" ],
       "attack_speed": 6,
       "aggressive": true,
       "immunities": {
@@ -72,22 +72,22 @@
   "gear_setups": {
     "Melee": {
       "Weapon": [
-        ["Ursine chainmace", "Viggora's chainmace"],
-        ["Inquisitor's mace"],
+        [ "Ursine chainmace", "Viggora's chainmace" ],
+        [ "Inquisitor's mace" ],
         [
           "Abyssal bludgeon",
           "Zamorakian hasta",
           "Zombie axe"
         ],
-        ["Sarachnis cudgel", "Elder maul", "Dual macuahuitl"],
-        ["Leaf-bladed battleaxe", "Dragon mace"]
+        [ "Sarachnis cudgel", "Elder maul", "Dual macuahuitl" ],
+        [ "Leaf-bladed battleaxe", "Dragon mace" ]
       ],
       "Shield": [
-        ["Avernic defender"],
-        ["Dragon defender"],
-        ["Dragonfire shield"],
-        ["Rune defender", "Toktz-ket-xil"],
-        ["Book of war", "Falador shield 4"]
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Dragonfire shield" ],
+        [ "Rune defender", "Toktz-ket-xil" ],
+        [ "Book of war", "Falador shield 4" ]
       ],
       "Special Attack": [
         [ "Ursine chainmace" ],
@@ -96,56 +96,59 @@
         [ "Dragon mace" ]
       ],
       "Helmet": [
-        ["Helm of neitiznot", "Zombie helm"],
-        ["Berserker helm"],
-        ["Dwarven helmet"]
+        [ "Helm of neitiznot", "Zombie helm" ],
+        [ "Berserker helm" ],
+        [ "Dwarven helmet" ]
       ],
       "Amulet": [
-        ["Salve amulet (e)"],
-        ["Salve amulet"],
-        ["Amulet of strength"],
-        ["Amulet of glory"],
-        ["Amulet of power"]
+        [ "Salve amulet (e)" ],
+        [ "Salve amulet" ],
+        [ "Amulet of strength" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ]
       ],
       "Cape": [
-        ["Infernal cape", "Fire cape"],
-        ["Mythical cape"],
-        ["Mixed hide cape"],
-        ["Skillcape (t)"],
-        ["Ardougne cloak 4"]
+        [ "Infernal cape", "Fire cape" ],
+        [ "Mythical cape" ],
+        [ "Mixed hide cape" ],
+        [ "Skillcape (t)" ],
+        [ "Ardougne cloak 4" ]
       ],
       "Body": [
-        ["Fighter torso"],
-        ["Mixed hide top"],
-        ["Black d'hide body"],
-        ["Proselyte hauberk"],
-        ["Monk's robe top"]
+        [ "Fighter torso" ],
+        [ "Mixed hide top" ],
+        [ "Black d'hide body" ],
+        [ "Proselyte hauberk" ],
+        [ "Monk's robe top" ]
       ],
       "Legs": [
-        ["Black d'hide chaps"],
-        ["Proselyte cuisse", "Proselyte tasset"],
-        ["Monk's robe"]
+        [ "Black d'hide chaps" ],
+        [ "Proselyte cuisse", "Proselyte tasset" ],
+        [ "Monk's robe" ]
       ],
       "Gloves": [
-        ["Barrows gloves"],
-        ["Rune gloves"],
-        ["Combat bracelet"]
+        [ "Barrows gloves" ],
+        [ "Rune gloves" ],
+        [ "Combat bracelet" ]
       ],
       "Boots": [
-        ["Dragon boots"],
-        ["Rune boots"],
-        ["Mixed hide boots"],
-        ["Climbing boots"],
-        ["Fremennik sea boots 4"]
+        [ "Dragon boots" ],
+        [ "Rune boots" ],
+        [ "Mixed hide boots" ],
+        [ "Climbing boots" ],
+        [ "Fremennik sea boots 4" ]
       ],
       "Ring": [
-        ["Ultor ring"],
-        ["Berserker ring (i)"],
-        ["Ring of shadows"],
-        ["Ring of wealth (i)"],
-        ["Explorer's ring 4"]
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "Ring of shadows" ],
+        [ "Ring of wealth (i)" ],
+        [ "Explorer's ring 4" ]
       ],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]]
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+      ]
     }
   }
 }

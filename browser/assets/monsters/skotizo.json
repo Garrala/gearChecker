@@ -1,17 +1,17 @@
 {
   "name": "Skotizo",
   "category": "Sporadic Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Skotizo.png?dc8b8",
+  "image": "assets/monster-icons/skotizo.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Skotizo",
   "bosses": [
     {
       "name": "Skotizo",
-      "image": "https://oldschool.runescape.wiki/images/Skotizo.png?dc8b8",
+      "image": "assets/monster-icons/skotizo.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Skotizo",
       "combat_level": 725,
       "hp": 500,
       "max_hit": 41,
-      "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
       "defense": {
         "melee": {
           "stab": 150,
@@ -25,7 +25,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_styles": [ "Magic", "Ranged", "Venom" ],
       "attack_speed": 3,
       "aggressive": true,
       "immunities": {
@@ -143,7 +143,7 @@
         [ "Ava's assembler" ],
         [ "Ava's accumulator" ],
         [ "Max cape", "Ranging cape(t)" ],
-        ["N/A"]
+        [ "N/A" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
@@ -174,9 +174,9 @@
         [ "Unholy book" ]
       ],
       "Ammo": [
-        [ "Dragon arrow", "Dragon dart", "Diamond bolts (e)" ],
-        [ "Amethyst arrow", "Rune dart", "Diamond bolts" ],
-        [ "Rune arrow", "Adamant dart", "Broad bolts" ],
+        [ "Dragon arrows", "Dragon dart", "Diamond bolts (e)" ],
+        [ "Amethyst arrows", "Rune dart", "Diamond bolts" ],
+        [ "Rune arrows", "Adamant dart", "Broad bolts" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
