@@ -5,25 +5,26 @@
 
   <div class="gear-container" *ngIf="!loading">
     <h1>Gear Management</h1>
+    <p>Select a gear slot on the left to manage your owned items for that slot. Then select a boss to see your optimal loadout.</p>
 
-    <p>First, choose the gear you own or import it. Then, select a boss to view your optimal loadout based on what you have.</p>
+    <!-- Import/Export Controls -->
     <div class="import-export-controls">
       <button (click)="exportOwnedGear()">Export Gear</button>
       <button (click)="fileInput.click()">Import Gear</button>
-      <button (click)="collapseAllSections()">Collapse All</button>
-      <button (click)="expandAllSections()">Expand All</button>
-      <input type="file" accept=".json" #fileInput (change)="importOwnedGear($event)" hidden />
+      <input type="file"
+             accept=".json"
+             #fileInput
+             (change)="importOwnedGear($event)"
+             hidden />
     </div>
 
-    <!-- Item Search -->
+    <!-- Search -->
     <div class="item-filter">
       <input type="text"
              [(ngModel)]="itemSearchQuery"
              (input)="updateSuggestions(); filterByItem(); highlightedIndex = -1"
              (keydown)="handleKeyDown($event)"
              placeholder="Search by item..." />
-
-      <!-- Autocomplete Dropdown -->
       <div class="autocomplete-dropdown" *ngIf="suggestedItems.length > 0">
         <div class="autocomplete-item"
              *ngFor="let item of suggestedItems; let i = index"
@@ -38,83 +39,75 @@
       </div>
     </div>
 
-
-    <!-- Weapon Slot (Top) -->
-    <div *ngIf="getFilteredItems('weapons').length > 0" class="gear-category">
-      <div class="gear-header">
-        <h2 (click)="toggleSection('Weapon')" class="collapsible-header">
-          <span class="arrow">{{ collapsedSections['Weapon'] ?  '▲' : '▼' }}</span>
-          Weapons
-        </h2>
-        <button *ngIf="!itemSearchQuery" (click)="toggleAllGearInSlot('weapons')">
-          Toggle Weapons
-        </button>
+    <!-- Gear Slot Navigation -->
+    <div class="gear-top-nav">
+      <div class="nav-slot-icon"
+           [class.active]="selectedSlot === 'All'"
+           (click)="selectedSlot = 'All'">
+        View All
       </div>
-      <div class="gear-grid" *ngIf="!collapsedSections['Weapon']">
-        <div *ngFor="let item of getFilteredItems('weapons')"
-             class="gear-box"
-             [class.owned]="ownedGear['Weapon']?.includes(item)"
-             (click)="toggleGear('Weapon', item)">
-          <img [src]="gearData['weapons'][item].image" alt="{{ item }}" />
-          <p>{{ item }}</p>
-          <a [href]="gearData['weapons'][item].wiki"
-             target="_blank"
-             class="wiki-link"
-             (click)="$event.stopPropagation()">🔍</a>
+
+      <div *ngFor="let slot of ['Weapon', 'Special Attack'].concat(armorSlots)"
+           class="nav-slot-icon"
+           [class.active]="slot === selectedSlot"
+           (click)="selectedSlot = slot"
+           [title]="slot">
+        <span>{{ displaySlotName(slot) }}</span>
+      </div>
+    </div>
+
+    <!-- View All Mode -->
+    <div *ngIf="selectedSlot === 'All'">
+      <div *ngFor="let slot of ['Weapon', 'Special Attack'].concat(armorSlots)">
+        <div *ngIf="getFilteredItems(slotKey(slot)).length > 0"
+             class="gear-category">
+          <div class="gear-header">
+            <h2>{{ displaySlotName(slot) }}</h2>
+            <button (click)="toggleAllGearInSlot(slotKey(slot))">
+              Select All {{ displaySlotName(slot) }}
+            </button>
+          </div>
+
+          <div class="gear-grid">
+            <div *ngFor="let item of getFilteredItems(slotKey(slot))"
+                 class="gear-box"
+                 [class.owned]="ownedGear[slot]?.includes(item)"
+                 (click)="toggleGear(slot, item)">
+              <img [src]="gearData[slotKey(slot)][item]?.image"
+                   alt="{{ item }}" />
+              <p>{{ item }}</p>
+              <a [href]="gearData[slotKey(slot)][item]?.wiki"
+                 target="_blank"
+                 class="wiki-link"
+                 (click)="$event.stopPropagation()">🔍</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Special Attack Weapons -->
-    <div *ngIf="getFilteredItems('special_attack').length > 0" class="gear-category">
+    <!-- Single Slot Mode -->
+    <div *ngIf="selectedSlot !== 'All' && selectedSlot && getFilteredItems(slotKey(selectedSlot)).length > 0"
+         class="gear-category">
       <div class="gear-header">
-        <h2 (click)="toggleSection('Special Attack')" class="collapsible-header">
-          <span class="arrow">{{ collapsedSections['Special Attack'] ? '▲' : '▼' }}</span>
-          Special Attack Weapons
-        </h2>
-        <button *ngIf="!itemSearchQuery" (click)="toggleAllGearInSlot('special_attack')">
-          Toggle Special Attack Weapons
+        <h2>{{ displaySlotName(selectedSlot) }}</h2>
+        <button (click)="toggleAllGearInSlot(slotKey(selectedSlot))">
+          Select All {{ displaySlotName(selectedSlot) }}
         </button>
       </div>
-      <div class="gear-grid" *ngIf="!collapsedSections['Special Attack']">
-        <div *ngFor="let item of getFilteredItems('special_attack')"
+
+      <div class="gear-grid">
+        <div *ngFor="let item of getFilteredItems(slotKey(selectedSlot))"
              class="gear-box"
-             [class.owned]="ownedGear['Special Attack']?.includes(item)"
-             (click)="toggleGear('Special Attack', item)">
-          <img [src]="gearData['special_attack'][item].image"
+             [class.owned]="ownedGear[selectedSlot]?.includes(item)"
+             (click)="toggleGear(selectedSlot, item)">
+          <img [src]="gearData[slotKey(selectedSlot)][item]?.image"
                alt="{{ item }}" />
           <p>{{ item }}</p>
-          <a [href]="gearData['special_attack'][item].wiki"
+          <a [href]="gearData[slotKey(selectedSlot)][item]?.wiki"
              target="_blank"
              class="wiki-link"
              (click)="$event.stopPropagation()">🔍</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Armor Slots -->
-    <div *ngFor="let slot of armorSlots">
-      <div *ngIf="getFilteredItems(slot.toLowerCase()).length > 0" class="gear-category">
-        <div class="gear-header collapsible" (click)="toggleSection(slot)">
-          <span class="arrow">{{ collapsedSections[slot] ? '▲' : '▼' }}</span>
-          <h2>{{ slot }}</h2>
-        </div>
-        <button *ngIf="!itemSearchQuery" (click)="toggleAllGearInSlot(slot.toLowerCase())">
-          Toggle {{ slot }}
-        </button>
-        <div class="gear-grid" *ngIf="!collapsedSections[slot]">
-          <div *ngFor="let item of getFilteredItems(slot.toLowerCase())"
-               class="gear-box"
-               [class.owned]="ownedGear[slot]?.includes(item)"
-               (click)="toggleGear(slot, item)">
-            <img [src]="gearData[slot.toLowerCase()][item].image"
-                 alt="{{ item }}" />
-            <p>{{ item }}</p>
-            <a [href]="gearData[slot.toLowerCase()][item].wiki"
-               target="_blank"
-               class="wiki-link"
-               (click)="$event.stopPropagation()">🔍</a>
-          </div>
         </div>
       </div>
     </div>

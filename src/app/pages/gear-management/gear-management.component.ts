@@ -48,6 +48,7 @@ export class GearManagementComponent implements OnInit {
   filteredGearData: { [slot: string]: { [item: string]: any } } = {};
   collapsedSections: { [key: string]: boolean } = {};
   highlightedIndex: number = -1;
+  selectedSlot: string = 'Weapon';
 
   @ViewChildren('itemRef') itemElements!: QueryList<ElementRef>;
   constructor(private gearService: GearService, private cdRef: ChangeDetectorRef) { }
@@ -149,10 +150,20 @@ export class GearManagementComponent implements OnInit {
 
   /** Select an item from autocomplete **/
   selectSuggestedItem(item: { name: string; image: string }) {
-    this.itemSearchQuery = item.name
-    this.suggestedItems = []
-    this.highlightedIndex = -1;
-    this.filterByItem()
+    this.itemSearchQuery = item.name;
+  this.suggestedItems = [];
+  this.highlightedIndex = -1;
+
+  // Find which slot this item belongs to
+  for (const slot of Object.keys(this.gearData)) {
+    if (this.gearData[slot][item.name]) {
+      // Set the selected slot to match the category
+      this.selectedSlot = this.reverseSlotKey(slot);
+      break;
+    }
+  }
+
+  this.filterByItem();
   }
 
   /** ✅ Apply item filtering to the displayed gear lists **/
@@ -339,6 +350,29 @@ export class GearManagementComponent implements OnInit {
   expandAllSections() {
     for (let key of this.armorSlots.concat(['Weapon', 'Special Attack'])) {
       this.collapsedSections[key] = false;
+    }
+  }
+
+  slotKey(slot: string): string {
+    switch (slot) {
+      case 'Weapon': return 'weapons';
+      case 'Special Attack': return 'special_attack';
+      default: return slot.toLowerCase();
+    }
+  }
+
+  reverseSlotKey(key: string): string {
+    switch (key) {
+      case 'weapons': return 'Weapon';
+      case 'special_attack': return 'Special Attack';
+      default: return key.charAt(0).toUpperCase() + key.slice(1);
+    }
+  }
+
+  displaySlotName(slot: string): string {
+    switch (slot) {
+      case 'Weapon': return 'Weapons';
+      default: return slot;
     }
   }
 
