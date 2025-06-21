@@ -21,7 +21,7 @@ export class MonsterOverviewComponent implements OnInit {
   selectedBossIndex: number = 0 //  Track current boss in multi-boss fights
   gearData: {
     [slot: string]: {
-      [item: string]: { image: string; wiki: string; twoHanded: string }
+      [item: string]: { image: string; wiki: string; twoHanded: string; usesAmmoType: string; ammoType: string; }
     }
   } = {} //  Store data from multiple JSONs
   ownedGear: { [key: string]: string[] } = {} //  Store multiple items per slot
@@ -326,7 +326,23 @@ export class MonsterOverviewComponent implements OnInit {
 
       characterLoadout[slot] = bestItems.length > 0 ? bestItems : ['None']
 
-      if (characterLoadout[slot].includes('None')) {
+      // ✅ Determine compatible ammo
+      const weaponName = characterLoadout['Weapon']?.[0];
+      const weaponData = this.gearData['weapons']?.[weaponName];
+
+      if (weaponData && weaponData.usesAmmoType) {
+        const expectedAmmoType = weaponData.usesAmmoType;
+        const ammoOptions = this.selectedMonster?.gear_setups?.[this.selectedSetup]?.['Ammo'] || [];
+        const ownedAmmo = this.ownedGear['Ammo'] || [];
+
+        const compatibleAmmo = (ammoOptions.flat() as string[]).filter(ammoName => {
+          const ammoData = this.gearData['ammo']?.[ammoName];
+          return ammoData?.ammoType === expectedAmmoType && ownedAmmo.includes(ammoName);
+        });
+
+        characterLoadout['Ammo'] = compatibleAmmo.length > 0 ? compatibleAmmo : ['None'];
+      } else {
+        characterLoadout['Ammo'] = ['None'];
       }
     }
 

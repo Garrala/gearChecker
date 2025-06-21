@@ -1,12 +1,12 @@
 {
   "name": "Dagannoth Kings",
   "category": "World Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Dagannoth_Prime.png?945b1",
+  "image": "assets/monster-icons/dagannoth_kings.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Dagannoth_Kings/Strategies",
   "bosses": [
     {
       "name": "Dagannoth Prime",
-      "image": "https://oldschool.runescape.wiki/images/Dagannoth_Prime.png?945b1",
+      "image": "assets/monster-icons/dagannoth_kings.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Dagannoth_Prime",
       "combat_level": 303,
       "hp": 500,
@@ -28,7 +28,7 @@
           "thrown": 10
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Melee", "Poison"],
+      "attack_styles": [ "Magic", "Ranged", "Melee", "Poison" ],
       "attack_speed": 4,
       "aggressive": true,
       "immunities": {
@@ -38,9 +38,9 @@
         "thralls": false
       }
     },
-	{
+    {
       "name": "Dagannoth Rex",
-      "image": "https://oldschool.runescape.wiki/images/Dagannoth_Rex.png?a99a9",
+      "image": "assets/monster-icons/dagannoth_rex.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Dagannoth_Rex",
       "combat_level": 303,
       "hp": 500,
@@ -62,7 +62,7 @@
           "thrown": 10
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Melee", "Poison"],
+      "attack_styles": [ "Magic", "Ranged", "Melee", "Poison" ],
       "attack_speed": 4,
       "aggressive": true,
       "immunities": {
@@ -72,9 +72,9 @@
         "thralls": false
       }
     },
-	{
+    {
       "name": "Dagannoth Supreme",
-      "image": "https://oldschool.runescape.wiki/images/Dagannoth_Supreme.png?81f00",
+      "image": "assets/monster-icons/dagannoth_supreme.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Dagannoth_Supreme",
       "combat_level": 303,
       "hp": 500,
@@ -96,7 +96,7 @@
           "thrown": 10
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Melee", "Poison"],
+      "attack_styles": [ "Magic", "Ranged", "Melee", "Poison" ],
       "attack_speed": 4,
       "aggressive": true,
       "immunities": {
@@ -110,7 +110,7 @@
   "gear_setups": {
     "Hybrid (All Kings)": {
       "Weapon": [
-        ["Scythe of vitur", "Tumeken's shadow", "Twisted bow"],
+        [ "Scythe of vitur", "Tumeken's shadow", "Twisted bow" ],
         [
           "Inquisitor's mace",
           "Ghrazi rapier",
@@ -140,223 +140,226 @@
         ]
       ],
       "Shield": [
-        ["Spectral spirit shield"],
-        ["Avernic defender"],
-        ["Dragon defender"],
-        ["Dragonfire shield"],
-        ["Crystal shield", "Toktz-ket-xil"]
+        [ "Spectral spirit shield" ],
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Dragonfire shield" ],
+        [ "Crystal shield", "Toktz-ket-xil" ]
       ],
       "Special Attack": [
-        ["Saradomin godsword"],
-        ["Eldritch nightmare staff"],
-        ["Dragon claws"],
-        ["Toxic blowpipe"],
-        ["Ancient mace"]
+        [ "Saradomin godsword" ],
+        [ "Eldritch nightmare staff" ],
+        [ "Dragon claws" ],
+        [ "Toxic blowpipe" ],
+        [ "Ancient mace" ]
       ],
       "Helmet": [
-        ["Slayer helmet (i)", "Black mask (i)"],
-        ["Torva full helm", "Serpentine helm"],
-        ["Neitiznot faceguard"],
-        ["Crystal helm"],
-        ["Helm of neitiznot"]
+        [ "Slayer helmet (i)", "Black mask (i)" ],
+        [ "Torva full helm", "Serpentine helm" ],
+        [ "Neitiznot faceguard" ],
+        [ "Crystal helm" ],
+        [ "Helm of neitiznot" ]
       ],
       "Amulet": [
-        ["Amulet of rancour", "Occult necklace", "Necklace of anguish"],
-        ["Amulet of torture"],
-        ["Amulet of blood fury", "Amulet of fury"],
-        ["Bonecrusher necklace", "Dragonbone necklace"],
-        ["Amulet of glory"]
+        [ "Amulet of rancour", "Occult necklace", "Necklace of anguish" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of blood fury", "Amulet of fury" ],
+        [ "Bonecrusher necklace", "Dragonbone necklace" ],
+        [ "Amulet of glory" ]
       ],
       "Cape": [
-        ["Infernal cape", "Blessed dizana's quiver"],
-        ["Fire cape", "Ava's assembler"],
-        ["Max cape"],
-        ["Ranging cape (t)"]
+        [ "Infernal cape", "Blessed dizana's quiver" ],
+        [ "Fire cape", "Ava's assembler" ],
+        [ "Max cape" ],
+        [ "Ranging cape (t)" ]
       ],
       "Body": [
-        ["Torva platebody", "Masori body (f)"],
-        ["Bandos chestplate", "Armadyl chestplate"],
-        ["Crystal body", "Eclipse moon chestplate"],
-        ["Blessed body"]
+        [ "Torva platebody", "Masori body (f)" ],
+        [ "Bandos chestplate", "Armadyl chestplate" ],
+        [ "Crystal body", "Eclipse moon chestplate" ],
+        [ "Blessed body" ]
       ],
       "Legs": [
-        ["Torva platelegs", "Masori chaps (f)"],
-        ["Bandos tassets", "Armadyl chainskirt"],
-        ["Crystal legs", "Eclipse moon tassets"],
-        ["Verac's plateskirt", "Blessed chaps"]
+        [ "Torva platelegs", "Masori chaps (f)" ],
+        [ "Bandos tassets", "Armadyl chainskirt" ],
+        [ "Crystal legs", "Eclipse moon tassets" ],
+        [ "Verac's plateskirt", "Blessed chaps" ]
       ],
       "Gloves": [
-        ["Ferocious gloves", "Tormented bracelet", "Zaryte vambraces"],
-        ["Barrows gloves"],
-        ["Regen bracelet"],
-        ["Combat bracelet"]
+        [ "Ferocious gloves", "Tormented bracelet", "Zaryte vambraces" ],
+        [ "Barrows gloves" ],
+        [ "Regen bracelet" ],
+        [ "Combat bracelet" ]
       ],
       "Boots": [
-        ["Primordial boots", "Pegasian boots"],
-        ["Aranea boots", "Echo boots", "Guardian boots"],
-        ["Dragon boots", "Granite boots"],
-        ["Devout boots"],
-        ["Blessed boots", "Boots of brimstone", "Bandos boots"]
+        [ "Primordial boots", "Pegasian boots" ],
+        [ "Aranea boots", "Echo boots", "Guardian boots" ],
+        [ "Dragon boots", "Granite boots" ],
+        [ "Devout boots" ],
+        [ "Blessed boots", "Boots of brimstone", "Bandos boots" ]
       ],
       "Ring": [
-        ["Lightbearer"],
-        ["Ring of the gods (i)"],
-        ["Brimstone ring"],
-        ["Ring of suffering (i)"],
-        ["Berserker ring (i)"]
+        [ "Lightbearer" ],
+        [ "Ring of the gods (i)" ],
+        [ "Brimstone ring" ],
+        [ "Ring of suffering (i)" ],
+        [ "Berserker ring (i)" ]
       ],
       "Ammo": [
-        ["Dragon arrow", "Amethyst arrow", "Moonlight antler bolts"],
-        ["Rada's blessing 4"],
-        ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]
+        [ "Dragon arrows", "Amethyst arrows", "Moonlight antler bolts" ],
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
       ]
     },
     "Magic (Rex Only)": {
       "Weapon": [
-        ["Sanguinesti staff"],
-        ["Trident of the swamp", "Trident of the seas"],
-        ["Toxic staff of the dead"],
-        ["Void knight mace", "Warped sceptre"],
-        ["Iban's staff (u)"]
+        [ "Sanguinesti staff" ],
+        [ "Trident of the swamp", "Trident of the seas" ],
+        [ "Toxic staff of the dead" ],
+        [ "Void knight mace", "Warped sceptre" ],
+        [ "Iban's staff (u)" ]
       ],
       "Shield": [
-        ["Elidinis' ward (f)", "Arcane spirit shield"],
-        ["Elysian spirit shield", "Spectral spirit shield"],
-        ["Crystal shield", "Dragonfire shield"],
-        ["Granite shield", "Toktz-ket-xil"],
-        ["Dragon sq shield", "Rune kiteshield"]
+        [ "Elidinis' ward (f)", "Arcane spirit shield" ],
+        [ "Elysian spirit shield", "Spectral spirit shield" ],
+        [ "Crystal shield", "Dragonfire shield" ],
+        [ "Granite shield", "Toktz-ket-xil" ],
+        [ "Dragon sq shield", "Rune kiteshield" ]
       ],
       "Helmet": [
-        ["Slayer helmet (i)", "Black mask (i)"],
-        ["Justiciar faceguard"],
-        ["Serpentine helm"],
-        ["Barrows helm"],
-        ["Helm of neitiznot"]
+        [ "Slayer helmet (i)", "Black mask (i)" ],
+        [ "Justiciar faceguard" ],
+        [ "Serpentine helm" ],
+        [ "Barrows helm" ],
+        [ "Helm of neitiznot" ]
       ],
       "Amulet": [
-        ["Occult necklace"],
-        ["Amulet of fury"],
-        ["Amulet of the damned"],
-        ["Bonecrusher necklace", "Dragonbone necklace"],
-        ["Amulet of glory"]
+        [ "Occult necklace" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of the damned" ],
+        [ "Bonecrusher necklace", "Dragonbone necklace" ],
+        [ "Amulet of glory" ]
       ],
       "Cape": [
-        ["Imbued god cape"],
-        ["Infernal cape", "Fire cape"],
-        ["Skillcape"],
-        ["Ardougne cloak 4"],
-        ["Vestment cloak"]
+        [ "Imbued god cape" ],
+        [ "Infernal cape", "Fire cape" ],
+        [ "Skillcape" ],
+        [ "Ardougne cloak 4" ],
+        [ "Vestment cloak" ]
       ],
       "Body": [
-        ["Justiciar chestguard", "Torva platebody"],
-        ["Bandos chestplate", "Barrows body"],
-        ["Granite body"],
-        ["Dragon chainbody"],
-        ["Rune platebody"]
+        [ "Justiciar chestguard", "Torva platebody" ],
+        [ "Bandos chestplate", "Barrows body" ],
+        [ "Granite body" ],
+        [ "Dragon chainbody" ],
+        [ "Rune platebody" ]
       ],
       "Legs": [
-        ["Justiciar legguards", "Torva platelegs"],
-        ["Bandos tassets", "Barrows legs"],
-        ["Granite legs"],
-        ["Dragon platelegs"],
-        ["Rune platelegs"]
+        [ "Justiciar legguards", "Torva platelegs" ],
+        [ "Bandos tassets", "Barrows legs" ],
+        [ "Granite legs" ],
+        [ "Dragon platelegs" ],
+        [ "Rune platelegs" ]
       ],
       "Gloves": [
-        ["Tormented bracelet"],
-        ["Regen bracelet"],
-        ["Barrows gloves"],
-        ["Combat bracelet"]
+        [ "Tormented bracelet" ],
+        [ "Regen bracelet" ],
+        [ "Barrows gloves" ],
+        [ "Combat bracelet" ]
       ],
       "Boots": [
-        ["Echo boots", "Guardian boots"],
-        ["Eternal boots", "Bandos boots"],
-        ["Boots of brimstone"],
-        ["Bloodbark boots"],
-        ["Wizard boots", "Mystic boots"]
+        [ "Echo boots", "Guardian boots" ],
+        [ "Eternal boots", "Bandos boots" ],
+        [ "Boots of brimstone" ],
+        [ "Bloodbark boots" ],
+        [ "Wizard boots", "Mystic boots" ]
       ],
       "Ring": [
-        ["Ring of suffering (i)"],
-        ["Ring of the gods (i)"],
-        ["Brimstone ring"],
-        ["Ring of shadows"],
-        ["Explorer's ring"]
+        [ "Ring of suffering (i)" ],
+        [ "Ring of the gods (i)" ],
+        [ "Brimstone ring" ],
+        [ "Ring of shadows" ],
+        [ "Explorer's ring" ]
       ],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]],
-      "Special Attack": ["N/A"]
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+      ],
+      "Special Attack": [ "N/A" ]
     },
     "Ranged (Prime only)": {
       "Weapon": [
-        ["Twisted bow", "Bow of faerdhinen"],
-        ["Toxic blowpipe"],
-        ["Crystal bow"],
-        ["Hunters' sunlight crossbow"],
-        ["Rune crossbow"]
+        [ "Twisted bow", "Bow of faerdhinen" ],
+        [ "Toxic blowpipe" ],
+        [ "Crystal bow" ],
+        [ "Hunters' sunlight crossbow" ],
+        [ "Rune crossbow" ]
       ],
       "Shield": [
-        ["Elysian spirit shield", "Twisted buckler"],
-        ["Crystal shield", "Odium ward"],
-        ["Granite shield"],
-        ["Spirit shield"],
-        ["Rune kiteshield"]
+        [ "Elysian spirit shield", "Twisted buckler" ],
+        [ "Crystal shield", "Odium ward" ],
+        [ "Granite shield" ],
+        [ "Spirit shield" ],
+        [ "Rune kiteshield" ]
       ],
-      "Special Attack": [["Toxic blowpipe"]],
+      "Special Attack": [ [ "Toxic blowpipe" ] ],
       "Helmet": [
-        ["Slayer helmet (i)", "Black mask (i)"],
-        ["Masori mask (f)", "Justiciar faceguard"],
-        ["Crystal helm"],
-        ["Barrows helm"]
+        [ "Slayer helmet (i)", "Black mask (i)" ],
+        [ "Masori mask (f)", "Justiciar faceguard" ],
+        [ "Crystal helm" ],
+        [ "Barrows helm" ]
       ],
       "Amulet": [
-        ["Necklace of anguish"],
-        ["Amulet of fury"],
-        ["Amulet of glory"]
+        [ "Necklace of anguish" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ]
       ],
       "Cape": [
-        ["Dizana's quiver"],
-        ["Ava's assembler", "Ranging cape (t)"],
-        ["Ava's accumulator"]
+        [ "Dizana's quiver" ],
+        [ "Ava's assembler", "Ranging cape (t)" ],
+        [ "Ava's accumulator" ]
       ],
       "Body": [
-        ["Masori body (f)", "Justiciar chestguard"],
-        ["Crystal body", "Barrows body"],
-        ["Armadyl chestplate", "Karil's leathertop"],
-        ["Blessed body"],
-        ["Black d'hide body"]
+        [ "Masori body (f)", "Justiciar chestguard" ],
+        [ "Crystal body", "Barrows body" ],
+        [ "Armadyl chestplate", "Karil's leathertop" ],
+        [ "Blessed body" ],
+        [ "Black d'hide body" ]
       ],
       "Legs": [
-        ["Masori chaps (f)", "Justiciar legguards"],
-        ["Crystal legs", "Barrows legs"],
-        ["Armadyl chainskirt", "Karil's leatherskirt"],
-        ["Blessed chaps"],
-        ["Black d'hide chaps"]
+        [ "Masori chaps (f)", "Justiciar legguards" ],
+        [ "Crystal legs", "Barrows legs" ],
+        [ "Armadyl chainskirt", "Karil's leatherskirt" ],
+        [ "Blessed chaps" ],
+        [ "Black d'hide chaps" ]
       ],
       "Gloves": [
-        ["Zaryte vambraces"],
-        ["Regen bracelet"],
-        ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Combat bracelet"]
+        [ "Zaryte vambraces" ],
+        [ "Regen bracelet" ],
+        [ "Barrows gloves" ],
+        [ "Blessed vambraces" ],
+        [ "Combat bracelet" ]
       ],
       "Boots": [
-        ["Pegasian boots"],
-        ["Blessed boots"],
-        ["Ranger boots"],
-        ["Boots of brimstone"],
-        ["Bandos boots"]
+        [ "Pegasian boots" ],
+        [ "Blessed boots" ],
+        [ "Ranger boots" ],
+        [ "Boots of brimstone" ],
+        [ "Bandos boots" ]
       ],
       "Ring": [
-        ["Venator ring"],
-        ["Archers ring (i)", "Ring of shadows"],
-        ["Ring of the gods (i)"],
-        ["Brimstone ring"],
-        ["Explorer's ring 4"]
+        [ "Venator ring" ],
+        [ "Archers ring (i)", "Ring of shadows" ],
+        [ "Ring of the gods (i)" ],
+        [ "Brimstone ring" ],
+        [ "Explorer's ring 4" ]
       ],
       "Ammo": [
-        ["Dragon arrow", "Amethyst arrow"],
-        ["Rada's blessing 3", "Rada's blessing 2", "God blessing"],
-        ["Moonlight antler bolts"],
-        ["Diamond bolts (e)"],
-        ["Runite bolts"]
+        [ "Dragon arrows", "Amethyst arrows" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ],
+        [ "Moonlight antler bolts" ],
+        [ "Diamond bolts (e)" ],
+        [ "Runite bolts" ]
       ]
     }
   }

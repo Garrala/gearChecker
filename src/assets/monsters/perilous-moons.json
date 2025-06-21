@@ -1,17 +1,17 @@
 {
   "name": "Perilous Moons",
   "category": "World Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Blood_Moon.png?c3e72",
+  "image": "assets/monster-icons/perilous_moons.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Moons_of_Peril/Strategies#Eclipse_Moon",
   "bosses": [
     {
       "name": "Blood Moon",
-      "image": "https://oldschool.runescape.wiki/images/Blood_Moon.png?c3e72",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Moons_of_Peril/Strategies#Eclipse_Moon",
+      "image": "assets/monster-icons/perilous_moons.png",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Moons_of_Peril/Strategies#Blood_Moon",
       "combat_level": 725,
       "hp": 500,
       "max_hit": 41,
-      "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
       "defense": {
         "melee": {
           "stab": 150,
@@ -25,7 +25,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_styles": [ "Magic", "Ranged", "Venom" ],
       "attack_speed": 3,
       "aggressive": true,
       "immunities": {
@@ -35,14 +35,14 @@
         "thralls": false
       }
     },
-	{
+    {
       "name": "Blue Moon",
-      "image": "https://oldschool.runescape.wiki/images/Blue_Moon.png?c3e72",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Moons_of_Peril/Strategies#Eclipse_Moon",
+      "image": "assets/monster-icons/blue_moon.png",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Moons_of_Peril/Strategies#Blue_Moon",
       "combat_level": 725,
       "hp": 500,
       "max_hit": 41,
-      "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
       "defense": {
         "melee": {
           "stab": 150,
@@ -56,7 +56,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_styles": [ "Magic", "Ranged", "Venom" ],
       "attack_speed": 3,
       "aggressive": true,
       "immunities": {
@@ -66,14 +66,14 @@
         "thralls": false
       }
     },
-	{
+    {
       "name": "Eclipse Moon",
-      "image": "https://oldschool.runescape.wiki/images/Eclipse_Moon.png?c3e72",
+      "image": "assets/monster-icons/eclipse_moon.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Moons_of_Peril/Strategies#Eclipse_Moon",
       "combat_level": 725,
       "hp": 500,
       "max_hit": 41,
-      "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
       "defense": {
         "melee": {
           "stab": 150,
@@ -87,7 +87,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_styles": [ "Magic", "Ranged", "Venom" ],
       "attack_speed": 3,
       "aggressive": true,
       "immunities": {

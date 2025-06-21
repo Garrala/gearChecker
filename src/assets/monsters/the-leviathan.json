@@ -1,17 +1,17 @@
 {
   "name": "The Leviathan",
   "category": "Desert Treasure II",
-  "image": "https://oldschool.runescape.wiki/images/The_Leviathan.png?d588a",
+  "image": "assets/monster-icons/the_leviathan.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/The_Leviathan#Post-quest",
   "bosses": [
     {
       "name": "The Leviathan",
-      "image": "https://oldschool.runescape.wiki/images/The_Leviathan.png?d588a",
+      "image": "assets/monster-icons/the_leviathan.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/The_Leviathan#Post-quest",
       "combat_level": 725,
       "hp": 500,
       "max_hit": 41,
-      "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
       "defense": {
         "melee": {
           "stab": 150,
@@ -25,7 +25,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_styles": [ "Magic", "Ranged", "Venom" ],
       "attack_speed": 3,
       "aggressive": true,
       "immunities": {

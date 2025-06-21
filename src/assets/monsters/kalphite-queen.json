@@ -1,12 +1,12 @@
 {
   "name": "Kalphite Queen",
   "category": "World Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Kalphite_Queen.png?a4955",
+  "image": "assets/monster-icons/kalphite_queen.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
   "bosses": [
     {
       "name": "Kalphite Queen (Crawling)",
-      "image": "https://oldschool.runescape.wiki/images/Kalphite_Queen.png?a4955",
+      "image": "assets/monster-icons/kalphite_queen.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
       "combat_level": 333,
       "hp": 255,
@@ -38,9 +38,9 @@
         "thralls": false
       }
     },
-	{
+    {
       "name": "Kalphite Queen (Airborne)",
-      "image": "https://oldschool.runescape.wiki/images/Kalphite_Queen_2nd_form.png?a4955",
+      "image": "assets/monster-icons/kalphite_queen__airborne_.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen#Airborne",
       "combat_level": 333,
       "hp": 255,
@@ -213,9 +213,9 @@
       "Ammo": [
         [ "Rada's blessing 4" ],
         [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ],
-        [ "Diamond dragon bolts (e)", "Dragon arrow" ],
-        [ "Amethyst broad bolts", "Amethyst arrow" ],
-        [ "Runite bolts", "Rune arrow" ]
+        [ "Diamond dragon bolts (e)", "Dragon arrows" ],
+        [ "Amethyst broad bolts", "Amethyst arrows" ],
+        [ "Runite bolts", "Rune arrows" ]
       ],
       "Special Attack": [ "N/A" ]
     },
@@ -329,7 +329,7 @@
         [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ],
       "Special Attack": [ "N/A" ],
-	  "Shield": [ "N/A" ]
+      "Shield": [ "N/A" ]
     },
     "Flinching": {
       "Weapon": [
@@ -582,6 +582,6 @@
       ],
       "Special Attack": [ "N/A" ]
     }
-  } 
+  }
 }
 

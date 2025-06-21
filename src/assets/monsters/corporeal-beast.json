@@ -1,12 +1,12 @@
 {
   "name": "Corporeal Beast",
   "category": "World Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Corporeal_Beast.png?52ebb",
+  "image": "assets/monster-icons/corporeal_beast.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Corporeal_Beast",
   "bosses": [
     {
       "name": "Corporeal Beast",
-      "image": "https://oldschool.runescape.wiki/images/Corporeal_Beast.png?52ebb",
+      "image": "assets/monster-icons/corporeal_beast.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Corporeal_Beast",
       "combat_level": 785,
       "hp": 2000,
@@ -28,7 +28,7 @@
           "thrown": 230
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Stomp"],
+      "attack_styles": [ "Magic", "Ranged", "Stomp" ],
       "attack_speed": 4,
       "aggressive": true,
       "immunities": {
@@ -42,377 +42,425 @@
   "gear_setups": {
     "Solo / Duo Melee": {
       "Weapon": [
-        ["Osmumten's fang"],
-        ["Noxious halberd"],
-        ["Zamorakian spear"]
+        [ "Osmumten's fang" ],
+        [ "Noxious halberd" ],
+        [ "Zamorakian spear" ]
       ],
       "Shield": [
-        ["Avernic defender"],
-        ["Dragon defender"],
-        ["Dragonfire shield"],
-        ["Elysian spirit shield"]
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Dragonfire shield" ],
+        [ "Elysian spirit shield" ]
       ],
       "Special Attack": [
-        ["Elder maul", "Voidwaker"],
-        ["Dragon warhammer", "Osmumten's fang"]
+        [ "Elder maul", "Voidwaker" ],
+        [ "Dragon warhammer", "Osmumten's fang" ]
       ],
       "Helmet": [
-        ["Torva full helm", "Inquisitor's great helm"],
-        ["Neitiznot faceguard", "Zombie helmet"],
-        ["Serpentine helm"],
-        ["Blood moon helm"],
-        ["Helm of neitiznot"]
+        [ "Torva full helm", "Inquisitor's great helm" ],
+        [ "Neitiznot faceguard", "Zombie helmet" ],
+        [ "Serpentine helm" ],
+        [ "Blood moon helm" ],
+        [ "Helm of neitiznot" ]
       ],
       "Amulet": [
-        ["Amulet of blood fury", "Amulet of rancour"],
-        ["Amulet of torture"],
-        ["Amulet of fury"],
-        ["Amulet of glory"],
-        ["Amulet of power"]
+        [ "Amulet of blood fury", "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ]
       ],
       "Cape": [
-        ["Infernal cape", "Mythical cape"],
-        ["Fire cape"],
-        ["Skillcape"],
-        ["Obsidian cape"]
+        [ "Infernal cape", "Mythical cape" ],
+        [ "Fire cape" ],
+        [ "Skillcape" ],
+        [ "Obsidian cape" ]
       ],
       "Body": [
-        ["Masori body (f)", "Inquisitor's hauberk"],
-        ["Eclipse moon chestplate", "Blood moon chestplate"],
-        ["Armadyl chestplate"],
-        ["Karil's leathertop"],
-        ["Blessed body"]
+        [ "Masori body (f)", "Inquisitor's hauberk" ],
+        [ "Eclipse moon chestplate", "Blood moon chestplate" ],
+        [ "Armadyl chestplate" ],
+        [ "Karil's leathertop" ],
+        [ "Blessed body" ]
       ],
       "Legs": [
-        ["Masori chaps (f)", "Inquisitor's plateskirt"],
-        ["Blood moon tassets"],
-        ["Armadyl chainskirt"],
-        ["Karil's leatherskirt"],
-        ["Blessed chaps"]
+        [ "Masori chaps (f)", "Inquisitor's plateskirt" ],
+        [ "Blood moon tassets" ],
+        [ "Armadyl chainskirt" ],
+        [ "Karil's leatherskirt" ],
+        [ "Blessed chaps" ]
       ],
       "Gloves": [
-        ["Ferocious gloves"],
-        ["Barrows gloves"],
-        ["Rune gloves"],
-        ["Regen bracelet"],
-        ["Combat bracelet"]
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves" ],
+        [ "Rune gloves" ],
+        [ "Regen bracelet" ],
+        [ "Combat bracelet" ]
       ],
       "Boots": [
-        ["Primordial boots"],
-        ["Echo boots", "Dragon boots"],
-        ["Spiked manacles"],
-        ["Guardian boots"],
-        ["Granite boots"]
+        [ "Primordial boots" ],
+        [ "Echo boots", "Dragon boots" ],
+        [ "Spiked manacles" ],
+        [ "Guardian boots" ],
+        [ "Granite boots" ]
       ],
       "Ring": [
-        ["Ring of suffering (i)", "Tyrannical ring (i)", "Ultor ring"],
-        ["Berserker ring (i)"],
-        ["Brimstone ring"]
+        [ "Ring of suffering (i)", "Tyrannical ring (i)", "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "Brimstone ring" ]
       ],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]]
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+      ]
     },
     "Solo / Duo Stat Draining": {
       "Weapon": [
-        ["Noxious halberd"],
-        ["Zamorakian spear"],
-        ["Osmumten's fang"],
-        ["Dragon spear"]
+        [ "Noxious halberd" ],
+        [ "Zamorakian spear" ],
+        [ "Osmumten's fang" ],
+        [ "Dragon spear" ]
       ],
       "Special Attack": [
-        ["Osmumten's fang"],
-        ["Crystal halberd"],
-        ["Bandos godsword"]
+        [ "Osmumten's fang" ],
+        [ "Crystal halberd" ],
+        [ "Bandos godsword" ]
       ],
       "Helmet": [
-        ["Torva full helm"],
-        ["Neitiznot faceguard"],
-        ["Serpentine helm", "Inquisitor's great helm"],
-        ["Void melee helm"],
-        ["Helm of neitiznot"]
+        [ "Torva full helm" ],
+        [ "Neitiznot faceguard" ],
+        [ "Serpentine helm", "Inquisitor's great helm" ],
+        [ "Void melee helm" ],
+        [ "Helm of neitiznot" ]
       ],
       "Amulet": [
-        ["Amulet of rancour"],
-        ["Amulet of torture"],
-        ["Amulet of fury"],
-        ["Amulet of strength"],
-        ["Amulet of glory"]
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of strength" ],
+        [ "Amulet of glory" ]
       ],
       "Cape": [
-        ["Infernal cape"],
-        ["Fire cape"],
-        ["Mythical cape"],
-        ["Ardougne cloak 4"],
-        ["Ardougne cloak 3"]
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Mythical cape" ],
+        [ "Ardougne cloak 4" ],
+        [ "Ardougne cloak 3" ]
       ],
       "Body": [
-        ["Masori body (f)"],
-        ["Eclipse moon chestplate"],
-        ["Karil's leathertop"],
-        ["Elite void top", "Void knight top"],
-        ["Blessed body"]
+        [ "Masori body (f)" ],
+        [ "Eclipse moon chestplate" ],
+        [ "Karil's leathertop" ],
+        [ "Elite void top", "Void knight top" ],
+        [ "Blessed body" ]
       ],
       "Legs": [
-        ["Masori chaps (f)"],
-        ["Blood moon tassets"],
-        ["Karil's leatherskirt"],
-        ["Elite void robe", "Void knight robe"],
-        ["Blessed chaps"]
+        [ "Masori chaps (f)" ],
+        [ "Blood moon tassets" ],
+        [ "Karil's leatherskirt" ],
+        [ "Elite void robe", "Void knight robe" ],
+        [ "Blessed chaps" ]
       ],
       "Gloves": [
-        ["Ferocious gloves"],
-        ["Barrows gloves", "Void knight gloves"],
-        ["Dragon gloves"],
-        ["Rune gloves"],
-        ["Regen bracelet"]
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves", "Void knight gloves" ],
+        [ "Dragon gloves" ],
+        [ "Rune gloves" ],
+        [ "Regen bracelet" ]
       ],
       "Boots": [
-        ["Primordial boots"],
-        ["Dragon boots"],
-        ["Spiked manacles"],
-        ["Guardian boots"],
-        ["Granite boots"]
+        [ "Primordial boots" ],
+        [ "Dragon boots" ],
+        [ "Spiked manacles" ],
+        [ "Guardian boots" ],
+        [ "Granite boots" ]
       ],
-      "Ring": [["Ultor ring"], ["Berserker ring (i)"], ["Brimstone ring"]],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]],
-      "Shield": ["N/A"]
+      "Ring": [
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "Brimstone ring" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+      ],
+      "Shield": [ "N/A" ]
     },
     "Solo / Duo Fewer stat drains": {
       "Weapon": [
-        ["Noxious halberd"],
-        ["Zamorakian spear"],
-        ["Osmumten's fang"],
-        ["Dragon spear"]
+        [ "Noxious halberd" ],
+        [ "Zamorakian spear" ],
+        [ "Osmumten's fang" ],
+        [ "Dragon spear" ]
       ],
       "Special Attack": [
-        ["Arclight"],
-        ["Bandos godsword"],
-        ["Osmumten's fang"]
+        [ "Arclight" ],
+        [ "Bandos godsword" ],
+        [ "Osmumten's fang" ]
       ],
       "Helmet": [
-        ["Torva full helm"],
-        ["Neitiznot faceguard"],
-        ["Serpentine helm"],
-        ["Helm of neitiznot"]
+        [ "Torva full helm" ],
+        [ "Neitiznot faceguard" ],
+        [ "Serpentine helm" ],
+        [ "Helm of neitiznot" ]
       ],
       "Amulet": [
-        ["Amulet of blood fury", "Amulet of fury"],
-        ["Amulet of rancour"],
-        ["Amulet of torture"],
-        ["Amulet of glory"]
+        [ "Amulet of blood fury", "Amulet of fury" ],
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of glory" ]
       ],
-      "Cape": [["Infernal cape"], ["Fire cape"], ["Imbued god cape"]],
+      "Cape": [
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Imbued god cape" ]
+      ],
       "Body": [
-        ["Masori body (f)"],
-        ["Armadyl chestplate"],
-        ["Eclipse moon chestplate"]
+        [ "Masori body (f)" ],
+        [ "Armadyl chestplate" ],
+        [ "Eclipse moon chestplate" ]
       ],
       "Legs": [
-        ["Masori chaps (f)"],
-        ["Armadyl chainskirt"],
-        ["Blood moon tassets"]
+        [ "Masori chaps (f)" ],
+        [ "Armadyl chainskirt" ],
+        [ "Blood moon tassets" ]
       ],
-      "Gloves": [["Barrows gloves"], ["Ferocious gloves"]],
-      "Boots": [["Primordial boots"], ["Dragon boots"]],
+      "Gloves": [
+        [ "Barrows gloves" ],
+        [ "Ferocious gloves" ]
+      ],
+      "Boots": [
+        [ "Primordial boots" ],
+        [ "Dragon boots" ]
+      ],
       "Ring": [
-        ["Ring of suffering (i)"],
-        ["Ultor ring"],
-        ["Berserker ring (i)"],
-        ["Brimstone ring"]
+        [ "Ring of suffering (i)" ],
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "Brimstone ring" ]
       ],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]],
-      "Shield": ["N/A"]
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+      ],
+      "Shield": [ "N/A" ]
     },
     "Team Melee": {
       "Weapon": [
-        ["Osmumten's fang"],
-        ["Noxious halberd"],
-        ["Zamorakian spear"],
-        ["Dragon spear"]
+        [ "Osmumten's fang" ],
+        [ "Noxious halberd" ],
+        [ "Zamorakian spear" ],
+        [ "Dragon spear" ]
       ],
       "Special Attack": [
-        ["Elder maul"],
-        ["Osmumten's fang"],
-        ["Bandos godsword"]
+        [ "Elder maul" ],
+        [ "Osmumten's fang" ],
+        [ "Bandos godsword" ]
       ],
       "Helmet": [
-        ["Torva full helm"],
-        ["Neitiznot faceguard", "Serpentine helm"],
-        ["Void melee helm"],
-        ["Blood moon helm", "Inquisitor's great helm"],
-        ["Helm of neitiznot"]
+        [ "Torva full helm" ],
+        [ "Neitiznot faceguard", "Serpentine helm" ],
+        [ "Void melee helm" ],
+        [ "Blood moon helm", "Inquisitor's great helm" ],
+        [ "Helm of neitiznot" ]
       ],
       "Amulet": [
-        ["Amulet of rancour"],
-        ["Amulet of torture"],
-        ["Amulet of fury"],
-        ["Amulet of strength"],
-        ["Amulet of glory"]
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of strength" ],
+        [ "Amulet of glory" ]
       ],
       "Cape": [
-        ["Infernal cape"],
-        ["Fire cape"],
-        ["Mythical cape"],
-        ["Ardougne cloak 4"],
-        ["Ardougne cloak 3"]
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Mythical cape" ],
+        [ "Ardougne cloak 4" ],
+        [ "Ardougne cloak 3" ]
       ],
       "Body": [
-        ["Masori body (f)"],
-        ["Karil's leathertop"],
-        ["Elite void top", "Void knight top"],
-        ["Blessed body"]
+        [ "Masori body (f)" ],
+        [ "Karil's leathertop" ],
+        [ "Elite void top", "Void knight top" ],
+        [ "Blessed body" ]
       ],
       "Legs": [
-        ["Masori chaps (f)"],
-        ["Karil's leatherskirt"],
-        ["Elite void robe", "Void knight robe"],
-        ["Blessed chaps"]
+        [ "Masori chaps (f)" ],
+        [ "Karil's leatherskirt" ],
+        [ "Elite void robe", "Void knight robe" ],
+        [ "Blessed chaps" ]
       ],
       "Gloves": [
-        ["Ferocious gloves"],
-        ["Barrows gloves", "Void knight gloves"],
-        ["Dragon gloves"],
-        ["Rune gloves"],
-        ["Regen bracelet"]
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves", "Void knight gloves" ],
+        [ "Dragon gloves" ],
+        [ "Rune gloves" ],
+        [ "Regen bracelet" ]
       ],
       "Boots": [
-        ["Primordial boots"],
-        ["Dragon boots"],
-        ["Spiked manacles"],
-        ["Guardian boots"],
-        ["Granite boots"]
+        [ "Primordial boots" ],
+        [ "Dragon boots" ],
+        [ "Spiked manacles" ],
+        [ "Guardian boots" ],
+        [ "Granite boots" ]
       ],
-      "Ring": [["Ultor ring"], ["Berserker ring (i)"], ["Brimstone ring"]],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]],
-      "Shield": ["N/A"]
+      "Ring": [
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "Brimstone ring" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+      ],
+      "Shield": [ "N/A" ]
     },
     "Mass Melee": {
       "Weapon": [
-        ["Osmumten's fang"],
-        ["Noxious halberd"],
-        ["Zamorakian spear"],
-        ["Dragon spear"]
+        [ "Osmumten's fang" ],
+        [ "Noxious halberd" ],
+        [ "Zamorakian spear" ],
+        [ "Dragon spear" ]
       ],
-      "Special Attack": [["Voidwaker"], ["Osmumten's fang"]],
+      "Special Attack": [
+        [ "Voidwaker" ],
+        [ "Osmumten's fang" ]
+      ],
       "Helmet": [
-        ["Torva full helm"],
-        ["Neitiznot faceguard", "Serpentine helm"],
-        ["Void melee helm"],
-        ["Blood moon helm"],
-        ["Helm of neitiznot"]
+        [ "Torva full helm" ],
+        [ "Neitiznot faceguard", "Serpentine helm" ],
+        [ "Void melee helm" ],
+        [ "Blood moon helm" ],
+        [ "Helm of neitiznot" ]
       ],
       "Amulet": [
-        ["Amulet of rancour"],
-        ["Amulet of torture"],
-        ["Amulet of fury"],
-        ["Amulet of glory"],
-        ["Amulet of strength"]
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of strength" ]
       ],
       "Cape": [
-        ["Infernal cape"],
-        ["Fire cape"],
-        ["Mythical cape"],
-        ["Ardougne cloak 4"],
-        ["Ardougne cloak 3"]
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Mythical cape" ],
+        [ "Ardougne cloak 4" ],
+        [ "Ardougne cloak 3" ]
       ],
       "Body": [
-        ["Torva platebody"],
-        ["Blood moon chestplate", "Bandos chestplate"],
-        ["Elite void top"],
-        ["Obsidian platebody"],
-        ["Karil's leathertop"]
+        [ "Torva platebody" ],
+        [ "Blood moon chestplate", "Bandos chestplate" ],
+        [ "Elite void top" ],
+        [ "Obsidian platebody" ],
+        [ "Karil's leathertop" ]
       ],
       "Legs": [
-        ["Torva platelegs"],
-        ["Blood moon tassets", "Bandos tassets"],
-        ["Elite void robe"],
-        ["Obsidian platelegs"],
-        ["Fremennik kilt"]
+        [ "Torva platelegs" ],
+        [ "Blood moon tassets", "Bandos tassets" ],
+        [ "Elite void robe" ],
+        [ "Obsidian platelegs" ],
+        [ "Fremennik kilt" ]
       ],
       "Gloves": [
-        ["Ferocious gloves"],
-        ["Barrows gloves", "Void knight gloves"],
-        ["Dragon gloves"],
-        ["Rune gloves"],
-        ["Regen bracelet"]
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves", "Void knight gloves" ],
+        [ "Dragon gloves" ],
+        [ "Rune gloves" ],
+        [ "Regen bracelet" ]
       ],
       "Boots": [
-        ["Primordial boots"],
-        ["Dragon boots"],
-        ["Spiked manacles"],
-        ["Guardian boots"],
-        ["Granite boots"]
+        [ "Primordial boots" ],
+        [ "Dragon boots" ],
+        [ "Spiked manacles" ],
+        [ "Guardian boots" ],
+        [ "Granite boots" ]
       ],
-      "Ring": [["Ultor ring"], ["Berserker ring (i)"], ["Brimstone ring"]],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]],
-      "Shield": ["N/A"]
+      "Ring": [
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "Brimstone ring" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+      ],
+      "Shield": [ "N/A" ]
     },
     "Mass Ranged": {
       "Weapon": [
-        ["Twisted bow"],
-        ["Zaryte crossbow"],
-        ["Armadyl crossbow"],
-        ["Dragon crossbow"],
-        ["Rune crossbow"]
+        [ "Twisted bow" ],
+        [ "Zaryte crossbow" ],
+        [ "Armadyl crossbow" ],
+        [ "Dragon crossbow" ],
+        [ "Rune crossbow" ]
       ],
       "Shield": [
-        ["Twisted buckler"],
-        ["Dragonfire ward"],
-        ["Odium ward"],
-        ["Book of law"],
-        ["Unholy book"]
+        [ "Twisted buckler" ],
+        [ "Dragonfire ward" ],
+        [ "Odium ward" ],
+        [ "Book of law" ],
+        [ "Unholy book" ]
       ],
-      "Special Attack": [["Zaryte crossbow"]],
+      "Special Attack": [ [ "Zaryte crossbow" ] ],
       "Helmet": [
-        ["Masori mask (f)"],
-        ["Armadyl helmet"],
-        ["Blessed coif"],
-        ["Robin hood hat"],
-        ["Karil's coif"]
+        [ "Masori mask (f)" ],
+        [ "Armadyl helmet" ],
+        [ "Blessed coif" ],
+        [ "Robin hood hat" ],
+        [ "Karil's coif" ]
       ],
       "Amulet": [
-        ["Necklace of anguish"],
-        ["Amulet of fury"],
-        ["Amulet of glory"],
-        ["Amulet of power"],
-        ["Amulet of accuracy"]
+        [ "Necklace of anguish" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ],
+        [ "Amulet of accuracy" ]
       ],
       "Cape": [
-        ["Dizana's quiver"],
-        ["Ava's assembler"],
-        ["Ava's accumulator"],
-        ["Ranging cape"],
-        ["Ava's attractor"]
+        [ "Dizana's quiver" ],
+        [ "Ava's assembler" ],
+        [ "Ava's accumulator" ],
+        [ "Ranging cape" ],
+        [ "Ava's attractor" ]
       ],
       "Body": [
-        ["Masori body (f)"],
-        ["Armadyl chestplate"],
-        ["Blessed body"],
-        ["Black d'hide body", "Karil's leathertop"],
-        ["Red d'hide body"]
+        [ "Masori body (f)" ],
+        [ "Armadyl chestplate" ],
+        [ "Blessed body" ],
+        [ "Black d'hide body", "Karil's leathertop" ],
+        [ "Red d'hide body" ]
       ],
       "Legs": [
-        ["Masori chaps (f)"],
-        ["Armadyl chainskirt"],
-        ["Blessed chaps"],
-        ["Black d'hide chaps", "Karil's leatherskirt"],
-        ["Rangers' tights", "Penance skirt"]
+        [ "Masori chaps (f)" ],
+        [ "Armadyl chainskirt" ],
+        [ "Blessed chaps" ],
+        [ "Black d'hide chaps", "Karil's leatherskirt" ],
+        [ "Rangers' tights", "Penance skirt" ]
       ],
       "Gloves": [
-        ["Zaryte vambraces"],
-        ["Barrows gloves"],
-        ["Blessed vambraces"],
-        ["Black d'hide vambraces", "Ranger gloves"],
-        ["Red d'hide vambraces"]
+        [ "Zaryte vambraces" ],
+        [ "Barrows gloves" ],
+        [ "Blessed vambraces" ],
+        [ "Black d'hide vambraces", "Ranger gloves" ],
+        [ "Red d'hide vambraces" ]
       ],
       "Boots": [
-        ["Pegasian boots"],
-        ["Ranger boots"],
-        ["Blessed boots"],
-        ["Boots of brimstone"],
-        ["Snakeskin boots"]
+        [ "Pegasian boots" ],
+        [ "Ranger boots" ],
+        [ "Blessed boots" ],
+        [ "Boots of brimstone" ],
+        [ "Snakeskin boots" ]
       ],
-      "Ring": [["Venator ring"], ["Archers ring (i)"], ["Brimstone ring"]],
-      "Ammo": [["Dragon arrow"], ["Ruby dragon bolts (e)"], ["Ruby bolts (e)"]]
+      "Ring": [
+        [ "Venator ring" ],
+        [ "Archers ring (i)" ],
+        [ "Brimstone ring" ]
+      ],
+      "Ammo": [
+        [ "Dragon arrows" ],
+        [ "Ruby dragon bolts (e)" ],
+        [ "Ruby bolts (e)" ]
+      ]
     }
   }
 }

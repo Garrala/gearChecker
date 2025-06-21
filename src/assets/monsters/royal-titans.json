@@ -1,17 +1,17 @@
 {
   "name": "Royal Titans",
   "category": "Instanced Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Branda_the_Fire_Queen.png?0687c",
+  "image": "assets/monster-icons/royal_titans.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Royal_Titans/Strategies",
   "bosses": [
     {
       "name": "Branda the Fire Queen",
-      "image": "https://oldschool.runescape.wiki/images/Branda_the_Fire_Queen.png?0687c",
+      "image": "assets/monster-icons/royal_titans.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Royal_Titans/Strategies",
       "combat_level": 725,
       "hp": 500,
       "max_hit": 41,
-      "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
       "defense": {
         "melee": {
           "stab": 150,
@@ -25,7 +25,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_styles": [ "Magic", "Ranged", "Venom" ],
       "attack_speed": 3,
       "aggressive": true,
       "immunities": {
@@ -35,14 +35,14 @@
         "thralls": false
       }
     },
-	{
-      "name": "Branda the Ice Queen",
-      "image": "https://oldschool.runescape.wiki/images/Branda_the_Fire_Queen.png?0687c",
+    {
+      "name": "Eldric the Ice King",
+      "image": "assets/monster-icons/Eldric_the_Ice_King.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Royal_Titans/Strategies",
       "combat_level": 725,
       "hp": 500,
       "max_hit": 41,
-      "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
       "defense": {
         "melee": {
           "stab": 150,
@@ -56,7 +56,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_styles": [ "Magic", "Ranged", "Venom" ],
       "attack_speed": 3,
       "aggressive": true,
       "immunities": {

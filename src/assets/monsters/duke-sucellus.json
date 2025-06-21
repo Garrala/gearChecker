@@ -1,12 +1,12 @@
 {
   "name": "Duke Sucellus",
   "category": "Desert Treasure II",
-  "image": "https://oldschool.runescape.wiki/images/Duke_Sucellus.png?d588a",
+  "image": "assets/monster-icons/duke_sucellus.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Duke_Sucellus#Awake",
   "bosses": [
     {
       "name": "Duke Sucellus",
-      "image": "https://oldschool.runescape.wiki/images/Duke_Sucellus.png?d588a",
+      "image": "assets/monster-icons/duke_sucellus.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Duke_Sucellus#Awake",
       "combat_level": 758,
       "hp": 440,
@@ -28,7 +28,7 @@
           "thrown": 320
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Gaze"],
+      "attack_styles": [ "Magic", "Ranged", "Gaze" ],
       "attack_speed": 3,
       "aggressive": true,
       "immunities": {
@@ -42,78 +42,81 @@
   "gear_setups": {
     "Melee": {
       "Weapon": [
-        ["Scythe of vitur"],
-        ["Emberlight", "Soulreaper axe"],
-        ["Noxious halberd", "Arclight"],
-        ["Zombie axe"],
-        ["Blade of saeldor"]
+        [ "Scythe of vitur" ],
+        [ "Emberlight", "Soulreaper axe" ],
+        [ "Noxious halberd", "Arclight" ],
+        [ "Zombie axe" ],
+        [ "Blade of saeldor" ]
       ],
       "Special Attack": [
-        ["Bandos godsword"],
-        ["Voidwaker"],
-        ["Dragon claws", "Burning claws"],
-        ["Crystal halberd", "Saradomin godsword"],
-        ["Abyssal dagger", "Dragon dagger"]
+        [ "Bandos godsword" ],
+        [ "Voidwaker" ],
+        [ "Dragon claws", "Burning claws" ],
+        [ "Crystal halberd", "Saradomin godsword" ],
+        [ "Abyssal dagger", "Dragon dagger" ]
       ],
       "Helmet": [
-        ["Slayer helmet (i)", "Serpentine helm", "Torva full helm"],
-        ["Neitiznot faceguard"],
-        ["Void melee helm"],
-        ["Blood moon helm"],
-        ["Helm of neitiznot"]
+        [ "Slayer helmet (i)", "Serpentine helm", "Torva full helm" ],
+        [ "Neitiznot faceguard" ],
+        [ "Void melee helm" ],
+        [ "Blood moon helm" ],
+        [ "Helm of neitiznot" ]
       ],
       "Amulet": [
-        ["Amulet of blood fury"],
-        ["Amulet of rancour"],
-        ["Amulet of torture"],
-        ["Amulet of fury"],
-        ["Amulet of glory"]
+        [ "Amulet of blood fury" ],
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ]
       ],
       "Cape": [
-        ["Infernal cape"],
-        ["Fire cape"],
-        ["Soul cape", "Mythical cape"],
-        ["Ardougne cloak 4"]
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Soul cape", "Mythical cape" ],
+        [ "Ardougne cloak 4" ]
       ],
       "Body": [
-        ["Torva platebody"],
-        ["Bandos chestplate", "Blood moon chestplate", "Fighter torso"],
-        ["Elite void top", "Void knight top"],
-        ["Obsidian platebody"],
-        ["Proselyte hauberk"]
+        [ "Torva platebody" ],
+        [ "Bandos chestplate", "Blood moon chestplate", "Fighter torso" ],
+        [ "Elite void top", "Void knight top" ],
+        [ "Obsidian platebody" ],
+        [ "Proselyte hauberk" ]
       ],
       "Legs": [
-        ["Torva platelegs"],
-        ["Bandos tassets", "Blood moon tassets"],
-        ["Elite void robe", "Void knight robe"],
-        ["Obsidian platelegs"],
-        ["Proselyte cuisse"]
+        [ "Torva platelegs" ],
+        [ "Bandos tassets", "Blood moon tassets" ],
+        [ "Elite void robe", "Void knight robe" ],
+        [ "Obsidian platelegs" ],
+        [ "Proselyte cuisse" ]
       ],
       "Shield": [
-        ["Avernic defender"],
-        ["Dragon defender"],
-        ["Dragonfire shield"]
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Dragonfire shield" ]
       ],
       "Gloves": [
-        ["Ferocious gloves"],
-        ["Barrows gloves", "Void knight gloves"],
-        ["Rune gloves", "Regen bracelet"]
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves", "Void knight gloves" ],
+        [ "Rune gloves", "Regen bracelet" ]
       ],
       "Boots": [
-        ["Primordial boots"],
-        ["Echo boots"],
-        ["Guardian boots"],
-        ["Dragon boots"],
-        ["Climbing boots"]
+        [ "Primordial boots" ],
+        [ "Echo boots" ],
+        [ "Guardian boots" ],
+        [ "Dragon boots" ],
+        [ "Climbing boots" ]
       ],
       "Ring": [
-        ["Bellator ring", "Lightbearer"],
-        ["Ultor ring"],
-        ["Berserker ring (i)", "Warrior ring (i)"],
-        ["Ring of suffering (i)"],
-        ["Ring of shadows"]
+        [ "Bellator ring", "Lightbearer" ],
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)", "Warrior ring (i)" ],
+        [ "Ring of suffering (i)" ],
+        [ "Ring of shadows" ]
       ],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Rada's blessing 2", "God blessing"]]
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+      ]
     }
   }
 }

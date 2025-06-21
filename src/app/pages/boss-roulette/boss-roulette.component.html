@@ -22,7 +22,7 @@
                (click)="selectSuggestedItem(item)">
             <img [src]="item.image"
                  alt="{{ item.name }}"
-                 onerror="this.src='https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" />
+                 onerror="this.src='./assets/misc-icons/Bank_filler.png'" />
             <span>{{ item.name }}</span>
           </div>
         </div>
@@ -58,7 +58,7 @@
 <div *ngIf="isRoulettePhase">
   <div class="npc-dialogue">
     <img
-      src="https://oldschool.runescape.wiki/images/Mysterious_Old_Man_chathead.png?a0eb8"
+      src="./assets/misc-icons/Mysterious_Old_Man_chathead.png"
     />
     <h2>
       Ah, so you are there. I hoped you would talk to me, I get so lonely. Here,
@@ -81,7 +81,7 @@
       />
       <div *ngIf="!revealedBosses.includes(boss)" class="hidden-card">
         <img
-          src="https://oldschool.runescape.wiki/images/Mystery_box_detail.png?0e275"
+          src="./assets/misc-icons/Mystery_box_detail.png"
         />
       </div>
     </div>

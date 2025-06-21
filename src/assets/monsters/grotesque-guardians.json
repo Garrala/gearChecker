@@ -1,12 +1,12 @@
 {
   "name": "Grotesque Guardians",
   "category": "Slayer Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Dusk_%282nd_form%29.png?d4047",
+  "image": "assets/monster-icons/grotesque_guardians.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Grotesque_Guardians/Strategies",
   "bosses": [
     {
       "name": "Dusk",
-      "image": "https://oldschool.runescape.wiki/images/Dusk_%282nd_form%29.png?d4047",
+      "image": "assets/monster-icons/grotesque_guardians.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Dusk#Second_form",
       "combat_level": 328,
       "hp": 450,
@@ -27,7 +27,7 @@
           "thrown": 0
         }
       },
-      "attack_styles": ["Melee", "Special"],
+      "attack_styles": [ "Melee", "Special" ],
       "attack_speed": 6,
       "aggressive": true,
       "immunities": {
@@ -37,9 +37,9 @@
         "thralls": false
       }
     },
-	{
+    {
       "name": "Dawn",
-      "image": "https://oldschool.runescape.wiki/images/Dawn.png?8b8ea",
+      "image": "assets/monster-icons/dawn.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Dawn",
       "combat_level": 228,
       "hp": 450,
@@ -59,7 +59,7 @@
           "thrown": 0
         }
       },
-      "attack_styles": ["Ranged"],
+      "attack_styles": [ "Ranged" ],
       "attack_speed": 6,
       "aggressive": true,
       "immunities": {
@@ -155,11 +155,11 @@
         [ "Treasonous ring (i)", "Warrior ring (i)", "Tyrannical ring (i)" ]
       ],
       "Ammo": [
-        [ "Dragon arrow" ],
+        [ "Dragon arrows" ],
         [ "Atlatl darts" ],
         [ "Rada's blessing 4" ],
         [ "Moonlight antler bolts", "Sunlight antler bolts" ],
-        [ "Amethyst arrow", "Rune arrow" ]
+        [ "Amethyst arrows", "Rune arrows" ]
       ]
     },
     "Ranged Switches": {
@@ -218,11 +218,11 @@
       ],
       "Ring": [ [ "Venator ring" ] ],
       "Ammo": [
-        [ "Dragon arrow" ],
+        [ "Dragon arrows" ],
         [ "Atlatl darts" ],
         [ "Rada's blessing 4" ],
         [ "Moonlight antler bolts", "Sunlight antler bolts" ],
-        [ "Amethyst arrow", "Rune arrow" ]
+        [ "Amethyst arrows", "Rune arrows" ]
       ]
     }
   }

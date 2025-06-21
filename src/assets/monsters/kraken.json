@@ -1,17 +1,17 @@
 {
   "name": "Kraken",
   "category": "Slayer Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Kraken.png?a4955",
+  "image": "assets/monster-icons/kraken.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Kraken#Kraken",
   "bosses": [
     {
       "name": "Kraken",
-      "image": "https://oldschool.runescape.wiki/images/Kraken.png?a4955",
+      "image": "assets/monster-icons/kraken.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Kraken#Kraken",
       "combat_level": 725,
       "hp": 500,
       "max_hit": 41,
-      "weaknesses": ["Magic (50% Weakness) Water", "Stab"],
+      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
       "defense": {
         "melee": {
           "stab": 150,
@@ -25,7 +25,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": ["Magic", "Ranged", "Venom"],
+      "attack_styles": [ "Magic", "Ranged", "Venom" ],
       "attack_speed": 3,
       "aggressive": true,
       "immunities": {

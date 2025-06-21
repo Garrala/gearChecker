@@ -1,12 +1,12 @@
 {
   "name": "Deranged Archaeologist",
   "category": "World Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Deranged_archaeologist.png?32c7e",
+  "image": "assets/monster-icons/deranged_archaeologist.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist",
   "bosses": [
     {
       "name": "Deranged Archaeologist",
-      "image": "https://oldschool.runescape.wiki/images/Deranged_archaeologist.png?32c7e",
+      "image": "assets/monster-icons/deranged_archaeologist.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist",
       "combat_level": 276,
       "hp": 200,
@@ -28,7 +28,7 @@
           "thrown": 300
         }
       },
-      "attack_styles": ["Melee", "Ranged", "Special"],
+      "attack_styles": [ "Melee", "Ranged", "Special" ],
       "attack_speed": 3,
       "aggressive": true,
       "immunities": {
@@ -42,75 +42,75 @@
   "gear_setups": {
     "Magic": {
       "Weapon": [
-        ["Tumeken's shadow"],
-        ["Harmonised nightmare staff"],
-        ["Sanguinesti staff", "Trident of the swamp", "Trident of the seas"],
-        ["Warped sceptre"],
-        ["Iban's staff"]
+        [ "Tumeken's shadow" ],
+        [ "Harmonised nightmare staff" ],
+        [ "Sanguinesti staff", "Trident of the swamp", "Trident of the seas" ],
+        [ "Warped sceptre" ],
+        [ "Iban's staff" ]
       ],
       "Shield": [
-        ["Tome of fire", "Elidinis' ward (f)"],
-        ["Elidinis' ward"],
-        ["Arcane spirit shield"],
-        ["Malediction ward"],
-        ["Book of darkness"]
+        [ "Tome of fire", "Elidinis' ward (f)" ],
+        [ "Elidinis' ward" ],
+        [ "Arcane spirit shield" ],
+        [ "Malediction ward" ],
+        [ "Book of darkness" ]
       ],
       "Helmet": [
-        ["Ancestral hat"],
-        ["Virtus mask"],
-        ["Mitre"],
-        ["Helm of neitiznot"],
-        ["Farseer helm"]
+        [ "Ancestral hat" ],
+        [ "Virtus mask" ],
+        [ "Mitre" ],
+        [ "Helm of neitiznot" ],
+        [ "Farseer helm" ]
       ],
       "Amulet": [
-        ["Occult necklace"],
-        ["Dragonbone necklace", "Bonecrusher necklace"],
-        ["Amulet of fury"],
-        ["Amulet of glory"]
+        [ "Occult necklace" ],
+        [ "Dragonbone necklace", "Bonecrusher necklace" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ]
       ],
       "Cape": [
-        ["Imbued god cape"],
-        ["Soul cape"],
-        ["Ardougne cloak 4"],
-        ["Skillcape (t)"]
+        [ "Imbued god cape" ],
+        [ "Soul cape" ],
+        [ "Ardougne cloak 4" ],
+        [ "Skillcape (t)" ]
       ],
       "Body": [
-        ["Ancestral robe top"],
-        ["Virtus robe top"],
-        ["Zealot's robe top"],
-        ["Vestment robe top"],
-        ["Monk's robe top"]
+        [ "Ancestral robe top" ],
+        [ "Virtus robe top" ],
+        [ "Zealot's robe top" ],
+        [ "Vestment robe top" ],
+        [ "Monk's robe top" ]
       ],
       "Legs": [
-        ["Ancestral robe bottom"],
-        ["Virtus robe bottom"],
-        ["Zealot's robe bottom"],
-        ["Vestment robe legs"],
-        ["Monk's robe"]
+        [ "Ancestral robe bottom" ],
+        [ "Virtus robe bottom" ],
+        [ "Zealot's robe bottom" ],
+        [ "Vestment robe legs" ],
+        [ "Monk's robe" ]
       ],
       "Gloves": [
-        ["Tormented bracelet"],
-        ["Holy wraps"],
-        ["Barrows gloves"],
-        ["Dragon gloves", "Rune gloves"],
-        ["Adamant gloves", "Bloodbark gauntlets", "Combat bracelet"]
+        [ "Tormented bracelet" ],
+        [ "Holy wraps" ],
+        [ "Barrows gloves" ],
+        [ "Dragon gloves", "Rune gloves" ],
+        [ "Adamant gloves", "Bloodbark gauntlets", "Combat bracelet" ]
       ],
       "Boots": [
-        ["Devout boots"],
-        ["Holy sandals"],
-        ["Eternal boots"],
-        ["Aranea boots"],
-        ["Infinity boots"]
+        [ "Devout boots" ],
+        [ "Holy sandals" ],
+        [ "Eternal boots" ],
+        [ "Aranea boots" ],
+        [ "Infinity boots" ]
       ],
       "Ring": [
-        ["Magus ring"],
-        ["Ring of the gods (i)"],
-        ["Ring of suffering (i)"],
-        ["Brimstone ring"],
-        ["Explorer's ring 4"]
+        [ "Magus ring" ],
+        [ "Ring of the gods (i)" ],
+        [ "Ring of suffering (i)" ],
+        [ "Brimstone ring" ],
+        [ "Explorer's ring 4" ]
       ],
-	  "Ammo": [ "N/A"],
-      "Special Attack": [["N/A"]]
+      "Ammo": [ "N/A" ],
+      "Special Attack": [ [ "N/A" ] ]
     }
   }
 }

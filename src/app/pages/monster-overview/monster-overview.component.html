@@ -23,7 +23,7 @@
              (click)="selectSuggestedItem(item)">
           <img [src]="item.image"
                alt="{{ item.name }}"
-               onerror="this.src='https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" />
+               onerror="this.src='./assets/misc-icons/Bank_filler.png'" />
           <span>{{ item.name }}</span>
         </div>
       </div>
@@ -93,7 +93,7 @@
         <div class="info-grid">
           <div class="info-item">
             <img
-              src="https://oldschool.runescape.wiki/images/Hitpoints_icon.png?a4819"
+              src="./assets/misc-icons/Hitpoints_icon.png"
               title="Hitpoints"
             />
             <strong>Hitpoints:</strong>
@@ -101,7 +101,7 @@
           </div>
           <div class="info-item">
             <img
-              src="https://oldschool.runescape.wiki/images/Damage_hitsplat_%28max_hit%29.png?a8d79"
+              src="./assets/misc-icons/max_hit.png"
               title="Max Hit"
             />
             <strong>Max Hit:</strong>
@@ -112,67 +112,67 @@
                 <span>
                   <img *ngIf="key === 'melee'"
                        title="Melee"
-                       src="https://oldschool.runescape.wiki/images/Strength_icon.png?e6e0c"
+                       src="./assets/misc-icons/Strength_icon.png"
                        alt="Melee" />
                   <img *ngIf="key === 'magic'"
                        title="Magic"
-                       src="https://oldschool.runescape.wiki/images/Magic_icon.png"
+                       src="./assets/misc-icons/Magic_icon.png"
                        alt="Magic" />
                   <img *ngIf="key === 'ranged'"
                        title="Ranged"
-                       src="https://oldschool.runescape.wiki/images/Ranged_icon.png"
+                       src="./assets/misc-icons/Ranged_icon.png"
                        alt="Ranged" />
                   <img *ngIf="key === 'special attack'"
                        title="Special Attack"
-                       src="https://oldschool.runescape.wiki/images/Special_attack_orb.png?27d06"
+                       src="./assets/misc-icons/Special_attack_orb.png"
                        alt="Special Attack" />
                   <img *ngIf="key === 'rockfall'"
                        title="Rockfall"
-                       src="https://oldschool.runescape.wiki/images/Pet_rock.png?97482"
+                       src="./assets/misc-icons/Pet_rock.png"
                        alt="Rockfall" />
                   <img *ngIf="key === 'typeless'"
                        title="Typeless"
-                       src="https://oldschool.runescape.wiki/images/Protect_from_all.png?944a7"
+                       src="./assets/misc-icons/Protect_from_Melee_overhead.png"
                        alt="Typeless" />
                   <img *ngIf="key === 'dragonfire'"
                        title="Dragonfire"
-                       src="https://oldschool.runescape.wiki/images/Fire_Surge.png?76ce4"
+                       src="./assets/misc-icons/Fire_Surge.png"
                        alt="Dragonfire" />
                   <img *ngIf="key === 'explosion'"
                        title="Explosion"
-                       src="https://oldschool.runescape.wiki/images/Retribution.png?724d1"
+                       src="./assets/misc-icons/Retribution.png"
                        alt="Explosion" />
                   <img *ngIf="key === 'tentacles'"
                        title="Tentacles"
-                       src="https://oldschool.runescape.wiki/images/Abyssal_tentacle.png?c04be"
+                       src="./assets/misc-icons/Abyssal_tentacle.png"
                        alt="Tentacles" />
                   <img *ngIf="key === 'shadow_blast'"
                        title="Shadow Blast"
-                       src="https://oldschool.runescape.wiki/images/Special_attack_orb.png?27d06"
+                       src="./assets/misc-icons/Special_attack_orb.png"
                        alt="Shadow Blast" />
                   <img *ngIf="key === 'default'"
                        title="Default"
-                       src="https://oldschool.runescape.wiki/images/Retribution.png?724d1"
+                       src="./assets/misc-icons/Retribution.png"
                        alt="Default" />
                   <img *ngIf="key === 'empowered'"
                        title="Empowered"
-                       src="https://oldschool.runescape.wiki/images/Smite.png?d9143"
+                       src="./assets/misc-icons/Smite.png"
                        alt="Empowered" />
                   <img *ngIf="key === 'Icicle Crash'"
                        title="Icicle Crash"
-                       src="https://oldschool.runescape.wiki/images/Ice_Barrage.png?3f12e"
+                       src="./assets/misc-icons/Ice_Barrage.png"
                        alt="Icicle Crash" />
                   <img *ngIf="key === 'Pray Melee'"
                        title="Pray Melee"
-                       src="https://oldschool.runescape.wiki/images/Protect_from_Melee_overhead.png?e8059"
+                       src="./assets/misc-icons/Protect_from_Melee_overhead.png"
                        alt="Pray Melee" />
                   <img *ngIf="key === '1 Hp'"
                        title="1 Hp"
-                       src="https://oldschool.runescape.wiki/images/Vengeance.png?38cbe"
+                       src="./assets/misc-icons/Vengeance.png"
                        alt="1 Hp" />
                   <img *ngIf="key === 'poison'"
                        title="Poison"
-                       src="https://oldschool.runescape.wiki/images/Poison_hitsplat.png?16146"
+                       src="./assets/misc-icons/Poison_hitsplat.png"
                        alt="Poison" />
                   {{ getSelectedBoss()?.max_hit?.[key] ?? 'N/A' }}
                 </span>
@@ -181,7 +181,7 @@
           </div>
           <div class="info-item">
             <img
-              src="https://oldschool.runescape.wiki/images/Combat_icon.png?93d63"
+              src="./assets/misc-icons/Combat_icon.png"
               title="Attack Style"
             />
             <strong>Attack Style:</strong>
@@ -191,7 +191,7 @@
                 *ngIf="
                   (getSelectedBoss()?.attack_styles || []).includes('Melee')
                 "
-                src="https://oldschool.runescape.wiki/images/Strength_icon.png?e6e0c"
+                src="./assets/misc-icons/Strength_icon.png"
                 alt="Melee"
                 title="Melee Attack Style"
                 class="attack-style-icon"
@@ -200,7 +200,7 @@
                 *ngIf="
                   (getSelectedBoss()?.attack_styles || []).includes('Magic')
                 "
-                src="https://oldschool.runescape.wiki/images/Magic_icon.png"
+                src="./assets/misc-icons/Magic_icon.png"
                 alt="Magic"
                 title="Magic Attack Style"
                 class="attack-style-icon"
@@ -210,7 +210,7 @@
                 *ngIf="
                   (getSelectedBoss()?.attack_styles || []).includes('Ranged')
                 "
-                src="https://oldschool.runescape.wiki/images/Ranged_icon.png"
+                src="./assets/misc-icons/Ranged_icon.png"
                 alt="Ranged"
                 title="Ranged Attack Style"
                 class="attack-style-icon"
@@ -220,7 +220,7 @@
                 *ngIf="
                   (getSelectedBoss()?.attack_styles || []).includes('Special Attack')
                 "
-                src="https://oldschool.runescape.wiki/images/Special_attack_orb.png?27d06"
+                src="./assets/misc-icons/Special_attack_orb.png"
                 alt="Special Attack"
                 title="Special Attack"
                 class="attack-style-icon"
@@ -230,7 +230,7 @@
                 *ngIf="
                   (getSelectedBoss()?.attack_styles || []).includes('Dragonfire')
                 "
-                src="https://oldschool.runescape.wiki/images/Fire_Surge.png?76ce4"
+                src="./assets/misc-icons/Fire_Surge.png"
                 alt="Dragonfire"
                 title="Dragonfire"
                 class="attack-style-icon"
@@ -240,7 +240,7 @@
                 *ngIf="
                   (getSelectedBoss()?.attack_styles || []).includes('Typeless')
                 "
-                src="https://oldschool.runescape.wiki/images/Protect_from_all.png?944a7"
+                src="./assets/misc-icons/Protect_from_all.png"
                 alt="Typeless"
                 title="Typeless Attack Style"
                 class="attack-style-icon"
@@ -250,7 +250,7 @@
                 *ngIf="
                   (getSelectedBoss()?.attack_styles || []).includes('Venom')
                 "
-                src="https://oldschool.runescape.wiki/images/Venom_hitsplat.png?1977a"
+                src="./assets/misc-icons/Venom_hitsplat.png"
                 alt="Venom"
                 title="Venom"
                 class="attack-style-icon"
@@ -262,7 +262,7 @@
 
           <div class="info-item">
             <img
-              src="https://oldschool.runescape.wiki/images/Attack_Speed_icon.png?c8037"
+              src="./assets/misc-icons/Attack_Speed_icon.png"
               title="Attack Speed"
             />
             <strong>Attack Speed:</strong>
@@ -278,7 +278,7 @@
           <!-- Melee Defense (Row 1 - 3 columns) -->
           <div class="defense-box">
             <img
-              src="https://oldschool.runescape.wiki/images/Steel_dagger.png?f410d"
+              src="./assets/misc-icons/Steel_dagger.png"
               title="Stab"
             />
             <span
@@ -298,7 +298,7 @@
 
           <div class="defense-box">
             <img
-              src="https://oldschool.runescape.wiki/images/Steel_scimitar.png?0395b"
+              src="./assets/misc-icons/Steel_scimitar.png"
               title="Slash"
             />
             <span
@@ -317,7 +317,7 @@
           </div>
           <div class="defense-box">
             <img
-              src="https://oldschool.runescape.wiki/images/Steel_warhammer.png?1a4de"
+              src="./assets/misc-icons/Steel_warhammer.png"
               title="Crush"
             />
             <span
@@ -339,7 +339,7 @@
           <div class="immunity-grid full-width">
             <div class="defense-box">
               <img
-                src="https://oldschool.runescape.wiki/images/Magic_defence_icon.png?65b01"
+                src="./assets/misc-icons/Magic_defence_icon.png"
                 title="Magic Defense"
               />
               <span
@@ -361,7 +361,7 @@
                     !getSelectedBoss()?.weaknesses ||
                     objectKeys(getSelectedBoss()?.weaknesses).length === 0
                   "
-                  src="https://oldschool.runescape.wiki/images/Pure_essence.png?ed4b0"
+                  src="./assets/misc-icons/Pure_essence.png"
                   alt="No Weakness"
                   title="No Elemental Weakness"
                 />
@@ -373,25 +373,25 @@
                 >
                   <img
                     *ngIf="key === 'fire'"
-                    src="https://oldschool.runescape.wiki/images/Fire_rune.png?3859a"
+                    src="./assets/misc-icons/Fire_rune.png"
                     alt="Fire Weakness"
                     title="Fire Weakness"
                   />
                   <img
                     *ngIf="key === 'water'"
-                    src="https://oldschool.runescape.wiki/images/Water_rune.png?75a26"
+                    src="./assets/misc-icons/Water_rune.png"
                     alt="Water Weakness"
                     title="Water Weakness"
                   />
                   <img
                     *ngIf="key === 'earth'"
-                    src="https://oldschool.runescape.wiki/images/Earth_rune.png?0b998"
+                    src="./assets/misc-icons/Earth_rune.png"
                     alt="Earth Weakness"
                     title="Earth Weakness"
                   />
                   <img
                     *ngIf="key === 'air'"
-                    src="https://oldschool.runescape.wiki/images/Air_rune.png?248b4"
+                    src="./assets/misc-icons/Air_rune.png"
                     alt="Air Weakness"
                     title="Air Weakness"
                   />
@@ -405,7 +405,7 @@
           <!-- Ranged Defense (Row 3 - 3 columns) -->
           <div class="defense-box">
             <img
-              src="https://oldschool.runescape.wiki/images/Steel_dart.png?3203e"
+              src="./assets/misc-icons/Steel_dart.png"
               title="Thrown"
             />
             <span
@@ -424,7 +424,7 @@
           </div>
           <div class="defense-box">
             <img
-              src="https://oldschool.runescape.wiki/images/Steel_arrow_5.png?2c4a2"
+              src="./assets/misc-icons/Steel_arrow_5.png"
               title="Arrows"
             />
             <span
@@ -443,7 +443,7 @@
           </div>
           <div class="defense-box">
             <img
-              src="https://oldschool.runescape.wiki/images/Steel_bolts_5.png?f1c11"
+              src="./assets/misc-icons/Steel_bolts_5.png"
               title="Bolts"
             />
             <span
@@ -469,7 +469,7 @@
         <div class="immunity-grid">
           <div class="defense-box">
             <img
-              src="https://oldschool.runescape.wiki/images/Poison_hitsplat.png?16146"
+              src="./assets/misc-icons/Poison_hitsplat.png"
               title="Poison"
             />
             <span
@@ -489,7 +489,7 @@
           </div>
           <div class="defense-box">
             <img
-              src="https://oldschool.runescape.wiki/images/Venom_hitsplat.png?1977a"
+              src="./assets/misc-icons/Venom_hitsplat.png"
               title="Venom"
             />
             <span
@@ -509,7 +509,7 @@
           </div>
           <div class="defense-box">
             <img
-              src="https://oldschool.runescape.wiki/images/Cannon_barrels.png?3c432"
+              src="./assets/misc-icons/Cannon_barrels.png"
               title="Cannonable"
             />
             <span
@@ -529,7 +529,7 @@
           </div>
           <div class="defense-box">
             <img
-              src="https://oldschool.runescape.wiki/images/Resurrect_Greater_Ghost.png?687f2"
+              src="./assets/misc-icons/Resurrect_Greater_Ghost.png"
               title="Thralls"
             />
             <span
@@ -573,7 +573,7 @@
             [src]="
               ownedGear['Helmet']?.length
                 ? gearData['helmets']?.[ownedGear['Helmet'][0]]?.image
-                : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'
+                : './assets/misc-icons/Bank_filler.png'
             "
             [alt]="
               ownedGear['Helmet']?.length ? ownedGear['Helmet'][0] : 'No Helmet'
@@ -592,7 +592,7 @@
             [src]="
               ownedGear['Cape']?.[0]
                 ? gearData['capes']?.[ownedGear['Cape'][0]]?.image
-                : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'
+                : './assets/misc-icons/Bank_filler.png'
             "
             [alt]="ownedGear['Cape'][0][0] || 'No Cape'"
             [attr.title]="
@@ -606,7 +606,7 @@
             [src]="
               ownedGear['Amulet']?.[0]
                 ? gearData['amulets']?.[ownedGear['Amulet'][0]]?.image
-                : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'
+                : './assets/misc-icons/Bank_filler.png'
             "
             [alt]="ownedGear['Amulet'][0] || 'No Amulet'"
             [attr.title]="
@@ -622,7 +622,7 @@
             [src]="
               ownedGear['Ammo']?.[0]
                 ? gearData['ammo']?.[ownedGear['Ammo'][0]]?.image
-                : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'
+                : './assets/misc-icons/Bank_filler.png'
             "
             [alt]="ownedGear['Ammo'][0] || 'No Ammo'"
             [attr.title]="
@@ -638,7 +638,7 @@
             [src]="
               ownedGear['Weapon']?.[0]
                 ? gearData['weapons']?.[ownedGear['Weapon'][0]]?.image
-                : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'
+                : './assets/misc-icons/Bank_filler.png'
             "
             [alt]="ownedGear['Weapon'][0] || 'No Weapon'"
             [attr.title]="
@@ -654,7 +654,7 @@
             [src]="
               ownedGear['Body']?.[0]
                 ? gearData['body']?.[ownedGear['Body'][0]]?.image
-                : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'
+                : './assets/misc-icons/Bank_filler.png'
             "
             [alt]="ownedGear['Body'][0] || 'No Body Armor'"
             [attr.title]="
@@ -669,7 +669,7 @@
             [src]="
               ownedGear['Shield']?.length
                 ? gearData['shields']?.[ownedGear['Shield'][0]]?.image
-                : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'
+                : './assets/misc-icons/Bank_filler.png'
             "
             [alt]="
               ownedGear['Shield']?.length ? ownedGear['Shield'][0] : 'No Shield'
@@ -690,7 +690,7 @@
               ownedGear['Special Attack']?.length
                 ? gearData['special_attack']?.[ownedGear['Special Attack'][0]]
                     ?.image
-                : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'
+                : './assets/misc-icons/Bank_filler.png'
             "
             [alt]="
               ownedGear['Special Attack']?.length
@@ -710,7 +710,7 @@
             [src]="
               ownedGear['Legs']?.[0]
                 ? gearData['legs']?.[ownedGear['Legs'][0]]?.image
-                : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'
+                : './assets/misc-icons/Bank_filler.png'
             "
             [alt]="ownedGear['Legs'][0] || 'No Leg Armor'"
             [attr.title]="
@@ -727,7 +727,7 @@
             [src]="
               ownedGear['Gloves']?.[0]
                 ? gearData['gloves']?.[ownedGear['Gloves'][0]]?.image
-                : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'
+                : './assets/misc-icons/Bank_filler.png'
             "
             [alt]="ownedGear['Gloves'][0] || 'No Gloves'"
             [attr.title]="
@@ -743,7 +743,7 @@
             [src]="
               ownedGear['Boots']?.[0]
                 ? gearData['boots']?.[ownedGear['Boots'][0]]?.image
-                : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'
+                : './assets/misc-icons/Bank_filler.png'
             "
             [alt]="ownedGear['Boots'][0] || 'No Boots'"
             [attr.title]="
@@ -757,7 +757,7 @@
             [src]="
               ownedGear['Ring']?.[0]
                 ? gearData['rings']?.[ownedGear['Ring'][0]]?.image
-                : 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'
+                : './assets/misc-icons/Bank_filler.png'
             "
             [alt]="ownedGear['Ring'][0] || 'No Ring'"
             [attr.title]="

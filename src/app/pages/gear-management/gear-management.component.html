@@ -6,7 +6,7 @@
   <div class="gear-container" *ngIf="!loading">
     <h1>Gear Management</h1>
 
-    <p>Select the gear you own or import it:</p>
+    <p>First, choose the gear you own or import it. Then, select a boss to view your optimal loadout based on what you have.</p>
     <div class="import-export-controls">
       <button (click)="exportOwnedGear()">Export Gear</button>
       <button (click)="fileInput.click()">Import Gear</button>
@@ -32,7 +32,7 @@
              (click)="selectSuggestedItem(item)">
           <img [src]="item.image"
                alt="{{ item.name }}"
-               onerror="this.src='https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'" />
+               onerror="this.src='./assets/misc-icons/Bank_filler.png'" />
           <span>{{ item.name }}</span>
         </div>
       </div>

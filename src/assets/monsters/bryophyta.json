@@ -1,12 +1,12 @@
 {
   "name": "Bryophyta",
   "category": "Sporadic Bosses",
-  "image": "https://oldschool.runescape.wiki/images/Bryophyta.png?08bc8",
+  "image": "assets/monster-icons/bryophyta.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Bryophyta",
   "bosses": [
     {
       "name": "Bryophyta",
-      "image": "https://oldschool.runescape.wiki/images/Bryophyta.png?08bc8",
+      "image": "assets/monster-icons/bryophyta.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Bryophyta",
       "combat_level": 128,
       "hp": 115,
@@ -28,7 +28,7 @@
           "thrown": 0
         }
       },
-      "attack_styles": ["Magic", "Melee", "Poison"],
+      "attack_styles": [ "Magic", "Melee", "Poison" ],
       "attack_speed": 6,
       "aggressive": true,
       "immunities": {
@@ -41,46 +41,46 @@
   ],
   "gear_setups": {
     "F2P Melee Setup": {
-      "Weapon": ["Rune scimitar"],
-      "Helmet": ["Rune full helm"],
-      "Shield": ["Rune kiteshield"],
-      "Amulet": ["Amulet of power"],
-      "Cape": ["Red cape"],
-      "Body": ["Green d'hide body"],
-      "Legs": ["Green d'hide chaps"],
-      "Gloves": ["Green d'hide vambraces"],
-      "Boots": ["Fancy boots"],
-      "Ring": ["N/A"],
-      "Ammo": ["N/A"],
-      "Special Attack": ["N/A"]
+      "Weapon": [ "Rune scimitar" ],
+      "Helmet": [ "Rune full helm" ],
+      "Shield": [ "Rune kiteshield" ],
+      "Amulet": [ "Amulet of power" ],
+      "Cape": [ "Red cape" ],
+      "Body": [ "Green d'hide body" ],
+      "Legs": [ "Green d'hide chaps" ],
+      "Gloves": [ "Green d'hide vambraces" ],
+      "Boots": [ "Fancy boots" ],
+      "Ring": [ "N/A" ],
+      "Ammo": [ "N/A" ],
+      "Special Attack": [ "N/A" ]
     },
     "F2P Ranged Setup": {
-      "Weapon": ["Maple shortbow"],
-      "Helmet": ["Coif"],
-      "Amulet": ["Amulet of power"],
-      "Cape": ["Red cape"],
-      "Body": ["Green d'hide body"],
-      "Legs": ["Green d'hide chaps"],
-      "Gloves": ["Green d'hide vambraces"],
-      "Boots": ["Fancy boots"],
-      "Ring": ["N/A"],
-      "Ammo": ["Adamant arrows"],
-      "Shield": ["N/A"],
-      "Special Attack": ["N/A"]
+      "Weapon": [ "Maple shortbow" ],
+      "Helmet": [ "Coif" ],
+      "Amulet": [ "Amulet of power" ],
+      "Cape": [ "Red cape" ],
+      "Body": [ "Green d'hide body" ],
+      "Legs": [ "Green d'hide chaps" ],
+      "Gloves": [ "Green d'hide vambraces" ],
+      "Boots": [ "Fancy boots" ],
+      "Ring": [ "N/A" ],
+      "Ammo": [ "Adamant arrows" ],
+      "Shield": [ "N/A" ],
+      "Special Attack": [ "N/A" ]
     },
     "Members Magic Setup": {
-      "Weapon": ["Trident of the seas"],
-      "Shield": ["Mage's book"],
-      "Helmet": ["Void mage helm"],
-      "Amulet": ["Occult necklace", "Amulet of glory"],
-      "Cape": ["Imbued god cape"],
-      "Body": ["Elite void top", "Void knight top"],
-      "Legs": ["Elite void robe", "Void knight robe"],
-      "Gloves": ["Void knight gloves"],
-      "Boots": ["Infinity boots"],
-      "Ring": ["Seers ring (i)"],
-      "Ammo": ["Rada's blessing 3"],
-      "Special Attack": ["N/A"]
+      "Weapon": [ "Trident of the seas" ],
+      "Shield": [ "Mage's book" ],
+      "Helmet": [ "Void mage helm" ],
+      "Amulet": [ "Occult necklace", "Amulet of glory" ],
+      "Cape": [ "Imbued god cape" ],
+      "Body": [ "Elite void top", "Void knight top" ],
+      "Legs": [ "Elite void robe", "Void knight robe" ],
+      "Gloves": [ "Void knight gloves" ],
+      "Boots": [ "Infinity boots" ],
+      "Ring": [ "Seers ring (i)" ],
+      "Ammo": [ "Rada's blessing 3" ],
+      "Special Attack": [ "N/A" ]
     }
   }
 }
