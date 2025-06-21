@@ -56,7 +56,7 @@
       ],
       "Helmet": [
         [ "Slayer helmet (i)" ],
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Karil's coif" ],
         [ "Archer helm" ],
         [ "Snakeskin bandana" ]
@@ -70,23 +70,23 @@
         [ "Ava's assembler" ],
         [ "Ava's accumulator", "Ardougne cloak 4" ],
         [ "Ranging cape (t)" ],
-        [ "Vestment cloak" ]
+        [ "Any God vestment cloaks" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
         [ "Crystal body" ],
-        [ "Blessed body" ],
+        [ "Any Blessed body" ],
         [ "Black d'hide body" ],
         [ "Red d'hide body" ]
       ],
       "Legs": [
-        [ "Blessed chaps" ],
+        [ "Any Blessed chaps" ],
         [ "Crystal legs" ],
         [ "Black d'hide chaps" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ]
       ],
       "Boots": [
@@ -101,7 +101,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "Dragon arrows", "Amethyst arrows" ],
         [ "Diamond bolts (e)" ],
         [ "Broad bolts" ]
@@ -146,8 +146,8 @@
         [ "Infernal cape" ],
         [ "Mythical cape", "Fire cape" ],
         [ "Ardougne cloak 4" ],
-        [ "Skillcape (t)" ],
-        [ "Vestment cloak" ]
+        [ "Any Skillcape (t)" ],
+        [ "Any God vestment cloaks" ]
       ],
       "Body": [
         [ "Black d'hide body" ],
@@ -178,7 +178,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ]
     }
   }

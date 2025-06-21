@@ -53,7 +53,7 @@
       ],
       "Helmet": [
         [ "Slayer helmet (i)", "Black mask (i)" ],
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Karil's coif" ],
         [ "Coif" ]
       ],
@@ -72,22 +72,22 @@
       "Body": [
         [ "Masori body (f)" ],
         [ "Crystal body" ],
-        [ "Blessed body" ],
+        [ "Any Blessed body" ],
         [ "Black d'hide body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Crystal legs" ],
-        [ "Blessed chaps" ],
+        [ "Any Blessed chaps" ],
         [ "Black d'hide chaps" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ]
       ],
       "Boots": [
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Mixed hide boots" ],
         [ "Snakeskin boots" ],
         [ "Bloodbark boots" ]

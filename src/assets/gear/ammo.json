@@ -22,12 +22,12 @@
   "Moonlight antler bolts": {
     "image": "/assets/gear-icons/moonlight-antler-bolts.png",
     "wiki": "https://oldschool.runescape.wiki/w/Moonlight_antler_bolts",
-    "ammoType": "bolt"
+    "ammoType": "antler"
   },
   "Sunlight antler bolts": {
     "image": "/assets/gear-icons/sunlight-antler-bolts.png",
     "wiki": "https://oldschool.runescape.wiki/w/Sunlight_antler_bolts",
-    "ammoType": "bolt"
+    "ammoType": "antler"
   },
   "Bolt rack": {
     "image": "/assets/gear-icons/bolt-rack.png",
@@ -44,7 +44,7 @@
     "wiki": "https://oldschool.runescape.wiki/w/Rada%27s_blessing_3",
     "ammoType": "blessing"
   },
-  "God blessing": {
+  "Any God blessing": {
     "image": "/assets/gear-icons/god-blessing.png",
     "wiki": "https://oldschool.runescape.wiki/w/Peaceful_blessing",
     "ammoType": "blessing"

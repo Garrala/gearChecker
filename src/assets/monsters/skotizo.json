@@ -64,14 +64,14 @@
         [ "Karil's leathertop", "Bandos chestplate" ],
         [ "Fighter torso", "Blood moon chestplate" ],
         [ "Obsidian platebody", "Elite void top", "Void knight top" ],
-        [ "Blessed body", "Black d'hide body" ]
+        [ "Any Blessed body", "Black d'hide body" ]
       ],
       "Legs": [
         [ "Torva platelegs" ],
         [ "Bandos tassets", "Blood moon tassets" ],
         [ "Obsidian platelegs" ],
         [ "Elite void robe", "Void knight robe" ],
-        [ "Karil's leatherskirt", "Blessed chaps", "Black d'hide chaps" ]
+        [ "Karil's leatherskirt", "Any Blessed chaps", "Black d'hide chaps" ]
       ],
       "Weapon": [
         [ "Emberlight" ],
@@ -89,7 +89,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ],
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -128,7 +128,7 @@
         [ "Masori mask (f)", "Slayer helmet (i)" ],
         [ "Armadyl helmet" ],
         [ "Crystal helm" ],
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Void ranger helm" ]
       ],
       "Amulet": [
@@ -149,14 +149,14 @@
         [ "Masori body (f)" ],
         [ "Armadyl chestplate" ],
         [ "Crystal body" ],
-        [ "Blessed body", "Black d'hide body" ],
+        [ "Any Blessed body", "Black d'hide body" ],
         [ "Elite void top", "Void knight top" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Armadyl chainskirt" ],
         [ "Crystal legs" ],
-        [ "Blessed chaps", "Black d'hide chaps" ],
+        [ "Any Blessed chaps", "Black d'hide chaps" ],
         [ "Elite void robe", "Void knight robe" ]
       ],
       "Weapon": [
@@ -190,7 +190,7 @@
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Aranea boots" ],
         [ "Boots of brimstone", "Mixed hide boots" ]
       ],

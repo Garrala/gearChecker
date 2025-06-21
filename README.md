@@ -24,5 +24,5 @@ To Deploy:
 Connect to server
 git pull
 npm install
-ng build --configuration produiction 
+ng build --configuration production 
 pm2 restart all

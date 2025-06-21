@@ -66,12 +66,12 @@
         [ "Mixed hide cape" ]
       ],
       "Body": [
-        [ "Barrows body", "Fighter torso", "Bandos chestplate" ],
+        [ "Any Barrows tank body", "Fighter torso", "Bandos chestplate" ],
         [ "Black d'hide body" ]
       ],
       "Legs": [
         [ "Blood moon tassets", "Bandos tassets" ],
-        [ "Barrows legs" ],
+        [ "Any Barrows tank legs" ],
         [ "Black d'hide chaps" ]
       ],
       "Gloves": [ [ "Barrows gloves" ] ],
@@ -80,7 +80,7 @@
         [ "Mixed hide boots" ]
       ],
       "Ring": [ [ "Berserker ring (i)" ] ],
-      "Ammo": [ [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ] ]
+      "Ammo": [ [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ] ]
     },
     "Best-in-Slot": {
       "Weapon": [
@@ -134,7 +134,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ]
     },
     "Best-in-Slot Mage": {
@@ -160,8 +160,8 @@
         [ "Amulet of fury" ]
       ],
       "Cape": [
-        [ "Imbued god cape" ],
-        [ "God cape" ]
+        [ "Any Imbued Any God cape" ],
+        [ "Any God cape" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
@@ -190,7 +190,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ],
       "Special Attack": [ [ "N/A" ] ]
     }

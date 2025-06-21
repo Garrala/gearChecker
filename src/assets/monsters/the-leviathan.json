@@ -62,7 +62,7 @@
         [ "Slayer helmet (i)", "Masori mask (f)" ],
         [ "Crystal helm", "Masori mask" ],
         [ "Void ranger helm" ],
-        [ "Karil's coif", "Blessed coif" ],
+        [ "Karil's coif", "Any Blessed coif" ],
         [ "Archer helm" ]
       ],
       "Amulet": [
@@ -81,27 +81,27 @@
         [ "Masori body (f)" ],
         [ "Crystal body", "Masori body" ],
         [ "Elite void top" ],
-        [ "Karil's leathertop", "Blessed body" ],
+        [ "Karil's leathertop", "Any Blessed body" ],
         [ "Black d'hide body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Crystal legs", "Masori chaps" ],
         [ "Elite void robe" ],
-        [ "Karil's leatherskirt", "Blessed chaps" ],
+        [ "Karil's leatherskirt", "Any Blessed chaps" ],
         [ "Black d'hide chaps" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
         [ "Void knight gloves" ],
-        [ "Black d'hide vambraces", "Blessed vambraces" ],
+        [ "Black d'hide vambraces", "Any Blessed vambraces" ],
         [ "Regen bracelet" ]
       ],
       "Boots": [
         [ "Devout boots", "Pegasian boots" ],
         [ "Ranger boots" ],
-        [ "Blessed boots", "Aranea boots" ],
+        [ "Any Blessed boots", "Aranea boots" ],
         [ "Boots of brimstone" ],
         [ "Shayzien boots (5)" ]
       ],
@@ -126,7 +126,7 @@
         [ "Occult necklace" ]
       ],
       "Cape": [
-        [ "Imbued god cape" ]
+        [ "Any Imbued Any God cape" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
@@ -153,7 +153,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3/2" ]
+        [ "Any God blessing", "Rada's blessing 3/2" ]
       ],
       "Special Attack": [
         [ "Volatile nightmare staff" ]

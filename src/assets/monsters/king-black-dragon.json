@@ -64,7 +64,7 @@
         [ "Infernal cape", "Fire cape" ],
         [ "Ardougne cloak 4" ],
         [ "Mythical cape" ],
-        [ "Skillcape (t)" ]
+        [ "Any Skillcape (t)" ]
       ],
       "Body": [
         [ "Mixed hide top" ],
@@ -96,7 +96,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ],
       "Special Attack": [ "N/A" ]
     },
@@ -129,7 +129,7 @@
         [ "Infernal cape", "Fire cape" ],
         [ "Ardougne cloak" ],
         [ "Mythical cape" ],
-        [ "Skillcape (t)" ]
+        [ "Any Skillcape (t)" ]
       ],
       "Body": [
         [ "Torva platebody" ],
@@ -167,7 +167,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ],
       "Special Attack": [ "N/A" ]
     },
@@ -177,7 +177,7 @@
         [ "Bow of faerdhinen" ]
       ],
       "Helmet": [
-        [ "Slayer helmet (i)", "Blessed coif" ],
+        [ "Slayer helmet (i)", "Any Blessed coif" ],
         [ "Crystal helm" ],
         [ "Karil's coif" ],
         [ "Archer helm" ]
@@ -206,12 +206,12 @@
       ],
       "Gloves": [
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ],
         [ "Red d'hide vambraces" ]
       ],
       "Boots": [
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Mixed hide boots" ]
       ],
       "Ring": [
@@ -239,7 +239,7 @@
         [ "Anti-dragon shield" ]
       ],
       "Helmet": [
-        [ "Slayer helmet (i)", "Blessed coif" ],
+        [ "Slayer helmet (i)", "Any Blessed coif" ],
         [ "Karil's coif" ],
         [ "Archer helm" ]
       ],
@@ -267,12 +267,12 @@
       ],
       "Gloves": [
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ],
         [ "Red d'hide vambraces" ]
       ],
       "Boots": [
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Mixed hide boots" ],
         [ "Shayzien boots (5)" ]
       ],
@@ -302,7 +302,7 @@
       ],
       "Helmet": [
         [ "Slayer helmet (i)", "Masori mask (f)" ],
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Karil's coif" ]
       ],
       "Amulet": [
@@ -321,25 +321,25 @@
       ],
       "Body": [
         [ "Masori body (f)" ],
-        [ "Blessed body" ],
+        [ "Any Blessed body" ],
         [ "Black d'hide body", "Karil's leathertop" ],
         [ "Red d'hide body" ],
         [ "Blue d'hide body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
-        [ "Blessed chaps" ],
+        [ "Any Blessed chaps" ],
         [ "Black d'hide chaps", "Karil's leatherskirt" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Boots of brimstone" ],
         [ "Mixed hide boots" ]
       ],

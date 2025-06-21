@@ -51,7 +51,7 @@
         [ "Armadyl helmet" ],
         [ "Crystal helm" ],
         [ "Robin hood hat" ],
-        [ "Blessed coif" ]
+        [ "Any Blessed coif" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -68,26 +68,26 @@
         [ "Masori body (f)" ],
         [ "Armadyl chestplate" ],
         [ "Crystal body" ],
-        [ "Blessed body" ],
+        [ "Any Blessed body" ],
         [ "Black d'hide body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Armadyl chainskirt" ],
         [ "Crystal legs" ],
-        [ "Blessed chaps" ],
+        [ "Any Blessed chaps" ],
         [ "Black d'hide chaps" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots", "Devout boots" ],
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Aranea boots" ],
         [ "Mixed hide boots" ]
       ],
@@ -135,8 +135,8 @@
         [ "Amulet of glory" ]
       ],
       "Cape": [
-        [ "Imbued god cape" ],
-        [ "God cape" ],
+        [ "Any Imbued Any God cape" ],
+        [ "Any God cape" ],
         [ "Ardougne cloak 4" ],
         [ "Ardougne cloak 3" ]
       ],
@@ -171,7 +171,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "God blessing" ]
+        [ "Rada's blessing 3", "Any God blessing" ]
       ],
       "Special Attack": [ "N/A" ]
     },
@@ -204,7 +204,7 @@
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Aranea boots" ]
       ],
       "Ring": [
@@ -292,7 +292,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "God blessing" ]
+        [ "Rada's blessing 3", "Any God blessing" ]
       ]
     },
     "Melee (Dharok's)": {
@@ -316,7 +316,7 @@
         [ "Fire cape" ],
         [ "Mythical cape" ],
         [ "Soul cape", "Ardougne cloak 4", "Ardougne cloak 3" ],
-        [ "Skillcape (t)", "Ardougne cloak 2", "God vestment cloaks" ]
+        [ "Any Skillcape (t)", "Ardougne cloak 2", "Any God vestment cloaks" ]
       ],
       "Body": [ [ "Dharok's platebody" ] ],
       "Legs": [ [ "Dharok's platelegs" ] ],
@@ -340,7 +340,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "God blessing" ]
+        [ "Rada's blessing 3", "Any God blessing" ]
       ],
       "Shield": []
     },
@@ -401,7 +401,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "God blessing" ]
+        [ "Rada's blessing 3", "Any God blessing" ]
       ]
     }
   }

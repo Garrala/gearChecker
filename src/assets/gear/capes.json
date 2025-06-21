@@ -7,7 +7,7 @@
     "image": "/assets/gear-icons/ava-s-assembler.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ava%27s_assembler"
   },
-  "Imbued god cape": {
+  "Any Imbued God cape": {
     "image": "/assets/gear-icons/imbued-god-cape.png",
     "wiki": "https://oldschool.runescape.wiki/w/Imbued_saradomin_cape"
   },
@@ -27,7 +27,7 @@
     "image": "/assets/gear-icons/ava-s-accumulator.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ava%27s_accumulator"
   },
-  "God cape": {
+  "Any God cape": {
     "image": "/assets/gear-icons/god-cape.png",
     "wiki": "https://oldschool.runescape.wiki/w/Saradomin_cape"
   },
@@ -43,7 +43,7 @@
     "image": "/assets/gear-icons/cape-of-legends.png",
     "wiki": "https://oldschool.runescape.wiki/w/Cape_of_legends"
   },
-  "God vestment cloaks": {
+  "Any God vestment cloaks": {
     "image": "/assets/gear-icons/god-vestment-cloaks.png",
     "wiki": "https://oldschool.runescape.wiki/w/Saradomin_cloak"
   },
@@ -75,11 +75,11 @@
     "image": "/assets/gear-icons/infernal-cape.png",
     "wiki": "https://oldschool.runescape.wiki/w/Infernal_cape"
   },
-  "Skillcape (t)": {
+  "Any Skillcape (t)": {
     "image": "/assets/gear-icons/skillcape-t.png",
     "wiki": "https://oldschool.runescape.wiki/w/Hitpoints_cape#Trimmed"
   },
-  "Skillcape": {
+  "Any Skillcape": {
     "image": "/assets/gear-icons/skillcape.png",
     "wiki": "https://oldschool.runescape.wiki/w/Hitpoints_cape"
   },
@@ -102,10 +102,6 @@
   "Ranging cape (t)": {
     "image": "/assets/gear-icons/ranging-cape-t.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ranging_cape#Trimmed"
-  },
-  "Vestment cloak": {
-    "image": "/assets/gear-icons/vestment-cloak.png",
-    "wiki": "https://oldschool.runescape.wiki/w/Saradomin_cloak"
   },
   "Red cape": {
     "image": "/assets/gear-icons/red-cape.png",

@@ -89,7 +89,7 @@
         [ "Pegasian boots" ],
         [ "Echo boots" ],
         [ "Ranger boots" ],
-        [ "Blessed boots" ]
+        [ "Any Blessed boots" ]
       ],
       "Ring": [
         [ "Lightbearer" ],
@@ -134,14 +134,14 @@
         [ "Armadyl chestplate" ],
         [ "Karil's leathertop" ],
         [ "Crystal body" ],
-        [ "Blessed body" ]
+        [ "Any Blessed body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Armadyl chainskirt" ],
         [ "Karil's leatherskirt" ],
         [ "Crystal legs" ],
-        [ "Blessed chaps" ]
+        [ "Any Blessed chaps" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces", "Zamorak bracers" ],
@@ -150,7 +150,7 @@
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
-        [ "Blessed boots" ]
+        [ "Any Blessed boots" ]
       ],
       "Ring": [
         [ "Lightbearer" ],
@@ -202,13 +202,13 @@
         [ "Masori body (f)" ],
         [ "Armadyl chestplate" ],
         [ "Karil's leathertop" ],
-        [ "Blessed body", "Black d'hide body" ]
+        [ "Any Blessed body", "Black d'hide body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Armadyl chainskirt" ],
         [ "Karil's leatherskirt" ],
-        [ "Blessed chaps" ],
+        [ "Any Blessed chaps" ],
         [ "Black d'hide chaps" ]
       ],
       "Ammo": [
@@ -222,7 +222,7 @@
       ],
       "Boots": [
         [ "Pegasian boots" ],
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Ranger boots" ]
       ],
       "Ring": [
@@ -286,7 +286,7 @@
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
-        [ "Blessed boots" ]
+        [ "Any Blessed boots" ]
       ],
       "Ring": [
         [ "Venator ring" ],
@@ -337,7 +337,7 @@
       "Body": [
         [ "Masori body (f)" ],
         [ "Karil's leathertop" ],
-        [ "Crystal body", "Blessed body" ],
+        [ "Crystal body", "Any Blessed body" ],
         [ "Elite void top" ],
         [ "Black d'hide body" ]
       ],
@@ -345,7 +345,7 @@
         [ "Masori chaps (f)" ],
         [ "Crystal legs" ],
         [ "Karil's leatherskirt", "Elite void robe" ],
-        [ "Blessed chaps" ],
+        [ "Any Blessed chaps" ],
         [ "Black d'hide chaps" ]
       ],
       "Gloves": [
@@ -485,14 +485,14 @@
         [ "Fire cape" ],
         [ "Max cape" ],
         [ "Hitpoints cape" ],
-        [ "Skillcape (t)" ]
+        [ "Any Skillcape (t)" ]
       ],
       "Body": [
         [ "Torva platebody" ],
         [ "Bandos chestplate" ],
         [ "Guthan's platebody" ],
         [ "Fighter torso" ],
-        [ "Karil's leathertop", "Blessed body" ]
+        [ "Karil's leathertop", "Any Blessed body" ]
       ],
       "Legs": [
         [ "Torva platelegs" ],
@@ -602,9 +602,9 @@
         [ "Amulet of glory" ]
       ],
       "Cape": [
-        [ "Imbued god cape" ],
-        [ "God cape" ],
-        [ "Skillcape (t)" ]
+        [ "Any Imbued Any God cape" ],
+        [ "Any God cape" ],
+        [ "Any Skillcape (t)" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
@@ -640,7 +640,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ],
       "Special Attack": [ "N/A" ]
     }

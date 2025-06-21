@@ -64,7 +64,7 @@
         [ "Amulet of magic" ]
       ],
       "Cape": [
-        [ "Imbued god cape" ],
+        [ "Any Imbued Any God cape" ],
         [ "God capes" ],
         [ "Ardougne cloak 4" ],
         [ "Ardougne cloak 3" ],
@@ -107,7 +107,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ]
     },
     "Melee": {
@@ -185,7 +185,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ]
     }
   }

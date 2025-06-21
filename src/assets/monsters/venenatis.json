@@ -83,7 +83,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
@@ -114,7 +114,7 @@
     "Ranged": {
       "Helmet": [
         [ "Slayer helmet (i)" ],
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Archer helm" ]
       ],
       "Amulet": [
@@ -128,11 +128,11 @@
         [ "Ava's attractor" ]
       ],
       "Body": [
-        [ "Blessed body", "Crystal body" ],
+        [ "Any Blessed body", "Crystal body" ],
         [ "Black d'hide body" ]
       ],
       "Legs": [
-        [ "Blessed chaps", "Crystal legs" ],
+        [ "Any Blessed chaps", "Crystal legs" ],
         [ "Black d'hide chaps" ]
       ],
       "Weapon": [
@@ -150,16 +150,16 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2", "Diamond dragon bolts (e)", "Dragon arrows" ],
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2", "Diamond dragon bolts (e)", "Dragon arrows" ],
         [ "Diamond bolts (e)" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ]
       ],
       "Boots": [
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Shayzien boots (5)" ],
         [ "Snakeskin boots" ]
       ],

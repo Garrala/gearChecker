@@ -142,11 +142,11 @@
         [ "Amulet of power" ]
       ],
       "Cape": [
-        [ "Imbued god cape" ],
-        [ "God cape" ],
+        [ "Any Imbued Any God cape" ],
+        [ "Any God cape" ],
         [ "Ardougne cloak 4" ],
         [ "Ardougne cloak 3" ],
-        [ "Skillcape (t)" ]
+        [ "Any Skillcape (t)" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
@@ -181,7 +181,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "God blessing" ]
+        [ "Rada's blessing 3", "Any God blessing" ]
       ],
       "Special Attack": [ "N/A" ]
     },
@@ -202,7 +202,7 @@
         [ "Slayer helmet (i)", "Masori mask (f)" ],
         [ "Crystal helm" ],
         [ "Serpentine helm", "Armadyl helmet" ],
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Void ranger helm", "Archer helm" ]
       ],
       "Amulet": [
@@ -219,27 +219,27 @@
         [ "Masori body (f)" ],
         [ "Crystal body" ],
         [ "Armadyl chestplate" ],
-        [ "Karil's leathertop", "Blessed body" ],
+        [ "Karil's leathertop", "Any Blessed body" ],
         [ "Elite void top", "Black d'hide body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Crystal legs" ],
         [ "Armadyl chainskirt" ],
-        [ "Karil's leatherskirt", "Blessed chaps" ],
+        [ "Karil's leatherskirt", "Any Blessed chaps" ],
         [ "Elite void robe", "Black d'hide chaps" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
         [ "Dragon gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Void knight gloves", "Black d'hide vambraces" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Aranea boots" ],
         [ "Boots of brimstone" ]
       ],

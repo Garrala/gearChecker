@@ -59,7 +59,7 @@
     "image": "/assets/gear-icons/karil-s-leathertop.png",
     "wiki": "https://oldschool.runescape.wiki/w/Karil%27s_leathertop"
   },
-  "Blessed body": {
+  "Any Blessed body": {
     "image": "/assets/gear-icons/blessed-body.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ancient_d%27hide_body"
   },
@@ -131,7 +131,7 @@
     "image": "/assets/gear-icons/justiciar-chestguard.png",
     "wiki": "https://oldschool.runescape.wiki/w/Justiciar_chestguard"
   },
-  "Barrows body": {
+  "Any Barrows tank body": {
     "image": "/assets/gear-icons/barrows-body.png",
     "wiki": "https://oldschool.runescape.wiki/w/Torag%27s_platebody"
   },
@@ -186,6 +186,10 @@
   "Guthan's platebody": {
     "image": "/assets/gear-icons/guthan-s-platebody.png",
     "wiki": "https://oldschool.runescape.wiki/w/Guthan%27s_platebody"
+  },
+  "Torag's platebody": {
+    "image": "/assets/gear-icons/barrows-body.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Torag%27s_platebody"
   },
   "Bandos d'hide body": {
     "image": "/assets/gear-icons/bandos-d-hide-body.png",

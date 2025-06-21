@@ -71,7 +71,7 @@
     "image": "/assets/gear-icons/rune-platelegs.png",
     "wiki": "https://oldschool.runescape.wiki/w/Rune_platelegs"
   },
-  "Blessed chaps": {
+  "Any Blessed chaps": {
     "image": "/assets/gear-icons/blessed-chaps.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ancient_chaps"
   },
@@ -127,7 +127,11 @@
     "image": "/assets/gear-icons/justiciar-legguards.png",
     "wiki": "https://oldschool.runescape.wiki/w/Justiciar_legguards"
   },
-  "Barrows legs": {
+  "Any Barrows tank legs": {
+    "image": "/assets/gear-icons/barrows-legs.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Torag%27s_platelegs"
+  },
+  "Torag's platelegs": {
     "image": "/assets/gear-icons/barrows-legs.png",
     "wiki": "https://oldschool.runescape.wiki/w/Torag%27s_platelegs"
   },

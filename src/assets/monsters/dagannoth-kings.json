@@ -177,13 +177,13 @@
         [ "Torva platebody", "Masori body (f)" ],
         [ "Bandos chestplate", "Armadyl chestplate" ],
         [ "Crystal body", "Eclipse moon chestplate" ],
-        [ "Blessed body" ]
+        [ "Any Blessed body" ]
       ],
       "Legs": [
         [ "Torva platelegs", "Masori chaps (f)" ],
         [ "Bandos tassets", "Armadyl chainskirt" ],
         [ "Crystal legs", "Eclipse moon tassets" ],
-        [ "Verac's plateskirt", "Blessed chaps" ]
+        [ "Verac's plateskirt", "Any Blessed chaps" ]
       ],
       "Gloves": [
         [ "Ferocious gloves", "Tormented bracelet", "Zaryte vambraces" ],
@@ -196,7 +196,7 @@
         [ "Aranea boots", "Echo boots", "Guardian boots" ],
         [ "Dragon boots", "Granite boots" ],
         [ "Devout boots" ],
-        [ "Blessed boots", "Boots of brimstone", "Bandos boots" ]
+        [ "Any Blessed boots", "Boots of brimstone", "Bandos boots" ]
       ],
       "Ring": [
         [ "Lightbearer" ],
@@ -208,7 +208,7 @@
       "Ammo": [
         [ "Dragon arrows", "Amethyst arrows", "Moonlight antler bolts" ],
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ]
     },
     "Magic (Rex Only)": {
@@ -230,7 +230,7 @@
         [ "Slayer helmet (i)", "Black mask (i)" ],
         [ "Justiciar faceguard" ],
         [ "Serpentine helm" ],
-        [ "Barrows helm" ],
+        [ "Any Barrows tank helm" ],
         [ "Helm of neitiznot" ]
       ],
       "Amulet": [
@@ -241,22 +241,22 @@
         [ "Amulet of glory" ]
       ],
       "Cape": [
-        [ "Imbued god cape" ],
+        [ "Any Imbued Any God cape" ],
         [ "Infernal cape", "Fire cape" ],
-        [ "Skillcape" ],
+        [ "Any Skillcape" ],
         [ "Ardougne cloak 4" ],
-        [ "Vestment cloak" ]
+        [ "Any God vestment cloaks" ]
       ],
       "Body": [
         [ "Justiciar chestguard", "Torva platebody" ],
-        [ "Bandos chestplate", "Barrows body" ],
+        [ "Bandos chestplate", "Any Barrows tank body" ],
         [ "Granite body" ],
         [ "Dragon chainbody" ],
         [ "Rune platebody" ]
       ],
       "Legs": [
         [ "Justiciar legguards", "Torva platelegs" ],
-        [ "Bandos tassets", "Barrows legs" ],
+        [ "Bandos tassets", "Any Barrows tank legs" ],
         [ "Granite legs" ],
         [ "Dragon platelegs" ],
         [ "Rune platelegs" ]
@@ -283,7 +283,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ],
       "Special Attack": [ "N/A" ]
     },
@@ -307,7 +307,7 @@
         [ "Slayer helmet (i)", "Black mask (i)" ],
         [ "Masori mask (f)", "Justiciar faceguard" ],
         [ "Crystal helm" ],
-        [ "Barrows helm" ]
+        [ "Any Barrows tank helm" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -321,28 +321,28 @@
       ],
       "Body": [
         [ "Masori body (f)", "Justiciar chestguard" ],
-        [ "Crystal body", "Barrows body" ],
+        [ "Crystal body", "Any Barrows tank body" ],
         [ "Armadyl chestplate", "Karil's leathertop" ],
-        [ "Blessed body" ],
+        [ "Any Blessed body" ],
         [ "Black d'hide body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)", "Justiciar legguards" ],
-        [ "Crystal legs", "Barrows legs" ],
+        [ "Crystal legs", "Any Barrows tank legs" ],
         [ "Armadyl chainskirt", "Karil's leatherskirt" ],
-        [ "Blessed chaps" ],
+        [ "Any Blessed chaps" ],
         [ "Black d'hide chaps" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Regen bracelet" ],
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Combat bracelet" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Ranger boots" ],
         [ "Boots of brimstone" ],
         [ "Bandos boots" ]
@@ -356,7 +356,7 @@
       ],
       "Ammo": [
         [ "Dragon arrows", "Amethyst arrows" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "Moonlight antler bolts" ],
         [ "Diamond bolts (e)" ],
         [ "Runite bolts" ]

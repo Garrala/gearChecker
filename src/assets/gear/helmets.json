@@ -43,7 +43,7 @@
     "image": "/assets/gear-icons/robin-hood-hat.png",
     "wiki": "https://oldschool.runescape.wiki/w/Robin_hood_hat"
   },
-  "Blessed coif": {
+  "Any Blessed coif": {
     "image": "/assets/gear-icons/blessed-coif.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ancient_coif"
   },
@@ -151,7 +151,11 @@
     "image": "/assets/gear-icons/dagon-hai-hat.png",
     "wiki": "https://oldschool.runescape.wiki/w/Dagon%27hai_hat"
   },
-  "Barrows helm": {
+  "Any Barrows tank helm": {
+    "image": "/assets/gear-icons/barrows-helm.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Torag%27s_helm"
+  },
+  "Torag's helm": {
     "image": "/assets/gear-icons/barrows-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Torag%27s_helm"
   },

@@ -76,7 +76,7 @@
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Mythical cape" ],
-        [ "God vestment cloaks" ]
+        [ "Any God vestment cloaks" ]
       ],
       "Body": [
         [ "Torva platebody" ],
@@ -110,7 +110,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "God blessing" ]
+        [ "Rada's blessing 3", "Any God blessing" ]
       ]
     },
     "Ranged (high level)": {
@@ -166,12 +166,12 @@
         [ "Zaryte vambraces" ],
         [ "Void knight gloves" ],
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ]
+        [ "Any Blessed vambraces" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Aranea boots" ]
       ],
       "Ring": [
@@ -217,8 +217,8 @@
         [ "Amulet of glory" ]
       ],
       "Cape": [
-        [ "Imbued god cape" ],
-        [ "God cape" ],
+        [ "Any Imbued Any God cape" ],
+        [ "Any God cape" ],
         [ "Ardougne cloak 4" ]
       ],
       "Body": [
@@ -251,7 +251,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "God blessing" ]
+        [ "Rada's blessing 3", "Any God blessing" ]
       ]
     },
     "Melee (mid level)": {
@@ -291,7 +291,7 @@
         [ "Fire cape" ],
         [ "Obsidian cape" ],
         [ "Cape of legends" ],
-        [ "God vestment cloaks" ],
+        [ "Any God vestment cloaks" ],
         [ "Any team cape" ]
       ],
       "Body": [
@@ -328,7 +328,7 @@
         [ "Ring of recoil" ],
         [ "Ring of life" ]
       ],
-      "Ammo": [ [ "Rada's blessing 3", "God blessing" ] ]
+      "Ammo": [ [ "Rada's blessing 3", "Any God blessing" ] ]
     },
     "Ranged (mid level)": {
       "Weapon": [
@@ -344,7 +344,7 @@
       ],
       "Helmet": [
         [ "Void ranger helm" ],
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Archer helm" ],
         [ "Snakeskin bandana" ],
         [ "Coif" ]
@@ -364,27 +364,27 @@
       ],
       "Body": [
         [ "Void knight top" ],
-        [ "Blessed body" ],
+        [ "Any Blessed body" ],
         [ "Black d'hide body" ],
         [ "Red d'hide body" ],
         [ "Blue d'hide body" ]
       ],
       "Legs": [
         [ "Void knight robe" ],
-        [ "Blessed chaps" ],
+        [ "Any Blessed chaps" ],
         [ "Black d'hide chaps" ],
         [ "Red d'hide chaps" ],
         [ "Blue d'hide chaps" ]
       ],
       "Gloves": [
         [ "Void knight gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ],
         [ "Red d'hide vambraces" ],
         [ "Dragon gloves" ]
       ],
       "Boots": [
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Mixed hide boots" ],
         [ "Shayzien boots (5)" ],
         [ "Snakeskin boots" ]
@@ -429,11 +429,11 @@
         [ "Amulet of accuracy" ]
       ],
       "Cape": [
-        [ "God cape" ],
+        [ "Any God cape" ],
         [ "Fire cape" ],
         [ "Obsidian cape" ],
         [ "Cape of legends" ],
-        [ "God vestment cloaks" ]
+        [ "Any God vestment cloaks" ]
       ],
       "Body": [
         [ "Bloodbark body" ],
@@ -461,7 +461,7 @@
         [ "Ring of recoil" ],
         [ "Ring of life" ]
       ],
-      "Ammo": [ [ "Rada's blessing 3", "God blessing" ] ]
+      "Ammo": [ [ "Rada's blessing 3", "Any God blessing" ] ]
     }
   }
 }

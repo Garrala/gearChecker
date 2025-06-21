@@ -117,7 +117,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ],
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -126,7 +126,7 @@
     "Ranged (Spindel)": {
       "Helmet": [
         [ "Slayer helmet (i)" ],
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Archer helm" ]
       ],
       "Amulet": [
@@ -141,11 +141,11 @@
         [ "Ava's attractor" ]
       ],
       "Body": [
-        [ "Blessed body", "Crystal body" ],
+        [ "Any Blessed body", "Crystal body" ],
         [ "Black d'hide body" ]
       ],
       "Legs": [
-        [ "Blessed chaps", "Crystal legs" ],
+        [ "Any Blessed chaps", "Crystal legs" ],
         [ "Black d'hide chaps" ]
       ],
       "Weapon": [
@@ -167,11 +167,11 @@
       ],
       "Gloves": [
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ]
       ],
       "Boots": [
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Mixed hide boots" ],
         [ "Shayzien boots (5)", "Snakeskin boots" ]
       ],
@@ -182,7 +182,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2", "Dragon arrows" ],
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2", "Dragon arrows" ],
         [ "Diamond dragon bolts (e)", "Diamond bolts (e)", "Diamond bolts" ]
       ]
     }

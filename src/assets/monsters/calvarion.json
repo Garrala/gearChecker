@@ -111,7 +111,7 @@
         [ "Infernal cape", "Fire cape" ],
         [ "Mythical cape" ],
         [ "Mixed hide cape" ],
-        [ "Skillcape (t)" ],
+        [ "Any Skillcape (t)" ],
         [ "Ardougne cloak 4" ]
       ],
       "Body": [
@@ -147,7 +147,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ]
     }
   }

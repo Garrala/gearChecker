@@ -70,7 +70,7 @@
         [ "Void ranger helm" ],
         [ "Slayer helmet (i)" ],
         [ "Crystal helm", "Serpentine helm" ],
-        [ "Blessed coif" ]
+        [ "Any Blessed coif" ]
       ],
       "Amulet": [
         [ "Salve amulet (ei)" ],
@@ -90,14 +90,14 @@
         [ "Elite void top", "Void knight top" ],
         [ "Crystal body" ],
         [ "Karil's leathertop" ],
-        [ "Eclipse moon chestplate", "Blessed body" ]
+        [ "Eclipse moon chestplate", "Any Blessed body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Elite void robe", "Void knight robe" ],
         [ "Crystal legs" ],
         [ "Karil's leatherskirt" ],
-        [ "Blessed chaps", "Black d'hide chaps" ]
+        [ "Any Blessed chaps", "Black d'hide chaps" ]
       ],
       "Ammo": [
         [ "Ruby dragon bolts (e)", "Diamond dragon bolts (e)" ],
@@ -110,13 +110,13 @@
         [ "Zaryte vambraces" ],
         [ "Void knight gloves" ],
         [ "Barrows gloves" ],
-        [ "Blessed vambraces", "Black d'hide vambraces" ],
+        [ "Any Blessed vambraces", "Black d'hide vambraces" ],
         [ "Ranger gloves" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Aranea boots" ],
         [ "Boots of brimstone", "Mixed hide boots" ]
       ],
@@ -156,7 +156,7 @@
         [ "Neitiznot faceguard", "Serpentine helm" ],
         [ "Justiciar faceguard", "Blood moon helm" ],
         [ "Helm of neitiznot" ],
-        [ "Barrows helm" ]
+        [ "Any Barrows tank helm" ]
       ],
       "Amulet": [
         [ "Salve amulet (ei)", "Salve amulet (e)" ],
@@ -170,20 +170,20 @@
         [ "Fire cape" ],
         [ "Ardougne cloak 4" ],
         [ "Ardougne cloak 3" ],
-        [ "Skillcape (t)" ]
+        [ "Any Skillcape (t)" ]
       ],
       "Body": [
         [ "Torva platebody" ],
         [ "Bandos chestplate" ],
         [ "Justiciar chestguard", "Blood moon chestplate" ],
-        [ "Barrows body", "Fighter torso" ],
+        [ "Any Barrows tank body", "Fighter torso" ],
         [ "Obsidian platebody" ]
       ],
       "Legs": [
         [ "Torva platelegs" ],
         [ "Bandos tassets" ],
         [ "Justiciar legguards", "Blood moon tassets" ],
-        [ "Barrows legs" ],
+        [ "Any Barrows tank legs" ],
         [ "Obsidian platelegs" ]
       ],
       "Gloves": [
@@ -209,7 +209,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ]
     }
   }

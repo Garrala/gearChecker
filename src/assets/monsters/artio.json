@@ -70,9 +70,9 @@
       "Cape": [
         [ "Ava's assembler" ],
         [ "Ava's accumulator" ],
-        [ "Imbued god cape" ],
+        [ "Any Imbued Any God cape" ],
         [ "Ava's attractor" ],
-        [ "God cape" ]
+        [ "Any God cape" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
@@ -93,7 +93,7 @@
         [ "Red d'hide vambraces" ]
       ],
       "Boots": [
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Mixed hide boots" ],
         [ "Bloodbark boots" ],
         [ "Mystic boots" ],
@@ -107,7 +107,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ],
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ],
         [ "Ruby dragon bolts (e)", "Ruby bolts (e)" ],
         [ "Broad bolts", "Adamant bolts" ],
         [ "Amethyst arrows", "Rune arrows" ]
@@ -140,10 +140,10 @@
         [ "Amulet of magic" ]
       ],
       "Cape": [
-        [ "Imbued god cape" ],
-        [ "God cape" ],
+        [ "Any Imbued Any God cape" ],
+        [ "Any God cape" ],
         [ "Ardougne cloak 4" ],
-        [ "Vestment cloak" ]
+        [ "Any God vestment cloaks" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
@@ -178,7 +178,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ],
       "Special Attack": [ "N/A" ]
     }

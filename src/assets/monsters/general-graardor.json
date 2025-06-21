@@ -320,7 +320,7 @@
         [ "Fire cape" ],
         [ "Max cape" ],
         [ "Defence cape" ],
-        [ "Skillcape", "Obsidian cape" ]
+        [ "Any Skillcape", "Obsidian cape" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
@@ -467,7 +467,7 @@
       ],
       "Boots": [
         [ "Pegasian boots", "Bandos d'hide boots" ],
-        [ "Blessed boots" ]
+        [ "Any Blessed boots" ]
       ],
       "Ring": [
         [ "Venator ring" ],
