@@ -144,9 +144,25 @@
     "wiki": "https://oldschool.runescape.wiki/w/Amethyst_broad_bolts",
     "ammoType": "bolt"
   },
+  "Opal dragon bolts (e)": {
+    "image": "/assets/gear-icons/Opal_dragon_bolts_(e).png",
+    "wiki": "https://oldschool.runescape.wiki/w/Opal_dragon_bolts_(e)",
+    "ammoType": "bolt"
+  },
+  "Pearl dragon bolts (e)": {
+    "image": "/assets/gear-icons/Pearl_dragon_bolts_(e).png",
+    "wiki": "https://oldschool.runescape.wiki/w/Pearl_dragon_bolts_(e)",
+    "ammoType": "bolt"
+  },
+  "Dragon bolts": {
+    "image": "/assets/gear-icons/Dragon_bolts_5.png",
+    "wiki": "https://oldschool.runescape.wiki/w/dragon_bolts",
+    "ammoType": "bolt"
+  },
   "Irit tar": {
     "image": "/assets/gear-icons/irit-tar.png",
-    "wiki": "https://oldschool.runescape.wiki/w/Irit_tar"
+    "wiki": "https://oldschool.runescape.wiki/w/Irit_tar",
+    "ammoType": "tar"
   },
   "Harralander tar": {
     "image": "/assets/gear-icons/harralander-tar.png",

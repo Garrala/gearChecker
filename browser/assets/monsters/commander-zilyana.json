@@ -9,7 +9,7 @@
       "image": "assets/monster-icons/commander_zilyana.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Commander_Zilyana",
       "combat_level": 596,
-      "hp": 500,
+      "hp": 255,
       "max_hit": {
         "melee": 27,
         "magic": 20
@@ -41,8 +41,7 @@
   "gear_setups": {
     "Magic": {
       "Weapon": [
-        [ "Tumeken's shadow" ],
-        [ "Sanguinesti staff" ]
+        [ "Tumeken's shadow" ]
       ],
       "Shield": [ [ "Elidinis' ward (f)" ] ],
       "Special Attack": [
@@ -82,8 +81,8 @@
         [ "Twisted bow" ],
         [ "Bow of faerdhinen" ],
         [ "Zaryte crossbow" ],
-        [ "Armadyl crossbow", "Dragon hunter crossbow" ],
-        [ "Dragon crossbow", "Rune crossbow" ]
+        [ "Hunters' sunlight crossbow" ],
+        [ "Armadyl crossbow", "Dragon hunter crossbow", "Dragon crossbow", "Rune crossbow" ]
       ],
       "Shield": [
         [ "Twisted buckler" ],
@@ -120,16 +119,16 @@
       ],
       "Body": [
         [ "Masori body (f)" ],
-        [ "Crystal body", "Armadyl chestplate" ],
+        [ "Crystal body" ],
         [ "Saradomin d'hide body", "Zamorak d'hide body" ],
         [ "Karil's leathertop" ],
         [ "Black d'hide body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
-        [ "Crystal legs", "Armadyl chainskirt" ],
+        [ "Crystal legs" ],
         [ "Saradomin chaps", "Zamorak chaps" ],
-        [ "Karil's leatherskirt", "Verac's plateskirt" ],
+        [ "Karil's leatherskirt" ],
         [ "Black d'hide chaps" ]
       ],
       "Gloves": [
@@ -155,42 +154,6 @@
         [ "Dragon arrows" ],
         [ "Diamond dragon bolts (e)" ],
         [ "Diamond bolts (e)" ]
-      ]
-    },
-    "Solo Ranged Bowfa (No Stamina)": {
-      "Weapon": [ [ "Bow of faerdhinen" ] ],
-      "Special Attack": [ [ "Toxic blowpipe" ] ],
-      "Helmet": [ [ "Crystal helm" ] ],
-      "Amulet": [
-        [ "Necklace of anguish" ],
-        [ "Amulet of fury" ]
-      ],
-      "Cape": [
-        [ "Max cape" ],
-        [ "Ranging cape" ],
-        [ "Dizana's quiver" ],
-        [ "Ava's assembler" ],
-        [ "Ava's accumulator" ]
-      ],
-      "Body": [ [ "Crystal body" ] ],
-      "Legs": [ [ "Crystal legs" ] ],
-      "Gloves": [
-        [ "Zaryte vambraces" ],
-        [ "Zamorak bracers", "Saradomin bracers" ]
-      ],
-      "Boots": [
-        [ "Pegasian boots" ],
-        [ "Ancient d'hide boots" ],
-        [ "Saradomin d'hide boots", "Zamorak d'hide boots" ]
-      ],
-      "Ring": [ [ "Ring of suffering (i)" ] ],
-      "Ammo": [
-        [ "Dragon arrows" ],
-        [ "Amethyst arrows" ],
-        [ "Holy blessing", "Unholy blessing" ]
-      ],
-      "Shield": [
-        [ "N/A" ]
       ]
     }
   }
