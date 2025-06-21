@@ -194,14 +194,14 @@
         [ "Masori body (f)" ],
         [ "Eclipse moon chestplate" ],
         [ "Crystal body" ],
-        [ "Blessed body", "Karil's leathertop" ],
+        [ "Any Blessed body", "Karil's leathertop" ],
         [ "Black d'hide body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Eclipse moon tassets" ],
         [ "Crystal legs" ],
-        [ "Blessed chaps", "Karil's leatherskirt" ],
+        [ "Any Blessed chaps", "Karil's leatherskirt" ],
         [ "Black d'hide chaps" ]
       ],
       "Gloves": [
@@ -214,7 +214,7 @@
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
         [ "Aranea boots" ],
-        [ "Blessed boots" ]
+        [ "Any Blessed boots" ]
       ],
       "Ring": [ [ "Venator ring" ] ],
       "Ammo": [

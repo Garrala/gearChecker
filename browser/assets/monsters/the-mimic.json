@@ -53,7 +53,7 @@
         [ "Amulet of power" ]
       ],
       "Cape": [
-        [ "Imbued god cape" ],
+        [ "Any Imbued Any God cape" ],
         [ "God capes" ],
         [ "Ardougne cloak 4" ],
         [ "Ardougne cloak 3" ],
@@ -88,7 +88,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 2 or 3", "God blessing" ]
+        [ "Rada's blessing 2 or 3", "Any God blessing" ]
       ],
       "Gloves": [
         [ "Tormented bracelet" ],
@@ -122,7 +122,7 @@
         [ "Masori mask (f)" ],
         [ "Armadyl helmet", "Crystal helm" ],
         [ "Void ranger helm" ],
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Archer helm" ]
       ],
       "Amulet": [
@@ -142,14 +142,14 @@
         [ "Armadyl chestplate", "Crystal body" ],
         [ "Elite void top", "Void knight top" ],
         [ "Karil's leathertop" ],
-        [ "Blessed body" ]
+        [ "Any Blessed body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Armadyl chainskirt", "Crystal legs" ],
         [ "Elite void robe", "Void knight robe" ],
         [ "Karil's leatherskirt" ],
-        [ "Blessed chaps" ]
+        [ "Any Blessed chaps" ]
       ],
       "Weapon": [
         [ "Twisted bow" ],
@@ -167,7 +167,7 @@
       ],
       "Ammo": [
         [ "Dragon arrows", "Amethyst arrows", "Rune arrows" ],
-        [ "Rada's blessing 4", "Rada's blessing 3", "Rada's blessing 2", "God blessing" ],
+        [ "Rada's blessing 4", "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "Diamond dragon bolts (e)", "Diamond bolts (e)" ]
       ],
       "Gloves": [
@@ -175,12 +175,12 @@
         [ "Barrows gloves" ],
         [ "Void knight gloves" ],
         [ "Ranger gloves" ],
-        [ "Blessed vambraces" ]
+        [ "Any Blessed vambraces" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Aranea boots" ],
         [ "Mixed hide boots" ]
       ],

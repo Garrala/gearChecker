@@ -87,7 +87,7 @@
         [ "Fire cape" ],
         [ "Mythical cape" ],
         [ "Ardougne cloak 4", "Mixed hide cape" ],
-        [ "Skillcape (t)" ]
+        [ "Any Skillcape (t)" ]
       ],
       "Body": [
         [ "Inquisitor's hauberk", "Torva platebody" ],
@@ -125,7 +125,7 @@
       ],
       "Ammo": [
         [ "Ghommal's lucky penny", "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ]
     }
   }

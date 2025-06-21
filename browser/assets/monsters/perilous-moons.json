@@ -125,7 +125,7 @@
         [ "Torva full helm" ],
         [ "Serpentine helm" ],
         [ "Justiciar faceguard", "Neitiznot faceguard" ],
-        [ "Barrows helm" ],
+        [ "Any Barrows tank helm" ],
         [ "Blood moon helm", "Helm of neitiznot", "Berserker helm" ]
       ],
       "Amulet": [
@@ -139,8 +139,8 @@
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Mythical cape" ],
-        [ "Skillcape (t)" ],
-        [ "Obsidian cape", "Skillcape" ]
+        [ "Any Skillcape (t)" ],
+        [ "Obsidian cape", "Any Skillcape" ]
       ],
       "Body": [
         [ "Torva platebody" ],
@@ -153,7 +153,7 @@
         [ "Torva platelegs" ],
         [ "Justiciar legguards" ],
         [ "Bandos tassets" ],
-        [ "Barrows legs" ],
+        [ "Any Barrows tank legs" ],
         [ "Dragon platelegs" ]
       ],
       "Gloves": [
@@ -179,7 +179,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ]
     },
     "Blue Moon": {
@@ -209,7 +209,7 @@
         [ "Torva full helm" ],
         [ "Serpentine helm" ],
         [ "Justiciar faceguard", "Neitiznot faceguard" ],
-        [ "Barrows helm" ],
+        [ "Any Barrows tank helm" ],
         [ "Blood moon helm", "Helm of neitiznot", "Berserker helm" ]
       ],
       "Amulet": [
@@ -223,8 +223,8 @@
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Mythical cape" ],
-        [ "Skillcape (t)" ],
-        [ "Obsidian cape", "Skillcape" ]
+        [ "Any Skillcape (t)" ],
+        [ "Obsidian cape", "Any Skillcape" ]
       ],
       "Body": [
         [ "Torva platebody" ],
@@ -237,7 +237,7 @@
         [ "Torva platelegs" ],
         [ "Justiciar legguards" ],
         [ "Bandos tassets" ],
-        [ "Barrows legs" ],
+        [ "Any Barrows tank legs" ],
         [ "Dragon platelegs" ]
       ],
       "Gloves": [
@@ -263,7 +263,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ]
     },
     "Blood Moon": {
@@ -292,7 +292,7 @@
         [ "Torva full helm" ],
         [ "Serpentine helm" ],
         [ "Justiciar faceguard", "Neitiznot faceguard" ],
-        [ "Barrows helm" ],
+        [ "Any Barrows tank helm" ],
         [ "Blood moon helm", "Helm of neitiznot", "Berserker helm" ]
       ],
       "Amulet": [
@@ -306,8 +306,8 @@
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Mythical cape" ],
-        [ "Skillcape (t)" ],
-        [ "Obsidian cape", "Skillcape" ]
+        [ "Any Skillcape (t)" ],
+        [ "Obsidian cape", "Any Skillcape" ]
       ],
       "Body": [
         [ "Torva platebody" ],
@@ -320,7 +320,7 @@
         [ "Torva platelegs" ],
         [ "Justiciar legguards" ],
         [ "Bandos tassets" ],
-        [ "Barrows legs" ],
+        [ "Any Barrows tank legs" ],
         [ "Dragon platelegs" ]
       ],
       "Gloves": [
@@ -346,7 +346,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ]
     }
   }

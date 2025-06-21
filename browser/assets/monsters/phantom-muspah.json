@@ -62,7 +62,7 @@
       "Helmet": [
         [ "Slayer helmet (i)", "Ancestral hat", "Masori mask (f)" ],
         [ "Virtus mask", "Ahrim's hood", "Armadyl helmet" ],
-        [ "Infinity hat", "Bloodbark helm", "Blessed coif" ],
+        [ "Infinity hat", "Bloodbark helm", "Any Blessed coif" ],
         [ "Farseer helm", "Karil's coif" ],
         [ "Helm of neitiznot" ]
       ],
@@ -74,9 +74,9 @@
         [ "Amulet of power" ]
       ],
       "Cape": [
-        [ "Imbued god cape", "Dizana's quiver" ],
-        [ "God cape", "Ava's assembler" ],
-        [ "Skillcape", "Ava's accumulator" ],
+        [ "Any Imbued Any God cape", "Dizana's quiver" ],
+        [ "Any God cape", "Ava's assembler" ],
+        [ "Any Skillcape", "Ava's accumulator" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -85,14 +85,14 @@
         [ "Virtus robe top", "Masori body" ],
         [ "Ahrim's robetop", "Armadyl chestplate" ],
         [ "Dagon'hai robe top", "Karil's leathertop" ],
-        [ "Infinity top", "Blessed body" ]
+        [ "Infinity top", "Any Blessed body" ]
       ],
       "Legs": [
         [ "Ancestral robe bottom", "Masori chaps (f)" ],
         [ "Virtus robe bottom", "Masori chaps (f)" ],
         [ "Ahrim's robeskirt", "Armadyl chainskirt" ],
         [ "Dagon'hai robe bottom", "Karil's leatherskirt" ],
-        [ "Infinity bottoms", "Blessed chaps" ]
+        [ "Infinity bottoms", "Any Blessed chaps" ]
       ],
       "Gloves": [
         [ "Tormented bracelet", "Zaryte vambraces" ],
@@ -105,7 +105,7 @@
         [ "Eternal boots", "Pegasian boots" ],
         [ "Aranea boots" ],
         [ "Infinity boots", "Ranger boots" ],
-        [ "Bloodbark boots", "Blessed boots" ],
+        [ "Bloodbark boots", "Any Blessed boots" ],
         [ "Boots of brimstone" ]
       ],
       "Ring": [
@@ -120,7 +120,7 @@
         [ "Amethyst arrows", "Diamond dragon bolts (e)", "Sapphire bolts (e)" ],
         [ "Rune arrows", "Diamond bolts (e)" ],
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ]
     },
     "Ranged Only": {
@@ -146,7 +146,7 @@
         [ "Slayer helmet (i)", "Masori mask (f)" ],
         [ "Crystal helm" ],
         [ "Armadyl helmet" ],
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Karil's coif" ]
       ],
       "Amulet": [
@@ -159,21 +159,21 @@
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
         [ "Ava's accumulator" ],
-        [ "Skillcape" ]
+        [ "Any Skillcape" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
         [ "Crystal body" ],
         [ "Armadyl chestplate" ],
         [ "Karil's leathertop" ],
-        [ "Blessed body" ]
+        [ "Any Blessed body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Crystal legs" ],
         [ "Armadyl chainskirt" ],
         [ "Karil's leatherskirt" ],
-        [ "Blessed chaps" ]
+        [ "Any Blessed chaps" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
@@ -185,7 +185,7 @@
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Boots of brimstone" ]
       ],
       "Ring": [
@@ -200,7 +200,7 @@
         [ "Amethyst arrows", "Diamond dragon bolts (e)", "Sapphire bolts (e)" ],
         [ "Rune arrows", "Diamond bolts (e)" ],
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ]
     }
   }

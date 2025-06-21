@@ -73,7 +73,7 @@
       "Cape": [
         [ "Infernal cape", "Mythical cape" ],
         [ "Fire cape" ],
-        [ "Skillcape" ],
+        [ "Any Skillcape" ],
         [ "Obsidian cape" ]
       ],
       "Body": [
@@ -81,14 +81,14 @@
         [ "Eclipse moon chestplate", "Blood moon chestplate" ],
         [ "Armadyl chestplate" ],
         [ "Karil's leathertop" ],
-        [ "Blessed body" ]
+        [ "Any Blessed body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)", "Inquisitor's plateskirt" ],
         [ "Blood moon tassets" ],
         [ "Armadyl chainskirt" ],
         [ "Karil's leatherskirt" ],
-        [ "Blessed chaps" ]
+        [ "Any Blessed chaps" ]
       ],
       "Gloves": [
         [ "Ferocious gloves" ],
@@ -111,7 +111,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ]
     },
     "Solo / Duo Stat Draining": {
@@ -152,14 +152,14 @@
         [ "Eclipse moon chestplate" ],
         [ "Karil's leathertop" ],
         [ "Elite void top", "Void knight top" ],
-        [ "Blessed body" ]
+        [ "Any Blessed body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Blood moon tassets" ],
         [ "Karil's leatherskirt" ],
         [ "Elite void robe", "Void knight robe" ],
-        [ "Blessed chaps" ]
+        [ "Any Blessed chaps" ]
       ],
       "Gloves": [
         [ "Ferocious gloves" ],
@@ -182,7 +182,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ],
       "Shield": [ "N/A" ]
     },
@@ -213,7 +213,7 @@
       "Cape": [
         [ "Infernal cape" ],
         [ "Fire cape" ],
-        [ "Imbued god cape" ]
+        [ "Any Imbued Any God cape" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
@@ -241,7 +241,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ],
       "Shield": [ "N/A" ]
     },
@@ -282,13 +282,13 @@
         [ "Masori body (f)" ],
         [ "Karil's leathertop" ],
         [ "Elite void top", "Void knight top" ],
-        [ "Blessed body" ]
+        [ "Any Blessed body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Karil's leatherskirt" ],
         [ "Elite void robe", "Void knight robe" ],
-        [ "Blessed chaps" ]
+        [ "Any Blessed chaps" ]
       ],
       "Gloves": [
         [ "Ferocious gloves" ],
@@ -311,7 +311,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ],
       "Shield": [ "N/A" ]
     },
@@ -382,7 +382,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ],
       "Shield": [ "N/A" ]
     },
@@ -405,7 +405,7 @@
       "Helmet": [
         [ "Masori mask (f)" ],
         [ "Armadyl helmet" ],
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Robin hood hat" ],
         [ "Karil's coif" ]
       ],
@@ -426,28 +426,28 @@
       "Body": [
         [ "Masori body (f)" ],
         [ "Armadyl chestplate" ],
-        [ "Blessed body" ],
+        [ "Any Blessed body" ],
         [ "Black d'hide body", "Karil's leathertop" ],
         [ "Red d'hide body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Armadyl chainskirt" ],
-        [ "Blessed chaps" ],
+        [ "Any Blessed chaps" ],
         [ "Black d'hide chaps", "Karil's leatherskirt" ],
         [ "Rangers' tights", "Penance skirt" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces", "Ranger gloves" ],
         [ "Red d'hide vambraces" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Boots of brimstone" ],
         [ "Snakeskin boots" ]
       ],

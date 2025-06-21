@@ -166,22 +166,22 @@
       "Body": [
         ["Masori body (f)"],
         ["Crystal body"],
-        [ "Blessed body", "Black d'hide body" ]
+        [ "Any Blessed body", "Black d'hide body" ]
       ],
       "Legs": [
         ["Masori chaps (f)"],
         ["Crystal legs"],
-        ["Blessed chaps", "Black d'hide chaps"]
+        ["Any Blessed chaps", "Black d'hide chaps"]
       ],
       "Gloves": [
         ["Zaryte vambraces"],
         ["Barrows gloves"],
-        ["Blessed vambraces", "Black d'hide vambraces"]
+        ["Any Blessed vambraces", "Black d'hide vambraces"]
       ],
       "Boots": [
         ["Pegasian boots"],
         ["Ranger boots"],
-        ["Blessed boots"],
+        ["Any Blessed boots"],
         ["Aranea boots"],
         ["Mixed hide boots"]
       ],
@@ -210,7 +210,7 @@
       ],
       "Helmet": [["Slayer helmet (i)"], ["Black mask (i)"]],
       "Amulet": [["Occult necklace"]],
-      "Cape": [["Imbued god cape"]],
+      "Cape": [["Any Imbued Any God cape"]],
       "Body": [["Ancestral robe top"], ["Virtus robe top"], ["Bloodbark body"]],
       "Legs": [
         ["Ancestral robe bottom"],
@@ -261,7 +261,7 @@
       "Gloves": [["Ferocious gloves"], ["Barrows gloves"], ["Dragon gloves"]],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ],
       "Special Attack": ["N/A"]
     },
@@ -297,14 +297,14 @@
         ["Torva platebody"],
         ["Bandos chestplate", "Oathplate chest"],
         ["Justiciar chestguard"],
-        ["Barrows body"],
+        ["Any Barrows tank body"],
         ["Fighter torso"]
       ],
       "Legs": [
         ["Torva platelegs"],
         ["Bandos tassets", "Oathplate legs"],
         ["Justiciar legguards"],
-        ["Barrows legs"],
+        ["Any Barrows tank legs"],
         ["Obsidian platelegs"]
       ],
       "Ring": [["Lightbearer"]],
@@ -318,7 +318,7 @@
       "Gloves": [["Ferocious gloves"], ["Barrows gloves"], ["Dragon gloves"]],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ]
     },
     "Phase 2 Melee - Defense reduction": {
@@ -357,14 +357,14 @@
         ["Torva platebody", "Oathplate chest"],
         ["Bandos chestplate", "Blood moon chestplate"],
         ["Justiciar chestguard"],
-        ["Barrows body"],
+        ["Any Barrows tank body"],
         ["Fighter torso"]
       ],
       "Legs": [
         ["Torva platelegs", "Oathplate legs"],
         ["Bandos tassets", "Blood moon tassets"],
         ["Justiciar legguards"],
-        ["Barrows legs"],
+        ["Any Barrows tank legs"],
         ["Obsidian platelegs"]
       ],
       "Ring": [
@@ -384,7 +384,7 @@
       "Gloves": [["Ferocious gloves"], ["Barrows gloves"], ["Dragon gloves"]],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ]
     },
     "Phase 2 Magic": {
@@ -398,8 +398,8 @@
       "Helmet": [["Slayer helmet (i)"], ["Black mask (i)"]],
       "Amulet": [["Occult necklace"], ["Amulet of fury"], ["Amulet of glory"]],
       "Cape": [
-        ["Imbued god cape"],
-        ["God cape"],
+        ["Any Imbued Any God cape"],
+        ["Any God cape"],
         ["Max cape"],
         ["Infernal cape"]
       ],
@@ -412,7 +412,7 @@
       ],
       "Boots": [["Eternal boots"], ["Echo boots"], ["Guardian boots"]],
       "Gloves": [["Tormented bracelet"]],
-      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "God blessing"]]
+      "Ammo": [["Rada's blessing 4"], ["Rada's blessing 3", "Any God blessing"]]
     },
     "Phase 2 Ranged": {
       "Weapon": [
@@ -444,21 +444,21 @@
         ["Masori body (f)"],
         ["Armadyl chestplate"],
         ["Crystal body"],
-        ["Blessed body"],
+        ["Any Blessed body"],
         ["Karil's leathertop"]
       ],
       "Legs": [
         ["Masori chaps (f)"],
         ["Armadyl chainskirt"],
         ["Crystal legs"],
-        ["Blessed chaps"],
+        ["Any Blessed chaps"],
         ["Karil's leatherskirt"]
       ],
       "Gloves": [["Zaryte vambraces"], ["Barrows gloves"], ["Combat bracelet"]],
       "Boots": [
         ["Pegasian boots"],
         ["Ranger boots"],
-        ["Blessed boots"],
+        ["Any Blessed boots"],
         ["Aranea boots"],
         ["Mixed hide boots"]
       ],

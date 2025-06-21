@@ -47,7 +47,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -63,7 +63,7 @@
         [ "Masori body (f)" ],
         [ "Blood moon chestplate", "Eclipse moon chestplate" ],
         [ "Karil's leathertop" ],
-        [ "Elite void top", "Blessed body" ],
+        [ "Elite void top", "Any Blessed body" ],
         [ "Black d'hide body" ]
       ],
       "Boots": [
@@ -77,7 +77,7 @@
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Mythical cape" ],
-        [ "Imbued god cape" ],
+        [ "Any Imbued Any God cape" ],
         [ "God capes" ]
       ],
       "Gloves": [
@@ -98,7 +98,7 @@
         [ "Masori chaps (f)" ],
         [ "Blood moon tassets", "Eclipse moon tassets" ],
         [ "Karil's leatherskirt" ],
-        [ "Elite void robe", "Blessed chaps" ],
+        [ "Elite void robe", "Any Blessed chaps" ],
         [ "Black d'hide chaps" ]
       ],
       "Ring": [
@@ -133,7 +133,7 @@
         [ "Occult necklace" ]
       ],
       "Cape": [
-        [ "Imbued god cape" ]
+        [ "Any Imbued Any God cape" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
@@ -148,7 +148,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ],
       "Gloves": [
         [ "Tormented bracelet" ]
@@ -197,7 +197,7 @@
       "Ammo": [
         [ "Rada's blessing 4" ],
         [ "Rada's blessing 3" ],
-        [ "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 2", "Any God blessing" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],

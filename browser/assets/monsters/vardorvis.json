@@ -57,7 +57,7 @@
         [ "Fire cape" ],
         [ "Mythical cape" ],
         [ "Ardougne cloak 4" ],
-        [ "Skillcape (t)" ]
+        [ "Any Skillcape (t)" ]
       ],
       "Body": [
         [ "Oathplate chest" ],
@@ -70,7 +70,7 @@
         [ "Oathplate legs" ],
         [ "Torva platelegs" ],
         [ "Bandos tassets", "Justiciar legguards" ],
-        [ "Blood moon tassets", "Barrows legs" ],
+        [ "Blood moon tassets", "Any Barrows tank legs" ],
         [ "Obsidian platelegs", "Dragon platelegs" ]
       ],
       "Weapon": [
@@ -90,7 +90,7 @@
       "Ammo": [
         [ "Rada's blessing 4" ],
         [ "Ghommal's lucky penny" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ],
       "Gloves": [
         [ "Ferocious gloves" ],

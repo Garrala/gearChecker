@@ -69,8 +69,8 @@
         [ "Amulet of power" ]
       ],
       "Cape": [
-        [ "Imbued god cape" ],
-        [ "God cape" ],
+        [ "Any Imbued Any God cape" ],
+        [ "Any God cape" ],
         [ "Infernal cape", "Fire cape" ],
         [ "Hitpoints cape (t)" ],
         [ "Ardougne cloak" ]
@@ -80,14 +80,14 @@
         [ "Virtus robe top" ],
         [ "Ahrim's robetop", "Blue moon chestplate" ],
         [ "Masori body (f)" ],
-        [ "Armadyl chestplate", "Karil's leathertop", "Blessed body", "Elite void top" ]
+        [ "Armadyl chestplate", "Karil's leathertop", "Any Blessed body", "Elite void top" ]
       ],
       "Legs": [
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ],
         [ "Ahrim's robeskirt", "Blue moon tassets" ],
         [ "Masori chaps (f)" ],
-        [ "Armadyl chainskirt", "Karil's leatherskirt", "Elite void robe", "Blessed chaps" ]
+        [ "Armadyl chainskirt", "Karil's leatherskirt", "Elite void robe", "Any Blessed chaps" ]
       ],
       "Gloves": [
         [ "Tormented bracelet", "Bracelet of slaughter" ],

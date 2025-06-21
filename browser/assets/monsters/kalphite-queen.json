@@ -115,12 +115,12 @@
         [ "Torva platebody", "Inquisitor's hauberk" ],
         [ "Bandos chestplate" ],
         [ "Fighter torso" ],
-        [ "Blessed body" ]
+        [ "Any Blessed body" ]
       ],
       "Legs": [
         [ "Torva platelegs", "Inquisitor's plateskirt" ],
         [ "Bandos tassets" ],
-        [ "Blessed chaps" ],
+        [ "Any Blessed chaps" ],
         [ "Verac's plateskirt" ]
       ],
       "Gloves": [
@@ -181,14 +181,14 @@
       "Body": [
         [ "Masori body (f)" ],
         [ "Crystal body", "Armadyl chestplate" ],
-        [ "Blessed body" ],
+        [ "Any Blessed body" ],
         [ "Karil's leathertop" ],
         [ "Black d'hide body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Crystal legs", "Armadyl chainskirt" ],
-        [ "Blessed chaps" ],
+        [ "Any Blessed chaps" ],
         [ "Karil's leatherskirt" ],
         [ "Black d'hide chaps" ]
       ],
@@ -201,7 +201,7 @@
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
-        [ "Blessed boots" ]
+        [ "Any Blessed boots" ]
       ],
       "Ring": [
         [ "Ring of suffering (i)" ],
@@ -212,7 +212,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ],
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ],
         [ "Diamond dragon bolts (e)", "Dragon arrows" ],
         [ "Amethyst broad bolts", "Amethyst arrows" ],
         [ "Runite bolts", "Rune arrows" ]
@@ -248,8 +248,8 @@
         [ "Amulet of fury" ]
       ],
       "Cape": [
-        [ "Imbued god cape" ],
-        [ "God cape" ],
+        [ "Any Imbued Any God cape" ],
+        [ "Any God cape" ],
         [ "Ardougne cloak 4" ],
         [ "Infernal cape" ],
         [ "Fire cape" ]
@@ -326,7 +326,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ],
       "Special Attack": [ "N/A" ],
       "Shield": [ "N/A" ]
@@ -358,7 +358,7 @@
         [ "Amulet of glory" ]
       ],
       "Cape": [
-        [ "Imbued god cape" ],
+        [ "Any Imbued Any God cape" ],
         [ "Fire cape" ]
       ],
       "Body": [
@@ -428,11 +428,11 @@
       "Body": [
         [ "Fighter torso" ],
         [ "Obsidian platebody" ],
-        [ "Blessed body" ],
+        [ "Any Blessed body" ],
         [ "Black d'hide body" ]
       ],
       "Legs": [
-        [ "Blessed chaps" ],
+        [ "Any Blessed chaps" ],
         [ "Black d'hide chaps" ]
       ],
       "Gloves": [
@@ -442,7 +442,7 @@
       "Boots": [
         [ "Dragon boots" ],
         [ "Spiked manacles" ],
-        [ "Blessed boots" ]
+        [ "Any Blessed boots" ]
       ],
       "Ring": [
         [ "Ring of recoil" ],
@@ -453,7 +453,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ]
     },
     "Mid-game (Ranged)": {
@@ -476,7 +476,7 @@
       ],
       "Helmet": [
         [ "Slayer helmet (i)" ],
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Robin hood hat", "Archer helm" ]
       ],
       "Amulet": [
@@ -491,12 +491,12 @@
         [ "Ava's attractor" ]
       ],
       "Body": [
-        [ "Blessed body" ],
+        [ "Any Blessed body" ],
         [ "Black d'hide body" ],
         [ "Karil's leathertop" ]
       ],
       "Legs": [
-        [ "Blessed chaps" ],
+        [ "Any Blessed chaps" ],
         [ "Black d'hide chaps" ],
         [ "Karil's leatherskirt" ]
       ],
@@ -505,7 +505,7 @@
         [ "Dragon gloves" ]
       ],
       "Boots": [
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Boots of brimstone" ],
         [ "Shayzien boots (5)" ],
         [ "Snakeskin boots" ]
@@ -517,8 +517,8 @@
         [ "Ring of shadows" ]
       ],
       "Ammo": [
-        [ "Diamond bolts (e)", "Amethyst broad bolts", "Amethyst arrow" ],
-        [ "Runite bolts", "Rune arrow" ]
+        [ "Diamond bolts (e)", "Amethyst broad bolts", "Amethyst arrows" ],
+        [ "Runite bolts", "Rune arrows" ]
       ]
     },
     "Pre-diary Method": {
@@ -552,13 +552,13 @@
       "Body": [
         [ "Masori body (f)" ],
         [ "Armadyl chestplate" ],
-        [ "Blessed body" ],
+        [ "Any Blessed body" ],
         [ "Karil's leathertop" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Armadyl chainskirt" ],
-        [ "Blessed chaps" ],
+        [ "Any Blessed chaps" ],
         [ "Karil's leatherskirt" ]
       ],
       "Gloves": [
@@ -578,7 +578,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ],
       "Special Attack": [ "N/A" ]
     }

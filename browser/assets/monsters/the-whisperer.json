@@ -50,10 +50,10 @@
         [ "Amulet of fury", "Amulet of glory" ]
       ],
       "Cape": [
-        [ "Imbued god cape" ],
-        [ "God cape" ],
+        [ "Any Imbued Any God cape" ],
+        [ "Any God cape" ],
         [ "Ardougne cloak 4" ],
-        [ "Skillcape" ]
+        [ "Any Skillcape" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
@@ -85,7 +85,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4", "Rune arrow" ],
-        [ "God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
       ],
       "Gloves": [
         [ "Tormented bracelet" ],

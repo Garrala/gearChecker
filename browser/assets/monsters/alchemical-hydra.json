@@ -182,24 +182,24 @@
         [ "Masori body (f)" ],
         [ "Crystal body", "Eclipse moon chestplate" ],
         [ "Hueycoatl hide body" ],
-        [ "Blessed body" ]
+        [ "Any Blessed body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Crystal legs", "Eclipse moon tassets" ],
         [ "Hueycoatl hide chaps" ],
-        [ "Blessed chaps" ]
+        [ "Any Blessed chaps" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
-        [ "Blessed vambraces", "Hueycoatl hide vambraces" ],
+        [ "Any Blessed vambraces", "Hueycoatl hide vambraces" ],
         [ "Barrows gloves" ],
         [ "Black d'hide vambraces" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
         [ "Devout boots" ],
-        [ "Blessed boots", "Aranea boots" ],
+        [ "Any Blessed boots", "Aranea boots" ],
         [ "Boots of brimstone" ],
         [ "Boots of stone" ]
       ],
@@ -214,7 +214,7 @@
         [ "Dragon arrows", "Ruby dragon bolts (e)", "Atlatl darts" ],
         [ "Ruby bolts (e)" ],
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ]
     },
     "Melee": {
@@ -292,7 +292,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ]
     }
   }

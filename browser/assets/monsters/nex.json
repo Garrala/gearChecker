@@ -56,7 +56,7 @@
       "Helmet": [
         [ "Masori mask (f)" ],
         [ "Armadyl helmet" ],
-        [ "Slayer helmet (i)", "Blessed coif" ]
+        [ "Slayer helmet (i)", "Any Blessed coif" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -70,21 +70,21 @@
       "Body": [
         [ "Masori body (f)" ],
         [ "Armadyl chestplate" ],
-        [ "Eclipse moon chestplate", "Karil's leathertop", "Blessed Body" ]
+        [ "Eclipse moon chestplate", "Karil's leathertop", "Any Blessed body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Armadyl chainskirt" ],
-        [ "Eclipse moon tassets", "Karil's leatherskirt", "Blessed chaps" ]
+        [ "Eclipse moon tassets", "Karil's leatherskirt", "Any Blessed chaps" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ]
+        [ "Any Blessed vambraces" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
-        [ "Blessed boots" ]
+        [ "Any Blessed boots" ]
       ],
       "Ring": [
         [ "Lightbearer" ],

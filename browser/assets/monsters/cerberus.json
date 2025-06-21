@@ -87,14 +87,14 @@
         [ "Torva platebody" ],
         [ "Oathplate chest", "Bandos chestplate" ],
         [ "Justiciar chestguard", "Fighter torso" ],
-        [ "Barrows body" ]
+        [ "Any Barrows tank body" ]
       ],
       "Legs": [
         [ "Inquisitor's plateskirt" ],
         [ "Torva platelegs" ],
         [ "Oathplate legs", "Bandos tassets" ],
         [ "Justiciar legguards" ],
-        [ "Barrows legs" ]
+        [ "Any Barrows tank legs" ]
       ],
       "Gloves": [
         [ "Ferocious gloves" ],
@@ -118,7 +118,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ]
     },
     "Ranged": {
@@ -153,27 +153,27 @@
         [ "Masori body (f)" ],
         [ "Armadyl chestplate" ],
         [ "Crystal body" ],
-        [ "Blessed body" ],
+        [ "Any Blessed body" ],
         [ "Karil's leathertop" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Armadyl chainskirt" ],
         [ "Crystal legs" ],
-        [ "Blessed chaps" ],
+        [ "Any Blessed chaps" ],
         [ "Karil's leatherskirt" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Dragon gloves" ],
         [ "Combat bracelet" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
-        [ "Blessed boots" ],
+        [ "Any Blessed boots" ],
         [ "Shayzien boots (5)" ],
         [ "Snakeskin boots" ]
       ],
