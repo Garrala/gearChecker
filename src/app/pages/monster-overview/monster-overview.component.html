@@ -174,6 +174,10 @@
                        title="Poison"
                        src="./assets/misc-icons/Poison_hitsplat.png"
                        alt="Poison" />
+                  <img *ngIf="key === 'stomp'"
+                       title="Stomp"
+                       src="./assets/misc-icons/Hunter_icon.png"
+                       alt="Stomp" />
                   {{ getSelectedBoss()?.max_hit?.[key] ?? 'N/A' }}
                 </span>
               </div>
@@ -186,77 +190,63 @@
             />
             <strong>Attack Style:</strong>
             <span class="attack-style-box">
-			
-			<img
-                *ngIf="
+
+              <img *ngIf="
                   (getSelectedBoss()?.attack_styles || []).includes('Melee')
                 "
-                src="./assets/misc-icons/Strength_icon.png"
-                alt="Melee"
-                title="Melee Attack Style"
-                class="attack-style-icon"
-              />
-              <img
-                *ngIf="
+                   src="./assets/misc-icons/Strength_icon.png"
+                   alt="Melee"
+                   title="Melee Attack Style"
+                   class="attack-style-icon" />
+              <img *ngIf="
                   (getSelectedBoss()?.attack_styles || []).includes('Magic')
                 "
-                src="./assets/misc-icons/Magic_icon.png"
-                alt="Magic"
-                title="Magic Attack Style"
-                class="attack-style-icon"
-              />
+                   src="./assets/misc-icons/Magic_icon.png"
+                   alt="Magic"
+                   title="Magic Attack Style"
+                   class="attack-style-icon" />
 
-              <img
-                *ngIf="
+              <img *ngIf="
                   (getSelectedBoss()?.attack_styles || []).includes('Ranged')
                 "
-                src="./assets/misc-icons/Ranged_icon.png"
-                alt="Ranged"
-                title="Ranged Attack Style"
-                class="attack-style-icon"
-              />
-			  
-			  <img
-                *ngIf="
+                   src="./assets/misc-icons/Ranged_icon.png"
+                   alt="Ranged"
+                   title="Ranged Attack Style"
+                   class="attack-style-icon" />
+
+              <img *ngIf="
                   (getSelectedBoss()?.attack_styles || []).includes('Special Attack')
                 "
-                src="./assets/misc-icons/Special_attack_orb.png"
-                alt="Special Attack"
-                title="Special Attack"
-                class="attack-style-icon"
-              />
+                   src="./assets/misc-icons/Special_attack_orb.png"
+                   alt="Special Attack"
+                   title="Special Attack"
+                   class="attack-style-icon" />
 
-			  <img
-                *ngIf="
+              <img *ngIf="
                   (getSelectedBoss()?.attack_styles || []).includes('Dragonfire')
                 "
-                src="./assets/misc-icons/Fire_Surge.png"
-                alt="Dragonfire"
-                title="Dragonfire"
-                class="attack-style-icon"
-              />
-                
-			  <img
-                *ngIf="
+                   src="./assets/misc-icons/Fire_Surge.png"
+                   alt="Dragonfire"
+                   title="Dragonfire"
+                   class="attack-style-icon" />
+
+              <img *ngIf="
                   (getSelectedBoss()?.attack_styles || []).includes('Typeless')
                 "
-                src="./assets/misc-icons/Protect_from_all.png"
-                alt="Typeless"
-                title="Typeless Attack Style"
-                class="attack-style-icon"
-              />
+                   src="./assets/misc-icons/Protect_from_all.png"
+                   alt="Typeless"
+                   title="Typeless Attack Style"
+                   class="attack-style-icon" />
 
-              <img
-                *ngIf="
+              <img *ngIf="
                   (getSelectedBoss()?.attack_styles || []).includes('Venom')
                 "
-                src="./assets/misc-icons/Venom_hitsplat.png"
-                alt="Venom"
-                title="Venom"
-                class="attack-style-icon"
-              />
-			  
-			  
+                   src="./assets/misc-icons/Venom_hitsplat.png"
+                   alt="Venom"
+                   title="Venom"
+                   class="attack-style-icon" />
+
+
             </span>
           </div>
 
