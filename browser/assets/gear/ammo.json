@@ -44,6 +44,16 @@
     "wiki": "https://oldschool.runescape.wiki/w/Rada%27s_blessing_3",
     "ammoType": "blessing"
   },
+  "Rada's blessing 2": {
+    "image": "/assets/gear-icons/rada-s-blessing-2.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Rada%27s_blessing_2",
+    "ammoType": "blessing"
+  },
+  "Rada's blessing 1": {
+    "image": "/assets/gear-icons/Rada's_blessing_1.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Rada%27s_blessing_1",
+    "ammoType": "blessing"
+  },
   "Any God blessing": {
     "image": "/assets/gear-icons/god-blessing.png",
     "wiki": "https://oldschool.runescape.wiki/w/Peaceful_blessing",
@@ -87,16 +97,6 @@
   "Ghommal's lucky penny": {
     "image": "/assets/gear-icons/ghommal-s-lucky-penny.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ghommal%27s_lucky_penny",
-    "ammoType": "blessing"
-  },
-  "Rada's blessing 2": {
-    "image": "/assets/gear-icons/rada-s-blessing-2.png",
-    "wiki": "https://oldschool.runescape.wiki/w/Rada%27s_blessing_2",
-    "ammoType": "blessing"
-  },
-  "Rada's blessing 1": {
-    "image": "/assets/gear-icons/Rada's_blessing_1.png",
-    "wiki": "https://oldschool.runescape.wiki/w/Rada%27s_blessing_1",
     "ammoType": "blessing"
   },
   "Dragon javelin": {
