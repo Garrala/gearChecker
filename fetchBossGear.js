@@ -16,21 +16,7 @@ const simpleUrls = {
   "King Black Dragon": "https://oldschool.runescape.wiki/w/King_Black_Dragon/Strategies",
 };
 
-const complexUrls = {
-  "Corporeal Beast": "https://oldschool.runescape.wiki/w/Corporeal_Beast/Strategies",
-  "Dagannoth Kings": "https://oldschool.runescape.wiki/w/Dagannoth_Kings/Strategies",
-  "Grotesque Guardians": "https://oldschool.runescape.wiki/w/Grotesque_Guardians/Strategies",
-  "Kalphite Queen": "https://oldschool.runescape.wiki/w/Kalphite_Queen/Strategies",
-  "Vorkath": "https://oldschool.runescape.wiki/w/Vorkath/Strategies"
-};
 
-const complexScrapers = {
-  "Kalphite Queen": scrapeKalphiteQueen,
-  //"Vorkath": scrapeVorkath,
-  //"Corporeal Beast": scrapeCorpBeast,
-  //"Dagannoth Kings": scrapeDagKings,
-  //"Grotesque Guardians": scrapeGrotesques
-};
 
 
 const outputFolder = path.join(__dirname, 'boss_gear_scrape');
@@ -236,87 +222,9 @@ async function fetchGearFromWiki(bossName, url) {
   }
 }
 
-async function scrapeKalphiteQueen(bossName, url) {
-  const response = await axios.get(url);
-  const $ = cheerio.load(response.data);
-
-  const tables = $('caption:contains("Recommended equipment")').closest('table');
-  const gearData = {};
-  const overrideStyles = expectedGearStyles[bossName]; // External JSON control
-
-  tables.each((i, table) => {
-    const style = overrideStyles[i];
-    if (!style) return;
-
-    gearData[style] = {};
-
-    $(table).find('tr').slice(1).each((_, row) => {
-      const cells = $(row).find('td');
-      if (cells.length < 2) return;
-
-      const slotImg = $(cells[0]).find('img').first();
-      const slotName = extractSlotName(slotImg);
-      if (!slotName) return;
-
-      if (!gearData[style][slotName]) gearData[style][slotName] = [];
-
-      const group = [];
-      $(cells).slice(1).each((_, cell) => {
-        const cellText = $(cell).text().trim();
-        const links = $(cell).find('a[href]');
-        const items = [];
-
-        links.each((_, a) => {
-          const name = tightenParentheses($(a).text().trim());
-          if (name.toLowerCase() === "rada's blessing 3/2") {
-            items.push("Rada's blessing 3", "Rada's blessing 2");
-          } else if (name) {
-            items.push(name);
-          }
-        });
-
-        if (items.length === 0 && cellText) {
-          items.push(...cellText.split(/\/|,/).map(s => s.trim()).filter(Boolean));
-        }
-
-        if (items.length > 0) gearData[style][slotName].push(items);
-      });
-    });
-
-    // Fill missing slots with N/A
-    const ALL_SLOTS = [
-      'Helmet', 'Amulet', 'Cape', 'Body', 'Legs', 'Gloves',
-      'Boots', 'Ring', 'Ammo', 'Shield', 'Weapon', 'Special Attack'
-    ];
-    for (const slot of ALL_SLOTS) {
-      if (!gearData[style][slot]) gearData[style][slot] = [["N/A"]];
-    }
-  });
-
-  const fileName = `${bossName.replace(/\s+/g, '-').toLowerCase()}.json`;
-  const outputPath = path.join(outputFolder, fileName);
-
-  fs.writeFileSync(outputPath, JSON.stringify({
-    gear_setups: gearData,
-    extra_styles: []
-  }, null, 2));
-
-  console.log(`✅ Scraped ${bossName} → ${outputPath}`);
-}
-
 
 (async () => {
   for (const [bossName, url] of Object.entries(simpleUrls)) {
     await fetchGearFromWiki(bossName, url);
-  }
-
-  for (const [bossName, url] of Object.entries(complexUrls)) {
-    const scraper = complexScrapers[bossName];
-    if (typeof scraper !== 'function') {
-      console.warn(`⚠️ No scraper defined for ${bossName}, skipping.`);
-      continue;
-    }
-
-    await scraper(bossName, url);
   }
 })();

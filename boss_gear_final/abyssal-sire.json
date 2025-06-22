@@ -16,9 +16,39 @@
         ],
         [
           "N/A"
+        ],
+        [
+          "Slayer helmet (i)"
+        ],
+        [
+          "Black mask (i)"
+        ],
+        [
+          "N/A"
+        ],
+        [
+          "N/A"
+        ],
+        [
+          "N/A"
         ]
       ],
       "Amulet": [
+        [
+          "Necklace of anguish"
+        ],
+        [
+          "Amulet of fury"
+        ],
+        [
+          "Amulet of glory"
+        ],
+        [
+          "N/A"
+        ],
+        [
+          "N/A"
+        ],
         [
           "Necklace of anguish"
         ],
@@ -44,6 +74,22 @@
           "Ava's attractor"
         ],
         [
+          "N/A"
+        ],
+        [
+          "N/A"
+        ],
+        [
+          "N/A"
+        ],
+        [
+          "Dizana's quiver"
+        ],
+        [
+          "Ava's assembler",
+          "Ava's attractor"
+        ],
+        [
           "Max cape"
         ],
         [
@@ -55,6 +101,22 @@
         ]
       ],
       "Body": [
+        [
+          "Masori body (f)"
+        ],
+        [
+          "Crystal body"
+        ],
+        [
+          "Any Blessed body",
+          "Black d'hide body"
+        ],
+        [
+          "N/A"
+        ],
+        [
+          "N/A"
+        ],
         [
           "Masori body (f)"
         ],
@@ -76,6 +138,22 @@
           "Masori chaps (f)"
         ],
         [
+          "Crystal legs"
+        ],
+        [
+          "Any Blessed chaps",
+          "Black d'hide chaps"
+        ],
+        [
+          "N/A"
+        ],
+        [
+          "N/A"
+        ],
+        [
+          "Masori chaps (f)"
+        ],
+        [
           "Armadyl chainskirt"
         ],
         [
@@ -89,6 +167,22 @@
         ]
       ],
       "Weapon": [
+        [
+          "Scorching bow"
+        ],
+        [
+          "Bow of Faerdhinen"
+        ],
+        [
+          "Toxic blowpipe"
+        ],
+        [
+          "Webweaver bow",
+          "Craw's bow"
+        ],
+        [
+          "Crystal bow"
+        ],
         [
           "Scorching bow"
         ],
@@ -113,6 +207,21 @@
           "Amethyst arrows"
         ],
         [
+          "N/A"
+        ],
+        [
+          "N/A"
+        ],
+        [
+          "N/A"
+        ],
+        [
+          "Dragon arrows"
+        ],
+        [
+          "Amethyst arrows"
+        ],
+        [
           "Rune arrows"
         ],
         [
@@ -123,6 +232,22 @@
         ]
       ],
       "Gloves": [
+        [
+          "Zaryte vambraces"
+        ],
+        [
+          "Barrows gloves"
+        ],
+        [
+          "Any Blessed vambraces",
+          "Black d'hide vambraces"
+        ],
+        [
+          "N/A"
+        ],
+        [
+          "N/A"
+        ],
         [
           "Zaryte vambraces"
         ],
@@ -1140,6 +1265,7 @@
   },
   "unmatched_items": [
     "Crystal armour",
-    "Dragon darts"
+    "Dragon darts",
+    "amethyst darts"
   ]
 }
