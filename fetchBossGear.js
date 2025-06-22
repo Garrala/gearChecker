@@ -208,8 +208,8 @@ async function fetchGearFromWiki(bossName, url) {
   for (const [bossName, url] of Object.entries(complexUrls)) {
     console.log(`⚠️ Skipping complex boss for now: ${bossName}`);
     // Optionally write an empty stub so your final merge doesn’t break
-    const stubPath = path.join(outputFolder, `${bossName.replace(/\s+/g, '-').toLowerCase()}.json`);
-    fs.writeFileSync(stubPath, JSON.stringify({ gear_setups: {}, unmatched_items: [] }, null, 2));
+    //const stubPath = path.join(outputFolder, `${bossName.replace(/\s+/g, '-').toLowerCase()}.json`);
+    //fs.writeFileSync(stubPath, JSON.stringify({ gear_setups: {}, unmatched_items: [] }, null, 2));
   }
 })();
 
