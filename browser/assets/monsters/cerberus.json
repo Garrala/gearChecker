@@ -45,7 +45,7 @@
   "gear_setups": {
     "Melee": {
       "Weapon": [
-        [ "Scythe of vitur", "Emberlight" ],
+        [ "Scythe of Vitur", "Emberlight" ],
         [ "Soulreaper axe", "Inquisitor's mace" ],
         [ "Osmumten's fang" ],
         [ "Arclight", "Abyssal bludgeon" ],
@@ -125,7 +125,7 @@
       "Weapon": [
         [ "Twisted bow" ],
         [ "Scorching bow", "Toxic blowpipe" ],
-        [ "Bow of faerdhinen" ],
+        [ "Bow of Faerdhinen" ],
         [ "Zaryte crossbow" ]
       ],
       "Special Attack": [

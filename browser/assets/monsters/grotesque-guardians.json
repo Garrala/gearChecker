@@ -73,11 +73,11 @@
   "gear_setups": {
     "Melee": {
       "Weapon": [
-        [ "Scythe of vitur" ],
+        [ "Scythe of Vitur" ],
         [
           "Soulreaper axe",
           "Ghrazi rapier",
-          "Blade of saeldor",
+          "Blade of Saeldor",
           "Inquisitor's mace"
         ],
         [ "Noxious halberd", "Abyssal tentacle" ],
@@ -166,7 +166,7 @@
       "Weapon": [
         [ "Venator bow", "Toxic blowpipe" ],
         [ "Eclipse atlatl" ],
-        [ "Bow of faerdhinen" ],
+        [ "Bow of Faerdhinen" ],
         [ "Hunters' sunlight crossbow" ],
         [ "Magic shortbow (i)" ]
       ],

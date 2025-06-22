@@ -151,7 +151,7 @@
     "Phase 1 Ranged": {
       "Weapon": [
         ["Scorching bow"],
-        ["Bow of faerdhinen"],
+        ["Bow of Faerdhinen"],
         ["Toxic blowpipe"],
         ["Webweaver bow", "Craw's bow"],
         ["Crystal bow"]
@@ -324,7 +324,7 @@
     "Phase 2 Melee - Defense reduction": {
       "Weapon": [
         ["Emberlight"],
-        ["Scythe of vitur"],
+        ["Scythe of Vitur"],
         ["Arclight"],
         ["Ghrazi rapier"],
         ["Zamorakian hasta"]
@@ -419,7 +419,7 @@
         ["Scorching bow"],
         ["Twisted bow"],
         ["Toxic blowpipe"],
-        ["Bow of faerdhinen"],
+        ["Bow of Faerdhinen"],
         ["Toxic blowpipe"]
       ],
       "Special Attack": [

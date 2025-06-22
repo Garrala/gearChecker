@@ -147,7 +147,7 @@
       "Weapon": [
         [ "Twisted bow" ],
         [ "Toxic blowpipe", "Dragon hunter crossbow" ],
-        [ "Bow of faerdhinen" ],
+        [ "Bow of Faerdhinen" ],
         [ "Eclipse atlatl" ]
       ],
       "Shield": [
@@ -219,9 +219,9 @@
     },
     "Melee": {
       "Weapon": [
-        [ "Scythe of vitur", "Dragon hunter lance" ],
+        [ "Scythe of Vitur", "Dragon hunter lance" ],
         [ "Osmumten's fang", "Ghrazi rapier" ],
-        [ "Blade of saeldor", "Inquisitor's mace" ],
+        [ "Blade of Saeldor", "Inquisitor's mace" ],
         [ "Abyssal dagger", "Noxious halberd", "Zamorakian hasta" ],
         [ "Dragon sword", "Dual macuahuitl" ]
       ],

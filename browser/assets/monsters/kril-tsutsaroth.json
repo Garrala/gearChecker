@@ -41,7 +41,7 @@
       "Weapon": [
         [ "Scorching bow" ],
         [ "Twisted bow" ],
-        [ "Bow of faerdhinen" ]
+        [ "Bow of Faerdhinen" ]
       ],
       "Special Attack": [
         [ "Scorching bow" ],
@@ -106,7 +106,7 @@
     "Solo Ranged (No Scorching Bow)": {
       "Weapon": [
         [ "Twisted bow" ],
-        [ "Bow of faerdhinen" ],
+        [ "Bow of Faerdhinen" ],
         [ "Venator bow" ]
       ],
       "Special Attack": [
@@ -236,7 +236,7 @@
       "Weapon": [
         [ "Scorching bow" ],
         [ "Twisted bow" ],
-        [ "Bow of faerdhinen" ]
+        [ "Bow of Faerdhinen" ]
       ],
       "Special Attack": [
         [ "Toxic blowpipe" ]
@@ -377,7 +377,7 @@
         [ "Arclight" ],
         [ "Zamorakian hasta" ],
         [ "Ghrazi rapier" ],
-        [ "Scythe of vitur" ],
+        [ "Scythe of Vitur" ],
         [ "Abyssal tentacle" ]
       ],
       "Shield": [
