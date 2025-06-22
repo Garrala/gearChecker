@@ -1,0 +1,70 @@
+{
+  "Abyssal Sire": [
+    "Ranged",
+    "Magic",
+    "Melee",
+    "Melee - No defence reduction",
+    "Melee - Defence reduction",
+    "Magic - Tumeken's Shadow",
+    "Ranged"
+  ],
+  "Chaos Fanatic": [
+    "Ranged"
+  ],
+  "Commander Zilyana": [
+    "Magic",
+    "Ranged"
+  ],
+  "Crazy Archaeologist": [
+    "Magic"
+  ],
+  "Deranged Archaeologist": [
+    "Magic"
+  ],
+  "Duke Sucellus": [
+    "Melee"
+  ],
+  "General Graardor": [
+    "Melee Tank",
+    "Ranged Tank",
+    "Melee Attacker",
+    "Ranged Attacker",
+    "Solo (Melee)",
+    "Solo (Magic)",
+    "Ranged (6:0)",
+    "Ranged (7:0)"
+  ],
+  "Kalphite Queen": [
+    "High DPS Phase 1 (Melee)",
+    "High DPS Phase 2 (Ranged)",
+    "Max Mage (0 switches)",
+    "Verac's",
+    "Flinching",
+    "Mid-game Players Phase 1 (Melee)",
+    "Mid-game Players Phase 2 (Ranged)",
+    "Pre-diary Method"
+  ],
+  "King Black Dragon": [
+    "Melee",
+    "Melee Suicide method",
+    "Twisted Bow / BOWFA",
+    "Crossbow & shield",
+    "Suicide method"
+  ],
+  "Giant Mole": [
+    "Ranged",
+    "Magic",
+    "Melee",
+    "Melee (Dharok's)",
+    "Melee (Budget)"
+  ],
+  "Hespori": [
+    "Entry level",
+    "Best-in-slot",
+    "Mage"
+  ],
+  "Vorkath": [
+    "Ranged",
+    "Melee"
+  ]
+}

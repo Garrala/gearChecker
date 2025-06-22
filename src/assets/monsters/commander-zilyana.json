@@ -40,18 +40,6 @@
   ],
   "gear_setups": {
     "Magic": {
-      "Weapon": [
-        [ "Tumeken's shadow" ],
-        [ "N/A" ]
-      ],
-      "Shield": [
-        [ "Elidinis' ward (f)" ],
-        [ "N/A" ]
-      ],
-      "Special Attack": [
-        [ "Eldritch nightmare staff" ],
-        [ "Accursed sceptre" ]
-      ],
       "Helmet": [
         [ "Ancestral hat" ],
         [ "Virtus mask" ]
@@ -72,6 +60,18 @@
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ]
       ],
+      "Weapon": [
+        [ "Tumeken's shadow" ],
+        [ "N/A" ]
+      ],
+      "Shield": [
+        [ "Elidinis' ward (f)" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Unholy blessing" ],
+        [ "N/A" ]
+      ],
       "Gloves": [
         [ "Tormented bracelet" ],
         [ "N/A" ]
@@ -84,33 +84,12 @@
         [ "Magus ring" ],
         [ "Lightbearer" ]
       ],
-      "Ammo": [
-        [ "Unholy blessing" ],
-        [ "N/A" ]
+      "Special Attack": [
+        [ "Eldritch nightmare staff" ],
+        [ "Accursed sceptre" ]
       ]
     },
     "Ranged": {
-      "Weapon": [
-        [ "Twisted bow" ],
-        [ "Bow of Faerdhinen" ],
-        [ "Zaryte crossbow" ],
-        [ "Hunters' sunlight crossbow" ],
-        [ "Armadyl crossbow", "Dragon hunter crossbow", "Dragon crossbow", "Rune crossbow" ]
-      ],
-      "Shield": [
-        [ "Twisted buckler" ],
-        [ "Dragonfire ward" ],
-        [ "Odium ward" ],
-        [ "Crystal shield" ],
-        [ "N/A" ]
-      ],
-      "Special Attack": [
-        [ "Toxic blowpipe" ],
-        [ "Zaryte crossbow" ],
-        [ "Armadyl crossbow", "Tonalztics of ralos" ],
-        [ "Dragon crossbow", "Dragon thrownaxe" ],
-        [ "N/A" ]
-      ],
       "Helmet": [
         [ "Masori mask (f)", "Slayer helmet (i)" ],
         [ "Crystal helm" ],
@@ -146,6 +125,27 @@
         [ "Karil's leatherskirt" ],
         [ "Black d'hide chaps" ]
       ],
+      "Weapon": [
+        [ "Twisted bow" ],
+        [ "Bow of Faerdhinen" ],
+        [ "Zaryte crossbow" ],
+        [ "Hunters' sunlight crossbow" ],
+        [ "Armadyl crossbow", "Dragon hunter crossbow", "Dragon crossbow", "Rune crossbow" ]
+      ],
+      "Shield": [
+        [ "Twisted buckler" ],
+        [ "Dragonfire ward" ],
+        [ "Odium ward" ],
+        [ "Crystal shield" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Dragon arrows", "Diamond dragon bolts (e)", "Moonlight antler bolts", "Any God blessing" ],
+        [ "Amethyst arrows", "Diamond bolts (e)", "Sunlight antler bolts" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
@@ -167,11 +167,11 @@
         [ "Ring of the gods (i)" ],
         [ "Explorer's ring 4" ]
       ],
-      "Ammo": [
-        [ "Dragon arrows", "Diamond dragon bolts (e)", "Moonlight antler bolts", "Any God blessing" ],
-        [ "Amethyst arrows", "Diamond bolts (e)", "Sunlight antler bolts" ],
-        [ "N/A" ],
-        [ "N/A" ],
+      "Special Attack": [
+        [ "Toxic blowpipe" ],
+        [ "Zaryte crossbow" ],
+        [ "Armadyl crossbow", "Tonalztics of ralos" ],
+        [ "Dragon crossbow", "Dragon thrownaxe" ],
         [ "N/A" ]
       ]
     }

@@ -41,23 +41,9 @@
   ],
   "gear_setups": {
     "Melee": {
-      "Weapon": [
-        [ "Scythe of Vitur" ],
-        [ "Emberlight", "Soulreaper axe" ],
-        [ "Noxious halberd", "Arclight" ],
-        [ "Zombie axe" ],
-        [ "Blade of Saeldor" ]
-      ],
-      "Special Attack": [
-        [ "Bandos godsword" ],
-        [ "Voidwaker" ],
-        [ "Dragon claws", "Burning claws" ],
-        [ "Crystal halberd", "Saradomin godsword" ],
-        [ "Abyssal dagger", "Dragon dagger" ]
-      ],
       "Helmet": [
-        [ "Slayer helmet (i)", "Serpentine helm", "Torva full helm" ],
-        [ "Neitiznot faceguard" ],
+        [ "Slayer helmet (i)", "Oathplate helm", "Serpentine helm" ],
+        [ "Torva full helm", "Neitiznot faceguard" ],
         [ "Void melee helm" ],
         [ "Blood moon helm" ],
         [ "Helm of neitiznot" ]
@@ -90,10 +76,24 @@
         [ "Elite void robe", "Void knight robe" ],
         [ "Obsidian platelegs" ]
       ],
+      "Weapon": [
+        [ "Scythe of Vitur" ],
+        [ "Emberlight", "Soulreaper axe" ],
+        [ "Noxious halberd", "Arclight" ],
+        [ "Zombie axe" ],
+        [ "Blade of Saeldor" ]
+      ],
       "Shield": [
         [ "Avernic defender" ],
         [ "Dragon defender" ],
         [ "Dragonfire shield" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4", "Ghommal's lucky penny" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -118,12 +118,12 @@
         [ "Ring of suffering (i)" ],
         [ "Ring of shadows" ]
       ],
-      "Ammo": [
-        [ "Rada's blessing 4", "Ghommal's lucky penny" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+      "Special Attack": [
+        [ "Bandos godsword" ],
+        [ "Voidwaker" ],
+        [ "Dragon claws", "Burning claws" ],
+        [ "Crystal halberd", "Saradomin godsword" ],
+        [ "Abyssal dagger", "Dragon dagger" ]
       ]
     }
   }

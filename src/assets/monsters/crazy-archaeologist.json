@@ -40,20 +40,6 @@
   ],
   "gear_setups": {
     "Magic": {
-      "Weapon": [
-        [ "Accursed sceptre", "Thammaron's sceptre" ],
-        [ "Sanguinesti staff" ],
-        [ "Trident of the swamp" ],
-        [ "Trident of the seas" ],
-        [ "Warped sceptre", "Iban's staff (u)" ]
-      ],
-      "Shield": [
-        [ "Elidinis' ward (f)", "Elidinis' ward" ],
-        [ "Book of darkness" ],
-        [ "Unholy book" ],
-        [ "Tome of fire" ],
-        [ "Broodoo shield" ]
-      ],
       "Helmet": [
         [ "Slayer helmet (i)" ],
         [ "Bloodbark helm" ],
@@ -69,7 +55,7 @@
         [ "Amulet of power" ]
       ],
       "Cape": [
-        [ "Any Imbued Any God cape" ],
+        [ "Any Imbued God cape" ],
         [ "Any God cape" ],
         [ "Ardougne cloak 4" ],
         [ "Ardougne cloak 3" ],
@@ -89,29 +75,55 @@
         [ "Zamorak monk bottom" ],
         [ "Monk's robe" ]
       ],
+      "Weapon": [
+        [ "Accursed sceptre", "Thammaron's sceptre" ],
+        [ "Sanguinesti staff" ],
+        [ "Trident of the swamp" ],
+        [ "Trident of the seas" ],
+        [ "Warped sceptre", "Iban's staff (u)" ]
+      ],
+      "Shield": [
+        [ "Elidinis' ward (f)", "Elidinis' ward" ],
+        [ "Book of darkness" ],
+        [ "Unholy book" ],
+        [ "Tome of fire" ],
+        [ "Broodoo shield" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
       "Gloves": [
         [ "Tormented bracelet" ],
         [ "Barrows gloves" ],
         [ "Dragon gloves" ],
-        [ "Rune gloves" ]
+        [ "Rune gloves" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Mystic boots" ],
         [ "Ghostly boots" ],
         [ "Splitbark boots" ],
-        [ "Moonclan boots" ]
+        [ "Moonclan boots" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Ring of shadows" ],
         [ "Explorer's ring 4" ],
         [ "Beacon ring" ],
-        [ "Ring of wealth (i)" ]
+        [ "Ring of wealth (i)" ],
+        [ "N/A" ]
       ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3/2", "Any God blessing" ]
-      ],
-      "Special Attack": [ "N/A" ]
+      "Special Attack": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
     }
   }
 }

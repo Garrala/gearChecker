@@ -1,212 +1,215 @@
 {
-  "Magic": {
-    "Helmet": [
-      [
-        "Ancestral hat"
+  "gear_setups": {
+    "Magic": {
+      "Helmet": [
+        [
+          "Ancestral hat"
+        ],
+        [
+          "Virtus mask"
+        ],
+        [
+          "Mitre"
+        ],
+        [
+          "Helm of neitiznot"
+        ],
+        [
+          "Farseer helm"
+        ]
       ],
-      [
-        "Virtus mask"
+      "Amulet": [
+        [
+          "Occult necklace"
+        ],
+        [
+          "Dragonbone necklace",
+          "Bonecrusher necklace"
+        ],
+        [
+          "Amulet of fury"
+        ],
+        [
+          "Amulet of glory"
+        ],
+        [
+          "N",
+          "A"
+        ]
       ],
-      [
-        "Mitre"
+      "Cape": [
+        [
+          "Imbued god cape"
+        ],
+        [
+          "Soul cape"
+        ],
+        [
+          "Ardougne cloak"
+        ],
+        [
+          "Cape of Accomplishment(t)"
+        ],
+        [
+          "N",
+          "A"
+        ]
       ],
-      [
-        "Helm of neitiznot"
+      "Body": [
+        [
+          "Ancestral robe top"
+        ],
+        [
+          "Virtus robe top"
+        ],
+        [
+          "Zealot's robe top"
+        ],
+        [
+          "Vestment robe top"
+        ],
+        [
+          "Monk's robe top"
+        ]
       ],
-      [
-        "Farseer helm"
+      "Legs": [
+        [
+          "Ancestral robe bottom"
+        ],
+        [
+          "Virtus robe bottom"
+        ],
+        [
+          "Zealot's robe bottom"
+        ],
+        [
+          "Vestment robe legs"
+        ],
+        [
+          "Monk's robe"
+        ]
+      ],
+      "Weapon": [
+        [
+          "Tumeken's shadow"
+        ],
+        [
+          "Harmonised nightmare staff"
+        ],
+        [
+          "Sanguinesti staff",
+          "Trident of the swamp",
+          "Trident of the seas"
+        ],
+        [
+          "Warped sceptre"
+        ],
+        [
+          "Iban's staff"
+        ]
+      ],
+      "Shield": [
+        [
+          "Tome of fire",
+          "[strat 1]",
+          "Elidinis' ward(f)"
+        ],
+        [
+          "Elidinis' ward"
+        ],
+        [
+          "Arcane spirit shield"
+        ],
+        [
+          "Malediction ward"
+        ],
+        [
+          "Book of darkness"
+        ]
+      ],
+      "Ammo": [
+        [
+          "Rada's blessing 4"
+        ],
+        [
+          "God blessing",
+          "Rada's blessing 3",
+          "Rada's blessing 2"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Gloves": [
+        [
+          "Tormented bracelet"
+        ],
+        [
+          "Holy wraps"
+        ],
+        [
+          "Barrows gloves"
+        ],
+        [
+          "Dragon gloves",
+          "Rune gloves"
+        ],
+        [
+          "Adamant gloves",
+          "Bloodbark gauntlets",
+          "Combat bracelet"
+        ]
+      ],
+      "Boots": [
+        [
+          "Devout boots"
+        ],
+        [
+          "Holy sandals"
+        ],
+        [
+          "Eternal boots"
+        ],
+        [
+          "Aranea boots"
+        ],
+        [
+          "Infinity boots"
+        ]
+      ],
+      "Ring": [
+        [
+          "Magus ring"
+        ],
+        [
+          "Ring of the gods(i)"
+        ],
+        [
+          "Ring of suffering(i)"
+        ],
+        [
+          "Brimstone ring"
+        ],
+        [
+          "Explorer's ring 4",
+          "[1]"
+        ]
+      ],
+      "Special Attack": [
+        [
+          "N/A"
+        ]
       ]
-    ],
-    "Amulet": [
-      [
-        "Occult necklace"
-      ],
-      [
-        "Dragonbone necklace",
-        "Bonecrusher necklace"
-      ],
-      [
-        "Amulet of fury"
-      ],
-      [
-        "Amulet of glory"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Cape": [
-      [
-        "Imbued god cape"
-      ],
-      [
-        "Soul cape"
-      ],
-      [
-        "Ardougne cloak"
-      ],
-      [
-        "Cape of Accomplishment(t)"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Body": [
-      [
-        "Ancestral robe top"
-      ],
-      [
-        "Virtus robe top"
-      ],
-      [
-        "Zealot's robe top"
-      ],
-      [
-        "Vestment robe top"
-      ],
-      [
-        "Monk's robe top"
-      ]
-    ],
-    "Legs": [
-      [
-        "Ancestral robe bottom"
-      ],
-      [
-        "Virtus robe bottom"
-      ],
-      [
-        "Zealot's robe bottom"
-      ],
-      [
-        "Vestment robe legs"
-      ],
-      [
-        "Monk's robe"
-      ]
-    ],
-    "Weapon": [
-      [
-        "Tumeken's shadow"
-      ],
-      [
-        "Harmonised nightmare staff"
-      ],
-      [
-        "Sanguinesti staff",
-        "Trident of the swamp",
-        "Trident of the seas"
-      ],
-      [
-        "Warped sceptre"
-      ],
-      [
-        "Iban's staff"
-      ]
-    ],
-    "Shield": [
-      [
-        "Tome of fire",
-        "[strat 1]",
-        "Elidinis' ward(f)"
-      ],
-      [
-        "Elidinis' ward"
-      ],
-      [
-        "Arcane spirit shield"
-      ],
-      [
-        "Malediction ward"
-      ],
-      [
-        "Book of darkness"
-      ]
-    ],
-    "Ammo": [
-      [
-        "Rada's blessing 4"
-      ],
-      [
-        "God blessing",
-        "Rada's blessing 3",
-        "Rada's blessing 2"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Gloves": [
-      [
-        "Tormented bracelet"
-      ],
-      [
-        "Holy wraps"
-      ],
-      [
-        "Barrows gloves"
-      ],
-      [
-        "Dragon gloves",
-        "Rune gloves"
-      ],
-      [
-        "Adamant gloves",
-        "Bloodbark gauntlets",
-        "Combat bracelet"
-      ]
-    ],
-    "Boots": [
-      [
-        "Devout boots"
-      ],
-      [
-        "Holy sandals"
-      ],
-      [
-        "Eternal boots"
-      ],
-      [
-        "Aranea boots"
-      ],
-      [
-        "Infinity boots"
-      ]
-    ],
-    "Ring": [
-      [
-        "Magus ring"
-      ],
-      [
-        "Ring of the gods(i)"
-      ],
-      [
-        "Ring of suffering(i)"
-      ],
-      [
-        "Brimstone ring"
-      ],
-      [
-        "Explorer's ring 4",
-        "[1]"
-      ]
-    ],
-    "Special Attack": [
-      [
-        "N/A"
-      ]
-    ]
-  }
+    }
+  },
+  "extra_styles": []
 }

@@ -1,220 +1,223 @@
 {
-  "Ranged": {
-    "Helmet": [
-      [
-        "Slayer helmet(i)",
-        "Black mask(i)"
+  "gear_setups": {
+    "Ranged": {
+      "Helmet": [
+        [
+          "Slayer helmet(i)",
+          "Black mask(i)"
+        ],
+        [
+          "Blessed coif"
+        ],
+        [
+          "Karil's coif"
+        ],
+        [
+          "Snakeskin bandana"
+        ],
+        [
+          "Coif"
+        ]
       ],
-      [
-        "Blessed coif"
+      "Amulet": [
+        [
+          "Necklace of anguish"
+        ],
+        [
+          "Amulet of fury"
+        ],
+        [
+          "Amulet of glory"
+        ],
+        [
+          "Amulet of power"
+        ],
+        [
+          "N",
+          "A"
+        ]
       ],
-      [
-        "Karil's coif"
+      "Cape": [
+        [
+          "Dizana's quiver"
+        ],
+        [
+          "Ava's assembler"
+        ],
+        [
+          "Ava's accumulator",
+          "Mixed hide cape"
+        ],
+        [
+          "Ranging cape"
+        ],
+        [
+          "N",
+          "A"
+        ]
       ],
-      [
-        "Snakeskin bandana"
+      "Body": [
+        [
+          "Masori body(f)"
+        ],
+        [
+          "Crystal body"
+        ],
+        [
+          "Blessed d'hide body"
+        ],
+        [
+          "Black d'hide body"
+        ],
+        [
+          "N",
+          "A"
+        ]
       ],
-      [
-        "Coif"
+      "Legs": [
+        [
+          "Masori chaps(f)"
+        ],
+        [
+          "Crystal legs"
+        ],
+        [
+          "Blessed d'hide chaps"
+        ],
+        [
+          "Black d'hide chaps"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Weapon": [
+        [
+          "Webweaver bow",
+          "Craw's bow"
+        ],
+        [
+          "Twisted bow"
+        ],
+        [
+          "Bow of faerdhinen"
+        ],
+        [
+          "Toxic blowpipe",
+          "Hunters' sunlight crossbow"
+        ],
+        [
+          "Dragon crossbow",
+          "Rune crossbow"
+        ]
+      ],
+      "Shield": [
+        [
+          "Webweaver",
+          "Craw's bow",
+          "Toxic blowpipe",
+          "Twisted bow"
+        ],
+        [
+          "Book of law"
+        ],
+        [
+          "Unholy book"
+        ],
+        [
+          "Black d'hide shield"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Ammo": [
+        [
+          "Rada's Blessing",
+          "Webweaver",
+          "Craw's bow",
+          "Toxic blowpipe",
+          "Crystal bow"
+        ],
+        [
+          "Dragon arrow",
+          "Amethyst arrow",
+          "Rune arrow"
+        ],
+        [
+          "Moonlight antler bolts"
+        ],
+        [
+          "Diamond dragon bolts(e)"
+        ],
+        [
+          "Diamond bolts(e)"
+        ]
+      ],
+      "Gloves": [
+        [
+          "Barrows gloves"
+        ],
+        [
+          "Blessed vambraces"
+        ],
+        [
+          "Black d'hide vambraces"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Boots": [
+        [
+          "Blessed boots"
+        ],
+        [
+          "Mixed hide boots"
+        ],
+        [
+          "Shayzien boots(5)"
+        ],
+        [
+          "Snakeskin boots"
+        ],
+        [
+          "Bloodbark boots"
+        ]
+      ],
+      "Ring": [
+        [
+          "Ring of shadows"
+        ],
+        [
+          "Explorer's ring 4"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Special Attack": [
+        [
+          "N/A"
+        ]
       ]
-    ],
-    "Amulet": [
-      [
-        "Necklace of anguish"
-      ],
-      [
-        "Amulet of fury"
-      ],
-      [
-        "Amulet of glory"
-      ],
-      [
-        "Amulet of power"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Cape": [
-      [
-        "Dizana's quiver"
-      ],
-      [
-        "Ava's assembler"
-      ],
-      [
-        "Ava's accumulator",
-        "Mixed hide cape"
-      ],
-      [
-        "Ranging cape"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Body": [
-      [
-        "Masori body(f)"
-      ],
-      [
-        "Crystal body"
-      ],
-      [
-        "Blessed d'hide body"
-      ],
-      [
-        "Black d'hide body"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Legs": [
-      [
-        "Masori chaps(f)"
-      ],
-      [
-        "Crystal legs"
-      ],
-      [
-        "Blessed d'hide chaps"
-      ],
-      [
-        "Black d'hide chaps"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Weapon": [
-      [
-        "Webweaver bow",
-        "Craw's bow"
-      ],
-      [
-        "Twisted bow"
-      ],
-      [
-        "Bow of faerdhinen"
-      ],
-      [
-        "Toxic blowpipe",
-        "Hunters' sunlight crossbow"
-      ],
-      [
-        "Dragon crossbow",
-        "Rune crossbow"
-      ]
-    ],
-    "Shield": [
-      [
-        "Webweaver",
-        "Craw's bow",
-        "Toxic blowpipe",
-        "Twisted bow"
-      ],
-      [
-        "Book of law"
-      ],
-      [
-        "Unholy book"
-      ],
-      [
-        "Black d'hide shield"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Ammo": [
-      [
-        "Rada's Blessing",
-        "Webweaver",
-        "Craw's bow",
-        "Toxic blowpipe",
-        "Crystal bow"
-      ],
-      [
-        "Dragon arrow",
-        "Amethyst arrow",
-        "Rune arrow"
-      ],
-      [
-        "Moonlight antler bolts"
-      ],
-      [
-        "Diamond dragon bolts(e)"
-      ],
-      [
-        "Diamond bolts(e)"
-      ]
-    ],
-    "Gloves": [
-      [
-        "Barrows gloves"
-      ],
-      [
-        "Blessed vambraces"
-      ],
-      [
-        "Black d'hide vambraces"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Boots": [
-      [
-        "Blessed boots"
-      ],
-      [
-        "Mixed hide boots"
-      ],
-      [
-        "Shayzien boots(5)"
-      ],
-      [
-        "Snakeskin boots"
-      ],
-      [
-        "Bloodbark boots"
-      ]
-    ],
-    "Ring": [
-      [
-        "Ring of shadows"
-      ],
-      [
-        "Explorer's ring 4"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Special Attack": [
-      [
-        "N/A"
-      ]
-    ]
-  }
+    }
+  },
+  "extra_styles": []
 }

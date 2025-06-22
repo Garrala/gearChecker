@@ -43,156 +43,251 @@
     }
   ],
   "gear_setups": {
-    "Entry Level": {
-      "Weapon": [
-        [ "Dragon scimitar" ],
-        [ "Zombie axe" ]
+    "Entry level": {
+      "Helmet": [
+        [ "Helm of neitiznot" ],
+        [ "Berserker helm" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
-      "Shield": [
-        [ "Dragon defender" ],
-        [ "Rune defender" ]
-      ],
-      "Special Attack": [
-        [ "Dragon dagger" ],
-        [ "Crystal halberd" ]
-      ],
-      "Helmet": [ [ "Helm of neitiznot" ] ],
       "Amulet": [
+        [ "Amulet of fury" ],
         [ "Amulet of strength" ],
-        [ "Amulet of fury" ]
+        [ "Amulet of glory" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Fire cape" ],
-        [ "Mixed hide cape" ]
+        [ "Mixed hide cape" ],
+        [ "Ardougne cloak 4", "Ardougne cloak 3" ],
+        [ "N/A" ]
       ],
       "Body": [
-        [ "Any Barrows tank body", "Fighter torso", "Bandos chestplate" ],
-        [ "Black d'hide body" ]
+        [ "Any Barrows tank body" ],
+        [ "Black d'hide body" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Legs": [
-        [ "Blood moon tassets", "Bandos tassets" ],
+        [ "Blood moon tassets" ],
         [ "Any Barrows tank legs" ],
-        [ "Black d'hide chaps" ]
+        [ "Black d'hide chaps" ],
+        [ "N/A" ]
       ],
-      "Gloves": [ [ "Barrows gloves" ] ],
+      "Weapon": [
+        [ "Dragon scimitar" ],
+        [ "Zombie axe" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Shield": [
+        [ "Dragon defender" ],
+        [ "Rune defender" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Gloves": [
+        [ "Barrows gloves" ],
+        [ "Combat bracelet" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
       "Boots": [
         [ "Dragon boots" ],
-        [ "Mixed hide boots" ]
+        [ "Mixed hide boots" ],
+        [ "Climbing boots" ],
+        [ "N/A" ]
       ],
-      "Ring": [ [ "Berserker ring (i)" ] ],
-      "Ammo": [ [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ] ]
+      "Ring": [
+        [ "Berserker ring (i)" ],
+        [ "Ring of recoil" ],
+        [ "Warrior ring (i)" ],
+        [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
+      ],
+      "Special Attack": [
+        [ "Dragon dagger" ],
+        [ "Crystal halberd" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
     },
-    "Best-in-Slot": {
+    "Best-in-slot": {
+      "Helmet": [
+        [ "Torva full helm", "Oathplate helm" ],
+        [ "Neitiznot faceguard" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Amulet": [
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Cape": [
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Body": [
+        [ "Oathplate chest", "Torva platebody" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Legs": [
+        [ "Oathplate legs", "Torva platelegs" ],
+        [ "Blood moon tassets" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
       "Weapon": [
         [ "Scythe of Vitur" ],
-        [ "Soulreaper axe" ],
         [ "Blade of Saeldor" ],
-        [ "Noxious halberd", "Abyssal tentacle" ],
+        [ "Abyssal tentacle", "Noxious halberd" ],
+        [ "Soulreaper axe" ],
         [ "Abyssal whip" ]
       ],
       "Shield": [
         [ "Avernic defender" ],
-        [ "Dragon defender" ]
+        [ "Dragon defender" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Gloves": [
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Boots": [
+        [ "Primordial boots" ],
+        [ "Dragon boots" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ring": [
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Dragon claws" ],
         [ "Burning claws" ],
         [ "Dragon dagger" ],
-        [ "Voidwaker" ]
-      ],
-      "Helmet": [
-        [ "Torva full helm" ],
-        [ "Neitiznot faceguard" ]
-      ],
-      "Amulet": [
-        [ "Amulet of rancour" ],
-        [ "Amulet of torture" ]
-      ],
-      "Cape": [
-        [ "Infernal cape" ],
-        [ "Fire cape" ]
-      ],
-      "Body": [
-        [ "Torva platebody" ],
-        [ "Blood moon chestplate", "Fighter torso", "Bandos chestplate" ]
-      ],
-      "Legs": [
-        [ "Torva platelegs" ],
-        [ "Blood moon tassets", "Bandos tassets" ]
-      ],
-      "Gloves": [
-        [ "Ferocious gloves" ],
-        [ "Barrows gloves" ]
-      ],
-      "Boots": [
-        [ "Primordial boots" ],
-        [ "Dragon boots" ]
-      ],
-      "Ring": [
-        [ "Ultor ring" ],
-        [ "Berserker ring (i)" ]
-      ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
+        [ "Voidwaker" ],
+        [ "Crystal halberd" ]
       ]
     },
-    "Best-in-Slot Mage": {
-      "Weapon": [
-        [ "Harmonised nightmare staff" ],
-        [ "Twinflame staff" ],
-        [ "Staff of the dead" ],
-        [ "Purging staff" ],
-        [ "Ancient sceptre" ]
-      ],
-      "Shield": [
-        [ "Tome of fire" ],
-        [ "Mage's book" ]
-      ],
+    "Mage": {
       "Helmet": [
         [ "Ancestral hat" ],
         [ "Virtus mask" ],
         [ "Ahrim's hood" ],
-        [ "Void mage helm" ]
+        [ "Void mage helm" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
-        [ "Amulet of fury" ]
+        [ "Amulet of fury" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
-        [ "Any Imbued Any God cape" ],
-        [ "Any God cape" ]
+        [ "Any Imbued God cape" ],
+        [ "Any God cape" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
         [ "Virtus robe top" ],
         [ "Ahrim's robetop" ],
-        [ "Elite void top" ]
+        [ "Elite void top" ],
+        [ "N/A" ]
       ],
       "Legs": [
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ],
-        [ "Ahrim’s robeskirt" ],
-        [ "Elite void robe" ]
+        [ "Ahrim's robeskirt" ],
+        [ "Elite void robe" ],
+        [ "N/A" ]
       ],
-      "Gloves": [
-        [ "Tormented bracelet" ],
-        [ "Void knight gloves" ]
+      "Weapon": [
+        [ "Harmonised nightmare staff", "Twinflame staff" ],
+        [ "Staff of the dead" ],
+        [ "Purging staff" ],
+        [ "Ancient sceptre" ],
+        [ "N/A" ]
       ],
-      "Boots": [
-        [ "Eternal boots" ],
-        [ "Infinity boots" ],
-        [ "Aranea boots" ]
-      ],
-      "Ring": [
-        [ "Magus ring" ],
-        [ "Seers ring (i)" ]
+      "Shield": [
+        [ "Tome of fire" ],
+        [ "Mage's book" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
+        [ "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
-      "Special Attack": [ [ "N/A" ] ]
+      "Gloves": [
+        [ "Tormented bracelet" ],
+        [ "Void knight gloves" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Boots": [
+        [ "Eternal boots" ],
+        [ "Infinity boots", "Aranea boots" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ring": [
+        [ "Magus ring" ],
+        [ "Seers ring (i)" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Special Attack": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
     }
   }
 }

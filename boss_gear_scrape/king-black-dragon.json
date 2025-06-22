@@ -1,1034 +1,1037 @@
 {
-  "4-item melee": {
-    "Helmet": [
-      [
-        "Slayer helmet",
-        "Helm of neitiznot"
+  "gear_setups": {
+    "Melee": {
+      "Helmet": [
+        [
+          "Slayer helmet",
+          "Helm of neitiznot"
+        ],
+        [
+          "Berserker helm"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
       ],
-      [
-        "Berserker helm"
+      "Amulet": [
+        [
+          "Amulet of rancour"
+        ],
+        [
+          "Amulet of torture"
+        ],
+        [
+          "Amulet of fury"
+        ],
+        [
+          "Amulet of glory"
+        ],
+        [
+          "Amulet of power"
+        ]
       ],
-      [
-        "N",
-        "A"
+      "Cape": [
+        [
+          "Infernal cape",
+          "Fire cape"
+        ],
+        [
+          "Ardougne cloak"
+        ],
+        [
+          "Mythical cape"
+        ],
+        [
+          "Cape of accomplishment"
+        ],
+        [
+          "N",
+          "A"
+        ]
       ],
-      [
-        "N",
-        "A"
+      "Body": [
+        [
+          "Mixed hide top"
+        ],
+        [
+          "Proselyte hauberk"
+        ],
+        [
+          "Initiate hauberk",
+          "Monk's robe top"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
       ],
-      [
-        "N",
-        "A"
+      "Legs": [
+        [
+          "Mixed hide legs"
+        ],
+        [
+          "Proselyte cuisse"
+        ],
+        [
+          "Initiate cuisse",
+          "Monk's robe"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Weapon": [
+        [
+          "Dragon hunter lance",
+          "Osmumten's fang"
+        ],
+        [
+          "Ghrazi rapier"
+        ],
+        [
+          "Noxious halberd"
+        ],
+        [
+          "Zamorakian hasta"
+        ],
+        [
+          "Abyssal dagger(p++)"
+        ]
+      ],
+      "Shield": [
+        [
+          "Dragonfire shield"
+        ],
+        [
+          "Anti-dragon shield"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Ammo": [
+        [
+          "Rada's blessing 4"
+        ],
+        [
+          "Rada's blessing 3",
+          "2",
+          "God blessing"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Gloves": [
+        [
+          "Barrows gloves"
+        ],
+        [
+          "Dragon gloves"
+        ],
+        [
+          "Rune gloves"
+        ],
+        [
+          "Adamant gloves"
+        ],
+        [
+          "Combat bracelet"
+        ]
+      ],
+      "Boots": [
+        [
+          "Dragon boots"
+        ],
+        [
+          "Rune boots",
+          "Climbing boots",
+          "Mixed hide boots"
+        ],
+        [
+          "Fremennik sea boots 4"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Ring": [
+        [
+          "Ultor ring"
+        ],
+        [
+          "Treasonous ring(i)"
+        ],
+        [
+          "Brimstone ring"
+        ],
+        [
+          "Berserker ring(i)"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Special Attack": [
+        [
+          "N/A"
+        ]
       ]
-    ],
-    "Amulet": [
-      [
-        "Amulet of rancour"
+    },
+    "Melee Suicide method": {
+      "Helmet": [
+        [
+          "Slayer helmet",
+          "task",
+          "Torva full helm"
+        ],
+        [
+          "Serpentine helm",
+          "Neitiznot faceguard"
+        ],
+        [
+          "Helm of neitiznot"
+        ],
+        [
+          "Berserker helm",
+          "Obsidian helmet"
+        ],
+        [
+          "N",
+          "A"
+        ]
       ],
-      [
-        "Amulet of torture"
+      "Amulet": [
+        [
+          "Amulet of rancour"
+        ],
+        [
+          "Amulet of torture"
+        ],
+        [
+          "Amulet of fury"
+        ],
+        [
+          "Amulet of glory"
+        ],
+        [
+          "Amulet of power"
+        ]
       ],
-      [
-        "Amulet of fury"
+      "Cape": [
+        [
+          "Infernal cape",
+          "Fire cape"
+        ],
+        [
+          "Ardougne cloak"
+        ],
+        [
+          "Mythical cape"
+        ],
+        [
+          "Cape of accomplishment"
+        ],
+        [
+          "N",
+          "A"
+        ]
       ],
-      [
-        "Amulet of glory"
+      "Body": [
+        [
+          "Torva platebody"
+        ],
+        [
+          "Bandos chestplate",
+          "Fighter torso",
+          "Blood moon chestplate"
+        ],
+        [
+          "Mixed hide top"
+        ],
+        [
+          "Proselyte hauberk"
+        ],
+        [
+          "Initiate hauberk",
+          "Monk's robe top"
+        ]
       ],
-      [
-        "Amulet of power"
+      "Legs": [
+        [
+          "Torva platelegs"
+        ],
+        [
+          "Bandos tassets",
+          "Blood moon tassets"
+        ],
+        [
+          "Mixed hide legs"
+        ],
+        [
+          "Proselyte cuisse",
+          "Proselyte tasset"
+        ],
+        [
+          "Initiate cuisse",
+          "Monk's robe"
+        ]
+      ],
+      "Weapon": [
+        [
+          "Dragon hunter lance"
+        ],
+        [
+          "Osmumten's fang"
+        ],
+        [
+          "Ghrazi rapier"
+        ],
+        [
+          "Zamorakian hasta"
+        ],
+        [
+          "Abyssal dagger(p++)"
+        ]
+      ],
+      "Shield": [
+        [
+          "Avernic defender",
+          "Dragonfire shield"
+        ],
+        [
+          "Dragon defender",
+          "Anti-dragon shield"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Ammo": [
+        [
+          "Rada's blessing 4"
+        ],
+        [
+          "Rada's blessing 3",
+          "2",
+          "God blessing"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Gloves": [
+        [
+          "Ferocious gloves"
+        ],
+        [
+          "Barrows gloves"
+        ],
+        [
+          "Dragon gloves"
+        ],
+        [
+          "Rune gloves"
+        ],
+        [
+          "Regen bracelet"
+        ]
+      ],
+      "Boots": [
+        [
+          "Primordial boots"
+        ],
+        [
+          "Dragon boots",
+          "Spiked manacles"
+        ],
+        [
+          "Guardian boots"
+        ],
+        [
+          "Granite boots"
+        ],
+        [
+          "Rune boots",
+          "Climbing boots",
+          "Mixed hide boots"
+        ]
+      ],
+      "Ring": [
+        [
+          "Ultor ring"
+        ],
+        [
+          "Treasonous ring(i)"
+        ],
+        [
+          "Brimstone ring"
+        ],
+        [
+          "Berserker ring(i)"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Special Attack": [
+        [
+          "N/A"
+        ]
       ]
-    ],
-    "Cape": [
-      [
-        "Infernal cape",
-        "Fire cape"
+    },
+    "Twisted Bow / BOWFA": {
+      "Helmet": [
+        [
+          "Blessed coif",
+          "Slayer helmet(i)",
+          "task"
+        ],
+        [
+          "Crystal helm"
+        ],
+        [
+          "Karil's coif"
+        ],
+        [
+          "Archer helm"
+        ]
       ],
-      [
-        "Ardougne cloak"
+      "Amulet": [
+        [
+          "Necklace of anguish"
+        ],
+        [
+          "Amulet of fury"
+        ],
+        [
+          "Bonecrusher necklace"
+        ],
+        [
+          "Amulet of glory"
+        ]
       ],
-      [
-        "Mythical cape"
+      "Cape": [
+        [
+          "Blessed dizana's quiver"
+        ],
+        [
+          "Ava's assembler"
+        ],
+        [
+          "Ava's accumulator"
+        ],
+        [
+          "Ava's attractor"
+        ]
       ],
-      [
-        "Cape of accomplishment"
+      "Body": [
+        [
+          "Masori body(f)"
+        ],
+        [
+          "Crystal body"
+        ],
+        [
+          "Black d'hide body"
+        ],
+        [
+          "N",
+          "A"
+        ]
       ],
-      [
-        "N",
-        "A"
+      "Legs": [
+        [
+          "Masori chaps(f)"
+        ],
+        [
+          "Crystal legs"
+        ],
+        [
+          "Black d'hide chaps"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Weapon": [
+        [
+          "Twisted bow"
+        ],
+        [
+          "Bow of faerdhinen"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Ammo": [
+        [
+          "Dragon arrow"
+        ],
+        [
+          "Amethyst arrow"
+        ],
+        [
+          "Rada's blessing"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Gloves": [
+        [
+          "Barrows gloves"
+        ],
+        [
+          "Blessed vambraces"
+        ],
+        [
+          "Black d'hide vambraces"
+        ],
+        [
+          "Red d'hide vambraces"
+        ]
+      ],
+      "Boots": [
+        [
+          "Blessed boots"
+        ],
+        [
+          "Mixed hide boots"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Ring": [
+        [
+          "Ring of shadows"
+        ],
+        [
+          "Explorer's ring 4"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Shield": [
+        [
+          "N/A"
+        ]
+      ],
+      "Special Attack": [
+        [
+          "N/A"
+        ]
       ]
-    ],
-    "Body": [
-      [
-        "Mixed hide top"
+    },
+    "Crossbow & shield": {
+      "Helmet": [
+        [
+          "Blessed coif",
+          "Slayer helmet(i)",
+          "task"
+        ],
+        [
+          "Karil's coif"
+        ],
+        [
+          "Archer helm"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
       ],
-      [
-        "Proselyte hauberk"
+      "Amulet": [
+        [
+          "Necklace of anguish"
+        ],
+        [
+          "Amulet of fury"
+        ],
+        [
+          "Bonecrusher necklace"
+        ],
+        [
+          "Amulet of glory"
+        ],
+        [
+          "N",
+          "A"
+        ]
       ],
-      [
-        "Initiate hauberk",
-        "Monk's robe top"
+      "Cape": [
+        [
+          "Dizana's quiver"
+        ],
+        [
+          "Ava's assembler"
+        ],
+        [
+          "Ava's accumulator"
+        ],
+        [
+          "Ava's attractor"
+        ],
+        [
+          "N",
+          "A"
+        ]
       ],
-      [
-        "N",
-        "A"
+      "Body": [
+        [
+          "Masori body(f)"
+        ],
+        [
+          "Black d'hide body"
+        ],
+        [
+          "Red d'hide body"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
       ],
-      [
-        "N",
-        "A"
+      "Legs": [
+        [
+          "Masori chaps(f)"
+        ],
+        [
+          "Black d'hide chaps"
+        ],
+        [
+          "Red d'hide chaps"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Weapon": [
+        [
+          "Dragon hunter crossbow"
+        ],
+        [
+          "Armadyl crossbow"
+        ],
+        [
+          "Dragon crossbow"
+        ],
+        [
+          "Hunters' sunlight crossbow"
+        ],
+        [
+          "Rune crossbow"
+        ]
+      ],
+      "Shield": [
+        [
+          "Dragonfire ward"
+        ],
+        [
+          "Anti-dragon shield"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Ammo": [
+        [
+          "Diamond dragon bolts(e)"
+        ],
+        [
+          "Diamond bolts(e)"
+        ],
+        [
+          "Moonlight antler bolts",
+          "Sunlight antler bolts"
+        ],
+        [
+          "Runite bolts"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Gloves": [
+        [
+          "Barrows gloves"
+        ],
+        [
+          "Blessed vambraces"
+        ],
+        [
+          "Black d'hide vambraces"
+        ],
+        [
+          "Red d'hide vambraces"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Boots": [
+        [
+          "Blessed boots"
+        ],
+        [
+          "Mixed hide boots"
+        ],
+        [
+          "Shayzien boots(5)"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Ring": [
+        [
+          "Ring of shadows"
+        ],
+        [
+          "Explorer's ring 4"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Special Attack": [
+        [
+          "N/A"
+        ]
       ]
-    ],
-    "Legs": [
-      [
-        "Mixed hide legs"
+    },
+    "Suicide method": {
+      "Helmet": [
+        [
+          "Masori mask(f)",
+          "Slayer helmet(i)",
+          "task"
+        ],
+        [
+          "Blessed coif"
+        ],
+        [
+          "Karil's coif"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
       ],
-      [
-        "Proselyte cuisse"
+      "Amulet": [
+        [
+          "Necklace of anguish"
+        ],
+        [
+          "Amulet of fury"
+        ],
+        [
+          "Bonecrusher necklace"
+        ],
+        [
+          "Amulet of power"
+        ],
+        [
+          "Amulet of accuracy"
+        ]
       ],
-      [
-        "Initiate cuisse",
-        "Monk's robe"
+      "Cape": [
+        [
+          "Dizana's quiver"
+        ],
+        [
+          "Ava's assembler"
+        ],
+        [
+          "Ava's accumulator"
+        ],
+        [
+          "Ranging cape(t)"
+        ],
+        [
+          "Ava's attractor"
+        ]
       ],
-      [
-        "N",
-        "A"
+      "Body": [
+        [
+          "Masori body(f)"
+        ],
+        [
+          "Blessed body"
+        ],
+        [
+          "Black d'hide body",
+          "Karil's leathertop"
+        ],
+        [
+          "Red d'hide body"
+        ],
+        [
+          "Blue d'hide body"
+        ]
       ],
-      [
-        "N",
-        "A"
+      "Legs": [
+        [
+          "Masori chaps(f)"
+        ],
+        [
+          "Blessed chaps"
+        ],
+        [
+          "Black d'hide chaps",
+          "Karil's leatherskirt"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Weapon": [
+        [
+          "Twisted bow"
+        ],
+        [
+          "Dragon hunter crossbow"
+        ],
+        [
+          "Armadyl crossbow"
+        ],
+        [
+          "Dragon crossbow"
+        ],
+        [
+          "Rune crossbow"
+        ]
+      ],
+      "Shield": [
+        [
+          "Dragonfire ward"
+        ],
+        [
+          "Anti-dragon shield"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Ammo": [
+        [
+          "Dragon arrow",
+          "twisted bow",
+          "Diamond dragon bolts(e)"
+        ],
+        [
+          "Amethyst arrow",
+          "twisted bow",
+          "Diamond bolts(e)"
+        ],
+        [
+          "Runite bolts"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Gloves": [
+        [
+          "Zaryte vambraces"
+        ],
+        [
+          "Barrows gloves"
+        ],
+        [
+          "Blessed vambraces"
+        ],
+        [
+          "Black d'hide vambraces"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Boots": [
+        [
+          "Pegasian boots"
+        ],
+        [
+          "Blessed boots"
+        ],
+        [
+          "Boots of brimstone"
+        ],
+        [
+          "Mixed hide boots"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Ring": [
+        [
+          "Venator ring"
+        ],
+        [
+          "Archers ring(i)"
+        ],
+        [
+          "Brimstone ring"
+        ],
+        [
+          "Ring of shadows"
+        ],
+        [
+          "Explorer's ring 4"
+        ]
+      ],
+      "Special Attack": [
+        [
+          "N/A"
+        ]
       ]
-    ],
-    "Weapon": [
-      [
-        "Dragon hunter lance",
-        "Osmumten's fang"
-      ],
-      [
-        "Ghrazi rapier"
-      ],
-      [
-        "Noxious halberd"
-      ],
-      [
-        "Zamorakian hasta"
-      ],
-      [
-        "Abyssal dagger(p++)"
-      ]
-    ],
-    "Shield": [
-      [
-        "Dragonfire shield"
-      ],
-      [
-        "Anti-dragon shield"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Ammo": [
-      [
-        "Rada's blessing 4"
-      ],
-      [
-        "Rada's blessing 3",
-        "2",
-        "God blessing"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Gloves": [
-      [
-        "Barrows gloves"
-      ],
-      [
-        "Dragon gloves"
-      ],
-      [
-        "Rune gloves"
-      ],
-      [
-        "Adamant gloves"
-      ],
-      [
-        "Combat bracelet"
-      ]
-    ],
-    "Boots": [
-      [
-        "Dragon boots"
-      ],
-      [
-        "Rune boots",
-        "Climbing boots",
-        "Mixed hide boots"
-      ],
-      [
-        "Fremennik sea boots 4"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Ring": [
-      [
-        "Ultor ring"
-      ],
-      [
-        "Treasonous ring(i)"
-      ],
-      [
-        "Brimstone ring"
-      ],
-      [
-        "Berserker ring(i)"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Special Attack": [
-      [
-        "N/A"
-      ]
-    ]
+    }
   },
-  "Melee BIS smuggle": {
-    "Helmet": [
-      [
-        "Slayer helmet",
-        "task",
-        "Torva full helm"
-      ],
-      [
-        "Serpentine helm",
-        "Neitiznot faceguard"
-      ],
-      [
-        "Helm of neitiznot"
-      ],
-      [
-        "Berserker helm",
-        "Obsidian helmet"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Amulet": [
-      [
-        "Amulet of rancour"
-      ],
-      [
-        "Amulet of torture"
-      ],
-      [
-        "Amulet of fury"
-      ],
-      [
-        "Amulet of glory"
-      ],
-      [
-        "Amulet of power"
-      ]
-    ],
-    "Cape": [
-      [
-        "Infernal cape",
-        "Fire cape"
-      ],
-      [
-        "Ardougne cloak"
-      ],
-      [
-        "Mythical cape"
-      ],
-      [
-        "Cape of accomplishment"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Body": [
-      [
-        "Torva platebody"
-      ],
-      [
-        "Bandos chestplate",
-        "Fighter torso",
-        "Blood moon chestplate"
-      ],
-      [
-        "Mixed hide top"
-      ],
-      [
-        "Proselyte hauberk"
-      ],
-      [
-        "Initiate hauberk",
-        "Monk's robe top"
-      ]
-    ],
-    "Legs": [
-      [
-        "Torva platelegs"
-      ],
-      [
-        "Bandos tassets",
-        "Blood moon tassets"
-      ],
-      [
-        "Mixed hide legs"
-      ],
-      [
-        "Proselyte cuisse",
-        "Proselyte tasset"
-      ],
-      [
-        "Initiate cuisse",
-        "Monk's robe"
-      ]
-    ],
-    "Weapon": [
-      [
-        "Dragon hunter lance"
-      ],
-      [
-        "Osmumten's fang"
-      ],
-      [
-        "Ghrazi rapier"
-      ],
-      [
-        "Zamorakian hasta"
-      ],
-      [
-        "Abyssal dagger(p++)"
-      ]
-    ],
-    "Shield": [
-      [
-        "Avernic defender",
-        "Dragonfire shield"
-      ],
-      [
-        "Dragon defender",
-        "Anti-dragon shield"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Ammo": [
-      [
-        "Rada's blessing 4"
-      ],
-      [
-        "Rada's blessing 3",
-        "2",
-        "God blessing"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Gloves": [
-      [
-        "Ferocious gloves"
-      ],
-      [
-        "Barrows gloves"
-      ],
-      [
-        "Dragon gloves"
-      ],
-      [
-        "Rune gloves"
-      ],
-      [
-        "Regen bracelet"
-      ]
-    ],
-    "Boots": [
-      [
-        "Primordial boots"
-      ],
-      [
-        "Dragon boots",
-        "Spiked manacles"
-      ],
-      [
-        "Guardian boots"
-      ],
-      [
-        "Granite boots"
-      ],
-      [
-        "Rune boots",
-        "Climbing boots",
-        "Mixed hide boots"
-      ]
-    ],
-    "Ring": [
-      [
-        "Ultor ring"
-      ],
-      [
-        "Treasonous ring(i)"
-      ],
-      [
-        "Brimstone ring"
-      ],
-      [
-        "Berserker ring(i)"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Special Attack": [
-      [
-        "N/A"
-      ]
-    ]
-  },
-  "Ranged": {
-    "Helmet": [
-      [
-        "Blessed coif",
-        "Slayer helmet(i)",
-        "task"
-      ],
-      [
-        "Crystal helm"
-      ],
-      [
-        "Karil's coif"
-      ],
-      [
-        "Archer helm"
-      ]
-    ],
-    "Amulet": [
-      [
-        "Necklace of anguish"
-      ],
-      [
-        "Amulet of fury"
-      ],
-      [
-        "Bonecrusher necklace"
-      ],
-      [
-        "Amulet of glory"
-      ]
-    ],
-    "Cape": [
-      [
-        "Blessed dizana's quiver"
-      ],
-      [
-        "Ava's assembler"
-      ],
-      [
-        "Ava's accumulator"
-      ],
-      [
-        "Ava's attractor"
-      ]
-    ],
-    "Body": [
-      [
-        "Masori body(f)"
-      ],
-      [
-        "Crystal body"
-      ],
-      [
-        "Black d'hide body"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Legs": [
-      [
-        "Masori chaps(f)"
-      ],
-      [
-        "Crystal legs"
-      ],
-      [
-        "Black d'hide chaps"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Weapon": [
-      [
-        "Twisted bow"
-      ],
-      [
-        "Bow of faerdhinen"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Ammo": [
-      [
-        "Dragon arrow"
-      ],
-      [
-        "Amethyst arrow"
-      ],
-      [
-        "Rada's blessing"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Gloves": [
-      [
-        "Barrows gloves"
-      ],
-      [
-        "Blessed vambraces"
-      ],
-      [
-        "Black d'hide vambraces"
-      ],
-      [
-        "Red d'hide vambraces"
-      ]
-    ],
-    "Boots": [
-      [
-        "Blessed boots"
-      ],
-      [
-        "Mixed hide boots"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Ring": [
-      [
-        "Ring of shadows"
-      ],
-      [
-        "Explorer's ring 4"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Shield": [
-      [
-        "N/A"
-      ]
-    ],
-    "Special Attack": [
-      [
-        "N/A"
-      ]
-    ]
-  },
-  "Crossbow": {
-    "Helmet": [
-      [
-        "Blessed coif",
-        "Slayer helmet(i)",
-        "task"
-      ],
-      [
-        "Karil's coif"
-      ],
-      [
-        "Archer helm"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Amulet": [
-      [
-        "Necklace of anguish"
-      ],
-      [
-        "Amulet of fury"
-      ],
-      [
-        "Bonecrusher necklace"
-      ],
-      [
-        "Amulet of glory"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Cape": [
-      [
-        "Dizana's quiver"
-      ],
-      [
-        "Ava's assembler"
-      ],
-      [
-        "Ava's accumulator"
-      ],
-      [
-        "Ava's attractor"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Body": [
-      [
-        "Masori body(f)"
-      ],
-      [
-        "Black d'hide body"
-      ],
-      [
-        "Red d'hide body"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Legs": [
-      [
-        "Masori chaps(f)"
-      ],
-      [
-        "Black d'hide chaps"
-      ],
-      [
-        "Red d'hide chaps"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Weapon": [
-      [
-        "Dragon hunter crossbow"
-      ],
-      [
-        "Armadyl crossbow"
-      ],
-      [
-        "Dragon crossbow"
-      ],
-      [
-        "Hunters' sunlight crossbow"
-      ],
-      [
-        "Rune crossbow"
-      ]
-    ],
-    "Shield": [
-      [
-        "Dragonfire ward"
-      ],
-      [
-        "Anti-dragon shield"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Ammo": [
-      [
-        "Diamond dragon bolts(e)"
-      ],
-      [
-        "Diamond bolts(e)"
-      ],
-      [
-        "Moonlight antler bolts",
-        "Sunlight antler bolts"
-      ],
-      [
-        "Runite bolts"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Gloves": [
-      [
-        "Barrows gloves"
-      ],
-      [
-        "Blessed vambraces"
-      ],
-      [
-        "Black d'hide vambraces"
-      ],
-      [
-        "Red d'hide vambraces"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Boots": [
-      [
-        "Blessed boots"
-      ],
-      [
-        "Mixed hide boots"
-      ],
-      [
-        "Shayzien boots(5)"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Ring": [
-      [
-        "Ring of shadows"
-      ],
-      [
-        "Explorer's ring 4"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Special Attack": [
-      [
-        "N/A"
-      ]
-    ]
-  },
-  "Ranged BIS smuggle": {
-    "Helmet": [
-      [
-        "Masori mask(f)",
-        "Slayer helmet(i)",
-        "task"
-      ],
-      [
-        "Blessed coif"
-      ],
-      [
-        "Karil's coif"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Amulet": [
-      [
-        "Necklace of anguish"
-      ],
-      [
-        "Amulet of fury"
-      ],
-      [
-        "Bonecrusher necklace"
-      ],
-      [
-        "Amulet of power"
-      ],
-      [
-        "Amulet of accuracy"
-      ]
-    ],
-    "Cape": [
-      [
-        "Dizana's quiver"
-      ],
-      [
-        "Ava's assembler"
-      ],
-      [
-        "Ava's accumulator"
-      ],
-      [
-        "Ranging cape(t)"
-      ],
-      [
-        "Ava's attractor"
-      ]
-    ],
-    "Body": [
-      [
-        "Masori body(f)"
-      ],
-      [
-        "Blessed body"
-      ],
-      [
-        "Black d'hide body",
-        "Karil's leathertop"
-      ],
-      [
-        "Red d'hide body"
-      ],
-      [
-        "Blue d'hide body"
-      ]
-    ],
-    "Legs": [
-      [
-        "Masori chaps(f)"
-      ],
-      [
-        "Blessed chaps"
-      ],
-      [
-        "Black d'hide chaps",
-        "Karil's leatherskirt"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Weapon": [
-      [
-        "Twisted bow"
-      ],
-      [
-        "Dragon hunter crossbow"
-      ],
-      [
-        "Armadyl crossbow"
-      ],
-      [
-        "Dragon crossbow"
-      ],
-      [
-        "Rune crossbow"
-      ]
-    ],
-    "Shield": [
-      [
-        "Dragonfire ward"
-      ],
-      [
-        "Anti-dragon shield"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Ammo": [
-      [
-        "Dragon arrow",
-        "twisted bow",
-        "Diamond dragon bolts(e)"
-      ],
-      [
-        "Amethyst arrow",
-        "twisted bow",
-        "Diamond bolts(e)"
-      ],
-      [
-        "Runite bolts"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Gloves": [
-      [
-        "Zaryte vambraces"
-      ],
-      [
-        "Barrows gloves"
-      ],
-      [
-        "Blessed vambraces"
-      ],
-      [
-        "Black d'hide vambraces"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Boots": [
-      [
-        "Pegasian boots"
-      ],
-      [
-        "Blessed boots"
-      ],
-      [
-        "Boots of brimstone"
-      ],
-      [
-        "Mixed hide boots"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Ring": [
-      [
-        "Venator ring"
-      ],
-      [
-        "Archers ring(i)"
-      ],
-      [
-        "Brimstone ring"
-      ],
-      [
-        "Ring of shadows"
-      ],
-      [
-        "Explorer's ring 4"
-      ]
-    ],
-    "Special Attack": [
-      [
-        "N/A"
-      ]
-    ]
-  }
+  "extra_styles": []
 }

@@ -41,20 +41,6 @@
   ],
   "gear_setups": {
     "Magic": {
-      "Weapon": [
-        [ "Tumeken's shadow" ],
-        [ "Harmonised nightmare staff" ],
-        [ "Sanguinesti staff", "Trident of the swamp", "Trident of the seas" ],
-        [ "Warped sceptre" ],
-        [ "Iban's staff" ]
-      ],
-      "Shield": [
-        [ "Tome of fire", "Elidinis' ward (f)" ],
-        [ "Elidinis' ward" ],
-        [ "Arcane spirit shield" ],
-        [ "Malediction ward" ],
-        [ "Book of darkness" ]
-      ],
       "Helmet": [
         [ "Ancestral hat" ],
         [ "Virtus mask" ],
@@ -66,13 +52,15 @@
         [ "Occult necklace" ],
         [ "Dragonbone necklace", "Bonecrusher necklace" ],
         [ "Amulet of fury" ],
-        [ "Amulet of glory" ]
+        [ "Amulet of glory" ],
+        [ "N/A" ]
       ],
       "Cape": [
-        [ "Any Imbued Any God cape" ],
+        [ "Any Imbued God cape" ],
         [ "Soul cape" ],
         [ "Ardougne cloak 4" ],
-        [ "Any Skillcape (t)" ]
+        [ "Any Skillcape (t)" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
@@ -87,6 +75,27 @@
         [ "Zealot's robe bottom" ],
         [ "Vestment robe legs" ],
         [ "Monk's robe" ]
+      ],
+      "Weapon": [
+        [ "Tumeken's shadow" ],
+        [ "Harmonised nightmare staff" ],
+        [ "Sanguinesti staff", "Trident of the swamp", "Trident of the seas" ],
+        [ "Warped sceptre" ],
+        [ "Iban's staff" ]
+      ],
+      "Shield": [
+        [ "Tome of fire", "Elidinis' ward (f)" ],
+        [ "Elidinis' ward" ],
+        [ "Arcane spirit shield" ],
+        [ "Malediction ward" ],
+        [ "Book of darkness" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Tormented bracelet" ],
@@ -109,8 +118,13 @@
         [ "Brimstone ring" ],
         [ "Explorer's ring 4" ]
       ],
-      "Ammo": [ "N/A" ],
-      "Special Attack": [ [ "N/A" ] ]
+      "Special Attack": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
     }
   }
 }

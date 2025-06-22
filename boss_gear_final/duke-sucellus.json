@@ -130,7 +130,8 @@
       ],
       "Ammo": [
         [
-          "Rada's blessing 1"
+          "Rada's blessing 4",
+          "Ghommal's lucky penny"
         ],
         [
           "Any God blessing",
@@ -224,7 +225,5 @@
       ]
     }
   },
-  "unmatched_items": [
-    "4 Ghommal's lucky penny"
-  ]
+  "unmatched_items": []
 }

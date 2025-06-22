@@ -1,6 +1,6 @@
 {
   "gear_setups": {
-    "High Dps (Phase one)": {
+    "High DPS Phase 1 (Melee)": {
       "Helmet": [
         [
           "Slayer helmet (i)"
@@ -218,7 +218,7 @@
         ]
       ]
     },
-    "High Dps (Phase two)": {
+    "High DPS Phase 2 (Ranged)": {
       "Helmet": [
         [
           "Slayer helmet (i)"
@@ -343,11 +343,12 @@
       ],
       "Ammo": [
         [
-          "Rada's blessing 1"
+          "Rada's blessing 4"
         ],
         [
           "Any God blessing",
-          "Rada's blessing 1"
+          "Rada's blessing 3",
+          "Rada's blessing 2"
         ],
         [
           "Diamond dragon bolts (e)",
@@ -633,7 +634,7 @@
         ]
       ]
     },
-    "Verac The Defiled's": {
+    "Verac's": {
       "Helmet": [
         [
           "Verac's helm"
@@ -1026,7 +1027,7 @@
         ]
       ]
     },
-    "Mid-game Players (Phase one)": {
+    "Mid-game Players Phase 1 (Melee)": {
       "Helmet": [
         [
           "Slayer helmet (i)"
@@ -1237,7 +1238,7 @@
         ]
       ]
     },
-    "Mid-game Players (Phase two)": {
+    "Mid-game Players Phase 2 (Ranged)": {
       "Helmet": [
         [
           "Slayer helmet (i)"
@@ -1645,9 +1646,9 @@
     }
   },
   "unmatched_items": [
-    "3 Rada's blessing 2 Toxic blowpipe Bow of faerdhinen",
-    "4 Toxic blowpipe Bow of faerdhinen",
     "Amethyst darts",
+    "Bow of Faerdhinen",
+    "Toxic blowpipe",
     "kalphite task",
     "of breaching Black salamander"
   ]

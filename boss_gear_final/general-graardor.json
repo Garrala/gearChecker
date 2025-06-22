@@ -1,6 +1,6 @@
 {
   "gear_setups": {
-    "Advanced Tank": {
+    "Melee Tank": {
       "Helmet": [
         [
           "Justiciar faceguard"
@@ -978,7 +978,7 @@
       "Ammo": [
         [
           "Unholy blessing",
-          "Rada's blessing 1"
+          "Rada's blessing 4"
         ],
         [
           "War blessing"
@@ -1272,7 +1272,7 @@
         ]
       ]
     },
-    "Solo (Ranged 6:0)": {
+    "Ranged (6:0)": {
       "Helmet": [
         [
           "Slayer helmet (i)"
@@ -1483,7 +1483,7 @@
         ]
       ]
     },
-    "Solo (Ranged 7:0)": {
+    "Ranged (7:0)": {
       "Helmet": [
         [
           "Slayer helmet (i)"
@@ -1590,7 +1590,7 @@
         [
           "War blessing",
           "Unholy blessing",
-          "Rada's blessing 1"
+          "Rada's blessing 4"
         ],
         [
           "N/A"

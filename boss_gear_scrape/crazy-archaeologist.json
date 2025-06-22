@@ -1,209 +1,212 @@
 {
-  "Magic": {
-    "Helmet": [
-      [
-        "Slayer helmet(i)"
+  "gear_setups": {
+    "Magic": {
+      "Helmet": [
+        [
+          "Slayer helmet(i)"
+        ],
+        [
+          "Bloodbark helm"
+        ],
+        [
+          "Mitre"
+        ],
+        [
+          "Mystic hat"
+        ],
+        [
+          "Xerician hat",
+          "Fremennik hat"
+        ]
       ],
-      [
-        "Bloodbark helm"
+      "Amulet": [
+        [
+          "Occult necklace"
+        ],
+        [
+          "Amulet of fury"
+        ],
+        [
+          "Amulet of glory"
+        ],
+        [
+          "Amulet of magic"
+        ],
+        [
+          "Amulet of power"
+        ]
       ],
-      [
-        "Mitre"
+      "Cape": [
+        [
+          "Imbued god capes"
+        ],
+        [
+          "God capes"
+        ],
+        [
+          "Ardougne cloak 4"
+        ],
+        [
+          "Ardougne cloak 3"
+        ],
+        [
+          "Ardougne cloak 2"
+        ]
       ],
-      [
-        "Mystic hat"
+      "Body": [
+        [
+          "Bloodbark body"
+        ],
+        [
+          "Mystic robe top"
+        ],
+        [
+          "Xerician top"
+        ],
+        [
+          "Zamorak monk top"
+        ],
+        [
+          "Monk's robe top"
+        ]
       ],
-      [
-        "Xerician hat",
-        "Fremennik hat"
+      "Legs": [
+        [
+          "Bloodbark legs"
+        ],
+        [
+          "Mystic robe bottom"
+        ],
+        [
+          "Xerician robe"
+        ],
+        [
+          "Zamorak monk bottom"
+        ],
+        [
+          "Monk's robe"
+        ]
+      ],
+      "Weapon": [
+        [
+          "Accursed sceptre",
+          "Thammaron's sceptre"
+        ],
+        [
+          "Sanguinesti staff"
+        ],
+        [
+          "Trident of the swamp"
+        ],
+        [
+          "Trident of the seas"
+        ],
+        [
+          "Warped sceptre",
+          "Iban's staff(u)"
+        ]
+      ],
+      "Shield": [
+        [
+          "Elidinis' ward(f)",
+          "Elidinis' ward"
+        ],
+        [
+          "Book of darkness"
+        ],
+        [
+          "Unholy book"
+        ],
+        [
+          "Tome of fire"
+        ],
+        [
+          "Broodoo shield"
+        ]
+      ],
+      "Ammo": [
+        [
+          "Rada's blessing 4"
+        ],
+        [
+          "God blessing",
+          "Rada's blessing 3",
+          "Rada's blessing 2"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Gloves": [
+        [
+          "Tormented bracelet"
+        ],
+        [
+          "Barrows gloves"
+        ],
+        [
+          "Dragon gloves"
+        ],
+        [
+          "Rune gloves"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Boots": [
+        [
+          "Mystic boots"
+        ],
+        [
+          "Ghostly boots"
+        ],
+        [
+          "Splitbark boots"
+        ],
+        [
+          "Moonclan boots"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Ring": [
+        [
+          "Ring of shadows",
+          "(uncharged)"
+        ],
+        [
+          "Explorer's ring"
+        ],
+        [
+          "Beacon ring"
+        ],
+        [
+          "Ring of wealth(i)"
+        ],
+        [
+          "N",
+          "A"
+        ]
+      ],
+      "Special Attack": [
+        [
+          "N/A"
+        ]
       ]
-    ],
-    "Amulet": [
-      [
-        "Occult necklace"
-      ],
-      [
-        "Amulet of fury"
-      ],
-      [
-        "Amulet of glory"
-      ],
-      [
-        "Amulet of magic"
-      ],
-      [
-        "Amulet of power"
-      ]
-    ],
-    "Cape": [
-      [
-        "Imbued god capes"
-      ],
-      [
-        "God capes"
-      ],
-      [
-        "Ardougne cloak 4"
-      ],
-      [
-        "Ardougne cloak 3"
-      ],
-      [
-        "Ardougne cloak 2"
-      ]
-    ],
-    "Body": [
-      [
-        "Bloodbark body"
-      ],
-      [
-        "Mystic robe top"
-      ],
-      [
-        "Xerician top"
-      ],
-      [
-        "Zamorak monk top"
-      ],
-      [
-        "Monk's robe top"
-      ]
-    ],
-    "Legs": [
-      [
-        "Bloodbark legs"
-      ],
-      [
-        "Mystic robe bottom"
-      ],
-      [
-        "Xerician robe"
-      ],
-      [
-        "Zamorak monk bottom"
-      ],
-      [
-        "Monk's robe"
-      ]
-    ],
-    "Weapon": [
-      [
-        "Accursed sceptre",
-        "Thammaron's sceptre"
-      ],
-      [
-        "Sanguinesti staff"
-      ],
-      [
-        "Trident of the swamp"
-      ],
-      [
-        "Trident of the seas"
-      ],
-      [
-        "Warped sceptre",
-        "Iban's staff(u)"
-      ]
-    ],
-    "Shield": [
-      [
-        "Elidinis' ward(f)",
-        "Elidinis' ward"
-      ],
-      [
-        "Book of darkness"
-      ],
-      [
-        "Unholy book"
-      ],
-      [
-        "Tome of fire"
-      ],
-      [
-        "Broodoo shield"
-      ]
-    ],
-    "Ammo": [
-      [
-        "Rada's blessing 4"
-      ],
-      [
-        "God blessing",
-        "Rada's blessing 3",
-        "Rada's blessing 2"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Gloves": [
-      [
-        "Tormented bracelet"
-      ],
-      [
-        "Barrows gloves"
-      ],
-      [
-        "Dragon gloves"
-      ],
-      [
-        "Rune gloves"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Boots": [
-      [
-        "Mystic boots"
-      ],
-      [
-        "Ghostly boots"
-      ],
-      [
-        "Splitbark boots"
-      ],
-      [
-        "Moonclan boots"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Ring": [
-      [
-        "Ring of shadows",
-        "(uncharged)"
-      ],
-      [
-        "Explorer's ring"
-      ],
-      [
-        "Beacon ring"
-      ],
-      [
-        "Ring of wealth(i)"
-      ],
-      [
-        "N",
-        "A"
-      ]
-    ],
-    "Special Attack": [
-      [
-        "N/A"
-      ]
-    ]
-  }
+    }
+  },
+  "extra_styles": []
 }

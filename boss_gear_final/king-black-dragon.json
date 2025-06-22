@@ -1,6 +1,6 @@
 {
   "gear_setups": {
-    "4-item Melee": {
+    "Melee": {
       "Helmet": [
         [
           "Slayer helmet",
@@ -129,7 +129,7 @@
           "Rada's blessing 4"
         ],
         [
-          "Rada's blessing 1"
+          "Rada's blessing 3"
         ],
         [
           "N/A"
@@ -200,7 +200,7 @@
         ]
       ]
     },
-    "Melee Bis Smuggle": {
+    "Melee Suicide method": {
       "Helmet": [
         [
           "Slayer helmet"
@@ -335,7 +335,7 @@
           "Rada's blessing 4"
         ],
         [
-          "Rada's blessing 1"
+          "Rada's blessing 3"
         ],
         [
           "N/A"
@@ -407,7 +407,7 @@
         ]
       ]
     },
-    "Ranged": {
+    "Twisted Bow / BOWFA": {
       "Helmet": [
         [
           "Any Blessed coif",
@@ -501,9 +501,6 @@
           "Amethyst arrows"
         ],
         [
-          "Rada's blessing 1"
-        ],
-        [
           "N/A"
         ]
       ],
@@ -560,7 +557,7 @@
         ]
       ]
     },
-    "Crossbow": {
+    "Crossbow & shield": {
       "Helmet": [
         [
           "Any Blessed coif",
@@ -756,7 +753,7 @@
         ]
       ]
     },
-    "Ranged Bis Smuggle": {
+    "Suicide method": {
       "Helmet": [
         [
           "Masori mask (f)",
@@ -955,8 +952,9 @@
     }
   },
   "unmatched_items": [
-    "3 2 God blessing",
+    "2 God blessing",
     "Monk's robe",
+    "Rada's blessing",
     "task",
     "task Torva full helm",
     "top",

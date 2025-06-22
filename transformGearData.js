@@ -7,6 +7,16 @@ const GEAR_DIR = path.join(__dirname, 'src', 'assets', 'gear');
 
 if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR);
 
+const EXPECTED_STYLES_PATH = path.join(__dirname, 'expectedGearStyles.json');
+const expectedGearStylesRaw = JSON.parse(fs.readFileSync(EXPECTED_STYLES_PATH, 'utf-8'));
+
+// Normalize boss names to match transformed filenames
+const expectedGearStyles = {};
+for (const [bossName, styles] of Object.entries(expectedGearStylesRaw)) {
+  const normalizedKey = bossName.toLowerCase().replace(/\s+/g, '-');
+  expectedGearStyles[normalizedKey] = styles.sort(); // also sort for easier compare
+}
+
 // Normalize JSON filenames to slot keys
 const SLOT_FILENAME_MAP = {
   ammo: 'Ammo',
@@ -23,7 +33,7 @@ const SLOT_FILENAME_MAP = {
   weapons: 'Weapon',
 };
 
-// Manual fixes for odd scraped formats
+// Manual fixes
 function manualInterventionSubstitutions() {
   return {
     "Blessed boots": "Any Blessed boots",
@@ -97,8 +107,7 @@ function manualInterventionSubstitutions() {
     "Blessed shield": "Any Blessed shield",
     "Bone dagger(p)": "Bone dagger",
     "Bow of Faerdhinen": "Bow of Faerdhinen",
-    "Treasonous ring(i)": "Treasonous ring (i)",
-    "Rada's blessing": "Rada's blessing 1"
+    "Treasonous ring(i)": "Treasonous ring (i)"
   };
 }
 
@@ -144,7 +153,9 @@ const CUSTOM_UNMATCHED_FIXES = {
   "4 3": ["Ardougne cloak 4", "Ardougne cloak 3"],
   "Skillcape(t) Ardougne cloak 2 Vestment cloak": ["Any Skillcape (t)", "Ardougne cloak 2", "Any God vestment cloaks"],
   "Explorer's Ring 3/2/1": ["Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1"],
-  "of breaching Black salamander": ["Keris partisan of breaching", "Black salamander"]
+  "of breaching Black salamander": ["Keris partisan of breaching", "Black salamander"],
+  "twisted bow Diamond bolts(e)": ["Twisted bow", "Diamond bolts (e)"],
+  "twisted bow Diamond dragon bolts(e)": ["Twisted bow", "Diamond dragon bolts (e)"]
 };
 
 const NORMALIZED_CUSTOM_UNMATCHED_FIXES = {};
@@ -153,36 +164,28 @@ for (const [rawKey, value] of Object.entries(CUSTOM_UNMATCHED_FIXES)) {
   NORMALIZED_CUSTOM_UNMATCHED_FIXES[cleanedKey] = value;
 }
 
-// Cleans up spacing, bracket artifacts, and common typos
 function cleanItemName(name) {
   if (typeof name !== 'string') return '';
   return name
-    .replace(/\[[^\]]+\]/g, '')              // Remove footnote references like [1]
-    .replace(/[^a-zA-Z0-9()/\s'-]/g, '')      // Remove weird symbols, keep slashes
-    .replace(/\s+/g, ' ')                     // Normalize spaces
-    .replace(/Barrowss/g, 'Barrows')          // Fix typos
+    .replace(/\[[^\]]+\]/g, '')
+    .replace(/[^a-zA-Z0-9()/\s'-]/g, '')
+    .replace(/\s+/g, ' ')
+    .replace(/Barrowss/g, 'Barrows')
     .trim();
 }
 
-
-
-// Load all gear slot files into slot-indexed map
 function loadValidItemsBySlot() {
   const slotMap = {};
   const files = fs.readdirSync(GEAR_DIR).filter(f => f.endsWith('.json'));
-
   for (const file of files) {
     const slotKey = SLOT_FILENAME_MAP[file.replace('.json', '')];
     if (!slotKey) continue;
-
     const full = JSON.parse(fs.readFileSync(path.join(GEAR_DIR, file), 'utf-8'));
     slotMap[slotKey] = new Set(Object.keys(full).map(cleanItemName));
   }
-
   return slotMap;
 }
 
-// Flatten all valid gear names globally (for fallback)
 function flattenGlobalValidItems(validMap) {
   const globalSet = new Set();
   for (const set of Object.values(validMap)) {
@@ -194,7 +197,6 @@ function flattenGlobalValidItems(validMap) {
 const VALID_ITEMS_BY_SLOT = loadValidItemsBySlot();
 const VALID_ITEMS_GLOBAL = flattenGlobalValidItems(VALID_ITEMS_BY_SLOT);
 
-// Try to match multiple valid items from a string
 function matchOrSplitItems(text, slotKey) {
   const words = text.split(' ');
   const found = [];
@@ -203,13 +205,9 @@ function matchOrSplitItems(text, slotKey) {
   for (const word of words) {
     current.push(word);
     const candidate = cleanItemName(current.join(' '));
-
     const replaced = MANUAL_SUBS[candidate] || candidate;
 
-    if (
-      VALID_ITEMS_BY_SLOT[slotKey]?.has(replaced) ||
-      VALID_ITEMS_GLOBAL.has(replaced)
-    ) {
+    if (VALID_ITEMS_BY_SLOT[slotKey]?.has(replaced) || VALID_ITEMS_GLOBAL.has(replaced)) {
       found.push(replaced);
       current = [];
     }
@@ -223,76 +221,56 @@ function matchOrSplitItems(text, slotKey) {
   return found;
 }
 
-
-// Core row normalization logic
 function normalizeRow(row, slotKey) {
   let current = row.join(' ').trim();
   let last = null;
 
-  // Keep applying normalization until it stops changing
+  if (VALID_ITEMS_BY_SLOT[slotKey]?.has(current)) return [current];
+
   while (current !== last) {
     last = current;
 
     const cleaned = cleanItemName(current);
 
-    // Apply manual substitutions
     if (MANUAL_SUBS[cleaned]) {
       current = MANUAL_SUBS[cleaned];
       continue;
     }
 
-    // Apply custom group fixes
     if (NORMALIZED_CUSTOM_UNMATCHED_FIXES[cleaned]) {
       return NORMALIZED_CUSTOM_UNMATCHED_FIXES[cleaned];
     }
 
-
-    // Apply N/A catch
     if (/^(n\/?a|n a)$/i.test(cleaned)) {
       return ['N/A'];
     }
 
+    if (cleaned === "Rada's blessing") {
+      console.log(`ℹ️ Ambiguous item "${row.join(' ')}" defaulted to "Rada's blessing 1"`);
+    }
+
     current = cleaned;
-    //console.log(`Checking: "${row.join(' ')}" → Cleaned: "${cleaned}"`);
   }
 
-
-  // At this point, try matching the cleaned result
   if (VALID_ITEMS_BY_SLOT[slotKey]?.has(current)) return [current];
   if (VALID_ITEMS_GLOBAL.has(current)) return [current];
 
-  // Try splitting into components
-  const split = matchOrSplitItems(current, slotKey);
-  return split;
+  return matchOrSplitItems(current, slotKey);
 }
 
-
-// Convert "ranged", "melee (stab)" into title case keys
-function titleCaseGearStyle(style) {
-  return style
-    .split(' ')
-    .map(w => w[0]?.toUpperCase() + w.slice(1).toLowerCase())
-    .join(' ')
-    .replace(/\(([^)]+)\)/g, (_, inner) => `(${inner[0]?.toUpperCase()}${inner.slice(1).toLowerCase()})`);
-}
-
-// Normalize entire style block
 function transformGearStyleBlock(styleBlock, unmatchedItems) {
   const normalized = {};
-
   for (const [rawSlot, rows] of Object.entries(styleBlock)) {
     const slotKey = rawSlot;
-
     if (!VALID_ITEMS_BY_SLOT[slotKey]) continue;
 
     normalized[slotKey] = [];
 
     for (const row of rows) {
       const combined = row.join(' ').trim();
-      const cleanedCombined = cleanItemName(combined);  // 🛠 Clean the string before checking fixes
-      const replacement = NORMALIZED_CUSTOM_UNMATCHED_FIXES[cleanedCombined];;
+      const cleanedCombined = cleanItemName(combined);
+      const replacement = NORMALIZED_CUSTOM_UNMATCHED_FIXES[cleanedCombined];
 
-      // Handle manual multi-group fix: insert directly into appropriate slot
       if (Array.isArray(replacement) && Array.isArray(replacement[0])) {
         for (const group of replacement) {
           const inferredSlot = inferSlotFromItemGroup(group) || slotKey;
@@ -323,7 +301,6 @@ function transformGearStyleBlock(styleBlock, unmatchedItems) {
   return normalized;
 }
 
-
 function inferSlotFromItemGroup(group) {
   for (const [slot, itemSet] of Object.entries(VALID_ITEMS_BY_SLOT)) {
     if (group.every(name => itemSet.has(name))) {
@@ -332,7 +309,6 @@ function inferSlotFromItemGroup(group) {
   }
   return null;
 }
-
 
 function transformFile(filename) {
   const filePath = path.join(INPUT_DIR, filename);
@@ -344,17 +320,35 @@ function transformFile(filename) {
   };
 
   const unmatched = new Set();
+  const gearStyles = scrapedGear.gear_setups || {};
 
-  for (const [style, block] of Object.entries(scrapedGear)) {
-    const formattedStyle = titleCaseGearStyle(style);
+  for (const [style, block] of Object.entries(gearStyles)) {
+    const formattedStyle = style.trim(); // no title casing anymore
     transformed.gear_setups[formattedStyle] = transformGearStyleBlock(block, unmatched);
   }
 
   transformed.unmatched_items = [...unmatched].filter(i => i.length > 1).sort();
+
+  const bossKey = path.basename(filename, '.json').replace(/_/g, '-');
+  const expectedRaw = expectedGearStyles[bossKey] || [];
+
+  const normalizeStyleName = s => s.toLowerCase().trim();
+
+  const expected = expectedRaw.map(normalizeStyleName).sort();
+  const actual = Object.keys(transformed.gear_setups).map(normalizeStyleName).sort();
+
+  const missing = expected.filter(s => !actual.includes(s));
+  const extra = actual.filter(s => !expected.includes(s));
+
+  if (missing.length || extra.length) {
+    console.log(`⚠️  Style mismatch for ${bossKey}:`);
+    if (missing.length) console.log(`   🔻 Missing: ${missing.join(', ')}`);
+    if (extra.length) console.log(`   🔺 Unexpected: ${extra.join(', ')}`);
+  }
+
   return transformed;
 }
 
-// Entry point
 fs.readdirSync(INPUT_DIR)
   .filter(file => file.endsWith('.json'))
   .forEach(file => {
@@ -370,5 +364,4 @@ fs.readdirSync(INPUT_DIR)
     } else {
       console.log(`✅ Transformed ${bossName} with 0 unmatched item(s)`);
     }
-
   });

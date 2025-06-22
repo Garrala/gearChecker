@@ -17,9 +17,7 @@
         "dragonfire": 80,
         "special attack": 121
       },
-      "weaknesses": {
-
-      },
+      "weaknesses": {},
       "defense": {
         "melee": {
           "stab": 26,
@@ -56,7 +54,9 @@
       "Shield": [
         [ "Dragonfire ward" ],
         [ "Anti-dragon shield" ],
-        [ "Twisted buckler" ]
+        [ "Twisted buckler" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Zaryte crossbow" ],
@@ -83,7 +83,8 @@
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
         [ "Ava's accumulator" ],
-        [ "Ranging cape" ]
+        [ "Ranging cape" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
@@ -123,7 +124,7 @@
       "Ring": [
         [ "Venator ring", "Lightbearer" ],
         [ "Archers ring (i)" ],
-        [ "Ring of suffering (ri)" ],
+        [ "Ring of suffering (i)" ],
         [ "Ring of shadows" ],
         [ "Brimstone ring" ]
       ]
@@ -144,8 +145,7 @@
         [ "Rune kiteshield" ]
       ],
       "Special Attack": [
-        [ "Burning claws" ],
-        [ "Voidwaker" ],
+        [ "Burning claws", "Voidwaker" ],
         [ "Dragon claws" ],
         [ "Elder maul" ],
         [ "Bandos godsword", "Dragon warhammer" ],
@@ -174,14 +174,14 @@
       ],
       "Body": [
         [ "Torva platebody" ],
-        [ "Bandos chestplate" ],
+        [ "Bandos chestplate", "Oathplate chest" ],
         [ "Justiciar chestguard", "Blood moon chestplate" ],
         [ "Any Barrows tank body", "Fighter torso" ],
         [ "Obsidian platebody" ]
       ],
       "Legs": [
         [ "Torva platelegs" ],
-        [ "Bandos tassets" ],
+        [ "Bandos tassets", "Oathplate legs" ],
         [ "Justiciar legguards", "Blood moon tassets" ],
         [ "Any Barrows tank legs" ],
         [ "Obsidian platelegs" ]
@@ -209,7 +209,96 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
+    },
+    "Ranged": {
+      "Helmet": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Amulet": [
+        [ "Salve amulet (ei)" ],
+        [ "Necklace of anguish" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ]
+      ],
+      "Cape": [
+        [ "Dizana's quiver" ],
+        [ "Ava's assembler" ],
+        [ "Ava's accumulator" ],
+        [ "Ranging cape" ],
+        [ "N/A" ]
+      ],
+      "Body": [
+        [ "Masori body (f)" ],
+        [ "Elite void top", "Void knight top" ],
+        [ "Crystal body" ],
+        [ "Karil's leathertop" ],
+        [ "Eclipse moon chestplate", "Any Blessed body" ]
+      ],
+      "Legs": [
+        [ "Masori chaps (f)" ],
+        [ "Elite void robe", "Void knight robe" ],
+        [ "Crystal legs" ],
+        [ "Karil's leatherskirt" ],
+        [ "Any Blessed chaps", "Black d'hide chaps" ]
+      ],
+      "Weapon": [
+        [ "Dragon hunter crossbow" ],
+        [ "Toxic blowpipe" ],
+        [ "Zaryte crossbow", "Armadyl crossbow", "Dragon crossbow" ],
+        [ "Bow of Faerdhinen" ],
+        [ "Rune crossbow" ]
+      ],
+      "Shield": [
+        [ "Dragonfire ward" ],
+        [ "Anti-dragon shield" ],
+        [ "Twisted buckler" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Ruby dragon bolts (e)", "Diamond dragon bolts (e)" ],
+        [ "Ruby bolts (e)", "Diamond bolts (e)" ],
+        [ "Opal dragon bolts (e)", "Pearl dragon bolts (e)" ],
+        [ "Dragon bolts" ],
+        [ "Runite bolts" ]
+      ],
+      "Gloves": [
+        [ "Zaryte vambraces" ],
+        [ "Void knight gloves" ],
+        [ "Barrows gloves" ],
+        [ "Any Blessed vambraces", "Black d'hide vambraces" ],
+        [ "Ranger gloves" ]
+      ],
+      "Boots": [
+        [ "Pegasian boots" ],
+        [ "Ranger boots" ],
+        [ "Any Blessed boots" ],
+        [ "Aranea boots" ],
+        [ "Boots of brimstone", "Mixed hide boots" ]
+      ],
+      "Ring": [
+        [ "Venator ring", "Lightbearer" ],
+        [ "Archers ring (i)" ],
+        [ "Ring of suffering (i)" ],
+        [ "Ring of shadows" ],
+        [ "Brimstone ring" ]
+      ],
+      "Special Attack": [
+        [ "Zaryte crossbow" ],
+        [ "Elder maul" ],
+        [ "Bandos godsword", "Dragon warhammer" ],
+        [ "Armadyl crossbow" ],
+        [ "Toxic blowpipe" ]
       ]
     }
   }

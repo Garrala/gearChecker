@@ -39,22 +39,6 @@
   ],
   "gear_setups": {
     "Ranged": {
-      "Weapon": [
-        [ "Webweaver bow", "Craw's bow" ],
-        [ "Twisted bow" ],
-        [ "Bow of Faerdhinen" ],
-        [ "Toxic blowpipe", "Hunters' sunlight crossbow" ],
-        [ "Dragon crossbow", "Rune crossbow" ],
-        [ "N/A" ]
-      ],
-      "Shield": [
-        [ "Book of law" ],
-        [ "Unholy book" ],
-        [ "Black d'hide shield" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
       "Helmet": [
         [ "Slayer helmet (i)", "Black mask (i)" ],
         [ "Any Blessed coif" ],
@@ -95,6 +79,30 @@
         [ "N/A" ],
         [ "N/A" ]
       ],
+      "Weapon": [
+        [ "Webweaver bow", "Craw's bow" ],
+        [ "Twisted bow" ],
+        [ "Bow of Faerdhinen" ],
+        [ "Toxic blowpipe", "Hunters' sunlight crossbow" ],
+        [ "Dragon crossbow", "Rune crossbow" ],
+        [ "N/A" ]
+      ],
+      "Shield": [
+        [ "Book of law" ],
+        [ "Unholy book" ],
+        [ "Black d'hide shield" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Dragon arrows", "Amethyst arrows", "Rune arrows" ],
+        [ "Moonlight antler bolts" ],
+        [ "Diamond dragon bolts (e)" ],
+        [ "Diamond bolts (e)" ]
+      ],
       "Gloves": [
         [ "Barrows gloves" ],
         [ "Any Blessed vambraces" ],
@@ -118,14 +126,6 @@
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
-      ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
-        [ "Dragon arrows", "Amethyst arrows", "Rune arrows" ],
-        [ "Moonlight antler bolts" ],
-        [ "Diamond dragon bolts (e)" ],
-        [ "Diamond bolts (e)" ]
       ],
       "Special Attack": [
         [ "N/A" ],

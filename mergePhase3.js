@@ -23,46 +23,14 @@ function mergeGearData(originalData, transformedRaw) {
 
   const merged = {
     ...originalData,
-    gear_setups: originalData.gear_setups ? JSON.parse(JSON.stringify(originalData.gear_setups)) : {}
+    gear_setups: {}
   };
 
   for (const style of Object.keys(transformedData)) {
-    if (!merged.gear_setups[style]) {
-      merged.gear_setups[style] = {};
-    }
+    merged.gear_setups[style] = {};
 
     for (const slot of Object.keys(transformedData[style])) {
-      if (slot === 'Helmet') {
-        merged.gear_setups[style]['Helmet'] = originalData.gear_setups?.[style]?.['Helmet'] || [["N/A"]];
-        continue;
-      }
-
-      const newSlot = transformedData[style][slot];
-      const oldSlot = merged.gear_setups[style][slot] || [["N/A"]];
-
-      const oldFlat = Array.isArray(oldSlot?.[0])
-        ? oldSlot.flat().map(s => String(s).trim())
-        : Array.isArray(oldSlot)
-          ? oldSlot.map(s => String(s).trim())
-          : [String(oldSlot).trim()];
-
-      const newFlat = Array.isArray(newSlot?.[0])
-        ? newSlot.flat().map(s => String(s).trim())
-        : Array.isArray(newSlot)
-          ? newSlot.map(s => String(s).trim())
-          : [String(newSlot).trim()];
-
-      const added = newFlat.filter(x => !oldFlat.includes(x));
-      const removed = oldFlat.filter(x => !newFlat.includes(x));
-
-      if (added.length || removed.length) {
-        console.log(`🔄 ${style} → ${slot}`);
-        if (added.length) console.log(`   ➕ Added: ${added.join(', ')}`);
-        if (removed.length) console.log(`   ➖ Removed: ${removed.join(', ')}`);
-      }
-
-      merged.gear_setups[style][slot] = newSlot;
-      moveAnyGodBlessingToEnd(merged.gear_setups[style]);
+      merged.gear_setups[style][slot] = transformedData[style][slot];
     }
 
     for (const slot of ALL_SLOTS) {
@@ -70,10 +38,13 @@ function mergeGearData(originalData, transformedRaw) {
         merged.gear_setups[style][slot] = [["N/A"]];
       }
     }
+
+    moveAnyGodBlessingToEnd(merged.gear_setups[style]);
   }
 
   return merged;
 }
+
 
 function padSlotArraysToUniformLength(gearSetups) {
   for (const style of Object.keys(gearSetups)) {
