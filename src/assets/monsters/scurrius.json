@@ -43,9 +43,9 @@
   "gear_setups": {
     "Melee (high level)": {
       "Weapon": [
-        [ "Scythe of vitur" ],
+        [ "Scythe of Vitur" ],
         [ "Soulreaper axe", "Inquisitor's mace" ],
-        [ "Bone mace", "Blade of saeldor", "Ghrazi rapier" ],
+        [ "Bone mace", "Blade of Saeldor", "Ghrazi rapier" ],
         [ "Abyssal tentacle", "Abyssal whip" ]
       ],
       "Shield": [

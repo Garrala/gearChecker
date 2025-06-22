@@ -42,11 +42,11 @@
   "gear_setups": {
     "Melee": {
       "Weapon": [
-        [ "Scythe of vitur" ],
+        [ "Scythe of Vitur" ],
         [ "Emberlight", "Soulreaper axe" ],
         [ "Noxious halberd", "Arclight" ],
         [ "Zombie axe" ],
-        [ "Blade of saeldor" ]
+        [ "Blade of Saeldor" ]
       ],
       "Special Attack": [
         [ "Bandos godsword" ],

@@ -206,5 +206,9 @@
   "Oathplate helm": {
     "image": "/assets/gear-icons/oathplate-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Oathplate_helm"
+  },
+  " Obsidian helmet": {
+    "image": "/assets/gear-icons/Obsidian_helmet.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Obsidian_helmet"
   }
 }

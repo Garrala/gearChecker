@@ -1,0 +1,341 @@
+{
+  "Magic": {
+    "Helmet": [
+      [
+        "Ancestral hat"
+      ],
+      [
+        "Virtus mask"
+      ]
+    ],
+    "Amulet": [
+      [
+        "Occult necklace"
+      ],
+      [
+        "N",
+        "A"
+      ]
+    ],
+    "Cape": [
+      [
+        "Imbued saradomin cape"
+      ],
+      [
+        "Max cape"
+      ]
+    ],
+    "Body": [
+      [
+        "Ancestral robe top"
+      ],
+      [
+        "Virtus robe top"
+      ]
+    ],
+    "Legs": [
+      [
+        "Ancestral robe bottom"
+      ],
+      [
+        "Virtus robe bottom"
+      ]
+    ],
+    "Weapon": [
+      [
+        "Tumeken's shadow"
+      ],
+      [
+        "N",
+        "A"
+      ]
+    ],
+    "Shield": [
+      [
+        "Elidinis' ward(f)"
+      ],
+      [
+        "N",
+        "A"
+      ]
+    ],
+    "Ammo": [
+      [
+        "Unholy blessing"
+      ],
+      [
+        "N",
+        "A"
+      ]
+    ],
+    "Gloves": [
+      [
+        "Tormented bracelet"
+      ],
+      [
+        "N",
+        "A"
+      ]
+    ],
+    "Boots": [
+      [
+        "Eternal boots"
+      ],
+      [
+        "Infinity boots",
+        "Aranea boots"
+      ]
+    ],
+    "Ring": [
+      [
+        "Magus ring"
+      ],
+      [
+        "Lightbearer"
+      ]
+    ],
+    "Special Attack": [
+      [
+        "Eldritch nightmare staff"
+      ],
+      [
+        "Accursed sceptre"
+      ]
+    ]
+  },
+  "Ranged": {
+    "Helmet": [
+      [
+        "Masori mask(f)",
+        "Slayer helmet(i)"
+      ],
+      [
+        "Crystal helm"
+      ],
+      [
+        "Justiciar faceguard"
+      ],
+      [
+        "Verac's helm",
+        "Saradomin coif"
+      ],
+      [
+        "Helm of neitiznot"
+      ]
+    ],
+    "Amulet": [
+      [
+        "Necklace of anguish"
+      ],
+      [
+        "Amulet of fury"
+      ],
+      [
+        "Dragonbone necklace",
+        "Bonecrusher necklace",
+        "[1]"
+      ],
+      [
+        "Amulet of glory"
+      ],
+      [
+        "Holy symbol",
+        "Unholy symbol"
+      ]
+    ],
+    "Cape": [
+      [
+        "Dizana's quiver"
+      ],
+      [
+        "Ava's assembler"
+      ],
+      [
+        "Max cape",
+        "Ranging cape(t)"
+      ],
+      [
+        "Ava's accumulator"
+      ],
+      [
+        "Ava's attractor"
+      ]
+    ],
+    "Body": [
+      [
+        "Masori body(f)"
+      ],
+      [
+        "Crystal body"
+      ],
+      [
+        "Saradomin d'hide body",
+        "Zamorak d'hide body"
+      ],
+      [
+        "Karil's leathertop"
+      ],
+      [
+        "Black d'hide body"
+      ]
+    ],
+    "Legs": [
+      [
+        "Masori chaps(f)"
+      ],
+      [
+        "Crystal legs"
+      ],
+      [
+        "Saradomin chaps",
+        "Zamorak chaps"
+      ],
+      [
+        "Karil's leatherskirt"
+      ],
+      [
+        "Black d'hide chaps"
+      ]
+    ],
+    "Weapon": [
+      [
+        "Twisted bow"
+      ],
+      [
+        "Bow of faerdhinen",
+        "[2]"
+      ],
+      [
+        "Zaryte crossbow"
+      ],
+      [
+        "Hunters' sunlight crossbow",
+        "[3]"
+      ],
+      [
+        "Armadyl crossbow",
+        "Dragon hunter crossbow",
+        "Dragon crossbow",
+        "Rune crossbow"
+      ]
+    ],
+    "Shield": [
+      [
+        "Twisted buckler"
+      ],
+      [
+        "Dragonfire ward"
+      ],
+      [
+        "Odium ward"
+      ],
+      [
+        "Crystal shield"
+      ],
+      [
+        "N",
+        "A"
+      ]
+    ],
+    "Ammo": [
+      [
+        "Dragon arrow",
+        "Diamond dragon bolts(e)",
+        "Moonlight antler bolts",
+        "God blessing"
+      ],
+      [
+        "Amethyst arrow",
+        "Diamond bolts(e)",
+        "Sunlight antler bolts"
+      ],
+      [
+        "N",
+        "A"
+      ],
+      [
+        "N",
+        "A"
+      ],
+      [
+        "N",
+        "A"
+      ]
+    ],
+    "Gloves": [
+      [
+        "Zaryte vambraces"
+      ],
+      [
+        "Barrows gloves"
+      ],
+      [
+        "Saradomin bracers",
+        "Zamorak bracers"
+      ],
+      [
+        "N",
+        "A"
+      ],
+      [
+        "N",
+        "A"
+      ]
+    ],
+    "Boots": [
+      [
+        "Pegasian boots"
+      ],
+      [
+        "Saradomin d'hide boots",
+        "Zamorak d'hide boots"
+      ],
+      [
+        "Aranea boots"
+      ],
+      [
+        "Ranger boots"
+      ],
+      [
+        "Boots of brimstone"
+      ]
+    ],
+    "Ring": [
+      [
+        "Ring of suffering(ri)"
+      ],
+      [
+        "Ring of endurance"
+      ],
+      [
+        "Venator ring"
+      ],
+      [
+        "Ring of the gods(i)"
+      ],
+      [
+        "Explorer's ring 4"
+      ]
+    ],
+    "Special Attack": [
+      [
+        "Toxic blowpipe"
+      ],
+      [
+        "Zaryte crossbow"
+      ],
+      [
+        "Armadyl crossbow",
+        "Tonalztics of ralos"
+      ],
+      [
+        "Dragon crossbow",
+        "Dragon thrownaxe"
+      ],
+      [
+        "N",
+        "A"
+      ]
+    ]
+  }
+}

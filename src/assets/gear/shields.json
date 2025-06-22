@@ -158,5 +158,9 @@
   "Anti-dragon shield": {
     "image": "/assets/gear-icons/anti-dragon-shield.png",
     "wiki": "https://oldschool.runescape.wiki/w/Anti-dragon_shield"
+  },
+  "Any Blessed shield": {
+    "image": "/assets/gear-icons/Ancient_d'hide_shield.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Ancient_d%27hide_shield"
   }
 }

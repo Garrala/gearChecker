@@ -1,5 +1,23 @@
 {
   "Ranged": {
+    "Helmet": [
+      [
+        "Slayer helmet(i)",
+        "Black mask(i)"
+      ],
+      [
+        "Blessed coif"
+      ],
+      [
+        "Karil's coif"
+      ],
+      [
+        "Snakeskin bandana"
+      ],
+      [
+        "Coif"
+      ]
+    ],
     "Amulet": [
       [
         "Necklace of anguish"
@@ -39,7 +57,7 @@
     ],
     "Body": [
       [
-        "Masori body (f)"
+        "Masori body(f)"
       ],
       [
         "Crystal body"
@@ -57,7 +75,7 @@
     ],
     "Legs": [
       [
-        "Masori chaps (f)"
+        "Masori chaps(f)"
       ],
       [
         "Crystal legs"
@@ -131,10 +149,10 @@
         "Moonlight antler bolts"
       ],
       [
-        "Diamond dragon bolts (e)"
+        "Diamond dragon bolts(e)"
       ],
       [
-        "Diamond bolts (e)"
+        "Diamond bolts(e)"
       ]
     ],
     "Gloves": [
@@ -164,7 +182,7 @@
         "Mixed hide boots"
       ],
       [
-        "Shayzien boots (5)"
+        "Shayzien boots(5)"
       ],
       [
         "Snakeskin boots"
@@ -191,11 +209,6 @@
       [
         "N",
         "A"
-      ]
-    ],
-    "Helmet": [
-      [
-        "N/A"
       ]
     ],
     "Special Attack": [

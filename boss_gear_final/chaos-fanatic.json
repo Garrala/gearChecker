@@ -1,6 +1,24 @@
 {
   "gear_setups": {
     "Ranged": {
+      "Helmet": [
+        [
+          "Slayer helmet (i)",
+          "Black mask (i)"
+        ],
+        [
+          "Any Blessed coif"
+        ],
+        [
+          "Karil's coif"
+        ],
+        [
+          "Snakeskin bandana"
+        ],
+        [
+          "Coif"
+        ]
+      ],
       "Amulet": [
         [
           "Necklace of anguish"
@@ -79,7 +97,7 @@
           "Twisted bow"
         ],
         [
-          "Bow of faerdhinen"
+          "Bow of Faerdhinen"
         ],
         [
           "Toxic blowpipe",
@@ -175,11 +193,6 @@
         [
           "N/A"
         ],
-        [
-          "N/A"
-        ]
-      ],
-      "Helmet": [
         [
           "N/A"
         ]

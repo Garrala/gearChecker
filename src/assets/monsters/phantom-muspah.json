@@ -40,7 +40,7 @@
     "Magic & Ranged": {
       "Weapon": [
         [ "Tumeken's shadow", "Twisted bow" ],
-        [ "Harmonised nightmare staff", "Bow of faerdhinen" ],
+        [ "Harmonised nightmare staff", "Bow of Faerdhinen" ],
         [ "Kodai wand", "Nightmare staff", "Zaryte crossbow", "Armadyl crossbow", "Dragon hunter crossbow", "Dragon crossbow" ],
         [ "Sanguinesti staff", "Trident of the swamp", "Trident of the seas", "Toxic staff of the dead", "Toxic blowpipe", "Crystal bow" ],
         [ "Ancient sceptre", "Rune crossbow" ]
@@ -126,7 +126,7 @@
     "Ranged Only": {
       "Weapon": [
         [ "Zaryte crossbow", "Twisted bow" ],
-        [ "Armadyl crossbow", "Bow of faerdhinen" ],
+        [ "Armadyl crossbow", "Bow of Faerdhinen" ],
         [ "Dragon hunter crossbow", "Dragon crossbow", "Toxic blowpipe", "Crystal bow" ],
         [ "Rune crossbow" ]
       ],

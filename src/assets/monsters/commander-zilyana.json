@@ -41,9 +41,13 @@
   "gear_setups": {
     "Magic": {
       "Weapon": [
-        [ "Tumeken's shadow" ]
+        [ "Tumeken's shadow" ],
+        [ "N/A" ]
       ],
-      "Shield": [ [ "Elidinis' ward (f)" ] ],
+      "Shield": [
+        [ "Elidinis' ward (f)" ],
+        [ "N/A" ]
+      ],
       "Special Attack": [
         [ "Eldritch nightmare staff" ],
         [ "Accursed sceptre" ]
@@ -52,7 +56,10 @@
         [ "Ancestral hat" ],
         [ "Virtus mask" ]
       ],
-      "Amulet": [ [ "Occult necklace" ] ],
+      "Amulet": [
+        [ "Occult necklace" ],
+        [ "N/A" ]
+      ],
       "Cape": [
         [ "Imbued saradomin cape" ],
         [ "Max cape" ]
@@ -65,7 +72,10 @@
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ]
       ],
-      "Gloves": [ [ "Tormented bracelet" ] ],
+      "Gloves": [
+        [ "Tormented bracelet" ],
+        [ "N/A" ]
+      ],
       "Boots": [
         [ "Eternal boots" ],
         [ "Infinity boots", "Aranea boots" ]
@@ -74,12 +84,15 @@
         [ "Magus ring" ],
         [ "Lightbearer" ]
       ],
-      "Ammo": [ [ "Unholy blessing" ] ]
+      "Ammo": [
+        [ "Unholy blessing" ],
+        [ "N/A" ]
+      ]
     },
     "Ranged": {
       "Weapon": [
         [ "Twisted bow" ],
-        [ "Bow of faerdhinen" ],
+        [ "Bow of Faerdhinen" ],
         [ "Zaryte crossbow" ],
         [ "Hunters' sunlight crossbow" ],
         [ "Armadyl crossbow", "Dragon hunter crossbow", "Dragon crossbow", "Rune crossbow" ]
@@ -88,13 +101,15 @@
         [ "Twisted buckler" ],
         [ "Dragonfire ward" ],
         [ "Odium ward" ],
-        [ "Crystal shield" ]
+        [ "Crystal shield" ],
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Toxic blowpipe" ],
         [ "Zaryte crossbow" ],
         [ "Armadyl crossbow", "Tonalztics of ralos" ],
-        [ "Dragon crossbow", "Dragon thrownaxe" ]
+        [ "Dragon crossbow", "Dragon thrownaxe" ],
+        [ "N/A" ]
       ],
       "Helmet": [
         [ "Masori mask (f)", "Slayer helmet (i)" ],
@@ -134,7 +149,9 @@
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
-        [ "Saradomin bracers", "Zamorak bracers" ]
+        [ "Saradomin bracers", "Zamorak bracers" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
@@ -151,9 +168,11 @@
         [ "Explorer's ring 4" ]
       ],
       "Ammo": [
-        [ "Dragon arrows" ],
-        [ "Diamond dragon bolts (e)" ],
-        [ "Diamond bolts (e)" ]
+        [ "Dragon arrows", "Diamond dragon bolts (e)", "Moonlight antler bolts", "Any God blessing" ],
+        [ "Amethyst arrows", "Diamond bolts (e)", "Sunlight antler bolts" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     }
   }

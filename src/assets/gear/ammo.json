@@ -94,6 +94,11 @@
     "wiki": "https://oldschool.runescape.wiki/w/Rada%27s_blessing_2",
     "ammoType": "blessing"
   },
+  "Rada's blessing 1": {
+    "image": "/assets/gear-icons/Rada's_blessing_1.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Rada%27s_blessing_1",
+    "ammoType": "blessing"
+  },
   "Dragon javelin": {
     "image": "/assets/gear-icons/dragon-javelin.png",
     "wiki": "https://oldschool.runescape.wiki/w/Dragon_javelin",

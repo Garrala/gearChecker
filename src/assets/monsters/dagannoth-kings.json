@@ -110,14 +110,14 @@
   "gear_setups": {
     "Hybrid (All Kings)": {
       "Weapon": [
-        [ "Scythe of vitur", "Tumeken's shadow", "Twisted bow" ],
+        [ "Scythe of Vitur", "Tumeken's shadow", "Twisted bow" ],
         [
           "Inquisitor's mace",
           "Ghrazi rapier",
-          "Blade of saeldor",
+          "Blade of Saeldor",
           "Noxious halberd",
           "Sanguinesti staff",
-          "Bow of faerdhinen"
+          "Bow of Faerdhinen"
         ],
         [
           "Osmumten's fang",
@@ -289,7 +289,7 @@
     },
     "Ranged (Prime only)": {
       "Weapon": [
-        [ "Twisted bow", "Bow of faerdhinen" ],
+        [ "Twisted bow", "Bow of Faerdhinen" ],
         [ "Toxic blowpipe" ],
         [ "Crystal bow" ],
         [ "Hunters' sunlight crossbow" ],

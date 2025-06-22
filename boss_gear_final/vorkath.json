@@ -1,6 +1,24 @@
 {
   "gear_setups": {
     "Ranged (Crossbow)": {
+      "Helmet": [
+        [
+          "Masori mask (f)"
+        ],
+        [
+          "Void ranger helm"
+        ],
+        [
+          "Slayer helmet (i)"
+        ],
+        [
+          "Crystal helm",
+          "Serpentine helm"
+        ],
+        [
+          "Any Blessed coif"
+        ]
+      ],
       "Amulet": [
         [
           "Salve amulet (ei)"
@@ -86,7 +104,7 @@
           "Dragon crossbow"
         ],
         [
-          "Bow of faerdhinen"
+          "Bow of Faerdhinen"
         ],
         [
           "Rune crossbow"
@@ -200,14 +218,30 @@
         [
           "Toxic blowpipe"
         ]
-      ],
-      "Helmet": [
-        [
-          "N/A"
-        ]
       ]
     },
     "Melee": {
+      "Helmet": [
+        [
+          "Torva full helm",
+          "Slayer helmet (i)"
+        ],
+        [
+          "Neitiznot faceguard",
+          "Serpentine helm",
+          "Oathplate helm"
+        ],
+        [
+          "Justiciar faceguard",
+          "Blood moon helm"
+        ],
+        [
+          "Helm of neitiznot"
+        ],
+        [
+          "Any Barrows tank helm"
+        ]
+      ],
       "Amulet": [
         [
           "Salve amulet (ei)",
@@ -406,11 +440,6 @@
         ],
         [
           "Bone dagger"
-        ]
-      ],
-      "Helmet": [
-        [
-          "N/A"
         ]
       ]
     }

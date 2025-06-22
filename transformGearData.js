@@ -31,14 +31,74 @@ function manualInterventionSubstitutions() {
     "Blessed chaps": "Any Blessed chaps",
     "Blessed vambraces": "Any Blessed vambraces",
     "Salve amulet(ei)": "Salve amulet (ei)",
-    "Cape of Accomplishment (t)": "Any Skillcape (t)",
+    "Cape of Accomplishment(t)": "Any Skillcape (t)",
+    "Cape of accomplishment": "Any Skillcape",
     "Blessed d'hide body": "Any Blessed body",
     "Blessed d'hide chaps": "Any Blessed chaps",
     "Barrows platebody": "Any Barrows tank body",
+    "Barrows body": "Any Barrows tank body",
+    "Barrows top": "Any Barrows tank body",
+    "Barrows legs": "Any Barrows tank legs",
     "Barrows platelegs": "Any Barrows tank legs",
     "God blessing": "Any God blessing",
     "Barrowss": "Barrows",
-    "Ring of suffering (ri)": "Ring of suffering (i)",
+    "Ring of suffering(ri)": "Ring of suffering (i)",
+    "Ring of suffering(i)": "Ring of suffering (i)",
+    "Ranging cape(t)": "Ranging cape (t)",
+    "Imbued god cape": "Any Imbued God cape",
+    "(f) Inquisitor's plateskirt": "Inquisitor's plateskirt",
+    "(f) Inquisitor's hauberk": "Inquisitor's hauberk",
+    "Dragon arrow": "Dragon arrows",
+    "Cape of Accomplishment": "Any Skillcape",
+    "Barrows helm": "Any Barrows tank helm",
+    "Blessed coif": "Any Blessed coif",
+    "Archers ring(i)": "Archers ring (i)",
+    "Berserker ring(i)": "Berserker ring (i)",
+    "Masori mask(f)": "Masori mask (f)",
+    "Masori body(f)": "Masori body (f)",
+    "Masori chaps(f)": "Masori chaps (f)",
+    "Slayer helmet(i)": "Slayer helmet (i)",
+    "Salve amulet(e)": "Salve amulet (e)",
+    "Ruby bolts(e)": "Ruby bolts (e)",
+    "Ruby dragon bolts(e)": "Ruby dragon bolts (e)",
+    "Black mask(i)": "Black mask (i)",
+    "Diamond bolts(e)": "Diamond bolts (e)",
+    "Diamond dragon bolts(e)": "Diamond dragon bolts (e)",
+    "Shayzien boots(5)": "Shayzien boots (5)",
+    "Ring of the gods(i)": "Ring of the gods (i)",
+    "Elidinis' ward(f)": "Elidinis' ward (f)",
+    "Tyrannical ring(i)": "Tyrannical ring (i)",
+    "Explorer's ring": "Explorer's ring 4",
+    "God capes": "Any God cape",
+    "Iban's staff(u)": "Iban's staff (u)",
+    "Imbued god capes": "Any Imbued God cape",
+    "Ring of wealth(i)": "Ring of wealth (i)",
+    "Amethyst arrow": "Amethyst arrows",
+    "Ardougne cloak 4": "Ardougne cloak 4",
+    "Ardougne cloak 3": "Ardougne cloak 3",
+    "Ardougne cloak": "Ardougne cloak 4",
+    "Magic shortbow(i)": "Magic shortbow (i)",
+    "Vestment cloak": "Any God vestment cloaks",
+    "Blade of saeldor": "Blade of Saeldor",
+    "Scythe of vitur": "Scythe of Vitur",
+    "Bow of faerdhinen": "Bow of Faerdhinen",
+    "Warrior ring(i)": "Warrior ring (i)",
+    "Abyssal dagger(p)": "Abyssal dagger",
+    "Dragon dagger(p)": "Dragon dagger",
+    "4 Mythical cape": "Mythical cape",
+    "Seers ring(i)": "Seers ring (i)",
+    "Defence cape": "Defense cape",
+    "Rune arrow": "Rune arrows",
+    "Ava's device": "Ava's attractor",
+    "4 3": "Ardougne cloak 3",
+    "3/2/1": "Ardougne cloak 3",
+    "Any other blessing": "Any God blessing",
+    "God cape": "Any God cape",
+    "Blessed shield": "Any Blessed shield",
+    "Bone dagger(p)": "Bone dagger",
+    "Bow of Faerdhinen": "Bow of Faerdhinen",
+    "Treasonous ring(i)": "Treasonous ring (i)",
+    "Rada's blessing": "Rada's blessing 1"
   };
 }
 
@@ -61,24 +121,50 @@ const CUSTOM_UNMATCHED_FIXES = {
     "Rada's blessing 3",
     "Rada's blessing 2"
     ]],
-
+  "Rada's blessing 3/2": ["Rada's blessing 3", "Rada's blessing 2"],
   "Barrows platebody Fighter torso": ["Any Barrows tank body", "Fighter torso"],
   "Blessed body": ["Any Blessed body"],
   "Blessed chaps Black d'hide chaps": ["Any Blessed chaps", "Black d'hide chaps"],
   "Blessed vambraces Black d'hide vambraces": ["Any Blessed vambraces", "Black d'hide vambraces"],
   "God blessing Rada's blessing 3 Rada's blessing 2": ["Any God blessing", "Rada's blessing 3", "Rada's blessing 2"],
-  "Salve amulet(ei) Salve amulet (e)": ["Salve amulet (ei)", "Salve amulet (e)"]
+  "Salve amulet(ei) Salve amulet (e)": ["Salve amulet (ei)", "Salve amulet (e)"],
+  "Amethyst arrow Diamond bolts (e) Sunlight antler bolts": [
+    ["Amethyst arrows", "Diamond bolts (e)", "Sunlight antler bolts"]
+  ],
+  "Dragon arrow Diamond dragon bolts (e) Moonlight antler bolts God blessing": [
+    ["Dragon arrows", "Diamond dragon bolts (e)", "Moonlight antler bolts", "Any God blessing"]
+  ],
+  "Ruby dragon bolts(e) Diamond dragon bolts(e)": ["Ruby dragon bolts (e)", "Diamond dragon bolts (e)"],
+  "Opal dragon bolts(e) Pearl dragon bolts(e)": ["Opal dragon bolts (e)", "Pearl dragon bolts (e)"],
+  "Ruby bolts(e) Diamond bolts(e)": ["Ruby bolts (e)", "Diamond bolts (e)"],
+  "Tyrannical ring(i) Ultor ring": ["Tyrannical ring (i)", "Ultor ring"],
+  "Amethyst arrow Diamond bolts(e) Sunlight antler bolts": ["Amethyst arrows", "Diamond bolts (e)", "Sunlight antler bolts"],
+  "Blade of Saeldor Noxious halberd Sanguinesti staff Bow of Faerdhinen": ["Blade of Saeldor", "Noxious halberd", "Sanguinesti staff", "Bow of Faerdhinen"],
+  "Scythe of Vitur Tumeken's shadow Twisted bow": ["Scythe of Vitur", "Tumeken's shadow", "Twisted bow"],
+  "4 3": ["Ardougne cloak 4", "Ardougne cloak 3"],
+  "Skillcape(t) Ardougne cloak 2 Vestment cloak": ["Any Skillcape (t)", "Ardougne cloak 2", "Any God vestment cloaks"],
+  "Explorer's Ring 3/2/1": ["Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1"],
+  "of breaching Black salamander": ["Keris partisan of breaching", "Black salamander"]
 };
+
+const NORMALIZED_CUSTOM_UNMATCHED_FIXES = {};
+for (const [rawKey, value] of Object.entries(CUSTOM_UNMATCHED_FIXES)) {
+  const cleanedKey = cleanItemName(rawKey);
+  NORMALIZED_CUSTOM_UNMATCHED_FIXES[cleanedKey] = value;
+}
 
 // Cleans up spacing, bracket artifacts, and common typos
 function cleanItemName(name) {
   if (typeof name !== 'string') return '';
   return name
-    .replace(/\[[^\]]+\]/g, '') // remove [1], [note] etc
-    .replace(/\s+/g, ' ')
-    .replace(/Barrowss/g, 'Barrows')
+    .replace(/\[[^\]]+\]/g, '')              // Remove footnote references like [1]
+    .replace(/[^a-zA-Z0-9()/\s'-]/g, '')      // Remove weird symbols, keep slashes
+    .replace(/\s+/g, ' ')                     // Normalize spaces
+    .replace(/Barrowss/g, 'Barrows')          // Fix typos
     .trim();
 }
+
+
 
 // Load all gear slot files into slot-indexed map
 function loadValidItemsBySlot() {
@@ -147,24 +233,29 @@ function normalizeRow(row, slotKey) {
   while (current !== last) {
     last = current;
 
+    const cleaned = cleanItemName(current);
+
     // Apply manual substitutions
-    if (MANUAL_SUBS[current]) {
-      current = MANUAL_SUBS[current];
+    if (MANUAL_SUBS[cleaned]) {
+      current = MANUAL_SUBS[cleaned];
       continue;
     }
 
     // Apply custom group fixes
-    if (CUSTOM_UNMATCHED_FIXES[current]) {
-      return CUSTOM_UNMATCHED_FIXES[current];
+    if (NORMALIZED_CUSTOM_UNMATCHED_FIXES[cleaned]) {
+      return NORMALIZED_CUSTOM_UNMATCHED_FIXES[cleaned];
     }
 
+
     // Apply N/A catch
-    if (/^(n\/?a|n a)$/i.test(current)) {
+    if (/^(n\/?a|n a)$/i.test(cleaned)) {
       return ['N/A'];
     }
 
-    current = cleanItemName(current);
+    current = cleaned;
+    //console.log(`Checking: "${row.join(' ')}" → Cleaned: "${cleaned}"`);
   }
+
 
   // At this point, try matching the cleaned result
   if (VALID_ITEMS_BY_SLOT[slotKey]?.has(current)) return [current];
@@ -198,7 +289,8 @@ function transformGearStyleBlock(styleBlock, unmatchedItems) {
 
     for (const row of rows) {
       const combined = row.join(' ').trim();
-      const replacement = CUSTOM_UNMATCHED_FIXES[combined];
+      const cleanedCombined = cleanItemName(combined);  // 🛠 Clean the string before checking fixes
+      const replacement = NORMALIZED_CUSTOM_UNMATCHED_FIXES[cleanedCombined];;
 
       // Handle manual multi-group fix: insert directly into appropriate slot
       if (Array.isArray(replacement) && Array.isArray(replacement[0])) {
@@ -230,6 +322,7 @@ function transformGearStyleBlock(styleBlock, unmatchedItems) {
 
   return normalized;
 }
+
 
 function inferSlotFromItemGroup(group) {
   for (const [slot, itemSet] of Object.entries(VALID_ITEMS_BY_SLOT)) {
@@ -269,5 +362,13 @@ fs.readdirSync(INPUT_DIR)
     const result = transformFile(file);
     const outputPath = path.join(OUTPUT_DIR, `${bossName}.json`);
     fs.writeFileSync(outputPath, JSON.stringify(result, null, 2));
-    console.log(`✅ Transformed ${bossName} with ${result.unmatched_items.length} unmatched item(s)`);
+    if (result.unmatched_items.length > 0) {
+      console.log(`⚠️ Transformed ${bossName} with ${result.unmatched_items.length} unmatched item(s):`);
+      for (const item of result.unmatched_items) {
+        console.log(`   - ${item}`);
+      }
+    } else {
+      console.log(`✅ Transformed ${bossName} with 0 unmatched item(s)`);
+    }
+
   });

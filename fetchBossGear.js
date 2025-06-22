@@ -3,9 +3,24 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
-const urls = {
+const simpleUrls = {
   "Chaos Fanatic": "https://oldschool.runescape.wiki/w/Chaos_Fanatic/Strategies",
+  "Commander Zilyana": "https://oldschool.runescape.wiki/w/Commander_Zilyana/Strategies",
+  "Crazy Archaeologist": "https://oldschool.runescape.wiki/w/Crazy_archaeologist/Strategies",
+  "Deranged Archaeologist": "https://oldschool.runescape.wiki/w/Deranged_archaeologist/Strategies",
+  "Duke Sucellus": "https://oldschool.runescape.wiki/w/Duke_Sucellus/Strategies",
+  "General Graardor": "https://oldschool.runescape.wiki/w/General_Graardor/Strategies",
+  "Giant Mole": "https://oldschool.runescape.wiki/w/Giant_Mole/Strategies",
+  "Hespori": "https://oldschool.runescape.wiki/w/Hespori/Strategies",
+  "Kalphite Queen": "https://oldschool.runescape.wiki/w/Kalphite_Queen/Strategies",
+  "King Black Dragon": "https://oldschool.runescape.wiki/w/King_Black_Dragon/Strategies",
   "Vorkath": "https://oldschool.runescape.wiki/w/Vorkath/Strategies",
+};
+
+const complexUrls = {
+  "Corporeal Beast": "https://oldschool.runescape.wiki/w/Corporeal_Beast/Strategies",
+  "Dagannoth Kings": "https://oldschool.runescape.wiki/w/Dagannoth_Kings/Strategies",
+  "Grotesque Guardians": "https://oldschool.runescape.wiki/w/Grotesque_Guardians/Strategies"
 };
 
 const outputFolder = path.join(__dirname, 'boss_gear_scrape');
@@ -13,15 +28,22 @@ if (!fs.existsSync(outputFolder)) {
   fs.mkdirSync(outputFolder);
 }
 
-function extractSlotName(imgTag) {
-  const altRaw = $(imgTag).attr('alt') || '';
-  const titleRaw = $(imgTag).closest('a').attr('title') || '';
-  const alt = altRaw.trim().toLowerCase();
-  const title = titleRaw.trim().toLowerCase();
+function extractSlotName(cellOrImg) {
+  let alt = '', title = '';
+
+  if (typeof cellOrImg === 'string') {
+    alt = title = cellOrImg.toLowerCase();
+  } else {
+    alt = $(cellOrImg).attr('alt')?.toLowerCase() || '';
+    title = $(cellOrImg).closest('a').attr('title')?.toLowerCase() || '';
+  }
 
   const slotMap = {
     'head': 'Helmet',
+    'helm': 'Helmet',
     'helmet': 'Helmet',
+    'head slot': 'Helmet',
+    'helm slot': 'Helmet',
     'neck': 'Amulet',
     'amulet': 'Amulet',
     'cape': 'Cape',
@@ -54,6 +76,11 @@ function extractSlotName(imgTag) {
   return null;
 }
 
+function tightenParentheses(text) {
+  return text.replace(/\s+\(([^)]+)\)/g, '($1)');
+}
+
+
 async function fetchGearFromWiki(bossName, url) {
   try {
     const response = await axios.get(url);
@@ -76,7 +103,7 @@ async function fetchGearFromWiki(bossName, url) {
 
       $(table)
         .find('tr')
-        .slice(2)
+        .slice(1)
         .each((_, row) => {
           const cells = $(row).find('td');
           if (cells.length === 0) return;
@@ -111,9 +138,10 @@ async function fetchGearFromWiki(bossName, url) {
             if (links.length > 0) {
               links.each((_, a) => {
                 const text = $(a).text().replace(/\[[a-z]\]/gi, '').trim();
-                if (text && !seen.has(text)) {
-                  seen.add(text);
-                  names.push(text);
+                const tightened = tightenParentheses(text);
+                if (tightened && !seen.has(tightened)) {
+                  seen.add(tightened);
+                  names.push(tightened);
                 }
               });
             }
@@ -121,16 +149,26 @@ async function fetchGearFromWiki(bossName, url) {
             if (names.length === 0) {
               $(cell).text().split(/(?:>|,|\/|\n)/).forEach(t => {
                 const cleaned = t.replace(/\[[a-z]\]/gi, '').trim();
-                if (cleaned && !seen.has(cleaned)) {
-                  seen.add(cleaned);
-                  names.push(cleaned);
+                const tightened = tightenParentheses(cleaned);
+                if (tightened && !seen.has(tightened)) {
+                  seen.add(tightened);
+                  names.push(tightened);
                 }
               });
             }
 
-            if (names.length > 0) {
-              gearData[style][slotName].push(names);
+            // Normalize known funky blessings
+            const replacedNames = names.flatMap(name => {
+              if (name.toLowerCase() === "rada's blessing 3/2") {
+                return ["Rada's blessing 3", "Rada's blessing 2"];
+              }
+              return [name];
+            });
+
+            if (replacedNames.length > 0) {
+              gearData[style][slotName].push(replacedNames);
             }
+
           });
         });
     });
@@ -163,7 +201,15 @@ async function fetchGearFromWiki(bossName, url) {
 }
 
 (async () => {
-  for (const [bossName, url] of Object.entries(urls)) {
+  for (const [bossName, url] of Object.entries(simpleUrls)) {
     await fetchGearFromWiki(bossName, url);
   }
+
+  for (const [bossName, url] of Object.entries(complexUrls)) {
+    console.log(`⚠️ Skipping complex boss for now: ${bossName}`);
+    // Optionally write an empty stub so your final merge doesn’t break
+    const stubPath = path.join(outputFolder, `${bossName.replace(/\s+/g, '-').toLowerCase()}.json`);
+    fs.writeFileSync(stubPath, JSON.stringify({ gear_setups: {}, unmatched_items: [] }, null, 2));
+  }
 })();
+

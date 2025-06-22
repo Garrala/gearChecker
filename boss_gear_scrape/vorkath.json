@@ -1,5 +1,23 @@
 {
   "Ranged (crossbow)": {
+    "Helmet": [
+      [
+        "Masori mask(f)"
+      ],
+      [
+        "Void ranger helm"
+      ],
+      [
+        "Slayer helmet(i)"
+      ],
+      [
+        "Crystal helm",
+        "Serpentine helm"
+      ],
+      [
+        "Blessed coif"
+      ]
+    ],
     "Amulet": [
       [
         "Salve amulet(ei)"
@@ -37,7 +55,7 @@
     ],
     "Body": [
       [
-        "Masori body (f)"
+        "Masori body(f)"
       ],
       [
         "Elite void top",
@@ -56,7 +74,7 @@
     ],
     "Legs": [
       [
-        "Masori chaps (f)"
+        "Masori chaps(f)"
       ],
       [
         "Elite void robe",
@@ -113,16 +131,16 @@
     ],
     "Ammo": [
       [
-        "Ruby dragon bolts (e)",
-        "Diamond dragon bolts (e)"
+        "Ruby dragon bolts(e)",
+        "Diamond dragon bolts(e)"
       ],
       [
-        "Ruby bolts (e)",
-        "Diamond bolts (e)"
+        "Ruby bolts(e)",
+        "Diamond bolts(e)"
       ],
       [
-        "Opal dragon bolts (e)",
-        "Pearl dragon bolts (e)"
+        "Opal dragon bolts(e)",
+        "Pearl dragon bolts(e)"
       ],
       [
         "Dragon bolts"
@@ -173,10 +191,10 @@
         "Lightbearer"
       ],
       [
-        "Archers ring (i)"
+        "Archers ring(i)"
       ],
       [
-        "Ring of suffering (ri)"
+        "Ring of suffering(ri)"
       ],
       [
         "Ring of shadows"
@@ -202,18 +220,34 @@
       [
         "Toxic blowpipe"
       ]
-    ],
-    "Helmet": [
-      [
-        "N/A"
-      ]
     ]
   },
   "Melee": {
+    "Helmet": [
+      [
+        "Torva full helm",
+        "Slayer helmet(i)"
+      ],
+      [
+        "Neitiznot faceguard",
+        "Serpentine helm",
+        "Oathplate helm"
+      ],
+      [
+        "Justiciar faceguard",
+        "Blood moon helm"
+      ],
+      [
+        "Helm of neitiznot"
+      ],
+      [
+        "Barrows helm"
+      ]
+    ],
     "Amulet": [
       [
         "Salve amulet(ei)",
-        "Salve amulet (e)"
+        "Salve amulet(e)"
       ],
       [
         "Amulet of rancour"
@@ -242,7 +276,7 @@
         "Ardougne cloak 3"
       ],
       [
-        "Cape of Accomplishment (t)"
+        "Cape of Accomplishment(t)"
       ]
     ],
     "Body": [
@@ -382,7 +416,7 @@
         "Ultor ring"
       ],
       [
-        "Berserker ring (i)"
+        "Berserker ring(i)"
       ],
       [
         "Lightbearer"
@@ -391,7 +425,7 @@
         "Brimstone ring"
       ],
       [
-        "Ring of suffering (i)"
+        "Ring of suffering(i)"
       ]
     ],
     "Special Attack": [
@@ -411,11 +445,6 @@
       ],
       [
         "Bone dagger"
-      ]
-    ],
-    "Helmet": [
-      [
-        "N/A"
       ]
     ]
   }

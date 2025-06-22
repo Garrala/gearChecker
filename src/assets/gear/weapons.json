@@ -11,7 +11,7 @@
     "twoHanded": true,
     "usesAmmoType": "arrow"
   },
-  "Bow of faerdhinen": {
+  "Bow of Faerdhinen": {
     "image": "/assets/gear-icons/bow-of-faerdhinen.png",
     "wiki": "https://oldschool.runescape.wiki/w/Bow_of_faerdhinen",
     "twoHanded": true,
@@ -161,7 +161,7 @@
     "twoHanded": false,
     "usesAmmoType": "blessing"
   },
-  "Blade of saeldor": {
+  "Blade of Saeldor": {
     "image": "/assets/gear-icons/blade-of-saeldor.png",
     "wiki": "https://oldschool.runescape.wiki/w/Blade_of_saeldor#Charged",
     "twoHanded": false,
@@ -203,7 +203,7 @@
     "twoHanded": false,
     "usesAmmoType": "blessing"
   },
-  "Scythe of vitur": {
+  "Scythe of Vitur": {
     "image": "/assets/gear-icons/scythe-of-vitur.png",
     "wiki": "https://oldschool.runescape.wiki/w/Scythe_of_vitur#Charged",
     "twoHanded": true,

@@ -1,0 +1,129 @@
+{
+  "name": "Crazy Archeologist",
+  "category": "Wilderness Bosses",
+  "image": "assets/monster-icons/crazy_archeologist.png",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist",
+  "bosses": [
+    {
+      "name": "Crazy Archeologist",
+      "image": "assets/monster-icons/crazy_archeologist.png",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist",
+      "combat_level": 204,
+      "hp": 225,
+      "max_hit": {
+        "ranged": 14,
+        "special": 24
+      },
+      "defense": {
+        "melee": {
+          "stab": 5,
+          "slash": 5,
+          "crush": 30
+        },
+        "magic": 250,
+        "ranged": {
+          "arrows": 250,
+          "bolts": 250,
+          "thrown": 250
+        }
+      },
+      "attack_styles": [ "Ranged", "Special" ],
+      "attack_speed": 3,
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "venom": false,
+        "cannons": false,
+        "thralls": false
+      }
+    }
+  ],
+  "gear_setups": {
+    "Magic": {
+      "Weapon": [
+        [ "Accursed sceptre", "Thammaron's sceptre" ],
+        [ "Sanguinesti staff" ],
+        [ "Trident of the swamp" ],
+        [ "Trident of the seas" ],
+        [ "Warped sceptre", "Iban's staff (u)" ]
+      ],
+      "Shield": [
+        [ "Elidinis' ward (f)", "Elidinis' ward" ],
+        [ "Book of darkness" ],
+        [ "Unholy book" ],
+        [ "Tome of fire" ],
+        [ "Broodoo shield" ]
+      ],
+      "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Bloodbark helm" ],
+        [ "Mitre" ],
+        [ "Mystic hat" ],
+        [ "Xerician hat", "Fremennik hat" ]
+      ],
+      "Amulet": [
+        [ "Occult necklace" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of magic" ],
+        [ "Amulet of power" ]
+      ],
+      "Cape": [
+        [ "Any Imbued God cape" ],
+        [ "Any God cape" ],
+        [ "Ardougne cloak 4" ],
+        [ "Ardougne cloak 3" ],
+        [ "Ardougne cloak 2" ]
+      ],
+      "Body": [
+        [ "Bloodbark body" ],
+        [ "Mystic robe top" ],
+        [ "Xerician top" ],
+        [ "Zamorak monk top" ],
+        [ "Monk's robe top" ]
+      ],
+      "Legs": [
+        [ "Bloodbark legs" ],
+        [ "Mystic robe bottom" ],
+        [ "Xerician robe" ],
+        [ "Zamorak monk bottom" ],
+        [ "Monk's robe" ]
+      ],
+      "Gloves": [
+        [ "Tormented bracelet" ],
+        [ "Barrows gloves" ],
+        [ "Dragon gloves" ],
+        [ "Rune gloves" ],
+        [ "N/A" ]
+      ],
+      "Boots": [
+        [ "Mystic boots" ],
+        [ "Ghostly boots" ],
+        [ "Splitbark boots" ],
+        [ "Moonclan boots" ],
+        [ "N/A" ]
+      ],
+      "Ring": [
+        [ "Ring of shadows" ],
+        [ "Explorer's ring 4" ],
+        [ "Beacon ring" ],
+        [ "Ring of wealth (i)" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Special Attack": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
+    }
+  }
+}

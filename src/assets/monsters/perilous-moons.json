@@ -102,8 +102,8 @@
     "Eclipse Moon": {
       "Weapon": [
         [ "Soulreaper axe" ],
-        [ "Ghrazi rapier", "Scythe of vitur" ],
-        [ "Blade of saeldor" ],
+        [ "Ghrazi rapier", "Scythe of Vitur" ],
+        [ "Blade of Saeldor" ],
         [ "Voidwaker", "Zamorakian hasta", "Noxious halberd" ],
         [ "Abyssal dagger", "Osmumten's fang", "Dragon sword", "Zombie axe", "Dragon hasta", "Dragon scimitar" ]
       ],
@@ -184,7 +184,7 @@
     },
     "Blue Moon": {
       "Weapon": [
-        [ "Scythe of vitur" ],
+        [ "Scythe of Vitur" ],
         [ "Dual macuahuitl", "Glacial temotli" ],
         [ "Inquisitor's mace", "Soulreaper axe" ],
         [ "Ursine chainmace (u)", "Zamorakian hasta", "Abyssal bludgeon" ],
@@ -268,9 +268,9 @@
     },
     "Blood Moon": {
       "Weapon": [
-        [ "Scythe of vitur" ],
+        [ "Scythe of Vitur" ],
         [ "Soulreaper axe" ],
-        [ "Blade of saeldor", "Ghrazi rapier", "Abyssal tentacle" ],
+        [ "Blade of Saeldor", "Ghrazi rapier", "Abyssal tentacle" ],
         [ "Noxious halberd", "Abyssal whip", "Zamorakian hasta" ],
         [ "Dragon scimitar", "Sulphur blades", "Zombie axe" ]
       ],

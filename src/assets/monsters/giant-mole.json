@@ -40,7 +40,7 @@
     "Ranged": {
       "Weapon": [
         [ "Twisted bow" ],
-        [ "Bow of faerdhinen" ],
+        [ "Bow of Faerdhinen" ],
         [ "Crystal bow" ],
         [ "Zaryte crossbow" ],
         [ "Armadyl crossbow" ]
@@ -178,7 +178,7 @@
     "Ranged (Void)": {
       "Weapon": [
         [ "Twisted bow" ],
-        [ "Bow of faerdhinen" ]
+        [ "Bow of Faerdhinen" ]
       ],
       "Special Attack": [ [ "Elder maul" ] ],
       "Helmet": [ [ "Void ranger helm", "Void melee helm" ] ],
@@ -224,7 +224,7 @@
         [ "Osmumten's fang" ],
         [ "Ghrazi rapier" ],
         [ "Zamorakian hasta" ],
-        [ "Blade of saeldor" ],
+        [ "Blade of Saeldor" ],
         [ "Abyssal dagger" ]
       ],
       "Shield": [
