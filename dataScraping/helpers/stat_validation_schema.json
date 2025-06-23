@@ -1,0 +1,27 @@
+{
+  "attack_styles": [ "melee", "magic", "ranged", "stab", "slash", "crush", "dragonfire" ],
+  "max_hit_types": [
+    "melee",
+    "magic",
+    "ranged",
+    "stab",
+    "slash",
+    "crush",
+    "with explosion",
+    "standard",
+    "special",
+    "gaze",
+    "special direct hit",
+    "dragonfire bomb/special",
+    "rapid fire/special"
+  ],
+  "defense_types": {
+    "melee": [ "stab", "slash", "crush" ],
+    "magic": true,
+    "ranged": [ "arrows", "bolts", "thrown" ]
+  },
+  "immunities": [ "poison", "venom", "cannons", "thralls" ],
+  "aggression_values": [ "yes", "no" ],
+  "elemental_weaknesses": [ "fire", "water", "earth", "air", "none" ],
+  "ignore_case": [ ]
+}

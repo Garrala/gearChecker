@@ -5,9 +5,9 @@ const cheerio = require('cheerio');
 const beautify = require('js-beautify').html;
 
 // Load metadata
-const metadata = JSON.parse(fs.readFileSync('./boss_metadata.json', 'utf8'));
+const metadata = JSON.parse(fs.readFileSync('../boss_metadata.json', 'utf8'));
 
-const baseFolder = path.join(__dirname, 'boss_html_dumps');
+const baseFolder = path.join(__dirname, 'staging', 'boss_html_dumps');
 if (fs.existsSync(baseFolder)) {
   fs.rmSync(baseFolder, { recursive: true, force: true });
 }

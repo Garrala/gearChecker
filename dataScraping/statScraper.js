@@ -2,10 +2,10 @@ const fs = require('fs');
 const path = require('path');
 const cheerio = require('cheerio');
 const { fetchMonsterStats } = require('./helpers/stat_helpers');
-const metadata = require('./boss_metadata.json');
+const metadata = require('../boss_metadata.json');
 
-const htmlDumpPath = path.join(__dirname, 'boss_html_dumps');
-const statOutputPath = path.join(__dirname, 'boss_stat_scrape');
+const htmlDumpPath = path.join(__dirname, 'staging', 'boss_html_dumps');
+const statOutputPath = path.join(__dirname, 'staging', 'boss_stat_scrape');
 
 if (fs.existsSync(statOutputPath)) {
   fs.rmSync(statOutputPath, { recursive: true, force: true });

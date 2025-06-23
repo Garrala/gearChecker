@@ -3,10 +3,16 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 const { downloadImage } = require('./download_images');
+const validation = require('./stat_validation_schema.json');
+
+function normalize(str) {
+  return str.trim().toLowerCase();
+}
 
 function parseMaxHits(text, attackStyles) {
   const result = {};
   const pairs = text.match(/\d+\s*\([^\)]+\)/g);
+
   if (pairs) {
     for (const pair of pairs) {
       const [_, value, style] = pair.match(/(\d+)\s*\(([^\)]+)\)/) || [];
@@ -16,10 +22,19 @@ function parseMaxHits(text, attackStyles) {
     }
   } else {
     const soloMatch = text.match(/(\d+)/);
-    if (soloMatch && attackStyles.length === 1) {
-      result[attackStyles[0].toLowerCase()] = parseInt(soloMatch[1], 10);
+    if (soloMatch) {
+      const value = parseInt(soloMatch[1], 10);
+
+      if (attackStyles.length === 1) {
+        result[attackStyles[0].toLowerCase()] = value;
+      } else if (attackStyles.length > 1) {
+        for (const style of attackStyles) {
+          result[style.toLowerCase()] = value;
+        }
+      }
     }
   }
+
   return result;
 }
 
@@ -100,22 +115,16 @@ function extractFlatMagicDefense($) {
 }
 
 function extractElementalWeakness($) {
-  const htmlText = $.html().toLowerCase(); // Get the entire HTML as lowercase text
-
-  const elementMap = ['fire', 'water', 'earth', 'air'];
+  const htmlText = $.html().toLowerCase();
+  const allowed = new Set(validation.elemental_weaknesses);
   const match = htmlText.match(/(\d+%)\s+weakness/);
   const percent = match ? match[1] : null;
 
-  for (const element of elementMap) {
+  for (const element of validation.elemental_weaknesses) {
     if (htmlText.includes(`${element} elemental weakness`)) {
-      if (percent) {
-        const result = { [element]: percent };
-        console.log('🧪 Brute-forced Weakness:', result);
-        return result;
-      } else {
-        console.log(`⚠️ Found element (${element}) but no percent.`);
-        return { [element]: null };
-      }
+      const result = { [element]: percent || null };
+      //console.log('🧪 Brute-forced Weakness:', result);
+      return result;
     }
   }
 
@@ -123,8 +132,28 @@ function extractElementalWeakness($) {
     return 'none';
   }
 
-  console.log('❓ Could not find any elemental weakness info.');
+  console.warn('❓ No known elemental weakness found');
   return 'none';
+}
+
+
+function extractRangedDefense($) {
+  const headerRow = $('table.infobox-monster th:contains("Ranged defence")').closest('tr');
+  const defenseRow = headerRow.nextAll('tr').filter((_, tr) =>
+    $(tr).find('td.infobox-nested').length >= 3
+  ).first();
+
+  const values = defenseRow.find('td')
+    .map((_, td) => parseInt($(td).text().replace('+', '').trim()) || 0)
+    .get();
+
+  const [light, standard, heavy] = values;
+
+  return {
+    arrows: standard || 0,
+    bolts: heavy || 0,
+    thrown: light || 0
+  };
 }
 
 function createMonsterTemplate(phase, bossName) {
@@ -159,20 +188,49 @@ function parseAttackStyles($, info) {
   $('table.infobox-monster tr').each((_, tr) => {
     const th = $(tr).find('th').text().trim().toLowerCase();
     const td = $(tr).find('td').text().trim();
-    if (th.includes('attack style')) info.attack_styles = td.split(/,|\//).map(s => s.trim());
+
+    if (th.includes('attack style')) {
+      const rawStyles = td.split(/,|\//).map(s => s.trim().toLowerCase());
+      const allowed = new Set(validation.attack_styles.map(normalize));
+      const ignored = new Set(validation.ignore_case.map(normalize));
+
+      const valid = rawStyles.filter(s => allowed.has(normalize(s)));
+      const invalid = rawStyles.filter(s => {
+        const norm = normalize(s);
+        return !allowed.has(norm) && !ignored.has(norm);
+      });
+
+      info.attack_styles = valid.map(s => s[0].toUpperCase() + s.slice(1));
+
+      if (invalid.length > 0) {
+        console.warn(`⚠️ [${info.name}] Unrecognized attack style(s):`, invalid);
+      }
+    }
   });
 }
+
 
 function parseMaxHit($, info) {
   $('table.infobox-monster tr').each((_, tr) => {
     const th = $(tr).find('th').text().trim().toLowerCase();
     const td = $(tr).find('td').text().trim();
+
     if (th.includes('max hit')) {
-      info.max_hit = parseMaxHits(td, info.attack_styles);
-      //console.log(`🎯 Parsed max hit:`, info.max_hit);
+      const parsed = parseMaxHits(td, info.attack_styles);
+      info.max_hit = parsed;
+
+      const allowed = new Set(validation.max_hit_types.map(normalize));
+      const ignored = new Set(validation.ignore_case.map(normalize));
+      const keys = Object.keys(parsed);
+
+      const unknowns = keys.filter(k => {
+        const norm = normalize(k);
+        return !allowed.has(norm) && !ignored.has(norm);
+      });
     }
   });
 }
+
 
 function parseAttackSpeed($, info) {
   $('table.infobox-monster tr').each((_, tr) => {
@@ -183,28 +241,58 @@ function parseAttackSpeed($, info) {
 }
 
 function parseAggressive($, info) {
+  let found = false;
+
   $('table.infobox-monster tr').each((_, tr) => {
     const th = $(tr).find('th').text().trim().toLowerCase();
     const td = $(tr).find('td').text().trim();
-    if (th.includes('aggressive')) info.aggressive = td.toLowerCase().includes('yes');
+
+    if (th.includes('aggressive')) {
+      found = true;
+      info.aggressive = td.toLowerCase().includes('yes');
+    }
   });
+
+  if (!found) {
+    console.warn(`⚠️ [${info.name}] Aggressiveness info not found.`);
+  }
 }
 
+
 function parseImmunities($, info) {
+  const found = new Set();
+
   $('table.infobox-monster tr').each((_, tr) => {
     const th = $(tr).find('th').text().trim().toLowerCase();
-    const td = $(tr).find('td').text().trim();
-    if (th.includes('poison')) info.immunities.poison = td.toLowerCase().includes('immune');
-    else if (th.includes('venom')) info.immunities.venom = td.toLowerCase().includes('immune');
-    else if (th.includes('cannon')) info.immunities.cannons = td.toLowerCase().includes('immune');
-    else if (th.includes('thralls')) info.immunities.thralls = td.toLowerCase().includes('immune');
+    const td = $(tr).find('td').text().trim().toLowerCase();
+
+    for (const key of validation.immunities) {
+      if (th.includes(key)) {
+        info.immunities[key] = td.includes('immune');
+        found.add(key);
+      }
+    }
+
+    if (th.includes('immune')) {
+      const known = validation.immunities.map(s => s.toLowerCase());
+      const match = known.find(k => th.includes(k));
+      if (!match) {
+        console.warn(`❓ [${info.name}] Unknown immunity row: "${th}" = "${td}"`);
+      }
+    }
   });
+
+  const missing = validation.immunities.filter(k => !found.has(k));
+  if (missing.length > 0) {
+    console.warn(`⚠️ [${info.name}] Missing known immunities:`, missing);
+  }
 }
+
 
 async function parseInfoboxData($, phase, bossName) {
   const info = createMonsterTemplate(phase, bossName);
   const imageSlug = bossName.toLowerCase().replace(/\s+/g, '_') + (phase ? `__${phase.toLowerCase().replace(/\s+/g, '_')}__` : '');
-  const localImgPath = path.join(__dirname, '..', 'src', 'assets', 'monster-icons', `${imageSlug}.png`);
+  const localImgPath = path.join(__dirname, '..', '..', 'src', 'assets', 'monster-icons', `${imageSlug}.png`);
   const localImgRelPath = `assets/monster-icons/${imageSlug}.png`;
   const wikiImgSrc = getImageSrcFromInfobox($);
 
@@ -213,9 +301,10 @@ async function parseInfoboxData($, phase, bossName) {
   }
 
   info.image = localImgRelPath;
-  info.defense = extractMeleeDefense($)
+  info.defense.melee = extractMeleeDefense($)
   info.defense.magic = extractFlatMagicDefense($);
   info.weaknesses = extractElementalWeakness($);
+  info.defense.ranged = extractRangedDefense($);
   parseCombatLevel($, info);
   parseAttackStyles($, info);
   parseMaxHit($, info);
