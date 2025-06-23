@@ -1,0 +1,258 @@
+const axios = require('axios');
+const cheerio = require('cheerio');
+const fs = require('fs');
+const path = require('path');
+const { downloadImage } = require('./download_images');
+
+function parseMaxHits(text, attackStyles) {
+  const result = {};
+  const pairs = text.match(/\d+\s*\([^\)]+\)/g);
+  if (pairs) {
+    for (const pair of pairs) {
+      const [_, value, style] = pair.match(/(\d+)\s*\(([^\)]+)\)/) || [];
+      if (value && style) {
+        result[style.toLowerCase()] = parseInt(value, 10);
+      }
+    }
+  } else {
+    const soloMatch = text.match(/(\d+)/);
+    if (soloMatch && attackStyles.length === 1) {
+      result[attackStyles[0].toLowerCase()] = parseInt(soloMatch[1], 10);
+    }
+  }
+  return result;
+}
+
+function getImageSrcFromInfobox($) {
+  const imgTag = $('table.infobox-monster img').first();
+  let src = imgTag.attr('src');
+  if (src && src.startsWith('//')) src = 'https:' + src;
+  if (src && src.startsWith('/')) src = 'https://oldschool.runescape.wiki' + src;
+  return src;
+}
+
+function extractHp($) {
+  const rows = $('th:contains("Combat stats")')
+    .closest('tr')
+    .nextAll('tr');
+
+  for (let i = 0; i < rows.length; i++) {
+    const tds = $(rows[i]).find('td.infobox-nested');
+    if (tds.length >= 6) {
+      const raw = $(tds[0]).text().replace('+', '').trim();
+      const parsed = parseInt(raw);
+      //console.log('❤️ Extracted HP value:', parsed);
+      return parsed || 0;
+    }
+  }
+
+  console.log('❌ HP not found in expected Combat stats block.');
+  return 0;
+}
+
+function extractMeleeDefense($) {
+  const headerRow = $('table.infobox-monster th:contains("Melee defence")').closest('tr');
+  const defenseRow = headerRow.nextAll('tr').filter((_, tr) =>
+    $(tr).find('td.infobox-nested').length >= 3
+  ).first();
+
+  const values = defenseRow.find('td')
+    .map((_, td) => parseInt($(td).text().replace('+', '').trim()) || 0)
+    .get();
+
+  const [stab, slash, crush] = values;
+
+  //console.log(`🛡️ Extracted Melee Defense - stab: ${stab}, slash: ${slash}, crush: ${crush}`);
+  return {
+    stab: stab || 0,
+    slash: slash || 0,
+    crush: crush || 0
+  };
+}
+
+function extractFlatMagicDefense($) {
+  const magicDefenseRow = $('th:contains("Magic defence")').closest('tr').nextAll('tr')
+    .filter((_, tr) => $(tr).find('td.infobox-nested').length >= 2)
+    .first();
+
+  const columns = magicDefenseRow.find('td.infobox-nested');
+  const defenseText = $(columns[0]).text().replace('+', '').trim();
+  const defense = parseInt(defenseText, 10) || 0;
+
+  //console.log('🧙 Flat Magic Defense Extracted:', defense);
+  return defense;
+}
+
+function extractElementalWeakness($) {
+  const htmlText = $.html().toLowerCase(); // Get the entire HTML as lowercase text
+
+  const elementMap = ['fire', 'water', 'earth', 'air'];
+  const match = htmlText.match(/(\d+%)\s+weakness/);
+  const percent = match ? match[1] : null;
+
+  for (const element of elementMap) {
+    if (htmlText.includes(`${element} elemental weakness`)) {
+      if (percent) {
+        const result = { [element]: percent };
+        console.log('🧪 Brute-forced Weakness:', result);
+        return result;
+      } else {
+        console.log(`⚠️ Found element (${element}) but no percent.`);
+        return { [element]: null };
+      }
+    }
+  }
+
+  if (htmlText.includes('no elemental weakness')) {
+    return 'none';
+  }
+
+  console.log('❓ Could not find any elemental weakness info.');
+  return 'none';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function createMonsterTemplate(phase, bossName) {
+  return {
+    name: phase ? `${bossName} (${phase})` : bossName,
+    wiki_link: '',
+    image: '',
+    combat_level: 0,
+    hp: 0,
+    max_hit: {},
+    defense: {
+      melee: { stab: 0, slash: 0, crush: 0 },
+      magic: 0,
+      ranged: { arrows: 0, bolts: 0, thrown: 0 }
+    },
+    attack_styles: [],
+    attack_speed: null,
+    aggressive: false,
+    immunities: {}
+  };
+}
+
+function parseCombatLevel($, info) {
+  $('table.infobox-monster tr').each((_, tr) => {
+    const th = $(tr).find('th').text().trim().toLowerCase();
+    const td = $(tr).find('td').text().trim();
+    if (th.includes('combat level')) info.combat_level = parseInt(td);
+  });
+}
+
+function parseAttackStyles($, info) {
+  $('table.infobox-monster tr').each((_, tr) => {
+    const th = $(tr).find('th').text().trim().toLowerCase();
+    const td = $(tr).find('td').text().trim();
+    if (th.includes('attack style')) info.attack_styles = td.split(/,|\//).map(s => s.trim());
+  });
+}
+
+function parseMaxHit($, info) {
+  $('table.infobox-monster tr').each((_, tr) => {
+    const th = $(tr).find('th').text().trim().toLowerCase();
+    const td = $(tr).find('td').text().trim();
+    if (th.includes('max hit')) {
+      info.max_hit = parseMaxHits(td, info.attack_styles);
+      //console.log(`🎯 Parsed max hit:`, info.max_hit);
+    }
+  });
+}
+
+function parseAttackSpeed($, info) {
+  $('table.infobox-monster tr').each((_, tr) => {
+    const th = $(tr).find('th').text().trim().toLowerCase();
+    const td = $(tr).find('td').text().trim();
+    if (th.includes('attack speed')) info.attack_speed = parseInt(td.match(/\d+/)?.[0] || '0');
+  });
+}
+
+function parseAggressive($, info) {
+  $('table.infobox-monster tr').each((_, tr) => {
+    const th = $(tr).find('th').text().trim().toLowerCase();
+    const td = $(tr).find('td').text().trim();
+    if (th.includes('aggressive')) info.aggressive = td.toLowerCase().includes('yes');
+  });
+}
+
+function parseImmunities($, info) {
+  $('table.infobox-monster tr').each((_, tr) => {
+    const th = $(tr).find('th').text().trim().toLowerCase();
+    const td = $(tr).find('td').text().trim();
+    if (th.includes('poison')) info.immunities.poison = td.toLowerCase().includes('immune');
+    else if (th.includes('venom')) info.immunities.venom = td.toLowerCase().includes('immune');
+    else if (th.includes('cannon')) info.immunities.cannons = td.toLowerCase().includes('immune');
+    else if (th.includes('thralls')) info.immunities.thralls = td.toLowerCase().includes('immune');
+  });
+}
+
+async function parseInfoboxData($, phase, bossName) {
+  const info = createMonsterTemplate(phase, bossName);
+  const imageSlug = bossName.toLowerCase().replace(/\s+/g, '_') + (phase ? `__${phase.toLowerCase().replace(/\s+/g, '_')}__` : '');
+  const localImgPath = path.join(__dirname, '..', 'src', 'assets', 'monster-icons', `${imageSlug}.png`);
+  const localImgRelPath = `assets/monster-icons/${imageSlug}.png`;
+  const wikiImgSrc = getImageSrcFromInfobox($);
+
+  if (wikiImgSrc && !fs.existsSync(localImgPath)) {
+    await downloadImage(wikiImgSrc, localImgPath);
+  }
+
+  info.image = localImgRelPath;
+  info.defense = extractMeleeDefense($)
+  info.defense.magic = extractFlatMagicDefense($);
+  info.weaknesses = extractElementalWeakness($);
+  parseCombatLevel($, info);
+  parseAttackStyles($, info);
+  parseMaxHit($, info);
+  parseAttackSpeed($, info);
+  parseAggressive($, info);
+  parseImmunities($, info);
+
+  info.hp = extractHp($);
+
+  return info;
+}
+
+async function fetchMonsterStats(url, bossName) {
+  try {
+    const response = await axios.get(url);
+    const $ = cheerio.load(response.data);
+
+    const tabs = $('.infobox-buttons .button');
+    const bosses = [];
+
+    if (tabs.length > 0) {
+      for (const el of tabs) {
+        const phase = $(el).text().trim();
+        const phaseData = await parseInfoboxData($, phase, bossName);
+        if (phaseData) bosses.push(phaseData);
+      }
+    } else {
+      const singleBossData = await parseInfoboxData($, null, bossName);
+      if (singleBossData) bosses.push(singleBossData);
+    }
+
+    return bosses;
+  } catch (err) {
+    console.error(`❌ Failed to fetch monster stats for ${bossName}:`, err.message);
+    return null;
+  }
+}
+
+module.exports = { fetchMonsterStats };

@@ -1,4 +1,41 @@
 {
+  "name": "Deranged Archaeologist",
+  "category": "World Bosses",
+  "image": "assets/monster-icons/deranged_archaeologist.png",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist",
+  "bosses": [
+    {
+      "name": "Deranged Archaeologist",
+      "wiki_link": "",
+      "image": "assets/monster-icons/deranged_archaeologist.png",
+      "combat_level": 276,
+      "hp": 200,
+      "max_hit": {
+        "melee": 25,
+        "range": 25,
+        "special direct hit": 56
+      },
+      "defense": {
+        "stab": 20,
+        "slash": 20,
+        "crush": 50,
+        "magic": 300
+      },
+      "attack_styles": [
+        "Ranged",
+        "Crush"
+      ],
+      "attack_speed": 3,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
+    }
+  ],
   "gear_setups": {
     "Magic": {
       "Helmet": [

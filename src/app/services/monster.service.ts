@@ -57,6 +57,20 @@ export class MonsterService {
     )
   }
 
+  getSlayerMonsters(): Observable<Monster[]> {
+    return this.http.get<string[]>('assets/slayer/monster-list.json').pipe(
+      switchMap((monsterFiles) => {
+        const urls = monsterFiles.map((file) => `assets/slayer/${file}.json`);
+        return forkJoin(urls.map((url) => this.http.get<Monster>(url)));
+      }),
+      map((monsters) =>
+        monsters.map((monster) => ({
+          ...monster,
+          slug: this.generateSlug(monster.name),
+        }))
+      )
+    );
+  }
   
   private generateSlug(name: string): string {
   return name

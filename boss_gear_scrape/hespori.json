@@ -1,4 +1,42 @@
 {
+  "name": "Hespori",
+  "category": "Sporadic Bosses",
+  "image": "assets/monster-icons/hespori.png",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Hespori",
+  "bosses": [
+    {
+      "name": "Hespori",
+      "wiki_link": "",
+      "image": "assets/monster-icons/hespori.png",
+      "combat_level": 284,
+      "hp": 300,
+      "max_hit": {
+        "ranged": 2,
+        "magic": 14
+      },
+      "defense": {
+        "stab": 60,
+        "slash": 20,
+        "crush": 60,
+        "magic": 80
+      },
+      "attack_styles": [
+        "Ranged",
+        "Magic"
+      ],
+      "attack_speed": 6,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": {
+        "fire": "100%"
+      }
+    }
+  ],
   "gear_setups": {
     "Entry level": {
       "Helmet": [

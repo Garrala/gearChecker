@@ -66,5 +66,9 @@
   "Vorkath": [
     "Ranged",
     "Melee"
+  ],
+  "Wyrm": [
+    "Ranged",
+    "Melee"
   ]
 }

@@ -1,0 +1,729 @@
+<div class="monster-overview">
+  <!-- 🔄 Boss List Loading Spinner -->
+  <div *ngIf="isMonsterListLoading" class="spinner-container">
+    <div class="spinner"></div>
+  </div>
+
+  <div *ngIf="!isMonsterListLoading">
+    <h1>Slayer Targets</h1>
+    <!-- Item Search -->
+    <div class="item-filter">
+      <input type="text"
+             [(ngModel)]="itemSearchQuery"
+             (input)="updateSuggestions(); highlightedIndex = -1"
+             (keydown)="handleKeyDown($event)"
+             placeholder="Search by item..." />
+
+      <!-- Autocomplete Dropdown -->
+      <div class="autocomplete-dropdown" *ngIf="suggestedItems.length > 0">
+        <div class="autocomplete-item"
+             *ngFor="let item of suggestedItems; let i = index"
+             #itemRef
+             [class.highlighted]="i === highlightedIndex"
+             (click)="selectSuggestedItem(item)">
+          <img [src]="item.image"
+               alt="{{ item.name }}"
+               onerror="this.src='./assets/misc-icons/Bank_filler.png'" />
+          <span>{{ item.name }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Boss Selector -->
+    <div class="boss-picker">
+      <div *ngFor="let monster of filteredMonsters()"
+           class="monster-box"
+           [class.selected]="monster === selectedMonster"
+           (click)="selectMonster(monster)">
+        <img [src]="monster.image" alt="{{ monster.name }}" />
+        <p>{{ monster.name }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔄 Monster Content Loading Spinner -->
+  <div *ngIf="isMonsterDetailsLoading" class="spinner-container">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content" *ngIf="selectedMonster && !isMonsterDetailsLoading" #monsterDetails>
+    <!-- Boss Info -->
+    <div class="left-column">
+      <div class="boss-picture">
+        <!-- 🔹 Boss Selector (If Multi-Boss) -->
+        <div *ngIf="isMultiBoss(selectedMonster)" class="boss-selector">
+          <button *ngFor="let boss of selectedMonster?.bosses; let i = index"
+                  (click)="switchBoss(i)"
+                  [class.active]="selectedBossIndex === i">
+            {{ boss.name }}
+          </button>
+        </div>
+        <div class="icon-container">
+          <img [src]="getSelectedBoss()?.image"
+               alt="{{ getSelectedBoss()?.name }}" />
+          <a [href]="getSelectedBoss()?.wiki_link"
+             target="_blank"
+             class="boss-link">🔍</a>
+        </div>
+      </div>
+
+      <div class="boss-info-box">
+        <h3 class="boss-title">{{ getSelectedBoss()?.name }}</h3>
+
+        <div class="info-grid">
+          <div class="info-item">
+            <img src="./assets/misc-icons/Hitpoints_icon.png"
+                 title="Hitpoints" />
+            <strong>Hitpoints:</strong>
+            {{ getSelectedBoss()?.hp }}
+          </div>
+          <div class="info-item">
+            <img src="./assets/misc-icons/max_hit.png"
+                 title="Max Hit" />
+            <strong>Max Hit:</strong>
+            <div *ngIf="getSelectedBoss()?.max_hit">
+              <div *ngFor="let key of objectKeys(getSelectedBoss()?.max_hit || {})">
+                <span>
+                  <img *ngIf="key === 'melee'"
+                       title="Melee"
+                       src="./assets/misc-icons/Strength_icon.png"
+                       alt="Melee" />
+                  <img *ngIf="key === 'magic'"
+                       title="Magic"
+                       src="./assets/misc-icons/Magic_icon.png"
+                       alt="Magic" />
+                  <img *ngIf="key === 'ranged'"
+                       title="Ranged"
+                       src="./assets/misc-icons/Ranged_icon.png"
+                       alt="Ranged" />
+                  <img *ngIf="key === 'special attack'"
+                       title="Special Attack"
+                       src="./assets/misc-icons/Special_attack_orb.png"
+                       alt="Special Attack" />
+                  <img *ngIf="key === 'rockfall'"
+                       title="Rockfall"
+                       src="./assets/misc-icons/Pet_rock.png"
+                       alt="Rockfall" />
+                  <img *ngIf="key === 'typeless'"
+                       title="Typeless"
+                       src="./assets/misc-icons/Protect_from_Melee_overhead.png"
+                       alt="Typeless" />
+                  <img *ngIf="key === 'dragonfire'"
+                       title="Dragonfire"
+                       src="./assets/misc-icons/Fire_Surge.png"
+                       alt="Dragonfire" />
+                  <img *ngIf="key === 'explosion'"
+                       title="Explosion"
+                       src="./assets/misc-icons/Retribution.png"
+                       alt="Explosion" />
+                  <img *ngIf="key === 'tentacles'"
+                       title="Tentacles"
+                       src="./assets/misc-icons/Abyssal_tentacle.png"
+                       alt="Tentacles" />
+                  <img *ngIf="key === 'shadow_blast'"
+                       title="Shadow Blast"
+                       src="./assets/misc-icons/Special_attack_orb.png"
+                       alt="Shadow Blast" />
+                  <img *ngIf="key === 'default'"
+                       title="Default"
+                       src="./assets/misc-icons/Retribution.png"
+                       alt="Default" />
+                  <img *ngIf="key === 'empowered'"
+                       title="Empowered"
+                       src="./assets/misc-icons/Smite.png"
+                       alt="Empowered" />
+                  <img *ngIf="key === 'Icicle Crash'"
+                       title="Icicle Crash"
+                       src="./assets/misc-icons/Ice_Barrage.png"
+                       alt="Icicle Crash" />
+                  <img *ngIf="key === 'Pray Melee'"
+                       title="Pray Melee"
+                       src="./assets/misc-icons/Protect_from_Melee_overhead.png"
+                       alt="Pray Melee" />
+                  <img *ngIf="key === '1 Hp'"
+                       title="1 Hp"
+                       src="./assets/misc-icons/Vengeance.png"
+                       alt="1 Hp" />
+                  <img *ngIf="key === 'poison'"
+                       title="Poison"
+                       src="./assets/misc-icons/Poison_hitsplat.png"
+                       alt="Poison" />
+                  <img *ngIf="key === 'stomp'"
+                       title="Stomp"
+                       src="./assets/misc-icons/Hunter_icon.png"
+                       alt="Stomp" />
+                  {{ getSelectedBoss()?.max_hit?.[key] ?? 'N/A' }}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="info-item">
+            <img src="./assets/misc-icons/Combat_icon.png"
+                 title="Attack Style" />
+            <strong>Attack Style:</strong>
+            <span class="attack-style-box">
+
+              <img *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Melee')
+                "
+                   src="./assets/misc-icons/Strength_icon.png"
+                   alt="Melee"
+                   title="Melee Attack Style"
+                   class="attack-style-icon" />
+              <img *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Magic')
+                "
+                   src="./assets/misc-icons/Magic_icon.png"
+                   alt="Magic"
+                   title="Magic Attack Style"
+                   class="attack-style-icon" />
+
+              <img *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Ranged')
+                "
+                   src="./assets/misc-icons/Ranged_icon.png"
+                   alt="Ranged"
+                   title="Ranged Attack Style"
+                   class="attack-style-icon" />
+
+              <img *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Special Attack')
+                "
+                   src="./assets/misc-icons/Special_attack_orb.png"
+                   alt="Special Attack"
+                   title="Special Attack"
+                   class="attack-style-icon" />
+
+              <img *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Dragonfire')
+                "
+                   src="./assets/misc-icons/Fire_Surge.png"
+                   alt="Dragonfire"
+                   title="Dragonfire"
+                   class="attack-style-icon" />
+
+              <img *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Typeless')
+                "
+                   src="./assets/misc-icons/Protect_from_all.png"
+                   alt="Typeless"
+                   title="Typeless Attack Style"
+                   class="attack-style-icon" />
+
+              <img *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Venom')
+                "
+                   src="./assets/misc-icons/Venom_hitsplat.png"
+                   alt="Venom"
+                   title="Venom"
+                   class="attack-style-icon" />
+
+
+            </span>
+          </div>
+
+          <div class="info-item">
+            <img src="./assets/misc-icons/Attack_Speed_icon.png"
+                 title="Attack Speed" />
+            <strong>Attack Speed:</strong>
+            {{ getSelectedBoss()?.attack_speed }} ticks
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- Defense Section -->
+        <h4 class="info-grid-title">Defense</h4>
+        <div class="defense-grid">
+          <!-- Melee Defense (Row 1 - 3 columns) -->
+          <div class="defense-box">
+            <img src="./assets/misc-icons/Steel_dagger.png"
+                 title="Stab" />
+            <span *ngIf="getSelectedBoss()?.defense?.melee?.stab !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (getSelectedBoss()?.defense?.melee?.stab ?? 0)>
+              0,
+              negative: (getSelectedBoss()?.defense?.melee?.stab ?? 0) < 0,
+              }"
+              >
+              {{
+                (getSelectedBoss()?.defense?.melee?.stab ?? 0) > 0 ? '+' : ''
+              }}
+              {{ getSelectedBoss()?.defense?.melee?.stab ?? 0 }}
+            </span>
+          </div>
+
+          <div class="defense-box">
+            <img src="./assets/misc-icons/Steel_scimitar.png"
+                 title="Slash" />
+            <span *ngIf="getSelectedBoss()?.defense?.melee?.slash !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (getSelectedBoss()?.defense?.melee?.slash ?? 0)>
+              0,
+              negative: (getSelectedBoss()?.defense?.melee?.slash ?? 0) < 0,
+              }"
+              >
+              {{
+                (getSelectedBoss()?.defense?.melee?.slash ?? 0) > 0 ? '+' : ''
+              }}
+              {{ getSelectedBoss()?.defense?.melee?.slash ?? 0 }}
+            </span>
+          </div>
+          <div class="defense-box">
+            <img src="./assets/misc-icons/Steel_warhammer.png"
+                 title="Crush" />
+            <span *ngIf="getSelectedBoss()?.defense?.melee?.crush !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (getSelectedBoss()?.defense?.melee?.crush ?? 0)>
+              0,
+              negative: (getSelectedBoss()?.defense?.melee?.crush ?? 0) < 0,
+              }"
+              >
+              {{
+                (getSelectedBoss()?.defense?.melee?.crush ?? 0) > 0 ? '+' : ''
+              }}
+              {{ getSelectedBoss()?.defense?.melee?.crush ?? 0 }}
+            </span>
+          </div>
+
+          <!-- Magic Defense & Magic Weakness (Row 2 - 2 equal columns) -->
+          <div class="immunity-grid full-width">
+            <div class="defense-box">
+              <img src="./assets/misc-icons/Magic_defence_icon.png"
+                   title="Magic Defense" />
+              <span *ngIf="getSelectedBoss()?.defense?.magic !== undefined"
+                    [ngClass]="{
+                    'stat-value' : true,
+                    positive: (getSelectedBoss()?.defense?.magic ?? 0)>
+                0,
+                negative: (getSelectedBoss()?.defense?.magic ?? 0) < 0,
+                }"
+                >
+                {{ (getSelectedBoss()?.defense?.magic ?? 0) > 0 ? '+' : '' }}
+                {{ getSelectedBoss()?.defense?.magic ?? 0 }}
+              </span>
+            </div>
+            <div class="defense-box">
+              <div>
+                <img *ngIf="
+                    !getSelectedBoss()?.weaknesses ||
+                    objectKeys(getSelectedBoss()?.weaknesses).length === 0
+                  "
+                     src="./assets/misc-icons/Pure_essence.png"
+                     alt="No Weakness"
+                     title="No Elemental Weakness" />
+
+                <span *ngFor="
+                    let key of objectKeys(getSelectedBoss()?.weaknesses || {})
+                  ">
+                  <img *ngIf="key === 'fire'"
+                       src="./assets/misc-icons/Fire_rune.png"
+                       alt="Fire Weakness"
+                       title="Fire Weakness" />
+                  <img *ngIf="key === 'water'"
+                       src="./assets/misc-icons/Water_rune.png"
+                       alt="Water Weakness"
+                       title="Water Weakness" />
+                  <img *ngIf="key === 'earth'"
+                       src="./assets/misc-icons/Earth_rune.png"
+                       alt="Earth Weakness"
+                       title="Earth Weakness" />
+                  <img *ngIf="key === 'air'"
+                       src="./assets/misc-icons/Air_rune.png"
+                       alt="Air Weakness"
+                       title="Air Weakness" />
+                  <span class="negative">
+                    {{ getSelectedBoss()?.weaknesses?.[key] ?? 'None' }}
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- Ranged Defense (Row 3 - 3 columns) -->
+          <div class="defense-box">
+            <img src="./assets/misc-icons/Steel_dart.png"
+                 title="Thrown" />
+            <span *ngIf="getSelectedBoss()?.defense?.ranged?.thrown !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (getSelectedBoss()?.defense?.ranged?.thrown ?? 0)>
+              0,
+              negative: (getSelectedBoss()?.defense?.ranged?.thrown ?? 0) < 0,
+              }"
+              >
+              {{
+                (getSelectedBoss()?.defense?.ranged?.thrown ?? 0) > 0 ? '+' : ''
+              }}
+              {{ getSelectedBoss()?.defense?.ranged?.thrown ?? 0 }}
+            </span>
+          </div>
+          <div class="defense-box">
+            <img src="./assets/misc-icons/Steel_arrow_5.png"
+                 title="Arrows" />
+            <span *ngIf="getSelectedBoss()?.defense?.ranged?.arrows !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (getSelectedBoss()?.defense?.ranged?.arrows ?? 0)>
+              0,
+              negative: (getSelectedBoss()?.defense?.ranged?.arrows ?? 0) < 0,
+              }"
+              >
+              {{
+                (getSelectedBoss()?.defense?.ranged?.arrows ?? 0) > 0 ? '+' : ''
+              }}
+              {{ getSelectedBoss()?.defense?.ranged?.arrows ?? 0 }}
+            </span>
+          </div>
+          <div class="defense-box">
+            <img src="./assets/misc-icons/Steel_bolts_5.png"
+                 title="Bolts" />
+            <span *ngIf="getSelectedBoss()?.defense?.ranged?.bolts !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (getSelectedBoss()?.defense?.ranged?.bolts ?? 0)>
+              0,
+              negative: (getSelectedBoss()?.defense?.ranged?.bolts ?? 0) < 0,
+              }"
+              >
+              {{
+                (getSelectedBoss()?.defense?.ranged?.bolts ?? 0) > 0 ? '+' : ''
+              }}
+              {{ getSelectedBoss()?.defense?.ranged?.bolts ?? 0 }}
+            </span>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- Immunities -->
+        <h4 class="info-grid-title">Immunities</h4>
+        <div class="immunity-grid">
+          <div class="defense-box">
+            <img src="./assets/misc-icons/Poison_hitsplat.png"
+                 title="Poison" />
+            <span *ngIf="getSelectedBoss()?.immunities?.poison !== undefined"
+                  [ngClass]="{
+                'stat-value': true,
+                positive: getSelectedBoss()?.immunities?.poison,
+                negative: !getSelectedBoss()?.immunities?.poison,
+              }">
+              {{
+                getSelectedBoss()?.immunities?.poison
+                  ? 'Immune'
+                  : '❌ Not Immune'
+              }}
+            </span>
+          </div>
+          <div class="defense-box">
+            <img src="./assets/misc-icons/Venom_hitsplat.png"
+                 title="Venom" />
+            <span *ngIf="getSelectedBoss()?.immunities?.venom !== undefined"
+                  [ngClass]="{
+                'stat-value': true,
+                positive: getSelectedBoss()?.immunities?.venom,
+                negative: !getSelectedBoss()?.immunities?.venom,
+              }">
+              {{
+                getSelectedBoss()?.immunities?.venom
+                  ? 'Immune'
+                  : '❌ Not Immune'
+              }}
+            </span>
+          </div>
+          <div class="defense-box">
+            <img src="./assets/misc-icons/Cannon_barrels.png"
+                 title="Cannonable" />
+            <span *ngIf="getSelectedBoss()?.immunities?.cannons !== undefined"
+                  [ngClass]="{
+                'stat-value': true,
+                positive: getSelectedBoss()?.immunities?.cannons,
+                negative: !getSelectedBoss()?.immunities?.cannons,
+              }">
+              {{
+                getSelectedBoss()?.immunities?.cannons
+                  ? 'Immune'
+                  : '❌ Not Immune'
+              }}
+            </span>
+          </div>
+          <div class="defense-box">
+            <img src="./assets/misc-icons/Resurrect_Greater_Ghost.png"
+                 title="Thralls" />
+            <span *ngIf="getSelectedBoss()?.immunities?.thralls !== undefined"
+                  [ngClass]="{
+                'stat-value': true,
+                positive: getSelectedBoss()?.immunities?.thralls,
+                negative: !getSelectedBoss()?.immunities?.thralls,
+              }">
+              {{
+                getSelectedBoss()?.immunities?.thralls
+                  ? 'Immune'
+                  : '❌ Not Immune'
+              }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Player Loadout -->
+    <div class="character-loadout">
+      <h3>
+        Your Loadout <span class="setup-name">- {{ selectedSetup }}</span>
+      </h3>
+      <label>
+        <input type="checkbox"
+               [checked]="isSlayerHelmEnabled"
+               (change)="toggleSlayerHelm()" />
+        Toggle Slayer Helm
+      </label>
+
+      <div class="gear-grid">
+        <!-- Row 1 -->
+        <div class="gear-slot blank"></div>
+        <div class="gear-slot helmet">
+          <img [src]="
+              ownedGear['Helmet']?.length
+                ? gearData['helmets']?.[ownedGear['Helmet'][0]]?.image
+                : './assets/misc-icons/Bank_filler.png'
+            "
+               [alt]="
+              ownedGear['Helmet']?.length ? ownedGear['Helmet'][0] : 'No Helmet'
+            "
+               [attr.title]="
+              ownedGear['Helmet']?.length ? ownedGear['Helmet'][0] : 'No Helmet'
+            "
+               (error)="handleImageError($event)" />
+        </div>
+        <div class="gear-slot blank"></div>
+
+        <!-- Row 2 -->
+        <div class="gear-slot cape">
+          <img [src]="
+              ownedGear['Cape']?.[0]
+                ? gearData['capes']?.[ownedGear['Cape'][0]]?.image
+                : './assets/misc-icons/Bank_filler.png'
+            "
+               [alt]="ownedGear['Cape'][0][0] || 'No Cape'"
+               [attr.title]="
+              ownedGear['Cape'][0]?.length ? ownedGear['Cape'][0] : 'No Cape'
+            "
+               (error)="handleImageError($event)" />
+        </div>
+        <div class="gear-slot amulet">
+          <img [src]="
+              ownedGear['Amulet']?.[0]
+                ? gearData['amulets']?.[ownedGear['Amulet'][0]]?.image
+                : './assets/misc-icons/Bank_filler.png'
+            "
+               [alt]="ownedGear['Amulet'][0] || 'No Amulet'"
+               [attr.title]="
+              ownedGear['Amulet'][0]?.length
+                ? ownedGear['Amulet'][0]
+                : 'No Amulet'
+            "
+               (error)="handleImageError($event)" />
+        </div>
+        <div class="gear-slot ammo">
+          <img [src]="
+              ownedGear['Ammo']?.[0]
+                ? gearData['ammo']?.[ownedGear['Ammo'][0]]?.image
+                : './assets/misc-icons/Bank_filler.png'
+            "
+               [alt]="ownedGear['Ammo'][0] || 'No Ammo'"
+               [attr.title]="
+              ownedGear['Ammo'][0]?.length ? ownedGear['Ammo'][0] : 'No Ammo'
+            "
+               (error)="handleImageError($event)" />
+        </div>
+
+        <!-- Row 3 -->
+        <div class="gear-slot weapon">
+          <img [src]="
+              ownedGear['Weapon']?.[0]
+                ? gearData['weapons']?.[ownedGear['Weapon'][0]]?.image
+                : './assets/misc-icons/Bank_filler.png'
+            "
+               [alt]="ownedGear['Weapon'][0] || 'No Weapon'"
+               [attr.title]="
+              ownedGear['Weapon'][0]?.length
+                ? ownedGear['Weapon'][0]
+                : 'No Weapon'
+            "
+               (error)="handleImageError($event)" />
+        </div>
+        <div class="gear-slot body">
+          <img [src]="
+              ownedGear['Body']?.[0]
+                ? gearData['body']?.[ownedGear['Body'][0]]?.image
+                : './assets/misc-icons/Bank_filler.png'
+            "
+               [alt]="ownedGear['Body'][0] || 'No Body Armor'"
+               [attr.title]="
+              ownedGear['Body'][0]?.length ? ownedGear['Body'][0] : 'No Body'
+            "
+               (error)="handleImageError($event)" />
+        </div>
+        <!-- ✅ Conditionally hide the shield slot if weapon is two-handed -->
+        <div class="gear-slot shield">
+          <img [src]="
+              ownedGear['Shield']?.length
+                ? gearData['shields']?.[ownedGear['Shield'][0]]?.image
+                : './assets/misc-icons/Bank_filler.png'
+            "
+               [alt]="
+              ownedGear['Shield']?.length ? ownedGear['Shield'][0] : 'No Shield'
+            "
+               [attr.title]="
+              ownedGear['Shield'][0]?.length
+                ? ownedGear['Shield'][0]
+                : 'No Shield'
+            "
+               (error)="handleImageError($event)" />
+        </div>
+
+        <!-- Row 4 -->
+        <div class="gear-slot special">
+          <img [src]="
+              ownedGear['Special Attack']?.length
+                ? gearData['special_attack']?.[ownedGear['Special Attack'][0]]
+                    ?.image
+                : './assets/misc-icons/Bank_filler.png'
+            "
+               [alt]="
+              ownedGear['Special Attack']?.length
+                ? ownedGear['Special Attack'][0]
+                : 'No Special Attack Weapon'
+            "
+               [attr.title]="
+              ownedGear['Special Attack'][0]?.length
+                ? ownedGear['Special Attack'][0]
+                : 'No Special Attack'
+            "
+               (error)="handleImageError($event)" />
+        </div>
+        <div class="gear-slot legs">
+          <img [src]="
+              ownedGear['Legs']?.[0]
+                ? gearData['legs']?.[ownedGear['Legs'][0]]?.image
+                : './assets/misc-icons/Bank_filler.png'
+            "
+               [alt]="ownedGear['Legs'][0] || 'No Leg Armor'"
+               [attr.title]="
+              ownedGear['Legs'][0]?.length ? ownedGear['Legs'][0] : 'No Legs'
+            "
+               (error)="handleImageError($event)" />
+        </div>
+        <div class="gear-slot blank2"></div>
+
+        <!-- Row 5 -->
+        <div class="gear-slot gloves">
+          <img [src]="
+              ownedGear['Gloves']?.[0]
+                ? gearData['gloves']?.[ownedGear['Gloves'][0]]?.image
+                : './assets/misc-icons/Bank_filler.png'
+            "
+               [alt]="ownedGear['Gloves'][0] || 'No Gloves'"
+               [attr.title]="
+              ownedGear['Gloves'][0]?.length
+                ? ownedGear['Gloves'][0]
+                : 'No Gloves'
+            "
+               (error)="handleImageError($event)" />
+        </div>
+        <div class="gear-slot boots">
+          <img [src]="
+              ownedGear['Boots']?.[0]
+                ? gearData['boots']?.[ownedGear['Boots'][0]]?.image
+                : './assets/misc-icons/Bank_filler.png'
+            "
+               [alt]="ownedGear['Boots'][0] || 'No Boots'"
+               [attr.title]="
+              ownedGear['Boots'][0]?.length ? ownedGear['Boots'][0] : 'No Boots'
+            "
+               (error)="handleImageError($event)" />
+        </div>
+        <div class="gear-slot ring">
+          <img [src]="
+              ownedGear['Ring']?.[0]
+                ? gearData['rings']?.[ownedGear['Ring'][0]]?.image
+                : './assets/misc-icons/Bank_filler.png'
+            "
+               [alt]="ownedGear['Ring'][0] || 'No Ring'"
+               [attr.title]="
+              ownedGear['Ring'][0]?.length ? ownedGear['Ring'][0] : 'No Ring'
+            "
+               (error)="handleImageError($event)" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="recommended-gear-table">
+    <!-- Gear Setup Tabs -->
+    <div class="gear-tabs">
+      <button *ngFor="let setup of getGearSetups()"
+              (click)="changeSetup(setup)"
+              [class.active]="selectedSetup === setup">
+        {{ setup }}
+      </button>
+    </div>
+
+    <!-- Recommended Gear Table -->
+    <div class="table-scroll-wrapper">
+      <table class="gear-table"
+             *ngIf="selectedMonster && !isMonsterDetailsLoading">
+        <thead>
+          <tr>
+            <th>Slot</th>
+            <th colspan="6">Item (Most Effective → Least Effective)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Loop over slots -->
+          <tr *ngFor="let slot of getGearSlots()">
+            <td>
+              <strong>{{ slot }}</strong>
+            </td>
+
+            <!-- ✅ Apply best-owned class to recommended items only -->
+            <td *ngFor="let group of getFilledItemGroups(slot, selectedMonster!)">
+              <div class="gear-item-wrapper">
+                <div class="gear-item"
+                     *ngFor="let item of group"
+                     [ngClass]="{ 'best-owned': isBestOwnedItem(slot, item) }">
+                  <div class="icon-container">
+                    <img *ngIf="
+                      gearData?.[gearService.getGearCategory(slot)]?.[item]
+                    "
+                         [src]="
+                      gearData?.[gearService.getGearCategory(slot)]?.[item]
+                        ?.image
+                    "
+                         [alt]="item"
+                         class="item-icon" />
+                    <a *ngIf="
+                      gearData?.[gearService.getGearCategory(slot)]?.[item]
+                        ?.wiki
+                    "
+                       [href]="
+                      gearData?.[gearService.getGearCategory(slot)]?.[item]
+                        ?.wiki
+                    "
+                       target="_blank"
+                       class="wiki-link">🔍</a>
+                  </div>
+                  <p>{{ item }}</p>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

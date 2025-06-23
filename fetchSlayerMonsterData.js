@@ -106,7 +106,6 @@ async function scrapeMonster(monster) {
   console.log(`🔍 Scraping: ${monster.name}`);
   const bosses = await fetchMonsterStats(monster.monsterUrl, monster.name);
   const gear_setups = await fetchGearSetups(monster.strategyUrl);
-  await downloadMonsterIcons(monster.name); // download if not already present
 
   const filenameSlug = monster.name.toLowerCase().replace(/\s+/g, '-');
 

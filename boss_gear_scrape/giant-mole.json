@@ -1,4 +1,40 @@
 {
+  "name": "Giant Mole",
+  "category": "World Bosses",
+  "image": "assets/monster-icons/giant_mole.png",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Giant_Mole",
+  "bosses": [
+    {
+      "name": "Giant Mole",
+      "wiki_link": "",
+      "image": "assets/monster-icons/giant_mole.png",
+      "combat_level": 230,
+      "hp": 200,
+      "max_hit": {
+        "crush": 21
+      },
+      "defense": {
+        "stab": 60,
+        "slash": 80,
+        "crush": 100,
+        "magic": 80
+      },
+      "attack_styles": [
+        "Crush"
+      ],
+      "attack_speed": 4,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": false,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": {
+        "water": "50%"
+      }
+    }
+  ],
   "gear_setups": {
     "Ranged": {
       "Helmet": [

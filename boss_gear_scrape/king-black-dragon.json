@@ -1,4 +1,42 @@
 {
+  "name": "King Black Dragon",
+  "category": "Wilderness Bosses",
+  "image": "assets/monster-icons/king_black_dragon.png",
+  "wiki_link": "https://oldschool.runescape.wiki/w/King_Black_Dragon",
+  "bosses": [
+    {
+      "name": "King Black Dragon",
+      "wiki_link": "",
+      "image": "assets/monster-icons/king_black_dragon.png",
+      "combat_level": 276,
+      "hp": 240,
+      "max_hit": {
+        "melee": 25,
+        "dragonfire": 65
+      },
+      "defense": {
+        "stab": 60,
+        "slash": 90,
+        "crush": 90,
+        "magic": 80
+      },
+      "attack_styles": [
+        "Stab",
+        "Dragonfire"
+      ],
+      "attack_speed": 4,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": {
+        "water": "50%"
+      }
+    }
+  ],
   "gear_setups": {
     "Melee": {
       "Helmet": [

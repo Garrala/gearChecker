@@ -1,4 +1,40 @@
 {
+  "name": "General Graardor",
+  "category": "World Bosses",
+  "image": "assets/monster-icons/general_graardor.png",
+  "wiki_link": "https://oldschool.runescape.wiki/w/General_Graardor",
+  "bosses": [
+    {
+      "name": "General Graardor",
+      "wiki_link": "",
+      "image": "assets/monster-icons/general_graardor.png",
+      "combat_level": 624,
+      "hp": 255,
+      "max_hit": {
+        "melee": 60,
+        "ranged": 35
+      },
+      "defense": {
+        "stab": 90,
+        "slash": 90,
+        "crush": 90,
+        "magic": 298
+      },
+      "attack_styles": [
+        "Crush",
+        "Ranged"
+      ],
+      "attack_speed": 6,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
+    }
+  ],
   "gear_setups": {
     "Melee Tank": {
       "Helmet": [

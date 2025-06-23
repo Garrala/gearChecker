@@ -1,4 +1,40 @@
 {
+  "name": "Commander Zilyana",
+  "category": "World Bosses",
+  "image": "assets/monster-icons/commander_zilyana.png",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Commander_Zilyana",
+  "bosses": [
+    {
+      "name": "Commander Zilyana",
+      "wiki_link": "",
+      "image": "assets/monster-icons/commander_zilyana.png",
+      "combat_level": 596,
+      "hp": 255,
+      "max_hit": {
+        "melee": 27,
+        "magic": 20
+      },
+      "defense": {
+        "stab": 100,
+        "slash": 100,
+        "crush": 100,
+        "magic": 100
+      },
+      "attack_styles": [
+        "Crush",
+        "Magic"
+      ],
+      "attack_speed": 2,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
+    }
+  ],
   "gear_setups": {
     "Magic": {
       "Helmet": [

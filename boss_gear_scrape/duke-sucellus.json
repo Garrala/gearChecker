@@ -1,4 +1,289 @@
 {
+  "name": "Duke Sucellus",
+  "category": "Desert Treasure II",
+  "image": "assets/monster-icons/duke_sucellus__awake__.png",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Duke_Sucellus",
+  "bosses": [
+    {
+      "name": "Duke Sucellus (Awake)",
+      "wiki_link": "",
+      "image": "assets/monster-icons/duke_sucellus__awake__.png",
+      "combat_level": 538,
+      "hp": 440,
+      "max_hit": {
+        "melee": 36,
+        "magic": 28,
+        "gaze": 99
+      },
+      "defense": {
+        "stab": 255,
+        "slash": 45,
+        "crush": 190,
+        "magic": 440
+      },
+      "attack_styles": [
+        "Magic",
+        "Crush"
+      ],
+      "attack_speed": 6,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": false,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
+    },
+    {
+      "name": "Duke Sucellus (Asleep)",
+      "wiki_link": "",
+      "image": "assets/monster-icons/duke_sucellus__asleep__.png",
+      "combat_level": 538,
+      "hp": 440,
+      "max_hit": {
+        "melee": 36,
+        "magic": 28,
+        "gaze": 99
+      },
+      "defense": {
+        "stab": 255,
+        "slash": 45,
+        "crush": 190,
+        "magic": 440
+      },
+      "attack_styles": [
+        "Magic",
+        "Crush"
+      ],
+      "attack_speed": 6,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": false,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
+    },
+    {
+      "name": "Duke Sucellus (Defeated)",
+      "wiki_link": "",
+      "image": "assets/monster-icons/duke_sucellus__defeated__.png",
+      "combat_level": 538,
+      "hp": 440,
+      "max_hit": {
+        "melee": 36,
+        "magic": 28,
+        "gaze": 99
+      },
+      "defense": {
+        "stab": 255,
+        "slash": 45,
+        "crush": 190,
+        "magic": 440
+      },
+      "attack_styles": [
+        "Magic",
+        "Crush"
+      ],
+      "attack_speed": 6,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": false,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
+    },
+    {
+      "name": "Duke Sucellus (Awake)",
+      "wiki_link": "",
+      "image": "assets/monster-icons/duke_sucellus__awake__.png",
+      "combat_level": 538,
+      "hp": 440,
+      "max_hit": {
+        "melee": 36,
+        "magic": 28,
+        "gaze": 99
+      },
+      "defense": {
+        "stab": 255,
+        "slash": 45,
+        "crush": 190,
+        "magic": 440
+      },
+      "attack_styles": [
+        "Magic",
+        "Crush"
+      ],
+      "attack_speed": 6,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": false,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
+    },
+    {
+      "name": "Duke Sucellus (Asleep)",
+      "wiki_link": "",
+      "image": "assets/monster-icons/duke_sucellus__asleep__.png",
+      "combat_level": 538,
+      "hp": 440,
+      "max_hit": {
+        "melee": 36,
+        "magic": 28,
+        "gaze": 99
+      },
+      "defense": {
+        "stab": 255,
+        "slash": 45,
+        "crush": 190,
+        "magic": 440
+      },
+      "attack_styles": [
+        "Magic",
+        "Crush"
+      ],
+      "attack_speed": 6,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": false,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
+    },
+    {
+      "name": "Duke Sucellus (Defeated)",
+      "wiki_link": "",
+      "image": "assets/monster-icons/duke_sucellus__defeated__.png",
+      "combat_level": 538,
+      "hp": 440,
+      "max_hit": {
+        "melee": 36,
+        "magic": 28,
+        "gaze": 99
+      },
+      "defense": {
+        "stab": 255,
+        "slash": 45,
+        "crush": 190,
+        "magic": 440
+      },
+      "attack_styles": [
+        "Magic",
+        "Crush"
+      ],
+      "attack_speed": 6,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": false,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
+    },
+    {
+      "name": "Duke Sucellus (Awake)",
+      "wiki_link": "",
+      "image": "assets/monster-icons/duke_sucellus__awake__.png",
+      "combat_level": 538,
+      "hp": 440,
+      "max_hit": {
+        "melee": 36,
+        "magic": 28,
+        "gaze": 99
+      },
+      "defense": {
+        "stab": 255,
+        "slash": 45,
+        "crush": 190,
+        "magic": 440
+      },
+      "attack_styles": [
+        "Magic",
+        "Crush"
+      ],
+      "attack_speed": 6,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": false,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
+    },
+    {
+      "name": "Duke Sucellus (Asleep)",
+      "wiki_link": "",
+      "image": "assets/monster-icons/duke_sucellus__asleep__.png",
+      "combat_level": 538,
+      "hp": 440,
+      "max_hit": {
+        "melee": 36,
+        "magic": 28,
+        "gaze": 99
+      },
+      "defense": {
+        "stab": 255,
+        "slash": 45,
+        "crush": 190,
+        "magic": 440
+      },
+      "attack_styles": [
+        "Magic",
+        "Crush"
+      ],
+      "attack_speed": 6,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": false,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
+    },
+    {
+      "name": "Duke Sucellus (Defeated)",
+      "wiki_link": "",
+      "image": "assets/monster-icons/duke_sucellus__defeated__.png",
+      "combat_level": 538,
+      "hp": 440,
+      "max_hit": {
+        "melee": 36,
+        "magic": 28,
+        "gaze": 99
+      },
+      "defense": {
+        "stab": 255,
+        "slash": 45,
+        "crush": 190,
+        "magic": 440
+      },
+      "attack_styles": [
+        "Magic",
+        "Crush"
+      ],
+      "attack_speed": 6,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": false,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
+    }
+  ],
   "gear_setups": {
     "Melee": {
       "Helmet": [

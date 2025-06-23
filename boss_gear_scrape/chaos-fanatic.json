@@ -1,4 +1,38 @@
 {
+  "name": "Chaos Fanatic",
+  "category": "Wilderness Bosses",
+  "image": "assets/monster-icons/chaos_fanatic.png",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Fanatic",
+  "bosses": [
+    {
+      "name": "Chaos Fanatic",
+      "wiki_link": "",
+      "image": "assets/monster-icons/chaos_fanatic.png",
+      "combat_level": 202,
+      "hp": 225,
+      "max_hit": {
+        "magic": 31
+      },
+      "defense": {
+        "stab": 260,
+        "slash": 260,
+        "crush": 250,
+        "magic": 280
+      },
+      "attack_styles": [
+        "Magic"
+      ],
+      "attack_speed": 2,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
+    }
+  ],
   "gear_setups": {
     "Ranged": {
       "Helmet": [

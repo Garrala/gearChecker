@@ -1,4 +1,40 @@
 {
+  "name": "Crazy Archaeologist",
+  "category": "Wilderness Bosses",
+  "image": "assets/monster-icons/crazy_archaeologist.png",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist",
+  "bosses": [
+    {
+      "name": "Crazy Archaeologist",
+      "wiki_link": "",
+      "image": "assets/monster-icons/crazy_archaeologist.png",
+      "combat_level": 204,
+      "hp": 225,
+      "max_hit": {
+        "standard": 14,
+        "special": 24
+      },
+      "defense": {
+        "stab": 5,
+        "slash": 5,
+        "crush": 30,
+        "magic": 250
+      },
+      "attack_styles": [
+        "Ranged",
+        "Crush"
+      ],
+      "attack_speed": 3,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
+    }
+  ],
   "gear_setups": {
     "Magic": {
       "Helmet": [
