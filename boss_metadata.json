@@ -1,0 +1,133 @@
+{
+  "Abyssal Sire": {
+    "category": "Slayer Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire/Strategies",
+    "setups": [
+      "Ranged",
+      "Magic",
+      "Melee",
+      "Melee - No defence reduction",
+      "Melee - Defence reduction",
+      "Magic - Tumeken's Shadow",
+      "Ranged"
+    ]
+  },
+  "Chaos Fanatic": {
+    "category": "Wilderness Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Fanatic",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Chaos_Fanatic/Strategies",
+    "setups": ["Ranged"]
+  },
+  "Commander Zilyana": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Commander_Zilyana",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Commander_Zilyana/Strategies",
+    "setups": ["Magic", "Ranged"]
+  },
+  "Crazy Archaeologist": {
+    "category": "Wilderness Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist/Strategies",
+    "setups": ["Magic"]
+  },
+  "Deranged Archaeologist": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist/Strategies",
+    "setups": ["Magic"]
+  },
+  "Duke Sucellus": {
+    "category": "Desert Treasure II",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Duke_Sucellus",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Duke_Sucellus/Strategies",
+    "setups": ["Melee"]
+  },
+  "General Graardor": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/General_Graardor",
+    "strategy_link": "https://oldschool.runescape.wiki/w/General_Graardor/Strategies",
+    "setups": [
+      "Melee Tank",
+      "Ranged Tank",
+      "Melee Attacker",
+      "Ranged Attacker",
+      "Solo (Melee)",
+      "Solo (Magic)",
+      "Ranged (6:0)",
+      "Ranged (7:0)"
+    ]
+  },
+  "Giant Mole": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Giant_Mole",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Giant_Mole/Strategies",
+    "setups": [
+      "Ranged",
+      "Magic",
+      "Melee",
+      "Melee (Dharok's)",
+      "Melee (Budget)"
+    ]
+  },
+  "Hespori": {
+    "category": "Sporadic Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Hespori",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Hespori/Strategies",
+    "setups": ["Entry level", "Best-in-slot", "Mage"]
+  },
+  "King Black Dragon": {
+    "category": "Wilderness Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/King_Black_Dragon",
+    "strategy_link": "https://oldschool.runescape.wiki/w/King_Black_Dragon/Strategies",
+    "setups": [
+      "Melee",
+      "Melee Suicide method",
+      "Twisted Bow / BOWFA",
+      "Crossbow & shield",
+      "Suicide method"
+    ]
+  },
+  "Kalphite Queen": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen/Strategies",
+    "setups": [
+      "High DPS Phase 1 (Melee)",
+      "High DPS Phase 2 (Ranged)",
+      "Max Mage (0 switches)",
+      "Verac's",
+      "Flinching",
+      "Mid-game Players Phase 1 (Melee)",
+      "Mid-game Players Phase 2 (Ranged)",
+      "Pre-diary Method"
+    ]
+  },
+  "Vorkath": {
+    "category": "Instanced Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Vorkath",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Vorkath/Strategies",
+    "setups": ["Ranged", "Melee"]
+  },
+  "Wyrm": {
+    "category": "Slayer",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Wyrm",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Slayer_task/Wyrms",
+    "setups": ["Ranged", "Melee"]
+  },
+  "Dagannoth Kings": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Dagannoth_Kings",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Dagannoth_Kings/Strategies",
+    "monster_links": [
+      "https://oldschool.runescape.wiki/w/Dagannoth_Rex",
+      "https://oldschool.runescape.wiki/w/Dagannoth_Prime",
+      "https://oldschool.runescape.wiki/w/Dagannoth_Supreme"
+    ],
+    "setups": [
+      "Tribrid (Solo)",
+      "Magic (Rex only)",
+      "Ranged (Prime only)"
+    ]
+  }
+}

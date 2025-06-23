@@ -24,10 +24,26 @@ function parseMaxHits(text, attackStyles) {
 }
 
 function getImageSrcFromInfobox($) {
-  const imgTag = $('table.infobox-monster img').first();
+  // Try structured attribute first
+  let imgTag = $('table.infobox-monster td[data-attr-param="image"] img').first();
+
+  // Fallback if not found
+  if (!imgTag || !imgTag.attr('src')) {
+    imgTag = $('table.infobox-monster .infobox-image img').first();
+  }
+
+  if (!imgTag || !imgTag.attr('src')) {
+    console.warn('⚠️ No image tag found inside monster infobox');
+    return null;
+  }
+
   let src = imgTag.attr('src');
-  if (src && src.startsWith('//')) src = 'https:' + src;
-  if (src && src.startsWith('/')) src = 'https://oldschool.runescape.wiki' + src;
+  if (src.startsWith('//')) {
+    src = 'https:' + src;
+  } else if (src.startsWith('/')) {
+    src = 'https://oldschool.runescape.wiki' + src;
+  }
+
   return src;
 }
 
@@ -110,23 +126,6 @@ function extractElementalWeakness($) {
   console.log('❓ Could not find any elemental weakness info.');
   return 'none';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function createMonsterTemplate(phase, bossName) {
   return {
@@ -229,30 +228,30 @@ async function parseInfoboxData($, phase, bossName) {
   return info;
 }
 
-async function fetchMonsterStats(url, bossName) {
+async function fetchMonsterStats($, bossName, phase = null) {
   try {
-    const response = await axios.get(url);
-    const $ = cheerio.load(response.data);
-
     const tabs = $('.infobox-buttons .button');
     const bosses = [];
 
     if (tabs.length > 0) {
+      // Handle multi-phase bosses like Abyssal Sire
       for (const el of tabs) {
         const phase = $(el).text().trim();
         const phaseData = await parseInfoboxData($, phase, bossName);
         if (phaseData) bosses.push(phaseData);
       }
     } else {
-      const singleBossData = await parseInfoboxData($, null, bossName);
+      // Single-phase boss (or already filtered)
+      const singleBossData = await parseInfoboxData($, phase, bossName);
       if (singleBossData) bosses.push(singleBossData);
     }
 
     return bosses;
   } catch (err) {
-    console.error(`❌ Failed to fetch monster stats for ${bossName}:`, err.message);
+    console.error(`❌ Failed to parse monster stats for ${bossName}:`, err.message);
     return null;
   }
 }
+
 
 module.exports = { fetchMonsterStats };
