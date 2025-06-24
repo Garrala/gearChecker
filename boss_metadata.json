@@ -68,8 +68,7 @@
     ],
     "missing_slots": {
       "Ranged Tank": [ "Special Attack" ],
-      "Ranged (7:0)": [ "Special Attack" ],
-      "Ranged (7:0)": [ "Shield" ]
+      "Ranged (7:0)": [ "Special Attack" ] 
     }
   },
   "Giant Mole": {

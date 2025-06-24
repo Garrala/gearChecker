@@ -1,0 +1,126 @@
+{
+  "Twisted bow": {
+    "correct_slot": "Weapon",
+    "alias": "Twisted bow"
+  },
+  "Blessed chaps": {
+    "correct_slot": "Legs",
+    "alias": "Any Blessed chaps"
+  },
+  "Amethyst arrow": {
+    "correct_slot": "Ammo",
+    "alias": "Amethyst arrows"
+  },
+  "Dragon arrow": {
+    "correct_slot": "Ammo",
+    "alias": "Dragon arrows"
+  },
+  "Rune arrow": {
+    "correct_slot": "Ammo",
+    "alias": "Rune arrows"
+  },
+  "Explorer's Ring 3/2/1": {
+    "correct_slot": "Ring",
+    "alias": [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
+  },
+  "Ardougne cloak 3/2/1": {
+    "correct_slot": "Capes",
+    "alias": [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ]
+  },
+  "Any other blessing": {
+    "correct_slot": "Ammo",
+    "alias": "Any God blessing"
+  },
+  "God blessing": {
+    "correct_slot": "Ammo",
+    "alias": "Any God blessing"
+  },
+  "Barrows legs": {
+    "correct_slot": "Legs",
+    "alias": "Any Barrows tank legs"
+  },
+  "Barrows top": {
+    "correct_slot": "Legs",
+    "alias": "Any Barrows tank top"
+  },
+  "Barrows body": {
+    "correct_slot": "Legs",
+    "alias": "Any Barrows tank top"
+  },
+  "Berserker ring(i)": {
+    "correct_slot": "Ring",
+    "alias": "Berserker ring (i)"
+  },
+  "Warrior ring(i)": {
+    "correct_slot": "Ring",
+    "alias": "Warrior ring (i)"
+  },
+  "Archers ring(i)": {
+    "correct_slot": "Ring",
+    "alias": "Archers ring (i)"
+  },
+  "Imbued god cape": {
+    "correct_slot": "Cape",
+    "alias": "Any Imbued God cape"
+  },
+  "God capes": {
+    "correct_slot": "Cape",
+    "alias": "Any God cape"
+  },
+  "Black mask(i)": {
+    "correct_slot": "Helmet",
+    "alias": "Black mask (i)"
+  },
+  "Blade of saeldor": {
+    "correct_slot": "Helmet",
+    "alias": "Blade of Saeldor"
+  },
+  "Blessed body": {
+    "correct_slot": "Body",
+    "alias": "Any Blessed body"
+  },
+  "Blessed boots": {
+    "correct_slot": "Boots",
+    "alias": "Any Blessed boots"
+  },
+  "Bow of faerdhinen": {
+    "correct_slot": "Weapon",
+    "alias": "Bow of Faerdhinen"
+  },
+  "Masori body(f)": {
+    "correct_slot": "Body",
+    "alias": "Masori body (f)"
+  },
+  "Masori chaps(f)": {
+    "correct_slot": "Legs",
+    "alias": "Masori chaps (f)"
+  },
+  "Ring of suffering(ri)": {
+    "correct_slot": "Ring",
+    "alias": "Ring of suffering(i)"
+  },
+  "Ring of suffering(i)": {
+    "correct_slot": "Ring",
+    "alias": "Ring of suffering(i)"
+  },
+  "Tyrannical ring(i)": {
+    "correct_slot": "Ring",
+    "alias": "Tyrannical ring (i)"
+  },
+  "Seers ring(i)": {
+    "correct_slot": "Ring",
+    "alias": "Seers ring (i)"
+  },
+  "Slayer helmet(i)": {
+    "correct_slot": "Helmet",
+    "alias": "Slayer helmet (i)"
+  },
+  "Elidinis' ward(f)": {
+    "correct_slot": "Shield",
+    "alias": "Elidinis' ward (f)"
+  },
+  "Scythe of vitur": {
+    "correct_slot": "Weapon",
+    "alias": "Scythe of Vitur"
+  }
+}

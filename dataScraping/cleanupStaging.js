@@ -7,7 +7,8 @@ const foldersToWipe = [
   'boss_stat_scrape',
   'boss_gear_scrape',
   'boss_gear_final',
-  'boss_gear_combined'
+  'boss_gear_combined',
+  'merged_boss_data'
 ];
 
 console.log('⚙️ Cleaning staging folders...\n');

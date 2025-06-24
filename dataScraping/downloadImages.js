@@ -1,131 +1,102 @@
-const axios = require('axios');
-const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
-const { fetchMonsterStats, downloadMonsterIcons } = require('./helpers/stat_helpers');
+const https = require('https');
 
-const outputFolder = path.join(__dirname, 'boss_gear_scrape');
-if (!fs.existsSync(outputFolder)) fs.mkdirSync(outputFolder);
-
-const monsterList = [
-  {
-    name: 'Wyrm',
-    strategyUrl: 'https://oldschool.runescape.wiki/w/Slayer_task/Wyrms',
-    monsterUrl: 'https://oldschool.runescape.wiki/w/Wyrm'
-  }
+// List your rogue URLs here
+const imageUrls = [
+  'https://oldschool.runescape.wiki/images/Mysterious_Old_Man_chathead.png?a0eb8',
+  'https://oldschool.runescape.wiki/images/Mystery_box_detail.png?0e275',
+  'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c',
+  'https://oldschool.runescape.wiki/images/Dragon_med_helm.png?8fa13',
+  'https://oldschool.runescape.wiki/images/Worn_Equipment.png?124cf',
+  'https://oldschool.runescape.wiki/images/Mr._Mordaut_chathead.png?26eca',
+  'https://oldschool.runescape.wiki/images/Resurrect_Greater_Ghost.png?687f2',
+  'https://oldschool.runescape.wiki/images/Cannon_barrels.png?3c432',
+  'https://oldschool.runescape.wiki/images/Venom_hitsplat.png?1977a',
+  'https://oldschool.runescape.wiki/images/Poison_hitsplat.png?16146',
+  'https://oldschool.runescape.wiki/images/Steel_bolts_5.png?f1c11',
+  'https://oldschool.runescape.wiki/images/Steel_arrow_5.png?2c4a2',
+  'https://oldschool.runescape.wiki/images/Steel_dart.png?3203e',
+  'https://oldschool.runescape.wiki/images/Air_rune.png?248b4',
+  'https://oldschool.runescape.wiki/images/Earth_rune.png?0b998',
+  'https://oldschool.runescape.wiki/images/Water_rune.png?75a26',
+  'https://oldschool.runescape.wiki/images/Fire_rune.png?3859a',
+  'https://oldschool.runescape.wiki/images/Pure_essence.png?ed4b0',
+  'https://oldschool.runescape.wiki/images/Magic_defence_icon.png?65b01',
+  'https://oldschool.runescape.wiki/images/Steel_warhammer.png?1a4de',
+  'https://oldschool.runescape.wiki/images/Steel_scimitar.png?0395b',
+  'https://oldschool.runescape.wiki/images/Steel_dagger.png?f410d',
+  'https://oldschool.runescape.wiki/images/Attack_Speed_icon.png?c8037',
+  'https://oldschool.runescape.wiki/images/Protect_from_all.png?944a7',
+  'https://oldschool.runescape.wiki/images/Fire_Surge.png?76ce4',
+  'https://oldschool.runescape.wiki/images/Special_attack_orb.png?27d06',
+  'https://oldschool.runescape.wiki/images/Ranged_icon.png',
+  'https://oldschool.runescape.wiki/images/Magic_icon.png',
+  'https://oldschool.runescape.wiki/images/Strength_icon.png?e6e0c',
+  'https://oldschool.runescape.wiki/images/Combat_icon.png?93d63',
+  'https://oldschool.runescape.wiki/images/Protect_from_Melee_overhead.png?e8059',
+  'https://oldschool.runescape.wiki/images/Ice_Barrage.png?3f12e',
+  'https://oldschool.runescape.wiki/images/Smite.png?d9143',
+  'https://oldschool.runescape.wiki/images/Retribution.png?724d1',
+  'https://oldschool.runescape.wiki/images/Special_attack_orb.png?27d06',
+  'https://oldschool.runescape.wiki/images/Abyssal_tentacle.png?c04be',
+  'https://oldschool.runescape.wiki/images/Protect_from_all.png?944a7',
+  'https://oldschool.runescape.wiki/images/Pet_rock.png?97482',
+  'https://oldschool.runescape.wiki/images/Damage_hitsplat_%28max_hit%29.png?a8d79',
+  'https://oldschool.runescape.wiki/images/Hitpoints_icon.png?a4819'
+  // Add more rogue links here
 ];
 
-function tightenParentheses(text) {
-  return text.replace(/\s+\(([^)]+)\)/g, '($1)');
-}
+const outputDir = path.join(__dirname, 'src', 'assets', 'misc-icons');
+if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
-function cleanItemName(text) {
-  return tightenParentheses(text.replace(/\[[a-zA-Z]\]/g, '').trim());
-}
+const downloadImage = (url, filename) => {
+  return new Promise((resolve, reject) => {
+    const filePath = path.join(outputDir, filename);
+    const file = fs.createWriteStream(filePath);
+    const options = {
+      headers: {
+        'User-Agent':
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115 Safari/537.36',
+      },
+    };
 
-function extractSlotName($, cell) {
-  const alt = $(cell).find('img').attr('alt')?.toLowerCase() || '';
-  const slotMap = {
-    'head': 'Helmet', 'helm': 'Helmet', 'helmet': 'Helmet', 'head slot': 'Helmet',
-    'neck': 'Amulet', 'amulet': 'Amulet',
-    'cape': 'Cape', 'back': 'Cape',
-    'body': 'Body',
-    'legs': 'Legs',
-    'hands': 'Gloves', 'gloves': 'Gloves',
-    'feet': 'Boots', 'boots': 'Boots',
-    'ring': 'Ring',
-    'ammo': 'Ammo', 'ammunition': 'Ammo',
-    'weapon': 'Weapon',
-    'shield': 'Shield',
-    'special': 'Special Attack', 'spec': 'Special Attack'
-  };
-  for (const [key, value] of Object.entries(slotMap)) {
-    if (alt.includes(key)) return value;
-  }
-  const fallbackText = $(cell).text().toLowerCase();
-  for (const [key, value] of Object.entries(slotMap)) {
-    if (fallbackText.includes(key)) return value;
-  }
-  return null;
-}
-
-async function fetchGearSetups(strategyUrl) {
-  const res = await axios.get(strategyUrl);
-  const $ = cheerio.load(res.data);
-
-  const tables = $('caption:contains("Recommended equipment for")').closest('table');
-  const gearData = {};
-
-  tables.each((_, table) => {
-    let style = $(table).find('caption').text().replace('Recommended equipment for', '').trim();
-    if (!style) style = 'Default';
-
-    if (!gearData[style]) gearData[style] = {};
-
-    $(table).find('tr').slice(1).each((_, row) => {
-      const cells = $(row).find('td');
-      if (cells.length < 2) return;
-
-      const slot = extractSlotName($, cells[0]) || $(cells[0]).text().trim();
-      if (!slot || slot === '-' || slot === '–') return;
-
-      const items = [];
-      const seen = new Set();
-
-      $(cells).slice(1).each((_, cell) => {
-        const group = [];
-        $(cell).find('a[href]').each((_, a) => {
-          const name = cleanItemName($(a).text());
-          if (name && !seen.has(name)) {
-            seen.add(name);
-            group.push(name);
-          }
-        });
-
-        if (group.length === 0) {
-          $(cell).text().split(/,|\/|\n/).forEach(t => {
-            const cleaned = cleanItemName(t);
-            if (cleaned && !seen.has(cleaned)) {
-              seen.add(cleaned);
-              group.push(cleaned);
-            }
-          });
-        }
-
-        if (group.length > 0) items.push(group);
-      });
-
-      gearData[style][slot] = items.length ? items : [['N/A']];
+    https.get(url, options, (res) => {
+      if (res.statusCode === 200) {
+        res.pipe(file);
+        file.on('finish', () => file.close(() => resolve()));
+      } else {
+        fs.unlink(filePath, () => { });
+        reject(`❌ ${res.statusCode} - ${url}`);
+      }
+    }).on('error', (err) => {
+      fs.unlink(filePath, () => { });
+      reject(`❌ Error: ${url} – ${err.message}`);
     });
   });
-
-  return gearData;
-}
-
-async function scrapeMonster(monster) {
-  console.log(`🔍 Scraping: ${monster.name}`);
-  const bosses = await fetchMonsterStats(monster.monsterUrl, monster.name);
-  const gear_setups = await fetchGearSetups(monster.strategyUrl);
-  await downloadMonsterIcons(monster.name); // download if not already present
-
-  const filenameSlug = monster.name.toLowerCase().replace(/\s+/g, '-');
-
-  const result = {
-    name: monster.name,
-    category: 'Slayer',
-    image: bosses[0]?.image || '',
-    wiki_link: monster.monsterUrl,
-    bosses,
-    gear_setups
-  };
-
-  const filePath = path.join(outputFolder, `${filenameSlug}.json`);
-  fs.writeFileSync(filePath, JSON.stringify(result, null, 2));
-  console.log(`✅ Saved: ${filePath}`);
-}
+};
 
 (async () => {
-  for (const monster of monsterList) {
-    await scrapeMonster(monster);
+  const seen = new Set();
+
+  for (const url of imageUrls) {
+    const urlPath = url.split('?')[0];
+    const filename = path.basename(urlPath);
+
+    if (seen.has(url) || fs.existsSync(path.join(outputDir, filename))) {
+      console.log(`⚠️ Skipping duplicate or existing: ${filename}`);
+      continue;
+    }
+
+    seen.add(url);
+    console.log(`⬇️ Downloading ${filename}...`);
+
+    try {
+      await downloadImage(url, filename);
+    } catch (err) {
+      console.error(err);
+    }
   }
+
+  console.log('✅ Rogue image download complete!');
 })();

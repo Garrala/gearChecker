@@ -19,6 +19,10 @@ This app helps players determine their **best possible gear setup** based on wha
 
 ---
 
+Run order for scraping
+fetchHtmlDumps.js
+
+
 To Deploy:
 
 Connect to server
