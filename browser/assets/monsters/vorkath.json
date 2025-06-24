@@ -1,23 +1,23 @@
 {
   "name": "Vorkath",
   "category": "Instanced Bosses",
-  "image": "assets/monster-icons/vorkath.png",
+  "image": "assets/monster-icons/vorkath__post-quest__.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Vorkath",
   "bosses": [
     {
-      "name": "Vorkath",
-      "image": "assets/monster-icons/vorkath.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Vorkath",
+      "name": "Vorkath (Post-quest)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Vorkath#Postquest",
+      "image": "assets/monster-icons/vorkath__post-quest__.png",
       "combat_level": 732,
       "hp": 750,
       "max_hit": {
         "magic": 30,
-        "melee": 32,
         "ranged": 32,
+        "melee": 32,
         "dragonfire": 80,
-        "special attack": 121
+        "dragonfire bomb/special": 121,
+        "rapid fire/special": 41
       },
-      "weaknesses": {},
       "defense": {
         "melee": {
           "stab": 26,
@@ -31,49 +31,67 @@
           "thrown": 26
         }
       },
-      "attack_styles": [ "Melee", "Magic", "Ranged", "Dragonfire", "Venom", "Special Attack" ],
+      "attack_styles": [ "Slash", "Magic", "Ranged", "Dragonfire" ],
       "attack_speed": 5,
-      "aggressive": true,
+      "aggressive": false,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
-        "thralls": false
-      }
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
+    },
+    {
+      "name": "Vorkath (Dragon Slayer II)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Vorkath#Dragon_Slayer_II",
+      "image": "assets/monster-icons/vorkath__dragon_slayer_ii__.png",
+      "combat_level": 732,
+      "hp": 750,
+      "max_hit": {
+        "magic": 30,
+        "ranged": 32,
+        "melee": 32,
+        "dragonfire": 80,
+        "dragonfire bomb/special": 121,
+        "rapid fire/special": 41
+      },
+      "defense": {
+        "melee": {
+          "stab": 26,
+          "slash": 108,
+          "crush": 108
+        },
+        "magic": 240,
+        "ranged": {
+          "arrows": 26,
+          "bolts": 26,
+          "thrown": 26
+        }
+      },
+      "attack_styles": [ "Slash", "Magic", "Ranged", "Dragonfire" ],
+      "attack_speed": 5,
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
-    "Ranged (Crossbow)": {
-      "Weapon": [
-        [ "Dragon hunter crossbow" ],
-        [ "Toxic blowpipe" ],
-        [ "Zaryte crossbow", "Armadyl crossbow", "Dragon crossbow" ],
-        [ "Bow of Faerdhinen" ],
-        [ "Rune crossbow" ]
-      ],
-      "Shield": [
-        [ "Dragonfire ward" ],
-        [ "Anti-dragon shield" ],
-        [ "Twisted buckler" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Special Attack": [
-        [ "Zaryte crossbow" ],
-        [ "Elder maul" ],
-        [ "Bandos godsword", "Dragon warhammer" ],
-        [ "Armadyl crossbow" ],
-        [ "Toxic blowpipe" ]
-      ],
+    "Ranged": {
       "Helmet": [
-        [ "Masori mask (f)" ],
+        [ "Masori mask(f)" ],
         [ "Void ranger helm" ],
         [ "Slayer helmet (i)" ],
         [ "Crystal helm", "Serpentine helm" ],
-        [ "Any Blessed coif" ]
+        [ "Blessed coif" ]
       ],
       "Amulet": [
-        [ "Salve amulet (ei)" ],
+        [ "Salve amulet(ei)" ],
         [ "Necklace of anguish" ],
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
@@ -100,10 +118,24 @@
         [ "Karil's leatherskirt" ],
         [ "Any Blessed chaps", "Black d'hide chaps" ]
       ],
+      "Weapon": [
+        [ "Dragon hunter crossbow" ],
+        [ "Toxic blowpipe" ],
+        [ "Zaryte crossbow", "Armadyl crossbow", "Dragon crossbow" ],
+        [ "Bow of Faerdhinen" ],
+        [ "Rune crossbow" ]
+      ],
+      "Shield": [
+        [ "Dragonfire ward" ],
+        [ "Anti-dragon shield" ],
+        [ "Twisted buckler" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
       "Ammo": [
-        [ "Ruby dragon bolts (e)", "Diamond dragon bolts (e)" ],
-        [ "Ruby bolts (e)", "Diamond bolts (e)" ],
-        [ "Opal dragon bolts (e)", "Pearl dragon bolts (e)" ],
+        [ "Ruby dragon bolts(e)", "Diamond dragon bolts(e)" ],
+        [ "Ruby bolts(e)", "Diamond bolts(e)" ],
+        [ "Opal dragon bolts(e)", "Pearl dragon bolts(e)" ],
         [ "Dragon bolts" ],
         [ "Runite bolts" ]
       ],
@@ -111,7 +143,7 @@
         [ "Zaryte vambraces" ],
         [ "Void knight gloves" ],
         [ "Barrows gloves" ],
-        [ "Any Blessed vambraces", "Black d'hide vambraces" ],
+        [ "Blessed vambraces", "Black d'hide vambraces" ],
         [ "Ranger gloves" ]
       ],
       "Boots": [
@@ -124,12 +156,54 @@
       "Ring": [
         [ "Venator ring", "Lightbearer" ],
         [ "Archers ring (i)" ],
-        [ "Ring of suffering (i)" ],
+        [ "Ring of suffering(i)" ],
         [ "Ring of shadows" ],
         [ "Brimstone ring" ]
+      ],
+      "Special Attack": [
+        [ "Zaryte crossbow" ],
+        [ "Elder maul" ],
+        [ "Bandos godsword", "Dragon warhammer" ],
+        [ "Armadyl crossbow" ],
+        [ "Toxic blowpipe" ]
       ]
     },
     "Melee": {
+      "Helmet": [
+        [ "Torva full helm", "Slayer helmet (i)" ],
+        [ "Neitiznot faceguard", "Serpentine helm", "Oathplate helm" ],
+        [ "Justiciar faceguard", "Blood moon helm" ],
+        [ "Helm of neitiznot" ],
+        [ "Barrows helm" ]
+      ],
+      "Amulet": [
+        [ "Salve amulet(ei)", "Salve amulet(e)" ],
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ]
+      ],
+      "Cape": [
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Ardougne cloak 4" ],
+        [ "Ardougne cloak 3" ],
+        [ "Cape of Accomplishment(t)" ]
+      ],
+      "Body": [
+        [ "Torva platebody" ],
+        [ "Bandos chestplate", "Oathplate chest" ],
+        [ "Justiciar chestguard", "Blood moon chestplate" ],
+        [ "Barrows platebody", "Fighter torso" ],
+        [ "Obsidian platebody" ]
+      ],
+      "Legs": [
+        [ "Torva platelegs" ],
+        [ "Bandos tassets", "Oathplate legs" ],
+        [ "Justiciar legguards", "Blood moon tassets" ],
+        [ "Barrows platelegs" ],
+        [ "Obsidian platelegs" ]
+      ],
       "Weapon": [
         [ "Dragon hunter lance" ],
         [ "Osmumten's fang" ],
@@ -144,47 +218,12 @@
         [ "Rune defender" ],
         [ "Rune kiteshield" ]
       ],
-      "Special Attack": [
-        [ "Burning claws", "Voidwaker" ],
-        [ "Dragon claws" ],
-        [ "Elder maul" ],
-        [ "Bandos godsword", "Dragon warhammer" ],
-        [ "Bone dagger" ]
-      ],
-      "Helmet": [
-        [ "Torva full helm", "Slayer helmet (i)" ],
-        [ "Neitiznot faceguard", "Serpentine helm" ],
-        [ "Justiciar faceguard", "Blood moon helm" ],
-        [ "Helm of neitiznot" ],
-        [ "Any Barrows tank helm" ]
-      ],
-      "Amulet": [
-        [ "Salve amulet (ei)", "Salve amulet (e)" ],
-        [ "Amulet of rancour" ],
-        [ "Amulet of torture" ],
-        [ "Amulet of fury" ],
-        [ "Amulet of glory" ]
-      ],
-      "Cape": [
-        [ "Infernal cape" ],
-        [ "Fire cape" ],
-        [ "Ardougne cloak 4" ],
-        [ "Ardougne cloak 3" ],
-        [ "Any Skillcape (t)" ]
-      ],
-      "Body": [
-        [ "Torva platebody" ],
-        [ "Bandos chestplate", "Oathplate chest" ],
-        [ "Justiciar chestguard", "Blood moon chestplate" ],
-        [ "Any Barrows tank body", "Fighter torso" ],
-        [ "Obsidian platebody" ]
-      ],
-      "Legs": [
-        [ "Torva platelegs" ],
-        [ "Bandos tassets", "Oathplate legs" ],
-        [ "Justiciar legguards", "Blood moon tassets" ],
-        [ "Any Barrows tank legs" ],
-        [ "Obsidian platelegs" ]
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Ferocious gloves" ],
@@ -205,100 +244,14 @@
         [ "Berserker ring (i)" ],
         [ "Lightbearer" ],
         [ "Brimstone ring" ],
-        [ "Ring of suffering (i)" ]
-      ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ]
-    },
-    "Ranged": {
-      "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Amulet": [
-        [ "Salve amulet (ei)" ],
-        [ "Necklace of anguish" ],
-        [ "Amulet of fury" ],
-        [ "Amulet of glory" ],
-        [ "Amulet of power" ]
-      ],
-      "Cape": [
-        [ "Dizana's quiver" ],
-        [ "Ava's assembler" ],
-        [ "Ava's accumulator" ],
-        [ "Ranging cape" ],
-        [ "N/A" ]
-      ],
-      "Body": [
-        [ "Masori body (f)" ],
-        [ "Elite void top", "Void knight top" ],
-        [ "Crystal body" ],
-        [ "Karil's leathertop" ],
-        [ "Eclipse moon chestplate", "Any Blessed body" ]
-      ],
-      "Legs": [
-        [ "Masori chaps (f)" ],
-        [ "Elite void robe", "Void knight robe" ],
-        [ "Crystal legs" ],
-        [ "Karil's leatherskirt" ],
-        [ "Any Blessed chaps", "Black d'hide chaps" ]
-      ],
-      "Weapon": [
-        [ "Dragon hunter crossbow" ],
-        [ "Toxic blowpipe" ],
-        [ "Zaryte crossbow", "Armadyl crossbow", "Dragon crossbow" ],
-        [ "Bow of Faerdhinen" ],
-        [ "Rune crossbow" ]
-      ],
-      "Shield": [
-        [ "Dragonfire ward" ],
-        [ "Anti-dragon shield" ],
-        [ "Twisted buckler" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Ammo": [
-        [ "Ruby dragon bolts (e)", "Diamond dragon bolts (e)" ],
-        [ "Ruby bolts (e)", "Diamond bolts (e)" ],
-        [ "Opal dragon bolts (e)", "Pearl dragon bolts (e)" ],
-        [ "Dragon bolts" ],
-        [ "Runite bolts" ]
-      ],
-      "Gloves": [
-        [ "Zaryte vambraces" ],
-        [ "Void knight gloves" ],
-        [ "Barrows gloves" ],
-        [ "Any Blessed vambraces", "Black d'hide vambraces" ],
-        [ "Ranger gloves" ]
-      ],
-      "Boots": [
-        [ "Pegasian boots" ],
-        [ "Ranger boots" ],
-        [ "Any Blessed boots" ],
-        [ "Aranea boots" ],
-        [ "Boots of brimstone", "Mixed hide boots" ]
-      ],
-      "Ring": [
-        [ "Venator ring", "Lightbearer" ],
-        [ "Archers ring (i)" ],
-        [ "Ring of suffering (i)" ],
-        [ "Ring of shadows" ],
-        [ "Brimstone ring" ]
+        [ "Ring of suffering(i)" ]
       ],
       "Special Attack": [
-        [ "Zaryte crossbow" ],
+        [ "Burning claws", "Voidwaker" ],
+        [ "Dragon claws" ],
         [ "Elder maul" ],
         [ "Bandos godsword", "Dragon warhammer" ],
-        [ "Armadyl crossbow" ],
-        [ "Toxic blowpipe" ]
+        [ "Bone dagger" ]
       ]
     }
   }
