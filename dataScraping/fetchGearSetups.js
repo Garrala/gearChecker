@@ -27,26 +27,38 @@ function fetchGearTabberHtml(bossName) {
   const $ = cheerio.load(rawHtml);
   const gearSlices = [];
 
-  // Collect all tabber tabs (multi-style)
-  $('.tabbertab').each((_, el) => {
-    gearSlices.push($(el));
-  });
+  // Tabber (multi-style)
+  $('.tabbertab').each((_, el) => gearSlices.push($(el)));
 
-  // Also collect lone wikitables with gear captions (single-style)
+  // Captioned tables (single-style)
   $('table.wikitable').each((_, el) => {
     const caption = $(el).find('caption').text().toLowerCase();
     const isValid = caption.includes('recommended equipment') || caption.includes('recommended gear');
     const isInventory = $(el).hasClass('inventorytable');
-
     if (isValid && !isInventory) {
-      // Wrap in a fake tabbertab container for uniform parsing
       const fakeTab = $('<div class="tabbertab"></div>')
         .attr('data-title', caption.replace(/recommended (equipment|gear) for/i, '').trim() || 'Default')
         .append($(el).clone());
-
       gearSlices.push(fakeTab);
     }
   });
+
+  // Fallback: look for h2 Equipment section
+  if (gearSlices.length === 0) {
+    const equipmentHeader = $('h2 span.mw-headline#Equipment').parent();
+    if (equipmentHeader.length) {
+      const slice = $('<div class="tabbertab"></div>').attr('data-title', 'Default');
+      slice.append(equipmentHeader.clone());
+
+      let current = equipmentHeader.next();
+      while (current.length && !current.is('h2')) {
+        slice.append(current.clone());
+        current = current.next();
+      }
+
+      gearSlices.push(slice);
+    }
+  }
 
   return gearSlices;
 }

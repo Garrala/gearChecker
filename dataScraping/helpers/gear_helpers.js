@@ -25,6 +25,11 @@ function tightenParentheses(text) {
   return text.replace(/\s+\(([^)]+)\)/g, '($1)');
 }
 
+function normalizeNA(entry) {
+  const joined = Array.isArray(entry) ? entry.join('').toLowerCase().replace(/\W/g, '') : '';
+  return joined === 'na' || joined === 'n/a' ? ['N/A'] : entry;
+}
+
 function extractSlotName($, cellOrImg) {
   let alt = '', title = '';
   if (typeof cellOrImg === 'string') {
@@ -104,7 +109,7 @@ function extractGearFromSlice($, label = 'Unnamed') {
           );
 
         if (normalized.length) {
-          result[slotName].push(normalized);
+          result[slotName].push(normalizeNA(normalized));
         }
       });
     });
