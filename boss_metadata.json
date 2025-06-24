@@ -17,25 +17,34 @@
     "category": "Wilderness Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Fanatic",
     "strategy_link": "https://oldschool.runescape.wiki/w/Chaos_Fanatic/Strategies",
-    "setups": ["Ranged"]
+    "setups": [ "Ranged" ],
+    "missing_slots": {
+      "Ranged": [ "Special Attack" ]
+    }
   },
   "Commander Zilyana": {
     "category": "World Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/Commander_Zilyana",
     "strategy_link": "https://oldschool.runescape.wiki/w/Commander_Zilyana/Strategies",
-    "setups": ["Magic", "Ranged"]
+    "setups": [ "Magic", "Ranged" ]
   },
   "Crazy Archaeologist": {
     "category": "Wilderness Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist",
     "strategy_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist/Strategies",
-    "setups": ["Magic"]
+    "setups": [ "Magic" ],
+    "missing_slots": {
+      "Magic": [ "Special Attack" ]
+    }
   },
   "Deranged Archaeologist": {
     "category": "World Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist",
     "strategy_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist/Strategies",
-    "setups": ["Magic"]
+    "setups": [ "Magic" ],
+    "missing_slots": {
+      "Magic": [ "Special Attack" ]
+    }
   },
   "Duke Sucellus": {
     "category": "Desert Treasure II",
@@ -56,7 +65,12 @@
       "Solo (Magic)",
       "Ranged (6:0)",
       "Ranged (7:0)"
-    ]
+    ],
+    "missing_slots": {
+      "Ranged Tank": [ "Special Attack" ],
+      "Ranged (7:0)": [ "Special Attack" ],
+      "Ranged (7:0)": [ "Shield" ]
+    }
   },
   "Giant Mole": {
     "category": "World Bosses",

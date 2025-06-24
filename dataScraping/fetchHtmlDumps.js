@@ -58,10 +58,38 @@ async function downloadAndSaveHtml(name, url, type, subfolder = null) {
         fs.writeFileSync(filePath, beautify($phase.html(infobox), { indent_size: 2 }));
         console.log(`✅ Saved [${label}] version of ${name} → ${filePath}`);
       }
-    } else {
-      const filePath = path.join(folderPath, `${type}.html`);
-      fs.writeFileSync(filePath, response.data, 'utf8');
-      console.log(`✅ Saved [${type}] HTML for ${name} → ${filePath}`);
+    } else if (type === 'strategy') {
+      const $ = cheerio.load(response.data);
+      const headerCandidates = $('h2, h3').filter((_, el) =>
+        $(el).find('.mw-headline').text().toLowerCase().includes('equipment')
+      );
+
+      const equipmentHeader = headerCandidates.first();
+      if (!equipmentHeader.length) {
+        console.warn(`⚠️ No Equipment section found for ${name}`);
+        return;
+      }
+
+      const slice = $('<div></div>').append(equipmentHeader.clone());
+
+      let current = equipmentHeader.next();
+      while (current.length && !/^h[2-3]$/i.test(current.get(0).tagName)) {
+        const isRelevant =
+          current.hasClass('tabber') ||
+          (current.hasClass('wikitable') &&
+            !current.hasClass('inventorytable') &&
+            current.find('caption').text().toLowerCase().includes('recommended equipment'));
+
+        if (isRelevant) {
+          slice.append(current.clone());
+        }
+
+        current = current.next();
+      }
+
+      const filePath = path.join(folderPath, `strategy.html`);
+      fs.writeFileSync(filePath, beautify(slice.html(), { indent_size: 2 }));
+      console.log(`✅ Trimmed and saved strategy page for ${name} → ${filePath}`);
     }
   } catch (err) {
     console.error(`❌ Failed [${type}] for ${name}:`, err.message);
