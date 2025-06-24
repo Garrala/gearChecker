@@ -2,8 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const FIXES_PATH = path.join(__dirname, 'helpers', 'manual_gear_fixes.json');
-const INPUT_DIR = path.join(__dirname, 'staging', 'boss_gear_final');
-const OUTPUT_DIR = path.join(__dirname, 'staging', 'boss_gear_final');
+const INPUT_DIR = path.join(__dirname, 'staging', 'boss_gear_scrape');
 
 const FIXES_MAP = JSON.parse(fs.readFileSync(FIXES_PATH, 'utf-8'));
 function cleanItemName(name) {

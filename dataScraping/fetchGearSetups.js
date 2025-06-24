@@ -65,47 +65,74 @@ function fetchGearTabberHtml(bossName) {
 
 async function fetchGearSetupsForBoss(bossName, meta) {
   const expectedSetups = meta.setups || [];
-  const normalizedExpected = expectedSetups.map(normalizeLabel);
-  const gearSlices = fetchGearTabberHtml(bossName);
+  const normalizedExpected = expectedSetups.map(s => normalizeLabel(s));
+  console.log(`\n📋 Processing ${bossName}`);
+  console.log(`Expected setups:`, expectedSetups);
 
+  const gearSlices = fetchGearTabberHtml(bossName);
   if (!gearSlices || gearSlices.length === 0) {
     console.warn(`⚠️ No tabber sections found for ${bossName}`);
     return;
   }
 
   const gear_setups = {};
-  const foundLabels = [];
+  const expectedUsed = new Array(expectedSetups.length).fill(false);
+  const matchCounts = {}; // how many tabs we’ve seen with a normalized label
 
   for (let i = 0; i < gearSlices.length; i++) {
     const tab = gearSlices[i];
     const $tab = cheerio.load(tab.html());
-    const label = tab.attr('data-title')?.trim() || `Unknown ${i + 1}`;
-    const normalized = normalizeLabel(label);
+    const rawLabel = tab.attr('data-title')?.trim() || `Unknown ${i + 1}`;
+    const normalized = normalizeLabel(rawLabel);
 
-    if (normalizedExpected.includes(normalized)) {
-      const gear = extractGearFromSlice($tab, label, bossName);
-      const originalStyle = expectedSetups[normalizedExpected.indexOf(normalized)];
-      ensureAllSlotsPresent(gear, originalStyle, bossName, metadata);
-      gear_setups[expectedSetups[normalizedExpected.indexOf(normalized)]] = gear; // preserve original label casing
-      foundLabels.push(normalized);
-    } else {
-      console.warn(`⚠️ ${bossName} has unexpected tab label: "${label}"`);
+    console.log(`🔍 Found tab: "${rawLabel}" (normalized: "${normalized}")`);
+
+    matchCounts[normalized] = (matchCounts[normalized] || 0) + 1;
+    const occurrence = matchCounts[normalized];
+    console.log(`— Seen "${normalized}" ${occurrence} time(s)`);
+
+    // Try to find the N-th matching normalized expected label
+    let matchIndex = -1;
+    let seen = 0;
+
+    for (let j = 0; j < normalizedExpected.length; j++) {
+      if (normalizedExpected[j] === normalized && !expectedUsed[j]) {
+        seen++;
+        if (seen === occurrence) {
+          matchIndex = j;
+          break;
+        }
+      }
     }
+
+    if (matchIndex === -1) {
+      console.warn(`⚠️ ${bossName} has unexpected or duplicate tab: "${rawLabel}"`);
+      continue;
+    }
+
+    const styleName = expectedSetups[matchIndex];
+    expectedUsed[matchIndex] = true;
+    console.log(`✅ Matched to setup: "${styleName}"`);
+
+    const gear = extractGearFromSlice($tab, rawLabel, bossName);
+    ensureAllSlotsPresent(gear, styleName, bossName, metadata);
+    gear_setups[styleName] = gear;
   }
 
-
-  const missing = normalizedExpected.filter(expected => !foundLabels.includes(expected));
+  // Report missing setups
+  const missing = expectedSetups.filter((_, idx) => !expectedUsed[idx]);
   if (missing.length > 0) {
-    const missingLabels = expectedSetups.filter(s => missing.includes(normalizeLabel(s)));
-    console.warn(`⚠️ ${bossName} is missing expected setups:`, missingLabels);
+    console.warn(`⚠️ ${bossName} is missing expected setups:`, missing);
   }
+
+  const missingStyles = expectedSetups.filter((_, idx) => !expectedUsed[idx]);
 
   const output = {
     name: bossName,
     category: meta.category || '',
     wiki_link: meta.wiki_link,
     gear_setups,
-    extra_styles: gearSlices.length - Object.keys(gear_setups).length
+    missing_styles: missingStyles
   };
 
   const auditPath = path.join(__dirname, 'staging', 'boss_gear_scrape', 'audit_gear_issues.json');
@@ -115,7 +142,7 @@ async function fetchGearSetupsForBoss(bossName, meta) {
 
   const fileName = bossName.replace(/\s+/g, '-').toLowerCase() + '.json';
   fs.writeFileSync(path.join(gearOutputPath, fileName), JSON.stringify(output, null, 2));
-  console.log(`✅ Gear saved for ${bossName}`);
+  console.log(`💾 Gear saved for ${bossName}: ${fileName}`);
 }
 
 (async () => {

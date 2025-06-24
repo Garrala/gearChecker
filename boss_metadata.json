@@ -10,8 +10,29 @@
       "Melee - No defence reduction",
       "Melee - Defence reduction",
       "Magic - Tumeken's Shadow",
-      "Ranged"
-    ]
+      "Phase 2 Ranged"
+    ],
+    "missing_slots": {
+      "Ranged": [
+        "Boots",
+        "Ring",
+        "Shield",
+        "Special Attack"
+      ],
+      "Magic": [
+        "Boots",
+        "Ring",
+        "Ammo",
+        "Special Attack"
+      ],
+      "Melee": [
+        "Shield",
+        "Special Attack"
+      ],
+      "Phase 2 Ranged": [
+        "Shield"
+      ]
+    }
   },
   "Chaos Fanatic": {
     "category": "Wilderness Bosses",
@@ -123,7 +144,7 @@
     "setups": ["Ranged", "Melee"]
   },
   "Wyrm": {
-    "category": "Slayer",
+    "category": "Slayer Monster",
     "wiki_link": "https://oldschool.runescape.wiki/w/Wyrm",
     "strategy_link": "https://oldschool.runescape.wiki/w/Slayer_task/Wyrms",
     "setups": ["Ranged", "Melee"]

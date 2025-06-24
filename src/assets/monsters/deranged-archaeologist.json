@@ -6,14 +6,14 @@
   "bosses": [
     {
       "name": "Deranged Archaeologist",
-      "image": "assets/monster-icons/deranged_archaeologist.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist",
+      "image": "assets/monster-icons/deranged_archaeologist.png",
       "combat_level": 276,
       "hp": 200,
       "max_hit": {
         "melee": 25,
-        "ranged": 25,
-        "special": 56
+        "range": 25,
+        "special direct hit": 56
       },
       "defense": {
         "melee": {
@@ -28,15 +28,16 @@
           "thrown": 300
         }
       },
-      "attack_styles": [ "Melee", "Ranged", "Special" ],
+      "attack_styles": [ "Ranged", "Crush" ],
       "attack_speed": 3,
-      "aggressive": true,
+      "aggressive": false,
       "immunities": {
-        "poison": false,
-        "venom": false,
-        "cannons": false,
-        "thralls": false
-      }
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
@@ -58,8 +59,8 @@
       "Cape": [
         [ "Any Imbued God cape" ],
         [ "Soul cape" ],
-        [ "Ardougne cloak 4" ],
-        [ "Any Skillcape (t)" ],
+        [ "Ardougne cloak" ],
+        [ "Cape of Accomplishment(t)" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -84,7 +85,11 @@
         [ "Iban's staff" ]
       ],
       "Shield": [
-        [ "Tome of fire", "Elidinis' ward (f)" ],
+        [
+          "Tome of fire",
+          "",
+          "Elidinis' ward (f)"
+        ],
         [ "Elidinis' ward" ],
         [ "Arcane spirit shield" ],
         [ "Malediction ward" ],
@@ -113,10 +118,13 @@
       ],
       "Ring": [
         [ "Magus ring" ],
-        [ "Ring of the gods (i)" ],
-        [ "Ring of suffering (i)" ],
+        [ "Ring of the gods(i)" ],
+        [ "Ring of suffering(i)" ],
         [ "Brimstone ring" ],
-        [ "Explorer's ring 4" ]
+        [
+          "Explorer's ring 4",
+          ""
+        ]
       ],
       "Special Attack": [
         [ "N/A" ],
