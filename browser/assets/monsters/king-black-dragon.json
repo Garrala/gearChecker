@@ -6,33 +6,38 @@
   "bosses": [
     {
       "name": "King Black Dragon",
-      "image": "assets/monster-icons/king_black_dragon.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/King_Black_Dragon",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "image": "assets/monster-icons/king_black_dragon.png",
+      "combat_level": 276,
+      "hp": 240,
+      "max_hit": {
+        "melee": 25,
+        "dragonfire": 65
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 60,
+          "slash": 90,
+          "crush": 90
         },
-        "magic": 200,
+        "magic": 80,
         "ranged": {
-          "arrows": 50,
+          "arrows": 70,
           "bolts": 50,
-          "thrown": 50
+          "thrown": 70
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
-      "attack_speed": 3,
-      "aggressive": true,
+      "attack_styles": [ "Stab", "Dragonfire" ],
+      "attack_speed": 4,
+      "aggressive": false,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
-        "thralls": false
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": {
+        "water": "50%"
       }
     }
   ],
@@ -54,15 +59,15 @@
       ],
       "Cape": [
         [ "Infernal cape", "Fire cape" ],
-        [ "Ardougne cloak 4" ],
+        [ "Ardougne cloak" ],
         [ "Mythical cape" ],
-        [ "Any Skillcape" ],
+        [ "Cape of accomplishment" ],
         [ "N/A" ]
       ],
       "Body": [
         [ "Mixed hide top" ],
         [ "Proselyte hauberk" ],
-        [ "Initiate hauberk" ],
+        [ "Initiate hauberk", "Monk's robe top" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -78,7 +83,7 @@
         [ "Ghrazi rapier" ],
         [ "Noxious halberd" ],
         [ "Zamorakian hasta" ],
-        [ "Abyssal dagger" ]
+        [ "Abyssal dagger(p)" ]
       ],
       "Shield": [
         [ "Dragonfire shield" ],
@@ -89,7 +94,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3" ],
+        [ "Rada's blessing 3", "2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -110,7 +115,7 @@
       ],
       "Ring": [
         [ "Ultor ring" ],
-        [ "Treasonous ring (i)" ],
+        [ "Treasonous ring(i)" ],
         [ "Brimstone ring" ],
         [ "Berserker ring (i)" ],
         [ "N/A" ]
@@ -125,7 +130,7 @@
     },
     "Melee Suicide method": {
       "Helmet": [
-        [ "Slayer helmet" ],
+        [ "Slayer helmet", "task", "Torva full helm" ],
         [ "Serpentine helm", "Neitiznot faceguard" ],
         [ "Helm of neitiznot" ],
         [ "Berserker helm", "Obsidian helmet" ],
@@ -140,9 +145,9 @@
       ],
       "Cape": [
         [ "Infernal cape", "Fire cape" ],
-        [ "Ardougne cloak 4" ],
+        [ "Ardougne cloak" ],
         [ "Mythical cape" ],
-        [ "Any Skillcape" ],
+        [ "Cape of accomplishment" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -150,7 +155,7 @@
         [ "Bandos chestplate", "Fighter torso", "Blood moon chestplate" ],
         [ "Mixed hide top" ],
         [ "Proselyte hauberk" ],
-        [ "Initiate hauberk" ]
+        [ "Initiate hauberk", "Monk's robe top" ]
       ],
       "Legs": [
         [ "Torva platelegs" ],
@@ -164,7 +169,7 @@
         [ "Osmumten's fang" ],
         [ "Ghrazi rapier" ],
         [ "Zamorakian hasta" ],
-        [ "Abyssal dagger" ]
+        [ "Abyssal dagger(p)" ]
       ],
       "Shield": [
         [ "Avernic defender", "Dragonfire shield" ],
@@ -175,7 +180,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3" ],
+        [ "Rada's blessing 3", "2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -196,7 +201,7 @@
       ],
       "Ring": [
         [ "Ultor ring" ],
-        [ "Treasonous ring (i)" ],
+        [ "Treasonous ring(i)" ],
         [ "Brimstone ring" ],
         [ "Berserker ring (i)" ],
         [ "N/A" ]
@@ -211,7 +216,7 @@
     },
     "Twisted Bow / BOWFA": {
       "Helmet": [
-        [ "Any Blessed coif", "Slayer helmet (i)" ],
+        [ "Blessed coif", "Slayer helmet (i)", "task" ],
         [ "Crystal helm" ],
         [ "Karil's coif" ],
         [ "Archer helm" ]
@@ -249,12 +254,12 @@
       "Ammo": [
         [ "Dragon arrows" ],
         [ "Amethyst arrows" ],
-        [ "N/A" ],
+        [ "Rada's blessing" ],
         [ "N/A" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
-        [ "Any Blessed vambraces" ],
+        [ "Blessed vambraces" ],
         [ "Black d'hide vambraces" ],
         [ "Red d'hide vambraces" ]
       ],
@@ -285,7 +290,7 @@
     },
     "Crossbow & shield": {
       "Helmet": [
-        [ "Any Blessed coif", "Slayer helmet (i)" ],
+        [ "Blessed coif", "Slayer helmet (i)", "task" ],
         [ "Karil's coif" ],
         [ "Archer helm" ],
         [ "N/A" ],
@@ -334,15 +339,15 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Diamond dragon bolts (e)" ],
-        [ "Diamond bolts (e)" ],
+        [ "Diamond dragon bolts(e)" ],
+        [ "Diamond bolts(e)" ],
         [ "Moonlight antler bolts", "Sunlight antler bolts" ],
         [ "Runite bolts" ],
         [ "N/A" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
-        [ "Any Blessed vambraces" ],
+        [ "Blessed vambraces" ],
         [ "Black d'hide vambraces" ],
         [ "Red d'hide vambraces" ],
         [ "N/A" ]
@@ -350,7 +355,7 @@
       "Boots": [
         [ "Any Blessed boots" ],
         [ "Mixed hide boots" ],
-        [ "Shayzien boots (5)" ],
+        [ "Shayzien boots(5)" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -371,8 +376,8 @@
     },
     "Suicide method": {
       "Helmet": [
-        [ "Masori mask (f)", "Slayer helmet (i)" ],
-        [ "Any Blessed coif" ],
+        [ "Masori mask(f)", "Slayer helmet (i)", "task" ],
+        [ "Blessed coif" ],
         [ "Karil's coif" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -388,7 +393,7 @@
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
         [ "Ava's accumulator" ],
-        [ "Ranging cape (t)" ],
+        [ "Ranging cape(t)" ],
         [ "Ava's attractor" ]
       ],
       "Body": [
@@ -420,8 +425,8 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows" ],
-        [ "Amethyst arrows" ],
+        [ "Dragon arrows", "twisted bow", "Diamond dragon bolts(e)" ],
+        [ "Amethyst arrows", "twisted bow", "Diamond bolts(e)" ],
         [ "Runite bolts" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -429,7 +434,7 @@
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
-        [ "Any Blessed vambraces" ],
+        [ "Blessed vambraces" ],
         [ "Black d'hide vambraces" ],
         [ "N/A" ]
       ],

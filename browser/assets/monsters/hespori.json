@@ -126,9 +126,6 @@
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
-      ],
-      "Capes": [
-        [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ]
       ]
     },
     "Best-in-slot": {
@@ -245,8 +242,8 @@
         [ "N/A" ]
       ],
       "Cape": [
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Any Imbued God cape" ],
+        [ "God cape" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -313,10 +310,6 @@
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
-      ],
-      "Capes": [
-        [ "Any Imbued God cape" ],
-        [ "Any God cape" ]
       ]
     }
   }

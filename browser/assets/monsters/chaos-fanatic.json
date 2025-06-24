@@ -6,8 +6,8 @@
   "bosses": [
     {
       "name": "Chaos Fanatic",
-      "image": "assets/monster-icons/chaos_fanatic.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Fanatic",
+      "image": "assets/monster-icons/chaos_fanatic.png",
       "combat_level": 202,
       "hp": 225,
       "max_hit": {
@@ -28,20 +28,21 @@
       },
       "attack_styles": [ "Magic" ],
       "attack_speed": 2,
-      "aggressive": true,
+      "aggressive": false,
       "immunities": {
-        "poison": false,
-        "venom": false,
-        "cannons": false,
-        "thralls": false
-      }
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
     "Ranged": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Black mask (i)" ],
-        [ "Any Blessed coif" ],
+        [ "Slayer helmet (i)", "Black mask(i)" ],
+        [ "Blessed coif" ],
         [ "Karil's coif" ],
         [ "Snakeskin bandana" ],
         [ "Coif" ],
@@ -66,7 +67,7 @@
       "Body": [
         [ "Masori body (f)" ],
         [ "Crystal body" ],
-        [ "Any Blessed body" ],
+        [ "Blessed d'hide body" ],
         [ "Black d'hide body" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -74,7 +75,7 @@
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Crystal legs" ],
-        [ "Any Blessed chaps" ],
+        [ "Blessed d'hide chaps" ],
         [ "Black d'hide chaps" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -85,7 +86,7 @@
         [ "Bow of Faerdhinen" ],
         [ "Toxic blowpipe", "Hunters' sunlight crossbow" ],
         [ "Dragon crossbow", "Rune crossbow" ],
-        [ "N/A" ]
+        [ "Twisted bow" ]
       ],
       "Shield": [
         [ "Book of law" ],
@@ -96,16 +97,16 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
-        [ "Dragon arrows", "Amethyst arrows", "Rune arrows" ],
+        [ "Rada's Blessing", "Webweaver", "Craw's bow", "Toxic blowpipe", "Crystal bow" ],
+        [ "Dragon arrows", "Amethyst arrow", "Rune arrow" ],
         [ "Moonlight antler bolts" ],
-        [ "Diamond dragon bolts (e)" ],
-        [ "Diamond bolts (e)" ]
+        [ "Diamond dragon bolts(e)" ],
+        [ "Diamond bolts(e)" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
-        [ "Any Blessed vambraces" ],
+        [ "Blessed vambraces" ],
         [ "Black d'hide vambraces" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -114,7 +115,7 @@
       "Boots": [
         [ "Any Blessed boots" ],
         [ "Mixed hide boots" ],
-        [ "Shayzien boots (5)" ],
+        [ "Shayzien boots(5)" ],
         [ "Snakeskin boots" ],
         [ "Bloodbark boots" ],
         [ "N/A" ]

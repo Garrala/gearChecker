@@ -6,8 +6,8 @@
   "bosses": [
     {
       "name": "Commander Zilyana",
-      "image": "assets/monster-icons/commander_zilyana.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Commander_Zilyana",
+      "image": "assets/monster-icons/commander_zilyana.png",
       "combat_level": 596,
       "hp": 255,
       "max_hit": {
@@ -23,19 +23,20 @@
         "magic": 100,
         "ranged": {
           "arrows": 100,
-          "bolts": 100,
-          "thrown": 75
+          "bolts": 75,
+          "thrown": 100
         }
       },
-      "attack_styles": [ "Magic", "Melee" ],
+      "attack_styles": [ "Crush", "Magic" ],
       "attack_speed": 2,
-      "aggressive": true,
+      "aggressive": false,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
-        "thralls": false
-      }
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
@@ -91,7 +92,7 @@
     },
     "Ranged": {
       "Helmet": [
-        [ "Masori mask (f)", "Slayer helmet (i)" ],
+        [ "Masori mask(f)", "Slayer helmet (i)" ],
         [ "Crystal helm" ],
         [ "Justiciar faceguard" ],
         [ "Verac's helm", "Saradomin coif" ],
@@ -100,14 +101,18 @@
       "Amulet": [
         [ "Necklace of anguish" ],
         [ "Amulet of fury" ],
-        [ "Dragonbone necklace", "Bonecrusher necklace" ],
+        [
+          "Dragonbone necklace",
+          "Bonecrusher necklace",
+          ""
+        ],
         [ "Amulet of glory" ],
         [ "Holy symbol", "Unholy symbol" ]
       ],
       "Cape": [
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
-        [ "Max cape", "Ranging cape (t)" ],
+        [ "Max cape", "Ranging cape(t)" ],
         [ "Ava's accumulator" ],
         [ "Ava's attractor" ]
       ],
@@ -127,9 +132,15 @@
       ],
       "Weapon": [
         [ "Twisted bow" ],
-        [ "Bow of Faerdhinen" ],
+        [
+          "Bow of Faerdhinen",
+          ""
+        ],
         [ "Zaryte crossbow" ],
-        [ "Hunters' sunlight crossbow" ],
+        [
+          "Hunters' sunlight crossbow",
+          ""
+        ],
         [ "Armadyl crossbow", "Dragon hunter crossbow", "Dragon crossbow", "Rune crossbow" ]
       ],
       "Shield": [
@@ -140,8 +151,8 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Diamond dragon bolts (e)", "Moonlight antler bolts", "Any God blessing" ],
-        [ "Amethyst arrows", "Diamond bolts (e)", "Sunlight antler bolts" ],
+        [ "Dragon arrows", "Diamond dragon bolts(e)", "Moonlight antler bolts", "God blessing" ],
+        [ "Amethyst arrows", "Diamond bolts(e)", "Sunlight antler bolts" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -161,10 +172,10 @@
         [ "Boots of brimstone" ]
       ],
       "Ring": [
-        [ "Ring of suffering (i)" ],
+        [ "Ring of suffering(i)" ],
         [ "Ring of endurance" ],
         [ "Venator ring" ],
-        [ "Ring of the gods (i)" ],
+        [ "Ring of the gods(i)" ],
         [ "Explorer's ring 4" ]
       ],
       "Special Attack": [

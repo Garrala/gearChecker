@@ -1,17 +1,17 @@
 {
-  "name": "Crazy Archeologist",
+  "name": "Crazy Archaeologist",
   "category": "Wilderness Bosses",
-  "image": "assets/monster-icons/crazy_archeologist.png",
+  "image": "assets/monster-icons/crazy_archaeologist.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist",
   "bosses": [
     {
-      "name": "Crazy Archeologist",
-      "image": "assets/monster-icons/crazy_archeologist.png",
+      "name": "Crazy Archaeologist",
       "wiki_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist",
+      "image": "assets/monster-icons/crazy_archaeologist.png",
       "combat_level": 204,
       "hp": 225,
       "max_hit": {
-        "ranged": 14,
+        "standard": 14,
         "special": 24
       },
       "defense": {
@@ -27,15 +27,16 @@
           "thrown": 250
         }
       },
-      "attack_styles": [ "Ranged", "Special" ],
+      "attack_styles": [ "Ranged", "Crush" ],
       "attack_speed": 3,
-      "aggressive": true,
+      "aggressive": false,
       "immunities": {
-        "poison": false,
-        "venom": false,
-        "cannons": false,
-        "thralls": false
-      }
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
@@ -55,7 +56,7 @@
         [ "Amulet of power" ]
       ],
       "Cape": [
-        [ "Any Imbued God cape" ],
+        [ "Imbued god capes" ],
         [ "Any God cape" ],
         [ "Ardougne cloak 4" ],
         [ "Ardougne cloak 3" ],
@@ -80,7 +81,7 @@
         [ "Sanguinesti staff" ],
         [ "Trident of the swamp" ],
         [ "Trident of the seas" ],
-        [ "Warped sceptre", "Iban's staff (u)" ]
+        [ "Warped sceptre", "Iban's staff(u)" ]
       ],
       "Shield": [
         [ "Elidinis' ward (f)", "Elidinis' ward" ],
@@ -111,10 +112,10 @@
         [ "N/A" ]
       ],
       "Ring": [
-        [ "Ring of shadows" ],
-        [ "Explorer's ring 4" ],
+        [ "Ring of shadows", "(uncharged)" ],
+        [ "Explorer's ring" ],
         [ "Beacon ring" ],
-        [ "Ring of wealth (i)" ],
+        [ "Ring of wealth(i)" ],
         [ "N/A" ]
       ],
       "Special Attack": [
