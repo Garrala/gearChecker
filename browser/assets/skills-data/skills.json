@@ -1,0 +1,151 @@
+[
+  {
+    "name": "Agility",
+    "icon": "assets/skills/agility.png",
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Agility_training_(members)",
+      "ironman": "https://oldschool.runescape.wiki/w/Agility_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Agility_training_(Ultimate_Ironman)"
+    },
+    "methods": {
+      "members": [
+        {
+          "name": "Gnome Stronghold",
+          "minLevel": 1
+        },
+        {
+          "name": "Draynor Rooftop",
+          "minLevel": 10
+        },
+        {
+          "name": "Al Kharid Rooftop",
+          "minLevel": 20
+        },
+        {
+          "name": "Varrock Rooftop",
+          "minLevel": 30
+        },
+        {
+          "name": "Canifis Rooftop",
+          "minLevel": 40
+        },
+        {
+          "name": "Falador Rooftop",
+          "minLevel": 50
+        },
+        {
+          "name": "Seers Rooftop",
+          "minLevel": 60
+        },
+        {
+          "name": "Pollnivneach Rooftop",
+          "minLevel": 70
+        },
+        {
+          "name": "Ardougne Rooftop",
+          "minLevel": 90
+        },
+        {
+          "name": "Hallowed Sepulchre",
+          "minLevel": 52
+        }
+      ],
+      "ironman": [
+        {
+          "name": "Canifis Rooftop",
+          "minLevel": 40
+        },
+        {
+          "name": "Hallowed Sepulchre",
+          "minLevel": 52
+        }
+      ],
+      "ultimate": [
+        {
+          "name": "Draynor Rooftop",
+          "minLevel": 10
+        },
+        {
+          "name": "Falador Rooftop",
+          "minLevel": 50
+        }
+      ]
+    }
+  },
+  {
+    "name": "Firemaking",
+    "icon": "assets/skills/firemaking.png",
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Firemaking_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Firemaking_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Firemaking_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Firemaking_training"
+    },
+    "methods": {
+      "members": [
+        {
+          "name": "Wintertodt",
+          "minLevel": 50
+        },
+        {
+          "name": "Redwood Logs",
+          "minLevel": 90
+        }
+      ],
+      "ironman": [
+        {
+          "name": "Willow Logs",
+          "minLevel": 30
+        }
+      ],
+      "ultimate": [
+        {
+          "name": "Maple Logs",
+          "minLevel": 45
+        }
+      ],
+      "f2p": [
+        {
+          "name": "Normal Logs at GE",
+          "minLevel": 1
+        }
+      ]
+    }
+  },
+  {
+    "name": "Cooking",
+    "icon": "assets/skills/cooking.png",
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Cooking_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Cooking_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Cooking_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Cooking_training"
+    },
+    "methods": {
+      "members": [
+        {
+          "name": "Sharks at Hosidius",
+          "minLevel": 80
+        }
+      ],
+      "ironman": [
+        {
+          "name": "Wines",
+          "minLevel": 35
+        }
+      ],
+      "ultimate": [
+        {
+          "name": "Cooked Fish from Fishing",
+          "minLevel": 1
+        }
+      ],
+      "f2p": [
+        {
+          "name": "Trout and Salmon",
+          "minLevel": 15
+        }
+      ]
+    }
+  }
+]
