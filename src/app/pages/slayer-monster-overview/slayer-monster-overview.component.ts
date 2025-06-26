@@ -46,14 +46,7 @@ export class SlayerMonsterOverviewComponent implements OnInit {
 
   //Boss filtering
   selectedCategories: string[] = []
-  bossCategories = [
-    'World Bosses',
-    'Wilderness Bosses',
-    'Instanced Bosses',
-    'Desert Treasure II',
-    'Sporadic Bosses',
-    'Slayer Bosses',
-  ]
+ 
 
   //Item filtering
   itemSearchQuery: string = ''
@@ -77,10 +70,8 @@ export class SlayerMonsterOverviewComponent implements OnInit {
 
     this.monsterService.getSlayerMonsters().subscribe((data) => {
       this.monsters = data
-      this.filteredBosses = data
-      this.extractAllItems()
       this.isMonsterListLoading = false //  Boss list loaded
-
+      this.extractAllItems();
       this.route.paramMap.subscribe((params) => {
         const monsterName = params.get('name');
         if (monsterName) {
