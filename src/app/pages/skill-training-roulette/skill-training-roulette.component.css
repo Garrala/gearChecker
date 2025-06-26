@@ -1,0 +1,605 @@
+@font-face {
+  font-family: 'Runescape';
+  src: url('/assets/RuneScape-Plain-12.otf') format('truetype'); /* Adjust path accordingly */
+}
+
+.boss-selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.boss-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid gray;
+  padding: 5px;
+  background: #222;
+  transition: 0.2s;
+}
+
+.boss-toggle input {
+  display: none;
+}
+
+.boss-toggle img {
+  width: 50px;
+  height: 50px;
+}
+
+.boss-toggle.selected {
+  border-color: limegreen;
+  background: black;
+}
+
+.roulette-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 300px;
+  height: 480px;
+  background: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 3px solid black;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  display: none; /* Initially hidden */
+}
+
+/* Flip Animation */
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card.flipped.selected {
+  background-color: limegreen;
+}
+
+.card img.show {
+  display: block;
+  transform: rotateY(180deg);
+}
+
+.roulette-cards .card {
+  width: 300px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #333;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  flex-direction: column;
+}
+
+.roulette-cards .card img {
+  max-width: 80%; /* Reduce overall size */
+  max-height: 250px; /* Keep them from being too large */
+  object-fit: contain; /* Ensures it keeps proportions */
+  display: block; /* Ensure full image is visible */
+}
+
+.roulette-cards .card div {
+  font-size: 5rem; /* Scale up the question mark */
+  font-weight: bold;
+  color: red;
+}
+
+.roulette-cards .card .hidden-card {
+  max-width: 80%; /* Reduce overall size */
+  max-height: 250px;
+  object-fit: contain; /* Ensures it keeps proportions */
+  display: block;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+.skill-picker {
+  display: flex;
+  justify-content: center; /* Centers bosses in a row */
+  align-items: center;
+  gap: 15px; /* Space between each boss box */
+  flex-wrap: wrap; /* Allows wrapping if screen size is small */
+  width: 100%;
+}
+
+.skill-box {
+  width: 120px; /* Keep them smaller */
+  height: 140px;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-box img {
+  width: 80px; /* Increase image size for better visibility */
+  height: 80px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.skill-box.selected {
+  border-color: limegreen;
+  background: rgba(0, 255, 0, 0.3);
+}
+
+.skill-box:hover {
+  transform: scale(1.1);
+}
+
+.training-methods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.method-card {
+  background: #222;
+  border: 2px solid #555;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.method-card:hover {
+  transform: scale(1.05);
+  border-color: limegreen;
+}
+
+.method-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #00ffcc;
+}
+
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.category-selector {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 12px; /* Space between buttons */
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px; /* Soft rounded corners */
+}
+
+.category-selector button {
+  padding: 12px 18px;
+  background: linear-gradient(to bottom, #333, #111); /* Subtle gradient */
+  color: white;
+  border: 2px solid #666;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+  border-radius: 6px; /* Rounded corners */
+  font-size: 14px;
+  text-transform: uppercase; /* Makes it feel more structured */
+}
+
+.category-selector button:hover {
+  background: linear-gradient(
+    to bottom,
+    #444,
+    #222
+  ); /* Slightly lighter hover effect */
+  border-color: rgba(0, 255, 0, 0.3);
+}
+
+.category-selector button.active {
+  background: rgba(0, 255, 0, 0.3);
+  border-color: rgba(0, 255, 0, 0.3);
+  transform: scale(1.05); /* Slight pop effect */
+  box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); /* Glow effect */
+}
+
+.item-filter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.item-filter input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.item-filter input:focus {
+  border-color: rgba(0, 255, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+}
+
+/* Autocomplete Dropdown */
+.autocomplete-dropdown {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  background: #111;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* Individual Autocomplete Item */
+.autocomplete-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.autocomplete-item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.autocomplete-item:hover {
+  background: rgba(0, 255, 0, 0.3);
+}
+
+  .autocomplete-item.highlighted {
+    background: rgba(0, 255, 0, 0.3);
+    border-left: 4px solid limegreen;
+  }
+
+.npc-dialogue {
+  display: flex;
+  align-items: center; /* Align image and text */
+  justify-content: center; /* Center the content */
+  gap: 10px; /* Add space between image and text */
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+  background-color: #c2b18d;
+  border: 5px solid #575040;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.npc-dialogue img {
+  width: 80px; /* Adjust image size */
+  height: auto;
+  margin-right: 2%;
+}
+
+.npc-dialogue h2 {
+  /*  font-family: 'Runescape', sans-serif;*/
+  font-size: 1.8rem; /* Adjust text size */
+  font-weight: bold;
+  color: black;
+  margin: 0; /* Remove default margins */
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.result-container button {
+  padding: 12px 18px;
+  background: linear-gradient(to bottom, #333, #111); /* Subtle gradient */
+  color: white;
+  border: 2px solid #666;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+  border-radius: 6px; /* Rounded corners */
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.result-container button:hover {
+  background: linear-gradient(
+    to bottom,
+    #444,
+    #222
+  ); /* Slightly lighter hover effect */
+  border-color: rgba(0, 255, 0, 0.3);
+}
+
+.result-container button.active {
+  background: rgba(0, 255, 0, 0.3);
+  border-color: rgba(0, 255, 0, 0.3);
+  transform: scale(1.05); /* Slight pop effect */
+  box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); /* Glow effect */
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+}
+
+.start-roulette-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card.selected {
+  border: 4px solid rgba(0, 255, 0, 0.3);
+  box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.8);
+  background-color: rgba(0, 255, 0, 0.3);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.button-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.training-methods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.method-card {
+  background: #222;
+  border: 2px solid #555;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.method-card:hover {
+  transform: scale(1.05);
+  border-color: limegreen;
+}
+
+.method-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #00ffcc;
+}
+
+.roulette-carousel {
+  width: 100%;
+  overflow: hidden;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carousel-track {
+  display: flex;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.carousel-track.spin {
+  animation-name: slideLeft;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-85%);
+  }
+}
+
+.carousel-item {
+  width: 100px;
+  margin: 0 10px;
+  text-align: center;
+  color: white;
+}
+
+.carousel-item img {
+  width: 64px;
+  height: 64px;
+}
+
+.method-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 500px;
+  background: #222;
+  border: 1px solid #555;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin: 4px 0;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.method-row.selected {
+  border-color: limegreen;
+  background-color: rgba(0, 255, 0, 0.1);
+  box-shadow: 0 0 6px rgba(0, 255, 0, 0.3);
+}
+
+.method-row:hover {
+  background-color: rgba(0, 255, 0, 0.05);
+}
+
+.method-row input[type='checkbox'] {
+  margin-right: 12px;
+}
+
+.method-name {
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+.method-level {
+  margin-left: auto;
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+
+.method-row.highlighted {
+  border: 2px solid yellow;
+  box-shadow: 0 0 15px yellow;
+}
+
+.wiki-link {
+  display: inline-block;
+  margin: 10px 0 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #00aaff; /* soft blue */
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 1px dotted transparent;
+  text-align: center;
+}
+
+.wiki-link:hover {
+  color: #00ffcc;
+  text-shadow: 0 0 6px rgba(0, 255, 200, 0.5);
+  transform: scale(1.05);
+}
+
+
+
+@media (max-width: 768px) {
+  .roulette-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .roulette-cards .card {
+      width: 80vw;
+      height: auto;
+      max-width: 300px;
+    }
+
+      .roulette-cards .card img,
+      .roulette-cards .card .hidden-card {
+        max-height: 200px;
+        max-width: 100%;
+      }
+
+  .npc-dialogue {
+    flex-direction: column;
+    text-align: center;
+  }
+
+    .npc-dialogue img {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    .npc-dialogue h2 {
+      font-size: 1.3rem;
+    }
+
+  .category-selector {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+    .category-selector button {
+      width: 90%;
+      max-width: 300px;
+    }
+}
+

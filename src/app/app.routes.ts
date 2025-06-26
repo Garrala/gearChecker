@@ -4,6 +4,7 @@ import { MonsterOverviewComponent } from './pages/monster-overview/monster-overv
 import { BossRouletteComponent } from './pages/boss-roulette/boss-roulette.component'
 import { HomeComponent } from './pages/home/home.component';
 import { SlayerMonsterOverviewComponent } from './pages/slayer-monster-overview/slayer-monster-overview.component';
+import { SkillTrainingRouletteComponent } from './pages/skill-training-roulette/skill-training-roulette.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,5 +14,6 @@ export const routes: Routes = [
   { path: 'slayer', component: SlayerMonsterOverviewComponent },
   { path: 'slayer/:name', component: SlayerMonsterOverviewComponent },
   { path: 'roulette', component: BossRouletteComponent },
+  { path: 'skill-training-roulette', component: SkillTrainingRouletteComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ]

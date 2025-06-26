@@ -1,0 +1,88 @@
+<!-- Skill Selection Phase -->
+<div *ngIf="!isRoulettePhase">
+  <div *ngIf="isSkillListLoading" class="spinner-container">
+    <div class="spinner"></div>
+  </div>
+
+  <div *ngIf="!isSkillListLoading">
+    <h1>Select Skills for the Roulette</h1>
+
+    <div class="start-roulette-container">
+      <button class="app-button" [disabled]="selectedSkills.length < 1" (click)="startRoulette()">
+        Start Roulette
+      </button>
+    </div>
+
+    <div class="skill-picker">
+      <div
+        *ngFor="let skill of skills"
+        class="skill-box"
+        [class.selected]="skill.selected"
+        (click)="toggleSkillSelection(skill)"
+      >
+        <img [src]="skill.icon" [alt]="skill.name" />
+        <span>{{ skill.name }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Roulette Phase -->
+<div *ngIf="isRoulettePhase">
+  <!-- Spinning Animation -->
+  <div class="roulette-carousel" *ngIf="!selectedCard">
+    <div class="carousel-track" [class.spin]="isSpinning">
+      <div class="carousel-item" *ngFor="let skill of carouselQueue">
+        <img [src]="skill.icon" [alt]="skill.name" />
+        <p>{{ skill.name }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- After Skill Is Selected -->
+  <div *ngIf="selectedCard" class="training-methods">
+    <h2>Selected Skill: {{ selectedCard.name }}</h2>
+
+    <p>Select your account type:</p>
+    <div class="category-selector">
+      <button
+        *ngFor="let type of accountTypes"
+        [class.active]="selectedAccountType === type"
+        (click)="setAccountType(type)"
+      >
+        {{ type | titlecase }}
+      </button>
+    </div>
+
+    <a
+      class="wiki-link"
+      [href]="getWikiLink()"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      📖 View Full Wiki Guide
+    </a>
+
+    <p>Select which methods you're willing to do:</p>
+
+    <div
+      class="method-row"
+      *ngFor="let method of availableMethods"
+      [class.selected]="!method.disabled"
+      [class.highlighted]="isMethodHighlighted(method)"
+      (click)="method.disabled = !method.disabled"
+    >
+      <label>
+        <span class="method-name">{{ method.name }}</span>
+        <span class="method-level" *ngIf="method.minLevel">
+          (Lvl {{ method.minLevel }})
+        </span>
+      </label>
+    </div>
+
+    <div class="category-selector">
+      <button (click)="spinTrainingMethods()">🎲 Spin for Training Method</button>
+      <button (click)="resetRoulette()">Back to Skill Select</button>
+    </div>
+  </div>
+</div>
