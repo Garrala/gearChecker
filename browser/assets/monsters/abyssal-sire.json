@@ -1,143 +1,111 @@
 {
   "name": "Abyssal Sire",
   "category": "Slayer Bosses",
-  "image": "assets/monster-icons/abyssal_sire__phase_1__.png",
+  "image": "assets/monster-icons/abyssal_sire_phase_1.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
   "bosses": [
     {
-      "name": "Abyssal Sire (Phase 1)",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire#Phase_1",
-      "image": "assets/monster-icons/abyssal_sire__phase_1__.png",
-      "combat_level": 350,
-      "hp": 425,
-      "max_hit": {
-        "melee": 66,
-        "with explosion": 96
-      },
+      "name": "Abyssal Sire (phase 1)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+      "image": "assets/monster-icons/abyssal_sire_phase_1.png",
+      "combat_level": 0,
+      "hp": 0,
+      "max_hit": {},
       "defense": {
         "melee": {
-          "stab": 40,
-          "slash": 60,
-          "crush": 50
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
         },
-        "magic": 20,
+        "magic": 0,
         "ranged": {
-          "arrows": 60,
-          "bolts": 60,
-          "thrown": 60
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
         }
       },
-      "attack_styles": [ "Melee" ],
-      "attack_speed": 7,
+      "attack_styles": [],
+      "attack_speed": null,
       "aggressive": false,
-      "immunities": {
-        "poison": true,
-        "venom": true,
-        "cannons": true,
-        "thralls": true
-      },
+      "immunities": {},
       "weaknesses": "none"
     },
     {
-      "name": "Abyssal Sire (Phase 2)",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire#Phase_2",
-      "image": "assets/monster-icons/abyssal_sire__phase_2__.png",
-      "combat_level": 350,
-      "hp": 425,
-      "max_hit": {
-        "melee": 66,
-        "with explosion": 96
-      },
+      "name": "Abyssal Sire (phase 2)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+      "image": "assets/monster-icons/abyssal_sire_phase_2.png",
+      "combat_level": 0,
+      "hp": 0,
+      "max_hit": {},
       "defense": {
         "melee": {
-          "stab": 40,
-          "slash": 60,
-          "crush": 50
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
         },
-        "magic": 20,
+        "magic": 0,
         "ranged": {
-          "arrows": 60,
-          "bolts": 60,
-          "thrown": 60
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
         }
       },
-      "attack_styles": [ "Melee" ],
-      "attack_speed": 7,
+      "attack_styles": [],
+      "attack_speed": null,
       "aggressive": false,
-      "immunities": {
-        "poison": true,
-        "venom": true,
-        "cannons": true,
-        "thralls": true
-      },
+      "immunities": {},
       "weaknesses": "none"
     },
     {
-      "name": "Abyssal Sire (Phase 3 (stage 1))",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire#Phase_3_(stage_1)",
-      "image": "assets/monster-icons/abyssal_sire__phase_3_(stage_1)__.png",
-      "combat_level": 350,
-      "hp": 425,
-      "max_hit": {
-        "melee": 66,
-        "with explosion": 96
-      },
+      "name": "Abyssal Sire (phase 3 stage 1)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+      "image": "assets/monster-icons/abyssal_sire_phase_3_stage_1.png",
+      "combat_level": 0,
+      "hp": 0,
+      "max_hit": {},
       "defense": {
         "melee": {
-          "stab": 40,
-          "slash": 60,
-          "crush": 50
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
         },
-        "magic": 20,
+        "magic": 0,
         "ranged": {
-          "arrows": 60,
-          "bolts": 60,
-          "thrown": 60
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
         }
       },
-      "attack_styles": [ "Melee" ],
-      "attack_speed": 7,
+      "attack_styles": [],
+      "attack_speed": null,
       "aggressive": false,
-      "immunities": {
-        "poison": true,
-        "venom": true,
-        "cannons": true,
-        "thralls": true
-      },
+      "immunities": {},
       "weaknesses": "none"
     },
     {
-      "name": "Abyssal Sire (Phase 3 (stage 2))",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire#Phase_3_(stage_2)",
-      "image": "assets/monster-icons/abyssal_sire__phase_3_(stage_2)__.png",
-      "combat_level": 350,
-      "hp": 425,
-      "max_hit": {
-        "melee": 66,
-        "with explosion": 96
-      },
+      "name": "Abyssal Sire (phase 3 stage 2)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+      "image": "assets/monster-icons/abyssal_sire_phase_3_stage_2.png",
+      "combat_level": 0,
+      "hp": 0,
+      "max_hit": {},
       "defense": {
         "melee": {
-          "stab": 40,
-          "slash": 60,
-          "crush": 50
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
         },
-        "magic": 20,
+        "magic": 0,
         "ranged": {
-          "arrows": 60,
-          "bolts": 60,
-          "thrown": 60
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
         }
       },
-      "attack_styles": [ "Melee" ],
-      "attack_speed": 7,
+      "attack_styles": [],
+      "attack_speed": null,
       "aggressive": false,
-      "immunities": {
-        "poison": true,
-        "venom": true,
-        "cannons": true,
-        "thralls": true
-      },
+      "immunities": {},
       "weaknesses": "none"
     }
   ],
