@@ -1,141 +1,128 @@
-const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
-const cheerio = require('cheerio');
+const { chromium } = require('playwright');
 const beautify = require('js-beautify').html;
+const cheerio = require('cheerio');
 
-const metadata = JSON.parse(fs.readFileSync('../boss_metadata.json', 'utf8'));
-const baseFolder = path.join(__dirname, 'staging', 'boss_html_dumps');
+const metadata = require('../boss_metadata.json');
 
-if (fs.existsSync(baseFolder)) {
-  fs.rmSync(baseFolder, { recursive: true, force: true });
-}
-fs.mkdirSync(baseFolder);
+// Output directories
+const OUTPUT_DIR = path.join(__dirname, 'staging', 'boss_html_dumps');
+const STRATEGY_DIR = path.join(__dirname, 'staging', 'strategy_html_dumps');
 
-function normalizeName(name) {
-  return name.replace(/\s+/g, '_').toLowerCase();
-}
-
-function createFolderStructure(base, name, subfolder = null) {
-  const mainFolder = path.join(base, normalizeName(name));
-  if (!fs.existsSync(mainFolder)) fs.mkdirSync(mainFolder);
-  const folderPath = subfolder
-    ? path.join(mainFolder, normalizeName(subfolder))
-    : mainFolder;
-  if (!fs.existsSync(folderPath)) fs.mkdirSync(folderPath);
-  return folderPath;
+for (const dir of [OUTPUT_DIR, STRATEGY_DIR]) {
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 }
 
-function extractStrategySlice($, name) {
-  const equipmentHeader = $('h2, h3').filter((_, el) =>
-    $(el).find('.mw-headline').text().toLowerCase().includes('equipment')
-  ).first();
+// Simple formatter to break tags onto their own lines
+function breakTagsToNewLines(html) {
+  return html
+    .replace(/</g, '\n<')
+    .replace(/>/g, '>\n')
+    .replace(/\n{2,}/g, '\n')
+    .trim();
+}
 
-  if (!equipmentHeader.length) {
-    console.warn(`⚠️ No Equipment section found for ${name}`);
-    return null;
+async function downloadWithPlaywright(monsterName, url) {
+  const browser = await chromium.launch({ headless: true });
+  const page = await browser.newPage();
+
+  const bossFolder = monsterName.replace(/\s+/g, '_').toLowerCase();
+  const bossDir = path.join(OUTPUT_DIR, bossFolder);
+  const strategyBossDir = path.join(STRATEGY_DIR, bossFolder);
+
+  for (const dir of [bossDir, strategyBossDir]) {
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
   }
 
-  const slice = $('<div></div>').append(equipmentHeader.clone());
-  let current = equipmentHeader.next();
-
-  while (current.length) {
-    const tag = current.get(0).tagName;
-
-    // Stop at next h2 to isolate the section
-    if (tag === 'h2') break;
-
-    slice.append(current.clone());
-    current = current.next();
-  }
-
-  const containsTabberOrTable = slice.find('.tabber, .wikitable').length > 0;
-  if (!containsTabberOrTable) {
-    console.warn(`⚠️ Strategy section found for ${name}, but no obvious gear elements were matched. Consider manual inspection.`);
-  }
-
-  return slice;
-}
-
-
-
-async function downloadMonsterHtml(name, url, folderPath) {
-  const response = await axios.get(url);
-  const $ = cheerio.load(response.data);
-  const tabButtons = $('.infobox-buttons .button');
-
-  if (tabButtons.length === 0) {
-    const infobox = $('table.infobox-monster').first();
-    if (!infobox.length) {
-      console.warn(`⚠️ No infobox found for ${name}`);
-      return;
-    }
-    const filePath = path.join(folderPath, `monster.html`);
-    fs.writeFileSync(filePath, beautify($.html(infobox), { indent_size: 2 }));
-    console.log(`✅ Saved default monster for ${name} → ${filePath}`);
-    return;
-  }
-
-  for (const button of tabButtons.toArray()) {
-    const anchor = $(button).attr('data-switch-anchor');
-    const label = $(button).text().trim().replace(/[^\w\s]/g, '').replace(/\s+/g, '_').toLowerCase();
-    const phaseUrl = url + anchor;
-    const phaseRes = await axios.get(phaseUrl);
-    const $phase = cheerio.load(phaseRes.data);
-    const infobox = $phase('table.infobox-monster').first();
-    if (!infobox.length) {
-      console.warn(`⚠️ No infobox for ${name} [${label}]`);
-      continue;
-    }
-
-    const filePath = path.join(folderPath, `monster_${label}.html`);
-    fs.writeFileSync(filePath, beautify($phase.html(infobox), { indent_size: 2 }));
-    console.log(`✅ Saved [${label}] version of ${name} → ${filePath}`);
-  }
-}
-
-async function downloadStrategyHtml(name, url, folderPath) {
-  const response = await axios.get(url);
-  const $ = cheerio.load(response.data);
-
-  const slice = extractStrategySlice($, name);
-  if (!slice) return;
-
-  const filePath = path.join(folderPath, `strategy.html`);
-  fs.writeFileSync(filePath, beautify(slice.html(), { indent_size: 2 }));
-  console.log(`✅ Trimmed and saved strategy page for ${name} → ${filePath}`);
-}
-
-async function downloadAndSaveHtml(name, url, type, subfolder = null) {
   try {
-    const folderPath = createFolderStructure(baseFolder, name, subfolder);
-    if (type === 'monster') {
-      await downloadMonsterHtml(name, url, folderPath);
-    } else if (type === 'strategy') {
-      await downloadStrategyHtml(name, url, folderPath);
+    console.log(`Visiting: ${url}`);
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+
+    const buttonSelector = '.infobox-buttons .button';
+    const hasTabs = await page.$(buttonSelector);
+    const seenTabs = new Set();
+
+    if (hasTabs) {
+      const buttons = await page.$$(buttonSelector);
+
+      for (const button of buttons) {
+        const tabName = await button.innerText();
+        const sanitizedTab = tabName.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+        if (seenTabs.has(sanitizedTab)) continue;
+        seenTabs.add(sanitizedTab);
+
+        console.log(`Clicking tab: ${tabName}`);
+        await Promise.all([
+          page.waitForResponse(res => res.ok() && res.url().includes(monsterName.replace(/\s+/g, '_'))),
+          button.click()
+        ]);
+
+        await page.waitForTimeout(1000); // Let DOM settle
+        const infobox = await page.$('.infobox-monster');
+
+        if (infobox) {
+          const rawHtml = await infobox.innerHTML();
+          const $ = cheerio.load(rawHtml);
+          const prettyHtml = breakTagsToNewLines($.html());
+
+          const filename = `${bossFolder}_${sanitizedTab}.html`;
+          fs.writeFileSync(path.join(bossDir, filename), prettyHtml);
+          fs.writeFileSync(path.join(strategyBossDir, filename), prettyHtml);
+
+          console.log(`✓ Saved phase [${tabName}] for ${monsterName} -> ${filename}`);
+        } else {
+          console.warn(`✗ Could not find infobox for tab ${tabName} on ${monsterName}`);
+        }
+      }
+    } else {
+      // No tabs — grab the default infobox
+      const infoboxHandle = await page.$('.infobox-monster');
+      if (infoboxHandle) {
+        const rawHtml = await infoboxHandle.evaluate(el => el.outerHTML);
+
+        const fullHtml = `
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <title>${monsterName}</title>
+          </head>
+          <body>
+            ${rawHtml}
+          </body>
+          </html>
+        `;
+
+        const prettyHtml = breakTagsToNewLines(beautify(fullHtml, {
+          indent_size: 2,
+          wrap_line_length: 120,
+          preserve_newlines: true,
+          max_preserve_newlines: 2
+        }));
+
+        const filename = `${bossFolder}.html`;
+        fs.writeFileSync(path.join(bossDir, filename), prettyHtml);
+        fs.writeFileSync(path.join(strategyBossDir, filename), prettyHtml);
+
+        console.log(`✓ Saved default infobox for ${monsterName} -> ${filename}`);
+      } else {
+        console.warn(`✗ No infobox found for ${monsterName}`);
+      }
     }
   } catch (err) {
-    console.error(`❌ Failed [${type}] for ${name}:`, err.message);
+    console.error(`❌ Error scraping ${monsterName}:`, err.message);
+  } finally {
+    await browser.close();
   }
 }
 
 (async () => {
-  for (const [name, meta] of Object.entries(metadata)) {
-    const monsterUrls = Array.isArray(meta.monster_links)
-      ? meta.monster_links
-      : [meta.wiki_link];
-    const strategyUrl = meta.strategy_link;
-
-    for (const url of monsterUrls) {
-      const subName = monsterUrls.length > 1
-        ? url.split('/').pop().replace(/_/g, ' ')
-        : null;
-
-      await downloadAndSaveHtml(name, url, 'monster', subName);
+  for (const [monsterName, data] of Object.entries(metadata)) {
+    if (!data.wiki_link) {
+      console.warn(`⚠️ No wiki_link for ${monsterName}, skipping`);
+      continue;
     }
-
-    if (strategyUrl) {
-      await downloadAndSaveHtml(name, strategyUrl, 'strategy');
-    }
+    await downloadWithPlaywright(monsterName, data.wiki_link);
   }
 })();

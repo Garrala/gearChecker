@@ -89,7 +89,7 @@
     ],
     "missing_slots": {
       "Ranged Tank": [ "Special Attack" ],
-      "Ranged (7:0)": [ "Special Attack" ] 
+      "Ranged (7:0)": [ "Shield"] 
     }
   },
   "Giant Mole": {
@@ -102,13 +102,19 @@
       "Melee",
       "Melee (Dharok's)",
       "Melee (Budget)"
-    ]
+    ],
+    "missing_slots": {
+      "Magic": [ "Special Attack" ]
+    }
   },
   "Hespori": {
     "category": "Sporadic Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/Hespori",
     "strategy_link": "https://oldschool.runescape.wiki/w/Hespori/Strategies",
-    "setups": ["Entry level", "Best-in-slot", "Mage"]
+    "setups": [ "Entry level", "Best-in-slot", "Mage" ],
+    "missing_slots": {
+      "Magic": [ "Special Attack" ]
+    }
   },
   "King Black Dragon": {
     "category": "Wilderness Bosses",
@@ -135,7 +141,11 @@
       "Mid-game Players Phase 1 (Melee)",
       "Mid-game Players Phase 2 (Ranged)",
       "Pre-diary Method"
-    ]
+    ],
+    "missing_slots": {
+      "Pre-diary Method": [ "Special Attack" ],
+      "Verac's": [ "Shield", "Special Attack" ]
+    }
   },
   "Vorkath": {
     "category": "Instanced Bosses",
@@ -147,7 +157,10 @@
     "category": "Slayer Monster",
     "wiki_link": "https://oldschool.runescape.wiki/w/Wyrm",
     "strategy_link": "https://oldschool.runescape.wiki/w/Slayer_task/Wyrms",
-    "setups": ["Ranged", "Melee"]
+    "setups": [ "Ranged", "Melee" ],
+    "missing_slots": {
+      "Ranged": [ "Special Attack" ]
+    }
   },
   "Dagannoth Kings": {
     "category": "World Bosses",
@@ -162,6 +175,9 @@
       "Tribrid (Solo)",
       "Magic (Rex only)",
       "Ranged (Prime only)"
-    ]
+    ],
+    "missing_slots": {
+      "Magic (Rex only)": [ "Special Attack" ]
+    }
   }
 }

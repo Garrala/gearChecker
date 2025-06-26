@@ -1,77 +1,59 @@
 {
   "name": "Kalphite Queen",
   "category": "World Bosses",
-  "image": "assets/monster-icons/kalphite_queen__crawling__.png",
+  "image": "assets/monster-icons/kalphite_queen_airborne.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
   "bosses": [
     {
-      "name": "Kalphite Queen (Crawling)",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen#Crawling",
-      "image": "assets/monster-icons/kalphite_queen__crawling__.png",
-      "combat_level": 333,
-      "hp": 255,
-      "max_hit": {
-        "stab": 31,
-        "ranged": 31,
-        "magic": 31
-      },
+      "name": "Kalphite Queen (airborne)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
+      "image": "assets/monster-icons/kalphite_queen_airborne.png",
+      "combat_level": 0,
+      "hp": 0,
+      "max_hit": {},
       "defense": {
         "melee": {
-          "stab": 50,
-          "slash": 50,
-          "crush": 10
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
         },
-        "magic": 100,
+        "magic": 0,
         "ranged": {
-          "arrows": 100,
-          "bolts": 100,
-          "thrown": 100
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
         }
       },
-      "attack_styles": [ "Stab", "Ranged", "Magic" ],
-      "attack_speed": 4,
+      "attack_styles": [],
+      "attack_speed": null,
       "aggressive": false,
-      "immunities": {
-        "poison": true,
-        "venom": false,
-        "cannons": true,
-        "thralls": true
-      },
+      "immunities": {},
       "weaknesses": "none"
     },
     {
-      "name": "Kalphite Queen (Airborne)",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen#Airborne",
-      "image": "assets/monster-icons/kalphite_queen__airborne__.png",
-      "combat_level": 333,
-      "hp": 255,
-      "max_hit": {
-        "stab": 31,
-        "ranged": 31,
-        "magic": 31
-      },
+      "name": "Kalphite Queen (crawling)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
+      "image": "assets/monster-icons/kalphite_queen_crawling.png",
+      "combat_level": 0,
+      "hp": 0,
+      "max_hit": {},
       "defense": {
         "melee": {
-          "stab": 50,
-          "slash": 50,
-          "crush": 10
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
         },
-        "magic": 100,
+        "magic": 0,
         "ranged": {
-          "arrows": 100,
-          "bolts": 100,
-          "thrown": 100
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
         }
       },
-      "attack_styles": [ "Stab", "Ranged", "Magic" ],
-      "attack_speed": 4,
+      "attack_styles": [],
+      "attack_speed": null,
       "aggressive": false,
-      "immunities": {
-        "poison": true,
-        "venom": false,
-        "cannons": true,
-        "thralls": true
-      },
+      "immunities": {},
       "weaknesses": "none"
     }
   ],

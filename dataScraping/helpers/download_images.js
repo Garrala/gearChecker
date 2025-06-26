@@ -2,13 +2,15 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
+// ✅ ABSOLUTE monster-icons path
+const MONSTER_ICON_DIR = path.join(__dirname, '..', '..', '..', 'src', 'assets', 'monster-icons');
+
 const downloadImage = (url, outputPath) => {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const file = fs.createWriteStream(outputPath);
     const options = {
       headers: {
-        'User-Agent':
-          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115 Safari/537.36',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
       },
     };
 
@@ -29,14 +31,24 @@ const downloadImage = (url, outputPath) => {
   });
 };
 
-const downloadImagesIfMissing = async (imageList, outputDir) => {
-  if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+const normalizeImageFilename = (urlOrName) => {
+  return urlOrName
+    .toLowerCase()
+    .replace(/.*\//, '')                   // basename only
+    .replace(/\.(jpg|jpeg|gif)$/, '.png')  // force png extension
+    .replace(/\?.*$/, '')                  // remove query strings
+    .replace(/[^\w.]/g, '_');              // safe characters only
+};
+
+// ✅ Updated to always target monster-icons directory
+const downloadImagesIfMissing = async (imageList) => {
+  if (!fs.existsSync(MONSTER_ICON_DIR)) fs.mkdirSync(MONSTER_ICON_DIR, { recursive: true });
   const seen = new Set();
 
   for (const image of imageList) {
     const urlPath = image.url.split('?')[0];
-    const filename = image.filename || path.basename(urlPath);
-    const outputPath = path.join(outputDir, filename);
+    const filename = normalizeImageFilename(urlPath);
+    const outputPath = path.join(MONSTER_ICON_DIR, filename);
 
     if (seen.has(filename) || fs.existsSync(outputPath)) {
       console.log(`⚠️ Skipping existing: ${filename}`);
@@ -51,5 +63,7 @@ const downloadImagesIfMissing = async (imageList, outputDir) => {
 
 module.exports = {
   downloadImagesIfMissing,
-  downloadImage
+  downloadImage,
+  normalizeImageFilename,
+  MONSTER_ICON_DIR
 };

@@ -1,80 +1,60 @@
 {
   "name": "Wyrm",
   "category": "Slayer Monster",
-  "image": "assets/monster-icons/wyrm__idle__.png",
+  "image": "assets/monster-icons/wyrm_attacking.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Wyrm",
   "bosses": [
     {
-      "name": "Wyrm (Idle)",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Wyrm#Idle",
-      "image": "assets/monster-icons/wyrm__idle__.png",
-      "combat_level": 99,
-      "hp": 130,
-      "max_hit": {
-        "magic": 13,
-        "melee": 10
-      },
+      "name": "Wyrm (attacking)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Wyrm",
+      "image": "assets/monster-icons/wyrm_attacking.png",
+      "combat_level": 0,
+      "hp": 0,
+      "max_hit": {},
       "defense": {
         "melee": {
-          "stab": 10,
-          "slash": 50,
-          "crush": 50
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
         },
-        "magic": 50,
+        "magic": 0,
         "ranged": {
-          "arrows": 20,
-          "bolts": 10,
-          "thrown": 20
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
         }
       },
-      "attack_styles": [ "Magic", "Slash" ],
-      "attack_speed": 4,
+      "attack_styles": [],
+      "attack_speed": null,
       "aggressive": false,
-      "immunities": {
-        "poison": true,
-        "venom": true,
-        "cannons": true,
-        "thralls": true
-      },
-      "weaknesses": {
-        "earth": "50%"
-      }
+      "immunities": {},
+      "weaknesses": "none"
     },
     {
-      "name": "Wyrm (Attacking)",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Wyrm#Attacking",
-      "image": "assets/monster-icons/wyrm__attacking__.png",
-      "combat_level": 99,
-      "hp": 130,
-      "max_hit": {
-        "magic": 13,
-        "melee": 10
-      },
+      "name": "Wyrm (idle)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Wyrm",
+      "image": "assets/monster-icons/wyrm_idle.png",
+      "combat_level": 0,
+      "hp": 0,
+      "max_hit": {},
       "defense": {
         "melee": {
-          "stab": 10,
-          "slash": 50,
-          "crush": 50
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
         },
-        "magic": 50,
+        "magic": 0,
         "ranged": {
-          "arrows": 20,
-          "bolts": 10,
-          "thrown": 20
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
         }
       },
-      "attack_styles": [ "Magic", "Slash" ],
-      "attack_speed": 4,
+      "attack_styles": [],
+      "attack_speed": null,
       "aggressive": false,
-      "immunities": {
-        "poison": true,
-        "venom": true,
-        "cannons": true,
-        "thralls": true
-      },
-      "weaknesses": {
-        "earth": "50%"
-      }
+      "immunities": {},
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {

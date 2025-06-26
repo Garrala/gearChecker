@@ -8,6 +8,7 @@ const foldersToWipe = [
   'boss_gear_scrape',
   'boss_gear_final',
   'boss_gear_combined',
+  'strategy_html_dumps',
   'merged_boss_data'
 ];
 
