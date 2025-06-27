@@ -8,11 +8,11 @@ const validation = require('./stat_validation_schema.json');
 const phasedHpLookup = {
   "abyssal sire phase 1": 425,
   "abyssal sire phase 2": 425,
-  "abyssal sire phase 3  stage 1 ": 425,
-  "abyssal sire phase 3  stage 2 ": 425,
-  "duke sucellus awakened": 1540,
-  "duke sucellus post quest": 485,
-  "duke sucellus quest": 330,
+  "abyssal sire phase 3 stage 1": 425,
+  "abyssal sire phase 3 stage 2": 425,
+  "duke sucellus awake awakened": 1540,
+  "duke sucellus awake post quest": 485,
+  "duke sucellus awake quest": 330,
   "kalphite queen crawling": 255,
   "kalphite queen airborne": 255,
   "vorkath post quest": 750,
@@ -22,8 +22,10 @@ const phasedHpLookup = {
 }
 
 const forceTabbedParsing = new Set([
-  'abyssal sire phase 3  stage 1',
-  'abyssal sire phase 3  stage 2',
+  'abyssal sire phase 3 stage 1',
+  'abyssal sire phase 3 stage 2',
+  'wyrm idle',
+  'wyrm attacking'
 ]);
 
 function normalize(str) {
@@ -238,8 +240,8 @@ function extractHp($) {
 }
 
 function extractPhasedHp(bossName, phaseName) {
-  totalName = bossName + " " + phaseName.toLowerCase();
-  console.log("My full name is ", totalName)
+  const totalName = `${bossName} ${phaseName}`.toLowerCase().replace(/\s+/g, ' ').trim();
+  console.log("My full name is", totalName);
   if (!totalName) {
     console.warn('❌ No phase name provided to extractPhasedHp');
     return 0;
@@ -993,7 +995,7 @@ async function fetchMonsterStats($, bossName, phase = null) {
     const fullName = [bossName, phase].filter(Boolean).join(' ').toLowerCase();
 
     const forceTabbed = forceTabbedParsing.has(fullName);
-
+    if (phase === 'null' || phase === '') phase = null;
     console.log(`➡️ hasTabs: ${hasTabs}, phase: "${phase}", forceTabbed: ${forceTabbed}`);
 
     const bossData = (hasTabs && phase) || forceTabbed

@@ -6,7 +6,7 @@ const path = require('path');
 const steps = [
   { name: 'Fetching HTML dumps', script: 'fetchHtmlDumps.js' },
   { name: 'Scraping boss stats', script: 'statScraper.js' },
-  { name: 'Scraping gear setups', script: 'fetchGearSetups.js' },
+  { name: 'Scraping gear setups', script: 'getGearSetups.js' },
   { name: 'Apply manual fixes', script: 'applyManualFixes.js' },
   { name: 'Transforming data', script: 'transformGearData.js' },
   { name: 'Merging stats + gear', script: 'mergeData.js' },

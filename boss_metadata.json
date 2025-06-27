@@ -3,6 +3,7 @@
     "category": "Slayer Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
     "strategy_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire/Strategies",
+    "scrape_mode": "phased",
     "setups": [
       "Ranged",
       "Magic",
@@ -38,6 +39,7 @@
     "category": "Wilderness Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Fanatic",
     "strategy_link": "https://oldschool.runescape.wiki/w/Chaos_Fanatic/Strategies",
+    "scrape_mode": "simple",
     "setups": [ "Ranged" ],
     "missing_slots": {
       "Ranged": [ "Special Attack" ]
@@ -47,12 +49,14 @@
     "category": "World Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/Commander_Zilyana",
     "strategy_link": "https://oldschool.runescape.wiki/w/Commander_Zilyana/Strategies",
+    "scrape_mode": "simple",
     "setups": [ "Magic", "Ranged" ]
   },
   "Crazy Archaeologist": {
     "category": "Wilderness Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist",
     "strategy_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist/Strategies",
+    "scrape_mode": "simple",
     "setups": [ "Magic" ],
     "missing_slots": {
       "Magic": [ "Special Attack" ]
@@ -62,6 +66,7 @@
     "category": "World Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist",
     "strategy_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist/Strategies",
+    "scrape_mode":  "simple",
     "setups": [ "Magic" ],
     "missing_slots": {
       "Magic": [ "Special Attack" ]
@@ -71,12 +76,14 @@
     "category": "Desert Treasure II",
     "wiki_link": "https://oldschool.runescape.wiki/w/Duke_Sucellus",
     "strategy_link": "https://oldschool.runescape.wiki/w/Duke_Sucellus/Strategies",
-    "setups": ["Melee"]
+    "scrape_mode": "nested_tabs",
+    "setups": [ "Melee" ]
   },
   "General Graardor": {
     "category": "World Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/General_Graardor",
     "strategy_link": "https://oldschool.runescape.wiki/w/General_Graardor/Strategies",
+    "scrape_mode": "simple",
     "setups": [
       "Melee Tank",
       "Ranged Tank",
@@ -89,13 +96,14 @@
     ],
     "missing_slots": {
       "Ranged Tank": [ "Special Attack" ],
-      "Ranged (7:0)": [ "Shield"] 
+      "Ranged (7:0)": [ "Shield" ]
     }
   },
   "Giant Mole": {
     "category": "World Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/Giant_Mole",
     "strategy_link": "https://oldschool.runescape.wiki/w/Giant_Mole/Strategies",
+    "scrape_mode": "simple",
     "setups": [
       "Ranged",
       "Magic",
@@ -111,6 +119,7 @@
     "category": "Sporadic Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/Hespori",
     "strategy_link": "https://oldschool.runescape.wiki/w/Hespori/Strategies",
+    "scrape_mode": "simple",
     "setups": [ "Entry level", "Best-in-slot", "Mage" ],
     "missing_slots": {
       "Magic": [ "Special Attack" ]
@@ -120,6 +129,7 @@
     "category": "Wilderness Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/King_Black_Dragon",
     "strategy_link": "https://oldschool.runescape.wiki/w/King_Black_Dragon/Strategies",
+    "scrape_mode": "simple",
     "setups": [
       "Melee",
       "Melee Suicide method",
@@ -132,6 +142,7 @@
     "category": "World Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
     "strategy_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen/Strategies",
+    "scrape_mode": "phased",
     "setups": [
       "High DPS Phase 1 (Melee)",
       "High DPS Phase 2 (Ranged)",
@@ -151,12 +162,14 @@
     "category": "Instanced Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/Vorkath",
     "strategy_link": "https://oldschool.runescape.wiki/w/Vorkath/Strategies",
-    "setups": ["Ranged", "Melee"]
+    "scrape_mode": "top_tabs",
+    "setups": [ "Ranged", "Melee" ]
   },
   "Wyrm": {
     "category": "Slayer Monster",
     "wiki_link": "https://oldschool.runescape.wiki/w/Wyrm",
     "strategy_link": "https://oldschool.runescape.wiki/w/Slayer_task/Wyrms",
+    "scrape_mode": "phased",
     "setups": [ "Ranged", "Melee" ],
     "missing_slots": {
       "Ranged": [ "Special Attack" ]
@@ -166,6 +179,7 @@
     "category": "World Bosses",
     "wiki_link": "https://oldschool.runescape.wiki/w/Dagannoth_Kings",
     "strategy_link": "https://oldschool.runescape.wiki/w/Dagannoth_Kings/Strategies",
+    "scrape_mode": "multi_monster",
     "monster_links": [
       "https://oldschool.runescape.wiki/w/Dagannoth_Rex",
       "https://oldschool.runescape.wiki/w/Dagannoth_Prime",

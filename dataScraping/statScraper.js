@@ -7,7 +7,6 @@ const metadata = require('../boss_metadata.json');
 const htmlDumpPath = path.join(__dirname, 'staging', 'boss_html_dumps');
 const statOutputPath = path.join(__dirname, 'staging', 'boss_stat_scrape');
 
-// Reset output directory
 if (fs.existsSync(statOutputPath)) {
   console.log('🧹 Clearing previous stat output directory...');
   fs.rmSync(statOutputPath, { recursive: true, force: true });
@@ -21,14 +20,12 @@ function collectMonsterHtmlFiles(dir) {
 
   for (const entry of entries) {
     const fullPath = path.join(dir, entry.name);
-
     if (entry.isDirectory()) {
       results.push(...collectMonsterHtmlFiles(fullPath));
     } else if (entry.isFile() && entry.name.endsWith('.html')) {
       results.push(fullPath);
     }
   }
-
   return results;
 }
 
@@ -43,48 +40,30 @@ function collectMonsterHtmlFiles(dir) {
     console.log(`\n📄 Processing file: ${filePath}`);
     const relPath = path.relative(htmlDumpPath, filePath);
     const bossFolder = relPath.split(path.sep)[0];
+    const filename = path.basename(filePath, '.html').replace(/__+/g, '_');
+    const parts = filename.split('_');
 
-    const filename = path.basename(filePath, '.html');
-    const parts = filename.replace(/^monster_/, '').split('_');
-    const CYAN = '\x1b[36m';
-    const BOLD = '\x1b[1m';
-    const RESET = '\x1b[0m';
+    let displayPhase = null;
+    let bossName = bossFolder.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 
-    let bossName = parts[0];
-    let phase = null;
+    const meta = metadata[bossName] || {};
+    const hasMonsterLinks = meta.monster_links && meta.monster_links.length > 1;
 
-    if (parts.length > 1) {
-      bossName = parts.slice(0, -1).join(' ');
-      phase = parts[parts.length - 1];
-      console.log(`📛 Parsed boss name: ${BOLD}${CYAN}${bossName} (${phase})${RESET}`);
-    } else {
-      console.log(`🔍 Parsed single-phase boss: "${bossName}"`);
-    }
+    if (hasMonsterLinks && relPath.includes(path.sep)) {
+      bossName = relPath.split(path.sep)[1].replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    } else if (parts.length > 1) {
+      // Fix: allow multiple underscores in the phase
+      const basePart = parts.slice(0, 2).join(' '); // abyssal_sire
+      const labelPart = parts.slice(2).join(' '); // phase 3 stage 2
+      displayPhase = labelPart.trim() || null;
+      bossName = basePart.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 
-    bossName = bossName.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-
-    const metaEntry = Object.entries(metadata).find(([key]) =>
-      key.toLowerCase().replace(/\s+/g, '_') === bossFolder.toLowerCase()
-    );
-    const meta = metaEntry ? metaEntry[1] : {};
-    if (!metaEntry) {
-      console.warn(`⚠️ No metadata found for boss folder: ${bossFolder}`);
-    }
-
-    if (meta.monster_links && meta.monster_links.length > 1) {
-      const subDir = relPath.split(path.sep)[1];
-      if (subDir) {
-        bossName = subDir.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-        console.log(`📛 Using subdir override for boss name: "${bossName}"`);
-      }
     }
 
     try {
       const rawHtml = fs.readFileSync(filePath, 'utf8');
       const $ = cheerio.load(rawHtml);
-      console.log('📥 HTML file loaded into Cheerio.');
-
-      const monsterInfos = await fetchMonsterStats($, bossName, phase);
+      const monsterInfos = await fetchMonsterStats($, bossName, displayPhase);
       if (!monsterInfos) {
         console.warn(`⚠️ No monster data returned for ${bossName}`);
         continue;
@@ -92,75 +71,72 @@ function collectMonsterHtmlFiles(dir) {
 
       if (!bossToEntries[bossFolder]) {
         bossToEntries[bossFolder] = {
-          name: bossName,
+          name: meta.name || bossFolder.replace(/_/g, ' '),
           category: meta.category || '',
           image: null,
           wiki_link: meta.wiki_link || '',
           bosses: [],
           seen: new Set()
         };
-        console.log(`📘 Initialized boss entry group for: ${bossFolder}`);
+        console.log(`📘 Initialized boss entry group for: ${bossToEntries[bossFolder].name}`);
       }
 
       const group = bossToEntries[bossFolder];
+      const baseName = meta.name || bossFolder.replace(/_/g, ' ');
 
       for (const info of monsterInfos) {
-        if (group.seen.has(info.name)) {
-          console.log(`⚠️ Skipping duplicate entry for ${info.name}`);
-          continue;
+
+        let label = displayPhase;
+        const CYAN = '\x1b[36m';
+        const RESET = '\x1b[0m';
+
+        console.log(`🔎 Parsed boss variant name: ${CYAN}${info.name}${RESET}`);
+
+        if (hasMonsterLinks) {
+          const subName = path.basename(filePath, '.html').replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+          info.name = subName;
+        } else if (label) {
+          info.name = `${baseName} (${label})`;
+        } else {
+          info.name = baseName;
         }
 
-        // Determine wiki link
+        if (group.seen.has(info.name)) continue;
+
         if (monsterInfos.length === 1) {
           info.wiki_link = group.wiki_link;
         } else if (meta.wiki_link) {
-          const labelMatch = info.name.match(/\((.+)\)/);
-          if (labelMatch) {
-            const anchor = labelMatch[1].replace(/\s/g, '_').replace(/[^\w_()]/g, '');
-            info.wiki_link = `${meta.wiki_link}#${anchor}`;
-          } else {
-            info.wiki_link = meta.wiki_link;
-          }
+          const anchor = label ? label.replace(/\s/g, '_').replace(/[^\w_]/g, '') : '';
+          info.wiki_link = anchor ? `${meta.wiki_link}#${anchor}` : meta.wiki_link;
         }
 
-        if (meta.monster_links && meta.monster_links.length > 1) {
-          const link = meta.monster_links.find(link =>
-            link.toLowerCase().includes(bossName.toLowerCase().replace(/\s+/g, '_'))
+        if (hasMonsterLinks) {
+          const override = meta.monster_links.find(link =>
+            link.toLowerCase().includes(info.name.toLowerCase().replace(/\s+/g, '_'))
           );
-          if (link) {
-            info.wiki_link = link;
-            console.log(`🔗 Overriding wiki link using monster_links: ${link}`);
-          }
+          if (override) info.wiki_link = override;
         }
 
         group.seen.add(info.name);
         group.bosses.push(info);
-        if (!group.image) {
-          group.image = info.image;
-        }
+        if (!group.image) group.image = info.image;
 
         console.log(`✅ Wrote stats for ${info.name}`);
-
-        console.log("=============================================================================================================================")
       }
     } catch (err) {
       console.error(`❌ Error parsing stats for ${filePath}:`, err.message);
-
-      console.log("=============================================================================================================================")
     }
   }
 
   for (const [folder, data] of Object.entries(bossToEntries)) {
-    const outFileName = folder.toLowerCase().replace(/\s+/g, '-') + '.json';
+    const outFileName = folder.toLowerCase().replace(/\s+/g, '_') + '.json';
     const outFilePath = path.join(statOutputPath, outFileName);
-
     const clean = {
       name: data.name,
       category: data.category,
       wiki_link: data.wiki_link,
       bosses: data.bosses
     };
-
     fs.writeFileSync(outFilePath, JSON.stringify(clean, null, 2));
     console.log(`💾 Wrote final output for ${folder} → ${outFileName}`);
   }
