@@ -87,27 +87,56 @@ async function scrapeTopTabsOnly(page, monsterName, bossDir, bossFolder) {
 }
 
 async function scrapeNestedTabs(page, monsterName, bossDir, bossFolder) {
+  console.log(`🧭 Starting nested tab scrape for ${monsterName}`);
   const outerTabs = await page.$$('.infobox-buttons .button');
+
+  if (outerTabs.length === 0) {
+    console.warn(`⚠️ No outer tabs found for ${monsterName}`);
+    return;
+  }
+
+  const outer = outerTabs[0];
+  const outerName = await outer.innerText();
+  const outerSanitized = sanitizeTab(outerName);
+  console.log(`🔸 Using first outer tab: ${outerName}`);
+
+  try {
+    await outer.click();
+    console.log(`✅ Clicked outer tab: ${outerName}`);
+    await page.waitForTimeout(800);
+  } catch (err) {
+    console.warn(`⚠️ Could not click first outer tab "${outerName}": ${err.message}`);
+    return;
+  }
+
+  const innerTabs = await page.$$('.tabbernav > li > a');
+  console.log(`  └ Found ${innerTabs.length} inner tab(s) under outer tab "${outerName}"`);
+
   const seenCombos = new Set();
 
-  for (const outer of outerTabs) {
-    const outerName = await outer.innerText();
-    const outerSanitized = sanitizeTab(outerName);
-    console.log(`Clicking outer tab: ${outerName}`);
-    await outer.click();
-    await page.waitForTimeout(600);
+  for (let j = 0; j < innerTabs.length; j++) {
+    const innerTabsFresh = await page.$$('.tabbernav > li > a');
+    const inner = innerTabsFresh[j];
 
-    const innerTabs = await page.$$('.tabbernav > li > a');
-    for (const inner of innerTabs) {
-      const innerName = await inner.innerText();
-      const innerSanitized = sanitizeTab(innerName);
-      const filename = `${bossFolder}_${outerSanitized}_${innerSanitized}.html`;
+    const innerName = await inner.innerText();
+    if (!innerName || innerName.toLowerCase().includes('asleep')) {
+      console.log(`    ⏭️ Skipping invalid inner tab: "${innerName}"`);
+      continue;
+    }
 
-      if (seenCombos.has(filename)) continue;
-      seenCombos.add(filename);
+    const innerSanitized = sanitizeTab(innerName);
+    const filename = `${bossFolder}_${outerSanitized}_${innerSanitized}.html`;
 
-      console.log(`→ Clicking inner tab: ${innerName}`);
-      await inner.click();
+    if (seenCombos.has(filename)) {
+      console.log(`    🔁 Already scraped: ${filename}`);
+      continue;
+    }
+    seenCombos.add(filename);
+
+    try {
+      console.log(`    🔹 Clicking inner tab: ${innerName}`);
+      await inner.click({ timeout: 3000 });
+      console.log(`    ✅ Clicked inner tab: ${innerName}`);
       await page.waitForTimeout(800);
 
       const infobox = await page.$('.infobox-monster');
@@ -116,13 +145,19 @@ async function scrapeNestedTabs(page, monsterName, bossDir, bossFolder) {
         const $ = cheerio.load(rawHtml);
         const prettyHtml = breakTagsToNewLines($.html());
         fs.writeFileSync(path.join(bossDir, filename), prettyHtml);
-        console.log(`✓ Saved nested tab [${outerName} > ${innerName}]`);
+        console.log(`    💾 Saved: ${filename}`);
       } else {
-        console.warn(`✗ No infobox for nested tab [${outerName} > ${innerName}]`);
+        console.warn(`    ⚠️ No infobox found for ${outerName} > ${innerName}`);
       }
+    } catch (err) {
+      console.warn(`    ⚠️ Failed to click/save [${outerName} > ${innerName}]: ${err.message}`);
     }
   }
+
+  console.log(`✅ Finished nested scrape for ${monsterName} (first outer tab only)`);
 }
+
+
 
 async function scrapeStrategyPage(page, monsterName, strategyUrl, strategyBossDir) {
   try {

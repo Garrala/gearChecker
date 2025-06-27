@@ -43,22 +43,22 @@ function collectMonsterHtmlFiles(dir) {
     const filename = path.basename(filePath, '.html').replace(/__+/g, '_');
     const parts = filename.split('_');
 
-    console.log(`relPath: ${relPath}`);
-    console.log(`bossFolder: ${bossFolder}`);
-    console.log(`filename: ${filename}`);
-    console.log(`filename parts:`, parts);
+    //console.log(`relPath: ${relPath}`);
+    //console.log(`bossFolder: ${bossFolder}`);
+    //console.log(`filename: ${filename}`);
+    //console.log(`filename parts:`, parts);
 
     let displayPhase = null;
     let bossName = bossFolder.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-    console.log(`Initial bossName from folder: "${bossName}"`);
+    //console.log(`Initial bossName from folder: "${bossName}"`);
 
     const meta = metadata[bossName] || {};
     const hasMonsterLinks = meta.monster_links && meta.monster_links.length > 1;
-    console.log(`hasMonsterLinks: ${hasMonsterLinks}`);
+    //console.log(`hasMonsterLinks: ${hasMonsterLinks}`);
 
     if (hasMonsterLinks && relPath.includes(path.sep)) {
       bossName = relPath.split(path.sep)[1].replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-      console.log(`Overwritten bossName (monster_links): "${bossName}"`);
+      //console.log(`Overwritten bossName (monster_links): "${bossName}"`);
     } else if (parts.length > 1) {
       const basePart = parts[0]; // first word = boss name
       const labelPart = parts.slice(1).join(' '); // everything else = phase
@@ -70,9 +70,9 @@ function collectMonsterHtmlFiles(dir) {
         displayPhase = null;
       }
 
-      console.log(`Parsed basePart: "${basePart}", labelPart: "${labelPart}"`);
-      console.log(`Final bossName: "${bossName}"`);
-      console.log(`Final displayPhase: "${displayPhase}"`);
+      //console.log(`Parsed basePart: "${basePart}", labelPart: "${labelPart}"`);
+      //console.log(`Final bossName: "${bossName}"`);
+      //console.log(`Final displayPhase: "${displayPhase}"`);
     }
 
 
@@ -137,10 +137,11 @@ function collectMonsterHtmlFiles(dir) {
         if (!group.image) group.image = info.image;
 
         console.log(`✅ Wrote stats for ${info.name}`);
+        console.log('==================================================================================================')
       }
     } catch (err) {
       console.error(`❌ Error parsing stats for ${filePath}:`, err.message);
-    }
+    } 
   }
 
   for (const [folder, data] of Object.entries(bossToEntries)) {
