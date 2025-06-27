@@ -41,11 +41,13 @@ function parseMaxHits(text, attackStyles) {
   const result = {};
   const pairs = text.match(/\d+\s*\([^\)]+\)/g);
 
+  const clean = (str) => str.replace(/\s+/g, ' ').replace(/\n/g, '').trim().toLowerCase();
+
   if (pairs) {
     for (const pair of pairs) {
       const [_, value, style] = pair.match(/(\d+)\s*\(([^\)]+)\)/) || [];
       if (value && style) {
-        result[style.toLowerCase()] = parseInt(value, 10);
+        result[clean(style)] = parseInt(value, 10);
       }
     }
   } else {
@@ -53,10 +55,10 @@ function parseMaxHits(text, attackStyles) {
     if (soloMatch) {
       const value = parseInt(soloMatch[1], 10);
       if (attackStyles.length === 1) {
-        result[attackStyles[0].toLowerCase()] = value;
+        result[clean(attackStyles[0])] = value;
       } else if (attackStyles.length > 1) {
         for (const style of attackStyles) {
-          result[style.toLowerCase()] = value;
+          result[clean(style)] = value;
         }
       }
     }
@@ -65,6 +67,148 @@ function parseMaxHits(text, attackStyles) {
   console.log('🗡️ Parsed max hits:', result);
   return result;
 }
+
+
+function parseMaxHit($, info) {
+  $('tr').each((_, tr) => {
+    const th = $(tr).find('th').text().trim().toLowerCase();
+    const td = $(tr).find('td').text().trim();
+
+    if (th.includes('max hit')) {
+      const parsed = parseMaxHits(td, info.attack_styles);
+      info.max_hit = parsed;
+    }
+  });
+}
+function parseMultiMaxHitsVerbose($, info) {
+  console.log('🔍 Attempting to parse multi-style max hits...');
+
+  const maxHitAnchor = $('a')
+    .filter((_, el) => ($(el).attr('title') || '').trim().toLowerCase() === 'monster maximum hit')
+    .first();
+
+  if (!maxHitAnchor.length) {
+    console.warn('⚠️ Could not find "Max hit" anchor');
+    return;
+  }
+
+  console.log('✅ Found "Max hit" anchor. Beginning traversal...');
+  let node = maxHitAnchor[0].next;
+  const result = {};
+  let pendingDamage = null;
+  let matchedCount = 0;
+  let step = 0;
+
+  const knownStyles = ['magic', 'melee', 'ranged', 'dragonfire'];
+  const schemaStyles = new Set(validation.max_hit_types.map(s => s.toLowerCase()));
+
+  while (node) {
+    step++;
+    const type = node.type;
+    const name = node.name || '';
+    const content = type === 'text' ? node.data.trim() : $(node).text().trim();
+
+    console.log(`🔍 Step ${step}: tag/type=${name || type}, content="${content}"`);
+
+    // Stop if we hit Aggressiveness section
+    if (
+      name === 'a' &&
+      ($(node).attr('title') || '').toLowerCase().includes('aggressiveness')
+    ) {
+      console.log('⛔ Stopping traversal at Aggressiveness anchor.');
+      break;
+    }
+
+    // Case 1: Combined match like "121 (Dragonfire Bomb/Special)"
+    const comboMatch = content.match(/(\d+)\s*\(([^\)]+)\)/);
+    if (comboMatch) {
+      const [, damageStr, rawStyle] = comboMatch;
+      const style = rawStyle.toLowerCase().replace(/[^a-z]/g, '');
+      const damage = parseInt(damageStr, 10);
+
+      result[style] = damage;
+      matchedCount++;
+      console.log(`🎯 Directly assigned ${damage} to style "${style}" from combined content`);
+
+      if (schemaStyles.has(style)) {
+        console.log(`✅ Style "${style}" validated against max_hit_types`);
+      } else {
+        console.warn(`⚠️ Style "${style}" is NOT listed in max_hit_types`);
+      }
+
+      node = node.next;
+      continue;
+    }
+
+    // Case 2: Numeric damage waiting for style
+    const stripped = content.replace(/[^\d]/g, '');
+    if (pendingDamage === null && /^\d+$/.test(stripped)) {
+      pendingDamage = parseInt(stripped, 10);
+      console.log(`🔢 Found pending damage: ${pendingDamage}`);
+    }
+
+    // Case 3: Match next style after damage
+    if (pendingDamage !== null && name === 'a') {
+      const title = ($(node).attr('title') || '').toLowerCase();
+      const text = content.toLowerCase();
+
+      for (const style of knownStyles) {
+        if (title.includes(style) || text.includes(style)) {
+          result[style] = pendingDamage;
+          matchedCount++;
+          console.log(`🎯 Assigned ${pendingDamage} to style "${style}"`);
+
+          if (schemaStyles.has(style)) {
+            console.log(`✅ Style "${style}" validated against max_hit_types`);
+          } else {
+            console.warn(`⚠️ Style "${style}" is NOT listed in max_hit_types`);
+          }
+
+          pendingDamage = null;
+          break;
+        }
+      }
+
+      // Handle unrecognized style text
+      if (pendingDamage !== null && text) {
+        const cleaned = text.toLowerCase().replace(/[^a-z]/g, '');
+        result[cleaned] = pendingDamage;
+        matchedCount++;
+        console.log(`⚠️ Assigned ${pendingDamage} to unrecognized style "${cleaned}"`);
+
+        if (schemaStyles.has(cleaned)) {
+          console.log(`✅ Style "${cleaned}" validated against max_hit_types`);
+        } else {
+          console.warn(`⚠️ Style "${cleaned}" is NOT listed in max_hit_types`);
+        }
+
+        pendingDamage = null;
+      }
+    }
+
+    node = node.next;
+  }
+
+  // Fallback: if we saw a number but couldn't match any style
+  if (pendingDamage !== null && matchedCount === 0 && info.attack_styles.length) {
+    for (const style of info.attack_styles) {
+      const norm = style.toLowerCase();
+      result[norm] = pendingDamage;
+    }
+    console.warn(`🧩 Orphaned damage assigned to all attack styles: ${pendingDamage}`);
+  }
+
+  if (Object.keys(result).length > 0) {
+    info.max_hit = result;
+    console.log('✅ Final parsed max hits:', result);
+  } else {
+    console.warn('❌ No max hit values found in multi-style block');
+  }
+}
+
+
+
+
 
 function getImageSrcFromInfobox($) {
   let imgTag = $('.infobox-monster td[data-attr-param="image"] img').first();
@@ -116,8 +260,6 @@ function extractPhasedHp(bossName, phaseName) {
     return 0;
   }
 }
-
-
 
 function extractMeleeDefense($) {
   const header = $('th:contains("Melee defence")').first();
@@ -291,16 +433,6 @@ function extractFlexibleMagicDefenseAndWeakness($, bossName = '', phaseName = ''
 
   return { magicDef, elementalWeakness };
 }
-
-
-
-
-
-
-
-
-
-
 
 
 function extractElementalWeakness($) {
@@ -535,17 +667,7 @@ function extractAttackStyles($, info) {
 }
 
 
-function parseMaxHit($, info) {
-  $('tr').each((_, tr) => {
-    const th = $(tr).find('th').text().trim().toLowerCase();
-    const td = $(tr).find('td').text().trim();
 
-    if (th.includes('max hit')) {
-      const parsed = parseMaxHits(td, info.attack_styles);
-      info.max_hit = parsed;
-    }
-  });
-}
 
 function parseAttackSpeed($, info) {
   $('tr').each((_, tr) => {
@@ -657,7 +779,7 @@ async function parseTabbedInfoboxData($, phase, bossName) {
 
   extractCombatLevel($);
   extractAttackStyles($, info);
-  parseMaxHit($, info);
+  parseMultiMaxHitsVerbose($, info);
   parseAttackSpeed($, info);
   parseAggressive($, info);
   parseImmunities($, info);

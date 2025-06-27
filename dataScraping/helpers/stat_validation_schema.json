@@ -11,9 +11,10 @@
     "standard",
     "special",
     "gaze",
+    "dragonfire",
     "special direct hit",
-    "dragonfire bomb/special",
-    "rapid fire/special"
+    "dragonfirebombspecial",
+    "rapidfirespecial"
   ],
   "defense_types": {
     "melee": [ "stab", "slash", "crush" ],
