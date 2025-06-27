@@ -68,7 +68,6 @@ function parseMaxHits(text, attackStyles) {
   return result;
 }
 
-
 function parseMaxHit($, info) {
   $('tr').each((_, tr) => {
     const th = $(tr).find('th').text().trim().toLowerCase();
@@ -80,8 +79,9 @@ function parseMaxHit($, info) {
     }
   });
 }
-function parseMultiMaxHitsVerbose($, info) {
-  console.log('🔍 Attempting to parse multi-style max hits...');
+
+function extractMultiMaxHitsVerbose($, info) {
+  //console.log('🔍 Attempting to parse multi-style max hits...');
 
   const maxHitAnchor = $('a')
     .filter((_, el) => ($(el).attr('title') || '').trim().toLowerCase() === 'monster maximum hit')
@@ -92,7 +92,7 @@ function parseMultiMaxHitsVerbose($, info) {
     return;
   }
 
-  console.log('✅ Found "Max hit" anchor. Beginning traversal...');
+  //console.log('✅ Found "Max hit" anchor. Beginning traversal...');
   let node = maxHitAnchor[0].next;
   const result = {};
   let pendingDamage = null;
@@ -108,14 +108,14 @@ function parseMultiMaxHitsVerbose($, info) {
     const name = node.name || '';
     const content = type === 'text' ? node.data.trim() : $(node).text().trim();
 
-    console.log(`🔍 Step ${step}: tag/type=${name || type}, content="${content}"`);
+    //console.log(`🔍 Step ${step}: tag/type=${name || type}, content="${content}"`);
 
     // Stop if we hit Aggressiveness section
     if (
       name === 'a' &&
       ($(node).attr('title') || '').toLowerCase().includes('aggressiveness')
     ) {
-      console.log('⛔ Stopping traversal at Aggressiveness anchor.');
+      //console.log('⛔ Stopping traversal at Aggressiveness anchor.');
       break;
     }
 
@@ -128,10 +128,10 @@ function parseMultiMaxHitsVerbose($, info) {
 
       result[style] = damage;
       matchedCount++;
-      console.log(`🎯 Directly assigned ${damage} to style "${style}" from combined content`);
+      //console.log(`🎯 Directly assigned ${damage} to style "${style}" from combined content`);
 
       if (schemaStyles.has(style)) {
-        console.log(`✅ Style "${style}" validated against max_hit_types`);
+        //console.log(`✅ Style "${style}" validated against max_hit_types`);
       } else {
         console.warn(`⚠️ Style "${style}" is NOT listed in max_hit_types`);
       }
@@ -144,7 +144,7 @@ function parseMultiMaxHitsVerbose($, info) {
     const stripped = content.replace(/[^\d]/g, '');
     if (pendingDamage === null && /^\d+$/.test(stripped)) {
       pendingDamage = parseInt(stripped, 10);
-      console.log(`🔢 Found pending damage: ${pendingDamage}`);
+      //console.log(`🔢 Found pending damage: ${pendingDamage}`);
     }
 
     // Case 3: Match next style after damage
@@ -156,10 +156,10 @@ function parseMultiMaxHitsVerbose($, info) {
         if (title.includes(style) || text.includes(style)) {
           result[style] = pendingDamage;
           matchedCount++;
-          console.log(`🎯 Assigned ${pendingDamage} to style "${style}"`);
+          //console.log(`🎯 Assigned ${pendingDamage} to style "${style}"`);
 
           if (schemaStyles.has(style)) {
-            console.log(`✅ Style "${style}" validated against max_hit_types`);
+            //console.log(`✅ Style "${style}" validated against max_hit_types`);
           } else {
             console.warn(`⚠️ Style "${style}" is NOT listed in max_hit_types`);
           }
@@ -174,10 +174,10 @@ function parseMultiMaxHitsVerbose($, info) {
         const cleaned = text.toLowerCase().replace(/[^a-z]/g, '');
         result[cleaned] = pendingDamage;
         matchedCount++;
-        console.log(`⚠️ Assigned ${pendingDamage} to unrecognized style "${cleaned}"`);
+        //console.log(`⚠️ Assigned ${pendingDamage} to unrecognized style "${cleaned}"`);
 
         if (schemaStyles.has(cleaned)) {
-          console.log(`✅ Style "${cleaned}" validated against max_hit_types`);
+          //console.log(`✅ Style "${cleaned}" validated against max_hit_types`);
         } else {
           console.warn(`⚠️ Style "${cleaned}" is NOT listed in max_hit_types`);
         }
@@ -195,7 +195,7 @@ function parseMultiMaxHitsVerbose($, info) {
       const norm = style.toLowerCase();
       result[norm] = pendingDamage;
     }
-    console.warn(`🧩 Orphaned damage assigned to all attack styles: ${pendingDamage}`);
+    //console.warn(`🧩 Orphaned damage assigned to all attack styles: ${pendingDamage}`);
   }
 
   if (Object.keys(result).length > 0) {
@@ -206,10 +206,6 @@ function parseMultiMaxHitsVerbose($, info) {
   }
 }
 
-
-
-
-
 function getImageSrcFromInfobox($) {
   let imgTag = $('.infobox-monster td[data-attr-param="image"] img').first();
   if (!imgTag || !imgTag.attr('src')) {
@@ -217,7 +213,7 @@ function getImageSrcFromInfobox($) {
   }
 
   if (!imgTag || !imgTag.attr('src')) {
-    console.warn('⚠️ No image tag found inside monster infobox');
+    //console.warn('⚠️ No image tag found inside monster infobox');
     return null;
   }
 
@@ -544,10 +540,14 @@ function extractFlexibleRangedDefense($) {
 
 function createMonsterTemplate(phase, bossName) {
   const name = phase ? `${bossName} (${phase})` : bossName;
+  const baseUrl = `https://oldschool.runescape.wiki/w/${bossName.trim().replace(/\s+/g, '_')}`;
+  const anchor = phase ? `#${slugWikiAnchor(phase)}` : '';
+  const wiki_link = `${baseUrl}${anchor}`;
+
   console.log(`📝 Creating template for: ${name}`);
   return {
     name,
-    wiki_link: '',
+    wiki_link,
     image: '',
     combat_level: 0,
     hp: 0,
@@ -560,9 +560,19 @@ function createMonsterTemplate(phase, bossName) {
     attack_styles: [],
     attack_speed: null,
     aggressive: false,
-    immunities: {}
+    immunities: {},
+    weaknesses: 'none'
   };
 }
+
+function slugWikiAnchor(phase) {
+  return phase
+    .trim()
+    .split(/\s+/)
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join('_'); // e.g., "phase 3 stage 1" => "Phase_3_Stage_1"
+}
+
 
 function parseCombatLevel($, info) {
   $('tr').each((_, tr) => {
@@ -583,15 +593,23 @@ function extractCombatLevel($) {
     return 0;
   }
 
-  // The combat level text is usually just after the anchor
+  // First, check for text node right after the anchor
   let node = anchor[0].next;
   let steps = 0;
 
   while (node && steps < 5) {
-    const text = node.type === 'text' ? node.data.trim() : $(node).text().trim();
+    let text = '';
 
-    if (/^\d{1,4}$/.test(text)) {
-      const level = parseInt(text, 10);
+    if (node.type === 'text') {
+      text = node.data.trim();
+    } else {
+      text = $(node).text().trim();
+    }
+
+    // 🧠 Try to find just a number
+    const match = text.match(/^(\d{1,4})$/);
+    if (match) {
+      const level = parseInt(match[1], 10);
       console.log('⚔️ Found Combat Level:', level);
       return level;
     }
@@ -603,7 +621,6 @@ function extractCombatLevel($) {
   console.warn('⚠️ Failed to extract Combat Level after anchor.');
   return 0;
 }
-
 
 function parseAttackStyles($, info) {
   $('tr').each((_, tr) => {
@@ -666,36 +683,169 @@ function extractAttackStyles($, info) {
   }
 }
 
-
-
-
 function parseAttackSpeed($, info) {
-  $('tr').each((_, tr) => {
-    const th = $(tr).find('th').text().trim().toLowerCase();
-    const td = $(tr).find('td').text().trim();
+  let found = false;
+
+  $('tr').each((i, tr) => {
+    let thRaw = $(tr).find('th').text().trim();
+    let tdRaw = $(tr).find('td').text().trim();
+    const th = thRaw.replace(/\s+/g, ' ').toLowerCase(); // normalize for matching
+
+    //console.log(`🧪 Row ${i}: th="${th}", td="${tdRaw}"`);
+
     if (th.includes('attack speed')) {
-      info.attack_speed = parseInt(td.match(/\d+/)?.[0] || '0');
-      console.log('⏱️ Attack Speed:', info.attack_speed);
+      const fullMatch = tdRaw.match(/(\d+)\s*ticks\s*\(([\d.]+)\s*seconds\)/i);
+      if (fullMatch) {
+        const ticks = parseInt(fullMatch[1], 10);
+        const seconds = parseFloat(fullMatch[2]);
+        info.attack_speed = { ticks, seconds };
+        console.log(`✅ Parsed attack speed: ${ticks} ticks (${seconds} seconds)`);
+        found = true;
+        return false; // break loop
+      }
+
+      const fallbackMatch = tdRaw.match(/(\d+)\s*ticks/i);
+      if (fallbackMatch) {
+        const ticks = parseInt(fallbackMatch[1], 10);
+        info.attack_speed = { ticks };
+        console.log(`✅ Parsed attack speed: ${ticks} ticks (no seconds found)`);
+        found = true;
+        return false; // break loop
+      }
     }
   });
+
+  if (!found) {
+    console.warn('⚠️ No attack speed found after parsing all rows.');
+  }
+}
+
+function extractAttackSpeed($, info) {
+  const anchor = $('a')
+    .filter((_, el) => ($(el).attr('title') || '').trim().toLowerCase() === 'monster attack speed')
+    .first();
+
+  if (!anchor.length) {
+    console.warn('⚠️ Attack speed anchor not found.');
+    return;
+  }
+
+  let node = anchor[0].next;
+  let step = 0;
+
+  while (node) {
+    step++;
+    const content = node.type === 'text' ? node.data.trim() : $(node).text().trim();
+    console.log(`🔍 Step ${step}: type=${node.type}, content="${content}"`);
+
+    const fullMatch = content.match(/(\d+)\s*ticks\s*\(([\d.]+)\s*seconds\)/i);
+    if (fullMatch) {
+      const ticks = parseInt(fullMatch[1], 10);
+      const seconds = parseFloat(fullMatch[2]);
+      info.attack_speed = { ticks, seconds };
+      console.log(`✅ Parsed attack speed: ${ticks} ticks (${seconds} seconds)`);
+      return;
+    }
+
+    const fallbackMatch = content.match(/(\d+)\s*ticks/i);
+    if (fallbackMatch) {
+      const ticks = parseInt(fallbackMatch[1], 10);
+      info.attack_speed = { ticks };
+      console.log(`✅ Parsed attack speed: ${ticks} ticks (no seconds found)`);
+      return;
+    }
+
+    node = node.next;
+  }
+
+  console.warn('❌ Failed to parse attack speed from nearby content.');
 }
 
 function parseAggressive($, info) {
   let found = false;
-  $('tr').each((_, tr) => {
-    const th = $(tr).find('th').text().trim().toLowerCase();
-    const td = $(tr).find('td').text().trim();
+
+  $('tr').each((index, tr) => {
+    const thRaw = $(tr).find('th').text();
+    const tdRaw = $(tr).find('td').text();
+    const th = thRaw.trim().toLowerCase();
+    const td = tdRaw.trim();
+
+    //console.log(`🔎 Row ${index}: th="${th}", td="${td}"`);
 
     if (th.includes('aggressive')) {
       found = true;
-      info.aggressive = td.toLowerCase().includes('yes');
-      console.log('😡 Aggressive:', info.aggressive);
+      const value = td.toLowerCase();
+      if (['yes', 'no'].includes(value)) {
+        info.aggressive = value === 'yes';
+        console.log('😡 Aggressive:', info.aggressive);
+      } else {
+        console.warn(`⚠️ Unexpected aggressiveness value: "${value}"`);
+      }
+
+      return false; // ❗ Break out of .each after match
     }
   });
 
   if (!found) {
     console.warn(`⚠️ [${info.name}] Aggressiveness info not found.`);
   }
+}
+
+function extractMultiPhaseAggressiveness($, info) {
+ 
+
+  console.log('🔍 Attempting to parse aggressiveness...');
+
+  // Log all rows for visibility
+  $('tr').each((i, tr) => {
+    const th = $(tr).find('th').text().trim();
+    const td = $(tr).find('td').text().trim();
+    //console.log(`🔎 Row ${i}: th="${th}", td="${td}"`);
+  });
+
+  const anchor = $('a')
+    .filter((_, el) => ($(el).attr('title') || '').trim().toLowerCase() === 'aggressiveness')
+    .first();
+
+  if (!anchor.length) {
+    console.warn(`⚠️ [${info.name}] Aggressiveness anchor not found.`);
+    return;
+  }
+
+  let node = anchor[0].next;
+  let step = 0;
+
+  while (node) {
+    step++;
+    let content = '';
+    if (node.type === 'text') {
+      content = node.data.trim();
+    } else {
+      content = $(node).text().trim();
+    }
+
+    console.log(`🔍 Step ${step}:`);
+    console.log(`   ↪ node type: ${node.type}`);
+    console.log(`   ↪ raw content: "${content}"`);
+    console.log(`   ↪ tag name: ${node.name || 'N/A'}`);
+
+    if (content) {
+      const normalized = content.toLowerCase().replace(/\(.*?\)/g, '').trim();
+      console.log(`   ↪ normalized: "${normalized}"`);
+      if (validation.aggression_values.includes(normalized)) {
+        info.aggressive = normalized === 'yes';
+        console.log(`😡 Aggressive: ${info.aggressive}`);
+        return;
+      } else {
+        console.warn(`⚠️ Unexpected aggressiveness value: "${normalized}"`);
+        return;
+      }
+    }
+
+    node = node.next;
+  }
+
+  console.warn(`⚠️ [${info.name}] Aggressiveness info not found after traversal.`);
 }
 
 function parseImmunities($, info) {
@@ -728,7 +878,55 @@ function parseImmunities($, info) {
   }
 }
 
+function extractMultiPhaseImmunities($, info) {
+  console.log('🧬 Attempting to parse immunities from multiphase page...');
+
+  const knownImmunities = validation.immunities;
+  const found = {};
+
+  const anchors = $('a').toArray();
+  for (let i = 0; i < anchors.length; i++) {
+    const el = anchors[i];
+    const label = ($(el).text() || '').trim().toLowerCase();
+
+    if (knownImmunities.includes(label)) {
+      // Look for the next sibling text node
+      let node = el.next;
+      while (node && node.type === 'text' && !node.data.trim()) {
+        node = node.next;
+      }
+
+      if (node && node.type === 'text') {
+        const value = node.data.trim().toLowerCase();
+        if (value.includes('immune')) {
+          found[label] = value.includes('not') ? false : true;
+          console.log(`🧪 ${label}: ${found[label] ? 'Immune' : 'Not immune'}`);
+        }
+      }
+    }
+  }
+
+  // Validate against schema
+  const extra = Object.keys(found).filter(k => !knownImmunities.includes(k));
+  if (extra.length > 0) {
+    console.warn('⚠️ Unknown immunities found:', extra);
+  }
+
+  const missing = knownImmunities.filter(k => !(k in found));
+  if (missing.length > 0) {
+    console.warn('⚠️ Missing expected immunities:', missing);
+  }
+
+  if (Object.keys(found).length > 0) {
+    info.immunities = found;
+    console.log('✅ Immunities parsed:', found);
+  } else {
+    console.warn('❌ No valid immunities parsed');
+  }
+}
+
 async function parseInfoboxData($, phase, bossName) {
+  console.log('🧩 Using single-phase parser');
   const info = createMonsterTemplate(phase, bossName);
   const sanitizedImagePath = `assets/monster-icons/${sanitizeFilename(bossName, phase)}.png`;
   const localImgPath = path.join(__dirname, '..', '..', 'src', sanitizedImagePath);
@@ -756,7 +954,7 @@ async function parseInfoboxData($, phase, bossName) {
 }
 
 async function parseTabbedInfoboxData($, phase, bossName) {
-  console.log("📂 In the tabbed method");
+  console.log('🧩 Using tabbed multi-phase parser');
   const info = createMonsterTemplate(phase, bossName);
   const sanitizedImagePath = `assets/monster-icons/${sanitizeFilename(bossName, phase)}.png`;
   const localImgPath = path.join(__dirname, '..', '..', 'src', sanitizedImagePath);
@@ -777,12 +975,12 @@ async function parseTabbedInfoboxData($, phase, bossName) {
   info.defense.ranged = extractFlexibleRangedDefense($);
   info.weaknesses = elementalWeakness;
 
-  extractCombatLevel($);
+  info.combat_level = extractCombatLevel($);
   extractAttackStyles($, info);
-  parseMultiMaxHitsVerbose($, info);
-  parseAttackSpeed($, info);
-  parseAggressive($, info);
-  parseImmunities($, info);
+  extractMultiMaxHitsVerbose($, info);
+  extractAttackSpeed($, info);
+  extractMultiPhaseAggressiveness($, info);
+  extractMultiPhaseImmunities($, info);
 
   return info;
 }

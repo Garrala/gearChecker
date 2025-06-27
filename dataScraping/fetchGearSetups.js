@@ -16,7 +16,7 @@ function normalizeLabel(label) {
 
 function fetchGearTabberHtml(bossName) {
   const safeFolderName = bossName.toLowerCase().replace(/\s+/g, '_');
-  const filePath = path.join(__dirname, 'staging', 'boss_html_dumps', safeFolderName, 'strategy.html');
+  const filePath = path.join(__dirname, 'staging', 'strategy_html_dumps', safeFolderName, 'strategy.html');
 
   if (!fs.existsSync(filePath)) {
     console.warn(`❌ Strategy file not found for ${bossName}: ${filePath}`);

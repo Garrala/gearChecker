@@ -56,7 +56,6 @@ async function downloadWithPlaywright(monsterName, url) {
       const buttons = await page.$$(buttonSelector);
 
       for (const button of buttons) {
-        console.log(' -', await button.innerText() || await button.getAttribute('data-hash'));
         const tabName = await button.innerText() || await button.getAttribute('data-hash') || 'unknown';
         const sanitizedTab = tabName.replace(/[^a-z0-9]/gi, '_').toLowerCase();
         if (seenTabs.has(sanitizedTab)) continue;
@@ -74,7 +73,6 @@ async function downloadWithPlaywright(monsterName, url) {
 
           const filename = `${bossFolder}_${sanitizedTab}.html`;
           fs.writeFileSync(path.join(bossDir, filename), prettyHtml);
-          fs.writeFileSync(path.join(strategyBossDir, filename), prettyHtml);
 
           console.log(`✓ Saved phase [${tabName}] for ${monsterName} -> ${filename}`);
         } else {
@@ -82,7 +80,6 @@ async function downloadWithPlaywright(monsterName, url) {
         }
       }
     } else {
-      // No tabs — grab the default infobox
       const infoboxHandle = await page.$('.infobox-monster');
       if (infoboxHandle) {
         const rawHtml = await infoboxHandle.evaluate(el => el.outerHTML);
@@ -109,19 +106,43 @@ async function downloadWithPlaywright(monsterName, url) {
 
         const filename = `${bossFolder}.html`;
         fs.writeFileSync(path.join(bossDir, filename), prettyHtml);
-        fs.writeFileSync(path.join(strategyBossDir, filename), prettyHtml);
 
         console.log(`✓ Saved default infobox for ${monsterName} -> ${filename}`);
       } else {
         console.warn(`✗ No infobox found for ${monsterName}`);
       }
     }
+
+    // 🌐 Strategy page dump (new addition)
+    if (metadata[monsterName] && metadata[monsterName].strategy_link) {
+      const strategyUrl = metadata[monsterName].strategy_link;
+      try {
+        console.log(`📘 Downloading strategy page for ${monsterName}: ${strategyUrl}`);
+        await page.goto(strategyUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+
+        const fullHtml = await page.content();
+        const prettyHtml = beautify(fullHtml, {
+          indent_size: 2,
+          wrap_line_length: 120,
+          preserve_newlines: true,
+          max_preserve_newlines: 2
+        });
+
+        const strategyFile = path.join(strategyBossDir, 'strategy.html');
+        fs.writeFileSync(strategyFile, prettyHtml);
+        console.log(`✅ Strategy page saved for ${monsterName} -> strategy.html`);
+      } catch (err) {
+        console.warn(`⚠️ Failed to fetch strategy page for ${monsterName}: ${err.message}`);
+      }
+    }
+
   } catch (err) {
     console.error(`❌ Error scraping ${monsterName}:`, err.message);
   } finally {
     await browser.close();
   }
 }
+
 
 (async () => {
   for (const [monsterName, data] of Object.entries(metadata)) {

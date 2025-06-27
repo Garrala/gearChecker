@@ -46,6 +46,9 @@ function collectMonsterHtmlFiles(dir) {
 
     const filename = path.basename(filePath, '.html');
     const parts = filename.replace(/^monster_/, '').split('_');
+    const CYAN = '\x1b[36m';
+    const BOLD = '\x1b[1m';
+    const RESET = '\x1b[0m';
 
     let bossName = parts[0];
     let phase = null;
@@ -53,7 +56,7 @@ function collectMonsterHtmlFiles(dir) {
     if (parts.length > 1) {
       bossName = parts.slice(0, -1).join(' ');
       phase = parts[parts.length - 1];
-      console.log(`🔀 Parsed boss name: "${bossName}" with phase: "${phase}"`);
+      console.log(`📛 Parsed boss name: ${BOLD}${CYAN}${bossName} (${phase})${RESET}`);
     } else {
       console.log(`🔍 Parsed single-phase boss: "${bossName}"`);
     }
@@ -137,9 +140,13 @@ function collectMonsterHtmlFiles(dir) {
         }
 
         console.log(`✅ Wrote stats for ${info.name}`);
+
+        console.log("=============================================================================================================================")
       }
     } catch (err) {
       console.error(`❌ Error parsing stats for ${filePath}:`, err.message);
+
+      console.log("=============================================================================================================================")
     }
   }
 
