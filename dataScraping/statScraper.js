@@ -43,22 +43,38 @@ function collectMonsterHtmlFiles(dir) {
     const filename = path.basename(filePath, '.html').replace(/__+/g, '_');
     const parts = filename.split('_');
 
+    console.log(`relPath: ${relPath}`);
+    console.log(`bossFolder: ${bossFolder}`);
+    console.log(`filename: ${filename}`);
+    console.log(`filename parts:`, parts);
+
     let displayPhase = null;
     let bossName = bossFolder.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    console.log(`Initial bossName from folder: "${bossName}"`);
 
     const meta = metadata[bossName] || {};
     const hasMonsterLinks = meta.monster_links && meta.monster_links.length > 1;
+    console.log(`hasMonsterLinks: ${hasMonsterLinks}`);
 
     if (hasMonsterLinks && relPath.includes(path.sep)) {
       bossName = relPath.split(path.sep)[1].replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+      console.log(`Overwritten bossName (monster_links): "${bossName}"`);
     } else if (parts.length > 1) {
-      // Fix: allow multiple underscores in the phase
-      const basePart = parts.slice(0, 2).join(' '); // abyssal_sire
-      const labelPart = parts.slice(2).join(' '); // phase 3 stage 2
-      displayPhase = labelPart.trim() || null;
-      bossName = basePart.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+      const basePart = parts[0]; // first word = boss name
+      const labelPart = parts.slice(1).join(' '); // everything else = phase
 
+      bossName = basePart.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+      displayPhase = labelPart.trim();
+      if (!displayPhase || displayPhase.toLowerCase() === 'null') {
+        console.warn(`⚠️ Invalid displayPhase ("${displayPhase}"), resetting to null`);
+        displayPhase = null;
+      }
+
+      console.log(`Parsed basePart: "${basePart}", labelPart: "${labelPart}"`);
+      console.log(`Final bossName: "${bossName}"`);
+      console.log(`Final displayPhase: "${displayPhase}"`);
     }
+
 
     try {
       const rawHtml = fs.readFileSync(filePath, 'utf8');
@@ -85,7 +101,6 @@ function collectMonsterHtmlFiles(dir) {
       const baseName = meta.name || bossFolder.replace(/_/g, ' ');
 
       for (const info of monsterInfos) {
-
         let label = displayPhase;
         const CYAN = '\x1b[36m';
         const RESET = '\x1b[0m';
