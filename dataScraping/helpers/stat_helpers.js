@@ -6,9 +6,16 @@ const { downloadImage } = require('./download_images');
 const validation = require('./stat_validation_schema.json');
 
 const phasedHpLookup = {
+  "abyssal sire phase 1": 425,
+  "abyssal sire phase 2": 425,
+  "abyssal sire phase 3  stage 1 ": 425,
+  "abyssal sire phase 3  stage 2 ": 425,
+  "duke sucellus awakened": 1540,
+  "duke sucellus post quest": 485,
+  "duke sucellus quest": 330,
   "kalphite queen crawling": 255,
   "kalphite queen airborne": 255,
-  "Vorkath Post quest": 750,
+  "vorkath post quest": 750,
   "vorkath dragon slayer ii": 450,
   "wyrm idle": 425,
   "wyrm attacking": 425,
@@ -220,6 +227,82 @@ function extractFlatMagicDefense($) {
   return val;
 }
 
+function extractFlexibleMagicDefenseAndWeakness($, bossName = '', phaseName = '') {
+  const html = $.html().replace(/\s+/g, ' ');
+  const fullKey = `${bossName.toLowerCase()} ${phaseName.toLowerCase()}`.trim();
+
+  console.log(`\n🔍 Extracting magic def + weakness for "${fullKey}"`);
+
+  const magicIndex = html.toLowerCase().indexOf('magic defence');
+  const rangedIndex = html.toLowerCase().indexOf('ranged defence');
+
+  if (magicIndex === -1 || rangedIndex === -1 || magicIndex > rangedIndex) {
+    console.warn(`❌ Could not find magic/ranged section for ${fullKey}`);
+    return { magicDef: 0, elementalWeakness: 'none' };
+  }
+
+  const snippet = html.slice(magicIndex, rangedIndex);
+  console.log('🔬 Raw snippet between magic and ranged:\n', snippet);
+
+  let magicDef = 0;
+  let elementalWeakness = 'none';
+
+  // Strip all HTML tags
+  const cleanedText = snippet.replace(/<[^>]*>/g, '');
+  console.log('🧼 Cleaned snippet:', cleanedText);
+
+  // Match "+<number><number>% weakness"
+  const comboMatch = cleanedText.match(/([+-]?\d{2,3})(\d{2,3})%\s+weakness/i);
+  const weaknessTitleMatch = snippet.match(/title="([^"]+ elemental weakness)"/i);
+
+  if (comboMatch && weaknessTitleMatch) {
+    magicDef = parseInt(comboMatch[1], 10);
+    const weaknessPercent = `${parseInt(comboMatch[2], 10)}%`;
+    const title = weaknessTitleMatch[1].toLowerCase();
+
+    for (const element of validation.elemental_weaknesses) {
+      if (title.includes(element)) {
+        elementalWeakness = { [element]: weaknessPercent };
+        break;
+      }
+    }
+
+    console.log(`✅ Combined match found:`);
+    console.log(`🧙 Magic Defense: ${magicDef}`);
+    console.log(`🧪 Weakness %: ${weaknessPercent}`);
+    console.log(`🌐 Weakness Element from Title:`, elementalWeakness);
+  } else {
+    // Normalize for "no elemental weakness"
+    const flattened = cleanedText.toLowerCase().replace(/[^a-z]/g, '');
+    if (flattened.includes('noelementalweakness')) {
+      elementalWeakness = 'none';
+      const noWeaknessMatch = cleanedText.match(/([+-]?\d{1,3})/);
+      if (noWeaknessMatch) {
+        magicDef = parseInt(noWeaknessMatch[1], 10);
+        console.log(`🧙 Magic Defense: ${magicDef}`);
+      } else {
+        console.warn('⚠️ Found no weakness string, but could not extract defense value.');
+      }
+      console.log('🧪 No elemental weakness found.');
+    } else {
+      console.warn('⚠️ Could not extract combined magic def and weakness pattern.');
+    }
+  }
+
+  return { magicDef, elementalWeakness };
+}
+
+
+
+
+
+
+
+
+
+
+
+
 function extractElementalWeakness($) {
   const htmlText = $.html().toLowerCase();
   const match = htmlText.match(/(\d+%)\s+weakness/);
@@ -421,14 +504,24 @@ async function parseInfoboxData($, phase, bossName) {
 async function parseTabbedInfoboxData($, phase, bossName) {
   console.log("📂 In the tabbed method");
   const info = createMonsterTemplate(phase, bossName);
+  const sanitizedImagePath = `assets/monster-icons/${sanitizeFilename(bossName, phase)}.png`;
+  const localImgPath = path.join(__dirname, '..', '..', 'src', sanitizedImagePath);
+  const wikiImgSrc = getImageSrcFromInfobox($);
+  const { magicDef, elementalWeakness } = extractFlexibleMagicDefenseAndWeakness($, bossName, phase);
 
+  if (wikiImgSrc && !fs.existsSync(localImgPath)) {
+    await downloadImage(wikiImgSrc, localImgPath);
+    console.log('💾 Downloaded image for', info.name);
+  }
+
+  info.image = sanitizedImagePath;
   // Use override if available; otherwise fallback to raw HP scraping
   info.hp = extractPhasedHp(bossName, phase) || extractHp($);
 
   info.defense.melee = extractFlexibleMeleeDefense($, bossName, phase);
-  info.defense.magic = extractFlatMagicDefense($);
+  info.defense.magic = magicDef;
   info.defense.ranged = extractRangedDefense($);
-  info.weaknesses = extractElementalWeakness($);
+  info.weaknesses = elementalWeakness;
 
   parseCombatLevel($, info);
   parseAttackStyles($, info);
