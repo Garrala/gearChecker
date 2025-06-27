@@ -231,7 +231,7 @@ function extractFlexibleMagicDefenseAndWeakness($, bossName = '', phaseName = ''
   const html = $.html().replace(/\s+/g, ' ');
   const fullKey = `${bossName.toLowerCase()} ${phaseName.toLowerCase()}`.trim();
 
-  console.log(`\n🔍 Extracting magic def + weakness for "${fullKey}"`);
+  //console.log(`\n🔍 Extracting magic def + weakness for "${fullKey}"`);
 
   const magicIndex = html.toLowerCase().indexOf('magic defence');
   const rangedIndex = html.toLowerCase().indexOf('ranged defence');
@@ -242,14 +242,14 @@ function extractFlexibleMagicDefenseAndWeakness($, bossName = '', phaseName = ''
   }
 
   const snippet = html.slice(magicIndex, rangedIndex);
-  console.log('🔬 Raw snippet between magic and ranged:\n', snippet);
+  //console.log('🔬 Raw snippet between magic and ranged:\n', snippet);
 
   let magicDef = 0;
   let elementalWeakness = 'none';
 
   // Strip all HTML tags
   const cleanedText = snippet.replace(/<[^>]*>/g, '');
-  console.log('🧼 Cleaned snippet:', cleanedText);
+  //console.log('🧼 Cleaned snippet:', cleanedText);
 
   // Match "+<number><number>% weakness"
   const comboMatch = cleanedText.match(/([+-]?\d{2,3})(\d{2,3})%\s+weakness/i);
@@ -267,7 +267,7 @@ function extractFlexibleMagicDefenseAndWeakness($, bossName = '', phaseName = ''
       }
     }
 
-    console.log(`✅ Combined match found:`);
+    //console.log(`✅ Combined match found:`);
     console.log(`🧙 Magic Defense: ${magicDef}`);
     console.log(`🧪 Weakness %: ${weaknessPercent}`);
     console.log(`🌐 Weakness Element from Title:`, elementalWeakness);
@@ -344,6 +344,72 @@ function extractRangedDefense($) {
   };
 }
 
+function extractFlexibleRangedDefense($) {
+  let arrows = 0, bolts = 0, thrown = 0;
+
+  const rangedAnchor = $('a')
+    .filter((_, el) => $(el).text().trim().toLowerCase() === 'ranged defence')
+    .first();
+
+  if (!rangedAnchor.length) {
+    console.warn('⚠️ Could not find "ranged defence" anchor');
+    return { arrows, bolts, thrown };
+  }
+
+  let node = rangedAnchor[0].next;
+  let steps = 0;
+
+  // Traverse text nodes after the ranged defence label
+  while (node) {
+    steps++;
+    const raw = node.type === 'text' ? node.data.trim() : $(node).text().trim();
+
+    // Stop if we hit a known section like Immunities or Magic
+    if (node.type === 'tag' && node.name === 'a') {
+      const title = ($(node).attr('title') || '').trim().toLowerCase();
+      if (title.includes('magic') || title.includes('immunities')) {
+        break;
+      }
+    }
+
+    // Look for "+X+Y+Z" or "-X-Y-Z"
+    if (node.type === 'text') {
+      const text = node.data.trim();
+      const match = text.match(/([+-]?\d+)([+-]\d+)([+-]\d+)/);
+      if (match) {
+        thrown = parseInt(match[1], 10);  // light
+        arrows = parseInt(match[2], 10);  // standard
+        bolts = parseInt(match[3], 10);   // heavy
+        console.log('🏹 Ranged defense values found in DOM traversal:', { arrows, bolts, thrown });
+        return { arrows, bolts, thrown };
+      }
+    }
+
+    node = node.next;
+  }
+
+  // Fallback HTML search
+  console.warn('❌ DOM traversal failed. Trying fallback near "ranged defence"...');
+  const html = $.html().replace(/\s+/g, ' ');
+  const rangedIndex = html.toLowerCase().indexOf('ranged defence');
+
+  if (rangedIndex !== -1) {
+    const snippet = html.slice(rangedIndex, rangedIndex + 500);
+    const match = snippet.match(/([+-]?\d+)([+-]\d+)([+-]\d+)/);
+    if (match) {
+      thrown = parseInt(match[1], 10);
+      arrows = parseInt(match[2], 10);
+      bolts = parseInt(match[3], 10);
+      console.log('🏹 (Fallback) Found ranged defense near "ranged defence" section:', { arrows, bolts, thrown });
+      return { arrows, bolts, thrown };
+    }
+  }
+
+  console.warn('❌ Could not extract ranged defense from any pattern.');
+  return { arrows, bolts, thrown };
+}
+
+
 function createMonsterTemplate(phase, bossName) {
   const name = phase ? `${bossName} (${phase})` : bossName;
   console.log(`📝 Creating template for: ${name}`);
@@ -377,6 +443,36 @@ function parseCombatLevel($, info) {
   });
 }
 
+function extractCombatLevel($) {
+  const anchor = $('a[title="Combat level"]').first();
+
+  if (!anchor.length) {
+    console.warn('⚠️ Could not find "Combat level" anchor.');
+    return 0;
+  }
+
+  // The combat level text is usually just after the anchor
+  let node = anchor[0].next;
+  let steps = 0;
+
+  while (node && steps < 5) {
+    const text = node.type === 'text' ? node.data.trim() : $(node).text().trim();
+
+    if (/^\d{1,4}$/.test(text)) {
+      const level = parseInt(text, 10);
+      console.log('⚔️ Found Combat Level:', level);
+      return level;
+    }
+
+    node = node.next;
+    steps++;
+  }
+
+  console.warn('⚠️ Failed to extract Combat Level after anchor.');
+  return 0;
+}
+
+
 function parseAttackStyles($, info) {
   $('tr').each((_, tr) => {
     const th = $(tr).find('th').text().trim().toLowerCase();
@@ -402,6 +498,42 @@ function parseAttackStyles($, info) {
     }
   });
 }
+
+function extractAttackStyles($, info) {
+  const styles = [];
+  const allowed = new Set(validation.attack_styles.map(normalize));
+  const ignored = new Set(validation.ignore_case.map(normalize));
+
+  const attackAnchor = $('a[title="Combat Options"]').filter((_, el) => $(el).text().trim().toLowerCase() === 'attack style').first();
+  const endAnchor = $('a[title="Monster attack speed"]').first();
+
+  if (!attackAnchor.length || !endAnchor.length) {
+    console.warn(`⚠️ [${info.name}] Could not find attack style or end anchor`);
+    return;
+  }
+
+  let node = attackAnchor[0].next;
+  while (node && node !== endAnchor[0]) {
+    if (node.type === 'tag' && node.name === 'a') {
+      const styleText = $(node).text().trim().toLowerCase();
+      if (styleText && !ignored.has(styleText)) {
+        styles.push(styleText);
+      }
+    }
+    node = node.next;
+  }
+
+  const valid = styles.filter(s => allowed.has(normalize(s)));
+  const invalid = styles.filter(s => !allowed.has(normalize(s)));
+
+  info.attack_styles = valid.map(s => s[0].toUpperCase() + s.slice(1));
+  console.log('🧨 Attack Styles:', info.attack_styles);
+
+  if (invalid.length > 0) {
+    console.warn(`⚠️ [${info.name}] Unrecognized attack style(s):`, invalid);
+  }
+}
+
 
 function parseMaxHit($, info) {
   $('tr').each((_, tr) => {
@@ -520,11 +652,11 @@ async function parseTabbedInfoboxData($, phase, bossName) {
 
   info.defense.melee = extractFlexibleMeleeDefense($, bossName, phase);
   info.defense.magic = magicDef;
-  info.defense.ranged = extractRangedDefense($);
+  info.defense.ranged = extractFlexibleRangedDefense($);
   info.weaknesses = elementalWeakness;
 
-  parseCombatLevel($, info);
-  parseAttackStyles($, info);
+  extractCombatLevel($);
+  extractAttackStyles($, info);
   parseMaxHit($, info);
   parseAttackSpeed($, info);
   parseAggressive($, info);
