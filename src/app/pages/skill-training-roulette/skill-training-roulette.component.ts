@@ -125,16 +125,11 @@ export class SkillTrainingRouletteComponent implements OnInit {
 	  spinStep();
 	}
 
-
-
-
-
 	isMethodHighlighted(method: TrainingMethod): boolean {
 	  if (this.highlightedMethodIndex === null) return false;
 	  const enabled = this.availableMethods.filter(m => !m.disabled);
 	  return method === enabled[this.highlightedMethodIndex];
 	}
-
 
   startRoulette(): void {
   if (this.selectedSkills.length < 1) return;
@@ -212,5 +207,4 @@ launchConfetti() {
       colors: ['#ffcc00', '#ff5733', '#33ff57', '#3383ff', '#ff33a6'],
     })
   }
-
 }
