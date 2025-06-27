@@ -14,6 +14,12 @@ for (const dir of [OUTPUT_DIR, STRATEGY_DIR]) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 }
 
+// Monsters that use high-level primary tab groups (e.g., Duke Sucellus)
+const PRIMARY_TAB_OVERRIDE = new Set([
+  'duke sucellus',
+  // add more here if needed
+]);
+
 // Simple formatter to break tags onto their own lines
 function breakTagsToNewLines(html) {
   return html
@@ -39,7 +45,10 @@ async function downloadWithPlaywright(monsterName, url) {
     console.log(`Visiting: ${url}`);
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
 
-    const buttonSelector = '.infobox-buttons .button';
+    const useTabbernav = PRIMARY_TAB_OVERRIDE.has(monsterName.toLowerCase());
+    const buttonSelector = useTabbernav
+      ? '.tabbernav > li > a'
+      : '.infobox-buttons .button';
     const hasTabs = await page.$(buttonSelector);
     const seenTabs = new Set();
 
@@ -47,17 +56,14 @@ async function downloadWithPlaywright(monsterName, url) {
       const buttons = await page.$$(buttonSelector);
 
       for (const button of buttons) {
-        const tabName = await button.innerText();
+        console.log(' -', await button.innerText() || await button.getAttribute('data-hash'));
+        const tabName = await button.innerText() || await button.getAttribute('data-hash') || 'unknown';
         const sanitizedTab = tabName.replace(/[^a-z0-9]/gi, '_').toLowerCase();
         if (seenTabs.has(sanitizedTab)) continue;
         seenTabs.add(sanitizedTab);
 
         console.log(`Clicking tab: ${tabName}`);
-        await Promise.all([
-          page.waitForResponse(res => res.ok() && res.url().includes(monsterName.replace(/\s+/g, '_'))),
-          button.click()
-        ]);
-
+        await button.click();
         await page.waitForTimeout(1000); // Let DOM settle
         const infobox = await page.$('.infobox-monster');
 
