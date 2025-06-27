@@ -1,7 +1,7 @@
 [
   {
     "name": "Agility",
-    "icon": "assets/skills/agility.png",
+    "icon": "assets/misc-icons/Agility_icon.png",
     "wikiLinks": {
       "members": "https://oldschool.runescape.wiki/w/Agility_training_(members)",
       "ironman": "https://oldschool.runescape.wiki/w/Agility_training_(Ironman)",
@@ -74,7 +74,7 @@
   },
   {
     "name": "Firemaking",
-    "icon": "assets/skills/firemaking.png",
+    "icon": "assets/misc-icons/Firemaking_icon.png",
     "wikiLinks": {
       "members": "https://oldschool.runescape.wiki/w/Firemaking_training",
       "ironman": "https://oldschool.runescape.wiki/w/Firemaking_training_(Ironman)",
@@ -114,7 +114,7 @@
   },
   {
     "name": "Cooking",
-    "icon": "assets/skills/cooking.png",
+    "icon": "assets/misc-icons/Cooking_icon.png",
     "wikiLinks": {
       "members": "https://oldschool.runescape.wiki/w/Cooking_training",
       "ironman": "https://oldschool.runescape.wiki/w/Cooking_training_(Ironman)",
