@@ -8,9 +8,16 @@ const validation = require('./stat_validation_schema.json');
 const phasedHpLookup = {
   "kalphite queen crawling": 255,
   "kalphite queen airborne": 255,
-  "wyrm (idle)": 425,
-  "wyrm (attacking)": 425,
+  "Vorkath Post quest": 750,
+  "vorkath dragon slayer ii": 450,
+  "wyrm idle": 425,
+  "wyrm attacking": 425,
 }
+
+const forceTabbedParsing = new Set([
+  'abyssal sire phase 3  stage 1',
+  'abyssal sire phase 3  stage 2',
+]);
 
 function normalize(str) {
   return str.trim().toLowerCase();
@@ -84,8 +91,8 @@ function extractHp($) {
 }
 
 function extractPhasedHp(bossName, phaseName) {
-  totalName = bossName + " " + phaseName
-  console.log(totalName)
+  totalName = bossName + " " + phaseName.toLowerCase();
+  console.log("My full name is ", totalName)
   if (!totalName) {
     console.warn('❌ No phase name provided to extractPhasedHp');
     return 0;
@@ -121,6 +128,84 @@ function extractMeleeDefense($) {
     slash: slash || 0,
     crush: crush || 0
   };
+}
+
+function extractFlexibleMeleeDefense($, bossName = '', phaseName = '') {
+  let stab = 0, slash = 0, crush = 0;
+
+  // Manual override block
+  const fullKey = `${bossName.toLowerCase()} ${phaseName.toLowerCase()}`.trim();
+  //console.log("My full name is ", fullKey)
+  const override = {
+    'abyssal sire phase 3 stage 1': { stab: 40, slash: 60, crush: 50 },
+    'abyssal sire phase 3 stage 2': { stab: 40, slash: 60, crush: 50 }
+  };
+
+  if (override[fullKey]) {
+    console.warn(`⚠️ Using manual melee defense override for: ${fullKey}`);
+    return override[fullKey];
+  }
+
+  const meleeAnchor = $('a')
+    .filter((_, el) => $(el).text().trim().toLowerCase() === 'melee defence')
+    .first();
+
+  if (!meleeAnchor.length) {
+    console.warn('⚠️ Could not find "melee defence" anchor');
+    return { stab, slash, crush };
+  }
+
+  //console.log('✅ Found "melee defence" anchor. Starting DOM traversal...');
+
+  let node = meleeAnchor[0].next;
+  let steps = 0;
+
+  // First pass: try traversing text nodes
+  while (node) {
+    steps++;
+    const raw = node.type === 'text' ? node.data.trim() : $(node).text().trim();
+    //console.log(`🔍 Step ${steps}: type=${node.type}, name=${node.name || 'n/a'}, text="${raw}"`);
+
+    // Stop if we hit Magic Defence or next known section
+    if (node.type === 'tag' && node.name === 'a') {
+      const title = ($(node).attr('title') || '').trim().toLowerCase();
+      if (title === 'magic' || title === 'magic defence') {
+        //console.log(`⛔ Hit stop boundary at <a title="${title}">`);
+        break;
+      }
+    }
+
+    // Try matching +X+Y+Z
+    if (node.type === 'text') {
+      const text = node.data.trim();
+      const match = text.match(/\+(\d+)\+(\d+)\+(\d+)/);
+      if (match) {
+        [, stab, slash, crush] = match.map(Number);
+        console.log('🛡️ Found melee defense values in DOM traversal:', { stab, slash, crush });
+        return { stab, slash, crush };
+      }
+    }
+
+    node = node.next;
+  }
+
+  // Second pass: fallback raw HTML search around the "melee defence" section
+  console.warn('❌ DOM traversal failed. Trying smarter fallback near melee section...');
+  const html = $.html().replace(/\s+/g, ' ');
+  const meleeIndex = html.toLowerCase().indexOf('melee defence');
+
+  if (meleeIndex !== -1) {
+    const snippet = html.slice(meleeIndex, meleeIndex + 500);
+    const match = snippet.match(/\+(\d+)\+(\d+)\+(\d+)/);
+    if (match) {
+      [, stab, slash, crush] = match.map(Number);
+      console.log('🛡️ (Fallback) Found melee defense near "melee defence" section:', { stab, slash, crush });
+      return { stab, slash, crush };
+    }
+  }
+
+  console.warn('❌ Could not extract melee defense from any pattern.');
+  return { stab, slash, crush };
 }
 
 function extractFlatMagicDefense($) {
@@ -334,9 +419,23 @@ async function parseInfoboxData($, phase, bossName) {
 }
 
 async function parseTabbedInfoboxData($, phase, bossName) {
-  console.log("In the tabbed method")
-  const info = createMonsterTemplate(phase, bossName); 
-  info.hp = extractPhasedHp(bossName, phase);
+  console.log("📂 In the tabbed method");
+  const info = createMonsterTemplate(phase, bossName);
+
+  // Use override if available; otherwise fallback to raw HP scraping
+  info.hp = extractPhasedHp(bossName, phase) || extractHp($);
+
+  info.defense.melee = extractFlexibleMeleeDefense($, bossName, phase);
+  info.defense.magic = extractFlatMagicDefense($);
+  info.defense.ranged = extractRangedDefense($);
+  info.weaknesses = extractElementalWeakness($);
+
+  parseCombatLevel($, info);
+  parseAttackStyles($, info);
+  parseMaxHit($, info);
+  parseAttackSpeed($, info);
+  parseAggressive($, info);
+  parseImmunities($, info);
 
   return info;
 }
@@ -346,8 +445,13 @@ async function parseTabbedInfoboxData($, phase, bossName) {
 async function fetchMonsterStats($, bossName, phase = null) {
   try {
     const hasTabs = $('.infobox-buttons .button').length > 0;
+    const fullName = [bossName, phase].filter(Boolean).join(' ').toLowerCase();
 
-    const bossData = hasTabs && phase
+    const forceTabbed = forceTabbedParsing.has(fullName);
+
+    console.log(`➡️ hasTabs: ${hasTabs}, phase: "${phase}", forceTabbed: ${forceTabbed}`);
+
+    const bossData = (hasTabs && phase) || forceTabbed
       ? await parseTabbedInfoboxData($, phase, bossName)
       : await parseInfoboxData($, phase, bossName);
 
