@@ -1,11 +1,11 @@
 {
-  "name": "Deranged Archaeologist",
+  "name": "deranged archaeologist",
   "category": "World Bosses",
-  "image": "assets/monster-icons/deranged_archaeologist.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist",
+  "image": "assets/monster-icons/deranged_archaeologist.png",
   "bosses": [
     {
-      "name": "Deranged Archaeologist",
+      "name": "deranged archaeologist (archaeologist)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist",
       "image": "assets/monster-icons/deranged_archaeologist.png",
       "combat_level": 276,
@@ -29,8 +29,11 @@
         }
       },
       "attack_styles": [ "Ranged", "Crush" ],
-      "attack_speed": 3,
-      "aggressive": false,
+      "attack_speed": {
+        "ticks": 3,
+        "seconds": 1.8
+      },
+      "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
@@ -59,8 +62,8 @@
       "Cape": [
         [ "Any Imbued God cape" ],
         [ "Soul cape" ],
-        [ "Ardougne cloak" ],
         [ "Cape of Accomplishment(t)" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -118,8 +121,8 @@
       ],
       "Ring": [
         [ "Magus ring" ],
-        [ "Ring of the gods(i)" ],
-        [ "Ring of suffering(i)" ],
+        [ "Ring of the gods (i)" ],
+        [ "Ring of suffering (i)" ],
         [ "Brimstone ring" ],
         [
           "Explorer's ring 4",

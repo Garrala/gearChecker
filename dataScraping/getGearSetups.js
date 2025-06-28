@@ -11,7 +11,7 @@ if (fs.existsSync(gearOutputPath)) {
 fs.mkdirSync(gearOutputPath);
 
 function normalizeLabel(label) {
-  return label.trim().toLowerCase().replace(/\s+/g, ' ');
+  return label.toLowerCase().replace(/\s+/g, ' ').replace(/[^a-z0-9 ()]/gi, '').trim();
 }
 
 function fetchGearTabberHtml(bossName) {
@@ -27,10 +27,10 @@ function fetchGearTabberHtml(bossName) {
   const $ = cheerio.load(rawHtml);
   const gearSlices = [];
 
-  // Tabber (multi-style)
+  // Tabber tabs
   $('.tabbertab').each((_, el) => gearSlices.push($(el)));
 
-  // Captioned tables (single-style)
+  // Captioned tables fallback
   $('table.wikitable').each((_, el) => {
     const caption = $(el).find('caption').text().toLowerCase();
     const isValid = caption.includes('recommended equipment') || caption.includes('recommended gear');
@@ -43,7 +43,7 @@ function fetchGearTabberHtml(bossName) {
     }
   });
 
-  // Fallback: look for h2 Equipment section
+  // Final fallback: H2 Equipment header
   if (gearSlices.length === 0) {
     const equipmentHeader = $('h2 span.mw-headline#Equipment').parent();
     if (equipmentHeader.length) {
@@ -70,14 +70,15 @@ async function fetchGearSetupsForBoss(bossName, meta) {
   console.log(`Expected setups:`, expectedSetups);
 
   const gearSlices = fetchGearTabberHtml(bossName);
-  if (!gearSlices || gearSlices.length === 0) {
-    console.warn(`⚠️ No tabber sections found for ${bossName}`);
+  if (!gearSlices.length) {
+    console.warn(`⚠️ No gear slices found for ${bossName}`);
     return;
   }
 
   const gear_setups = {};
   const expectedUsed = new Array(expectedSetups.length).fill(false);
-  const matchCounts = {}; // how many tabs we’ve seen with a normalized label
+  const matchCounts = {};
+  const auditIssues = [];
 
   for (let i = 0; i < gearSlices.length; i++) {
     const tab = gearSlices[i];
@@ -85,20 +86,17 @@ async function fetchGearSetupsForBoss(bossName, meta) {
     const rawLabel = tab.attr('data-title')?.trim() || `Unknown ${i + 1}`;
     const normalized = normalizeLabel(rawLabel);
 
-    console.log(`🔍 Found tab: "${rawLabel}" (normalized: "${normalized}")`);
-
     matchCounts[normalized] = (matchCounts[normalized] || 0) + 1;
-    const occurrence = matchCounts[normalized];
-    console.log(`— Seen "${normalized}" ${occurrence} time(s)`);
+    const seenCount = matchCounts[normalized];
+    console.log(`🔍 Found tab: "${rawLabel}" → normalized: "${normalized}" (seen ${seenCount}x)`);
 
-    // Try to find the N-th matching normalized expected label
     let matchIndex = -1;
-    let seen = 0;
+    let seenOfThatType = 0;
 
     for (let j = 0; j < normalizedExpected.length; j++) {
       if (normalizedExpected[j] === normalized && !expectedUsed[j]) {
-        seen++;
-        if (seen === occurrence) {
+        seenOfThatType++;
+        if (seenOfThatType === seenCount) {
           matchIndex = j;
           break;
         }
@@ -106,26 +104,24 @@ async function fetchGearSetupsForBoss(bossName, meta) {
     }
 
     if (matchIndex === -1) {
-      console.warn(`⚠️ ${bossName} has unexpected or duplicate tab: "${rawLabel}"`);
+      auditIssues.push({ boss: bossName, issue: `Unexpected or duplicate tab "${rawLabel}"` });
       continue;
     }
 
     const styleName = expectedSetups[matchIndex];
     expectedUsed[matchIndex] = true;
-    console.log(`✅ Matched to setup: "${styleName}"`);
+    console.log(`✅ Matched tab "${rawLabel}" to setup "${styleName}"`);
 
     const gear = extractGearFromSlice($tab, rawLabel, bossName);
     ensureAllSlotsPresent(gear, styleName, bossName, metadata);
     gear_setups[styleName] = gear;
   }
 
-  // Report missing setups
-  const missing = expectedSetups.filter((_, idx) => !expectedUsed[idx]);
-  if (missing.length > 0) {
-    console.warn(`⚠️ ${bossName} is missing expected setups:`, missing);
-  }
-
   const missingStyles = expectedSetups.filter((_, idx) => !expectedUsed[idx]);
+  if (missingStyles.length > 0) {
+    auditIssues.push({ boss: bossName, missing_tabs: missingStyles });
+    console.warn(`⚠️ Missing tabs for ${bossName}:`, missingStyles);
+  }
 
   const output = {
     name: bossName,
@@ -135,19 +131,23 @@ async function fetchGearSetupsForBoss(bossName, meta) {
     missing_styles: missingStyles
   };
 
-  const auditPath = path.join(__dirname, 'staging', 'boss_gear_scrape', 'audit_gear_issues.json');
-  if (fs.existsSync(auditPath)) fs.unlinkSync(auditPath);
-  fs.writeFileSync(auditPath, JSON.stringify(auditLog, null, 2));
-  console.log(`📝 Audit log written to ${auditPath}`);
-
   const fileName = bossName.replace(/\s+/g, '-').toLowerCase() + '.json';
   fs.writeFileSync(path.join(gearOutputPath, fileName), JSON.stringify(output, null, 2));
   console.log(`💾 Gear saved for ${bossName}: ${fileName}`);
+
+  return auditIssues;
 }
 
 (async () => {
+  const allAuditIssues = [];
+
   for (const [bossName, meta] of Object.entries(metadata)) {
     if (!meta.strategy_link || !meta.setups) continue;
-    await fetchGearSetupsForBoss(bossName, meta);
+    const issues = await fetchGearSetupsForBoss(bossName, meta);
+    if (issues && issues.length) allAuditIssues.push(...issues);
   }
+
+  const auditPath = path.join(__dirname, 'staging', 'boss_gear_scrape', 'audit_gear_issues.json');
+  fs.writeFileSync(auditPath, JSON.stringify(allAuditIssues, null, 2));
+  console.log(`📝 Audit log written to ${auditPath}`);
 })();

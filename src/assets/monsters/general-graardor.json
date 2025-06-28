@@ -1,11 +1,11 @@
 {
-  "name": "General Graardor",
+  "name": "general graardor",
   "category": "World Bosses",
-  "image": "assets/monster-icons/general_graardor.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/General_Graardor",
+  "image": "assets/monster-icons/general_graardor.png",
   "bosses": [
     {
-      "name": "General Graardor",
+      "name": "general graardor (graardor)",
       "wiki_link": "https://oldschool.runescape.wiki/w/General_Graardor",
       "image": "assets/monster-icons/general_graardor.png",
       "combat_level": 624,
@@ -28,8 +28,11 @@
         }
       },
       "attack_styles": [ "Crush", "Ranged" ],
-      "attack_speed": 6,
-      "aggressive": false,
+      "attack_speed": {
+        "ticks": 6,
+        "seconds": 3.6
+      },
+      "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
@@ -46,69 +49,60 @@
         [ "Torva full helm" ],
         [ "Neitiznot faceguard" ],
         [ "Serpentine helm" ],
-        [ "Verac's helm", "Guthan's helm" ],
-        [ "Blade of Saeldor" ]
+        [ "Verac's helm", "Guthan's helm" ]
       ],
       "Amulet": [
         [ "Amulet of blood fury" ],
         [ "Amulet of fury" ],
         [ "Amulet of rancour", "Amulet of torture" ],
         [ "Amulet of the damned" ],
-        [ "Amulet of glory" ],
-        [ "N/A" ]
+        [ "Amulet of glory" ]
       ],
       "Cape": [
         [ "Infernal cape" ],
         [ "Max cape" ],
         [ "Fire cape" ],
         [ "Hitpoints cape", "Prayer cape" ],
-        [ "Obsidian cape" ],
-        [ "N/A" ]
+        [ "Obsidian cape" ]
       ],
       "Body": [
         [ "Justiciar chestguard" ],
         [ "Torva platebody" ],
         [ "Masori body (f)" ],
         [ "Bandos chestplate", "Guthan's platebody" ],
-        [ "Karil's leathertop", "Zamorak d'hide body" ],
-        [ "N/A" ]
+        [ "Karil's leathertop", "Zamorak d'hide body" ]
       ],
       "Legs": [
         [ "Justiciar legguards" ],
         [ "Torva platelegs" ],
         [ "Bandos tassets" ],
         [ "Verac's plateskirt" ],
-        [ "Guthan's chainskirt" ],
-        [ "N/A" ]
+        [ "Guthan's chainskirt" ]
       ],
       "Weapon": [
         [ "Osmumten's fang" ],
+        [ "Inquisitor's mace", "Ghrazi rapier", "Blade of Saeldor" ],
         [ "Abyssal tentacle" ],
         [ "Zamorakian hasta" ],
-        [ "Abyssal whip" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Abyssal whip" ]
       ],
       "Shield": [
         [ "Elysian spirit shield" ],
         [ "Spectral spirit shield" ],
         [ "Dragonfire shield" ],
         [ "Avernic defender" ],
-        [ "Toktz-ket-xil", "Crystal shield" ],
-        [ "N/A" ]
+        [ "Toktz-ket-xil", "Crystal shield" ]
       ],
       "Ammo": [
         [ "Unholy blessing" ],
         [ "Rada's blessing 4" ],
         [ "War blessing" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
         [ "Regen bracelet" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -118,23 +112,20 @@
         [ "Guardian boots" ],
         [ "Primordial boots" ],
         [ "Bandos boots" ],
-        [ "Dragon boots" ],
-        [ "N/A" ]
+        [ "Dragon boots" ]
       ],
       "Ring": [
-        [ "Lightbearer", "Ring of suffering(i)" ],
+        [ "Lightbearer", "Ring of suffering (i)" ],
         [ "Ultor ring" ],
-        [ "Ring of the gods(i)" ],
+        [ "Ring of the gods (i)" ],
         [ "Berserker ring (i)" ],
-        [ "Ring of life" ],
-        [ "N/A" ]
+        [ "Ring of life" ]
       ],
       "Special Attack": [
         [ "Saradomin godsword", "Voidwaker" ],
         [ "Ancient godsword", "Dragon claws" ],
         [ "Elder maul", "Dragon warhammer" ],
         [ "Bandos godsword" ],
-        [ "N/A" ],
         [ "N/A" ]
       ]
     },
@@ -142,9 +133,9 @@
       "Helmet": [
         [ "Justiciar faceguard" ],
         [ "Torva full helm" ],
-        [ "Masori mask(f)" ],
         [ "Verac's helm" ],
-        [ "Armadyl helmet" ]
+        [ "Armadyl helmet" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of fury" ],
@@ -189,8 +180,8 @@
         [ "Blessed spirit shield", "Dragon sq shield" ]
       ],
       "Ammo": [
-        [ "Diamond dragon bolts(e)" ],
-        [ "Diamond bolts(e)" ],
+        [ "Diamond dragon bolts (e)" ],
+        [ "Diamond bolts (e)" ],
         [ "Amethyst broad bolts" ],
         [ "Runite bolts", "Broad bolts" ],
         [ "N/A" ]
@@ -210,9 +201,9 @@
         [ "Holy sandals" ]
       ],
       "Ring": [
-        [ "Ring of suffering(i)", "Lightbearer" ],
+        [ "Ring of suffering (i)", "Lightbearer" ],
         [ "Venator ring" ],
-        [ "Ring of the gods(i)" ],
+        [ "Ring of the gods (i)" ],
         [ "Archers ring (i)", "Ring of shadows" ],
         [ "Brimstone ring", "Ring of life" ]
       ],
@@ -226,66 +217,58 @@
     },
     "Melee Attacker": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Torva full helm" ],
         [ "Neitiznot faceguard" ],
         [ "Serpentine helm" ],
         [ "Helm of neitiznot" ],
         [ "Guthan's helm", "Verac's helm" ],
-        [ "Blade of Saeldor" ]
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
         [ "Amulet of torture" ],
         [ "Amulet of blood fury" ],
         [ "Amulet of fury" ],
-        [ "Amulet of the damned" ],
-        [ "N/A" ]
+        [ "Amulet of the damned" ]
       ],
       "Cape": [
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Ardougne cloak 4", "Mythical cape" ],
         [ "Max cape" ],
-        [ "Prayer cape" ],
-        [ "N/A" ]
+        [ "Prayer cape" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
         [ "Karil's leathertop" ],
         [ "Zamorak d'hide body" ],
         [ "Torva platebody" ],
-        [ "Bandos chestplate" ],
-        [ "N/A" ]
+        [ "Bandos chestplate" ]
       ],
       "Legs": [
         [ "Torva platelegs" ],
         [ "Bandos tassets" ],
         [ "Guthan's chainskirt" ],
         [ "Verac's plateskirt" ],
-        [ "Karil's leatherskirt" ],
-        [ "N/A" ]
+        [ "Karil's leatherskirt" ]
       ],
       "Weapon": [
         [ "Osmumten's fang" ],
         [ "Scythe of Vitur" ],
+        [ "Inquisitor's mace", "Ghrazi rapier", "Blade of Saeldor" ],
         [ "Abyssal tentacle" ],
-        [ "Abyssal whip" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Abyssal whip" ]
       ],
       "Shield": [
         [ "Avernic defender" ],
         [ "Dragon defender" ],
         [ "Rune defender" ],
         [ "Dragonfire shield" ],
-        [ "Elysian spirit shield" ],
-        [ "N/A" ]
+        [ "Elysian spirit shield" ]
       ],
       "Ammo": [
         [ "Unholy blessing" ],
         [ "War blessing" ],
         [ "Rada's blessing 4" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -294,41 +277,37 @@
         [ "Barrows gloves" ],
         [ "Rune gloves" ],
         [ "Regen bracelet" ],
-        [ "Granite gloves" ],
-        [ "N/A" ]
+        [ "Granite gloves" ]
       ],
       "Boots": [
         [ "Primordial boots" ],
         [ "Guardian boots" ],
         [ "Dragon boots" ],
         [ "Boots of brimstone" ],
-        [ "Climbing boots", "Mixed hide boots" ],
-        [ "N/A" ]
+        [ "Climbing boots", "Mixed hide boots" ]
       ],
       "Ring": [
         [ "Lightbearer", "Ultor ring" ],
         [ "Berserker ring (i)" ],
-        [ "Ring of suffering(i)" ],
-        [ "Ring of the gods(i)" ],
-        [ "Brimstone ring" ],
-        [ "N/A" ]
+        [ "Ring of suffering (i)" ],
+        [ "Ring of the gods (i)" ],
+        [ "Brimstone ring" ]
       ],
       "Special Attack": [
         [ "Voidwaker" ],
         [ "Dragon claws" ],
         [ "Elder maul", "Dragon warhammer" ],
         [ "Bandos godsword" ],
-        [ "Saradomin godsword" ],
-        [ "N/A" ]
+        [ "Saradomin godsword" ]
       ]
     },
     "Ranged Attacker": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
         [ "Crystal helm" ],
-        [ "Masori mask(f)", "Masori mask" ],
         [ "Blessed coif", "Armadyl helmet" ],
-        [ "Verac's helm" ]
+        [ "Verac's helm" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -374,7 +353,7 @@
       ],
       "Ammo": [
         [ "Unholy blessing" ],
-        [ "Diamond bolts(e)" ],
+        [ "Diamond bolts (e)" ],
         [ "Ruby bolts(e)" ],
         [ "Runite bolts", "Amethyst broad bolts" ],
         [ "N/A" ]
@@ -382,7 +361,7 @@
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Regen bracelet" ],
         [ "N/A" ]
       ],
@@ -398,7 +377,7 @@
         [ "Archers ring (i)" ],
         [ "Ring of shadows" ],
         [ "Brimstone ring" ],
-        [ "Ring of suffering(i)" ]
+        [ "Ring of suffering (i)" ]
       ],
       "Special Attack": [
         [ "Elder maul", "Dragon warhammer" ],
@@ -414,61 +393,53 @@
         [ "Justiciar faceguard" ],
         [ "Serpentine helm" ],
         [ "Neitiznot faceguard" ],
-        [ "Guthan's helm", "Verac's helm", "Helm of neitiznot" ],
-        [ "Blade of Saeldor" ]
+        [ "Guthan's helm", "Verac's helm", "Helm of neitiznot" ]
       ],
       "Amulet": [
         [ "Amulet of blood fury" ],
         [ "Amulet of rancour" ],
         [ "Amulet of torture" ],
         [ "Amulet of fury" ],
-        [ "Amulet of glory" ],
-        [ "N/A" ]
+        [ "Amulet of glory" ]
       ],
       "Cape": [
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Max cape" ],
         [ "Defence cape" ],
-        [ "Cape of Accomplishment", "Obsidian cape" ],
-        [ "N/A" ]
+        [ "Cape of Accomplishment", "Obsidian cape" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
         [ "Justiciar chestguard" ],
         [ "Torva platebody" ],
         [ "Karil's leathertop", "Zamorak d'hide body" ],
-        [ "Guthan's platebody", "Bandos chestplate" ],
-        [ "N/A" ]
+        [ "Guthan's platebody", "Bandos chestplate" ]
       ],
       "Legs": [
         [ "Torva platelegs" ],
         [ "Justiciar legguards" ],
         [ "Bandos tassets" ],
         [ "Verac's plateskirt" ],
-        [ "Guthan's chainskirt" ],
-        [ "N/A" ]
+        [ "Guthan's chainskirt" ]
       ],
       "Weapon": [
         [ "Osmumten's fang" ],
+        [ "Inquisitor's mace", "Ghrazi rapier", "Blade of Saeldor" ],
         [ "Abyssal tentacle" ],
         [ "Zamorakian hasta" ],
-        [ "Abyssal whip", "Guthan's warspear" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Abyssal whip", "Guthan's warspear" ]
       ],
       "Shield": [
         [ "Elysian spirit shield" ],
         [ "Dragonfire shield" ],
         [ "Avernic defender" ],
         [ "Spectral spirit shield" ],
-        [ "Toktz-ket-xil", "Crystal shield" ],
-        [ "N/A" ]
+        [ "Toktz-ket-xil", "Crystal shield" ]
       ],
       "Ammo": [
         [ "Unholy blessing", "Rada's blessing 4" ],
         [ "War blessing" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -478,7 +449,6 @@
         [ "Ferocious gloves" ],
         [ "Regen bracelet" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
@@ -486,32 +456,29 @@
         [ "Primordial boots" ],
         [ "Dragon boots" ],
         [ "Bandos boots" ],
-        [ "Granite boots" ],
-        [ "N/A" ]
+        [ "Granite boots" ]
       ],
       "Ring": [
         [ "Lightbearer" ],
-        [ "Ring of suffering(i)" ],
+        [ "Ring of suffering (i)" ],
         [ "Berserker ring (i)" ],
-        [ "Ring of the gods(i)" ],
-        [ "Ring of life" ],
-        [ "N/A" ]
+        [ "Ring of the gods (i)" ],
+        [ "Ring of life" ]
       ],
       "Special Attack": [
         [ "Voidwaker" ],
         [ "Saradomin godsword" ],
         [ "Dragon claws" ],
         [ "Elder maul", "Dragon warhammer" ],
-        [ "Dragon dagger" ],
-        [ "N/A" ]
+        [ "Dragon dagger" ]
       ]
     },
     "Solo (Magic)": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
         [ "Ancestral hat" ],
         [ "Virtus mask" ],
         [ "Ahrim's hood" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
@@ -581,7 +548,7 @@
         [ "Magus ring" ],
         [ "Seers ring (i)" ],
         [ "Brimstone ring" ],
-        [ "Ring of the gods(i)", "Ring of suffering(i)" ],
+        [ "Ring of the gods (i)", "Ring of suffering(ri)" ],
         [ "N/A" ]
       ],
       "Special Attack": [
@@ -594,11 +561,11 @@
     },
     "Ranged (6:0)": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Masori mask(f)", "Masori mask" ],
         [ "Crystal helm", "Bandos coif" ],
         [ "Armadyl helmet" ],
-        [ "Karil's coif" ]
+        [ "Karil's coif" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -643,8 +610,8 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Diamond dragon bolts(e)" ],
-        [ "Diamond bolts(e)" ],
+        [ "Diamond dragon bolts (e)" ],
+        [ "Diamond bolts (e)" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -668,7 +635,7 @@
         [ "Archers ring (i)" ],
         [ "Ring of shadows" ],
         [ "Brimstone ring" ],
-        [ "Ring of the gods(i)", "Ring of suffering(i)" ]
+        [ "Ring of the gods (i)", "Ring of suffering(ri)" ]
       ],
       "Special Attack": [
         [ "Toxic blowpipe" ],
@@ -680,8 +647,8 @@
     },
     "Ranged (7:0)": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
         [ "Crystal helm" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -697,7 +664,7 @@
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
         [ "Max cape" ],
-        [ "Ranging cape(t)" ],
+        [ "Ranging cape (t)" ],
         [ "Ava's accumulator" ]
       ],
       "Body": [
@@ -743,7 +710,7 @@
         [ "N/A" ]
       ],
       "Ring": [
-        [ "Ring of suffering(i)" ],
+        [ "Ring of suffering (i)" ],
         [ "Ring of endurance" ],
         [ "Archers ring (i)" ],
         [ "Brimstone ring" ],

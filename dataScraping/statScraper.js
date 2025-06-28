@@ -3,6 +3,7 @@ const path = require('path');
 const cheerio = require('cheerio');
 const { fetchMonsterStats } = require('./helpers/stat_helpers');
 const metadata = require('../boss_metadata.json');
+const { normalizeImageFilename } = require('./helpers/download_images');
 
 const htmlDumpPath = path.join(__dirname, 'staging', 'boss_html_dumps');
 const statOutputPath = path.join(__dirname, 'staging', 'boss_stat_scrape');
@@ -134,7 +135,14 @@ function collectMonsterHtmlFiles(dir) {
 
         group.seen.add(info.name);
         group.bosses.push(info);
-        if (!group.image) group.image = info.image;
+        if (info.image) {
+
+        const filename = normalizeImageFilename(info.image);
+        const imagePath = `assets/monster-icons/${filename}`;
+        info.image = imagePath;
+
+        if (!group.image) group.image = imagePath;
+}
 
         console.log(`✅ Wrote stats for ${info.name}`);
         console.log('==================================================================================================')
@@ -151,6 +159,7 @@ function collectMonsterHtmlFiles(dir) {
       name: data.name,
       category: data.category,
       wiki_link: data.wiki_link,
+      image: data.image || '',
       bosses: data.bosses
     };
     fs.writeFileSync(outFilePath, JSON.stringify(clean, null, 2));

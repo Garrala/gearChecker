@@ -44,11 +44,15 @@ const normalizeImageFilename = (urlOrName) => {
 const downloadImagesIfMissing = async (imageList) => {
   if (!fs.existsSync(MONSTER_ICON_DIR)) fs.mkdirSync(MONSTER_ICON_DIR, { recursive: true });
   const seen = new Set();
+  const urlToPathMap = {};
 
   for (const image of imageList) {
     const urlPath = image.url.split('?')[0];
     const filename = normalizeImageFilename(urlPath);
     const outputPath = path.join(MONSTER_ICON_DIR, filename);
+    const jsonPath = `assets/monster-icons/${filename}`;
+
+    urlToPathMap[image.url] = jsonPath;
 
     if (seen.has(filename) || fs.existsSync(outputPath)) {
       console.log(`⚠️ Skipping existing: ${filename}`);
@@ -59,7 +63,10 @@ const downloadImagesIfMissing = async (imageList) => {
     console.log(`⬇️ Downloading ${filename}...`);
     await downloadImage(image.url, outputPath);
   }
+
+  return urlToPathMap;
 };
+
 
 module.exports = {
   downloadImagesIfMissing,

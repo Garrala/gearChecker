@@ -1,112 +1,142 @@
 {
-  "name": "Duke Sucellus",
+  "name": "duke sucellus",
   "category": "Desert Treasure II",
-  "image": "assets/monster-icons/duke_sucellus_asleepasleepasleep.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Duke_Sucellus",
+  "image": "assets/monster-icons/duke_sucellus_awake_awakened.png",
   "bosses": [
     {
-      "name": "Duke Sucellus (asleepasleepasleep)",
+      "name": "duke sucellus (sucellus awake awakened)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Duke_Sucellus",
-      "image": "assets/monster-icons/duke_sucellus_asleepasleepasleep.png",
-      "combat_level": 0,
-      "hp": 0,
-      "max_hit": {},
+      "image": "assets/monster-icons/duke_sucellus_awake_awakened.png",
+      "combat_level": 758,
+      "hp": 1540,
+      "max_hit": {
+        "melee": 56,
+        "magic": 48,
+        "gaze": 101
+      },
       "defense": {
         "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
+          "stab": 255,
+          "slash": 45,
+          "crush": 190
         },
-        "magic": 0,
+        "magic": 440,
         "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
+          "arrows": 320,
+          "bolts": 320,
+          "thrown": 320
         }
       },
-      "attack_styles": [],
-      "attack_speed": null,
-      "aggressive": false,
-      "immunities": {},
+      "attack_styles": [ "Magic", "Crush" ],
+      "attack_speed": {
+        "ticks": 5,
+        "seconds": 3
+      },
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "cannons": true,
+        "thralls": false
+      },
       "weaknesses": "none"
     },
     {
-      "name": "Duke Sucellus (awakeawakeawake)",
+      "name": "duke sucellus (sucellus awake post quest)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Duke_Sucellus",
-      "image": "assets/monster-icons/duke_sucellus_awakeawakeawake.png",
-      "combat_level": 0,
-      "hp": 0,
-      "max_hit": {},
+      "image": "assets/monster-icons/duke_sucellus_awake_post_quest.png",
+      "combat_level": 758,
+      "hp": 485,
+      "max_hit": {
+        "melee": 56,
+        "magic": 48,
+        "gaze": 101
+      },
       "defense": {
         "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
+          "stab": 255,
+          "slash": 45,
+          "crush": 190
         },
-        "magic": 0,
+        "magic": 440,
         "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
+          "arrows": 320,
+          "bolts": 320,
+          "thrown": 320
         }
       },
-      "attack_styles": [],
-      "attack_speed": null,
-      "aggressive": false,
-      "immunities": {},
+      "attack_styles": [ "Magic", "Crush" ],
+      "attack_speed": {
+        "ticks": 5,
+        "seconds": 3
+      },
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "cannons": true,
+        "thralls": false
+      },
       "weaknesses": "none"
     },
     {
-      "name": "Duke Sucellus (defeateddefeateddefeated)",
+      "name": "duke sucellus (sucellus awake quest)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Duke_Sucellus",
-      "image": "assets/monster-icons/duke_sucellus_defeateddefeateddefeated.png",
-      "combat_level": 0,
-      "hp": 0,
-      "max_hit": {},
+      "image": "assets/monster-icons/duke_sucellus_awake_quest.png",
+      "combat_level": 758,
+      "hp": 330,
+      "max_hit": {
+        "melee": 56,
+        "magic": 48,
+        "gaze": 101
+      },
       "defense": {
         "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
+          "stab": 255,
+          "slash": 45,
+          "crush": 190
         },
-        "magic": 0,
+        "magic": 440,
         "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
+          "arrows": 320,
+          "bolts": 320,
+          "thrown": 320
         }
       },
-      "attack_styles": [],
-      "attack_speed": null,
-      "aggressive": false,
-      "immunities": {},
+      "attack_styles": [ "Magic", "Crush" ],
+      "attack_speed": {
+        "ticks": 5,
+        "seconds": 3
+      },
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "cannons": true,
+        "thralls": false
+      },
       "weaknesses": "none"
     }
   ],
   "gear_setups": {
     "Melee": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Oathplate helm", "Serpentine helm" ],
         [ "Torva full helm", "Neitiznot faceguard" ],
         [ "Void melee helm" ],
         [ "Blood moon helm" ],
         [ "Helm of neitiznot" ],
-        [ "Blade of Saeldor" ]
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
         [ "Amulet of torture" ],
         [ "Amulet of blood fury" ],
         [ "Amulet of fury" ],
-        [ "Amulet of glory" ],
-        [ "N/A" ]
+        [ "Amulet of glory" ]
       ],
       "Cape": [
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Soul cape", "Mythical cape" ],
         [ "Ardougne cloak 4" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -114,37 +144,32 @@
         [ "Torva platebody" ],
         [ "Bandos chestplate" ],
         [ "Elite void top", "Void knight top" ],
-        [ "Obsidian platebody" ],
-        [ "N/A" ]
+        [ "Obsidian platebody" ]
       ],
       "Legs": [
         [ "Oathplate legs" ],
         [ "Torva platelegs" ],
         [ "Bandos tassets" ],
         [ "Elite void robe", "Void knight robe" ],
-        [ "Obsidian platelegs" ],
-        [ "N/A" ]
+        [ "Obsidian platelegs" ]
       ],
       "Weapon": [
         [ "Scythe of Vitur" ],
         [ "Emberlight", "Soulreaper axe" ],
         [ "Noxious halberd", "Arclight" ],
         [ "Zombie axe" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Blade of Saeldor" ]
       ],
       "Shield": [
         [ "Avernic defender" ],
         [ "Dragon defender" ],
         [ "Dragonfire shield" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4", "Ghommal's lucky penny" ],
         [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -154,7 +179,6 @@
         [ "Barrows gloves", "Void knight gloves" ],
         [ "Rune gloves", "Regen bracelet" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
@@ -162,24 +186,21 @@
         [ "Echo boots" ],
         [ "Guardian boots" ],
         [ "Dragon boots" ],
-        [ "Climbing boots" ],
-        [ "N/A" ]
+        [ "Climbing boots" ]
       ],
       "Ring": [
         [ "Bellator ring", "Lightbearer" ],
         [ "Ultor ring" ],
         [ "Berserker ring (i)", "Warrior ring(i)" ],
-        [ "Ring of suffering(i)" ],
-        [ "Ring of shadows" ],
-        [ "N/A" ]
+        [ "Ring of suffering (i)" ],
+        [ "Ring of shadows" ]
       ],
       "Special Attack": [
         [ "Bandos godsword" ],
         [ "Voidwaker" ],
         [ "Dragon claws", "Burning claws" ],
         [ "Crystal halberd", "Saradomin godsword" ],
-        [ "Abyssal dagger(p)", "Dragon dagger(p)" ],
-        [ "N/A" ]
+        [ "Abyssal dagger(p)", "Dragon dagger(p)" ]
       ]
     }
   }

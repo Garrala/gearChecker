@@ -1,11 +1,11 @@
 {
-  "name": "Giant Mole",
+  "name": "giant mole",
   "category": "World Bosses",
-  "image": "assets/monster-icons/giant_mole.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Giant_Mole",
+  "image": "assets/monster-icons/giant_mole.png",
   "bosses": [
     {
-      "name": "Giant Mole",
+      "name": "giant mole (mole)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Giant_Mole",
       "image": "assets/monster-icons/giant_mole.png",
       "combat_level": 230,
@@ -27,7 +27,10 @@
         }
       },
       "attack_styles": [ "Crush" ],
-      "attack_speed": 4,
+      "attack_speed": {
+        "ticks": 4,
+        "seconds": 2.4
+      },
       "aggressive": false,
       "immunities": {
         "poison": true,
@@ -43,15 +46,11 @@
   "gear_setups": {
     "Ranged": {
       "Helmet": [
-        [
-          "Slayer helmet (i)",
-          "",
-          "Masori mask(f)"
-        ],
         [ "Void ranger helm" ],
         [ "Crystal helm" ],
         [ "Robin hood hat" ],
-        [ "Blessed coif" ]
+        [ "Blessed coif" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -62,8 +61,8 @@
       ],
       "Cape": [
         [ "Dizana's quiver" ],
-        [ "Ava's assembler", "Ava's device" ],
-        [ "Max cape", "Ranging cape(t)" ],
+        [ "Ava's assembler", "Ava's accumulator" ],
+        [ "Max cape", "Ranging cape (t)" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -98,14 +97,14 @@
         [ "Dragon arrows" ],
         [ "Amethyst arrows" ],
         [ "Rune arrows" ],
-        [ "Diamond dragon bolts(e)", "Ruby dragon bolts(e)" ],
-        [ "Diamond bolts(e)", "Ruby bolts(e)" ]
+        [ "Diamond dragon bolts (e)", "Ruby dragon bolts(e)" ],
+        [ "Diamond bolts (e)", "Ruby bolts(e)" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Void knight gloves" ],
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ]
       ],
       "Boots": [
@@ -118,7 +117,7 @@
       "Ring": [
         [ "Venator ring" ],
         [ "Lightbearer" ],
-        [ "Ring of the gods(i)", "Archers ring (i)" ],
+        [ "Ring of the gods (i)", "Archers ring(i)" ],
         [ "Ring of shadows", "Brimstone ring" ],
         [ "Ring of endurance" ]
       ],
@@ -139,15 +138,11 @@
     },
     "Magic": {
       "Helmet": [
-        [
-          "Slayer helmet (i)",
-          "",
-          "Ancestral hat"
-        ],
         [ "Virtus mask" ],
         [ "Ahrim's hood" ],
         [ "Bloodbark helm" ],
-        [ "Mystic hat" ]
+        [ "Mystic hat" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
@@ -232,7 +227,7 @@
       "Ring": [
         [ "Magus ring" ],
         [ "Seers ring (i)" ],
-        [ "Ring of the gods(i)" ],
+        [ "Ring of the gods (i)" ],
         [ "Ring of endurance" ],
         [ "N/A" ]
       ],
@@ -246,69 +241,57 @@
     },
     "Melee": {
       "Helmet": [
-        [
-          "Slayer helmet (i)",
-          "",
-          "Torva full helm"
-        ],
         [ "Neitiznot faceguard" ],
         [ "Void melee helm" ],
         [ "Serpentine helm" ],
         [ "Helm of neitiznot" ],
-        [ "Blade of Saeldor" ]
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
         [ "Amulet of torture" ],
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
-        [ "Amulet of strength" ],
-        [ "N/A" ]
+        [ "Amulet of strength" ]
       ],
       "Cape": [
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Ardougne cloak 4" ],
         [ "Ardougne cloak 3" ],
-        [ "Ardougne cloak 2" ],
-        [ "N/A" ]
+        [ "Ardougne cloak 2" ]
       ],
       "Body": [
         [ "Torva platebody" ],
         [ "Bandos chestplate" ],
         [ "Elite void top" ],
         [ "Fighter torso" ],
-        [ "Proselyte hauberk", "Obsidian platebody" ],
-        [ "N/A" ]
+        [ "Proselyte hauberk", "Obsidian platebody" ]
       ],
       "Legs": [
         [ "Torva platelegs" ],
         [ "Bandos tassets" ],
         [ "Elite void robe" ],
         [ "Proselyte cuisse", "Obsidian platelegs" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
         [ "Osmumten's fang" ],
         [ "Ghrazi rapier" ],
         [ "Zamorakian hasta" ],
-        [ "Abyssal dagger" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Blade of Saeldor" ],
+        [ "Abyssal dagger" ]
       ],
       "Shield": [
         [ "Avernic defender" ],
         [ "Dragon defender" ],
         [ "Rune defender" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
         [ "Rada's blessing 3", "2", "Any God blessing" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -318,7 +301,6 @@
         [ "Barrows gloves" ],
         [ "Void knight gloves" ],
         [ "Dragon gloves" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
@@ -326,24 +308,21 @@
         [ "Dragon boots" ],
         [ "Spiked manacles" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
         [ "Lightbearer", "Berserker ring (i)" ],
         [ "Brimstone ring" ],
-        [ "Ring of the gods(i)" ],
-        [ "Ring of suffering(i)" ],
-        [ "N/A" ]
+        [ "Ring of the gods (i)" ],
+        [ "Ring of suffering (i)" ]
       ],
       "Special Attack": [
         [ "Voidwaker" ],
         [ "Dragon claws" ],
         [ "Burning claws" ],
         [ "Osmumten's fang" ],
-        [ "Dragon dagger" ],
-        [ "N/A" ]
+        [ "Dragon dagger" ]
       ]
     },
     "Melee (Dharok's)": {
@@ -366,7 +345,7 @@
         [ "Fire cape" ],
         [ "Mythical cape" ],
         [ "Soul cape", "Ardougne cloak 4", "3" ],
-        [ "Skillcape(t)", "Ardougne cloak 2", "Vestment cloak" ]
+        [ "Skillcape(t)", "Ardougne cloak 2", "Any God vestment cloaks" ]
       ],
       "Body": [
         [ "Dharok's platebody" ],
@@ -434,8 +413,8 @@
     },
     "Melee (Budget)": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Black mask(i)" ],
         [ "Helm of neitiznot" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]

@@ -122,7 +122,7 @@
     "scrape_mode": "simple",
     "setups": [ "Entry level", "Best-in-slot", "Mage" ],
     "missing_slots": {
-      "Magic": [ "Special Attack" ]
+      "Mage": [ "Special Attack" ]
     }
   },
   "King Black Dragon": {
@@ -136,7 +136,14 @@
       "Twisted Bow / BOWFA",
       "Crossbow & shield",
       "Suicide method"
-    ]
+    ],
+    "missing_slots": {
+      "Melee": [ "Special Attack" ],
+      "Melee Suicide method": [ "Special Attack" ],
+      "Twisted Bow / BOWFA": [ "Special Attack" ],
+      "Crossbow & shield": [ "Special Attack" ],
+      "Suicide method": [ "Special Attack" ]
+    }
   },
   "Kalphite Queen": {
     "category": "World Bosses",

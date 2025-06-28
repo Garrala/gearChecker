@@ -1,11 +1,11 @@
 {
-  "name": "Commander Zilyana",
+  "name": "commander zilyana",
   "category": "World Bosses",
-  "image": "assets/monster-icons/commander_zilyana.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Commander_Zilyana",
+  "image": "assets/monster-icons/commander_zilyana.png",
   "bosses": [
     {
-      "name": "Commander Zilyana",
+      "name": "commander zilyana (zilyana)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Commander_Zilyana",
       "image": "assets/monster-icons/commander_zilyana.png",
       "combat_level": 596,
@@ -28,8 +28,11 @@
         }
       },
       "attack_styles": [ "Crush", "Magic" ],
-      "attack_speed": 2,
-      "aggressive": false,
+      "attack_speed": {
+        "ticks": 2,
+        "seconds": 1.2
+      },
+      "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
@@ -92,11 +95,11 @@
     },
     "Ranged": {
       "Helmet": [
-        [ "Masori mask(f)", "Slayer helmet (i)" ],
         [ "Crystal helm" ],
         [ "Justiciar faceguard" ],
         [ "Verac's helm", "Saradomin coif" ],
-        [ "Helm of neitiznot" ]
+        [ "Helm of neitiznot" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -112,7 +115,7 @@
       "Cape": [
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
-        [ "Max cape", "Ranging cape(t)" ],
+        [ "Max cape", "Ranging cape (t)" ],
         [ "Ava's accumulator" ],
         [ "Ava's attractor" ]
       ],
@@ -172,10 +175,10 @@
         [ "Boots of brimstone" ]
       ],
       "Ring": [
-        [ "Ring of suffering(i)" ],
+        [ "Ring of suffering (i)" ],
         [ "Ring of endurance" ],
         [ "Venator ring" ],
-        [ "Ring of the gods(i)" ],
+        [ "Ring of the gods (i)" ],
         [ "Explorer's ring 4" ]
       ],
       "Special Attack": [

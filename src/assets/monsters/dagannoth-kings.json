@@ -1,13 +1,13 @@
 {
-  "name": "Dagannoth Prime",
+  "name": "dagannoth kings",
   "category": "World Bosses",
-  "image": "assets/monster-icons/dagannoth_prime.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Dagannoth_Kings",
+  "image": "assets/monster-icons/dagannoth_primehtml.png",
   "bosses": [
     {
       "name": "Dagannoth Prime",
       "wiki_link": "https://oldschool.runescape.wiki/w/Dagannoth_Prime",
-      "image": "assets/monster-icons/dagannoth_prime.png",
+      "image": "assets/monster-icons/dagannoth_primehtml.png",
       "combat_level": 303,
       "hp": 255,
       "max_hit": {
@@ -27,20 +27,25 @@
         }
       },
       "attack_styles": [ "Magic" ],
-      "attack_speed": 4,
-      "aggressive": false,
+      "attack_speed": {
+        "ticks": 4,
+        "seconds": 2.4
+      },
+      "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": false,
         "cannons": true,
         "thralls": true
       },
-      "weaknesses": "none"
+      "weaknesses": {
+        "earth": "35%"
+      }
     },
     {
       "name": "Dagannoth Rex",
       "wiki_link": "https://oldschool.runescape.wiki/w/Dagannoth_Rex",
-      "image": "assets/monster-icons/dagannoth_rex.png",
+      "image": "assets/monster-icons/dagannoth_rexhtml.png",
       "combat_level": 303,
       "hp": 255,
       "max_hit": {
@@ -60,20 +65,25 @@
         }
       },
       "attack_styles": [ "Slash" ],
-      "attack_speed": 4,
-      "aggressive": false,
+      "attack_speed": {
+        "ticks": 4,
+        "seconds": 2.4
+      },
+      "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": false,
         "cannons": true,
         "thralls": true
       },
-      "weaknesses": "none"
+      "weaknesses": {
+        "earth": "35%"
+      }
     },
     {
       "name": "Dagannoth Supreme",
       "wiki_link": "https://oldschool.runescape.wiki/w/Dagannoth_Supreme",
-      "image": "assets/monster-icons/dagannoth_supreme.png",
+      "image": "assets/monster-icons/dagannoth_supremehtml.png",
       "combat_level": 303,
       "hp": 255,
       "max_hit": {
@@ -93,25 +103,30 @@
         }
       },
       "attack_styles": [ "Ranged" ],
-      "attack_speed": 4,
-      "aggressive": false,
+      "attack_speed": {
+        "ticks": 4,
+        "seconds": 2.4
+      },
+      "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": false,
         "cannons": true,
         "thralls": true
       },
-      "weaknesses": "none"
+      "weaknesses": {
+        "earth": "35%"
+      }
     }
   ],
   "gear_setups": {
     "Tribrid (Solo)": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Black mask(i)" ],
         [ "Torva full helm", "Serpentine helm" ],
         [ "Neitiznot faceguard" ],
         [ "Crystal helm" ],
-        [ "Helm of neitiznot" ]
+        [ "Helm of neitiznot" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of rancour", "Occult necklace", "Necklace of anguish" ],
@@ -124,7 +139,7 @@
         [ "Infernal cape", "Blessed dizana's quiver" ],
         [ "Fire cape", "Ava's assembler" ],
         [ "Max cape" ],
-        [ "Ranging cape(t)" ],
+        [ "Ranging cape (t)" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -146,7 +161,7 @@
         [ "Sanguinesti staff", "Toxic blowpipe" ],
         [ "Osmumten's fang", "Abyssal tentacle", "Trident of the swamp", "Bow of Faerdhinen" ],
         [ "Abyssal whip", "Trident of the seas", "Eclipse atlatl", "Hunters' sunlight crossbow" ],
-        [ "Zombie axe", "Warped sceptre", "Iban's staff", "Crystal bow", "Magic shortbow(i)" ]
+        [ "Zombie axe", "Warped sceptre", "Iban's staff", "Crystal bow", "Magic shortbow (i)" ]
       ],
       "Shield": [
         [ "Spectral spirit shield" ],
@@ -178,9 +193,9 @@
       ],
       "Ring": [
         [ "Lightbearer" ],
-        [ "Ring of the gods(i)" ],
+        [ "Ring of the gods (i)" ],
         [ "Brimstone ring" ],
-        [ "Ring of suffering(i)" ],
+        [ "Ring of suffering (i)" ],
         [ "Berserker ring (i)" ]
       ],
       "Special Attack": [
@@ -193,10 +208,9 @@
     },
     "Magic (Rex only)": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Black mask(i)" ],
         [ "Justiciar faceguard" ],
         [ "Serpentine helm" ],
-        [ "Barrows helm" ],
+        [ "Any Barrows tank helm" ],
         [ "Helm of neitiznot" ],
         [ "N/A" ]
       ],
@@ -205,53 +219,46 @@
         [ "Amulet of fury" ],
         [ "Amulet of the damned" ],
         [ "Bonecrusher necklace", "Dragonbone necklace" ],
-        [ "Amulet of glory" ],
-        [ "N/A" ]
+        [ "Amulet of glory" ]
       ],
       "Cape": [
         [ "Any Imbued God cape" ],
         [ "Infernal cape", "Fire cape" ],
-        [ "Cape of accomplishment" ],
-        [ "Ardougne cloak" ],
-        [ "Vestment cloak" ],
+        [ "Any Skillcape" ],
+        [ "Any God vestment cloaks" ],
         [ "N/A" ]
       ],
       "Body": [
         [ "Justiciar chestguard", "Torva platebody" ],
+        [ "Bandos chestplate", "Any Barrows tank body" ],
         [ "Granite body" ],
         [ "Dragon chainbody" ],
-        [ "Rune platebody" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Rune platebody" ]
       ],
       "Legs": [
         [ "Justiciar legguards", "Torva platelegs" ],
         [ "Bandos tassets", "Any Barrows tank legs" ],
         [ "Granite legs" ],
         [ "Dragon platelegs" ],
-        [ "Rune platelegs" ],
-        [ "Any Barrows tank top" ]
+        [ "Rune platelegs" ]
       ],
       "Weapon": [
         [ "Sanguinesti staff" ],
         [ "Trident of the swamp", "Trident of the seas" ],
         [ "Toxic staff of the dead" ],
         [ "Void knight mace", "Warped sceptre" ],
-        [ "Iban's staff(u)" ],
-        [ "N/A" ]
+        [ "Iban's staff (u)" ]
       ],
       "Shield": [
         [ "Elidinis' ward (f)", "Arcane spirit shield" ],
         [ "Elysian spirit shield", "Spectral spirit shield" ],
         [ "Crystal shield", "Dragonfire shield" ],
         [ "Granite shield", "Toktz-ket-xil" ],
-        [ "Dragon sq shield", "Rune kiteshield" ],
-        [ "N/A" ]
+        [ "Dragon sq shield", "Rune kiteshield" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
         [ "Rada's blessing 3", "2", "Any God blessing" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -261,7 +268,6 @@
         [ "Regen bracelet" ],
         [ "Barrows gloves" ],
         [ "Combat bracelet" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
@@ -269,19 +275,16 @@
         [ "Eternal boots", "Bandos boots" ],
         [ "Boots of brimstone" ],
         [ "Bloodbark boots" ],
-        [ "Wizard boots", "Mystic boots" ],
-        [ "N/A" ]
+        [ "Wizard boots", "Mystic boots" ]
       ],
       "Ring": [
-        [ "Ring of suffering(i)" ],
-        [ "Ring of the gods(i)" ],
+        [ "Ring of suffering (i)", "Granite ring(i)" ],
+        [ "Ring of the gods (i)" ],
         [ "Brimstone ring" ],
         [ "Ring of shadows" ],
-        [ "Explorer's ring" ],
-        [ "N/A" ]
+        [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
       ],
       "Special Attack": [
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -291,10 +294,9 @@
     },
     "Ranged (Prime only)": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Black mask(i)" ],
-        [ "Masori mask(f)", "Justiciar faceguard" ],
         [ "Crystal helm" ],
-        [ "Barrows helm" ],
+        [ "Any Barrows tank helm" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -303,84 +305,73 @@
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
         [ "Dizana's quiver" ],
-        [ "Ava's assembler", "Ranging cape(t)" ],
+        [ "Ava's assembler", "Ranging cape (t)" ],
         [ "Ava's accumulator" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
         [ "Masori body (f)", "Justiciar chestguard" ],
+        [ "Crystal body", "Any Barrows tank body" ],
         [ "Armadyl chestplate", "Karil's leathertop" ],
         [ "Any Blessed body" ],
-        [ "Black d'hide body" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Black d'hide body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)", "Justiciar legguards" ],
         [ "Crystal legs", "Any Barrows tank legs" ],
         [ "Armadyl chainskirt", "Karil's leatherskirt" ],
         [ "Any Blessed chaps" ],
-        [ "Black d'hide chaps" ],
-        [ "Any Barrows tank top" ]
+        [ "Black d'hide chaps" ]
       ],
       "Weapon": [
         [ "Twisted bow", "Bow of faerdhinen" ],
         [ "Toxic blowpipe" ],
         [ "Crystal bow" ],
         [ "Hunters' sunlight crossbow" ],
-        [ "Rune crossbow" ],
-        [ "N/A" ]
+        [ "Rune crossbow" ]
       ],
       "Shield": [
         [ "Elysian spirit shield", "Twisted buckler" ],
         [ "Crystal shield", "Odium ward" ],
         [ "Granite shield" ],
         [ "Spirit shield" ],
-        [ "Rune kiteshield" ],
-        [ "N/A" ]
+        [ "Rune kiteshield" ]
       ],
       "Ammo": [
         [ "Dragon arrows", "Amethyst arrow" ],
         [ "Rada's blessing 3", "2", "Any God blessing" ],
         [ "Moonlight antler bolts" ],
-        [ "Diamond bolts(e)" ],
-        [ "Runite bolts" ],
-        [ "N/A" ]
+        [ "Diamond bolts (e)" ],
+        [ "Runite bolts" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Regen bracelet" ],
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
-        [ "Combat bracelet" ],
-        [ "N/A" ]
+        [ "Any Blessed vambraces" ],
+        [ "Combat bracelet" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
         [ "Any Blessed boots" ],
         [ "Boots of brimstone" ],
         [ "Ranger boots" ],
-        [ "Bandos boots" ],
-        [ "N/A" ]
+        [ "Bandos boots" ]
       ],
       "Ring": [
         [ "Venator ring" ],
         [ "Archers ring (i)", "Ring of shadows" ],
         [ "Brimstone ring" ],
-        [ "Ring of the gods(i)" ],
-        [ "Explorer's ring" ],
-        [ "N/A" ]
+        [ "Ring of the gods (i)" ],
+        [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
       ],
       "Special Attack": [
         [ "Toxic blowpipe" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
