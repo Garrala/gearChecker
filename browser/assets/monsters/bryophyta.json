@@ -29,7 +29,9 @@
         }
       },
       "attack_styles": [ "Magic", "Melee", "Poison" ],
-      "attack_speed": 6,
+      "attack_speed": {
+        "ticks": 6
+      },
       "aggressive": true,
       "immunities": {
         "poison": false,
