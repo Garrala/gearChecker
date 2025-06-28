@@ -1,70 +1,103 @@
 {
-  "name": "Vorkath",
+  "name": "vorkath",
   "category": "Instanced Bosses",
-  "image": "assets/monster-icons/vorkath_dragon_slayer_ii.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Vorkath",
+  "image": "assets/monster-icons/vorkath_dragon_slayer_ii.png",
   "bosses": [
     {
-      "name": "Vorkath (dragon slayer ii)",
+      "name": "vorkath (dragon slayer ii)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Vorkath",
       "image": "assets/monster-icons/vorkath_dragon_slayer_ii.png",
-      "combat_level": 0,
-      "hp": 0,
-      "max_hit": {},
+      "combat_level": 392,
+      "hp": 450,
+      "max_hit": {
+        "magic": 30,
+        "ranged": 28,
+        "melee": 32,
+        "dragonfire": 72,
+        "dragonfirebombspecial": 121
+      },
       "defense": {
         "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
+          "stab": 66,
+          "slash": 126,
+          "crush": 126
         },
-        "magic": 0,
+        "magic": 204,
         "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
+          "arrows": 80,
+          "bolts": 80,
+          "thrown": 80
         }
       },
-      "attack_styles": [],
-      "attack_speed": null,
+      "attack_styles": [ "Slash", "Magic", "Ranged", "Dragonfire" ],
+      "attack_speed": {
+        "ticks": 5,
+        "seconds": 3
+      },
       "aggressive": false,
-      "immunities": {},
-      "weaknesses": "none"
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": {
+        "fire": "40%"
+      }
     },
     {
-      "name": "Vorkath (postquest)",
+      "name": "vorkath (post quest)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Vorkath",
-      "image": "assets/monster-icons/vorkath_postquest.png",
-      "combat_level": 0,
-      "hp": 0,
-      "max_hit": {},
+      "image": "assets/monster-icons/vorkath_post_quest.png",
+      "combat_level": 732,
+      "hp": 750,
+      "max_hit": {
+        "magic": 30,
+        "ranged": 32,
+        "melee": 32,
+        "dragonfire": 80,
+        "dragonfirebombspecial": 121,
+        "rapidfirespecial": 41
+      },
       "defense": {
         "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
+          "stab": 26,
+          "slash": 108,
+          "crush": 108
         },
-        "magic": 0,
+        "magic": 240,
         "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
+          "arrows": 26,
+          "bolts": 26,
+          "thrown": 26
         }
       },
-      "attack_styles": [],
-      "attack_speed": null,
+      "attack_styles": [ "Slash", "Magic", "Ranged", "Dragonfire" ],
+      "attack_speed": {
+        "ticks": 5,
+        "seconds": 3
+      },
       "aggressive": false,
-      "immunities": {},
-      "weaknesses": "none"
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": {
+        "fire": "40%"
+      }
     }
   ],
   "gear_setups": {
     "Ranged": {
       "Helmet": [
-        [ "Masori mask(f)" ],
         [ "Void ranger helm" ],
-        [ "Slayer helmet (i)" ],
         [ "Crystal helm", "Serpentine helm" ],
-        [ "Blessed coif" ]
+        [ "Blessed coif" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Salve amulet(ei)" ],
@@ -109,8 +142,8 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Ruby dragon bolts(e)", "Diamond dragon bolts(e)" ],
-        [ "Ruby bolts(e)", "Diamond bolts(e)" ],
+        [ "Ruby dragon bolts(e)", "Diamond dragon bolts (e)" ],
+        [ "Ruby bolts(e)", "Diamond bolts (e)" ],
         [ "Opal dragon bolts(e)", "Pearl dragon bolts(e)" ],
         [ "Dragon bolts" ],
         [ "Runite bolts" ]
@@ -119,7 +152,7 @@
         [ "Zaryte vambraces" ],
         [ "Void knight gloves" ],
         [ "Barrows gloves" ],
-        [ "Blessed vambraces", "Black d'hide vambraces" ],
+        [ "Any Blessed vambraces", "Black d'hide vambraces" ],
         [ "Ranger gloves" ]
       ],
       "Boots": [
@@ -132,7 +165,7 @@
       "Ring": [
         [ "Venator ring", "Lightbearer" ],
         [ "Archers ring (i)" ],
-        [ "Ring of suffering(i)" ],
+        [ "Ring of suffering (i)" ],
         [ "Ring of shadows" ],
         [ "Brimstone ring" ]
       ],
@@ -146,11 +179,11 @@
     },
     "Melee": {
       "Helmet": [
-        [ "Torva full helm", "Slayer helmet (i)" ],
         [ "Neitiznot faceguard", "Serpentine helm", "Oathplate helm" ],
         [ "Justiciar faceguard", "Blood moon helm" ],
         [ "Helm of neitiznot" ],
-        [ "Barrows helm" ]
+        [ "Any Barrows tank helm" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Salve amulet(ei)", "Salve amulet(e)" ],
@@ -220,7 +253,7 @@
         [ "Berserker ring (i)" ],
         [ "Lightbearer" ],
         [ "Brimstone ring" ],
-        [ "Ring of suffering(i)" ]
+        [ "Ring of suffering (i)" ]
       ],
       "Special Attack": [
         [ "Burning claws", "Voidwaker" ],

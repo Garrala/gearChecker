@@ -1,74 +1,96 @@
 {
-  "name": "Kalphite Queen",
+  "name": "kalphite queen",
   "category": "World Bosses",
-  "image": "assets/monster-icons/kalphite_queen_airborne.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
+  "image": "assets/monster-icons/kalphite_queen_airborne.png",
   "bosses": [
     {
-      "name": "Kalphite Queen (airborne)",
+      "name": "kalphite queen (queen airborne)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
       "image": "assets/monster-icons/kalphite_queen_airborne.png",
-      "combat_level": 0,
-      "hp": 0,
-      "max_hit": {},
+      "combat_level": 333,
+      "hp": 255,
+      "max_hit": {
+        "stab": 31,
+        "ranged": 31,
+        "magic": 31
+      },
       "defense": {
         "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
+          "stab": 100,
+          "slash": 100,
+          "crush": 100
         },
-        "magic": 0,
+        "magic": 10,
         "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
+          "arrows": 10,
+          "bolts": 10,
+          "thrown": 10
         }
       },
-      "attack_styles": [],
-      "attack_speed": null,
-      "aggressive": false,
-      "immunities": {},
+      "attack_styles": [ "Stab", "Ranged", "Magic" ],
+      "attack_speed": {
+        "ticks": 4,
+        "seconds": 2.4
+      },
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "cannons": false,
+        "thralls": false
+      },
       "weaknesses": "none"
     },
     {
-      "name": "Kalphite Queen (crawling)",
+      "name": "kalphite queen (queen crawling)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
       "image": "assets/monster-icons/kalphite_queen_crawling.png",
-      "combat_level": 0,
-      "hp": 0,
-      "max_hit": {},
+      "combat_level": 333,
+      "hp": 255,
+      "max_hit": {
+        "stab": 31,
+        "ranged": 31,
+        "magic": 31
+      },
       "defense": {
         "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
+          "stab": 50,
+          "slash": 50,
+          "crush": 10
         },
-        "magic": 0,
+        "magic": 100,
         "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
+          "arrows": 100,
+          "bolts": 100,
+          "thrown": 100
         }
       },
-      "attack_styles": [],
-      "attack_speed": null,
-      "aggressive": false,
-      "immunities": {},
+      "attack_styles": [ "Stab", "Ranged", "Magic" ],
+      "attack_speed": {
+        "ticks": 4,
+        "seconds": 2.4
+      },
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "cannons": false,
+        "thralls": false
+      },
       "weaknesses": "none"
     }
   ],
   "gear_setups": {
     "Max Mage (0 switches)": {
       "Helmet": [
-        [ "Slayer helmet (i)", "kalphite task" ],
-        [ "Black mask (i)" ],
         [ "Ancestral hat" ],
         [ "Virtus mask" ],
         [
           "Blue moon helm",
           "",
           "Ahrim's hood"
-        ]
+        ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
@@ -162,7 +184,7 @@
           "Lightbearer",
           ""
         ],
-        [ "Ring of suffering(i)" ],
+        [ "Ring of suffering (i)" ],
         [ "Seers ring (i)" ],
         [ "Brimstone ring" ],
         [ "Ring of shadows" ]
@@ -244,7 +266,7 @@
         [ "Berserker ring (i)" ],
         [ "Tyrannical ring (i)" ],
         [ "Brimstone ring" ],
-        [ "Ring of the gods(i)" ]
+        [ "Ring of the gods (i)" ]
       ],
       "Shield": [
         [ "N/A" ],
@@ -263,9 +285,9 @@
     },
     "Flinching": {
       "Helmet": [
-        [ "Slayer helmet (i)", "kalphite task" ],
         [ "Blue moon helm" ],
         [ "Helm of neitiznot" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -336,7 +358,7 @@
         [ "Berserker ring (i)" ],
         [ "Brimstone ring" ],
         [ "Ring of shadows" ],
-        [ "Explorer's ring" ],
+        [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ],
         [ "N/A" ]
       ],
       "Special Attack": [
@@ -349,9 +371,9 @@
     },
     "Pre-diary Method": {
       "Helmet": [
-        [ "Slayer helmet (i)", "kalphite task" ],
         [ "Neitiznot faceguard" ],
         [ "Helm of neitiznot" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -422,7 +444,7 @@
         [ "N/A" ]
       ],
       "Ring": [
-        [ "Ring of suffering(i)" ],
+        [ "Ring of suffering (i)" ],
         [ "Ultor ring" ],
         [ "Berserker ring (i)" ],
         [ "Tyrannical ring (i)" ],

@@ -1,69 +1,95 @@
 {
-  "name": "Wyrm",
+  "name": "wyrm",
   "category": "Slayer Monster",
-  "image": "assets/monster-icons/wyrm_attacking.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Wyrm",
+  "image": "assets/monster-icons/wyrm_attacking.png",
   "bosses": [
     {
-      "name": "Wyrm (attacking)",
+      "name": "wyrm (attacking)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Wyrm",
       "image": "assets/monster-icons/wyrm_attacking.png",
-      "combat_level": 0,
-      "hp": 0,
-      "max_hit": {},
+      "combat_level": 99,
+      "hp": 425,
+      "max_hit": {
+        "magic": 13,
+        "melee": 10
+      },
       "defense": {
         "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
+          "stab": 10,
+          "slash": 50,
+          "crush": 50
         },
-        "magic": 0,
+        "magic": 50,
         "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
+          "arrows": 20,
+          "bolts": 10,
+          "thrown": 20
         }
       },
-      "attack_styles": [],
-      "attack_speed": null,
+      "attack_styles": [ "Magic", "Slash" ],
+      "attack_speed": {
+        "ticks": 4,
+        "seconds": 2.4
+      },
       "aggressive": false,
-      "immunities": {},
-      "weaknesses": "none"
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      },
+      "weaknesses": {
+        "earth": "50%"
+      }
     },
     {
-      "name": "Wyrm (idle)",
+      "name": "wyrm (idle)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Wyrm",
       "image": "assets/monster-icons/wyrm_idle.png",
-      "combat_level": 0,
-      "hp": 0,
-      "max_hit": {},
+      "combat_level": 99,
+      "hp": 425,
+      "max_hit": {
+        "magic": 13,
+        "melee": 10
+      },
       "defense": {
         "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
+          "stab": 10,
+          "slash": 50,
+          "crush": 50
         },
-        "magic": 0,
+        "magic": 50,
         "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
+          "arrows": 20,
+          "bolts": 10,
+          "thrown": 20
         }
       },
-      "attack_styles": [],
-      "attack_speed": null,
+      "attack_styles": [ "Magic", "Slash" ],
+      "attack_speed": {
+        "ticks": 4,
+        "seconds": 2.4
+      },
       "aggressive": false,
-      "immunities": {},
-      "weaknesses": "none"
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      },
+      "weaknesses": {
+        "earth": "50%"
+      }
     }
   ],
   "gear_setups": {
     "Ranged": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Masori mask(f)" ],
         [ "Crystal helm" ],
         [ "Blessed coif" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
@@ -76,7 +102,7 @@
       "Cape": [
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
-        [ "Ranging cape(t)" ],
+        [ "Ranging cape (t)" ],
         [ "Ava's accumulator" ],
         [ "N/A" ]
       ],
@@ -109,7 +135,7 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Diamond dragon bolts(e)" ],
+        [ "Diamond dragon bolts (e)" ],
         [ "Runite bolts" ],
         [ "Broad bolts", "Adamant bolts" ],
         [ "Rada's blessing 4" ],
@@ -146,10 +172,10 @@
     },
     "Melee": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
         [ "Torva full helm" ],
         [ "Neitiznot faceguard" ],
         [ "Helm of neitiznot" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [

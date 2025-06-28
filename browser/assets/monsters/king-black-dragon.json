@@ -1,11 +1,11 @@
 {
-  "name": "King Black Dragon",
+  "name": "king black dragon",
   "category": "Wilderness Bosses",
-  "image": "assets/monster-icons/king_black_dragon.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/King_Black_Dragon",
+  "image": "assets/monster-icons/king_black_dragon.png",
   "bosses": [
     {
-      "name": "King Black Dragon",
+      "name": "king black dragon (black dragon)",
       "wiki_link": "https://oldschool.runescape.wiki/w/King_Black_Dragon",
       "image": "assets/monster-icons/king_black_dragon.png",
       "combat_level": 276,
@@ -16,20 +16,23 @@
       },
       "defense": {
         "melee": {
-          "stab": 60,
+          "stab": 40,
           "slash": 90,
           "crush": 90
         },
         "magic": 80,
         "ranged": {
           "arrows": 70,
-          "bolts": 50,
+          "bolts": 40,
           "thrown": 70
         }
       },
       "attack_styles": [ "Stab", "Dragonfire" ],
-      "attack_speed": 4,
-      "aggressive": false,
+      "attack_speed": {
+        "ticks": 4,
+        "seconds": 2.4
+      },
+      "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
@@ -59,9 +62,9 @@
       ],
       "Cape": [
         [ "Infernal cape", "Fire cape" ],
-        [ "Ardougne cloak" ],
         [ "Mythical cape" ],
-        [ "Cape of accomplishment" ],
+        [ "Any Skillcape" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -145,9 +148,9 @@
       ],
       "Cape": [
         [ "Infernal cape", "Fire cape" ],
-        [ "Ardougne cloak" ],
         [ "Mythical cape" ],
-        [ "Cape of accomplishment" ],
+        [ "Any Skillcape" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -216,10 +219,10 @@
     },
     "Twisted Bow / BOWFA": {
       "Helmet": [
-        [ "Blessed coif", "Slayer helmet (i)", "task" ],
         [ "Crystal helm" ],
         [ "Karil's coif" ],
-        [ "Archer helm" ]
+        [ "Archer helm" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -259,7 +262,7 @@
       ],
       "Gloves": [
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ],
         [ "Red d'hide vambraces" ]
       ],
@@ -290,9 +293,9 @@
     },
     "Crossbow & shield": {
       "Helmet": [
-        [ "Blessed coif", "Slayer helmet (i)", "task" ],
         [ "Karil's coif" ],
         [ "Archer helm" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -339,15 +342,15 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Diamond dragon bolts(e)" ],
-        [ "Diamond bolts(e)" ],
+        [ "Diamond dragon bolts (e)" ],
+        [ "Diamond bolts (e)" ],
         [ "Moonlight antler bolts", "Sunlight antler bolts" ],
         [ "Runite bolts" ],
         [ "N/A" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ],
         [ "Red d'hide vambraces" ],
         [ "N/A" ]
@@ -376,9 +379,9 @@
     },
     "Suicide method": {
       "Helmet": [
-        [ "Masori mask(f)", "Slayer helmet (i)", "task" ],
         [ "Blessed coif" ],
         [ "Karil's coif" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -393,7 +396,7 @@
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
         [ "Ava's accumulator" ],
-        [ "Ranging cape(t)" ],
+        [ "Ranging cape (t)" ],
         [ "Ava's attractor" ]
       ],
       "Body": [
@@ -434,7 +437,7 @@
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ],
         [ "N/A" ]
       ],

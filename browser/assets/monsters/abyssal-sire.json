@@ -1,119 +1,164 @@
 {
-  "name": "Abyssal Sire",
+  "name": "abyssal sire",
   "category": "Slayer Bosses",
-  "image": "assets/monster-icons/abyssal_sire_phase_1.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+  "image": "assets/monster-icons/abyssal_sire_phase_1.png",
   "bosses": [
     {
-      "name": "Abyssal Sire (phase 1)",
+      "name": "abyssal sire (sire phase 1)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
       "image": "assets/monster-icons/abyssal_sire_phase_1.png",
-      "combat_level": 0,
-      "hp": 0,
-      "max_hit": {},
+      "combat_level": 350,
+      "hp": 425,
+      "max_hit": {
+        "melee": 66,
+        "withexplosion": 96
+      },
       "defense": {
         "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
+          "stab": 40,
+          "slash": 60,
+          "crush": 50
         },
-        "magic": 0,
+        "magic": 20,
         "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
+          "arrows": 60,
+          "bolts": 60,
+          "thrown": 60
         }
       },
-      "attack_styles": [],
-      "attack_speed": null,
+      "attack_styles": [ "Melee" ],
+      "attack_speed": {
+        "ticks": 7,
+        "seconds": 4.2
+      },
       "aggressive": false,
-      "immunities": {},
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      },
       "weaknesses": "none"
     },
     {
-      "name": "Abyssal Sire (phase 2)",
+      "name": "abyssal sire (sire phase 2)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
       "image": "assets/monster-icons/abyssal_sire_phase_2.png",
-      "combat_level": 0,
-      "hp": 0,
-      "max_hit": {},
+      "combat_level": 350,
+      "hp": 425,
+      "max_hit": {
+        "melee": 66,
+        "withexplosion": 96
+      },
       "defense": {
         "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
+          "stab": 40,
+          "slash": 60,
+          "crush": 50
         },
-        "magic": 0,
+        "magic": 20,
         "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
+          "arrows": 60,
+          "bolts": 60,
+          "thrown": 60
         }
       },
-      "attack_styles": [],
-      "attack_speed": null,
+      "attack_styles": [ "Melee" ],
+      "attack_speed": {
+        "ticks": 7,
+        "seconds": 4.2
+      },
       "aggressive": false,
-      "immunities": {},
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      },
       "weaknesses": "none"
     },
     {
-      "name": "Abyssal Sire (phase 3 stage 1)",
+      "name": "abyssal sire (sire phase 3 stage 1)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
       "image": "assets/monster-icons/abyssal_sire_phase_3_stage_1.png",
-      "combat_level": 0,
-      "hp": 0,
-      "max_hit": {},
+      "combat_level": 350,
+      "hp": 425,
+      "max_hit": {
+        "melee": 66,
+        "withexplosion": 96
+      },
       "defense": {
         "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
+          "stab": 40,
+          "slash": 60,
+          "crush": 50
         },
-        "magic": 0,
+        "magic": 20,
         "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
+          "arrows": 60,
+          "bolts": 60,
+          "thrown": 60
         }
       },
-      "attack_styles": [],
-      "attack_speed": null,
+      "attack_styles": [ "Melee" ],
+      "attack_speed": {
+        "ticks": 7,
+        "seconds": 4.2
+      },
       "aggressive": false,
-      "immunities": {},
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      },
       "weaknesses": "none"
     },
     {
-      "name": "Abyssal Sire (phase 3 stage 2)",
+      "name": "abyssal sire (sire phase 3 stage 2)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
       "image": "assets/monster-icons/abyssal_sire_phase_3_stage_2.png",
-      "combat_level": 0,
-      "hp": 0,
-      "max_hit": {},
+      "combat_level": 350,
+      "hp": 425,
+      "max_hit": {
+        "melee": 66,
+        "withexplosion": 96
+      },
       "defense": {
         "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
+          "stab": 40,
+          "slash": 60,
+          "crush": 50
         },
-        "magic": 0,
+        "magic": -40,
         "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
+          "arrows": 30,
+          "bolts": 30,
+          "thrown": 30
         }
       },
-      "attack_styles": [],
-      "attack_speed": null,
+      "attack_styles": [ "Melee" ],
+      "attack_speed": {
+        "ticks": 7,
+        "seconds": 4.2
+      },
       "aggressive": false,
-      "immunities": {},
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      },
       "weaknesses": "none"
     }
   ],
   "gear_setups": {
     "Ranged": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Black mask (i)" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -123,11 +168,13 @@
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
         [ "Dizana's quiver" ],
-        [ "Ava's assembler", "Ava's device" ],
+        [ "Ava's assembler", "Ava's accumulator" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -137,6 +184,7 @@
         [ "Crystal body" ],
         [ "Any Blessed body", "Black d'hide body" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
@@ -144,30 +192,35 @@
         [ "Crystal legs" ],
         [ "Any Blessed chaps", "Black d'hide chaps" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
         [ "Scorching bow" ],
         [ "Bow of Faerdhinen" ],
-        [ "Toxic blowpipe", "amethyst darts" ],
         [ "Webweaver bow", "Craw's bow" ],
-        [ "Crystal bow" ]
+        [ "Crystal bow" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ammo": [
         [ "Dragon arrows" ],
         [ "Amethyst arrows" ],
         [ "N/A" ],
         [ "N/A" ],
-        [ "N/A" ]
+        [ "N/A" ],
+        [ "Amethyst darts" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
-        [ "Blessed vambraces", "Black d'hide vambraces" ],
+        [ "Any Blessed vambraces", "Black d'hide vambraces" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -179,9 +232,11 @@
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Shield": [
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -193,13 +248,14 @@
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ]
     },
     "Magic": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Black mask (i)" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -284,8 +340,8 @@
     },
     "Melee": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Black mask (i)" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -370,8 +426,7 @@
     },
     "Melee - No defence reduction": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Black mask (i)" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -382,7 +437,6 @@
         [ "Amulet of torture" ],
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
@@ -390,29 +444,25 @@
         [ "Fire cape" ],
         [ "Ardougne cloak 4" ],
         [ "Max cape", "Hitpoints cape" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
         [ "Torva platebody" ],
         [ "Bandos chestplate", "Oathplate chest" ],
         [ "Justiciar chestguard" ],
-        [ "Fighter torso" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Any Barrows tank body" ],
+        [ "Fighter torso" ]
       ],
       "Legs": [
         [ "Torva platelegs" ],
         [ "Bandos tassets", "Oathplate legs" ],
         [ "Justiciar legguards" ],
         [ "Any Barrows tank legs" ],
-        [ "Obsidian platelegs" ],
-        [ "Any Barrows tank top" ]
+        [ "Obsidian platelegs" ]
       ],
       "Weapon": [
         [ "Emberlight" ],
         [ "Osmumten's fang" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -422,13 +472,11 @@
         [ "Dragon defender" ],
         [ "Dragonfire shield" ],
         [ "Rune defender" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
         [ "Any God blessing" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -438,7 +486,6 @@
         [ "Barrows gloves" ],
         [ "Dragon gloves" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
@@ -446,12 +493,10 @@
         [ "Dragon boots" ],
         [ "Echo boots" ],
         [ "Guardian boots" ],
-        [ "Rune boots" ],
-        [ "N/A" ]
+        [ "Rune boots" ]
       ],
       "Ring": [
         [ "Lightbearer" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -462,25 +507,22 @@
         [ "Voidwaker" ],
         [ "Dragon claws", "Crystal halberd" ],
         [ "Abyssal dagger" ],
-        [ "Dragon dagger" ],
-        [ "N/A" ]
+        [ "Dragon dagger" ]
       ]
     },
     "Melee - Defence reduction": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Black mask (i)" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
-        [ "Blade of Saeldor" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
         [ "Amulet of torture" ],
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
@@ -488,45 +530,39 @@
         [ "Fire cape" ],
         [ "Ardougne cloak 4" ],
         [ "Max cape", "Hitpoints cape" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
         [ "Torva platebody", "Oathplate chest" ],
         [ "Bandos chestplate", "Blood moon chestplate" ],
         [ "Justiciar chestguard" ],
-        [ "Fighter torso" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Any Barrows tank body" ],
+        [ "Fighter torso" ]
       ],
       "Legs": [
         [ "Torva platelegs", "Oathplate legs" ],
         [ "Bandos tassets", "Blood moon tassets" ],
         [ "Justiciar legguards" ],
         [ "Any Barrows tank legs" ],
-        [ "Obsidian platelegs" ],
-        [ "Any Barrows tank top" ]
+        [ "Obsidian platelegs" ]
       ],
       "Weapon": [
         [ "Scythe of Vitur" ],
-        [ "Ghrazi rapier", "Arclight" ],
+        [ "Ghrazi rapier", "Emberlight" ],
         [ "Inquisitor's mace" ],
-        [ "Zamorakian hasta" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Blade of Saeldor" ],
+        [ "Zamorakian hasta" ]
       ],
       "Shield": [
         [ "Avernic defender" ],
         [ "Dragon defender" ],
         [ "Dragonfire shield" ],
         [ "Rune defender" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
         [ "Any God blessing" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -536,7 +572,6 @@
         [ "Barrows gloves" ],
         [ "Dragon gloves" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
@@ -544,30 +579,27 @@
         [ "Dragon boots" ],
         [ "Echo boots" ],
         [ "Guardian boots" ],
-        [ "Rune boots" ],
-        [ "N/A" ]
+        [ "Rune boots" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
         [ "Bellator ring" ],
         [ "Lightbearer" ],
         [ "Berserker ring (i)" ],
-        [ "Ring of suffering(i)" ],
-        [ "N/A" ]
+        [ "Ring of suffering (i)" ]
       ],
       "Special Attack": [
         [ "Elder maul" ],
         [ "Dragon warhammer" ],
         [ "Bandos godsword" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ]
     },
     "Magic - Tumeken's Shadow": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Black mask (i)" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -640,8 +672,8 @@
     },
     "Phase 2 Ranged": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Black mask (i)" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -655,7 +687,7 @@
       ],
       "Cape": [
         [ "Dizana's quiver" ],
-        [ "Ava's assembler", "Ava's device" ],
+        [ "Ava's assembler", "Ava's accumulator" ],
         [ "Max cape" ],
         [ "Ranging cape" ],
         [ "Infernal cape", "Mythical cape" ]
@@ -705,7 +737,7 @@
       "Ring": [
         [ "Venator ring" ],
         [ "Archers ring (i)" ],
-        [ "Ring of suffering(i)" ],
+        [ "Ring of suffering (i)" ],
         [ "Tyrannical ring (i)" ],
         [ "N/A" ]
       ],

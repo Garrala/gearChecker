@@ -1,11 +1,11 @@
 {
-  "name": "Chaos Fanatic",
+  "name": "chaos fanatic",
   "category": "Wilderness Bosses",
-  "image": "assets/monster-icons/chaos_fanatic.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Fanatic",
+  "image": "assets/monster-icons/chaos_fanatic.png",
   "bosses": [
     {
-      "name": "Chaos Fanatic",
+      "name": "chaos fanatic (fanatic)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Fanatic",
       "image": "assets/monster-icons/chaos_fanatic.png",
       "combat_level": 202,
@@ -27,8 +27,11 @@
         }
       },
       "attack_styles": [ "Magic" ],
-      "attack_speed": 2,
-      "aggressive": false,
+      "attack_speed": {
+        "ticks": 2,
+        "seconds": 1.2
+      },
+      "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
@@ -41,11 +44,11 @@
   "gear_setups": {
     "Ranged": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Black mask(i)" ],
         [ "Blessed coif" ],
         [ "Karil's coif" ],
         [ "Snakeskin bandana" ],
         [ "Coif" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
@@ -67,7 +70,7 @@
       "Body": [
         [ "Masori body (f)" ],
         [ "Crystal body" ],
-        [ "Blessed d'hide body" ],
+        [ "Any Blessed body" ],
         [ "Black d'hide body" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -75,7 +78,7 @@
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Crystal legs" ],
-        [ "Blessed d'hide chaps" ],
+        [ "Any Blessed chaps" ],
         [ "Black d'hide chaps" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -97,16 +100,16 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's Blessing", "Webweaver", "Craw's bow", "Toxic blowpipe", "Crystal bow" ],
+        [ "Rada's Blessing 3", "Rada's Blessing 2", "Rada's Blessing 1" ],
         [ "Dragon arrows", "Amethyst arrow", "Rune arrow" ],
         [ "Moonlight antler bolts" ],
-        [ "Diamond dragon bolts(e)" ],
-        [ "Diamond bolts(e)" ],
+        [ "Diamond dragon bolts (e)" ],
+        [ "Diamond bolts (e)" ],
         [ "N/A" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
-        [ "Blessed vambraces" ],
+        [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ],
         [ "N/A" ],
         [ "N/A" ],

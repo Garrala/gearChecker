@@ -1,11 +1,11 @@
 {
-  "name": "Crazy Archaeologist",
+  "name": "crazy archaeologist",
   "category": "Wilderness Bosses",
-  "image": "assets/monster-icons/crazy_archaeologist.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist",
+  "image": "assets/monster-icons/crazy_archaeologist.png",
   "bosses": [
     {
-      "name": "Crazy Archaeologist",
+      "name": "crazy archaeologist (archaeologist)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist",
       "image": "assets/monster-icons/crazy_archaeologist.png",
       "combat_level": 204,
@@ -28,8 +28,11 @@
         }
       },
       "attack_styles": [ "Ranged", "Crush" ],
-      "attack_speed": 3,
-      "aggressive": false,
+      "attack_speed": {
+        "ticks": 3,
+        "seconds": 1.8
+      },
+      "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
@@ -42,11 +45,11 @@
   "gear_setups": {
     "Magic": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
         [ "Bloodbark helm" ],
         [ "Mitre" ],
         [ "Mystic hat" ],
-        [ "Xerician hat", "Fremennik hat" ]
+        [ "Xerician hat", "Fremennik hat" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
@@ -56,7 +59,7 @@
         [ "Amulet of power" ]
       ],
       "Cape": [
-        [ "Imbued god capes" ],
+        [ "Any Imbued God cape" ],
         [ "Any God cape" ],
         [ "Ardougne cloak 4" ],
         [ "Ardougne cloak 3" ],
@@ -81,7 +84,7 @@
         [ "Sanguinesti staff" ],
         [ "Trident of the swamp" ],
         [ "Trident of the seas" ],
-        [ "Warped sceptre", "Iban's staff(u)" ]
+        [ "Warped sceptre", "Iban's staff (u)" ]
       ],
       "Shield": [
         [ "Elidinis' ward (f)", "Elidinis' ward" ],
@@ -113,9 +116,9 @@
       ],
       "Ring": [
         [ "Ring of shadows", "(uncharged)" ],
-        [ "Explorer's ring" ],
+        [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ],
         [ "Beacon ring" ],
-        [ "Ring of wealth(i)" ],
+        [ "Ring of wealth (i)" ],
         [ "N/A" ]
       ],
       "Special Attack": [
