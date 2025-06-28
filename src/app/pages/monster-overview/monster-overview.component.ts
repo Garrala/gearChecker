@@ -55,6 +55,25 @@ export class MonsterOverviewComponent implements OnInit {
     'Slayer Bosses',
   ]
 
+  venomToPoisonBosses = new Set([
+    'Chaos Elemental',
+    'Dagannoth Prime',
+    'Dagannoth Rex',
+    'Dagannoth Supreme',
+    'Demonic Gorilla',
+    'Duke Sucellus',
+    'Giant Mole',
+    'Kalphite Queen (Crawling)',
+    'Kalphite Queen (Airborne)',
+    'Kraken',
+    'The Leviathan',
+    'Obor',
+    'Scurrius',
+    'TzTok-Jad',
+    'Vet\'ion'
+  ]);
+
+
   //Item filtering
   itemSearchQuery: string = ''
   filteredBosses: Monster[] = []
@@ -69,8 +88,8 @@ export class MonsterOverviewComponent implements OnInit {
     private monsterService: MonsterService,
     public gearService: GearService,
     private cdRef: ChangeDetectorRef, 
-	private route: ActivatedRoute,
-	private router: Router
+	  private route: ActivatedRoute,
+	  private router: Router
   ) {}
 
   ngOnInit() {
@@ -406,15 +425,14 @@ export class MonsterOverviewComponent implements OnInit {
     return !!monster?.bosses && monster.bosses.length > 1
   }
 
+
   getSelectedBoss(): Monster['bosses'][0] | null {
-    if (!this.selectedMonster) return null
-    return this.selectedMonster.bosses[this.selectedBossIndex]
+    if (!this.selectedMonster) return null;
+    return this.getOrderedBossPhases(this.selectedMonster)[this.selectedBossIndex];
   }
 
-  /** ✅ Switch bosses in a multi-boss encounter **/
-  switchBoss(index: number) {
-    if (!this.isMultiBoss(this.selectedMonster)) return
-    this.selectedBossIndex = index
+  switchBoss(index: number): void {
+    this.selectedBossIndex = index;
   }
 
   toggleCategory(category: string) {
@@ -428,17 +446,17 @@ export class MonsterOverviewComponent implements OnInit {
   }
 
   filteredMonsters(): Monster[] {
-    let monsters = this.monsters
+    let monsters = this.monsters;
 
     // Filter by category if categories are selected
     if (this.selectedCategories.length > 0) {
       monsters = monsters.filter((monster) =>
         this.selectedCategories.includes(monster.category)
-      )
+      );
     }
 
     // Filter by item if an item search is active
-    const query = this.itemSearchQuery.trim().toLowerCase()
+    const query = this.itemSearchQuery.trim().toLowerCase();
     if (query) {
       monsters = monsters.filter((monster) =>
         Object.values(monster.gear_setups || {}).some((setup) =>
@@ -450,11 +468,19 @@ export class MonsterOverviewComponent implements OnInit {
             )
           )
         )
-      )
+      );
     }
 
-    return monsters
+    // Override image with first ordered phase's image
+    return monsters.map(monster => {
+      const primaryPhase = this.getOrderedBossPhases(monster)[0];
+      return {
+        ...monster,
+        image: primaryPhase?.image ?? monster.image,
+      };
+    });
   }
+
 
   /** ✅ Extract all unique items from bosses for autocomplete with images **/
   extractAllItems() {
@@ -529,6 +555,74 @@ export class MonsterOverviewComponent implements OnInit {
         )
       )
     )
+  }
+
+  getAttackSpeedDisplay(): string {
+    const atkSpeed = this.getSelectedBoss()?.attack_speed;
+
+    if (this.isAttackSpeedObject(atkSpeed)) {
+      const seconds = atkSpeed.seconds !== undefined ? ` (${atkSpeed.seconds}s)` : '';
+      return `${atkSpeed.ticks} ticks${seconds}`;
+    }
+
+    return typeof atkSpeed === 'number' ? `${atkSpeed} ticks` : 'N/A';
+  }
+
+
+  isAttackSpeedObject(value: any): value is { ticks: number; seconds?: number } {
+    return value && typeof value === 'object' && 'ticks' in value;
+  }
+
+  getCleanBossName(rawName?: string): string {
+    if (!rawName) return 'Unknown';
+
+    // Manual cleanup rules
+    const replacements: { [key: string]: string } = {
+      'duke sucellus (sucellus awake awakened)': 'Duke Sucellus',
+      'the leviathan (leviathan awakened)': 'The Leviathan',
+      'kalphite queen (queen airborne)': 'Kalphite Queen (Airborne)',
+      'kalphite queen (queen crawling)': 'Kalphite Queen (Crawling)',
+      // Add more cleanup cases here as needed
+    };
+
+    const cleaned = replacements[rawName.toLowerCase()] || rawName;
+
+    // Capitalize first letter of each word
+    return cleaned.replace(/\w\S*/g, (word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
+  }
+
+  isWeaknessObject(value: any): value is { [key: string]: string } {
+    return value && typeof value === 'object' && !Array.isArray(value);
+  }
+
+  isWeaknessNone(value: any): value is 'none' {
+    return value === 'none';
+  }
+
+  get isSelectedBossVenomToPoison(): boolean {
+    const bossName = this.getSelectedBoss()?.name;
+    const cleaned = this.getCleanBossName(bossName);
+    return this.venomToPoisonBosses.has(cleaned);
+  }
+
+
+  getOrderedBossPhases(monster: Monster): Monster['bosses'] {
+    const phaseOrderOverrides: { [key: string]: string[] } = {
+      'kalphite queen': ['queen crawling', 'queen airborne'],
+      'duke sucellus': ['sucellus awake', 'sucellus awakened'],
+    };
+
+    const name = monster.name.toLowerCase();
+    const phases = monster.bosses;
+
+    const override = phaseOrderOverrides[name];
+    if (!override) return phases;
+
+    return [...phases].sort((a, b) => {
+      const idxA = override.findIndex(s => a.name.toLowerCase().includes(s));
+      const idxB = override.findIndex(s => b.name.toLowerCase().includes(s));
+      return idxA - idxB;
+    });
   }
 
   handleKeyDown(event: KeyboardEvent) {

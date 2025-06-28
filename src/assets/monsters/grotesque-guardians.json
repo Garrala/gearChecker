@@ -28,7 +28,9 @@
         }
       },
       "attack_styles": [ "Melee", "Special" ],
-      "attack_speed": 6,
+      "attack_speed": {
+        "ticks": 6
+      },
       "aggressive": true,
       "immunities": {
         "poison": true,

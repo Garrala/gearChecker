@@ -48,7 +48,7 @@
         (click)="selectMonster(monster)"
       >
         <img [src]="monster.image" alt="{{ monster.name }}" />
-        <p>{{ monster.name }}</p>
+        <p>{{ getCleanBossName(monster.name) }}</p>
       </div>
     </div>
   </div>
@@ -65,12 +65,10 @@
       <div class="boss-picture">
         <!-- 🔹 Boss Selector (If Multi-Boss) -->
         <div *ngIf="isMultiBoss(selectedMonster)" class="boss-selector">
-          <button
-            *ngFor="let boss of selectedMonster?.bosses; let i = index"
-            (click)="switchBoss(i)"
-            [class.active]="selectedBossIndex === i"
-          >
-            {{ boss.name }}
+          <button *ngFor="let boss of getOrderedBossPhases(selectedMonster); let i = index"
+                  (click)="switchBoss(i)"
+                  [class.active]="selectedBossIndex === i">
+            {{ getCleanBossName(boss.name) }}
           </button>
         </div>
         <div class="icon-container">
@@ -88,8 +86,12 @@
       </div>
 
       <div class="boss-info-box">
-        <h3 class="boss-title">{{ getSelectedBoss()?.name }}</h3>
-
+        <h2>
+          {{ getCleanBossName(getSelectedBoss()?.name) }}
+          <span *ngIf="getSelectedBoss()?.combat_level !== undefined" class="combat-level">
+            – Level {{ getSelectedBoss()?.combat_level }}
+          </span>
+        </h2>
         <div class="info-grid">
           <div class="info-item">
             <img
@@ -251,12 +253,10 @@
           </div>
 
           <div class="info-item">
-            <img
-              src="./assets/misc-icons/Attack_Speed_icon.png"
-              title="Attack Speed"
-            />
-            <strong>Attack Speed:</strong>
-            {{ getSelectedBoss()?.attack_speed }} ticks
+            <img src="./assets/misc-icons/Attack_Speed_icon.png"
+                 title="Attack Speed" />
+            <strong>Attack Speed:</strong> {{ getAttackSpeedDisplay() }}
+
           </div>
         </div>
 
@@ -328,69 +328,59 @@
           <!-- Magic Defense & Magic Weakness (Row 2 - 2 equal columns) -->
           <div class="immunity-grid full-width">
             <div class="defense-box">
-              <img
-                src="./assets/misc-icons/Magic_defence_icon.png"
-                title="Magic Defense"
-              />
-              <span
-                *ngIf="getSelectedBoss()?.defense?.magic !== undefined"
-                [ngClass]="{
-                  'stat-value': true,
-                  positive: (getSelectedBoss()?.defense?.magic ?? 0) > 0,
-                  negative: (getSelectedBoss()?.defense?.magic ?? 0) < 0,
+              <img src="./assets/misc-icons/Magic_defence_icon.png"
+                   title="Magic Defense" />
+              <span *ngIf="getSelectedBoss()?.defense?.magic !== undefined"
+                    [ngClass]="{
+                    'stat-value' : true,
+                    positive: (getSelectedBoss()?.defense?.magic ?? 0)>
+                0,
+                negative: (getSelectedBoss()?.defense?.magic ?? 0) < 0,
                 }"
-              >
+                >
                 {{ (getSelectedBoss()?.defense?.magic ?? 0) > 0 ? '+' : '' }}
                 {{ getSelectedBoss()?.defense?.magic ?? 0 }}
               </span>
             </div>
+
             <div class="defense-box">
               <div>
-                <img
-                  *ngIf="
-                    !getSelectedBoss()?.weaknesses ||
-                    objectKeys(getSelectedBoss()?.weaknesses).length === 0
-                  "
-                  src="./assets/misc-icons/Pure_essence.png"
-                  alt="No Weakness"
-                  title="No Elemental Weakness"
-                />
+                <!-- Show default "No Elemental Weakness" icon/message if explicitly 'none' -->
+                <ng-container *ngIf="isWeaknessNone(getSelectedBoss()?.weaknesses); else checkWeaknesses">
+                  <img src="./assets/misc-icons/Pure_essence.png"
+                       alt="No Weakness"
+                       title="No Elemental Weakness" />
+                  <span class="neutral">No Elemental Weakness</span>
+                </ng-container>
 
-                <span
-                  *ngFor="
-                    let key of objectKeys(getSelectedBoss()?.weaknesses || {})
-                  "
-                >
-                  <img
-                    *ngIf="key === 'fire'"
-                    src="./assets/misc-icons/Fire_rune.png"
-                    alt="Fire Weakness"
-                    title="Fire Weakness"
-                  />
-                  <img
-                    *ngIf="key === 'water'"
-                    src="./assets/misc-icons/Water_rune.png"
-                    alt="Water Weakness"
-                    title="Water Weakness"
-                  />
-                  <img
-                    *ngIf="key === 'earth'"
-                    src="./assets/misc-icons/Earth_rune.png"
-                    alt="Earth Weakness"
-                    title="Earth Weakness"
-                  />
-                  <img
-                    *ngIf="key === 'air'"
-                    src="./assets/misc-icons/Air_rune.png"
-                    alt="Air Weakness"
-                    title="Air Weakness"
-                  />
-                  <span class="negative">
-                    {{ getSelectedBoss()?.weaknesses?.[key] ?? 'None' }}
+                <!-- Otherwise check for specific weaknesses -->
+                <ng-template #checkWeaknesses>
+                  <span *ngFor="let key of objectKeys(getSelectedBoss()?.weaknesses || {})">
+                    <img *ngIf="key === 'fire'"
+                         src="./assets/misc-icons/Fire_rune.png"
+                         alt="Fire Weakness"
+                         title="Fire Weakness" />
+                    <img *ngIf="key === 'water'"
+                         src="./assets/misc-icons/Water_rune.png"
+                         alt="Water Weakness"
+                         title="Water Weakness" />
+                    <img *ngIf="key === 'earth'"
+                         src="./assets/misc-icons/Earth_rune.png"
+                         alt="Earth Weakness"
+                         title="Earth Weakness" />
+                    <img *ngIf="key === 'air'"
+                         src="./assets/misc-icons/Air_rune.png"
+                         alt="Air Weakness"
+                         title="Air Weakness" />
+                    <span class="negative">
+                      {{ getSelectedBoss()?.weaknesses?.[key] ?? '' }}
+                    </span>
                   </span>
-                </span>
+                </ng-template>
               </div>
             </div>
+
+
           </div>
           <!-- Ranged Defense (Row 3 - 3 columns) -->
           <div class="defense-box">
@@ -458,18 +448,14 @@
         <h4 class="info-grid-title">Immunities</h4>
         <div class="immunity-grid">
           <div class="defense-box">
-            <img
-              src="./assets/misc-icons/Poison_hitsplat.png"
-              title="Poison"
-            />
-            <span
-              *ngIf="getSelectedBoss()?.immunities?.poison !== undefined"
-              [ngClass]="{
+            <img src="./assets/misc-icons/Poison_hitsplat.png"
+                 title="Poison" />
+            <span *ngIf="getSelectedBoss()?.immunities?.poison !== undefined"
+                  [ngClass]="{
                 'stat-value': true,
                 positive: getSelectedBoss()?.immunities?.poison,
                 negative: !getSelectedBoss()?.immunities?.poison,
-              }"
-            >
+              }">
               {{
                 getSelectedBoss()?.immunities?.poison
                   ? 'Immune'
@@ -477,39 +463,34 @@
               }}
             </span>
           </div>
-          <div class="defense-box">
-            <img
-              src="./assets/misc-icons/Venom_hitsplat.png"
-              title="Venom"
-            />
-            <span
-              *ngIf="getSelectedBoss()?.immunities?.venom !== undefined"
-              [ngClass]="{
+          <div class="defense-box" *ngIf="isSelectedBossVenomToPoison || getSelectedBoss()?.immunities?.venom !== undefined">
+            <img src="./assets/misc-icons/Venom_hitsplat.png"
+                 title="Venom" />
+            <span [ngClass]="{
                 'stat-value': true,
                 positive: getSelectedBoss()?.immunities?.venom,
-                negative: !getSelectedBoss()?.immunities?.venom,
-              }"
-            >
-              {{
-                getSelectedBoss()?.immunities?.venom
-                  ? 'Immune'
-                  : '❌ Not Immune'
-              }}
+                negative: !getSelectedBoss()?.immunities?.venom && !isSelectedBossVenomToPoison,
+                warning: isSelectedBossVenomToPoison
+              }">
+                        {{
+                isSelectedBossVenomToPoison
+                  ? 'Converted to Poison'
+                  : getSelectedBoss()?.immunities?.venom
+                    ? 'Immune'
+                    : '❌ Not Immune'
+                        }}
             </span>
           </div>
+
           <div class="defense-box">
-            <img
-              src="./assets/misc-icons/Cannon_barrels.png"
-              title="Cannonable"
-            />
-            <span
-              *ngIf="getSelectedBoss()?.immunities?.cannons !== undefined"
-              [ngClass]="{
+            <img src="./assets/misc-icons/Cannon_barrels.png"
+                 title="Cannonable" />
+            <span *ngIf="getSelectedBoss()?.immunities?.cannons !== undefined"
+                  [ngClass]="{
                 'stat-value': true,
                 positive: getSelectedBoss()?.immunities?.cannons,
                 negative: !getSelectedBoss()?.immunities?.cannons,
-              }"
-            >
+              }">
               {{
                 getSelectedBoss()?.immunities?.cannons
                   ? 'Immune'
@@ -518,18 +499,14 @@
             </span>
           </div>
           <div class="defense-box">
-            <img
-              src="./assets/misc-icons/Resurrect_Greater_Ghost.png"
-              title="Thralls"
-            />
-            <span
-              *ngIf="getSelectedBoss()?.immunities?.thralls !== undefined"
-              [ngClass]="{
+            <img src="./assets/misc-icons/Resurrect_Greater_Ghost.png"
+                 title="Thralls" />
+            <span *ngIf="getSelectedBoss()?.immunities?.thralls !== undefined"
+                  [ngClass]="{
                 'stat-value': true,
                 positive: getSelectedBoss()?.immunities?.thralls,
                 negative: !getSelectedBoss()?.immunities?.thralls,
-              }"
-            >
+              }">
               {{
                 getSelectedBoss()?.immunities?.thralls
                   ? 'Immune'

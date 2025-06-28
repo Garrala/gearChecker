@@ -26,7 +26,9 @@
         }
       },
       "attack_styles": [ "Magic", "Ranged", "Venom" ],
-      "attack_speed": 3,
+      "attack_speed": {
+        "ticks": 6
+      },
       "aggressive": true,
       "immunities": {
         "poison": true,
@@ -57,7 +59,9 @@
         }
       },
       "attack_styles": [ "Magic", "Ranged", "Venom" ],
-      "attack_speed": 3,
+      "attack_speed": {
+        "ticks": 6
+      },
       "aggressive": true,
       "immunities": {
         "poison": true,

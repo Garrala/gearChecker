@@ -553,6 +553,11 @@
   border-radius: 5px;
 }
 
+.stat-value.warning {
+  color: orange;
+  font-weight: bold;
+}
+
 .magic-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

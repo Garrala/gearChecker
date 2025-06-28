@@ -17,7 +17,7 @@ export interface Monster {
     max_hit: { [key: string]: number }
     weaknesses: { [key: string]: string }
     attack_styles?: string[]
-    attack_speed?: number
+    attack_speed?: number | { ticks: number, seconds?: number }
     defense: {
       melee: { stab: number; slash: number; crush: number }
       magic: number
