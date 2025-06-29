@@ -1,19 +1,18 @@
 {
-  "name": "Chaos Elemental",
+  "name": "chaos elemental",
   "category": "Wilderness Bosses",
-  "image": "assets/monster-icons/chaos_elemental.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Elemental",
+  "image": "assets/monster-icons/chaos_elemental.png",
   "bosses": [
     {
-      "name": "Chaos Elemental",
-      "image": "assets/monster-icons/chaos_elemental.png",
+      "name": "chaos elemental (elemental)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Elemental",
+      "image": "assets/monster-icons/chaos_elemental.png",
       "combat_level": 305,
       "hp": 250,
       "max_hit": {
         "magic": 28,
-        "ranged": 28,
-        "melee": 28
+        "ranged": 28
       },
       "defense": {
         "melee": {
@@ -28,49 +27,41 @@
           "thrown": 70
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Melee" ],
+      "attack_styles": [ "Magic", "Ranged" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 4,
+        "seconds": 2.4
       },
       "aggressive": true,
       "immunities": {
         "poison": true,
-        "venom": true,
-        "cannons": false,
-        "thralls": false
-      }
+        "venom": false,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
     "Ranged": {
-      "Weapon": [
-        [ "Webweaver bow", "Craw's bow" ],
-        [ "Twisted bow" ],
-        [ "Bow of Faerdhinen" ],
-        [ "Toxic blowpipe" ],
-        [ "Armadyl crossbow" ]
-      ],
-      "Shield": [
-        [ "Book of law" ],
-        [ "Unholy book" ],
-        [ "Black d'hide shield" ],
-        [ "Book of balance" ]
-      ],
       "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Any Blessed coif" ],
+        [ "Blessed coif" ],
         [ "Karil's coif" ],
         [ "Archer helm" ],
-        [ "Snakeskin bandana" ]
+        [ "Snakeskin bandana" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
-        [ "Amulet of glory" ]
+        [ "Amulet of glory" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
-        [ "Ava's accumulator", "Ardougne cloak 4" ],
+        [ "Ava's accumulator", "Ardougne cloak 4", "Webweaver", "Craw's bow" ],
         [ "Ranging cape (t)" ],
         [ "Any God vestment cloaks" ]
       ],
@@ -84,33 +75,96 @@
       "Legs": [
         [ "Any Blessed chaps" ],
         [ "Crystal legs" ],
-        [ "Black d'hide chaps" ]
+        [ "Black d'hide chaps" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Weapon": [
+        [ "Webweaver bow", "Craw's bow" ],
+        [ "Twisted bow" ],
+        [ "Bow of Faerdhinen" ],
+        [ "Toxic blowpipe" ],
+        [ "Armadyl crossbow" ]
+      ],
+      "Shield": [
+        [ "None if using a two-handed weapon" ],
+        [ "Book of law" ],
+        [ "Unholy book" ],
+        [ "Black d'hide shield" ],
+        [ "Book of balance" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3" ],
+        [ "Dragon arrows", "Amethyst arrow" ],
+        [ "Diamond bolts (e)" ],
+        [ "Broad bolts" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
         [ "Any Blessed vambraces" ],
-        [ "Black d'hide vambraces" ]
+        [ "Black d'hide vambraces" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Mixed hide boots" ],
         [ "Snakeskin boots" ],
-        [ "Fremennik sea boots 4" ]
+        [ "Fremennik sea boots 4" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Ring of suffering (i)" ],
         [ "Ring of shadows" ],
-        [ "Ring of wealth (i)", "Explorer's ring 4" ]
+        [ "Ring of wealth (i)", "Explorer's ring 4" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
-        [ "Dragon arrows", "Amethyst arrows" ],
-        [ "Diamond bolts (e)" ],
-        [ "Broad bolts" ]
-      ],
-      "Special Attack": [ "N/A" ]
+      "Special Attack": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
     },
     "Melee": {
+      "Helmet": [
+        [ "Helm of neitiznot" ],
+        [ "Verac's helm" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Amulet": [
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power", "Amulet of strength" ]
+      ],
+      "Cape": [
+        [ "Infernal cape" ],
+        [ "Mythical cape", "Fire cape" ],
+        [ "Ardougne cloak 4" ],
+        [ "Cape of Accomplishment(t)" ],
+        [ "Any God vestment cloaks" ]
+      ],
+      "Body": [
+        [ "Black d'hide body" ],
+        [ "Proselyte hauberk" ],
+        [ "Verac's brassard" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Legs": [
+        [ "Black d'hide chaps" ],
+        [ "Proselyte cuisse" ],
+        [ "Verac's plateskirt" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
       "Weapon": [
         [ "Ursine chainmace" ],
         [ "Viggora's chainmace" ],
@@ -125,62 +179,40 @@
         [ "Rune defender" ],
         [ "Unholy book" ]
       ],
-      "Special Attack": [
-        [ "Ursine chainmace" ],
-        [ "Voidwaker" ],
-        [ "Dragon claws" ],
-        [ "Dragon dagger" ],
-        [ "Crystal halberd" ]
-      ],
-      "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Helm of neitiznot" ],
-        [ "Verac's helm" ]
-      ],
-      "Amulet": [
-        [ "Amulet of rancour" ],
-        [ "Amulet of torture" ],
-        [ "Amulet of fury" ],
-        [ "Amulet of glory" ],
-        [ "Amulet of power", "Amulet of strength" ]
-      ],
-      "Cape": [
-        [ "Infernal cape" ],
-        [ "Mythical cape", "Fire cape" ],
-        [ "Ardougne cloak 4" ],
-        [ "Any Skillcape (t)" ],
-        [ "Any God vestment cloaks" ]
-      ],
-      "Body": [
-        [ "Black d'hide body" ],
-        [ "Proselyte hauberk" ],
-        [ "Verac's brassard" ]
-      ],
-      "Legs": [
-        [ "Black d'hide chaps" ],
-        [ "Proselyte cuisse" ],
-        [ "Verac's plateskirt" ]
-      ],
       "Gloves": [
         [ "Barrows gloves" ],
         [ "Rune gloves" ],
-        [ "Combat bracelet" ]
+        [ "Combat bracelet" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Dragon boots" ],
         [ "Rune boots" ],
-        [ "Climbing boots" ]
+        [ "Climbing boots" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Ultor ring", "Ring of suffering (i)" ],
         [ "Berserker ring (i)" ],
         [ "Ring of shadows" ],
-        [ "Ring of recoil", "Explorer's ring 4" ],
+        [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ],
         [ "Ring of wealth (i)" ]
       ],
+      "Special Attack": [
+        [ "Ursine chainmace" ],
+        [ "Voidwaker" ],
+        [ "Dragon claws" ],
+        [ "Dragon dagger(p)" ],
+        [ "Crystal halberd" ]
+      ],
       "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     }
   }

@@ -1,51 +1,127 @@
 {
-  "name": "Vardorvis",
+  "name": "vardorvis",
   "category": "Desert Treasure II",
-  "image": "assets/monster-icons/vardorvis.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Vardorvis",
+  "image": "assets/monster-icons/vardorvis_awakened.png",
   "bosses": [
     {
-      "name": "Vardorvis",
-      "image": "assets/monster-icons/vardorvis.png",
+      "name": "vardorvis (awakened)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Vardorvis",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "image": "assets/monster-icons/vardorvis_awakened.png",
+      "combat_level": 0,
+      "hp": 0,
+      "max_hit": {
+        "melee": 4661,
+        "axes": 96
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 215,
+          "slash": 65,
+          "crush": 85
         },
-        "magic": 200,
+        "magic": 580,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 580,
+          "bolts": 580,
+          "thrown": 580
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [ "Slash" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 5,
+        "seconds": 3
       },
-      "aggressive": true,
+      "aggressive": false,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
+        "cannons": true,
         "thralls": false
-      }
+      },
+      "weaknesses": "none"
+    },
+    {
+      "name": "vardorvis (post quest)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Vardorvis",
+      "image": "assets/monster-icons/vardorvis_post_quest.png",
+      "combat_level": 784,
+      "hp": 0,
+      "max_hit": {
+        "melee": 3243
+      },
+      "defense": {
+        "melee": {
+          "stab": 215,
+          "slash": 65,
+          "crush": 85
+        },
+        "magic": 580,
+        "ranged": {
+          "arrows": 580,
+          "bolts": 580,
+          "thrown": 580
+        }
+      },
+      "attack_styles": [ "Slash" ],
+      "attack_speed": {
+        "ticks": 5,
+        "seconds": 3
+      },
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      },
+      "weaknesses": "none"
+    },
+    {
+      "name": "vardorvis (quest)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Vardorvis",
+      "image": "assets/monster-icons/vardorvis_quest.png",
+      "combat_level": 572,
+      "hp": 0,
+      "max_hit": {
+        "melee": 3037
+      },
+      "defense": {
+        "melee": {
+          "stab": 150,
+          "slash": 25,
+          "crush": 50
+        },
+        "magic": 560,
+        "ranged": {
+          "arrows": 560,
+          "bolts": 560,
+          "thrown": 560
+        }
+      },
+      "attack_styles": [ "Slash" ],
+      "attack_speed": {
+        "ticks": 5,
+        "seconds": 3
+      },
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
     "Melee": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Oathplate helm" ],
         [ "Torva full helm" ],
         [ "Neitiznot faceguard" ],
         [ "Serpentine helm" ],
-        [ "Justiciar faceguard" ]
+        [ "Justiciar faceguard" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
@@ -59,7 +135,7 @@
         [ "Fire cape" ],
         [ "Mythical cape" ],
         [ "Ardougne cloak 4" ],
-        [ "Any Skillcape (t)" ]
+        [ "Cape of Accomplishment(t)" ]
       ],
       "Body": [
         [ "Oathplate chest" ],
@@ -92,7 +168,9 @@
       "Ammo": [
         [ "Rada's blessing 4" ],
         [ "Ghommal's lucky penny" ],
-        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Ferocious gloves" ],
@@ -112,8 +190,8 @@
         [ "Bellator ring" ],
         [ "Ultor ring" ],
         [ "Berserker ring (i)" ],
-        [ "Ring of suffering (ri)" ],
-        [ "Lightbearer" ]
+        [ "Ring of suffering (i)" ],
+        [ "Lightbearer", "Steel ring" ]
       ],
       "Special Attack": [
         [ "Dragon claws", "Burning claws" ],

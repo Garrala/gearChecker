@@ -1,45 +1,80 @@
 {
-  "name": "Nex",
+  "name": "nex",
   "category": "World Bosses",
-  "image": "assets/monster-icons/nex.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Nex",
+  "image": "assets/monster-icons/nex.png",
   "bosses": [
     {
-      "name": "Nex",
-      "image": "assets/monster-icons/nex.png",
+      "name": "nex",
       "wiki_link": "https://oldschool.runescape.wiki/w/Nex",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "image": "assets/monster-icons/nex.png",
+      "combat_level": 1,
+      "hp": 3,
+      "max_hit": {
+        "magic": 33,
+        "ranged": 60,
+        "melee": 27,
+        "smoke dash": 50,
+        "shadow smash": 50,
+        "blood sacrifice": 80,
+        "containment": 60,
+        "ice prison": 75
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 40,
+          "slash": 140,
+          "crush": 60
         },
-        "magic": 200,
+        "magic": 300,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 190,
+          "bolts": 150,
+          "thrown": 190
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [ "Magic", "Ranged", "Crush" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 4,
+        "seconds": 2.4
       },
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
-        "thralls": false
-      }
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
     "Ranged": {
+      "Helmet": [
+        [ "Armadyl helmet" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Amulet": [
+        [ "Necklace of anguish" ],
+        [ "Amulet of fury" ],
+        [ "N/A" ]
+      ],
+      "Cape": [
+        [ "Dizana's quiver" ],
+        [ "Ava's assembler" ],
+        [ "Max cape", "Ranging cape (t)" ]
+      ],
+      "Body": [
+        [ "Masori body (f)" ],
+        [ "Armadyl chestplate" ],
+        [ "Eclipse moon chestplate", "Karil's leathertop", "Ancient d'hide body" ]
+      ],
+      "Legs": [
+        [ "Masori chaps (f)" ],
+        [ "Armadyl chainskirt" ],
+        [ "Eclipse moon tassets", "Karil's leatherskirt", "Ancient chaps" ]
+      ],
       "Weapon": [
         [ "Zaryte crossbow", "Twisted bow" ],
         [ "Armadyl crossbow", "Toxic blowpipe" ],
@@ -50,72 +85,42 @@
         [ "Elysian spirit shield" ],
         [ "Dragonfire ward", "Odium ward" ]
       ],
-      "Special Attack": [
-        [ "Zaryte crossbow" ],
-        [ "Armadyl crossbow", "Voidwaker" ],
-        [ "Toxic blowpipe" ]
-      ],
-      "Helmet": [
-        [ "Masori mask (f)" ],
-        [ "Armadyl helmet" ],
-        [ "Slayer helmet (i)", "Any Blessed coif" ]
-      ],
-      "Amulet": [
-        [ "Necklace of anguish" ],
-        [ "Amulet of fury" ]
-      ],
-      "Cape": [
-        [ "Blessed Dizana's quiver", "Dizana's quiver" ],
-        [ "Ava's assembler" ],
-        [ "Max cape", "Ranging cape (t)" ]
-      ],
-      "Body": [
-        [ "Masori body (f)" ],
-        [ "Armadyl chestplate" ],
-        [ "Eclipse moon chestplate", "Karil's leathertop", "Any Blessed body" ]
-      ],
-      "Legs": [
-        [ "Masori chaps (f)" ],
-        [ "Armadyl chainskirt" ],
-        [ "Eclipse moon tassets", "Karil's leatherskirt", "Any Blessed chaps" ]
+      "Ammo": [
+        [ "Ruby dragon bolts(e)", "Dragon arrows" ],
+        [ "Ruby bolts(e)" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
-        [ "Any Blessed vambraces" ]
+        [ "Ancient bracers" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
-        [ "Any Blessed boots" ]
+        [ "Ancient d'hide boots" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Lightbearer" ],
         [ "Venator ring" ],
         [ "Archers ring (i)" ]
       ],
-      "Ammo": [
-        [ "Ruby dragon bolts (e)", "Dragon arrows" ],
-        [ "Ruby bolts (e)" ]
+      "Special Attack": [
+        [ "Zaryte crossbow" ],
+        [ "Armadyl crossbow", "Voidwaker" ],
+        [ "Toxic blowpipe" ]
       ]
     },
     "Hybrid": {
-      "Weapon": [
-        [ "Osmumten's fang" ]
-      ],
-      "Shield": [
-        [ "Avernic defender" ],
-        [ "Dragon defender" ],
-        [ "Elysian spirit shield" ]
-      ],
-      "Special Attack": [
-        [ "Zaryte crossbow" ],
-        [ "Voidwaker" ],
-        [ "Osmumten's fang" ]
-      ],
       "Helmet": [
         [ "Torva full helm" ],
         [ "Neitiznot faceguard" ],
         [ "Serpentine helm", "Eclipse moon helm" ]
+      ],
+      "Body": [
+        [ "Torva platebody" ],
+        [ "Masori body (f)" ],
+        [ "Eclipse moon chestplate" ]
       ],
       "Amulet": [
         [ "Amulet of blood fury" ],
@@ -127,19 +132,30 @@
         [ "Fire cape" ],
         [ "Max cape" ]
       ],
-      "Body": [
-        [ "Torva platebody" ],
-        [ "Masori body (f)" ],
-        [ "Eclipse moon chestplate" ]
-      ],
       "Legs": [
         [ "Torva platelegs" ],
         [ "Masori chaps (f)" ],
         [ "Eclipse moon tassets" ]
       ],
+      "Weapon": [
+        [ "Osmumten's fang" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Shield": [
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Elysian spirit shield" ]
+      ],
+      "Ammo": [
+        [ "Dragon arrows" ],
+        [ "Ruby dragon bolts(e)" ],
+        [ "N/A" ]
+      ],
       "Gloves": [
         [ "Ferocious gloves" ],
-        [ "Barrows gloves" ]
+        [ "Barrows gloves" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Primordial boots" ],
@@ -151,9 +167,10 @@
         [ "Ultor ring" ],
         [ "Brimstone ring", "Berserker ring (i)" ]
       ],
-      "Ammo": [
-        [ "Dragon arrows" ],
-        [ "Ruby dragon bolts (e)" ]
+      "Special Attack": [
+        [ "Zaryte crossbow" ],
+        [ "Voidwaker" ],
+        [ "Osmumten's fang" ]
       ]
     }
   }

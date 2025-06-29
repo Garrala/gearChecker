@@ -1,61 +1,158 @@
 {
-  "name": "The Whisperer",
+  "name": "the whisperer",
   "category": "Desert Treasure II",
-  "image": "assets/monster-icons/the_whisperer.png",
-  "wiki_link": "https://oldschool.runescape.wiki/w/The_Whisperer#Post-quest",
+  "wiki_link": "https://oldschool.runescape.wiki/w/The_Whisperer",
+  "image": "assets/monster-icons/the_whisperer_awakened.png",
   "bosses": [
     {
-      "name": "The Whisperer",
-      "image": "assets/monster-icons/the_whisperer.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/The_Whisperer#Post-quest",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "name": "the whisperer (whisperer awakened)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/The_Whisperer",
+      "image": "assets/monster-icons/the_whisperer_awakened.png",
+      "combat_level": 0,
+      "hp": 0,
+      "max_hit": {
+        "melee": 57,
+        "ranged": 53,
+        "magic": 45,
+        "screech": 70,
+        "soulsiphon": 75
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 180,
+          "slash": 300,
+          "crush": 220
         },
-        "magic": 200,
+        "magic": 10,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 300,
+          "bolts": 300,
+          "thrown": 300
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 10,
+        "seconds": 6
       },
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
+        "cannons": true,
         "thralls": false
+      },
+      "weaknesses": {
+        "earth": "60%"
+      }
+    },
+    {
+      "name": "the whisperer (whisperer post quest)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/The_Whisperer",
+      "image": "assets/monster-icons/the_whisperer_post_quest.png",
+      "combat_level": 791,
+      "hp": 0,
+      "max_hit": {
+        "melee": 42,
+        "ranged": 40,
+        "magic": 36,
+        "screech": 45,
+        "soulsiphon": 50
+      },
+      "defense": {
+        "melee": {
+          "stab": 180,
+          "slash": 300,
+          "crush": 220
+        },
+        "magic": 10,
+        "ranged": {
+          "arrows": 300,
+          "bolts": 300,
+          "thrown": 300
+        }
+      },
+      "attack_styles": [],
+      "attack_speed": {
+        "ticks": 10,
+        "seconds": 6
+      },
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      },
+      "weaknesses": {
+        "earth": "60%"
+      }
+    },
+    {
+      "name": "the whisperer (whisperer quest)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/The_Whisperer",
+      "image": "assets/monster-icons/the_whisperer_quest.png",
+      "combat_level": 587,
+      "hp": 0,
+      "max_hit": {
+        "melee": 30,
+        "ranged": 28,
+        "magic": 26,
+        "screech": 45,
+        "soulsiphon": 50
+      },
+      "defense": {
+        "melee": {
+          "stab": 180,
+          "slash": 300,
+          "crush": 220
+        },
+        "magic": 10,
+        "ranged": {
+          "arrows": 300,
+          "bolts": 300,
+          "thrown": 300
+        }
+      },
+      "attack_styles": [],
+      "attack_speed": {
+        "ticks": 10,
+        "seconds": 6
+      },
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      },
+      "weaknesses": {
+        "earth": "60%"
       }
     }
   ],
   "gear_setups": {
     "Magic": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Ancestral hat" ],
         [ "Virtus mask" ],
         [ "Ahrim's hood", "Blue moon helm", "Bloodbark helm" ],
         [ "Void mage helm" ],
-        [ "Dagon'hai hat", "Elder chaos hood" ]
+        [ "Dagon'hai hat", "Elder chaos hood" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
-        [ "Amulet of fury", "Amulet of glory" ]
+        [ "Amulet of fury", "Amulet of glory" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
-        [ "Any Imbued Any God cape" ],
+        [ "Any Imbued God cape" ],
         [ "Any God cape" ],
         [ "Ardougne cloak 4" ],
-        [ "Any Skillcape" ]
+        [ "Cape of Accomplishment" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
@@ -73,21 +170,24 @@
       ],
       "Weapon": [
         [ "Tumeken's shadow", "Venator bow" ],
-        [ "Sanguinesti staff", "Trident of the swamp" ],
-        [ "Trident of the seas" ],
         [ "Harmonised nightmare staff" ],
-        [ "Warped sceptre" ]
+        [ "Sanguinesti staff", "Trident of the swamp" ],
+        [ "Mystic smoke staff", "Twinflame staff", "Mystic earth staff" ],
+        [ "Trident of the seas", "Warped sceptre" ]
       ],
       "Shield": [
-        [ "Elidinis' ward (f)" ],
-        [ "Arcane spirit shield", "Elidinis' ward", "Tome of fire" ],
+        [ "Tome of earth", "Elidinis' ward (f)" ],
+        [ "Arcane spirit shield", "Elidinis' ward" ],
         [ "Ancient wyvern shield", "Malediction ward", "Mage's book" ],
         [ "Book of darkness" ],
         [ "Unholy book" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 4", "Rune arrow" ],
-        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Rada's blessing 4", "arrow" ],
+        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Tormented bracelet" ],
@@ -107,14 +207,15 @@
         [ "Magus ring" ],
         [ "Lightbearer" ],
         [ "Ring of the gods (i)" ],
-        [ "Ring of suffering (ri)" ],
+        [ "Ring of suffering (i)" ],
         [ "Seers ring (i)" ]
       ],
       "Special Attack": [
         [ "Eldritch nightmare staff" ],
         [ "Accursed sceptre" ],
         [ "Toxic blowpipe", "Seercull" ],
-        [ "Rune thrownaxe" ]
+        [ "Rune thrownaxe" ],
+        [ "N/A" ]
       ]
     }
   }

@@ -1,51 +1,54 @@
 {
-  "name": "Scorpia",
+  "name": "scorpia",
   "category": "Wilderness Bosses",
-  "image": "assets/monster-icons/scorpia.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Scorpia",
+  "image": "assets/monster-icons/scorpia.png",
   "bosses": [
     {
-      "name": "Scorpia",
-      "image": "assets/monster-icons/scorpia.png",
+      "name": "scorpia",
       "wiki_link": "https://oldschool.runescape.wiki/w/Scorpia",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "image": "assets/monster-icons/scorpia.png",
+      "combat_level": 225,
+      "hp": 200,
+      "max_hit": {
+        "stab": 16
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 246,
+          "slash": 284,
+          "crush": 284
         },
-        "magic": 200,
+        "magic": 44,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 284,
+          "bolts": 284,
+          "thrown": 284
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [ "Stab" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 4,
+        "seconds": 2.4
       },
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
-        "thralls": false
-      }
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
     "Magic": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
         [ "Bloodbark helm" ],
         [ "Mitre" ],
         [ "Farseer helm" ],
-        [ "Mystic hat" ]
+        [ "Mystic hat" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
@@ -55,10 +58,11 @@
         [ "Unholy symbol" ]
       ],
       "Cape": [
-        [ "Any Imbued Any God cape" ],
-        [ "Ardougne cloak" ],
-        [ "God capes" ],
-        [ "Any God vestment cloaks" ]
+        [ "Any Imbued God cape" ],
+        [ "Any God cape" ],
+        [ "Any God vestment cloaks" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Bloodbark body" ],
@@ -90,28 +94,39 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Tormented bracelet" ],
         [ "Barrows gloves", "Dragon gloves" ],
         [ "Rune gloves", "Adamant gloves" ],
-        [ "Combat bracelet" ]
+        [ "Combat bracelet" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Bloodbark boots", "Mystic boots" ],
         [ "Ghostly boots" ],
         [ "Splitbark boots" ],
-        [ "Moonclan boots" ]
+        [ "Moonclan boots" ],
+        [ "N/A" ]
       ],
       "Ring": [
-        [ "Ring of shadows (uncharged)" ],
+        [ "Ring of shadows", "(uncharged)" ],
         [ "Explorer's ring 4" ],
         [ "Beacon ring" ],
         [ "Ring of recoil" ],
         [ "Ring of wealth (i)" ]
       ],
-      "Special Attack": [ [ "N/A" ] ]
+      "Special Attack": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
     }
   }
 }

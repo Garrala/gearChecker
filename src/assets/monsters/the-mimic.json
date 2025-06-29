@@ -1,41 +1,43 @@
 {
-  "name": "The Mimic",
+  "name": "the mimic",
   "category": "Sporadic Bosses",
-  "image": "assets/monster-icons/the_mimic.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/The_Mimic",
+  "image": "assets/monster-icons/the_mimic.png",
   "bosses": [
     {
-      "name": "The Mimic",
-      "image": "assets/monster-icons/the_mimic.png",
+      "name": "the mimic (mimic)",
       "wiki_link": "https://oldschool.runescape.wiki/w/The_Mimic",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "image": "assets/monster-icons/the_mimic.png",
+      "combat_level": 186,
+      "hp": 230,
+      "max_hit": {
+        "crush": 23,
+        "magic": 23
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 160,
+          "slash": 165,
+          "crush": 150
         },
-        "magic": 200,
+        "magic": 30,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 145,
+          "bolts": 145,
+          "thrown": 145
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [ "Crush", "Magic" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 3,
+        "seconds": 1.8
       },
-      "aggressive": true,
+      "aggressive": false,
       "immunities": {
         "poison": true,
-        "venom": true,
-        "cannons": false,
-        "thralls": false
-      }
+        "venom": true
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
@@ -43,7 +45,7 @@
       "Helmet": [
         [ "Ancestral hat" ],
         [ "Virtus mask" ],
-        [ "Void mage helm" ],
+        [ "Void mage helm", "Void Knight equipment" ],
         [ "Ahrim's hood" ],
         [ "Infinity hat" ]
       ],
@@ -55,8 +57,8 @@
         [ "Amulet of power" ]
       ],
       "Cape": [
-        [ "Any Imbued Any God cape" ],
-        [ "God capes" ],
+        [ "Any Imbued God cape" ],
+        [ "Any God cape" ],
         [ "Ardougne cloak 4" ],
         [ "Ardougne cloak 3" ],
         [ "Ardougne cloak 2" ]
@@ -64,14 +66,14 @@
       "Body": [
         [ "Ancestral robe top" ],
         [ "Virtus robe top" ],
-        [ "Elite void top", "Void knight top" ],
+        [ "Elite void top", "Void knight top", "Void Knight equipment" ],
         [ "Ahrim's robetop" ],
         [ "Infinity top" ]
       ],
       "Legs": [
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ],
-        [ "Elite void robe", "Void knight robe" ],
+        [ "Elite void robe", "Void knight robe", "Void Knight equipment" ],
         [ "Ahrim's robeskirt" ],
         [ "Infinity bottoms" ]
       ],
@@ -79,7 +81,8 @@
         [ "Tumeken's shadow" ],
         [ "Sanguinesti staff" ],
         [ "Trident of the swamp" ],
-        [ "Trident of the seas" ]
+        [ "Trident of the seas" ],
+        [ "N/A" ]
       ],
       "Shield": [
         [ "Elidinis' ward (f)" ],
@@ -90,11 +93,14 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 2 or 3", "Any God blessing" ]
+        [ "Rada's blessing 2 or 3", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Tormented bracelet" ],
-        [ "Void knight gloves" ],
+        [ "Void knight gloves", "Void Knight equipment" ],
         [ "Barrows gloves" ],
         [ "Dragon gloves" ],
         [ "Rune gloves" ]
@@ -110,54 +116,58 @@
         [ "Magus ring" ],
         [ "Seers ring (i)" ],
         [ "Brimstone ring" ],
-        [ "Ring of suffering (ri)" ],
+        [ "Ring of suffering (i)" ],
         [ "Lunar ring", "Ring of the gods (i)" ]
       ],
       "Special Attack": [
         [ "Voidwaker" ],
         [ "Dragon claws" ],
-        [ "Dragon dagger(p++)" ]
+        [ "Dragon dagger(p)" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     },
     "Ranged": {
       "Helmet": [
-        [ "Masori mask (f)" ],
         [ "Armadyl helmet", "Crystal helm" ],
-        [ "Void ranger helm" ],
-        [ "Any Blessed coif" ],
-        [ "Archer helm" ]
+        [ "Void ranger helm", "Void Knight equipment" ],
+        [ "Blessed coif" ],
+        [ "Archer helm" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
         [ "Amulet of fury" ],
-        [ "Amulet of glory" ]
+        [ "Amulet of glory" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
         [ "Ava's accumulator" ],
-        [ "Ranging cape(t)" ],
-        [ "Ava's attractor" ]
+        [ "Ranging cape (t)", "Ava's attractor" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
         [ "Armadyl chestplate", "Crystal body" ],
-        [ "Elite void top", "Void knight top" ],
+        [ "Elite void top", "Void knight top", "Void Knight equipment" ],
         [ "Karil's leathertop" ],
         [ "Any Blessed body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Armadyl chainskirt", "Crystal legs" ],
-        [ "Elite void robe", "Void knight robe" ],
+        [ "Elite void robe", "Void knight robe", "Void Knight equipment" ],
         [ "Karil's leatherskirt" ],
         [ "Any Blessed chaps" ]
       ],
       "Weapon": [
-        [ "Twisted bow" ],
-        [ "Toxic blowpipe" ],
+        [ "Twisted bow", "rune", "arrows" ],
+        [ "Toxic blowpipe", "amethyst", "darts" ],
         [ "Bow of Faerdhinen" ],
-        [ "Toxic blowpipe" ],
+        [ "Toxic blowpipe", "adamant", "darts" ],
         [ "Zaryte crossbow", "Armadyl crossbow", "Dragon crossbow", "Rune crossbow" ]
       ],
       "Shield": [
@@ -168,14 +178,16 @@
         [ "Unholy book" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Amethyst arrows", "Rune arrows" ],
-        [ "Rada's blessing 4", "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
-        [ "Diamond dragon bolts (e)", "Diamond bolts (e)" ]
+        [ "Dragon arrows", "Amethyst arrow", "Rune arrow" ],
+        [ "Rada's blessing 4", "Rada's blessing 2 or 3", "Any God blessing" ],
+        [ "Diamond dragon bolts (e)", "Diamond bolts(e)" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
-        [ "Void knight gloves" ],
+        [ "Void knight gloves", "Void Knight equipment" ],
         [ "Ranger gloves" ],
         [ "Any Blessed vambraces" ]
       ],
@@ -189,14 +201,16 @@
       "Ring": [
         [ "Venator ring" ],
         [ "Archers ring (i)" ],
-        [ "Ring of suffering (ri)", "Ring of shadows" ],
+        [ "Ring of suffering (i)", "Ring of shadows" ],
         [ "Brimstone ring" ],
         [ "Ring of the gods (i)" ]
       ],
       "Special Attack": [
         [ "Voidwaker" ],
         [ "Dragon claws" ],
-        [ "Dragon dagger(p++)" ]
+        [ "Dragon dagger(p)" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     }
   }

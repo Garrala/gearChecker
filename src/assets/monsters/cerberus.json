@@ -1,22 +1,19 @@
 {
-  "name": "Cerberus",
+  "name": "cerberus",
   "category": "Slayer Bosses",
-  "image": "assets/monster-icons/cerberus.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Cerberus",
+  "image": "assets/monster-icons/cerberus.png",
   "bosses": [
     {
-      "name": "Cerberus",
-      "image": "assets/monster-icons/cerberus.png",
+      "name": "cerberus",
       "wiki_link": "https://oldschool.runescape.wiki/w/Cerberus",
+      "image": "assets/monster-icons/cerberus.png",
       "combat_level": 318,
       "hp": 600,
       "max_hit": {
-        "melee": 23,
+        "stab": 23,
         "ranged": 23,
         "magic": 23
-      },
-      "weaknesses": {
-        "water": "40%"
       },
       "defense": {
         "melee": {
@@ -31,125 +28,45 @@
           "thrown": 100
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Melee" ],
+      "attack_styles": [ "Stab", "Ranged", "Magic" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 6,
+        "seconds": 3.6
       },
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
-        "thralls": false
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": {
+        "water": "40%"
       }
     }
   ],
   "gear_setups": {
-    "Melee": {
-      "Weapon": [
-        [ "Scythe of Vitur", "Emberlight" ],
-        [ "Soulreaper axe", "Inquisitor's mace" ],
-        [ "Osmumten's fang" ],
-        [ "Arclight", "Abyssal bludgeon" ],
-        [ "Ghrazi rapier" ]
-      ],
-      "Shield": [
-        [ "Avernic defender", "Spectral spirit shield" ],
-        [ "Dragon defender" ],
-        [ "Dragonfire shield" ],
-        [ "Rune defender" ]
-      ],
-      "Special Attack": [
-        [ "Dragon claws", "Elder maul" ],
-        [ "Voidwaker" ],
-        [ "Burning claws" ],
-        [ "Dragon warhammer", "Bandos godsword" ],
-        [ "Emberlight", "Saradomin godsword", "Dragon dagger" ]
-      ],
-      "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Black mask (i)" ]
-      ],
-      "Amulet": [
-        [ "Amulet of rancour" ],
-        [ "Amulet of torture" ],
-        [ "Amulet of blood fury" ],
-        [ "Amulet of fury" ],
-        [ "Amulet of glory" ]
-      ],
-      "Cape": [
-        [ "Infernal cape" ],
-        [ "Fire cape" ],
-        [ "Ardougne cloak 4" ],
-        [ "Ardougne cloak 3" ],
-        [ "Mythical cape" ]
-      ],
-      "Body": [
-        [ "Inquisitor's hauberk" ],
-        [ "Torva platebody" ],
-        [ "Oathplate chest", "Bandos chestplate" ],
-        [ "Justiciar chestguard", "Fighter torso" ],
-        [ "Any Barrows tank body" ]
-      ],
-      "Legs": [
-        [ "Inquisitor's plateskirt" ],
-        [ "Torva platelegs" ],
-        [ "Oathplate legs", "Bandos tassets" ],
-        [ "Justiciar legguards" ],
-        [ "Any Barrows tank legs" ]
-      ],
-      "Gloves": [
-        [ "Ferocious gloves" ],
-        [ "Barrows gloves" ],
-        [ "Dragon gloves" ],
-        [ "Rune gloves" ]
-      ],
-      "Boots": [
-        [ "Primordial boots" ],
-        [ "Echo boots" ],
-        [ "Guardian boots" ],
-        [ "Dragon boots" ],
-        [ "Rune boots" ]
-      ],
-      "Ring": [
-        [ "Ultor ring" ],
-        [ "Berserker ring (i)" ],
-        [ "Brimstone ring" ],
-        [ "Lightbearer" ],
-        [ "Ring of suffering (i)", "Ring of the gods (i)" ]
-      ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
-      ]
-    },
     "Ranged": {
-      "Weapon": [
-        [ "Twisted bow" ],
-        [ "Scorching bow", "Toxic blowpipe" ],
-        [ "Bow of Faerdhinen" ],
-        [ "Zaryte crossbow" ]
-      ],
-      "Special Attack": [
-        [ "Zaryte crossbow" ],
-        [ "Toxic blowpipe", "Tonalztics of ralos" ],
-        [ "Saradomin godsword" ]
-      ],
       "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Black mask (i)" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
-        [ "Amulet of power" ]
+        [ "Amulet of power" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
         [ "Ranging cape", "Max cape" ],
-        [ "Ava's accumulator" ]
+        [ "Ava's accumulator" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
@@ -165,6 +82,20 @@
         [ "Any Blessed chaps" ],
         [ "Karil's leatherskirt" ]
       ],
+      "Weapon": [
+        [ "Twisted bow" ],
+        [ "Scorching bow", "Toxic blowpipe" ],
+        [ "Bow of Faerdhinen" ],
+        [ "Zaryte crossbow" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Dragon arrows" ],
+        [ "Amethyst arrows" ],
+        [ "Rune arrows" ],
+        [ "Ruby dragon bolts", "Diamond dragon bolts" ],
+        [ "Rada's blessing 4" ]
+      ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
@@ -176,7 +107,7 @@
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
         [ "Any Blessed boots" ],
-        [ "Shayzien boots (5)" ],
+        [ "Shayzien boots(5)" ],
         [ "Snakeskin boots" ]
       ],
       "Ring": [
@@ -186,14 +117,20 @@
         [ "Archers ring (i)" ],
         [ "Ring of the gods (i)" ]
       ],
-      "Ammo": [
-        [ "Dragon arrows" ],
-        [ "Amethyst arrows" ],
-        [ "Rune arrows" ],
-        [ "Ruby dragon bolts (e)", "Diamond dragon bolts (e)" ],
-        [ "Rada's blessing 4" ]
+      "Special Attack": [
+        [ "Zaryte crossbow" ],
+        [ "Toxic blowpipe", "Tonalztics of ralos" ],
+        [ "Saradomin godsword" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
-      "Shield": [ "N/A" ]
+      "Shield": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
     }
   }
 }

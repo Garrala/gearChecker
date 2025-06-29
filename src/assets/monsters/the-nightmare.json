@@ -1,66 +1,49 @@
 {
-  "name": "The Nightmare",
+  "name": "the nightmare",
   "category": "Instanced Bosses",
+  "wiki_link": "https://oldschool.runescape.wiki/w/The_Nightmare",
   "image": "assets/monster-icons/the_nightmare.png",
-  "wiki_link": "https://oldschool.runescape.wiki/w/The_Nightmare#Active",
   "bosses": [
     {
-      "name": "The Nightmare",
+      "name": "the nightmare (nightmare)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/The_Nightmare",
       "image": "assets/monster-icons/the_nightmare.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/The_Nightmare#Active",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "combat_level": 814,
+      "hp": 2,
+      "max_hit": {
+        "melee": 60,
+        "ranged and magic": 39
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 120,
+          "slash": 180,
+          "crush": 40
         },
-        "magic": 200,
+        "magic": 600,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 600,
+          "bolts": 600,
+          "thrown": 600
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [ "Slash", "Ranged", "Magic" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 6,
+        "seconds": 3.6
       },
-      "aggressive": true,
+      "aggressive": false,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
-        "thralls": false
-      }
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
     "Melee": {
-      "Weapon": [
-        [ "Scythe of Vitur", "Inquisitor's mace" ],
-        [ "Soulreaper axe" ],
-        [ "Abyssal bludgeon" ],
-        [ "Dual macuahuitl", "Ursine chainmace (u)", "Sarachnis cudgel" ],
-        [ "Zombie axe", "Zamorakian hasta" ]
-      ],
-      "Special Attack": [
-        [ "Elder maul", "Saradomin godsword" ],
-        [ "Dragon warhammer" ],
-        [ "Bandos godsword" ],
-        [ "Dragon claws" ],
-        [ "Dragon mace" ]
-      ],
-      "Shield": [
-        [ "Avernic defender" ],
-        [ "Dragon defender" ],
-        [ "Rune defender" ],
-        [ "Dragonfire shield" ],
-        [ "Toktz-ket-xil" ]
-      ],
       "Helmet": [
         [ "Inquisitor's great helm" ],
         [ "Torva full helm" ],
@@ -79,7 +62,8 @@
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Mythical cape" ],
-        [ "Obsidian cape" ]
+        [ "Obsidian cape" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Inquisitor's hauberk" ],
@@ -95,17 +79,40 @@
         [ "Blood moon tassets" ],
         [ "Obsidian platelegs" ]
       ],
+      "Weapon": [
+        [ "Scythe of Vitur", "Inquisitor's mace" ],
+        [ "Soulreaper axe" ],
+        [ "Abyssal bludgeon" ],
+        [ "Dual macuahuitl", "Ursine chainmace(u)", "Sarachnis cudgel" ],
+        [ "Zombie axe", "Zamorakian hasta" ]
+      ],
+      "Shield": [
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Rune defender" ],
+        [ "Dragonfire shield" ],
+        [ "Toktz-ket-xil" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3" ],
+        [ "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
       "Gloves": [
         [ "Ferocious gloves" ],
         [ "Barrows gloves" ],
         [ "Granite gloves" ],
-        [ "Combat bracelet" ]
+        [ "Combat bracelet" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Primordial boots" ],
         [ "Dragon boots" ],
         [ "Echo boots" ],
-        [ "Guardian boots" ]
+        [ "Guardian boots" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
@@ -114,13 +121,50 @@
         [ "Tyrannical ring (i)", "Ring of shadows" ],
         [ "Ring of suffering (i)" ]
       ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3" ],
-        [ "Any God blessing" ]
+      "Special Attack": [
+        [ "Elder maul", "Saradomin godsword" ],
+        [ "Dragon warhammer" ],
+        [ "Bandos godsword" ],
+        [ "Dragon claws" ],
+        [ "Dragon mace" ]
       ]
     },
     "Mage": {
+      "Helmet": [
+        [ "Ancestral hat" ],
+        [ "Virtus mask" ],
+        [ "Ahrim's hood" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Amulet": [
+        [ "Occult necklace" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Cape": [
+        [ "Any Imbued God cape" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Body": [
+        [ "Ancestral robe top" ],
+        [ "Virtus robe top" ],
+        [ "Ahrim's robetop" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Legs": [
+        [ "Ancestral robe bottom" ],
+        [ "Virtus robe bottom" ],
+        [ "Ahrim's robeskirt" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
       "Weapon": [
         [ "Tumeken's shadow", "Harmonised nightmare staff" ],
         [ "Sanguinesti staff" ],
@@ -135,40 +179,78 @@
         [ "Arcane spirit shield", "Elidinis' ward" ],
         [ "Mage's book", "Ancient wyvern shield", "Malediction ward" ]
       ],
-      "Special Attack": [ "N/A" ],
-      "Helmet": [
-        [ "Ancestral hat" ],
-        [ "Virtus mask" ],
-        [ "Ahrim's hood" ]
-      ],
-      "Amulet": [
-        [ "Occult necklace" ]
-      ],
-      "Cape": [
-        [ "Any Imbued Any God cape" ]
-      ],
-      "Body": [
-        [ "Ancestral robe top" ],
-        [ "Virtus robe top" ],
-        [ "Ahrim's robetop" ]
-      ],
-      "Legs": [
-        [ "Ancestral robe bottom" ],
-        [ "Virtus robe bottom" ],
-        [ "Ahrim's robeskirt" ]
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
-        [ "Tormented bracelet" ]
+        [ "Tormented bracelet" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
-        [ "Eternal boots" ]
+        [ "Eternal boots" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Magus ring" ],
-        [ "Lightbearer" ]
+        [ "Lightbearer" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Special Attack": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
+    },
+    "Solo": {
+      "Helmet": [
+        [ "N/A" ]
+      ],
+      "Amulet": [
+        [ "N/A" ]
+      ],
+      "Cape": [
+        [ "N/A" ]
+      ],
+      "Body": [
+        [ "N/A" ]
+      ],
+      "Legs": [
+        [ "N/A" ]
+      ],
+      "Gloves": [
+        [ "N/A" ]
+      ],
+      "Boots": [
+        [ "N/A" ]
+      ],
+      "Ring": [
+        [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 4" ]
+        [ "N/A" ]
+      ],
+      "Shield": [
+        [ "N/A" ]
+      ],
+      "Weapon": [
+        [ "N/A" ]
+      ],
+      "Special Attack": [
+        [ "N/A" ]
       ]
     }
   }

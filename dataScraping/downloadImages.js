@@ -4,7 +4,14 @@ const https = require('https');
 
 // List your rogue URLs here
 const imageUrls = [
-  'https://oldschool.runescape.wiki/images/Granite_ring_%28i%29.png?99c22'
+  'https://oldschool.runescape.wiki/images/Phantom_Muspah_%28melee%29.png?4b33c',
+  'https://oldschool.runescape.wiki/images/Phantom_Muspah_%28teleporting%29.png?e2be4',
+  'https://oldschool.runescape.wiki/images/Phantom_Muspah_%28shielded%29.png?9cf6a',
+  'https://oldschool.runescape.wiki/images/Phantom_Muspah_%28ranged%29.png?9cf6a',
+  'https://oldschool.runescape.wiki/images/The_Hueycoatl.png?7b216',
+  'https://oldschool.runescape.wiki/images/Hueycoatl_body.png?1e662',
+  'https://oldschool.runescape.wiki/images/Hueycoatl_tail.png?7b216'
+
   // Add more rogue links here
 ];
 

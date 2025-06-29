@@ -1,33 +1,36 @@
 {
-  "name": "Vet'ion",
+  "name": "vetion",
   "category": "Wilderness Bosses",
-  "image": "assets/monster-icons/vet_ion.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Vet%27ion",
+  "image": "assets/monster-icons/vetion_enraged.png",
   "bosses": [
     {
-      "name": "Vet'ion",
-      "image": "assets/monster-icons/vet_ion.png",
+      "name": "vetion (enraged)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Vet%27ion",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "image": "assets/monster-icons/vetion_enraged.png",
+      "combat_level": 454,
+      "hp": 0,
+      "max_hit": {
+        "slash": 44,
+        "magic": 44
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
         },
-        "magic": 200,
+        "magic": 250,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 270,
+          "bolts": 270,
+          "thrown": 270
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [ "Slash", "Magic" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 5,
+        "seconds": 3
       },
       "aggressive": true,
       "immunities": {
@@ -35,39 +38,45 @@
         "venom": true,
         "cannons": false,
         "thralls": false
-      }
+      },
+      "weaknesses": "none"
     },
     {
-      "name": "Vet'ion (Enraged)",
-      "image": "assets/monster-icons/cal_varion__enraged_.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Vet%27ion#Enraged",
-      "combat_level": 264,
-      "hp": 150,
+      "name": "vetion (normal)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Vet%27ion",
+      "image": "assets/monster-icons/vetion_normal.png",
+      "combat_level": 454,
+      "hp": 0,
       "max_hit": {
-        "melee": 26
+        "slash": 44,
+        "magic": 44
       },
       "defense": {
         "melee": {
-          "stab": 130,
-          "slash": 128,
-          "crush": -10
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
         },
-        "magic": 198,
+        "magic": 250,
         "ranged": {
-          "arrows": 211,
-          "bolts": 211,
-          "thrown": 211
+          "arrows": 270,
+          "bolts": 270,
+          "thrown": 270
         }
       },
-      "attack_styles": [ "Melee", "Magic" ],
-      "attack_speed": 6,
+      "attack_styles": [ "Slash", "Magic" ],
+      "attack_speed": {
+        "ticks": 6,
+        "seconds": 3.6
+      },
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
         "cannons": false,
         "thralls": false
-      }
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
@@ -75,25 +84,37 @@
       "Helmet": [
         [ "Helm of neitiznot" ],
         [ "Berserker helm" ],
-        [ "Dwarven helmet" ]
+        [ "Dwarven helmet" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
-        [ "Salve amulet (e)" ],
+        [ "Salve amulet(e)" ],
         [ "Salve amulet" ],
         [ "Amulet of strength" ],
         [ "Amulet of glory" ],
         [ "Amulet of power" ]
       ],
       "Cape": [
-        [ "Infernal cape", "Fire cape" ],
+        [
+          "Infernal cape",
+          "",
+          "Fire cape"
+        ],
         [ "Mythical cape" ],
         [ "Mixed hide cape" ],
-        [ "Any Skillcape" ],
+        [ "Cape of Accomplishment" ],
         [ "Ardougne cloak 4" ]
       ],
       "Body": [
-        [ "Fighter torso" ],
-        [ "Mixed hide top" ],
+        [
+          "Fighter torso",
+          ""
+        ],
+        [
+          "Mixed hide top",
+          ""
+        ],
         [ "Black d'hide body" ],
         [ "Proselyte hauberk" ],
         [ "Monk's robe top" ]
@@ -101,7 +122,9 @@
       "Legs": [
         [ "Black d'hide chaps" ],
         [ "Proselyte cuisse", "Proselyte tasset" ],
-        [ "Monk's robe" ]
+        [ "Monk's robe" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Weapon": [
         [ "Ursine chainmace", "Viggora's chainmace" ],
@@ -111,20 +134,31 @@
         [ "Leaf-bladed battleaxe", "Dragon mace" ]
       ],
       "Shield": [
-        [ "Avernic defender" ],
-        [ "Dragon defender" ],
+        [
+          "Avernic defender",
+          ""
+        ],
+        [
+          "Dragon defender",
+          ""
+        ],
         [ "Dragonfire shield" ],
         [ "Rune defender", "Toktz-ket-xil" ],
         [ "Book of war", "Falador shield 4" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
         [ "Rune gloves" ],
-        [ "Combat bracelet" ]
+        [ "Combat bracelet" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Dragon boots" ],
@@ -137,13 +171,27 @@
         [ "Ultor ring" ],
         [ "Berserker ring (i)" ],
         [ "Ring of shadows" ],
-        [ "Ring of wealth (i)" ],
+        [
+          "Ring of wealth (i)",
+          ""
+        ],
         [ "Explorer's ring 4" ]
       ],
       "Special Attack": [
-        [ "Elder maul" ],
-        [ "Abyssal bludgeon" ],
-        [ "Dragon mace" ]
+        [
+          "Elder maul",
+          ""
+        ],
+        [
+          "Abyssal bludgeon",
+          ""
+        ],
+        [
+          "Dragon mace",
+          ""
+        ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     }
   }

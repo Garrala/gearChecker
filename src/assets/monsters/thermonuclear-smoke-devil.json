@@ -1,90 +1,118 @@
 {
-  "name": "Thermonuclear Smoke Devil",
+  "name": "thermonuclear smoke devil",
   "category": "Slayer Bosses",
-  "image": "assets/monster-icons/thermonuclear_smoke_devil.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Thermonuclear_smoke_devil",
+  "image": "assets/monster-icons/thermonuclear_smoke_devil.png",
   "bosses": [
     {
-      "name": "Thermonuclear Smoke Devil",
-      "image": "assets/monster-icons/thermonuclear_smoke_devil.png",
+      "name": "thermonuclear smoke devil (smoke devil)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Thermonuclear_smoke_devil",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "image": "assets/monster-icons/thermonuclear_smoke_devil.png",
+      "combat_level": 301,
+      "hp": 240,
+      "max_hit": {},
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 11,
+          "slash": 4,
+          "crush": 9
         },
-        "magic": 200,
+        "magic": 800,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 900,
+          "bolts": 900,
+          "thrown": 900
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 2,
+        "seconds": 1.2
       },
-      "aggressive": true,
+      "aggressive": false,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
-        "thralls": false
-      }
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
     "Magic": {
-      "Weapon": [
-        [ "Tumeken's shadow" ],
-        [ "Harmonised nightmare staff" ],
-        [ "Sanguinesti staff" ],
-        [ "Trident of the swamp" ],
-        [ "Kodai wand", "Nightmare staff" ]
-      ],
-      "Shield": [
-        [ "Elidinis' ward (f)", "Tome of fire" ],
-        [ "Arcane spirit shield" ],
-        [ "Ancient wyvern shield" ],
-        [ "Malediction ward", "Mage's book" ],
-        [ "Book of darkness" ]
-      ],
-      "Special Attack": [ "N/A" ],
       "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Facemask" ]
+        [ "Facemask" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
-        [ "Amulet of magic" ]
+        [ "Amulet of magic" ],
+        [ "N/A" ]
       ],
       "Cape": [
-        [ "Any Imbued Any God cape" ],
-        [ "God capes" ],
+        [ "Any Imbued God cape" ],
+        [ "Any God cape" ],
         [ "Ardougne cloak 4" ],
         [ "Ardougne cloak 3" ],
         [ "Ardougne cloak 2" ]
       ],
       "Body": [
-        [ "Virtus robe top" ],
+        [
+          "Virtus robe top",
+          ""
+        ],
         [ "Ancestral robe top" ],
         [ "Ahrim's robetop" ],
         [ "Dagon'hai robe top" ],
         [ "Infinity top" ]
       ],
       "Legs": [
-        [ "Virtus robe bottom" ],
+        [
+          "Virtus robe bottom",
+          ""
+        ],
         [ "Ancestral robe bottom" ],
         [ "Ahrim's robeskirt" ],
         [ "Dagon'hai robe bottom" ],
         [ "Infinity bottoms" ]
+      ],
+      "Weapon": [
+        [ "Tumeken's shadow" ],
+        [
+          "Harmonised nightmare staff",
+          ""
+        ],
+        [ "Sanguinesti staff" ],
+        [ "Trident of the swamp" ],
+        [
+          "Kodai wand",
+          "Nightmare staff",
+          ""
+        ]
+      ],
+      "Shield": [
+        [
+          "Elidinis' ward (f)",
+          "Tome of fire",
+          ""
+        ],
+        [ "Arcane spirit shield" ],
+        [ "Ancient wyvern shield" ],
+        [ "Malediction ward", "Mage's book" ],
+        [ "Book of darkness" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Tormented bracelet" ],
@@ -102,39 +130,26 @@
       ],
       "Ring": [
         [ "Magus ring" ],
-        [ "Ring of suffering (ri)" ],
+        [ "Ring of suffering (i)" ],
         [ "Brimstone ring" ],
         [ "Seers ring (i)" ],
-        [ "Ring of shadows", "Ring of shadows (uncharged)" ]
+        [ "Ring of shadows", "(uncharged)" ]
       ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+      "Special Attack": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     },
     "Melee": {
-      "Weapon": [
-        [ "Scythe of Vitur" ],
-        [ "Soulreaper axe" ],
-        [ "Osmumten's fang", "Blade of Saeldor" ],
-        [ "Noxious halberd", "Inquisitor's mace" ],
-        [ "Abyssal tentacle" ]
-      ],
-      "Special Attack": [
-        [ "Dragon claws", "Burning claws" ],
-        [ "Elder maul" ],
-        [ "Dragon dagger" ],
-        [ "Osmumten's fang" ],
-        [ "Saradomin godsword" ]
-      ],
-      "Shield": [
-        [ "Avernic defender" ],
-        [ "Dragon defender" ],
-        [ "Rune defender" ]
-      ],
       "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Facemask" ]
+        [ "Facemask" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
@@ -151,18 +166,55 @@
         [ "Ardougne cloak 3" ]
       ],
       "Body": [
-        [ "Torva platebody", "Oathplate chest" ],
-        [ "Inquisitor's hauberk", "Blood moon chestplate" ],
+        [
+          "Torva platebody",
+          "Oathplate chest",
+          ""
+        ],
+        [
+          "Inquisitor's hauberk",
+          "",
+          "Blood moon chestplate"
+        ],
         [ "Bandos chestplate" ],
         [ "Masori body (f)" ],
         [ "Karil's leathertop" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
-        [ "Torva platelegs", "Oathplate legs" ],
-        [ "Inquisitor's plateskirt", "Blood moon tassets" ],
+        [
+          "Torva platelegs",
+          "Oathplate legs",
+          ""
+        ],
+        [
+          "Inquisitor's plateskirt",
+          "",
+          "Blood moon tassets"
+        ],
         [ "Karil's leatherskirt" ],
         [ "Elite void robe" ]
+      ],
+      "Weapon": [
+        [ "Scythe of Vitur" ],
+        [ "Soulreaper axe" ],
+        [ "Osmumten's fang", "Blade of Saeldor" ],
+        [ "Noxious halberd", "Inquisitor's mace" ],
+        [ "Abyssal tentacle" ]
+      ],
+      "Shield": [
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Rune defender" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Ferocious gloves" ],
@@ -179,15 +231,21 @@
         [ "Granite boots" ]
       ],
       "Ring": [
-        [ "Bellator ring" ],
+        [
+          "Bellator ring",
+          ""
+        ],
         [ "Ultor ring" ],
         [ "Berserker ring (i)" ],
-        [ "Ring of suffering (ri)" ],
+        [ "Ring of suffering (i)" ],
         [ "Lightbearer" ]
       ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+      "Special Attack": [
+        [ "Dragon claws", "Burning claws" ],
+        [ "Elder maul" ],
+        [ "Dragon dagger" ],
+        [ "Osmumten's fang" ],
+        [ "Saradomin godsword" ]
       ]
     }
   }
