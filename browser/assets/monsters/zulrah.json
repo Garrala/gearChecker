@@ -1,26 +1,57 @@
 {
-  "name": "Zulrah",
+  "name": "zulrah",
   "category": "Instanced Bosses",
-  "image": "assets/monster-icons/zulrah.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
+  "image": "assets/monster-icons/zulrah_magma.png",
   "bosses": [
     {
-      "name": "Zulrah (Serpentine)",
-      "image": "assets/monster-icons/zulrah.png",
+      "name": "zulrah (magma)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
+      "image": "assets/monster-icons/zulrah_magma.png",
       "combat_level": 725,
-      "hp": 500,
+      "hp": 0,
+      "max_hit": {},
+      "defense": {
+        "melee": {
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
+        },
+        "magic": 0,
+        "ranged": {
+          "arrows": 300,
+          "bolts": 300,
+          "thrown": 300
+        }
+      },
+      "attack_styles": [],
+      "attack_speed": {
+        "ticks": 3,
+        "seconds": 1.8
+      },
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": false,
+        "thralls": false
+      },
+      "weaknesses": "none"
+    },
+    {
+      "name": "zulrah (serpentine)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
+      "image": "assets/monster-icons/zulrah_serpentine.png",
+      "combat_level": 725,
+      "hp": 0,
       "max_hit": {
         "ranged": 41
       },
-      "weaknesses": {
-        "fire": "50%"
-      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
         },
         "magic": -45,
         "ranged": {
@@ -29,9 +60,10 @@
           "thrown": 50
         }
       },
-      "attack_styles": [ "Ranged", "Venom" ],
+      "attack_styles": [ "Ranged" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 3,
+        "seconds": 1.8
       },
       "aggressive": true,
       "immunities": {
@@ -39,19 +71,20 @@
         "venom": true,
         "cannons": false,
         "thralls": false
-      }
-    },
-    {
-      "name": "Zulrah (Magma)",
-      "image": "assets/monster-icons/zulrah__magma_.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": {
-        "typeless": 30
       },
       "weaknesses": {
         "fire": "50%"
+      }
+    },
+    {
+      "name": "zulrah (tanzanite)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
+      "image": "assets/monster-icons/zulrah_tanzanite.png",
+      "combat_level": 725,
+      "hp": 0,
+      "max_hit": {
+        "magic": 41,
+        "ranged": 41
       },
       "defense": {
         "melee": {
@@ -66,75 +99,31 @@
           "thrown": 0
         }
       },
-      "attack_styles": [ "Typeless", "Venom" ],
-      "attack_speed": 3,
+      "attack_styles": [ "Magic", "Ranged" ],
+      "attack_speed": {
+        "ticks": 3,
+        "seconds": 1.8
+      },
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
         "cannons": false,
         "thralls": false
-      }
-    },
-    {
-      "name": "Zulrah (Tanzanite)",
-      "image": "assets/monster-icons/zulrah__tanzanite_.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": {
-        "magic": 41,
-        "ranged": 41
       },
       "weaknesses": {
         "fire": "50%"
-      },
-      "defense": {
-        "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
-        },
-        "magic": -45,
-        "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
-        }
-      },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
-      "attack_speed": 3,
-      "aggressive": true,
-      "immunities": {
-        "poison": true,
-        "venom": true,
-        "cannons": false,
-        "thralls": false
       }
     }
   ],
   "gear_setups": {
     "Magic": {
-      "Weapon": [
-        [ "Tumeken's shadow", "Harmonised nightmare staff" ],
-        [ "Sanguinesti staff", "Staff of the dead" ],
-        [ "Trident of the swamp", "Smoke battlestaff" ],
-        [ "Ahrim's staff", "Trident of the seas" ],
-        [ "Iban's staff", "Warped sceptre" ]
-      ],
-      "Shield": [
-        [ "Tome of fire (Searing pages)", "Elidinis' ward (f)" ],
-        [ "Tome of fire (Burnt pages)", "Arcane spirit shield" ],
-        [ "Elidinis' ward", "Mage's book" ],
-        [ "Ancient wyvern shield", "Malediction ward" ],
-        [ "Book of the dead", "Book of darkness" ]
-      ],
       "Helmet": [
-        [ "Slayer helmet (i)", "Ancestral hat" ],
         [ "Virtus mask" ],
         [ "Serpentine helm", "Ahrim's hood", "Blue moon helm" ],
         [ "Infinity hat", "Bloodbark helm" ],
-        [ "Void mage helm", "Mystic hat" ]
+        [ "Void mage helm", "Mystic hat" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
@@ -144,11 +133,11 @@
         [ "Amulet of power" ]
       ],
       "Cape": [
-        [ "Any Imbued Any God cape" ],
+        [ "Any Imbued God cape" ],
         [ "Any God cape" ],
         [ "Ardougne cloak 4" ],
         [ "Ardougne cloak 3" ],
-        [ "Any Skillcape (t)" ]
+        [ "Cape of Accomplishment" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
@@ -161,17 +150,39 @@
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ],
         [ "Ahrim's robeskirt", "Blue moon tassets" ],
-        [ "Dragon'hai robe bottom", "Infinity bottoms", "Bloodbark legs" ],
+        [ "Dagon'hai robe bottom", "Infinity bottoms", "Bloodbark legs" ],
         [ "Elite void robe", "Mystic robe bottom" ]
+      ],
+      "Weapon": [
+        [ "Tumeken's shadow", "Harmonised nightmare staff" ],
+        [ "Sanguinesti staff", "Staff of the dead" ],
+        [ "Trident of the swamp", "Smoke battlestaff", "Purging staff", "Twinflame staff" ],
+        [ "Ahrim's staff", "Trident of the seas" ],
+        [ "Iban's staff", "Warped sceptre" ]
+      ],
+      "Shield": [
+        [ "Tome of fire(Searing pages)", "Elidinis' ward (f)" ],
+        [ "Tome of fire(Burnt pages)", "Arcane spirit shield" ],
+        [ "Elidinis' ward", "Mage's book" ],
+        [ "Ancient wyvern shield", "Malediction ward" ],
+        [ "Book of the dead", "Book of darkness" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Tormented bracelet" ],
         [ "Barrows gloves" ],
         [ "Regen bracelet", "Combat bracelet" ],
-        [ "Void knight gloves" ]
+        [ "Void knight gloves" ],
+        [ "N/A" ]
       ],
       "Boots": [
-        [ "Eternal boots" ],
+        [ "Eternal boots", "Echo boots" ],
         [ "Infinity boots", "Aranea boots" ],
         [ "Boots of brimstone" ],
         [ "Bloodbark boots" ],
@@ -179,57 +190,68 @@
       ],
       "Ring": [
         [ "Magus ring", "Ring of suffering (i)" ],
-        [ "Ring of recoil" ]
-      ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Any God blessing" ]
-      ],
-      "Special Attack": [ "N/A" ]
-    },
-    "Ranged": {
-      "Weapon": [
-        [ "Twisted bow", "Toxic blowpipe" ],
-        [ "Bow of Faerdhinen" ],
-        [ "Hunters' sunlight crossbow" ],
-        [ "Magic shortbow (i)" ],
-        [ "Karil's crossbow" ]
+        [ "Ring of recoil" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Special Attack": [
-        [ "Tonalztics of ralos" ],
-        [ "Toxic blowpipe" ],
-        [ "Magic comp bow", "Magic longbow" ]
-      ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
+    },
+    "Ranged": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Masori mask (f)" ],
-        [ "Crystal helm" ],
-        [ "Serpentine helm", "Armadyl helmet" ],
-        [ "Any Blessed coif" ],
-        [ "Void ranger helm", "Archer helm" ]
+        [ "Crystal helm", "Masori mask" ],
+        [ "Serpentine helm" ],
+        [ "Blessed coif" ],
+        [ "Void ranger helm", "Archer helm" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
         [ "Amulet of fury" ],
-        [ "Amulet of glory" ]
+        [ "Bonecrusher necklace", "Dragonbone necklace" ],
+        [ "Amulet of glory" ],
+        [ "N/A" ]
       ],
       "Cape": [
+        [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
         [ "Ava's accumulator" ],
-        [ "Ranging cape" ]
+        [ "Ranging cape" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
-        [ "Crystal body" ],
-        [ "Armadyl chestplate" ],
-        [ "Karil's leathertop", "Any Blessed body" ],
+        [ "Crystal body", "Masori body" ],
+        [ "Karil's leathertop" ],
+        [ "Hueycoatl hide body", "Any Blessed body" ],
         [ "Elite void top", "Black d'hide body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
-        [ "Crystal legs" ],
-        [ "Armadyl chainskirt" ],
-        [ "Karil's leatherskirt", "Any Blessed chaps" ],
+        [ "Crystal legs", "Masori chaps" ],
+        [ "Karil's leatherskirt" ],
+        [ "Hueycoatl hide chaps", "Any Blessed chaps" ],
         [ "Elite void robe", "Black d'hide chaps" ]
+      ],
+      "Weapon": [
+        [ "Twisted bow", "Toxic blowpipe" ],
+        [ "Bow of Faerdhinen" ],
+        [ "Hunters' sunlight crossbow", "Eclipse atlatl" ],
+        [ "Magic shortbow (i)" ],
+        [ "Karil's crossbow" ]
+      ],
+      "Ammo": [
+        [ "Dragon arrows" ],
+        [ "Amethyst arrows" ],
+        [ "Moonlight antler bolts", "Sunlight antler bolts", "Atlatl dart" ],
+        [ "Rune arrows" ],
+        [ "Bolt rack" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
@@ -239,24 +261,119 @@
         [ "Void knight gloves", "Black d'hide vambraces" ]
       ],
       "Boots": [
-        [ "Pegasian boots" ],
+        [ "Echo boots", "Pegasian boots" ],
         [ "Ranger boots" ],
         [ "Any Blessed boots" ],
         [ "Aranea boots" ],
         [ "Boots of brimstone" ]
       ],
       "Ring": [
-        [ "Ring of suffering (i)" ],
-        [ "Ring of recoil" ]
+        [ "Ring of suffering (i)", "Venator ring" ],
+        [ "Ring of recoil" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Special Attack": [
+        [ "Dragon knife" ],
+        [ "Toxic blowpipe" ],
+        [ "Dark bow" ],
+        [ "Tonalztics of ralos", "Accursed sceptre" ],
+        [ "Magic comp bow", "Magic longbow" ]
+      ],
+      "Shield": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
+    },
+    "Melee": {
+      "Helmet": [
+        [ "Serpentine helm" ],
+        [ "Neitiznot faceguard", "Void melee helm" ],
+        [ "Blood moon helm" ],
+        [ "Eclipse moon helm", "Helm of neitiznot" ],
+        [ "N/A" ]
+      ],
+      "Amulet": [
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ],
+        [ "N/A" ]
+      ],
+      "Cape": [
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Mixed hide cape" ],
+        [ "Ranging cape (t)" ],
+        [ "N/A" ]
+      ],
+      "Body": [
+        [ "Torva platebody", "Oathplate chest" ],
+        [ "Bandos chestplate" ],
+        [ "Fighter torso", "Elite void top" ],
+        [ "Blood moon chestplate" ],
+        [ "Any Barrows tank body" ]
+      ],
+      "Legs": [
+        [ "Torva platelegs", "Oathplate legs" ],
+        [ "Bandos tassets" ],
+        [ "Blood moon tassets", "Elite void robe" ],
+        [ "Obsidian platelegs" ],
+        [ "Any Barrows tank legs" ]
+      ],
+      "Weapon": [
+        [ "Noxious halberd" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows" ],
-        [ "Amethyst arrows" ],
-        [ "Rune arrows" ],
-        [ "Moonlight antler bolts", "Sunlight antler bolts" ],
-        [ "Bolt rack" ]
+        [ "Atlatl dart" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
-      "Shield": [ "N/A" ]
+      "Gloves": [
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves", "Void knight gloves" ],
+        [ "Regen bracelet" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Boots": [
+        [ "Primordial boots", "Echo boots" ],
+        [ "Dragon boots" ],
+        [ "Bandos boots" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ring": [
+        [ "Ring of suffering (i)", "Bellator ring" ],
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)", "Lightbearer" ],
+        [ "Warrior ring (i)" ],
+        [ "Ring of recoil" ]
+      ],
+      "Special Attack": [
+        [ "Crystal halberd" ],
+        [ "Dragon halberd" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Shield": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
     }
   }
 }

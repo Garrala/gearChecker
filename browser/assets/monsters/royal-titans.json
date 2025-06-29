@@ -1,100 +1,117 @@
 {
-  "name": "Royal Titans",
+  "name": "royal titans",
   "category": "Instanced Bosses",
-  "image": "assets/monster-icons/royal_titans.png",
-  "wiki_link": "https://oldschool.runescape.wiki/w/Royal_Titans/Strategies",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Royal_Titans",
+  "image": "assets/monster-icons/branda_the_fire_queenhtml.png",
   "bosses": [
     {
-      "name": "Branda the Fire Queen",
-      "image": "assets/monster-icons/royal_titans.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Royal_Titans/Strategies",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "name": "Branda The Fire Queen",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Branda_the_Fire_Queen",
+      "image": "assets/monster-icons/branda_the_fire_queenhtml.png",
+      "combat_level": 350,
+      "hp": 600,
+      "max_hit": {
+        "melee": 26,
+        "wall": 12
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 12,
+          "slash": 12,
+          "crush": 0
         },
-        "magic": 200,
+        "magic": 700,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 700,
+          "bolts": 700,
+          "thrown": 700
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [ "Crush" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 7,
+        "seconds": 4.2
       },
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
-        "thralls": false
+        "cannons": true
+      },
+      "weaknesses": {
+        "water": "50%"
       }
     },
     {
-      "name": "Eldric the Ice King",
-      "image": "assets/monster-icons/Eldric_the_Ice_King.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Royal_Titans/Strategies",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "name": "Eldric The Ice King",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Eldric_the_Ice_King",
+      "image": "assets/monster-icons/eldric_the_ice_kinghtml.png",
+      "combat_level": 350,
+      "hp": 600,
+      "max_hit": {
+        "melee": 26,
+        "wall": 12
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 12,
+          "slash": 12,
+          "crush": 0
         },
-        "magic": 200,
+        "magic": 700,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 700,
+          "bolts": 700,
+          "thrown": 700
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [ "Crush" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 7,
+        "seconds": 4.2
       },
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
-        "thralls": false
+        "cannons": true
+      },
+      "weaknesses": {
+        "fire": "50%"
       }
     }
   ],
   "gear_setups": {
     "Melee (Low Level)": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
         [ "Blood moon helm" ],
-        [ "Helm of neitiznot", "Eclipse moon helm" ]
+        [ "Helm of neitiznot", "Eclipse moon helm" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of fury" ],
-        [ "Amulet of glory" ]
+        [ "Amulet of glory" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Fire cape" ],
-        [ "Mythical cape" ]
+        [ "Mythical cape" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Blood moon chestplate" ],
         [ "Fighter torso" ],
-        [ "Eclipse moon chestplate", "Blue moon chestplate" ]
+        [ "Eclipse moon chestplate", "Blue moon chestplate" ],
+        [ "N/A" ]
       ],
       "Legs": [
         [ "Blood moon tassets" ],
         [ "Eclipse moon tassets", "Blue moon tassets" ],
-        [ "Obsidian platelegs" ]
+        [ "Obsidian platelegs" ],
+        [ "N/A" ]
       ],
       "Weapon": [
         [ "Dual macuahuitl" ],
@@ -104,155 +121,224 @@
       ],
       "Shield": [
         [ "Dragon defender" ],
-        [ "Rune defender" ]
+        [ "Rune defender" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
-        [ "Combat bracelet" ]
+        [ "Combat bracelet" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Dragon boots" ],
-        [ "Rune boots", "Climbing boots" ]
+        [ "Rune boots", "Climbing boots" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Berserker ring (i)" ],
         [ "Lightbearer" ],
         [ "Warrior ring (i)" ],
-        [ "Explorer's ring" ]
+        [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
       ],
-      "Ammo": [ "N/A" ],
       "Special Attack": [
         [ "Dragon dagger", "Crystal halberd" ],
-        [ "Dragon halberd" ]
+        [ "Dragon halberd" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     },
     "Ranged (Low Level)": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Eclipse moon helm" ]
+        [ "Eclipse moon helm" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of fury" ],
-        [ "Amulet of glory" ]
+        [ "Amulet of glory" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Ava's assembler" ],
-        [ "Ava's accumulator" ]
+        [ "Ava's accumulator" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Eclipse moon chestplate" ],
         [ "Ancient d'hide body", "Hueycoatl hide body" ],
         [ "Karil's leathertop" ],
-        [ "Black d'hide body" ]
+        [ "Black d'hide body" ],
+        [ "N/A" ]
       ],
       "Legs": [
         [ "Eclipse moon tassets" ],
         [ "Ancient chaps", "Hueycoatl hide chaps" ],
         [ "Karil's leatherskirt" ],
-        [ "Black d'hide chaps" ]
+        [ "Black d'hide chaps" ],
+        [ "N/A" ]
       ],
       "Weapon": [
-        [ "Eclipse attlatl", "Toxic blowpipe" ],
+        [ "Eclipse atlatl", "Toxic blowpipe" ],
         [ "Dragon crossbow", "Rune crossbow" ],
         [ "Hunters' sunlight crossbow" ],
-        [ "Karil's crossbow", "Magic shortbow (i)" ]
+        [ "Karil's crossbow", "Magic shortbow (i)" ],
+        [ "Magic shortbow (i)" ]
       ],
-      "Shield": [ "N/A" ],
+      "Ammo": [
+        [ "Atlatl dart", "Blessing" ],
+        [ "Ruby dragon bolts(e)", "Ruby bolts(e)" ],
+        [ "Moonlight antler bolts", "Sunlight antler bolts" ],
+        [ "Bolt rack", "Amethyst arrows", "Rune arrow" ],
+        [ "N/A" ]
+      ],
       "Gloves": [
         [ "Barrows gloves" ],
-        [ "Combat bracelet" ]
+        [ "Combat bracelet" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Aranea boots" ],
-        [ "Dragon boots" ]
+        [ "Dragon boots" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Berserker ring (i)" ],
-        [ "Lightbearer" ]
-      ],
-      "Ammo": [
-        [ "Attlatl dart", "Blessing" ],
-        [ "Ruby dragon bolts (e)", "Ruby bolts (e)" ],
-        [ "Moonlight antler bolts", "Sunlight antler bolts" ],
-        [ "Bolt rack", "Amethyst arrows", "Rune arrows" ]
+        [ "Lightbearer" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Toxic blowpipe" ],
-        [ "Magic shortbow (i)" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Shield": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     },
     "Minimal gear switching": {
       "Helmet": [
         [ "Void melee helm", "Void ranger helm", "Void mage helm" ],
-        [ "Blue moon helm" ]
+        [ "Blue moon helm" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of fury" ],
-        [ "Amulet of glory" ]
+        [ "Amulet of glory" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Ava's assembler" ],
-        [ "Ava's accumulator" ]
+        [ "Ava's accumulator" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Elite void top", "Void knight top" ],
-        [ "Blue moon chestplate" ]
+        [ "Blue moon chestplate" ],
+        [ "N/A" ]
       ],
       "Legs": [
         [ "Elite void robe", "Void knight robe" ],
-        [ "Blue moon tassets" ]
-      ],
-      "Weapon": [
-        [ "Twinflame staff" ],
-        [ "Purging staff" ],
-        [ "Kodai wand" ],
-        [ "Ancient sceptre", "Master wand" ],
-        [ "Ancient staff" ]
+        [ "Blue moon tassets" ],
+        [ "N/A" ]
       ],
       "Shield": [
-        [ "Dragon defender" ],
-        [ "Mage's book" ],
-        [ "Unholy book", "Book of darkness" ]
+        [ "Dragon defender", "Mage's book" ],
+        [ "Unholy book", "Book of darkness" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Void knight gloves" ],
-        [ "Barrows gloves" ]
+        [ "Barrows gloves" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Aranea boots" ],
         [ "Dragon boots" ],
         [ "Climbing boots" ]
       ],
-      "Ring": [ "N/A" ],
-      "Ammo": [ "N/A" ],
-      "Special Attack": [ "N/A" ]
+      "Ring": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Weapon": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Special Attack": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
     },
-    "Melee (High level)": {
+    "Melee (High Level)": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
         [ "Torva full helm", "Oathplate helm" ],
         [ "Inquisitor's great helm" ],
         [ "Neitiznot faceguard", "Serpentine helm" ],
-        [ "Blood moon helm" ]
+        [ "Blood moon helm" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
         [ "Amulet of torture" ],
-        [ "Amulet of fury" ]
+        [ "Amulet of fury" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Infernal cape" ],
-        [ "Fire cape" ]
+        [ "Fire cape" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Torva platebody", "Oathplate chest" ],
         [ "Inquisitor's hauberk" ],
-        [ "Blood moon chestplate", "Bandos chestplate", "Fighter torso" ]
+        [ "Blood moon chestplate", "Bandos chestplate", "Fighter torso" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Legs": [
         [ "Torva platelegs", "Oathplate legs" ],
         [ "Inquisitor's plateskirt" ],
-        [ "Blood moon tassets", "Bandos tassets" ]
+        [ "Blood moon tassets", "Bandos tassets" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Weapon": [
         [ "Scythe of Vitur" ],
@@ -263,82 +349,119 @@
       ],
       "Shield": [
         [ "Avernic defender" ],
-        [ "Dragon defender" ]
+        [ "Dragon defender" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3" ]
+        [ "Rada's blessing 3" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Ferocious gloves" ],
-        [ "Barrows gloves" ]
+        [ "Barrows gloves" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Primordial boots" ],
         [ "Aranea boots" ],
-        [ "Dragon boots" ]
+        [ "Dragon boots" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
         [ "Berserker ring (i)" ],
-        [ "Lightbearer" ]
+        [ "Lightbearer" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Dragon claws" ],
         [ "Burning claws" ],
-        [ "Crystal halberd" ]
+        [ "Crystal halberd" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     },
     "Ranged (High Level)": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Masori mask (f)" ],
         [ "Crystal helm" ],
-        [ "Eclipse moon helm" ]
+        [ "Eclipse moon helm" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
-        [ "Amulet of fury" ]
+        [ "Amulet of fury" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Dizana's quiver" ],
-        [ "Ava's assembler" ]
+        [ "Ava's assembler" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
         [ "Masori body" ],
-        [ "Crystal body" ]
+        [ "Crystal body" ],
+        [ "N/A" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Masori chaps" ],
-        [ "Crystal legs" ]
+        [ "Crystal legs" ],
+        [ "N/A" ]
       ],
       "Weapon": [
         [ "Toxic blowpipe" ],
         [ "Bow of Faerdhinen" ],
-        [ "Twisted bow" ],
-        [ "Eclipse attlatl", "Zaryte crossbow" ],
+        [ "Eclipse atlatl", "Zaryte crossbow" ],
         [ "Armadyl crossbow" ]
       ],
       "Shield": [
         [ "Twisted buckler" ],
         [ "Dragonfire ward" ],
-        [ "Odium ward" ]
+        [ "Odium ward" ],
+        [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 4", "Ruby dragon bolts (e)" ],
+        [ "Rada's blessing 4", "Ruby dragon bolts(e)" ],
         [ "Blessing" ],
-        [ "Attlatl dart" ]
+        [ "Atlatl dart" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
-        [ "Barrows gloves" ]
+        [ "Barrows gloves" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
-      "Boots": [ "N/A" ],
-      "Ring": [ "N/A" ],
       "Special Attack": [
-        [ "Zaryte crossbow" ]
+        [ "Zaryte crossbow" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Boots": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ring": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     }
   }

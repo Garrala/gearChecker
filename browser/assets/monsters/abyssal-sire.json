@@ -547,8 +547,8 @@
         [ "Obsidian platelegs" ]
       ],
       "Weapon": [
-        [ "Scythe of Vitur" ],
-        [ "Ghrazi rapier", "Emberlight" ],
+        [ "Scythe of Vitur", "Emberlight" ],
+        [ "Ghrazi rapier", "Arclight" ],
         [ "Inquisitor's mace" ],
         [ "Blade of Saeldor" ],
         [ "Zamorakian hasta" ]
@@ -592,7 +592,7 @@
         [ "Elder maul" ],
         [ "Dragon warhammer" ],
         [ "Bandos godsword" ],
-        [ "N/A" ],
+        [ "Emberlight", "Arclight" ],
         [ "N/A" ]
       ]
     },

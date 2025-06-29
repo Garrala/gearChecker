@@ -1,51 +1,127 @@
 {
-  "name": "Kraken",
+  "name": "kraken",
   "category": "Slayer Bosses",
-  "image": "assets/monster-icons/kraken.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Kraken#Kraken",
+  "image": "assets/monster-icons/kraken_kraken.png",
   "bosses": [
     {
-      "name": "Kraken",
-      "image": "assets/monster-icons/kraken.png",
+      "name": "kraken (kraken)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Kraken#Kraken",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "image": "assets/monster-icons/kraken_kraken.png",
+      "combat_level": 291,
+      "hp": 0,
+      "max_hit": {
+        "magic": 28
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
         },
-        "magic": 200,
+        "magic": 130,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 300,
+          "bolts": 300,
+          "thrown": 300
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [ "Magic" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 4,
+        "seconds": 2.4
       },
-      "aggressive": true,
+      "aggressive": false,
       "immunities": {
-        "poison": true,
-        "venom": true,
-        "cannons": false,
+        "poison": false,
+        "cannons": true,
         "thralls": false
+      },
+      "weaknesses": {
+        "earth": "50%"
+      }
+    },
+    {
+      "name": "kraken (whirlpool)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Kraken#Kraken",
+      "image": "assets/monster-icons/kraken_whirlpool.png",
+      "combat_level": 0,
+      "hp": 0,
+      "max_hit": {
+        "magic": 28
+      },
+      "defense": {
+        "melee": {
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
+        },
+        "magic": 130,
+        "ranged": {
+          "arrows": 300,
+          "bolts": 300,
+          "thrown": 300
+        }
+      },
+      "attack_styles": [ "Magic" ],
+      "attack_speed": {
+        "ticks": 4,
+        "seconds": 2.4
+      },
+      "aggressive": false,
+      "immunities": {
+        "poison": false,
+        "cannons": true,
+        "thralls": false
+      },
+      "weaknesses": {
+        "earth": "50%"
       }
     }
   ],
   "gear_setups": {
     "Magic": {
+      "Helmet": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Amulet": [
+        [ "Occult necklace" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ],
+        [ "N/A" ]
+      ],
+      "Cape": [
+        [ "Any Imbued God cape" ],
+        [ "God cape" ],
+        [ "Infernal cape", "Fire cape" ],
+        [ "Hitpoints cape(t)" ],
+        [ "N/A" ]
+      ],
+      "Body": [
+        [ "Ancestral robe top" ],
+        [ "Virtus robe top" ],
+        [ "Ahrim's robetop", "Blue moon chestplate" ],
+        [ "Masori body (f)" ],
+        [ "Hueycoatl hide body", "Karil's leathertop", "Any Blessed body", "Elite void top" ]
+      ],
+      "Legs": [
+        [ "Ancestral robe bottom" ],
+        [ "Virtus robe bottom" ],
+        [ "Ahrim's robeskirt", "Blue moon tassets" ],
+        [ "Masori chaps (f)" ],
+        [ "Hueycoatl hide chaps", "Karil's leatherskirt", "Elite void robe", "Any Blessed chaps" ]
+      ],
       "Weapon": [
         [ "Tumeken's shadow" ],
         [ "Sanguinesti staff" ],
         [ "Trident of the swamp" ],
         [ "Trident of the seas" ],
-        [ "Harmonised nightmare staff", "Warped sceptre", "Slayer's staff (e)" ]
+        [ "Harmonised nightmare staff", "Warped sceptre", "Slayer's staff(e)" ]
       ],
       "Shield": [
         [ "Elidinis' ward (f)", "Tome of fire" ],
@@ -54,42 +130,12 @@
         [ "Elysian spirit shield", "Spectral spirit shield" ],
         [ "Dragonfire ward" ]
       ],
-      "Special Attack": [
-        [ "Volatile nightmare staff" ],
-        [ "Eldritch nightmare staff" ],
-        [ "Toxic blowpipe" ],
-        [ "Accursed sceptre (a)" ]
-      ],
-      "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Black mask (i)" ]
-      ],
-      "Amulet": [
-        [ "Occult necklace" ],
-        [ "Amulet of fury" ],
-        [ "Amulet of glory" ],
-        [ "Amulet of power" ]
-      ],
-      "Cape": [
-        [ "Any Imbued Any God cape" ],
-        [ "Any God cape" ],
-        [ "Infernal cape", "Fire cape" ],
-        [ "Hitpoints cape (t)" ],
-        [ "Ardougne cloak" ]
-      ],
-      "Body": [
-        [ "Ancestral robe top" ],
-        [ "Virtus robe top" ],
-        [ "Ahrim's robetop", "Blue moon chestplate" ],
-        [ "Masori body (f)" ],
-        [ "Armadyl chestplate", "Karil's leathertop", "Any Blessed body", "Elite void top" ]
-      ],
-      "Legs": [
-        [ "Ancestral robe bottom" ],
-        [ "Virtus robe bottom" ],
-        [ "Ahrim's robeskirt", "Blue moon tassets" ],
-        [ "Masori chaps (f)" ],
-        [ "Armadyl chainskirt", "Karil's leatherskirt", "Elite void robe", "Any Blessed chaps" ]
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Tormented bracelet", "Bracelet of slaughter" ],
@@ -110,9 +156,15 @@
         [ "Ring of suffering (i)" ],
         [ "Seers ring (i)" ],
         [ "Brimstone ring" ],
-        [ "Ring of shadows" ]
+        [ "Ring of shadows", "(uncharged)" ]
       ],
-      "Ammo": [ "N/A" ]
+      "Special Attack": [
+        [ "Volatile nightmare staff" ],
+        [ "Eldritch nightmare staff" ],
+        [ "Toxic blowpipe" ],
+        [ "Accursed sceptre(a)" ],
+        [ "N/A" ]
+      ]
     }
   }
 }

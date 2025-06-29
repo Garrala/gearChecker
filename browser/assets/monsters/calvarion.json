@@ -1,23 +1,24 @@
 {
-  "name": "Cal'varion",
+  "name": "calvarion",
   "category": "Wilderness Bosses",
-  "image": "assets/monster-icons/cal_varion.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Calvar%27ion",
+  "image": "assets/monster-icons/calvarion_enraged.png",
   "bosses": [
     {
-      "name": "Cal'varion",
-      "image": "assets/monster-icons/cal_varion.png",
+      "name": "calvarion (enraged)",
       "wiki_link": "https://oldschool.runescape.wiki/w/Calvar%27ion",
+      "image": "assets/monster-icons/calvarion_enraged.png",
       "combat_level": 264,
-      "hp": 150,
+      "hp": 0,
       "max_hit": {
-        "melee": 26
+        "slash": 26,
+        "magic": 26
       },
       "defense": {
         "melee": {
-          "stab": 130,
-          "slash": 128,
-          "crush": -10
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
         },
         "magic": 198,
         "ranged": {
@@ -26,9 +27,10 @@
           "thrown": 211
         }
       },
-      "attack_styles": [ "Melee", "Magic" ],
+      "attack_styles": [ "Slash", "Magic" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 5,
+        "seconds": 3
       },
       "aggressive": true,
       "immunities": {
@@ -36,22 +38,24 @@
         "venom": true,
         "cannons": false,
         "thralls": false
-      }
+      },
+      "weaknesses": "none"
     },
     {
-      "name": "Cal'varion (Enraged)",
-      "image": "assets/monster-icons/cal_varion__enraged_.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Calvar%27ion#Enraged",
+      "name": "calvarion (normal)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Calvar%27ion",
+      "image": "assets/monster-icons/calvarion_normal.png",
       "combat_level": 264,
-      "hp": 150,
+      "hp": 0,
       "max_hit": {
-        "melee": 26
+        "slash": 26,
+        "magic": 26
       },
       "defense": {
         "melee": {
-          "stab": 130,
-          "slash": 128,
-          "crush": -10
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
         },
         "magic": 198,
         "ranged": {
@@ -60,65 +64,57 @@
           "thrown": 211
         }
       },
-      "attack_styles": [ "Melee", "Magic" ],
-      "attack_speed": 6,
+      "attack_styles": [ "Slash", "Magic" ],
+      "attack_speed": {
+        "ticks": 6,
+        "seconds": 3.6
+      },
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
         "cannons": false,
         "thralls": false
-      }
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
     "Melee": {
-      "Weapon": [
-        [ "Ursine chainmace", "Viggora's chainmace" ],
-        [ "Inquisitor's mace" ],
-        [
-          "Abyssal bludgeon",
-          "Zamorakian hasta",
-          "Zombie axe"
-        ],
-        [ "Sarachnis cudgel", "Elder maul", "Dual macuahuitl" ],
-        [ "Leaf-bladed battleaxe", "Dragon mace" ]
-      ],
-      "Shield": [
-        [ "Avernic defender" ],
-        [ "Dragon defender" ],
-        [ "Dragonfire shield" ],
-        [ "Rune defender", "Toktz-ket-xil" ],
-        [ "Book of war", "Falador shield 4" ]
-      ],
-      "Special Attack": [
-        [ "Ursine chainmace" ],
-        [ "Abyssal bludgeon" ],
-        [ "Elder maul" ],
-        [ "Dragon mace" ]
-      ],
       "Helmet": [
-        [ "Helm of neitiznot", "Zombie helm" ],
+        [ "Helm of neitiznot", "Zombie helmet" ],
         [ "Berserker helm" ],
-        [ "Dwarven helmet" ]
+        [ "Dwarven helmet" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
-        [ "Salve amulet (e)" ],
+        [ "Salve amulet(e)" ],
         [ "Salve amulet" ],
         [ "Amulet of strength" ],
         [ "Amulet of glory" ],
         [ "Amulet of power" ]
       ],
       "Cape": [
-        [ "Infernal cape", "Fire cape" ],
+        [
+          "Infernal cape",
+          "",
+          "Fire cape"
+        ],
         [ "Mythical cape" ],
         [ "Mixed hide cape" ],
-        [ "Any Skillcape (t)" ],
+        [ "Cape of Accomplishment" ],
         [ "Ardougne cloak 4" ]
       ],
       "Body": [
-        [ "Fighter torso" ],
-        [ "Mixed hide top" ],
+        [
+          "Fighter torso",
+          ""
+        ],
+        [
+          "Mixed hide top",
+          ""
+        ],
         [ "Black d'hide body" ],
         [ "Proselyte hauberk" ],
         [ "Monk's robe top" ]
@@ -126,12 +122,43 @@
       "Legs": [
         [ "Black d'hide chaps" ],
         [ "Proselyte cuisse", "Proselyte tasset" ],
-        [ "Monk's robe" ]
+        [ "Monk's robe" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Weapon": [
+        [ "Ursine chainmace", "Viggora's chainmace" ],
+        [ "Inquisitor's mace" ],
+        [ "Abyssal bludgeon", "Zamorakian hasta", "Zombie axe" ],
+        [ "Sarachnis cudgel", "Elder maul", "Dual macuahuitl" ],
+        [ "Leaf-bladed battleaxe", "Dragon mace" ]
+      ],
+      "Shield": [
+        [
+          "Avernic defender",
+          ""
+        ],
+        [
+          "Dragon defender",
+          ""
+        ],
+        [ "Dragonfire shield" ],
+        [ "Rune defender", "Toktz-ket-xil" ],
+        [ "Book of war", "Falador shield 4" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
         [ "Rune gloves" ],
-        [ "Combat bracelet" ]
+        [ "Combat bracelet" ],
+        [ "Red spiky vambraces" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Dragon boots" ],
@@ -144,12 +171,30 @@
         [ "Ultor ring" ],
         [ "Berserker ring (i)" ],
         [ "Ring of shadows" ],
-        [ "Ring of wealth (i)" ],
+        [
+          "Ring of wealth (i)",
+          ""
+        ],
         [ "Explorer's ring 4" ]
       ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
+      "Special Attack": [
+        [
+          "Ursine chainmace",
+          ""
+        ],
+        [
+          "Abyssal bludgeon",
+          ""
+        ],
+        [
+          "Elder maul",
+          ""
+        ],
+        [
+          "Dragon mace",
+          ""
+        ],
+        [ "N/A" ]
       ]
     }
   }

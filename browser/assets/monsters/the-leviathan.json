@@ -1,71 +1,110 @@
 {
-  "name": "The Leviathan",
+  "name": "the leviathan",
   "category": "Desert Treasure II",
-  "image": "assets/monster-icons/the_leviathan.png",
-  "wiki_link": "https://oldschool.runescape.wiki/w/The_Leviathan#Post-quest",
+  "wiki_link": "https://oldschool.runescape.wiki/w/The_Leviathan",
+  "image": "assets/monster-icons/the_leviathan_awakened.png",
   "bosses": [
     {
-      "name": "The Leviathan",
-      "image": "assets/monster-icons/the_leviathan.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/The_Leviathan#Post-quest",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "name": "the leviathan (leviathan awakened)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/The_Leviathan",
+      "image": "assets/monster-icons/the_leviathan_awakened.png",
+      "combat_level": 0,
+      "hp": 0,
+      "max_hit": {},
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 260,
+          "slash": 190,
+          "crush": 230
         },
-        "magic": 200,
+        "magic": 280,
         "ranged": {
           "arrows": 50,
-          "bolts": 50,
+          "bolts": 25,
           "thrown": 50
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
-      "attack_speed": {
-        "ticks": 6
-      },
+      "attack_styles": [],
+      "attack_speed": null,
       "aggressive": true,
       "immunities": {
-        "poison": true,
-        "venom": true,
-        "cannons": false,
-        "thralls": false
-      }
+        "poison": false,
+        "cannons": true
+      },
+      "weaknesses": "none"
+    },
+    {
+      "name": "the leviathan (leviathan post quest)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/The_Leviathan",
+      "image": "assets/monster-icons/the_leviathan_post_quest.png",
+      "combat_level": 798,
+      "hp": 0,
+      "max_hit": {
+        "meleeorbbite": 50,
+        "rangedorb": 24,
+        "magicorb": 32,
+        "smokeblast": 59
+      },
+      "defense": {
+        "melee": {
+          "stab": 260,
+          "slash": 190,
+          "crush": 230
+        },
+        "magic": 280,
+        "ranged": {
+          "arrows": 50,
+          "bolts": 25,
+          "thrown": 50
+        }
+      },
+      "attack_styles": [],
+      "attack_speed": null,
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "cannons": true
+      },
+      "weaknesses": "none"
+    },
+    {
+      "name": "the leviathan (leviathan quest)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/The_Leviathan",
+      "image": "assets/monster-icons/the_leviathan_quest.png",
+      "combat_level": 593,
+      "hp": 0,
+      "max_hit": {},
+      "defense": {
+        "melee": {
+          "stab": 200,
+          "slash": 150,
+          "crush": 180
+        },
+        "magic": 220,
+        "ranged": {
+          "arrows": 50,
+          "bolts": 25,
+          "thrown": 50
+        }
+      },
+      "attack_styles": [],
+      "attack_speed": null,
+      "aggressive": true,
+      "immunities": {
+        "poison": false,
+        "cannons": true
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
     "Ranged": {
-      "Weapon": [
-        [ "Zaryte crossbow", "Toxic blowpipe" ],
-        [ "Armadyl crossbow", "Bow of Faerdhinen" ],
-        [ "Dragon crossbow", "Dragon hunter crossbow" ],
-        [ "Rune crossbow" ],
-        [ "Toxic blowpipe" ]
-      ],
-      "Special Attack": [
-        [ "Zaryte crossbow" ],
-        [ "Webweaver bow" ],
-        [ "Armadyl crossbow", "Toxic blowpipe" ],
-        [ "Tonalztics of ralos", "Dragon knife" ]
-      ],
-      "Shield": [
-        [ "Twisted buckler" ],
-        [ "Dragonfire ward" ],
-        [ "Odium ward" ],
-        [ "Book of law" ],
-        [ "Unholy book" ]
-      ],
       "Helmet": [
-        [ "Slayer helmet (i)", "Masori mask (f)" ],
         [ "Crystal helm", "Masori mask" ],
         [ "Void ranger helm" ],
-        [ "Karil's coif", "Any Blessed coif" ],
-        [ "Archer helm" ]
+        [ "Karil's coif", "Blessed coif" ],
+        [ "Archer helm" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -77,7 +116,9 @@
       "Cape": [
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
-        [ "Ava's accumulator", "Ranging cape(t)" ]
+        [ "Ava's accumulator", "Ranging cape (t)" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
@@ -93,6 +134,27 @@
         [ "Karil's leatherskirt", "Any Blessed chaps" ],
         [ "Black d'hide chaps" ]
       ],
+      "Weapon": [
+        [ "Zaryte crossbow", "Toxic blowpipe" ],
+        [ "Armadyl crossbow", "Bow of Faerdhinen" ],
+        [ "Dragon crossbow", "Dragon hunter crossbow" ],
+        [ "Rune crossbow" ],
+        [ "Toxic blowpipe" ]
+      ],
+      "Shield": [
+        [ "Twisted buckler" ],
+        [ "Dragonfire ward" ],
+        [ "Odium ward" ],
+        [ "Book of law" ],
+        [ "Unholy book" ]
+      ],
+      "Ammo": [
+        [ "Ruby dragon bolts(e)" ],
+        [ "Ruby bolts(e)" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
@@ -105,63 +167,22 @@
         [ "Ranger boots" ],
         [ "Any Blessed boots", "Aranea boots" ],
         [ "Boots of brimstone" ],
-        [ "Shayzien boots (5)" ]
+        [ "Shayzien boots(5)" ]
       ],
       "Ring": [
-        [ "Lightbearer", "Venator ring" ],
-        [ "Ring of the gods (i)", "Archers ring (i)" ],
+        [ "Lightbearer" ],
+        [ "Ring of the gods (i)", "Venator ring" ],
         [ "Ring of suffering (i)" ],
+        [ "Archers ring (i)" ],
         [ "Ring of shadows" ]
       ],
-      "Ammo": [
-        [ "Ruby dragon bolts (e)" ],
-        [ "Ruby bolts (e)" ]
-      ]
-    },
-    "Magic": {
-      "Helmet": [
-        [ "Ancestral hat", "Slayer helmet (i)" ],
-        [ "Virtus mask" ],
-        [ "Ahrim's hood" ]
-      ],
-      "Amulet": [
-        [ "Occult necklace" ]
-      ],
-      "Cape": [
-        [ "Any Imbued Any God cape" ]
-      ],
-      "Body": [
-        [ "Ancestral robe top" ],
-        [ "Virtus robe top" ],
-        [ "Ahrim's robetop" ]
-      ],
-      "Legs": [
-        [ "Ancestral robe bottom" ],
-        [ "Virtus robe bottom" ],
-        [ "Ahrim's robeskirt" ]
-      ],
-      "Weapon": [
-        [ "Tumeken's shadow" ]
-      ],
-      "Ring": [
-        [ "Magus ring" ],
-        [ "Lightbearer" ]
-      ],
-      "Gloves": [
-        [ "Tormented bracelet" ]
-      ],
-      "Boots": [
-        [ "Eternal boots" ]
-      ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Any God blessing", "Rada's blessing 3/2" ]
-      ],
       "Special Attack": [
-        [ "Volatile nightmare staff" ]
+        [ "Zaryte crossbow" ],
+        [ "Webweaver bow" ],
+        [ "Armadyl crossbow", "Toxic blowpipe" ],
+        [ "Tonalztics of ralos", "Dragon knife" ],
+        [ "N/A" ]
       ]
     }
-
-
   }
 }

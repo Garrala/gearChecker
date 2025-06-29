@@ -1,57 +1,17 @@
 {
-  "name": "Barrows Brothers",
+  "name": "barrows",
   "category": "World Bosses",
-  "image": "assets/monster-icons/dharok_the_wretched.png",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Dharok_the_Wretched",
+  "image": "assets/monster-icons/ahrim_the_blightedhtml.png",
   "bosses": [
     {
-      "name": "Dharok the Wretched",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Dharok_the_Wretched",
-      "image": "assets/monster-icons/dharok_the_wretched.png",
-      "combat_level": 115,
-      "hp": 100,
-      "max_hit": {
-        "melee": 29,
-        "1 Hp": 57
-      },
-      "weaknesses": {
-        "air": "50%"
-      },
-      "defense": {
-        "melee": {
-          "stab": 252,
-          "slash": 250,
-          "crush": 244
-        },
-        "magic": -11,
-        "ranged": {
-          "arrows": 249,
-          "bolts": 249,
-          "thrown": 249
-        }
-      },
-      "attack_styles": [ "Melee" ],
-      "attack_speed": {
-        "ticks": 6
-      },
-      "aggressive": true,
-      "immunities": {
-        "poison": false,
-        "venom": false,
-        "cannons": false,
-        "thralls": false
-      }
-    },
-    {
-      "name": "Ahrim the Blighted",
-      "image": "assets/monster-icons/ahrim_the_blighted.png",
+      "name": "Ahrim The Blighted",
       "wiki_link": "https://oldschool.runescape.wiki/w/Ahrim_the_Blighted",
+      "image": "assets/monster-icons/ahrim_the_blightedhtml.png",
       "combat_level": 98,
       "hp": 100,
       "max_hit": {
         "magic": 20
-      },
-      "weaknesses": {
-        "air": "50%"
       },
       "defense": {
         "melee": {
@@ -67,26 +27,104 @@
         }
       },
       "attack_styles": [ "Magic" ],
-      "attack_speed": 6,
+      "attack_speed": {
+        "ticks": 6,
+        "seconds": 3.6
+      },
       "aggressive": true,
       "immunities": {
-        "poison": false,
-        "venom": false,
-        "cannons": false,
-        "thralls": false
+        "poison": true,
+        "venom": true
+      },
+      "weaknesses": {
+        "air": "50%"
       }
     },
     {
-      "name": "Karil the Tainted",
-      "image": "assets/monster-icons/karil_the_tainted.png",
+      "name": "Dharok The Wretched",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Dharok_the_Wretched",
+      "image": "assets/monster-icons/dharok_the_wretchedhtml.png",
+      "combat_level": 115,
+      "hp": 100,
+      "max_hit": {
+        "normal": 29,
+        "at 1 hitpoints": 57
+      },
+      "defense": {
+        "melee": {
+          "stab": 252,
+          "slash": 250,
+          "crush": 244
+        },
+        "magic": -11,
+        "ranged": {
+          "arrows": 249,
+          "bolts": 249,
+          "thrown": 249
+        }
+      },
+      "attack_styles": [ "Slash" ],
+      "attack_speed": {
+        "ticks": 7,
+        "seconds": 4.2
+      },
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": {
+        "air": "50%"
+      }
+    },
+    {
+      "name": "Guthan The Infested",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Guthan_the_Infested",
+      "image": "assets/monster-icons/guthan_the_infestedhtml.png",
+      "combat_level": 115,
+      "hp": 100,
+      "max_hit": {
+        "crush": 24
+      },
+      "defense": {
+        "melee": {
+          "stab": 259,
+          "slash": 257,
+          "crush": 241
+        },
+        "magic": -11,
+        "ranged": {
+          "arrows": 250,
+          "bolts": 250,
+          "thrown": 250
+        }
+      },
+      "attack_styles": [ "Crush" ],
+      "attack_speed": {
+        "ticks": 5,
+        "seconds": 3
+      },
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": {
+        "air": "50%"
+      }
+    },
+    {
+      "name": "Karil The Tainted",
       "wiki_link": "https://oldschool.runescape.wiki/w/Karil_the_Tainted",
+      "image": "assets/monster-icons/karil_the_taintedhtml.png",
       "combat_level": 98,
       "hp": 100,
       "max_hit": {
         "ranged": 20
-      },
-      "weaknesses": {
-        "air": "50%"
       },
       "defense": {
         "melee": {
@@ -102,63 +140,29 @@
         }
       },
       "attack_styles": [ "Ranged" ],
-      "attack_speed": 4,
+      "attack_speed": {
+        "ticks": 4,
+        "seconds": 2.4
+      },
       "aggressive": true,
       "immunities": {
-        "poison": false,
-        "venom": false,
-        "cannons": false,
-        "thralls": false
-      }
-    },
-
-    {
-      "name": "Guthan the Infested",
-      "image": "assets/monster-icons/guthan_the_infested.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Guthan_the_Infested",
-      "combat_level": 115,
-      "hp": 100,
-      "max_hit": {
-        "melee": 24
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
       },
       "weaknesses": {
         "air": "50%"
-      },
-      "defense": {
-        "melee": {
-          "stab": 259,
-          "slash": 257,
-          "crush": 241
-        },
-        "magic": -11,
-        "ranged": {
-          "arrows": 250,
-          "bolts": 250,
-          "thrown": 250
-        }
-      },
-      "attack_styles": [ "Melee" ],
-      "attack_speed": 5,
-      "aggressive": true,
-      "immunities": {
-        "poison": false,
-        "venom": false,
-        "cannons": false,
-        "thralls": false
       }
     },
-
     {
-      "name": "Torag the Corrupted",
-      "image": "assets/monster-icons/torag_the_corrupted.png",
+      "name": "Torag The Corrupted",
       "wiki_link": "https://oldschool.runescape.wiki/w/Torag_the_Corrupted",
+      "image": "assets/monster-icons/torag_the_corruptedhtml.png",
       "combat_level": 115,
       "hp": 100,
       "max_hit": {
-        "melee": 23
-      },
-      "weaknesses": {
-        "air": "50%"
+        "crush": 23
       },
       "defense": {
         "melee": {
@@ -173,29 +177,31 @@
           "thrown": 221
         }
       },
-      "attack_styles": [ "Melee" ],
-      "attack_speed": 5,
+      "attack_styles": [ "Crush" ],
+      "attack_speed": {
+        "ticks": 5,
+        "seconds": 3
+      },
       "aggressive": true,
       "immunities": {
-        "poison": false,
-        "venom": false,
-        "cannons": false,
-        "thralls": false
-      }
-    },
-
-    {
-      "name": "Verac the Defiled",
-      "image": "assets/monster-icons/verac_the_defiled.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Verac_the_Defiled",
-      "combat_level": 115,
-      "hp": 100,
-      "max_hit": {
-        "melee": 23,
-        "Pray Melee": 15
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
       },
       "weaknesses": {
         "air": "50%"
+      }
+    },
+    {
+      "name": "Verac The Defiled",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Verac_the_Defiled",
+      "image": "assets/monster-icons/verac_the_defiledhtml.png",
+      "combat_level": 115,
+      "hp": 100,
+      "max_hit": {
+        "stab": 23,
+        "protect from melee": 15
       },
       "defense": {
         "melee": {
@@ -210,206 +216,22 @@
           "thrown": 225
         }
       },
-      "attack_styles": [ "Melee" ],
-      "attack_speed": 5,
+      "attack_styles": [ "Stab" ],
+      "attack_speed": {
+        "ticks": 5,
+        "seconds": 3
+      },
       "aggressive": true,
       "immunities": {
-        "poison": false,
-        "venom": false,
-        "cannons": false,
-        "thralls": false
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": {
+        "air": "50%"
       }
     }
   ],
-  "gear_setups": {
-    "Magic": {
-      "Weapon": [
-        [ "Tumeken's shadow" ],
-        [ "Harmonised nightmare staff" ],
-        [ "Sanguinesti staff", "Trident of the swamp" ],
-        [ "Staff of the dead", "Twinflame staff" ],
-        [ "Smoke battlestaff", "Ahrim's staff" ]
-      ],
-      "Shield": [
-        [ "Elidinis' ward (f)", "Ghommal's hilt 2" ],
-        [ "Arcane spirit shield", "Elidinis' ward" ],
-        [ "Mage's book", "Malediction ward", "Ancient wyvern shield" ]
-      ],
-      "Special Attack": [ [ "Dragon claws" ] ],
-      "Helmet": [
-        [ "Ancestral hat" ],
-        [ "Virtus mask" ],
-        [ "Ahrim's hood", "Infinity hat", "Dagon'hai hat" ],
-        [ "Bloodbark helm" ],
-        [ "Void mage helm" ]
-      ],
-      "Amulet": [
-        [ "Occult necklace" ],
-        [ "Amulet of fury", "Dragonbone necklace" ],
-        [ "Amulet of the damned", "Amulet of glory" ]
-      ],
-      "Cape": [
-        [ "Any Imbued Any God cape" ],
-        [ "Any God cape" ]
-      ],
-      "Body": [
-        [ "Ancestral robe top" ],
-        [ "Virtus robe top" ],
-        [ "Ahrim's robetop", "Infinity top", "Dagon'hai robe top" ],
-        [ "Bloodbark body" ],
-        [ "Elite void top", "Void knight top" ]
-      ],
-      "Legs": [
-        [ "Ancestral robe bottom" ],
-        [ "Virtus robe bottom" ],
-        [ "Ahrim's robeskirt", "Infinity bottoms", "Dagon'hai robe bottom" ],
-        [ "Bloodbark legs" ],
-        [ "Elite void robe", "Void knight robe" ]
-      ],
-      "Gloves": [
-        [ "Tormented bracelet" ],
-        [ "Barrows gloves" ],
-        [ "Void knight gloves" ]
-      ],
-      "Boots": [
-        [ "Eternal boots" ],
-        [ "Infinity boots", "Aranea boots" ],
-        [ "Wizard boots" ]
-      ],
-      "Ring": [
-        [ "Magus ring" ],
-        [ "Seers ring (i)" ],
-        [ "Ring of shadows" ]
-      ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
-      ]
-    },
-    "Tank & Lower Level": {
-      "Weapon": [
-        [ "Trident of the swamp", "Twinflame staff" ],
-        [ "Smoke battlestaff" ],
-        [ "Ahrim's staff", "Ancient sceptre" ],
-        [ "Staff of air" ],
-        [ "Iban's staff (u)" ]
-      ],
-      "Shield": [
-        [ "Ghommal's hilt 2" ],
-        [ "Dragon defender" ],
-        [ "Rune defender" ],
-        [ "Rune kiteshield" ]
-      ],
-      "Helmet": [
-        [ "Any Barrows tank helm" ],
-        [ "Helm of neitiznot" ],
-        [ "Berserker helm" ],
-        [ "Rune full helm" ]
-      ],
-      "Amulet": [
-        [ "Occult necklace" ],
-        [ "Amulet of fury" ],
-        [ "Amulet of glory" ],
-        [ "Amulet of power" ],
-        [ "Holy symbol" ]
-      ],
-      "Cape": [
-        [ "Any Imbued Any God cape" ],
-        [ "Any God cape" ],
-        [ "Fire cape" ],
-        [ "Ardougne cloak 4", "Ardougne cloak 3" ],
-        [ "Any God vestment cloaks" ]
-      ],
-      "Body": [
-        [ "Any Barrows tank body" ],
-        [ "Dragon chainbody" ],
-        [ "Rune platebody" ],
-        [ "Black d'hide body" ]
-      ],
-      "Legs": [
-        [ "Any Barrows tank legs" ],
-        [ "Dragon platelegs" ],
-        [ "Rune platelegs" ],
-        [ "Black d'hide chaps" ]
-      ],
-      "Gloves": [
-        [ "Barrows gloves" ],
-        [ "Rune gloves" ],
-        [ "Combat bracelet" ]
-      ],
-      "Boots": [
-        [ "Dragon boots" ],
-        [ "Rune boots" ],
-        [ "Climbing boots" ]
-      ],
-      "Ring": [
-        [ "Berserker ring (i)" ],
-        [ "Ring of dueling" ]
-      ],
-      "Ammo": [ [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ] ],
-      "Special Attack": [ [ "N/A" ] ]
-    },
-    "Ranged (Ahrim)": {
-      "Weapon": [
-        [ "Toxic blowpipe" ],
-        [ "Hunters' sunlight crossbow" ],
-        [ "Magic shortbow (i)" ],
-        [ "Karil's crossbow" ],
-        [ "Yew shortbow" ]
-      ],
-      "Special Attack": [
-        [ "Toxic blowpipe" ],
-        [ "Magic shortbow (i)" ],
-        [ "Dragon dagger" ]
-      ],
-      "Helmet": [
-        [ "Masori mask (f)", "Masori mask" ],
-        [ "Void ranger helm" ],
-        [ "Any Blessed coif" ]
-      ],
-      "Amulet": [
-        [ "Necklace of anguish" ],
-        [ "Amulet of fury" ],
-        [ "Amulet of glory" ],
-        [ "Amulet of power" ],
-        [ "Holy symbol" ]
-      ],
-      "Cape": [
-        [ "Dizana's quiver" ],
-        [ "Ava's assembler" ],
-        [ "Ava's accumulator" ],
-        [ "Ava's attractor" ]
-      ],
-      "Body": [
-        [ "Masori body (f)", "Masori body" ],
-        [ "Elite void top" ],
-        [ "Void knight top" ],
-        [ "Any Blessed body" ],
-        [ "Black d'hide body" ]
-      ],
-      "Legs": [
-        [ "Masori chaps (f)", "Masori chaps" ],
-        [ "Elite void robe" ],
-        [ "Void knight robe" ],
-        [ "Any Blessed chaps" ],
-        [ "Black d'hide chaps" ]
-      ],
-      "Gloves": [
-        [ "Void knight gloves" ],
-        [ "Barrows gloves" ],
-        [ "Black d'hide vambraces" ],
-        [ "Combat bracelet" ]
-      ],
-      "Boots": [ [ "Any Blessed boots" ] ],
-      "Ring": [ [ "Ring of dueling" ] ],
-      "Ammo": [
-        [ "Rada's blessing 4", "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
-        [ "Moonlight antler bolts", "Sunlight antler bolts" ],
-        [ "Amethyst arrows", "Rune arrows" ],
-        [ "Bolt rack" ],
-        [ "Adamant arrows", "Broad arrows" ]
-      ],
-      "Shield": [ "N/A" ]
-    }
-  }
+  "gear_setups": {}
 }

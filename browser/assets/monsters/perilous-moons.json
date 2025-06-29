@@ -1,278 +1,361 @@
 {
-  "name": "Perilous Moons",
+  "name": "perilous moons",
   "category": "World Bosses",
-  "image": "assets/monster-icons/perilous_moons.png",
-  "wiki_link": "https://oldschool.runescape.wiki/w/Moons_of_Peril/Strategies#Eclipse_Moon",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Moons_of_Peril",
+  "image": "assets/monster-icons/blood_moonhtml.png",
   "bosses": [
     {
       "name": "Blood Moon",
-      "image": "assets/monster-icons/perilous_moons.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Moons_of_Peril/Strategies#Blood_Moon",
-      "combat_level": 725,
+      "wiki_link": "https://oldschool.runescape.wiki/w/Blood_Moon",
+      "image": "assets/monster-icons/blood_moonhtml.png",
+      "combat_level": 329,
       "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "max_hit": {
+        "typeless": 3
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 100,
+          "slash": 0,
+          "crush": 100
         },
-        "magic": 200,
+        "magic": 500,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 500,
+          "bolts": 500,
+          "thrown": 500
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 6,
+        "seconds": 3.6
       },
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
-        "thralls": false
-      }
+        "cannons": true
+      },
+      "weaknesses": "none"
     },
     {
       "name": "Blue Moon",
-      "image": "assets/monster-icons/blue_moon.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Moons_of_Peril/Strategies#Blue_Moon",
-      "combat_level": 725,
+      "wiki_link": "https://oldschool.runescape.wiki/w/Blue_Moon",
+      "image": "assets/monster-icons/blue_moonhtml.png",
+      "combat_level": 329,
       "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "max_hit": {
+        "typeless": 3
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 100,
+          "slash": 100,
+          "crush": 0
         },
-        "magic": 200,
+        "magic": 500,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 500,
+          "bolts": 500,
+          "thrown": 500
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 6,
+        "seconds": 3.6
       },
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
-        "thralls": false
-      }
+        "cannons": true
+      },
+      "weaknesses": "none"
     },
     {
       "name": "Eclipse Moon",
-      "image": "assets/monster-icons/eclipse_moon.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Moons_of_Peril/Strategies#Eclipse_Moon",
-      "combat_level": 725,
+      "wiki_link": "https://oldschool.runescape.wiki/w/Eclipse_Moon",
+      "image": "assets/monster-icons/eclipse_moonhtml.png",
+      "combat_level": 329,
       "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "max_hit": {
+        "typeless": 3
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 0,
+          "slash": 100,
+          "crush": 100
         },
-        "magic": 200,
+        "magic": 500,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 500,
+          "bolts": 500,
+          "thrown": 500
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 6,
+        "seconds": 3.6
       },
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
-        "thralls": false
-      }
+        "cannons": true
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
-    "Eclipse Moon": {
+    "Eclipse Moon weapon": {
       "Weapon": [
         [ "Soulreaper axe" ],
         [ "Ghrazi rapier", "Scythe of Vitur" ],
-        [ "Blade of Saeldor" ],
-        [ "Voidwaker", "Zamorakian hasta", "Noxious halberd" ],
-        [ "Abyssal dagger", "Osmumten's fang", "Dragon sword", "Zombie axe", "Dragon hasta", "Dragon scimitar" ]
-      ],
-      "Shield": [
-        [ "Avernic defender", "Dragonfire shield" ],
-        [ "Dragon defender" ],
-        [ "Toktz-ket-xil" ],
-        [ "Rune defender", "Blessed spirit shield", "Dragon sq shield", "Crystal shield" ],
-        [ "Rune kiteshield" ]
+        [ "Blade of Saeldor", "Noxious halberd" ],
+        [ "Voidwaker", "Osmumten's fang", "Zamorakian hasta", "Abyssal dagger" ],
+        [ "Abyssal whip", "Zombie axe", "Dragon scimitar" ],
+        [ "Dharok's greataxe" ],
+        [ "Soulreaper axe" ],
+        [ "Noxious halberd", "Elder maul" ],
+        [ "Crystal halberd", "Godsword", "Colossal blade" ],
+        [ "Zombie axe", "Barrelchest anchor" ],
+        [ "Standard attack weapon" ]
       ],
       "Special Attack": [
         [ "Voidwaker", "Crystal halberd" ],
-        [ "Dragon claws" ],
+        [ "Dragon claws", "Dragon dagger" ],
         [ "Burning claws" ],
-        [ "Dragon dagger" ],
-        [ "Abyssal dagger" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Helmet": [
-        [ "Torva full helm" ],
-        [ "Serpentine helm" ],
-        [ "Justiciar faceguard", "Neitiznot faceguard" ],
-        [ "Any Barrows tank helm" ],
-        [ "Blood moon helm", "Helm of neitiznot", "Berserker helm" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
-        [ "Amulet of rancour" ],
-        [ "Amulet of torture", "Amulet of fury" ],
-        [ "Amulet of strength" ],
-        [ "Amulet of glory" ],
-        [ "Amulet of power" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
-        [ "Infernal cape" ],
-        [ "Fire cape" ],
-        [ "Mythical cape" ],
-        [ "Any Skillcape (t)" ],
-        [ "Obsidian cape", "Any Skillcape" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
-        [ "Torva platebody" ],
-        [ "Justiciar chestguard" ],
-        [ "Bandos chestplate" ],
-        [ "Dharok's platebody", "Guthan's platebody", "Torag's platebody" ],
-        [ "Fighter torso", "Verac's brassard", "Dragon chainbody" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Legs": [
-        [ "Torva platelegs" ],
-        [ "Justiciar legguards" ],
-        [ "Bandos tassets" ],
-        [ "Any Barrows tank legs" ],
-        [ "Dragon platelegs" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
-        [ "Ferocious gloves" ],
-        [ "Barrows gloves" ],
-        [ "Dragon gloves" ],
-        [ "Rune gloves" ],
-        [ "Regen bracelet", "Granite gloves" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
-        [ "Primordial boots", "Echo boots" ],
-        [ "Dragon boots" ],
-        [ "Guardian boots" ],
-        [ "Granite boots" ],
-        [ "Spiked manacles", "Rune boots" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ring": [
-        [ "Ultor ring" ],
-        [ "Berserker ring (i)" ],
-        [ "Ring of suffering (i)" ],
-        [ "Lightbearer" ],
-        [ "Brimstone ring", "Granite ring (i)" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Shield": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     },
-    "Blue Moon": {
+    "Blue Moon weapon": {
       "Weapon": [
         [ "Scythe of Vitur" ],
         [ "Dual macuahuitl", "Glacial temotli" ],
         [ "Inquisitor's mace", "Soulreaper axe" ],
-        [ "Ursine chainmace (u)", "Zamorakian hasta", "Abyssal bludgeon" ],
+        [ "Ursine chainmace(u)", "Zamorakian hasta", "Abyssal bludgeon" ],
         [ "Sarachnis cudgel", "Zombie axe", "Torag's hammers" ]
-      ],
-      "Shield": [
-        [ "Dragonfire shield" ],
-        [ "Avernic defender" ],
-        [ "Dragon defender", "Toktz-ket-xil" ],
-        [ "Rune defender", "Blessed spirit shield", "Dragon sq shield", "Crystal shield" ],
-        [ "Rune kiteshield" ]
       ],
       "Special Attack": [
         [ "Dragon claws", "Crystal halberd" ],
-        [ "Burning claws" ],
         [ "Voidwaker" ],
-        [ "Dragon dagger" ],
-        [ "Abyssal dagger" ],
-        [ "Dragon mace" ]
+        [ "Burning claws", "Dragon dagger" ],
+        [ "Dragon mace" ],
+        [ "N/A" ]
       ],
       "Helmet": [
-        [ "Torva full helm" ],
-        [ "Serpentine helm" ],
-        [ "Justiciar faceguard", "Neitiznot faceguard" ],
-        [ "Any Barrows tank helm" ],
-        [ "Blood moon helm", "Helm of neitiznot", "Berserker helm" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
-        [ "Amulet of rancour" ],
-        [ "Amulet of torture", "Amulet of fury" ],
-        [ "Amulet of strength" ],
-        [ "Amulet of glory" ],
-        [ "Amulet of power" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
-        [ "Infernal cape" ],
-        [ "Fire cape" ],
-        [ "Mythical cape" ],
-        [ "Any Skillcape (t)" ],
-        [ "Obsidian cape", "Any Skillcape" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
-        [ "Torva platebody" ],
-        [ "Justiciar chestguard" ],
-        [ "Bandos chestplate" ],
-        [ "Dharok's platebody", "Guthan's platebody", "Torag's platebody" ],
-        [ "Fighter torso", "Verac's brassard", "Dragon chainbody" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Legs": [
-        [ "Torva platelegs" ],
-        [ "Justiciar legguards" ],
-        [ "Bandos tassets" ],
-        [ "Any Barrows tank legs" ],
-        [ "Dragon platelegs" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
-        [ "Ferocious gloves" ],
-        [ "Barrows gloves" ],
-        [ "Dragon gloves" ],
-        [ "Rune gloves" ],
-        [ "Regen bracelet", "Granite gloves" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
-        [ "Primordial boots", "Echo boots" ],
-        [ "Dragon boots" ],
-        [ "Guardian boots" ],
-        [ "Granite boots" ],
-        [ "Spiked manacles", "Rune boots" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ring": [
-        [ "Ultor ring" ],
-        [ "Berserker ring (i)" ],
-        [ "Ring of suffering (i)" ],
-        [ "Lightbearer" ],
-        [ "Brimstone ring", "Granite ring (i)" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Shield": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     },
-    "Blood Moon": {
+    "Blood Moon weapon": {
       "Weapon": [
         [ "Scythe of Vitur" ],
         [ "Soulreaper axe" ],
@@ -280,79 +363,82 @@
         [ "Noxious halberd", "Abyssal whip", "Zamorakian hasta" ],
         [ "Dragon scimitar", "Sulphur blades", "Zombie axe" ]
       ],
-      "Shield": [
-        [ "Dragonfire shield" ],
-        [ "Avernic defender" ],
-        [ "Dragon defender", "Toktz-ket-xil" ],
-        [ "Rune defender", "Blessed spirit shield", "Dragon sq shield", "Crystal shield" ],
-        [ "Rune kiteshield" ]
-      ],
       "Special Attack": [
         [ "Dragon claws", "Crystal halberd" ],
-        [ "Voidwaker", "Burning claws" ],
-        [ "Dragon dagger" ],
+        [ "Voidwaker" ],
+        [ "Dragon dagger", "Burning claws" ],
         [ "Abyssal dagger" ],
         [ "Dragon mace" ]
       ],
       "Helmet": [
-        [ "Torva full helm" ],
-        [ "Serpentine helm" ],
-        [ "Justiciar faceguard", "Neitiznot faceguard" ],
-        [ "Any Barrows tank helm" ],
-        [ "Blood moon helm", "Helm of neitiznot", "Berserker helm" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
-        [ "Amulet of rancour" ],
-        [ "Amulet of torture", "Amulet of fury" ],
-        [ "Amulet of strength" ],
-        [ "Amulet of glory" ],
-        [ "Amulet of power" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
-        [ "Infernal cape" ],
-        [ "Fire cape" ],
-        [ "Mythical cape" ],
-        [ "Any Skillcape (t)" ],
-        [ "Obsidian cape", "Any Skillcape" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
-        [ "Torva platebody" ],
-        [ "Justiciar chestguard" ],
-        [ "Bandos chestplate" ],
-        [ "Dharok's platebody", "Guthan's platebody", "Torag's platebody" ],
-        [ "Fighter torso", "Verac's brassard", "Dragon chainbody" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Legs": [
-        [ "Torva platelegs" ],
-        [ "Justiciar legguards" ],
-        [ "Bandos tassets" ],
-        [ "Any Barrows tank legs" ],
-        [ "Dragon platelegs" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
-        [ "Ferocious gloves" ],
-        [ "Barrows gloves" ],
-        [ "Dragon gloves" ],
-        [ "Rune gloves" ],
-        [ "Regen bracelet", "Granite gloves" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
-        [ "Primordial boots", "Echo boots" ],
-        [ "Dragon boots" ],
-        [ "Guardian boots" ],
-        [ "Granite boots" ],
-        [ "Spiked manacles", "Rune boots" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ring": [
-        [ "Ultor ring" ],
-        [ "Berserker ring (i)" ],
-        [ "Bellator ring" ],
-        [ "Ring of suffering (i)", "Lightbearer" ],
-        [ "Brimstone ring", "Granite ring (i)" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Shield": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     }
   }

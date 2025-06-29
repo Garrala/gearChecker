@@ -1,49 +1,56 @@
 {
-  "name": "Spindel",
+  "name": "spindel",
   "category": "Wilderness Bosses",
-  "image": "assets/monster-icons/spindel.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Spindel",
+  "image": "assets/monster-icons/spindel.png",
   "bosses": [
     {
-      "name": "Spindel",
-      "image": "assets/monster-icons/spindel.png",
+      "name": "spindel",
       "wiki_link": "https://oldschool.runescape.wiki/w/Spindel",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "image": "assets/monster-icons/spindel.png",
+      "combat_level": 302,
+      "hp": 515,
+      "max_hit": {
+        "melee": 14,
+        "ranged": 31,
+        "magic": 24
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 70,
+          "slash": 70,
+          "crush": 10
         },
-        "magic": 200,
+        "magic": 205,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 103,
+          "bolts": 103,
+          "thrown": 103
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [ "Stab", "Magic", "Ranged" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 4,
+        "seconds": 2.4
       },
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
-        "thralls": false
+        "cannons": true,
+        "thralls": true
+      },
+      "weaknesses": {
+        "fire": "25%"
       }
     }
   ],
   "gear_setups": {
-    "Melee (Spindel)": {
+    "Melee": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
         [ "Helm of neitiznot", "Zombie helmet", "Dwarven helmet" ],
         [ "Proselyte sallet" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -86,14 +93,14 @@
         [ "Avernic defender" ],
         [ "Dragon defender" ],
         [ "Dragonfire shield" ],
-        [ "Rune defender" ],
-        [ "Toktz-ket-xil", "Book of war", "Falador shield 4" ]
+        [ "Rune defender", "Toktz-ket-xil" ],
+        [ "Book of war", "Falador shield 4" ]
       ],
-      "Special Attack": [
-        [ "Ursine chainmace" ],
-        [ "Elder maul" ],
-        [ "Dragon warhammer" ],
-        [ "Dragon mace" ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
@@ -117,77 +124,122 @@
         [ "Tyrannical ring (i)" ],
         [ "Ring of wealth (i)" ]
       ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ],
-        [ "N/A" ],
-        [ "N/A" ],
+      "Special Attack": [
+        [ "Ursine chainmace" ],
+        [ "Elder maul" ],
+        [ "Dragon warhammer" ],
+        [ "Dragon mace" ],
         [ "N/A" ]
       ]
     },
-    "Ranged (Spindel)": {
+    "Ranged": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Any Blessed coif" ],
-        [ "Archer helm" ]
+        [ "Blessed coif" ],
+        [ "Archer helm" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
         [ "Amulet of glory" ],
-        [ "Amulet of power" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Ava's assembler" ],
         [ "Ava's accumulator" ],
         [ "Ranging cape" ],
-        [ "Ava's attractor" ]
+        [ "Ava's attractor" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Any Blessed body", "Crystal body" ],
-        [ "Black d'hide body" ]
+        [ "Black d'hide body" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Legs": [
         [ "Any Blessed chaps", "Crystal legs" ],
-        [ "Black d'hide chaps" ]
+        [ "Black d'hide chaps" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Weapon": [
         [ "Webweaver bow", "Craw's bow" ],
         [ "Twisted bow" ],
         [ "Bow of Faerdhinen" ],
         [ "Zaryte crossbow", "Armadyl crossbow" ],
-        [ "Dragon crossbow", "Rune crossbow" ]
+        [ "Dragon crossbow", "Rune crossbow" ],
+        [ "Bow of Faerdhinen" ]
       ],
       "Shield": [
         [ "Twisted buckler" ],
         [ "Dragonfire ward", "Odium ward" ],
         [ "Book of law", "Unholy book" ],
-        [ "Black d'hide shield" ]
+        [ "Black d'hide shield" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
-      "Special Attack": [
-        [ "Zaryte crossbow" ],
-        [ "Webweaver bow" ]
+      "Ammo": [
+        [
+          "Rada's blessing 3",
+          "Rada's blessing 2",
+          "Craw's bow",
+          "Webweaver bow",
+          "Bow of faerdhinen",
+          "Diamond dragon bolts(e)",
+          "Zaryte crossbow",
+          "Dragon arrow",
+          "twisted bow",
+          "Any God blessing"
+        ],
+        [ "Diamond dragon bolts (e)" ],
+        [ "Diamond bolts (e)" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
         [ "Any Blessed vambraces" ],
-        [ "Black d'hide vambraces" ]
+        [ "Black d'hide vambraces" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Any Blessed boots" ],
         [ "Mixed hide boots" ],
-        [ "Shayzien boots (5)", "Snakeskin boots" ]
+        [ "Shayzien boots(5)" ],
+        [ "Snakeskin boots" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Ring of suffering (i)" ],
         [ "Ring of shadows" ],
-        [ "Ring of wealth (i)" ]
+        [ "Ring of wealth (i)" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2", "Dragon arrows" ],
-        [ "Diamond dragon bolts (e)", "Diamond bolts (e)", "Diamond bolts" ]
+      "Special Attack": [
+        [ "Zaryte crossbow" ],
+        [ "Webweaver bow" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     }
-
   }
 }

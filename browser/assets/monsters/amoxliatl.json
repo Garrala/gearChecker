@@ -1,20 +1,18 @@
 {
-  "name": "Amoxliatl",
+  "name": "amoxliatl",
   "category": "Instanced Bosses",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Amoxliatl",
   "image": "assets/monster-icons/amoxliatl.png",
   "bosses": [
     {
-      "name": "Amoxliatl",
-      "image": "assets/monster-icons/amoxliatl.png",
+      "name": "amoxliatl",
       "wiki_link": "https://oldschool.runescape.wiki/w/Amoxliatl",
+      "image": "assets/monster-icons/amoxliatl.png",
       "combat_level": 263,
       "hp": 520,
       "max_hit": {
-        "magic": 22,
-        "Icicle Crash": 34
-      },
-      "weaknesses": {
-        "fire": "30%"
+        "standard": 22,
+        "icicle crash": 34
       },
       "defense": {
         "melee": {
@@ -31,47 +29,24 @@
       },
       "attack_styles": [ "Magic" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 8,
+        "seconds": 4.8
       },
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": true,
-        "thralls": false
+        "cannons": true
+      },
+      "weaknesses": {
+        "fire": "30%"
       }
     }
   ],
   "gear_setups": {
     "Melee": {
-      "Weapon": [
-        [ "Scythe of Vitur" ],
-        [ "Dual macuahuitl", "Inquisitor's mace" ],
-        [
-          "Soulreaper axe",
-          "Abyssal bludgeon",
-          "Dual macuahuitl",
-          "Ursine chainmace (u)",
-          "Zamorakian hasta"
-        ],
-        [ "Sarachnis cudgel", "Glacial temotli", "Saradomin sword" ],
-        [ "Zombie axe", "Dragon mace" ]
-      ],
-      "Shield": [
-        [ "Avernic defender" ],
-        [ "Dragon defender" ],
-        [ "Rune defender" ],
-        [ "Dragonfire shield" ],
-        [ "Adamant defender", "Toktz-ket-xil" ]
-      ],
-      "Special Attack": [
-        [ "Burning claws", "Dragon claws" ],
-        [ "Dragon dagger" ],
-        [ "Crystal halberd", "Saradomin godsword" ],
-        [ "Dragon mace" ]
-      ],
       "Helmet": [
-        [ "Slayer helmet (i)", "Inquisitor's great helm", "Torva full helm" ],
+        [ "Slayer helmet", "Inquisitor's great helm", "Torva full helm" ],
         [ "Blood moon helm" ],
         [ "Neitiznot faceguard" ],
         [ "Zombie helmet", "Helm of neitiznot" ],
@@ -89,7 +64,7 @@
         [ "Fire cape" ],
         [ "Mythical cape" ],
         [ "Ardougne cloak 4", "Mixed hide cape" ],
-        [ "Any Skillcape (t)" ]
+        [ "Any Skillcape" ]
       ],
       "Body": [
         [ "Inquisitor's hauberk", "Torva platebody" ],
@@ -105,6 +80,27 @@
         [ "Obsidian platelegs", "Proselyte cuisse" ],
         [ "Monk's robe" ]
       ],
+      "Weapon": [
+        [ "Scythe of Vitur" ],
+        [ "Dual macuahuitl", "Inquisitor's mace" ],
+        [ "Soulreaper axe", "Abyssal bludgeon", "Dual macuahuitl", "Ursine chainmace(u)", "Zamorakian hasta" ],
+        [ "Sarachnis cudgel", "Glacial temotli", "Saradomin sword" ],
+        [ "Zombie axe", "Dragon mace" ]
+      ],
+      "Shield": [
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Rune defender" ],
+        [ "Dragonfire shield" ],
+        [ "Adamant defender", "Toktz-ket-xil" ]
+      ],
+      "Ammo": [
+        [ "Ghommal's lucky penny", "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
       "Gloves": [
         [ "Ferocious gloves" ],
         [ "Barrows gloves" ],
@@ -116,18 +112,22 @@
         [ "Primordial boots" ],
         [ "Aranea boots", "Dragon boots", "Spiked manacles" ],
         [ "Echo boots", "Guardian boots", "Granite boots" ],
-        [ "Mixed hide boots", "Rune boots", "Climbing boots" ]
+        [ "Mixed hide boots", "Rune boots", "Climbing boots" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
         [ "Berserker ring (i)" ],
         [ "Lightbearer" ],
         [ "Tyrannical ring (i)" ],
-        [ "Explorer's ring 1" ]
+        [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
       ],
-      "Ammo": [
-        [ "Ghommal's lucky penny", "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
+      "Special Attack": [
+        [ "Burning claws", "Dragon claws" ],
+        [ "Dragon dagger" ],
+        [ "Crystal halberd", "Saradomin godsword" ],
+        [ "Dragon mace" ],
+        [ "N/A" ]
       ]
     }
   }

@@ -1,51 +1,56 @@
 {
-  "name": "Skotizo",
+  "name": "skotizo",
   "category": "Sporadic Bosses",
-  "image": "assets/monster-icons/skotizo.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/Skotizo",
+  "image": "assets/monster-icons/skotizo.png",
   "bosses": [
     {
-      "name": "Skotizo",
-      "image": "assets/monster-icons/skotizo.png",
+      "name": "skotizo",
       "wiki_link": "https://oldschool.runescape.wiki/w/Skotizo",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "image": "assets/monster-icons/skotizo.png",
+      "combat_level": 321,
+      "hp": 450,
+      "max_hit": {
+        "stab": 38,
+        "magic": 38
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 80,
+          "slash": 80,
+          "crush": 80
         },
-        "magic": 200,
+        "magic": 80,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 130,
+          "bolts": 130,
+          "thrown": 130
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [ "Stab", "Magic" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 6,
+        "seconds": 3.6
       },
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
-        "thralls": false
+        "thralls": true
+      },
+      "weaknesses": {
+        "water": "40%"
       }
     }
   ],
   "gear_setups": {
     "Melee": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Black mask" ],
+        [ "Slayer helmet", "Black mask" ],
         [ "Torva full helm" ],
         [ "Neitiznot faceguard", "Serpentine helm" ],
         [ "Blood moon helm", "Helm of neitiznot" ],
-        [ "Berserker helm", "Obsidian helmet", "Void melee helm" ]
+        [ "Berserker helm", "Obsidian helmet", "Void melee helm", "void" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
@@ -91,7 +96,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -125,60 +130,84 @@
         [ "Dragon claws", "Arclight" ]
       ]
     },
-    "Ranged (High Level)": {
+    "Ranged": {
       "Helmet": [
-        [ "Masori mask (f)", "Slayer helmet (i)" ],
         [ "Armadyl helmet" ],
-        [ "Crystal helm" ],
-        [ "Any Blessed coif" ],
-        [ "Void ranger helm" ]
+        [ "Blessed coif" ],
+        [ "Void ranger helm", "void" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
         [ "Amulet of power" ],
-        [ "Amulet of defence" ]
+        [ "Amulet of defence" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
         [ "Ava's accumulator" ],
-        [ "Max cape", "Ranging cape(t)" ],
+        [ "Ava's attractor" ],
+        [ "Max cape", "Ranging cape (t)" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
         [ "Armadyl chestplate" ],
-        [ "Crystal body" ],
         [ "Any Blessed body", "Black d'hide body" ],
-        [ "Elite void top", "Void knight top" ]
+        [ "Elite void top", "Void knight top" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Armadyl chainskirt" ],
-        [ "Crystal legs" ],
         [ "Any Blessed chaps", "Black d'hide chaps" ],
-        [ "Elite void robe", "Void knight robe" ]
+        [ "Elite void robe", "Void knight robe" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Weapon": [
         [ "Twisted bow" ],
         [ "Scorching bow" ],
         [ "Bow of Faerdhinen" ],
         [ "Toxic blowpipe" ],
-        [ "Armadyl crossbow", "Dragon crossbow" ]
+        [ "Armadyl crossbow", "Dragon crossbow" ],
+        [ "Bow of Faerdhinen" ],
+        [ "Bow of Faerdhinen" ],
+        [ "Bow of Faerdhinen" ]
       ],
       "Shield": [
         [ "None if using a two-handed weapon" ],
         [ "Twisted buckler" ],
         [ "Odium ward" ],
         [ "Book of law" ],
-        [ "Unholy book" ]
+        [ "Unholy book" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Dragon dart", "Diamond bolts (e)" ],
-        [ "Amethyst arrows", "Rune dart", "Diamond bolts" ],
+        [ "Dragon arrows", "Dragon dart", "Diamond dragon bolts(e)" ],
+        [ "Amethyst arrows", "Rune dart", "Diamond bolts(e)" ],
         [ "Rune arrows", "Adamant dart", "Broad bolts" ],
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -187,30 +216,41 @@
         [ "Barrows gloves" ],
         [ "Black d'hide vambraces", "Ranger gloves" ],
         [ "Dragon gloves" ],
-        [ "Rune gloves", "Void knight gloves" ]
+        [ "Rune gloves", "Void knight gloves" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
         [ "Any Blessed boots" ],
         [ "Aranea boots" ],
-        [ "Boots of brimstone", "Mixed hide boots" ]
+        [ "Boots of brimstone", "Mixed hide boots" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Venator ring" ],
         [ "Archers ring (i)" ],
         [ "Brimstone ring" ],
         [ "Ring of the gods (i)" ],
-        [ "Ring of suffering (i)" ]
+        [ "Ring of suffering (i)" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Elder maul" ],
         [ "Bandos godsword" ],
         [ "Voidwaker", "Burning claws" ],
         [ "Dragon warhammer" ],
-        [ "Dragon claws", "Arclight" ]
+        [ "Dragon claws", "Arclight" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     }
-
   }
 }

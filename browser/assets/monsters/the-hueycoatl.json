@@ -1,40 +1,118 @@
 {
-  "name": "The Hueycoatl",
+  "name": "the hueycoatl",
   "category": "World Bosses",
-  "image": "assets/monster-icons/the_hueycoatl.png",
   "wiki_link": "https://oldschool.runescape.wiki/w/The_Hueycoatl#Normal",
+  "image": "assets/monster-icons/the_hueycoatl_normal_body.png",
   "bosses": [
     {
-      "name": "The Hueycoatl",
-      "image": "assets/monster-icons/the_hueycoatl.png",
+      "name": "the hueycoatl (hueycoatl normal body)",
       "wiki_link": "https://oldschool.runescape.wiki/w/The_Hueycoatl#Normal",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "image": "assets/monster-icons/the_hueycoatl_normal_body.png",
+      "combat_level": 642,
+      "hp": 0,
+      "max_hit": {
+        "melee": 14,
+        "magic": 14,
+        "ranged": 14
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 100,
+          "slash": 100,
+          "crush": 0
         },
         "magic": 200,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 350,
+          "bolts": 350,
+          "thrown": 350
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
-      "attack_speed": {
-        "ticks": 6
-      },
+      "attack_styles": [ "Melee", "Magic", "Ranged" ],
+      "attack_speed": null,
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
+        "cannons": true,
         "thralls": false
+      },
+      "weaknesses": {
+        "earth": "60%"
+      }
+    },
+    {
+      "name": "the hueycoatl (hueycoatl normal head)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/The_Hueycoatl#Normal",
+      "image": "assets/monster-icons/the_hueycoatl_normal_head.png",
+      "combat_level": 642,
+      "hp": 0,
+      "max_hit": {
+        "melee": 14,
+        "magic": 14,
+        "ranged": 14
+      },
+      "defense": {
+        "melee": {
+          "stab": 100,
+          "slash": 100,
+          "crush": 0
+        },
+        "magic": 200,
+        "ranged": {
+          "arrows": 350,
+          "bolts": 350,
+          "thrown": 350
+        }
+      },
+      "attack_styles": [ "Melee", "Magic", "Ranged" ],
+      "attack_speed": null,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      },
+      "weaknesses": {
+        "earth": "60%"
+      }
+    },
+    {
+      "name": "the hueycoatl (hueycoatl normal tail)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/The_Hueycoatl#Normal",
+      "image": "assets/monster-icons/the_hueycoatl_normal_tail.png",
+      "combat_level": 642,
+      "hp": 0,
+      "max_hit": {
+        "melee": 14,
+        "magic": 14,
+        "ranged": 14
+      },
+      "defense": {
+        "melee": {
+          "stab": 100,
+          "slash": 100,
+          "crush": 0
+        },
+        "magic": 200,
+        "ranged": {
+          "arrows": 350,
+          "bolts": 350,
+          "thrown": 350
+        }
+      },
+      "attack_styles": [ "Melee", "Magic", "Ranged" ],
+      "attack_speed": null,
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      },
+      "weaknesses": {
+        "earth": "60%"
       }
     }
   ],
@@ -58,7 +136,7 @@
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Mythical cape" ],
-        [ "Ardougne cloak" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -79,7 +157,7 @@
         [ "Scythe of Vitur", "Dragon hunter lance" ],
         [ "Inquisitor's mace", "Soulreaper axe" ],
         [ "Dual macuahuitl" ],
-        [ "Abyssal bludgeon", "Zamorakian hasta", "Ursine chainmace (u)" ],
+        [ "Abyssal bludgeon", "Zamorakian hasta", "Ursine chainmace(u)" ],
         [ "Sarachnis cudgel", "Zombie axe", "Dragon mace" ]
       ],
       "Shield": [
@@ -89,11 +167,11 @@
         [ "N/A" ],
         [ "N/A" ]
       ],
-      "Special Attack": [
-        [ "Dragon claws" ],
-        [ "Burning claws" ],
-        [ "Ursine chainmace" ],
-        [ "Dragon dagger" ],
+      "Ammo": [
+        [ "Ghommal's lucky penny", "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
@@ -115,9 +193,15 @@
         [ "Berserker ring (i)" ],
         [ "Lightbearer" ],
         [ "Ring of shadows" ],
-        [ "Explorer's ring" ]
+        [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
+      ],
+      "Special Attack": [
+        [ "Dragon claws" ],
+        [ "Burning claws" ],
+        [ "Ursine chainmace" ],
+        [ "Dragon dagger" ],
+        [ "N/A" ]
       ]
     }
-
   }
 }

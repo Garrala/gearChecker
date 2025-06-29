@@ -1,51 +1,17 @@
 {
-  "name": "Grotesque Guardians",
+  "name": "grotesque guardians",
   "category": "Slayer Bosses",
-  "image": "assets/monster-icons/grotesque_guardians.png",
-  "wiki_link": "https://oldschool.runescape.wiki/w/Grotesque_Guardians/Strategies",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Grotesque_Guardians",
+  "image": "assets/monster-icons/dawnhtml.png",
   "bosses": [
     {
-      "name": "Dusk",
-      "image": "assets/monster-icons/grotesque_guardians.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Dusk#Second_form",
-      "combat_level": 328,
-      "hp": 450,
-      "max_hit": {
-        "melee": 26,
-        "special": 65
-      },
-      "defense": {
-        "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
-        },
-        "magic": 0,
-        "ranged": {
-          "arrows": 0,
-          "bolts": 0,
-          "thrown": 0
-        }
-      },
-      "attack_styles": [ "Melee", "Special" ],
-      "attack_speed": {
-        "ticks": 6
-      },
-      "aggressive": true,
-      "immunities": {
-        "poison": true,
-        "venom": true,
-        "cannons": false,
-        "thralls": false
-      }
-    },
-    {
       "name": "Dawn",
-      "image": "assets/monster-icons/dawn.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Dawn",
+      "image": "assets/monster-icons/dawnhtml.png",
       "combat_level": 228,
       "hp": 450,
       "max_hit": {
+        "slash": 15,
         "ranged": 15
       },
       "defense": {
@@ -61,48 +27,58 @@
           "thrown": 0
         }
       },
-      "attack_styles": [ "Ranged" ],
-      "attack_speed": 6,
-      "aggressive": true,
+      "attack_styles": [ "Slash", "Ranged" ],
+      "attack_speed": {
+        "ticks": 6,
+        "seconds": 3.6
+      },
+      "aggressive": false,
       "immunities": {
         "poison": true,
-        "venom": true,
-        "cannons": false,
-        "thralls": false
-      }
+        "venom": true
+      },
+      "weaknesses": "none"
+    },
+    {
+      "name": "Dusk",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Dusk",
+      "image": "assets/monster-icons/duskhtml.png",
+      "combat_level": 248,
+      "hp": 450,
+      "max_hit": {
+        "special attack": 33
+      },
+      "defense": {
+        "melee": {
+          "stab": 0,
+          "slash": 0,
+          "crush": 0
+        },
+        "magic": 0,
+        "ranged": {
+          "arrows": 0,
+          "bolts": 0,
+          "thrown": 0
+        }
+      },
+      "attack_styles": [],
+      "attack_speed": {
+        "ticks": 6,
+        "seconds": 3.6
+      },
+      "aggressive": false,
+      "immunities": {
+        "poison": true,
+        "venom": true
+      },
+      "weaknesses": "none"
     }
   ],
   "gear_setups": {
     "Melee": {
-      "Weapon": [
-        [ "Scythe of Vitur" ],
-        [
-          "Soulreaper axe",
-          "Ghrazi rapier",
-          "Blade of Saeldor",
-          "Inquisitor's mace"
-        ],
-        [ "Noxious halberd", "Abyssal tentacle" ],
-        [ "Osmumten's fang", "Abyssal whip", "Abyssal bludgeon" ],
-        [ "Zamorakian hasta", "Dragon scimitar" ]
-      ],
-      "Shield": [
-        [ "Avernic defender" ],
-        [ "Dragon defender" ],
-        [ "Dragonfire shield" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Special Attack": [
-        [ "Dragon claws", "Burning claws" ],
-        [ "Dragon dagger" ],
-        [ "Toxic blowpipe" ],
-        [ "Saradomin godsword" ],
-        [ "Crystal halberd" ]
-      ],
       "Helmet": [
-        [ "Slayer helmet (i)", "Black mask (i)" ],
-        [ "Slayer helmet", "Black mask" ],
+        [ "Slayer helmet" ],
+        [ "Black mask" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -122,18 +98,32 @@
         [ "N/A" ]
       ],
       "Body": [
-        [ "Torva platebody" ],
+        [ "Torva platebody", "Oathplate chest" ],
         [ "Bandos chestplate" ],
         [ "Blood moon chestplate", "Fighter torso" ],
         [ "Obsidian platebody", "Eclipse moon chestplate" ],
         [ "Black d'hide body" ]
       ],
       "Legs": [
-        [ "Torva platelegs" ],
+        [ "Torva platelegs", "Oathplate legs" ],
         [ "Bandos tassets", "Blood moon tassets" ],
         [ "Obsidian platelegs", "Eclipse moon tassets" ],
         [ "Verac's plateskirt" ],
         [ "Dragon platelegs" ]
+      ],
+      "Weapon": [
+        [ "Scythe of Vitur" ],
+        [ "Soulreaper axe", "Ghrazi rapier", "Blade of Saeldor", "Inquisitor's mace" ],
+        [ "Noxious halberd", "Abyssal tentacle" ],
+        [ "Osmumten's fang", "Abyssal whip", "Abyssal bludgeon" ],
+        [ "Zamorakian hasta", "Dragon scimitar" ]
+      ],
+      "Shield": [
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Dragonfire shield" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Ferocious gloves" ],
@@ -153,44 +143,38 @@
         [ "Ultor ring" ],
         [ "Bellator ring", "Berserker ring (i)", "Lightbearer" ],
         [ "Brimstone ring" ],
-        [ "Ring of suffering (i)", "Archers ring (i)" ],
-        [ "Treasonous ring (i)", "Warrior ring (i)", "Tyrannical ring (i)" ]
-      ],
-      "Ammo": [
-        [ "Dragon arrows" ],
-        [ "Atlatl darts" ],
-        [ "Rada's blessing 4" ],
-        [ "Moonlight antler bolts", "Sunlight antler bolts" ],
-        [ "Amethyst arrows", "Rune arrows" ]
-      ]
-    },
-    "Ranged Switches": {
-      "Weapon": [
-        [ "Venator bow", "Toxic blowpipe" ],
-        [ "Eclipse atlatl" ],
-        [ "Bow of Faerdhinen" ],
-        [ "Hunters' sunlight crossbow" ],
-        [ "Magic shortbow (i)" ]
-      ],
-      "Shield": [
-        [ "Twisted buckler" ],
-        [ "Dragonfire ward" ],
-        [ "Odium ward" ]
+        [ "Ring of suffering (i)", "Archers ring(i)" ],
+        [ "Treasonous ring(i)", "Warrior ring (i)", "Tyrannical ring(i)" ]
       ],
       "Special Attack": [
+        [ "Dragon claws", "Burning claws" ],
+        [ "Dragon dagger(p)" ],
         [ "Toxic blowpipe" ],
-        [ "Eclipse atlatl" ]
+        [ "Saradomin godsword" ],
+        [ "Crystal halberd" ]
       ],
-      "Helmet": [
-        [ "Slayer helmet (i)", "Black mask (i)" ],
-        [ "Slayer helmet", "Black mask" ]
+      "Ammo": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
+    },
+    "Ranged switches": {
+      "Amulet": [
+        [ "Necklace of anguish" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
-      "Amulet": [ [ "Necklace of anguish" ] ],
       "Cape": [
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
         [ "Ava's accumulator" ],
-        [ "Ranging cape (t)" ]
+        [ "Ranging cape (t)" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
@@ -206,25 +190,61 @@
         [ "Any Blessed chaps", "Karil's leatherskirt" ],
         [ "Black d'hide chaps" ]
       ],
+      "Weapon": [
+        [ "Venator bow", "Toxic blowpipe" ],
+        [ "Eclipse atlatl" ],
+        [ "Bow of Faerdhinen" ],
+        [ "Hunters' sunlight crossbow" ],
+        [ "Magic shortbow (i)" ]
+      ],
+      "Shield": [
+        [ "Twisted buckler" ],
+        [ "Dragonfire ward" ],
+        [ "Odium ward" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Dragon arrows" ],
+        [ "Atlatl dart" ],
+        [ "Rada's blessing 4" ],
+        [ "Moonlight antler bolts", "Sunlight antler bolts" ],
+        [ "Amethyst arrows", "Rune arrow" ]
+      ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
         [ "Dragon gloves" ],
-        [ "Rune gloves" ]
+        [ "Rune gloves" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
         [ "Aranea boots" ],
-        [ "Any Blessed boots" ]
+        [ "Any Blessed boots" ],
+        [ "N/A" ]
       ],
-      "Ring": [ [ "Venator ring" ] ],
-      "Ammo": [
-        [ "Dragon arrows" ],
-        [ "Atlatl darts" ],
-        [ "Rada's blessing 4" ],
-        [ "Moonlight antler bolts", "Sunlight antler bolts" ],
-        [ "Amethyst arrows", "Rune arrows" ]
+      "Ring": [
+        [ "Venator ring" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Helmet": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Special Attack": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     }
   }

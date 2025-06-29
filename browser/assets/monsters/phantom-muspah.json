@@ -1,194 +1,361 @@
 {
-  "name": "Phantom Muspah",
+  "name": "phantom muspah",
   "category": "Instanced Bosses",
-  "image": "assets/monster-icons/phantom_muspah.png",
-  "wiki_link": "https://oldschool.runescape.wiki/w/Phantom_Muspah#Shielded",
+  "wiki_link": "https://oldschool.runescape.wiki/w/Phantom_Muspah",
+  "image": "assets/monster-icons/phantom_muspah_melee.png",
   "bosses": [
     {
-      "name": "Phantom Muspah",
-      "image": "assets/monster-icons/phantom_muspah.png",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Phantom_Muspah#Shielded",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "name": "phantom muspah (muspah melee)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Phantom_Muspah",
+      "image": "assets/monster-icons/phantom_muspah_melee.png",
+      "combat_level": 741,
+      "hp": 0,
+      "max_hit": {
+        "stab": 34
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 185,
+          "slash": 134,
+          "crush": 120
         },
-        "magic": 200,
+        "magic": 34,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 261,
+          "bolts": 261,
+          "thrown": 261
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [ "Stab" ],
       "attack_speed": {
-        "ticks": 6
+        "ticks": 5,
+        "seconds": 3
       },
       "aggressive": true,
       "immunities": {
         "poison": true,
         "venom": true,
-        "cannons": false,
+        "cannons": true,
         "thralls": false
+      },
+      "weaknesses": {
+        "air": "65%"
+      }
+    },
+    {
+      "name": "phantom muspah (muspah post shield)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Phantom_Muspah",
+      "image": "assets/monster-icons/phantom_muspah_post_shield.png",
+      "combat_level": 741,
+      "hp": 0,
+      "max_hit": {
+        "ranged": 72,
+        "magic": 79
+      },
+      "defense": {
+        "melee": {
+          "stab": 185,
+          "slash": 134,
+          "crush": 120
+        },
+        "magic": 437,
+        "ranged": {
+          "arrows": 56,
+          "bolts": 56,
+          "thrown": 56
+        }
+      },
+      "attack_styles": [ "Ranged", "Magic" ],
+      "attack_speed": {
+        "ticks": 5,
+        "seconds": 3
+      },
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      },
+      "weaknesses": {
+        "air": "65%"
+      }
+    },
+    {
+      "name": "phantom muspah (muspah ranged)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Phantom_Muspah",
+      "image": "assets/monster-icons/phantom_muspah_ranged.png",
+      "combat_level": 741,
+      "hp": 0,
+      "max_hit": {
+        "ranged": 61,
+        "magic": 72
+      },
+      "defense": {
+        "melee": {
+          "stab": 185,
+          "slash": 134,
+          "crush": 120
+        },
+        "magic": 437,
+        "ranged": {
+          "arrows": 56,
+          "bolts": 56,
+          "thrown": 56
+        }
+      },
+      "attack_styles": [ "Ranged", "Magic" ],
+      "attack_speed": {
+        "ticks": 6,
+        "seconds": 3.6
+      },
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      },
+      "weaknesses": {
+        "air": "65%"
+      }
+    },
+    {
+      "name": "phantom muspah (muspah shielded)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Phantom_Muspah",
+      "image": "assets/monster-icons/phantom_muspah_shielded.png",
+      "combat_level": 741,
+      "hp": 0,
+      "max_hit": {
+        "ranged": 72,
+        "magic": 79,
+        "shockwave": 80
+      },
+      "defense": {
+        "melee": {
+          "stab": 185,
+          "slash": 134,
+          "crush": 120
+        },
+        "magic": 437,
+        "ranged": {
+          "arrows": 56,
+          "bolts": 56,
+          "thrown": 56
+        }
+      },
+      "attack_styles": [ "Ranged", "Magic" ],
+      "attack_speed": {
+        "ticks": 5,
+        "seconds": 3
+      },
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      },
+      "weaknesses": {
+        "air": "65%"
+      }
+    },
+    {
+      "name": "phantom muspah (muspah teleporting)",
+      "wiki_link": "https://oldschool.runescape.wiki/w/Phantom_Muspah",
+      "image": "assets/monster-icons/phantom_muspah_teleporting.png",
+      "combat_level": 741,
+      "hp": 0,
+      "max_hit": {
+        "lightningcloud": 20
+      },
+      "defense": {
+        "melee": {
+          "stab": 185,
+          "slash": 134,
+          "crush": 120
+        },
+        "magic": 437,
+        "ranged": {
+          "arrows": 56,
+          "bolts": 56,
+          "thrown": 56
+        }
+      },
+      "attack_styles": [],
+      "attack_speed": {
+        "ticks": 5,
+        "seconds": 3
+      },
+      "aggressive": true,
+      "immunities": {
+        "poison": true,
+        "venom": true,
+        "cannons": true,
+        "thralls": false
+      },
+      "weaknesses": {
+        "air": "65%"
       }
     }
   ],
   "gear_setups": {
-    "Magic & Ranged": {
-      "Weapon": [
-        [ "Tumeken's shadow", "Twisted bow" ],
-        [ "Harmonised nightmare staff", "Bow of Faerdhinen" ],
-        [ "Kodai wand", "Nightmare staff", "Zaryte crossbow", "Armadyl crossbow", "Dragon hunter crossbow", "Dragon crossbow" ],
-        [ "Sanguinesti staff", "Trident of the swamp", "Trident of the seas", "Toxic staff of the dead", "Toxic blowpipe", "Crystal bow" ],
-        [ "Ancient sceptre", "Rune crossbow" ]
-      ],
-      "Shield": [
-        [ "Elidinis' ward (f)", "Tome of fire" ],
-        [ "Arcane spirit shield" ],
-        [ "Ancient wyvern shield", "Elidinis' ward" ],
-        [ "Malediction ward" ],
-        [ "Mage's book" ]
-      ],
-      "Special Attack": [
-        [ "Zaryte crossbow" ],
-        [ "Armadyl crossbow" ],
-        [ "Elder maul" ],
-        [ "Toxic blowpipe" ],
+    "Magic": {
+      "Helmet": [
+        [ "Virtus mask" ],
+        [ "Ahrim's hood" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
-      "Helmet": [
-        [ "Slayer helmet (i)", "Ancestral hat", "Masori mask (f)" ],
-        [ "Virtus mask", "Ahrim's hood", "Armadyl helmet" ],
-        [ "Infinity hat", "Bloodbark helm", "Any Blessed coif" ],
-        [ "Farseer helm", "Karil's coif" ],
-        [ "Helm of neitiznot" ]
-      ],
       "Amulet": [
-        [ "Occult necklace", "Necklace of anguish" ],
+        [ "Occult necklace" ],
         [ "Amulet of fury" ],
-        [ "Amulet of the damned" ],
         [ "Amulet of glory" ],
-        [ "Amulet of power" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
-        [ "Any Imbued Any God cape", "Dizana's quiver" ],
-        [ "Any God cape", "Ava's assembler" ],
-        [ "Any Skillcape", "Ava's accumulator" ],
+        [ "Any Imbued God cape" ],
+        [ "Any God cape" ],
+        [ "Ardougne cloak 4" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
-        [ "Ancestral robe top", "Masori body (f)" ],
-        [ "Virtus robe top", "Masori body" ],
-        [ "Ahrim's robetop", "Armadyl chestplate" ],
-        [ "Dagon'hai robe top", "Karil's leathertop" ],
-        [ "Infinity top", "Any Blessed body" ]
+        [ "Ancestral robe top" ],
+        [ "Virtus robe top" ],
+        [ "Ahrim's robetop" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Legs": [
-        [ "Ancestral robe bottom", "Masori chaps (f)" ],
-        [ "Virtus robe bottom", "Masori chaps (f)" ],
-        [ "Ahrim's robeskirt", "Armadyl chainskirt" ],
-        [ "Dagon'hai robe bottom", "Karil's leatherskirt" ],
-        [ "Infinity bottoms", "Any Blessed chaps" ]
+        [ "Ancestral robe bottom" ],
+        [ "Virtus robe bottom" ],
+        [ "Ahrim's robeskirt" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Weapon": [
+        [ "Tumeken's shadow" ],
+        [ "Harmonised nightmare staff", "Sanguinesti staff" ],
+        [ "Mystic smoke staff", "Twinflame staff" ],
+        [ "Trident of the swamp", "Trident of the seas" ],
+        [ "N/A" ]
+      ],
+      "Shield": [
+        [ "Elidinis' ward (f)" ],
+        [ "Arcane spirit shield" ],
+        [ "Ancient wyvern shield", "Elidinis' ward" ],
+        [ "Mage's book" ],
+        [ "Malediction ward" ]
       ],
       "Gloves": [
-        [ "Tormented bracelet", "Zaryte vambraces" ],
+        [ "Tormented bracelet" ],
         [ "Barrows gloves" ],
         [ "Regen bracelet" ],
         [ "Combat bracelet" ],
         [ "N/A" ]
       ],
       "Boots": [
-        [ "Eternal boots", "Pegasian boots" ],
-        [ "Aranea boots" ],
-        [ "Infinity boots", "Ranger boots" ],
-        [ "Bloodbark boots", "Any Blessed boots" ],
-        [ "Boots of brimstone" ]
+        [ "Eternal boots" ],
+        [ "Aranea boots", "Infinity boots" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Lightbearer" ],
+        [ "Magus ring" ],
         [ "Ring of suffering (i)" ],
         [ "Ring of shadows" ],
-        [ "Brimstone ring" ],
-        [ "Explorer's ring 4" ]
-      ],
-      "Ammo": [
-        [ "Dragon arrows", "Sapphire dragon bolts (e)", "Ruby dragon bolts (e)" ],
-        [ "Amethyst arrows", "Diamond dragon bolts (e)", "Sapphire bolts (e)" ],
-        [ "Rune arrows", "Diamond bolts (e)" ],
-        [ "Rada's blessing 4" ],
-        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
-      ]
-    },
-    "Ranged Only": {
-      "Weapon": [
-        [ "Zaryte crossbow", "Twisted bow" ],
-        [ "Armadyl crossbow", "Bow of Faerdhinen" ],
-        [ "Dragon hunter crossbow", "Dragon crossbow", "Toxic blowpipe", "Crystal bow" ],
-        [ "Rune crossbow" ]
-      ],
-      "Shield": [
-        [ "Twisted buckler" ],
-        [ "Dragonfire ward" ],
-        [ "Odium ward" ],
-        [ "Book of law" ]
+        [ "Brimstone ring" ]
       ],
       "Special Attack": [
-        [ "Zaryte crossbow" ],
-        [ "Armadyl crossbow" ],
-        [ "Elder maul" ],
-        [ "Dragon warhammer" ]
+        [ "Accursed sceptre" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
+      "Ammo": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
+    },
+    "Ranged": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Masori mask (f)" ],
         [ "Crystal helm" ],
-        [ "Armadyl helmet" ],
-        [ "Any Blessed coif" ],
-        [ "Karil's coif" ]
+        [ "Blessed coif" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
-        [ "Amulet of power" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
         [ "Ava's accumulator" ],
-        [ "Any Skillcape" ]
+        [ "Ranging cape" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
         [ "Crystal body" ],
-        [ "Armadyl chestplate" ],
+        [ "Any Blessed body" ],
         [ "Karil's leathertop" ],
-        [ "Any Blessed body" ]
+        [ "N/A" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Crystal legs" ],
-        [ "Armadyl chainskirt" ],
+        [ "Any Blessed chaps" ],
         [ "Karil's leatherskirt" ],
-        [ "Any Blessed chaps" ]
+        [ "N/A" ]
+      ],
+      "Weapon": [
+        [ "Twisted bow" ],
+        [ "Bow of Faerdhinen" ],
+        [ "Zaryte crossbow", "Armadyl crossbow", "Toxic blowpipe" ],
+        [ "Other crossbows" ],
+        [ "Hunters' sunlight crossbow" ]
+      ],
+      "Shield": [
+        [ "Twisted buckler" ],
+        [ "Dragonfire ward" ],
+        [ "Odium ward" ],
+        [ "Book of law" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Dragon arrows", "Sapphire dragon bolts(e)", "Ruby dragon bolts(e)", "Moonlight antler bolts" ],
+        [ "Amethyst arrows", "Diamond dragon bolts(e)", "Sapphire bolts(e)", "Sunlight antler bolts" ],
+        [ "Rune arrows", "Diamond bolts(e)" ],
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "2", "Any God blessing" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
         [ "Regen bracelet" ],
-        [ "Blessed bracers" ],
-        [ "Combat bracelet" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
-        [ "Ranger boots" ],
+        [ "Ranger boots", "Aranea boots" ],
         [ "Any Blessed boots" ],
-        [ "Boots of brimstone" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Lightbearer" ],
@@ -197,12 +364,98 @@
         [ "Ring of suffering (i)" ],
         [ "Ring of shadows" ]
       ],
+      "Special Attack": [
+        [ "Zaryte crossbow" ],
+        [ "Armadyl crossbow" ],
+        [ "Elder maul" ],
+        [ "Dragon warhammer" ],
+        [ "N/A" ]
+      ]
+    },
+    "Melee": {
+      "Helmet": [
+        [ "Torva full helm" ],
+        [ "Neitiznot faceguard" ],
+        [ "Serpentine helm", "Inquisitor's great helm" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Amulet": [
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Cape": [
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Mythical cape" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Body": [
+        [ "Oathplate chest" ],
+        [ "Torva platebody" ],
+        [ "Bandos chestplate", "Inquisitor's hauberk" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Legs": [
+        [ "Oathplate legs" ],
+        [ "Torva platelegs" ],
+        [ "Bandos tassets", "Inquisitor's plateskirt" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Weapon": [
+        [ "Scythe of Vitur" ],
+        [ "Inquisitor's mace" ],
+        [ "Soulreaper axe" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Shield": [
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
       "Ammo": [
-        [ "Dragon arrows", "Sapphire dragon bolts (e)", "Ruby dragon bolts (e)" ],
-        [ "Amethyst arrows", "Diamond dragon bolts (e)", "Sapphire bolts (e)" ],
-        [ "Rune arrows", "Diamond bolts (e)" ],
         [ "Rada's blessing 4" ],
-        [ "Any God blessing", "Rada's blessing 3", "Rada's blessing 2" ]
+        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Gloves": [
+        [ "Ferocious gloves" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Boots": [
+        [ "Primordial boots" ],
+        [ "Echo boots" ],
+        [ "Dragon boots" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ring": [
+        [ "Bellator ring" ],
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "Ring of suffering (i)" ],
+        [ "Lightbearer" ]
+      ],
+      "Special Attack": [
+        [ "Elder maul" ],
+        [ "Dragon warhammer" ],
+        [ "Voidwaker" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ]
     }
   }
