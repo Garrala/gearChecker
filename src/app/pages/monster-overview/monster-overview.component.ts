@@ -578,10 +578,34 @@ export class MonsterOverviewComponent implements OnInit {
 
     // Manual cleanup rules
     const replacements: { [key: string]: string } = {
-      'duke sucellus (sucellus awake awakened)': 'Duke Sucellus',
+      'duke sucellus (sucellus awake awakened)': 'Duke Sucellus (Awakened)',
+      'duke sucellus (sucellus awake post quest)': 'Duke Sucellus (Post Quest)',
+      'duke sucellus (sucellus awake quest)': 'Duke Sucellus (Quest)',
       'the leviathan (leviathan awakened)': 'The Leviathan',
       'kalphite queen (queen airborne)': 'Kalphite Queen (Airborne)',
       'kalphite queen (queen crawling)': 'Kalphite Queen (Crawling)',
+      'abyssal sire (sire phase 1)': 'Abyssal Sire (Phase 1)',
+      'abyssal sire (sire phase 2)': 'Abyssal Sire (Phase 2)',
+      'abyssal sire (sire phase 3 stage 1)': 'Abyssal Sire (Phase 3 Stage 1)',
+      'abyssal sire (sire phase 3 stage 2)': 'Abyssal Sire (Phase 3 Stage 2)',
+      'alchemical hydra (hydra electric)': 'Alchemical Hydra (Electric)',
+      'alchemical hydra (hydra extinguished)': 'Alchemical Hydra (Extinguished)',
+      'alchemical hydra (hydra fire)': 'Alchemical Hydra (Fire)',
+      'alchemical hydra (hydra serpentine)': 'Alchemical Hydra (Serpentine)',
+      'araxxor (in combat)': 'Araxxor',
+      'calvarion (normal)': 'Calvar\'ion',
+      'calvarion (enraged)': 'Calvar\'ion (Enraged)',
+      'phantom muspah (muspah melee)': 'Phantom Muspah (Melee)',
+      'phantom muspah (muspah post shield)': 'Phantom Muspah (Post Shield)',
+      'phantom muspah (muspah ranged)': 'Phantom Muspah (Ranged)',
+      'phantom muspah (muspah shielded)': 'Phantom Muspah (Shielded)',
+      'phantom muspah (muspah teleporting)': 'Phantom Muspah (Teleporting)',
+      'the hueycoatl (hueycoatl normal head)': 'The Hueycoatl',
+      'the hueycoatl (hueycoatl normal body)': 'The Hueycoatl (Body)',
+      'the hueycoatl (hueycoatl normal tail)': 'The Hueycoatl (Tail)',
+      'vetion (normal)': 'Vet\'ion',
+      'vetion (enraged)': 'Vet\'ion (Enraged)',
+      'vorkath (dragon slayer ii)': 'Vorkath (Dragon Slayer II)'
       // Add more cleanup cases here as needed
     };
 
@@ -609,7 +633,15 @@ export class MonsterOverviewComponent implements OnInit {
   getOrderedBossPhases(monster: Monster): Monster['bosses'] {
     const phaseOrderOverrides: { [key: string]: string[] } = {
       'kalphite queen': ['queen crawling', 'queen airborne'],
-      'duke sucellus': ['sucellus awake', 'sucellus awakened'],
+      'duke sucellus': ['duke sucellus (sucellus awake post quest)', 'duke sucellus (sucellus awake awakened)', 'duke sucellus (sucellus awake quest)'],
+      'alchemical hydra': ['alchemical hydra (hydra serpentine)', 'alchemical hydra (hydra electric)', 'alchemical hydra (hydra fire)', 'alchemical hydra (hydra extinguished)'],
+      'araxxor': ['araxxor (in combat)', 'araxxor (enraged)'],
+      'calvarion': ['calvarion (normal)', 'calvarion (enraged)'],
+      'phantom muspah': ['phantom muspah (muspah ranged)', 'phantom muspah (muspah melee)', 'phantom muspah (muspah teleporting)', 'phantom muspah (muspah shielded)', 'phantom muspah (muspah post shield)'],
+      'the hueycoatl': ['the hueycoatl (hueycoatl normal head)', 'the hueycoatl (hueycoatl normal body)', 'the hueycoatl (hueycoatl normal tail)'],
+      'vetion': ['vetion (normal)', 'vetion (enraged)'],
+      'vorkath': ['vorkath (post quest)', 'vorkath (dragon slayer ii)'],
+      'zulrah': ['zulrah (serpentine)', 'zulrah (magma)', 'zulrah (tanzanite)']
     };
 
     const name = monster.name.toLowerCase();
