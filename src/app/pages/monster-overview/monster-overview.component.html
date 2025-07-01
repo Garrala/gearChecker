@@ -94,23 +94,17 @@
         </h2>
         <div class="info-grid">
           <div class="info-item">
-            <img
-              src="./assets/misc-icons/Hitpoints_icon.png"
-              title="Hitpoints"
-            />
+            <img src="./assets/misc-icons/Hitpoints_icon.png"
+                 title="Hitpoints" />
             <strong>Hitpoints:</strong>
             {{ getSelectedBoss()?.hp }}
           </div>
           <div class="info-item">
-            <img
-              src="./assets/misc-icons/max_hit.png"
-              title="Max Hit"
-            />
+            <img src="./assets/misc-icons/max_hit.png"
+                 title="Max Hit" />
             <strong>Max Hit:</strong>
             <div *ngIf="getSelectedBoss()?.max_hit">
-              <div
-                *ngFor="let key of objectKeys(getSelectedBoss()?.max_hit || {})"
-              >
+              <div *ngFor="let key of objectKeys(getSelectedBoss()?.max_hit || {})">
                 <span>
                   <img *ngIf="key === 'melee'"
                        title="Melee"
@@ -186,10 +180,8 @@
             </div>
           </div>
           <div class="info-item">
-            <img
-              src="./assets/misc-icons/Combat_icon.png"
-              title="Attack Style"
-            />
+            <img src="./assets/misc-icons/Combat_icon.png"
+                 title="Attack Style" />
             <strong>Attack Style:</strong>
             <span class="attack-style-box">
 
@@ -267,18 +259,16 @@
         <div class="defense-grid">
           <!-- Melee Defense (Row 1 - 3 columns) -->
           <div class="defense-box">
-            <img
-              src="./assets/misc-icons/Steel_dagger.png"
-              title="Stab"
-            />
-            <span
-              *ngIf="getSelectedBoss()?.defense?.melee?.stab !== undefined"
-              [ngClass]="{
-                'stat-value': true,
-                positive: (getSelectedBoss()?.defense?.melee?.stab ?? 0) > 0,
-                negative: (getSelectedBoss()?.defense?.melee?.stab ?? 0) < 0,
+            <img src="./assets/misc-icons/Steel_dagger.png"
+                 title="Stab" />
+            <span *ngIf="getSelectedBoss()?.defense?.melee?.stab !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (getSelectedBoss()?.defense?.melee?.stab ?? 0)>
+              0,
+              negative: (getSelectedBoss()?.defense?.melee?.stab ?? 0) < 0,
               }"
-            >
+              >
               {{
                 (getSelectedBoss()?.defense?.melee?.stab ?? 0) > 0 ? '+' : ''
               }}
@@ -287,18 +277,16 @@
           </div>
 
           <div class="defense-box">
-            <img
-              src="./assets/misc-icons/Steel_scimitar.png"
-              title="Slash"
-            />
-            <span
-              *ngIf="getSelectedBoss()?.defense?.melee?.slash !== undefined"
-              [ngClass]="{
-                'stat-value': true,
-                positive: (getSelectedBoss()?.defense?.melee?.slash ?? 0) > 0,
-                negative: (getSelectedBoss()?.defense?.melee?.slash ?? 0) < 0,
+            <img src="./assets/misc-icons/Steel_scimitar.png"
+                 title="Slash" />
+            <span *ngIf="getSelectedBoss()?.defense?.melee?.slash !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (getSelectedBoss()?.defense?.melee?.slash ?? 0)>
+              0,
+              negative: (getSelectedBoss()?.defense?.melee?.slash ?? 0) < 0,
               }"
-            >
+              >
               {{
                 (getSelectedBoss()?.defense?.melee?.slash ?? 0) > 0 ? '+' : ''
               }}
@@ -306,18 +294,16 @@
             </span>
           </div>
           <div class="defense-box">
-            <img
-              src="./assets/misc-icons/Steel_warhammer.png"
-              title="Crush"
-            />
-            <span
-              *ngIf="getSelectedBoss()?.defense?.melee?.crush !== undefined"
-              [ngClass]="{
-                'stat-value': true,
-                positive: (getSelectedBoss()?.defense?.melee?.crush ?? 0) > 0,
-                negative: (getSelectedBoss()?.defense?.melee?.crush ?? 0) < 0,
+            <img src="./assets/misc-icons/Steel_warhammer.png"
+                 title="Crush" />
+            <span *ngIf="getSelectedBoss()?.defense?.melee?.crush !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (getSelectedBoss()?.defense?.melee?.crush ?? 0)>
+              0,
+              negative: (getSelectedBoss()?.defense?.melee?.crush ?? 0) < 0,
               }"
-            >
+              >
               {{
                 (getSelectedBoss()?.defense?.melee?.crush ?? 0) > 0 ? '+' : ''
               }}
@@ -384,18 +370,16 @@
           </div>
           <!-- Ranged Defense (Row 3 - 3 columns) -->
           <div class="defense-box">
-            <img
-              src="./assets/misc-icons/Steel_dart.png"
-              title="Thrown"
-            />
-            <span
-              *ngIf="getSelectedBoss()?.defense?.ranged?.thrown !== undefined"
-              [ngClass]="{
-                'stat-value': true,
-                positive: (getSelectedBoss()?.defense?.ranged?.thrown ?? 0) > 0,
-                negative: (getSelectedBoss()?.defense?.ranged?.thrown ?? 0) < 0,
+            <img src="./assets/misc-icons/Steel_dart.png"
+                 title="Thrown" />
+            <span *ngIf="getSelectedBoss()?.defense?.ranged?.thrown !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (getSelectedBoss()?.defense?.ranged?.thrown ?? 0)>
+              0,
+              negative: (getSelectedBoss()?.defense?.ranged?.thrown ?? 0) < 0,
               }"
-            >
+              >
               {{
                 (getSelectedBoss()?.defense?.ranged?.thrown ?? 0) > 0 ? '+' : ''
               }}
@@ -403,18 +387,16 @@
             </span>
           </div>
           <div class="defense-box">
-            <img
-              src="./assets/misc-icons/Steel_arrow_5.png"
-              title="Arrows"
-            />
-            <span
-              *ngIf="getSelectedBoss()?.defense?.ranged?.arrows !== undefined"
-              [ngClass]="{
-                'stat-value': true,
-                positive: (getSelectedBoss()?.defense?.ranged?.arrows ?? 0) > 0,
-                negative: (getSelectedBoss()?.defense?.ranged?.arrows ?? 0) < 0,
+            <img src="./assets/misc-icons/Steel_arrow_5.png"
+                 title="Arrows" />
+            <span *ngIf="getSelectedBoss()?.defense?.ranged?.arrows !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (getSelectedBoss()?.defense?.ranged?.arrows ?? 0)>
+              0,
+              negative: (getSelectedBoss()?.defense?.ranged?.arrows ?? 0) < 0,
               }"
-            >
+              >
               {{
                 (getSelectedBoss()?.defense?.ranged?.arrows ?? 0) > 0 ? '+' : ''
               }}
@@ -422,18 +404,16 @@
             </span>
           </div>
           <div class="defense-box">
-            <img
-              src="./assets/misc-icons/Steel_bolts_5.png"
-              title="Bolts"
-            />
-            <span
-              *ngIf="getSelectedBoss()?.defense?.ranged?.bolts !== undefined"
-              [ngClass]="{
-                'stat-value': true,
-                positive: (getSelectedBoss()?.defense?.ranged?.bolts ?? 0) > 0,
-                negative: (getSelectedBoss()?.defense?.ranged?.bolts ?? 0) < 0,
+            <img src="./assets/misc-icons/Steel_bolts_5.png"
+                 title="Bolts" />
+            <span *ngIf="getSelectedBoss()?.defense?.ranged?.bolts !== undefined"
+                  [ngClass]="{
+                  'stat-value' : true,
+                  positive: (getSelectedBoss()?.defense?.ranged?.bolts ?? 0)>
+              0,
+              negative: (getSelectedBoss()?.defense?.ranged?.bolts ?? 0) < 0,
               }"
-            >
+              >
               {{
                 (getSelectedBoss()?.defense?.ranged?.bolts ?? 0) > 0 ? '+' : ''
               }}
@@ -445,76 +425,78 @@
         <hr />
 
         <!-- Immunities -->
+        <!-- Immunities -->
         <h4 class="info-grid-title">Immunities</h4>
         <div class="immunity-grid">
+          <!-- Poison -->
           <div class="defense-box">
-            <img src="./assets/misc-icons/Poison_hitsplat.png"
-                 title="Poison" />
-            <span *ngIf="getSelectedBoss()?.immunities?.poison !== undefined"
-                  [ngClass]="{
-                'stat-value': true,
-                positive: getSelectedBoss()?.immunities?.poison,
-                negative: !getSelectedBoss()?.immunities?.poison,
-              }">
-              {{
-                getSelectedBoss()?.immunities?.poison
-                  ? 'Immune'
-                  : '❌ Not Immune'
-              }}
-            </span>
-          </div>
-          <div class="defense-box" *ngIf="isSelectedBossVenomToPoison || getSelectedBoss()?.immunities?.venom !== undefined">
-            <img src="./assets/misc-icons/Venom_hitsplat.png"
-                 title="Venom" />
+            <img src="./assets/misc-icons/Poison_hitsplat.png" title="Poison" />
             <span [ngClass]="{
-                'stat-value': true,
-                positive: getSelectedBoss()?.immunities?.venom,
-                negative: !getSelectedBoss()?.immunities?.venom && !isSelectedBossVenomToPoison,
-                warning: isSelectedBossVenomToPoison
-              }">
-                        {{
-                isSelectedBossVenomToPoison
-                  ? 'Converted to Poison'
-                  : getSelectedBoss()?.immunities?.venom
-                    ? 'Immune'
-                    : '❌ Not Immune'
-                        }}
+        'stat-value': true,
+        positive: !!getSelectedBoss()?.immunities?.poison,
+        negative: !getSelectedBoss()?.immunities?.poison
+      }">
+              {{
+        getSelectedBoss()?.immunities?.poison
+          ? 'Immune'
+          : '❌ Not Immune'
+              }}
             </span>
           </div>
 
-          <div class="defense-box">
-            <img src="./assets/misc-icons/Cannon_barrels.png"
-                 title="Cannonable" />
-            <span *ngIf="getSelectedBoss()?.immunities?.cannons !== undefined"
-                  [ngClass]="{
-                'stat-value': true,
-                positive: getSelectedBoss()?.immunities?.cannons,
-                negative: !getSelectedBoss()?.immunities?.cannons,
-              }">
+          <!-- Venom -->
+          <div class="defense-box"
+               *ngIf="isSelectedBossVenomToPoison || getSelectedBoss()?.immunities?.venom !== undefined">
+            <img src="./assets/misc-icons/Venom_hitsplat.png" title="Venom" />
+            <span [ngClass]="{
+        'stat-value': true,
+        positive: !!getSelectedBoss()?.immunities?.venom,
+        negative: !getSelectedBoss()?.immunities?.venom && !isSelectedBossVenomToPoison,
+        warning: isSelectedBossVenomToPoison
+      }">
               {{
-                getSelectedBoss()?.immunities?.cannons
-                  ? 'Immune'
-                  : '❌ Not Immune'
+        isSelectedBossVenomToPoison
+          ? 'Converted to Poison'
+          : getSelectedBoss()?.immunities?.venom
+            ? 'Immune'
+            : '❌ Not Immune'
               }}
             </span>
           </div>
+
+          <!-- Cannons -->
           <div class="defense-box">
-            <img src="./assets/misc-icons/Resurrect_Greater_Ghost.png"
-                 title="Thralls" />
-            <span *ngIf="getSelectedBoss()?.immunities?.thralls !== undefined"
-                  [ngClass]="{
-                'stat-value': true,
-                positive: getSelectedBoss()?.immunities?.thralls,
-                negative: !getSelectedBoss()?.immunities?.thralls,
-              }">
+            <img src="./assets/misc-icons/Cannon_barrels.png" title="Cannonable" />
+            <span [ngClass]="{
+        'stat-value': true,
+        positive: !!getSelectedBoss()?.immunities?.cannons,
+        negative: !getSelectedBoss()?.immunities?.cannons
+      }">
               {{
-                getSelectedBoss()?.immunities?.thralls
-                  ? 'Immune'
-                  : '❌ Not Immune'
+        getSelectedBoss()?.immunities?.cannons
+          ? 'Immune'
+          : '❌ Not Immune'
+              }}
+            </span>
+          </div>
+
+          <!-- Thralls -->
+          <div class="defense-box">
+            <img src="./assets/misc-icons/Resurrect_Greater_Ghost.png" title="Thralls" />
+            <span [ngClass]="{
+        'stat-value': true,
+        positive: !!getSelectedBoss()?.immunities?.thralls,
+        negative: !getSelectedBoss()?.immunities?.thralls
+      }">
+              {{
+        getSelectedBoss()?.immunities?.thralls
+          ? 'Immune'
+          : '❌ Not Immune'
               }}
             </span>
           </div>
         </div>
+
       </div>
     </div>
 

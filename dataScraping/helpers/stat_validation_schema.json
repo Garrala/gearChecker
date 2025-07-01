@@ -1,5 +1,18 @@
 {
-  "attack_styles": [ "melee", "magic", "ranged", "stab", "slash", "crush", "dragonfire" ],
+  "attack_styles": [
+    "melee",
+    "magic",
+    "ranged",
+    "stab",
+    "slash",
+    "crush",
+    "dragonfire",
+    "typeless",
+    "ranged magic",
+    "ranged melee",
+    "magical melee",
+    "magical ranged"
+  ],
   "max_hit_types": [
     "melee",
     "magic",
@@ -14,7 +27,18 @@
     "dragonfire",
     "special direct hit",
     "dragonfirebombspecial",
-    "rapidfirespecial"
+    "rapidfirespecial",
+    "shockwave",
+    "lightningcloud",
+    "default",
+    "empowered",
+    "rockfall",
+    "smokeblast",
+    "magicorb",
+    "rangedorb",
+    "meleeorbbite",
+    "screech",
+    "soulsiphon"
   ],
   "defense_types": {
     "melee": [ "stab", "slash", "crush" ],

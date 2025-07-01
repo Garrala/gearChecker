@@ -19,6 +19,14 @@
     "correct_slot": "Gloves",
     "alias": "Any Blessed vambraces"
   },
+  "Blessed bracers": {
+    "correct_slot": "Gloves",
+    "alias": "Any Blessed vambraces"
+  },
+  "Blessed coif": {
+    "correct_slot": "Helmet",
+    "alias": "Any Blessed coif"
+  },
   "Amethyst arrow": {
     "correct_slot": "Ammo",
     "alias": "Amethyst arrows"
@@ -30,6 +38,23 @@
   "Rune arrow": {
     "correct_slot": "Ammo",
     "alias": "Rune arrows"
+  },
+  "Ruby bolts(e)": {
+    "correct_slot": "Ammo",
+    "alias": "Ruby bolts (e)"
+  },
+  "Ruby dragon bolts(e)": {
+    "correct_slot": "Ammo",
+    "alias": "Ruby dragon bolts (e)"
+  },
+
+  "Ruby dragon bolts": {
+    "correct_slot": "Ammo",
+    "alias": "Ruby dragon bolts (e)"
+  },
+  "Diamond dragon bolts": {
+    "correct_slot": "Ammo",
+    "alias": "Diamond dragon bolts (e)"
   },
   "Explorer's Ring 3/2/1": {
     "correct_slot": "Ring",
@@ -53,13 +78,17 @@
   },
   "Rada's Blessing": {
     "correct_slot": "Ammo",
-    "alias": [ "Rada's Blessing 3", "Rada's Blessing 2", "Rada's Blessing 1" ]
+    "alias": [ "Rada's blessing 3", "Rada's blessing 2", "Rada's blessing 1" ]
   },
   "Any other blessing": {
     "correct_slot": "Ammo",
     "alias": "Any God blessing"
   },
   "God blessing": {
+    "correct_slot": "Ammo",
+    "alias": "Any God blessing"
+  },
+  "Any god blessing": {
     "correct_slot": "Ammo",
     "alias": "Any God blessing"
   },
@@ -122,6 +151,10 @@
   "Blessed boots": {
     "correct_slot": "Boots",
     "alias": "Any Blessed boots"
+  },
+  "Shayzien boots(5)": {
+    "correct_slot": "Boots",
+    "alias": "Shayzien boots (5)"
   },
   "Bow of faerdhinen": {
     "correct_slot": "Weapon",
@@ -211,8 +244,24 @@
     "correct_slot": "Cape",
     "alias": "Any Skillcape"
   },
+  "Cape of Accomplishment": {
+    "correct_slot": "Cape",
+    "alias": "Any Skillcape"
+  },
+  "Cape of Accomplishment(t)": {
+    "correct_slot": "Cape",
+    "alias": "Any Skillcape (t)"
+  },
   "Vestment cloak": {
     "correct_slot": "Cape",
     "alias": "Any God vestment cloaks"
+  },
+  "Ursine chainmace(u)": {
+    "correct_slot": "Weapon",
+    "alias": "Ursine chainmace (u)"
+  },
+  "Dragon dagger(p)": {
+    "correct_slot": "Special Attack",
+    "alias": "Dragon dagger"
   }
 }

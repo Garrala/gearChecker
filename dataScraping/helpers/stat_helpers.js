@@ -10,15 +10,47 @@ const phasedHpLookup = {
   "abyssal sire phase 2": 425,
   "abyssal sire phase 3 stage 1": 425,
   "abyssal sire phase 3 stage 2": 425,
+  "araxxor in combat": 1020,
+  "araxxor enraged": 1020,
+  "alchemical hydra serpentine": 1100,
+  "alchemical hydra fire": 1100,
+  "alchemical hydra extinguished": 1100,
+  "alchemical hydra electric": 1100,
+  "calvarion normal": 150,
+  "calvarion enraged": 150,
   "duke sucellus awake awakened": 1540,
   "duke sucellus awake post quest": 485,
   "duke sucellus awake quest": 330,
   "kalphite queen crawling": 255,
   "kalphite queen airborne": 255,
+  "phantom muspah teleporting": 850,
+  "phantom muspah shielded": 75,
+  "phantom muspah ranged": 850,
+  "phantom muspah melee": 850,
+  "phantom muspah post shield": 850,
+  "scurrius solo": 500,
+  "scurrius group": 1500,
+  "the hueycoatl normal tail": 2500,
+  "the hueycoatl normal head": 2500,
+  "the hueycoatl normal body": 2500,
+  "the leviathan post quest": 900,
+  "the leviathan awakened": 2700,
+  "the leviathan quest": 720,
+  "the whisperer post quest": 900,
+  "the whisperer awakened": 2700,
+  "the whisperer quest": 660,
+  "vardorvis post quest": 700,
+  "vardorvis awakened": 1400,
+  "vardorvis quest": 500,
   "vorkath post quest": 750,
   "vorkath dragon slayer ii": 450,
+  "vetion normal": 255,
+  "vetion enraged": 255,
   "wyrm idle": 425,
   "wyrm attacking": 425,
+  "zulrah tanzanite": 500,
+  "zulrah serpentine": 500,
+  "zulrah magma": 500
 }
 
 const forceTabbedParsing = new Set([
@@ -66,11 +98,42 @@ function parseMaxHits(text, attackStyles) {
     }
   }
 
-  console.log('🗡️ Parsed max hits:', result);
+  //console.log('🗡️ Parsed max hits:', result);
   return result;
 }
 
 function parseMaxHit($, info) {
+  // Manual override block
+  const overrideMap = {
+    'dusk.html': {
+      slash: 15,
+      special: 33
+    },
+    'eclipse moon.html': {
+      slash: 60
+    },
+    'blue moon.html': {
+      slash: 60
+    },
+    'blood moon.html': {
+      slash: 60
+    },
+    'the (nightmare)': {
+      melee: 60,
+      ranged: 39,
+      magic: 39
+    }
+  };
+
+  const key = (info.name || '').toLowerCase().trim();
+  //console.log("My key is ", key)
+  if (overrideMap[key]) {
+    console.warn(`⚠️ Using max hit override for: ${info.name}`);
+    info.max_hit = overrideMap[key];
+    return;
+  }
+
+  // Default parsing behavior
   $('tr').each((_, tr) => {
     const th = $(tr).find('th').text().trim().toLowerCase();
     const td = $(tr).find('td').text().trim();
@@ -82,9 +145,29 @@ function parseMaxHit($, info) {
   });
 }
 
+
 function extractMultiMaxHitsVerbose($, info) {
   //console.log('🔍 Attempting to parse multi-style max hits...');
+  const overrideMap = {
+    'vardorvis (quest)': {
+      slash: 37
+    },
+    'vardorvis (post quest)': {
+      slash: 43
+    },
+    'vardorvis (awakened)': {
+      slash: 61,
+      axes: 96
+    }
+  };
 
+  const key = (info.name || '').toLowerCase().trim();
+  //console.log("My key is ", key)
+  if (overrideMap[key]) {
+    console.warn(`⚠️ Using max hit override for: ${info.name}`);
+    info.max_hit = overrideMap[key];
+    return;
+  }
   const maxHitAnchor = $('a')
     .filter((_, el) => ($(el).attr('title') || '').trim().toLowerCase() === 'monster maximum hit')
     .first();
@@ -202,7 +285,7 @@ function extractMultiMaxHitsVerbose($, info) {
 
   if (Object.keys(result).length > 0) {
     info.max_hit = result;
-    console.log('✅ Final parsed max hits:', result);
+    //console.log('✅ Final parsed max hits:', result);
   } else {
     console.warn('❌ No max hit values found in multi-style block');
   }
@@ -223,7 +306,7 @@ function getImageSrcFromInfobox($) {
   if (src.startsWith('//')) src = 'https:' + src;
   else if (src.startsWith('/')) src = 'https://oldschool.runescape.wiki' + src;
 
-  console.log('📸 Pulled image src:', src);
+  //console.log('📸 Pulled image src:', src);
   return src;
 }
 
@@ -233,15 +316,15 @@ function extractHp($) {
     return $(tr).find('td.infobox-nested').length >= 6;
   }).first();
 
-  const hpCell = $(hpRow).find('td.infobox-nested').eq(0).text().replace('+', '').trim();
+  const hpCell = $(hpRow).find('td.infobox-nested').eq(0).text().replace(/,/g, '').replace('+', '').trim();
   const hp = parseInt(hpCell, 10);
-  console.log('❤️ Extracted HP:', hp);
+  //console.log('❤️ Extracted HP:', hp);
   return hp || 0;
 }
 
 function extractPhasedHp(bossName, phaseName) {
   const totalName = `${bossName} ${phaseName}`.toLowerCase().replace(/\s+/g, ' ').trim();
-  console.log("My full name is", totalName);
+  //console.log("My full name is", totalName);
   if (!totalName) {
     console.warn('❌ No phase name provided to extractPhasedHp');
     return 0;
@@ -251,7 +334,7 @@ function extractPhasedHp(bossName, phaseName) {
   const hp = phasedHpLookup[key];
 
   if (hp !== undefined) {
-    console.log(`❤️ Retrieved phased HP for "${key}":`, hp);
+    //console.log(`❤️ Retrieved phased HP for "${key}":`, hp);
     return hp;
   } else {
     console.warn(`⚠️ No HP override found for phased boss: "${key}"`);
@@ -269,7 +352,7 @@ function extractMeleeDefense($) {
     .get();
 
   const [stab, slash, crush] = values;
-  console.log('🛡️ Melee defense values:', { stab, slash, crush });
+  //console.log('🛡️ Melee defense values:', { stab, slash, crush });
   return {
     stab: stab || 0,
     slash: slash || 0,
@@ -294,7 +377,10 @@ function extractFlexibleMeleeDefense($, bossName = '', phaseName = '') {
   }
 
   const meleeAnchor = $('a')
-    .filter((_, el) => $(el).text().trim().toLowerCase() === 'melee defence')
+    .filter((_, el) => {
+      const text = $(el).text().trim().toLowerCase();
+      return text.includes('melee') && text.includes('defence');
+    })
     .first();
 
   if (!meleeAnchor.length) {
@@ -325,10 +411,10 @@ function extractFlexibleMeleeDefense($, bossName = '', phaseName = '') {
     // Try matching +X+Y+Z
     if (node.type === 'text') {
       const text = node.data.trim();
-      const match = text.match(/\+(\d+)\+(\d+)\+(\d+)/);
+      const match = text.match(/([+-]?\d+)([+-]?\d+)([+-]?\d+)/);
       if (match) {
         [, stab, slash, crush] = match.map(Number);
-        console.log('🛡️ Found melee defense values in DOM traversal:', { stab, slash, crush });
+        //console.log('🛡️ Found melee defense values in DOM traversal:', { stab, slash, crush });
         return { stab, slash, crush };
       }
     }
@@ -346,7 +432,7 @@ function extractFlexibleMeleeDefense($, bossName = '', phaseName = '') {
     const match = snippet.match(/\+(\d+)\+(\d+)\+(\d+)/);
     if (match) {
       [, stab, slash, crush] = match.map(Number);
-      console.log('🛡️ (Fallback) Found melee defense near "melee defence" section:', { stab, slash, crush });
+      //console.log('🛡️ (Fallback) Found melee defense near "melee defence" section:', { stab, slash, crush });
       return { stab, slash, crush };
     }
   }
@@ -363,7 +449,7 @@ function extractFlatMagicDefense($) {
 
   const text = row.find('td.infobox-nested').first().text().replace('+', '').trim();
   const val = parseInt(text, 10) || 0;
-  console.log('🔮 Magic Defense:', val);
+  //console.log('🔮 Magic Defense:', val);
   return val;
 }
 
@@ -408,9 +494,9 @@ function extractFlexibleMagicDefenseAndWeakness($, bossName = '', phaseName = ''
     }
 
     //console.log(`✅ Combined match found:`);
-    console.log(`🧙 Magic Defense: ${magicDef}`);
-    console.log(`🧪 Weakness %: ${weaknessPercent}`);
-    console.log(`🌐 Weakness Element from Title:`, elementalWeakness);
+    //console.log(`🧙 Magic Defense: ${magicDef}`);
+    //console.log(`🧪 Weakness %: ${weaknessPercent}`);
+    //console.log(`🌐 Weakness Element from Title:`, elementalWeakness);
   } else {
     // Normalize for "no elemental weakness"
     const flattened = cleanedText.toLowerCase().replace(/[^a-z]/g, '');
@@ -419,11 +505,11 @@ function extractFlexibleMagicDefenseAndWeakness($, bossName = '', phaseName = ''
       const noWeaknessMatch = cleanedText.match(/([+-]?\d{1,3})/);
       if (noWeaknessMatch) {
         magicDef = parseInt(noWeaknessMatch[1], 10);
-        console.log(`🧙 Magic Defense: ${magicDef}`);
+        //console.log(`🧙 Magic Defense: ${magicDef}`);
       } else {
         console.warn('⚠️ Found no weakness string, but could not extract defense value.');
       }
-      console.log('🧪 No elemental weakness found.');
+      //console.log('🧪 No elemental weakness found.');
     } else {
       console.warn('⚠️ Could not extract combined magic def and weakness pattern.');
     }
@@ -431,7 +517,6 @@ function extractFlexibleMagicDefenseAndWeakness($, bossName = '', phaseName = ''
 
   return { magicDef, elementalWeakness };
 }
-
 
 function extractElementalWeakness($) {
   const htmlText = $.html().toLowerCase();
@@ -441,13 +526,13 @@ function extractElementalWeakness($) {
   for (const element of validation.elemental_weaknesses) {
     if (htmlText.includes(`${element} elemental weakness`)) {
       const result = { [element]: percent || null };
-      console.log('🧪 Elemental Weakness:', result);
+      //console.log('🧪 Elemental Weakness:', result);
       return result;
     }
   }
 
   if (htmlText.includes('no elemental weakness')) {
-    console.log('🧪 No elemental weakness');
+    //console.log('🧪 No elemental weakness');
     return 'none';
   }
 
@@ -466,7 +551,7 @@ function extractRangedDefense($) {
     .get();
 
   const [light, standard, heavy] = values;
-  console.log('🏹 Ranged defense values:', { thrown: light, arrows: standard, bolts: heavy });
+  //console.log('🏹 Ranged defense values:', { thrown: light, arrows: standard, bolts: heavy });
   return {
     arrows: standard || 0,
     bolts: heavy || 0,
@@ -505,12 +590,12 @@ function extractFlexibleRangedDefense($) {
     // Look for "+X+Y+Z" or "-X-Y-Z"
     if (node.type === 'text') {
       const text = node.data.trim();
-      const match = text.match(/([+-]?\d+)([+-]\d+)([+-]\d+)/);
+      const match = text.match(/\+?(-?\d+)\+(-?\d+)\+(-?\d+)/);
       if (match) {
         thrown = parseInt(match[1], 10);  // light
         arrows = parseInt(match[2], 10);  // standard
         bolts = parseInt(match[3], 10);   // heavy
-        console.log('🏹 Ranged defense values found in DOM traversal:', { arrows, bolts, thrown });
+        //console.log('🏹 Ranged defense values found in DOM traversal:', { arrows, bolts, thrown });
         return { arrows, bolts, thrown };
       }
     }
@@ -530,7 +615,7 @@ function extractFlexibleRangedDefense($) {
       thrown = parseInt(match[1], 10);
       arrows = parseInt(match[2], 10);
       bolts = parseInt(match[3], 10);
-      console.log('🏹 (Fallback) Found ranged defense near "ranged defence" section:', { arrows, bolts, thrown });
+      //console.log('🏹 (Fallback) Found ranged defense near "ranged defence" section:', { arrows, bolts, thrown });
       return { arrows, bolts, thrown };
     }
   }
@@ -539,14 +624,13 @@ function extractFlexibleRangedDefense($) {
   return { arrows, bolts, thrown };
 }
 
-
 function createMonsterTemplate(phase, bossName) {
   const name = phase ? `${bossName} (${phase})` : bossName;
   const baseUrl = `https://oldschool.runescape.wiki/w/${bossName.trim().replace(/\s+/g, '_')}`;
   const anchor = phase ? `#${slugWikiAnchor(phase)}` : '';
   const wiki_link = `${baseUrl}${anchor}`;
 
-  console.log(`📝 Creating template for: ${name}`);
+  //console.log(`📝 Creating template for: ${name}`);
   return {
     name,
     wiki_link,
@@ -575,14 +659,13 @@ function slugWikiAnchor(phase) {
     .join('_'); // e.g., "phase 3 stage 1" => "Phase_3_Stage_1"
 }
 
-
 function parseCombatLevel($, info) {
   $('tr').each((_, tr) => {
     const th = $(tr).find('th').text().trim().toLowerCase();
     const td = $(tr).find('td').text().trim();
     if (th.includes('combat level')) {
       info.combat_level = parseInt(td);
-      console.log('⚔️ Combat Level:', info.combat_level);
+      //console.log('⚔️ Combat Level:', info.combat_level);
     }
   });
 }
@@ -612,7 +695,7 @@ function extractCombatLevel($) {
     const match = text.match(/^(\d{1,4})$/);
     if (match) {
       const level = parseInt(match[1], 10);
-      console.log('⚔️ Found Combat Level:', level);
+      //console.log('⚔️ Found Combat Level:', level);
       return level;
     }
 
@@ -625,12 +708,30 @@ function extractCombatLevel($) {
 }
 
 function parseAttackStyles($, info) {
+  const overrideMap = {
+    'melee  crush ?': 'melee',
+    'slash [1]': 'slash',
+    'magic special': 'magic',
+    'typeless slash': 'slash',
+    'typeless magical ranged': 'magical ranged'
+  };
+
   $('tr').each((_, tr) => {
     const th = $(tr).find('th').text().trim().toLowerCase();
     const td = $(tr).find('td').text().trim();
 
     if (th.includes('attack style')) {
-      const rawStyles = td.split(/,|\//).map(s => s.trim().toLowerCase());
+      const rawStyles = td
+        .split(/,|\//)
+        .map(s => {
+          const cleaned = s
+            .replace(/\s+/g, ' ')     // normalize spacing
+            .replace(/[()]/g, '')     // strip parentheses
+            .trim()
+            .toLowerCase();
+          return overrideMap[cleaned] || cleaned;
+        });
+
       const allowed = new Set(validation.attack_styles.map(normalize));
       const ignored = new Set(validation.ignore_case.map(normalize));
 
@@ -641,7 +742,7 @@ function parseAttackStyles($, info) {
       });
 
       info.attack_styles = valid.map(s => s[0].toUpperCase() + s.slice(1));
-      console.log('🧨 Attack Styles:', info.attack_styles);
+      //console.log('🧨 Attack Styles:', info.attack_styles);
 
       if (invalid.length > 0) {
         console.warn(`⚠️ [${info.name}] Unrecognized attack style(s):`, invalid);
@@ -655,6 +756,25 @@ function extractAttackStyles($, info) {
   const allowed = new Set(validation.attack_styles.map(normalize));
   const ignored = new Set(validation.ignore_case.map(normalize));
 
+  const overrideMap = {
+    'araxxor (enraged)': ['crush', 'magic', 'ranged'],
+    'the (leviathan post quest)': ['melee', 'ranged', 'magic'],
+    'the (leviathan quest)': ['melee', 'ranged', 'magic'],
+    'the (leviathan awakened)': ['melee', 'ranged', 'magic'],
+    'the (whisperer post quest)': ['melee', 'ranged', 'magic'],
+    'the (whisperer awakened)': ['melee', 'ranged', 'magic'],
+    'the (whisperer quest)': ['melee', 'ranged', 'magic'],
+
+  };
+
+  const overrideKey = (info?.name || '').toLowerCase();
+  //console.log("My override key ", overrideKey)
+  if (overrideMap[overrideKey]) {
+    info.attack_styles = overrideMap[overrideKey].map(s => s[0].toUpperCase() + s.slice(1));
+    console.warn(`⚠️ Overriding attack styles for ${info.name}:`, info.attack_styles);
+    return;
+  }
+
   const attackAnchor = $('a[title="Combat Options"]').filter((_, el) => $(el).text().trim().toLowerCase() === 'attack style').first();
   const endAnchor = $('a[title="Monster attack speed"]').first();
 
@@ -666,7 +786,8 @@ function extractAttackStyles($, info) {
   let node = attackAnchor[0].next;
   while (node && node !== endAnchor[0]) {
     if (node.type === 'tag' && node.name === 'a') {
-      const styleText = $(node).text().trim().toLowerCase();
+      let styleText = $(node).text().trim().toLowerCase();
+      styleText = overrideMap[styleText] || styleText; // apply line-level overrides
       if (styleText && !ignored.has(styleText)) {
         styles.push(styleText);
       }
@@ -678,7 +799,7 @@ function extractAttackStyles($, info) {
   const invalid = styles.filter(s => !allowed.has(normalize(s)));
 
   info.attack_styles = valid.map(s => s[0].toUpperCase() + s.slice(1));
-  console.log('🧨 Attack Styles:', info.attack_styles);
+  //console.log('🧨 Attack Styles:', info.attack_styles);
 
   if (invalid.length > 0) {
     console.warn(`⚠️ [${info.name}] Unrecognized attack style(s):`, invalid);
@@ -701,7 +822,7 @@ function parseAttackSpeed($, info) {
         const ticks = parseInt(fullMatch[1], 10);
         const seconds = parseFloat(fullMatch[2]);
         info.attack_speed = { ticks, seconds };
-        console.log(`✅ Parsed attack speed: ${ticks} ticks (${seconds} seconds)`);
+        //console.log(`✅ Parsed attack speed: ${ticks} ticks (${seconds} seconds)`);
         found = true;
         return false; // break loop
       }
@@ -710,7 +831,7 @@ function parseAttackSpeed($, info) {
       if (fallbackMatch) {
         const ticks = parseInt(fallbackMatch[1], 10);
         info.attack_speed = { ticks };
-        console.log(`✅ Parsed attack speed: ${ticks} ticks (no seconds found)`);
+        //console.log(`✅ Parsed attack speed: ${ticks} ticks (no seconds found)`);
         found = true;
         return false; // break loop
       }
@@ -735,17 +856,23 @@ function extractAttackSpeed($, info) {
   let node = anchor[0].next;
   let step = 0;
 
-  while (node) {
+  while (node && step < 5) { // Prevent excessive scanning
     step++;
     const content = node.type === 'text' ? node.data.trim() : $(node).text().trim();
-    console.log(`🔍 Step ${step}: type=${node.type}, content="${content}"`);
+    //console.log(`🔍 Step ${step}: type=${node.type}, content="${content}"`);
+
+    if (/^variable$/i.test(content)) {
+      info.attack_speed = null;
+      //console.log(`⚠️ Attack speed is marked as variable.`);
+      return;
+    }
 
     const fullMatch = content.match(/(\d+)\s*ticks\s*\(([\d.]+)\s*seconds\)/i);
     if (fullMatch) {
       const ticks = parseInt(fullMatch[1], 10);
       const seconds = parseFloat(fullMatch[2]);
       info.attack_speed = { ticks, seconds };
-      console.log(`✅ Parsed attack speed: ${ticks} ticks (${seconds} seconds)`);
+      //console.log(`✅ Parsed attack speed: ${ticks} ticks (${seconds} seconds)`);
       return;
     }
 
@@ -753,7 +880,7 @@ function extractAttackSpeed($, info) {
     if (fallbackMatch) {
       const ticks = parseInt(fallbackMatch[1], 10);
       info.attack_speed = { ticks };
-      console.log(`✅ Parsed attack speed: ${ticks} ticks (no seconds found)`);
+      //console.log(`✅ Parsed attack speed: ${ticks} ticks (no seconds found)`);
       return;
     }
 
@@ -779,7 +906,7 @@ function parseAggressive($, info) {
       const value = td.toLowerCase();
       if (['yes', 'no'].includes(value)) {
         info.aggressive = value === 'yes';
-        console.log('😡 Aggressive:', info.aggressive);
+        //console.log('😡 Aggressive:', info.aggressive);
       } else {
         console.warn(`⚠️ Unexpected aggressiveness value: "${value}"`);
       }
@@ -796,7 +923,7 @@ function parseAggressive($, info) {
 function extractMultiPhaseAggressiveness($, info) {
  
 
-  console.log('🔍 Attempting to parse aggressiveness...');
+  //console.log('🔍 Attempting to parse aggressiveness...');
 
   // Log all rows for visibility
   $('tr').each((i, tr) => {
@@ -826,17 +953,17 @@ function extractMultiPhaseAggressiveness($, info) {
       content = $(node).text().trim();
     }
 
-    console.log(`🔍 Step ${step}:`);
-    console.log(`   ↪ node type: ${node.type}`);
-    console.log(`   ↪ raw content: "${content}"`);
-    console.log(`   ↪ tag name: ${node.name || 'N/A'}`);
+    //console.log(`🔍 Step ${step}:`);
+    //console.log(`   ↪ node type: ${node.type}`);
+    //console.log(`   ↪ raw content: "${content}"`);
+    //console.log(`   ↪ tag name: ${node.name || 'N/A'}`);
 
     if (content) {
       const normalized = content.toLowerCase().replace(/\(.*?\)/g, '').trim();
-      console.log(`   ↪ normalized: "${normalized}"`);
+      //console.log(`   ↪ normalized: "${normalized}"`);
       if (validation.aggression_values.includes(normalized)) {
         info.aggressive = normalized === 'yes';
-        console.log(`😡 Aggressive: ${info.aggressive}`);
+        //console.log(`😡 Aggressive: ${info.aggressive}`);
         return;
       } else {
         console.warn(`⚠️ Unexpected aggressiveness value: "${normalized}"`);
@@ -876,12 +1003,12 @@ function parseImmunities($, info) {
   if (missing.length > 0) {
     console.warn(`⚠️ [${info.name}] Missing known immunities:`, missing);
   } else {
-    console.log('🛡️ Immunities:', info.immunities);
+    //console.log('🛡️ Immunities:', info.immunities);
   }
 }
 
 function extractMultiPhaseImmunities($, info) {
-  console.log('🧬 Attempting to parse immunities from multiphase page...');
+  //console.log('🧬 Attempting to parse immunities from multiphase page...');
 
   const knownImmunities = validation.immunities;
   const found = {};
@@ -902,7 +1029,7 @@ function extractMultiPhaseImmunities($, info) {
         const value = node.data.trim().toLowerCase();
         if (value.includes('immune')) {
           found[label] = value.includes('not') ? false : true;
-          console.log(`🧪 ${label}: ${found[label] ? 'Immune' : 'Not immune'}`);
+          //console.log(`🧪 ${label}: ${found[label] ? 'Immune' : 'Not immune'}`);
         }
       }
     }
@@ -921,11 +1048,35 @@ function extractMultiPhaseImmunities($, info) {
 
   if (Object.keys(found).length > 0) {
     info.immunities = found;
-    console.log('✅ Immunities parsed:', found);
+    //console.log('✅ Immunities parsed:', found);
   } else {
     console.warn('❌ No valid immunities parsed');
   }
 }
+
+function logDefenseBlock(defenseObj) {
+  return Object.entries(defenseObj)
+    .map(([k, v]) => `${k}: ${v}`)
+    .join(', ');
+}
+
+
+
+function logParsedBoss(info) {
+  console.log(`Parsed Boss: ${info.name}`);
+  console.log(`   Image: ${info.image}`);
+  console.log(`   HP: ${info.hp}`);
+  console.log(`   Melee Defense: ${logDefenseBlock(info.defense.melee)}`);
+  console.log(`   Magic Defense: ${info.defense.magic}`);
+  console.log(`   Ranged Defense: ${logDefenseBlock(info.defense.ranged)}`);
+  console.log(`   Attack Styles: ${info.attack_styles?.join(', ') || 'N/A'}`);
+  console.log(`   Max Hit: ${JSON.stringify(info.max_hit)}`);
+  console.log(`   Attack Speed: ${typeof info.attack_speed === 'object' ? `${info.attack_speed.ticks} ticks` : info.attack_speed}`);
+  console.log(`   Aggressive: ${info.aggressive ? 'Yes' : 'No'}`);
+  console.log(`   Immunities:`, info.immunities);
+  console.log(`   Weaknesses:`, info.weaknesses);
+}
+
 
 async function parseInfoboxData($, phase, bossName) {
   console.log('🧩 Using single-phase parser');
@@ -951,6 +1102,8 @@ async function parseInfoboxData($, phase, bossName) {
   parseAggressive($, info);
   parseImmunities($, info);
   info.hp = extractHp($);
+
+  logParsedBoss(info);
 
   return info;
 }
@@ -983,6 +1136,8 @@ async function parseTabbedInfoboxData($, phase, bossName) {
   extractAttackSpeed($, info);
   extractMultiPhaseAggressiveness($, info);
   extractMultiPhaseImmunities($, info);
+
+  logParsedBoss(info);
 
   return info;
 }

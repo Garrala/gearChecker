@@ -8,6 +8,9 @@ const { normalizeImageFilename } = require('./helpers/download_images');
 const htmlDumpPath = path.join(__dirname, 'staging', 'boss_html_dumps');
 const statOutputPath = path.join(__dirname, 'staging', 'boss_stat_scrape');
 
+const monsterArg = process.argv[2]?.toLowerCase();
+const isSingleTarget = !!monsterArg;
+
 if (fs.existsSync(statOutputPath)) {
   console.log('🧹 Clearing previous stat output directory...');
   fs.rmSync(statOutputPath, { recursive: true, force: true });
@@ -32,7 +35,10 @@ function collectMonsterHtmlFiles(dir) {
 
 (async () => {
   console.log('🔍 Collecting HTML files...');
-  const allHtmlFiles = collectMonsterHtmlFiles(htmlDumpPath);
+  const allHtmlFiles = collectMonsterHtmlFiles(htmlDumpPath).filter(file => {
+    if (!isSingleTarget) return true;
+    return file.toLowerCase().includes(monsterArg);
+  });
   console.log(`📦 Found ${allHtmlFiles.length} monster HTML files.`);
 
   const bossToEntries = {};
@@ -165,6 +171,26 @@ function collectMonsterHtmlFiles(dir) {
     fs.writeFileSync(outFilePath, JSON.stringify(clean, null, 2));
     console.log(`💾 Wrote final output for ${folder} → ${outFileName}`);
   }
+
+  const scrapeReport = {
+    complete: [],
+    missing: []
+  };
+
+  for (const [folder, data] of Object.entries(bossToEntries)) {
+    const allComplete = data.bosses.every(boss =>
+      boss.hp > 0 &&
+      Array.isArray(boss.attack_styles) && boss.attack_styles.length > 0 &&
+      boss.max_hit && Object.keys(boss.max_hit).length > 0 &&
+      boss.immunities && Object.keys(boss.immunities).length > 0
+    );
+
+    (allComplete ? scrapeReport.complete : scrapeReport.missing).push(data.name);
+  }
+
+  const reportPath = path.join(statOutputPath, 'scrape_report.json');
+  fs.writeFileSync(reportPath, JSON.stringify(scrapeReport, null, 2));
+  console.log(`📊 Wrote scrape report → scrape_report.json`);
 
   console.log('\n✅ Stat scraping complete.');
 })();

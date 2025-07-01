@@ -565,7 +565,7 @@ export class MonsterOverviewComponent implements OnInit {
       return `${atkSpeed.ticks} ticks${seconds}`;
     }
 
-    return typeof atkSpeed === 'number' ? `${atkSpeed} ticks` : 'N/A';
+    return typeof atkSpeed === 'number' ? `${atkSpeed} ticks` : 'Varies';
   }
 
 
