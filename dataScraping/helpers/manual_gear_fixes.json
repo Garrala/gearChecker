@@ -1,80 +1,39 @@
 {
-  "Twisted bow": {
-    "correct_slot": "Weapon",
-    "alias": "Twisted bow"
-  },
-  "Blessed chaps": {
-    "correct_slot": "Legs",
-    "alias": "Any Blessed chaps"
-  },
-  "Blessed d'hide chaps": {
-    "correct_slot": "Legs",
-    "alias": "Any Blessed chaps"
-  },
-  "Blessed d'hide body": {
-    "correct_slot": "Body",
-    "alias": "Any Blessed body"
-  },
-  "Blessed vambraces": {
-    "correct_slot": "Gloves",
-    "alias": "Any Blessed vambraces"
-  },
-  "Blessed bracers": {
-    "correct_slot": "Gloves",
-    "alias": "Any Blessed vambraces"
-  },
-  "Blessed coif": {
-    "correct_slot": "Helmet",
-    "alias": "Any Blessed coif"
-  },
   "Amethyst arrow": {
     "correct_slot": "Ammo",
     "alias": "Amethyst arrows"
-  },
-  "Dragon arrow": {
-    "correct_slot": "Ammo",
-    "alias": "Dragon arrows"
   },
   "Rune arrow": {
     "correct_slot": "Ammo",
     "alias": "Rune arrows"
   },
+  "Dragon arrow": {
+    "correct_slot": "Ammo",
+    "alias": "Dragon arrows"
+  },
   "Ruby bolts(e)": {
     "correct_slot": "Ammo",
     "alias": "Ruby bolts (e)"
+  },
+  "Ruby dragon bolts": {
+    "correct_slot": "Ammo",
+    "alias": "Ruby dragon bolts (e)"
   },
   "Ruby dragon bolts(e)": {
     "correct_slot": "Ammo",
     "alias": "Ruby dragon bolts (e)"
   },
-
-  "Ruby dragon bolts": {
-    "correct_slot": "Ammo",
-    "alias": "Ruby dragon bolts (e)"
-  },
-  "Diamond dragon bolts": {
+  "Diamond dragon bolts(e)": {
     "correct_slot": "Ammo",
     "alias": "Diamond dragon bolts (e)"
   },
-  "Explorer's Ring 3/2/1": {
-    "correct_slot": "Ring",
-    "alias": [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
+  "Diamond bolts(e)": {
+    "correct_slot": "Ammo",
+    "alias": "Diamond bolts (e)"
   },
-  "Explorer's Ring": {
-    "correct_slot": "Ring",
-    "alias": [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
-  },
-  "Explorer's ring": {
-    "correct_slot": "Ring",
-    "alias": [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
-  },
-  "Ardougne cloak 3/2/1": {
-    "correct_slot": "Capes",
-    "alias": [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ]
-  },
-  "Ardougne cloak": {
-    "correct_slot": "Capes",
-    "alias": [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ]
+  "amethyst darts": {
+    "correct_slot": "Ammo",
+    "alias": "Amethyst darts"
   },
   "Rada's Blessing": {
     "correct_slot": "Ammo",
@@ -92,37 +51,42 @@
     "correct_slot": "Ammo",
     "alias": "Any God blessing"
   },
-  "Barrows legs": {
-    "correct_slot": "Legs",
-    "alias": "Any Barrows tank legs"
+
+
+
+
+
+  "Salve amulet(e)": {
+    "correct_slot": "Amulet",
+    "alias": "Salve amulet (e)"
   },
-  "Barrows helm": {
-    "correct_slot": "Helmet",
-    "alias": "Any Barrows tank helm"
+
+
+
+
+
+
+
+  "Ardougne cloak 3/2/1": {
+    "correct_slot": "Cape",
+    "alias": [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ]
   },
-  "Barrows top": {
-    "correct_slot": "Body",
-    "alias": "Any Barrows tank body"
+  "Ardougne cloak": {
+    "correct_slot": "Cape",
+    "alias": [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ]
   },
-  "Barrows body": {
-    "correct_slot": "Body",
-    "alias": "Any Barrows tank body"
+
+  "Cape of accomplishment": {
+    "correct_slot": "Cape",
+    "alias": "Any Skillcape"
   },
-  "Any Barrows tank top": {
-    "correct_slot": "Body",
-    "alias": "Any Barrows tank body"
+  "Cape of Accomplishment": {
+    "correct_slot": "Cape",
+    "alias": "Any Skillcape"
   },
-  "Berserker ring(i)": {
-    "correct_slot": "Ring",
-    "alias": "Berserker ring (i)"
-  },
-  "Warrior ring(i)": {
-    "correct_slot": "Ring",
-    "alias": "Warrior ring (i)"
-  },
-  "Archers ring(i)": {
-    "correct_slot": "Ring",
-    "alias": "Archers ring (i)"
+  "Cape of Accomplishment(t)": {
+    "correct_slot": "Cape",
+    "alias": "Any Skillcape (t)"
   },
   "Imbued god cape": {
     "correct_slot": "Cape",
@@ -136,18 +100,47 @@
     "correct_slot": "Cape",
     "alias": "Any God cape"
   },
-  "Black mask(i)": {
-    "correct_slot": "Helmets",
-    "alias": "Black mask (i)"
+  "Ava's device": {
+    "correct_slot": "Cape",
+    "alias": "Ava's accumulator"
   },
-  "Blade of saeldor": {
-    "correct_slot": "Weapon",
-    "alias": "Blade of Saeldor"
+  "Ranging cape(t)": {
+    "correct_slot": "Cape",
+    "alias": "Ranging cape (t)"
+  },
+  "Vestment cloak": {
+    "correct_slot": "Cape",
+    "alias": "Any God vestment cloaks"
+  },
+
+
+
+
+  "Blessed d'hide body": {
+    "correct_slot": "Body",
+    "alias": "Any Blessed body"
   },
   "Blessed body": {
     "correct_slot": "Body",
     "alias": "Any Blessed body"
   },
+  "Barrows top": {
+    "correct_slot": "Body",
+    "alias": "Any Barrows tank body"
+  },
+  "Barrows body": {
+    "correct_slot": "Body",
+    "alias": "Any Barrows tank body"
+  },
+  "Any Barrows tank top": {
+    "correct_slot": "Body",
+    "alias": "Any Barrows tank body"
+  },
+  "Masori body(f)": {
+    "correct_slot": "Body",
+    "alias": "Masori body (f)"
+  },
+
   "Blessed boots": {
     "correct_slot": "Boots",
     "alias": "Any Blessed boots"
@@ -156,21 +149,91 @@
     "correct_slot": "Boots",
     "alias": "Shayzien boots (5)"
   },
-  "Bow of faerdhinen": {
-    "correct_slot": "Weapon",
-    "alias": "Bow of Faerdhinen"
+
+
+
+
+
+  "Blessed vambraces": {
+    "correct_slot": "Gloves",
+    "alias": "Any Blessed vambraces"
   },
-  "Masori body(f)": {
-    "correct_slot": "Body",
-    "alias": "Masori body (f)"
+  "Blessed bracers": {
+    "correct_slot": "Gloves",
+    "alias": "Any Blessed vambraces"
+  },
+
+
+
+
+
+
+  "Blessed coif": {
+    "correct_slot": "Helmet",
+    "alias": "Any Blessed coif"
+  },
+  "Barrows helm": {
+    "correct_slot": "Helmet",
+    "alias": "Any Barrows tank helm"
+  },
+
+  "Black mask(i)": {
+    "correct_slot": "Helmets",
+    "alias": "Black mask (i)"
+  },
+  "Masori mask(f)": {
+    "correct_slot": "Helmets",
+    "alias": "Masori mask (f)"
+  },
+  "Slayer helmet(i)": {
+    "correct_slot": "Helmets",
+    "alias": "Slayer helmet (i)"
+  },
+
+  "Blessed chaps": {
+    "correct_slot": "Legs",
+    "alias": "Any Blessed chaps"
+  },
+  "Blessed d'hide chaps": {
+    "correct_slot": "Legs",
+    "alias": "Any Blessed chaps"
+  },
+  "Barrows legs": {
+    "correct_slot": "Legs",
+    "alias": "Any Barrows tank legs"
   },
   "Masori chaps(f)": {
     "correct_slot": "Legs",
     "alias": "Masori chaps (f)"
   },
-  "Masori mask(f)": {
-    "correct_slot": "Helmets",
-    "alias": "Masori mask (f)"
+
+
+
+
+
+  "Explorer's Ring 3/2/1": {
+    "correct_slot": "Ring",
+    "alias": [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
+  },
+  "Explorer's Ring": {
+    "correct_slot": "Ring",
+    "alias": [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
+  },
+  "Explorer's ring": {
+    "correct_slot": "Ring",
+    "alias": [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
+  },
+  "Berserker ring(i)": {
+    "correct_slot": "Ring",
+    "alias": "Berserker ring (i)"
+  },
+  "Warrior ring(i)": {
+    "correct_slot": "Ring",
+    "alias": "Warrior ring (i)"
+  },
+  "Archers ring(i)": {
+    "correct_slot": "Ring",
+    "alias": "Archers ring (i)"
   },
   "Ring of suffering(ri)": {
     "correct_slot": "Ring",
@@ -188,34 +251,6 @@
     "correct_slot": "Ring",
     "alias": "Seers ring (i)"
   },
-  "Slayer helmet(i)": {
-    "correct_slot": "Helmets",
-    "alias": "Slayer helmet (i)"
-  },
-  "Elidinis' ward(f)": {
-    "correct_slot": "Shield",
-    "alias": "Elidinis' ward (f)"
-  },
-  "Scythe of vitur": {
-    "correct_slot": "Weapon",
-    "alias": "Scythe of Vitur"
-  },
-  "Ava's device": {
-    "correct_slot": "Cape",
-    "alias": "Ava's accumulator"
-  },
-  "amethyst darts": {
-    "correct_slot": "Ammo",
-    "alias": "Amethyst darts"
-  },
-  "Diamond bolts(e)": {
-    "correct_slot": "Ammo",
-    "alias": "Diamond bolts (e)"
-  },
-  "Diamond dragon bolts(e)": {
-    "correct_slot": "Ammo",
-    "alias": "Diamond dragon bolts (e)"
-  },
   "Ring of the gods(i)": {
     "correct_slot": "Ring",
     "alias": "Ring of the gods (i)"
@@ -228,6 +263,42 @@
     "correct_slot": "Ring",
     "alias": "Granite ring (i)"
   },
+
+
+
+
+  "Elidinis' ward(f)": {
+    "correct_slot": "Shield",
+    "alias": "Elidinis' ward (f)"
+  },
+
+
+
+
+  "Dragon dagger(p)": {
+    "correct_slot": "Special Attack",
+    "alias": "Dragon dagger"
+  },
+
+
+
+
+  "Twisted bow": {
+    "correct_slot": "Weapon",
+    "alias": "Twisted bow"
+  },
+  "Blade of saeldor": {
+    "correct_slot": "Weapon",
+    "alias": "Blade of Saeldor"
+  },
+  "Bow of faerdhinen": {
+    "correct_slot": "Weapon",
+    "alias": "Bow of Faerdhinen"
+  },
+  "Scythe of vitur": {
+    "correct_slot": "Weapon",
+    "alias": "Scythe of Vitur"
+  },
   "Iban's staff(u)": {
     "correct_slot": "Weapon",
     "alias": "Iban's staff (u)"
@@ -236,32 +307,8 @@
     "correct_slot": "Weapon",
     "alias": "Magic shortbow (i)"
   },
-  "Ranging cape(t)": {
-    "correct_slot": "Cape",
-    "alias": "Ranging cape (t)"
-  },
-  "Cape of accomplishment": {
-    "correct_slot": "Cape",
-    "alias": "Any Skillcape"
-  },
-  "Cape of Accomplishment": {
-    "correct_slot": "Cape",
-    "alias": "Any Skillcape"
-  },
-  "Cape of Accomplishment(t)": {
-    "correct_slot": "Cape",
-    "alias": "Any Skillcape (t)"
-  },
-  "Vestment cloak": {
-    "correct_slot": "Cape",
-    "alias": "Any God vestment cloaks"
-  },
   "Ursine chainmace(u)": {
     "correct_slot": "Weapon",
     "alias": "Ursine chainmace (u)"
-  },
-  "Dragon dagger(p)": {
-    "correct_slot": "Special Attack",
-    "alias": "Dragon dagger"
   }
 }

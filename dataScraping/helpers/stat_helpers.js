@@ -23,6 +23,7 @@ const phasedHpLookup = {
   "duke sucellus awake quest": 330,
   "kalphite queen crawling": 255,
   "kalphite queen airborne": 255,
+  "kraken kraken": 255,
   "phantom muspah teleporting": 850,
   "phantom muspah shielded": 75,
   "phantom muspah ranged": 850,
@@ -764,7 +765,8 @@ function extractAttackStyles($, info) {
     'the (whisperer post quest)': ['melee', 'ranged', 'magic'],
     'the (whisperer awakened)': ['melee', 'ranged', 'magic'],
     'the (whisperer quest)': ['melee', 'ranged', 'magic'],
-
+    'scurrius (solo)': ['melee', 'ranged', 'magic'],
+    'scurrius (group)': ['melee', 'ranged', 'magic']
   };
 
   const overrideKey = (info?.name || '').toLowerCase();
