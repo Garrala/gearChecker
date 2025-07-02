@@ -94,5 +94,25 @@
   "Granite gloves": {
     "image": "/assets/gear-icons/granite-gloves.png",
     "wiki": "https://oldschool.runescape.wiki/w/Granite_gloves"
+  },
+  "Red spiky vambraces": {
+    "image": "/assets/gear-icons/Red_spiky_vambraces.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Red_spiky_vambraces"
+  },
+  "Bracelet of slaughter": {
+    "image": "/assets/gear-icons/Bracelet_of_slaughter.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Bracelet_of_slaughter"
+  },
+  "Armadyl bracers": {
+    "image": "/assets/gear-icons/Armadyl_bracers.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Armadyl_bracers"
+  },
+  "Black spiky vambraces": {
+    "image": "/assets/gear-icons/Black_spiky_vambraces.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Black_spiky_vambraces"
+  },
+  "Ancient bracers": {
+    "image": "/assets/gear-icons/blessed-vambraces.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Ancient_bracers"
   }
 }

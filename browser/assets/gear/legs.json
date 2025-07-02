@@ -210,5 +210,17 @@
   "Proselyte tasset": {
     "image": "/assets/gear-icons/proselyte-tasset.png",
     "wiki": "https://oldschool.runescape.wiki/w/Proselyte_tasset"
+  },
+  "Armadyl chaps": {
+    "image": "/assets/gear-icons/Armadyl_chaps.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Armadyl_chaps"
+  },
+  "Ancient chaps": {
+    "image": "/assets/gear-icons/blessed-chaps.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Ancient_chaps"
+  },
+  "Rune plateskirt": {
+    "image": "/assets/gear-icons/Rune_plateskirt.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Rune_plateskirt"
   }
 }

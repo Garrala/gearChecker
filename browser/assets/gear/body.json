@@ -202,5 +202,13 @@
   "Oathplate chest": {
     "image": "/assets/gear-icons/oathplate-chest.png",
     "wiki": "https://oldschool.runescape.wiki/w/Oathplate_chest"
+  },
+  "Armadyl d'hide body": {
+    "image": "/assets/gear-icons/Armadyl_d%27hide_body.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Armadyl_d%27hide_body"
+  },
+  "Ancient d'hide body": {
+    "image": "/assets/gear-icons/blessed-body.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Ancient_d%27hide_body"
   }
 }

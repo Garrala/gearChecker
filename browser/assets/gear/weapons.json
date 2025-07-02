@@ -53,6 +53,12 @@
     "twoHanded": false,
     "usesAmmoType": "blessing"
   },
+  "Nightmare staff": {
+    "image": "/assets/gear-icons/harmonised-nightmare-staff.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Nightmare_staff",
+    "twoHanded": false,
+    "usesAmmoType": "blessing"
+  },
   "Sanguinesti staff": {
     "image": "/assets/gear-icons/sanguinesti-staff.png",
     "wiki": "https://oldschool.runescape.wiki/w/Sanguinesti_staff",
@@ -555,6 +561,84 @@
     "image": "/assets/gear-icons/tzhaar-ket-om.png",
     "wiki": "https://oldschool.runescape.wiki/w/Tzhaar-ket-om",
     "twoHanded": true,
+    "usesAmmoType": "blessing"
+  },
+  "Slayer's staff (e)": {
+    "image": "/assets/gear-icons/Slayer%27s_staff_%28e%29.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Slayer%27s_staff_(e)",
+    "twoHanded": false,
+    "usesAmmoType": "blessing"
+  },
+  "Black chinchompas": {
+    "image": "/assets/gear-icons/Black_chinchompa.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Black_chinchompa",
+    "twoHanded": false,
+    "usesAmmoType": "blessing"
+  },
+  "Red chinchompas": {
+    "image": "/assets/gear-icons/Red_chinchompa.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Red_chinchompa",
+    "twoHanded": false,
+    "usesAmmoType": "blessing"
+  },
+  "Voidwaker": {
+    "image": "/assets/gear-icons/voidwaker.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Voidwaker",
+    "twoHanded": false,
+    "usesAmmoType": "blessing"
+  },
+  "Crystal halberd": {
+    "image": "/assets/gear-icons/Crystal_halberd.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Crystal_halberd",
+    "twoHanded": true,
+    "usesAmmoType": "blessing"
+  },
+  "Any Godsword": {
+    "image": "/assets/gear-icons/Ancient_godsword.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Ancient_godsword",
+    "twoHanded": true,
+    "usesAmmoType": "blessing"
+  },
+  "Torag's hammers": {
+    "image": "/assets/gear-icons/Torag%27s_hammers.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Torag%27s_hammers",
+    "twoHanded": true,
+    "usesAmmoType": "blessing"
+  },
+  "Sulphur blades": {
+    "image": "/assets/gear-icons/Sulphur_blades.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Sulphur_blades",
+    "twoHanded": true,
+    "usesAmmoType": "blessing"
+  },
+  "Dragon halberd": {
+    "image": "/assets/gear-icons/Dragon_halberd.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_halberd",
+    "twoHanded": true,
+    "usesAmmoType": "blessing"
+  },
+  "Dinh's bulwark": {
+    "image": "/assets/gear-icons/Dinh%27s_bulwark.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Dinh%27s_bulwark",
+    "twoHanded": true,
+    "usesAmmoType": "blessing"
+  },
+  "Mystic earth staff": {
+    "image": "/assets/gear-icons/Mystic_earth_staff.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Mystic_earth_staff",
+    "twoHanded": false,
+    "usesAmmoType": "blessing"
+  },
+  "Rune knife": {
+    "image": "/assets/gear-icons/Rune_knife.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Rune_knife",
+    "twoHanded": false,
+    "usesAmmoType": "blessing"
+  },
+  "Bone dagger": {
+    "image": "/assets/gear-icons/bone-dagger.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Bone_dagger#Poison++",
+    "twoHanded": false,
     "usesAmmoType": "blessing"
   }
 }

@@ -142,5 +142,17 @@
   "Bandos d'hide boots": {
     "image": "/assets/gear-icons/bandos-d-hide-boots.png",
     "wiki": "https://oldschool.runescape.wiki/w/Bandos_d%27hide_boots"
+  },
+  "Silly jester boots": {
+    "image": "/assets/gear-icons/Silly_jester_boots.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Silly_jester_boots"
+  },
+  "Armadyl d'hide boots": {
+    "image": "/assets/gear-icons/Armadyl_d%27hide_boots.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Armadyl_d%27hide_boots"
+  },
+  "Adamant boots": {
+    "image": "/assets/gear-icons/Adamant_boots.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Adamant_boots"
   }
 }
