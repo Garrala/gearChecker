@@ -84,9 +84,9 @@
   "gear_setups": {
     "Melee (Low Level)": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Blood moon helm" ],
         [ "Helm of neitiznot", "Eclipse moon helm" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
@@ -158,9 +158,8 @@
     },
     "Ranged (Low Level)": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Eclipse moon helm" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -168,13 +167,11 @@
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
         [ "Ava's assembler" ],
         [ "Ava's accumulator" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -182,34 +179,29 @@
         [ "Eclipse moon chestplate" ],
         [ "Ancient d'hide body", "Hueycoatl hide body" ],
         [ "Karil's leathertop" ],
-        [ "Black d'hide body" ],
-        [ "N/A" ]
+        [ "Black d'hide body" ]
       ],
       "Legs": [
         [ "Eclipse moon tassets" ],
         [ "Ancient chaps", "Hueycoatl hide chaps" ],
         [ "Karil's leatherskirt" ],
-        [ "Black d'hide chaps" ],
-        [ "N/A" ]
+        [ "Black d'hide chaps" ]
       ],
       "Weapon": [
         [ "Eclipse atlatl", "Toxic blowpipe" ],
         [ "Dragon crossbow", "Rune crossbow" ],
         [ "Hunters' sunlight crossbow" ],
-        [ "Karil's crossbow", "Magic shortbow (i)" ],
-        [ "Magic shortbow (i)" ]
+        [ "Karil's crossbow", "Magic shortbow (i)" ]
       ],
       "Ammo": [
         [ "Atlatl darts" ],
         [ "Ruby dragon bolts (e)" ],
         [ "Moonlight antler bolts", "Sunlight antler bolts" ],
-        [ "Bolt rack", "Amethyst arrows" ],
-        [ "N/A" ]
+        [ "Bolt rack", "Amethyst arrows" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
         [ "Combat bracelet" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -217,13 +209,11 @@
         [ "Aranea boots" ],
         [ "Dragon boots" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ring": [
         [ "Berserker ring (i)" ],
         [ "Lightbearer" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -231,11 +221,9 @@
         [ "Toxic blowpipe" ],
         [ "N/A" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Shield": [
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -306,11 +294,11 @@
     },
     "Melee (High Level)": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Torva full helm", "Oathplate helm" ],
         [ "Inquisitor's great helm" ],
         [ "Neitiznot faceguard", "Serpentine helm" ],
-        [ "Blood moon helm" ],
-        [ "N/A" ]
+        [ "Blood moon helm" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
@@ -392,10 +380,10 @@
     },
     "Ranged (High Level)": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Masori mask (f)" ],
         [ "Crystal helm" ],
-        [ "Eclipse moon helm" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Eclipse moon helm" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],

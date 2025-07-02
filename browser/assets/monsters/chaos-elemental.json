@@ -48,11 +48,11 @@
   "gear_setups": {
     "Ranged": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Any Blessed coif" ],
         [ "Karil's coif" ],
         [ "Archer helm" ],
-        [ "Snakeskin bandana" ],
-        [ "N/A" ]
+        [ "Snakeskin bandana" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -90,11 +90,11 @@
         [ "Armadyl crossbow" ]
       ],
       "Shield": [
-        [ "N/A" ],
         [ "Book of law" ],
         [ "Unholy book" ],
         [ "Black d'hide shield" ],
-        [ "Book of balance" ]
+        [ "Book of balance" ],
+        [ "N/A" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
@@ -134,9 +134,9 @@
     },
     "Melee": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Helm of neitiznot" ],
         [ "Verac's helm" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],

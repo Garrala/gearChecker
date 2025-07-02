@@ -93,11 +93,11 @@
   "gear_setups": {
     "Ranged": {
       "Helmet": [
+        [ "Masori mask (f)" ],
         [ "Void ranger helm" ],
+        [ "Slayer helmet (i)" ],
         [ "Crystal helm", "Serpentine helm" ],
-        [ "Any Blessed coif" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Any Blessed coif" ]
       ],
       "Amulet": [
         [ "Salve amulet (ei)" ],
@@ -142,8 +142,8 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Ruby dragon bolts (e)", "Diamond dragon bolts(e)" ],
-        [ "Ruby bolts (e)", "Diamond bolts(e)" ],
+        [ "Ruby dragon bolts (e)" ],
+        [ "Ruby bolts (e)" ],
         [ "Opal dragon bolts (e)" ],
         [ "Dragon bolts" ],
         [ "Runite bolts" ]
@@ -179,11 +179,11 @@
     },
     "Melee": {
       "Helmet": [
+        [ "Torva full helm", "Slayer helmet (i)" ],
         [ "Neitiznot faceguard", "Serpentine helm", "Oathplate helm" ],
         [ "Justiciar faceguard", "Blood moon helm" ],
         [ "Helm of neitiznot" ],
-        [ "Any Barrows tank helm" ],
-        [ "N/A" ]
+        [ "Any Barrows tank helm" ]
       ],
       "Amulet": [
         [ "Salve amulet (ei)" ],

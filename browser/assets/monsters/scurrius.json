@@ -414,10 +414,10 @@
     },
     "Ranged (high level)": {
       "Helmet": [
+        [ "Masori mask (f)" ],
         [ "Void ranger helm" ],
         [ "Armadyl helmet" ],
-        [ "Karil's coif" ],
-        [ "N/A" ]
+        [ "Karil's coif" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],

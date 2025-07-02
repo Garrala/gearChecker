@@ -79,10 +79,10 @@
   "gear_setups": {
     "Melee": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ],
         [ "Slayer helmet" ],
         [ "Black mask" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [

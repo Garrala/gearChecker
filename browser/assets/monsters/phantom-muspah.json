@@ -202,9 +202,9 @@
   "gear_setups": {
     "Magic": {
       "Helmet": [
+        [ "Slayer helmet (i)", "Ancestral hat" ],
         [ "Virtus mask" ],
         [ "Ahrim's hood" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -288,9 +288,9 @@
     },
     "Ranged": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Crystal helm" ],
         [ "Any Blessed coif" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -326,8 +326,8 @@
         [ "Twisted bow" ],
         [ "Bow of Faerdhinen" ],
         [ "Zaryte crossbow", "Armadyl crossbow", "Toxic blowpipe" ],
-        [ "N/A" ],
-        [ "Hunters' sunlight crossbow" ]
+        [ "Hunters' sunlight crossbow" ],
+        [ "N/A" ]
       ],
       "Shield": [
         [ "Twisted buckler" ],
@@ -338,8 +338,8 @@
       ],
       "Ammo": [
         [ "Dragon arrows", "Moonlight antler bolts" ],
-        [ "Amethyst arrows", "Diamond dragon bolts(e)", "Sunlight antler bolts" ],
-        [ "Rune arrows", "Diamond bolts(e)" ],
+        [ "Amethyst arrows", "Sunlight antler bolts" ],
+        [ "Rune arrows" ],
         [ "Rada's blessing 4" ],
         [ "Rada's blessing 3", "Any God blessing" ]
       ],
@@ -374,10 +374,10 @@
     },
     "Melee": {
       "Helmet": [
+        [ "Slayer helmet (i)", "Oathplate helm" ],
         [ "Torva full helm" ],
         [ "Neitiznot faceguard" ],
         [ "Serpentine helm", "Inquisitor's great helm" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [

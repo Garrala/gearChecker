@@ -122,11 +122,11 @@
   "gear_setups": {
     "Tribrid (Solo)": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Torva full helm", "Serpentine helm" ],
         [ "Neitiznot faceguard" ],
         [ "Crystal helm" ],
-        [ "Helm of neitiznot" ],
-        [ "N/A" ]
+        [ "Helm of neitiznot" ]
       ],
       "Amulet": [
         [ "Amulet of rancour", "Occult necklace", "Necklace of anguish" ],
@@ -208,11 +208,11 @@
     },
     "Magic (Rex only)": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Justiciar faceguard" ],
         [ "Serpentine helm" ],
         [ "Any Barrows tank helm" ],
-        [ "Helm of neitiznot" ],
-        [ "N/A" ]
+        [ "Helm of neitiznot" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
@@ -294,10 +294,10 @@
     },
     "Ranged (Prime only)": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Masori mask (f)", "Justiciar faceguard" ],
         [ "Crystal helm" ],
         [ "Any Barrows tank helm" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [

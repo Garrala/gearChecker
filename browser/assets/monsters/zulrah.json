@@ -121,11 +121,11 @@
   "gear_setups": {
     "Magic": {
       "Helmet": [
+        [ "Slayer helmet (i)", "Ancestral hat" ],
         [ "Virtus mask" ],
         [ "Serpentine helm", "Ahrim's hood", "Blue moon helm" ],
         [ "Infinity hat", "Bloodbark helm" ],
-        [ "Void mage helm", "Mystic hat" ],
-        [ "N/A" ]
+        [ "Void mage helm", "Mystic hat" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
@@ -207,11 +207,11 @@
     },
     "Ranged": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Crystal helm", "Masori mask" ],
         [ "Serpentine helm" ],
         [ "Any Blessed coif" ],
-        [ "Void ranger helm", "Archer helm" ],
-        [ "N/A" ]
+        [ "Void ranger helm", "Archer helm" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -293,11 +293,11 @@
     },
     "Melee": {
       "Helmet": [
+        [ "Slayer helmet (i)", "Torva full helm", "Oathplate helm" ],
         [ "Serpentine helm" ],
         [ "Neitiznot faceguard", "Void melee helm" ],
         [ "Blood moon helm" ],
-        [ "Eclipse moon helm", "Helm of neitiznot" ],
-        [ "N/A" ]
+        [ "Eclipse moon helm", "Helm of neitiznot" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],

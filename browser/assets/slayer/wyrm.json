@@ -86,10 +86,10 @@
   "gear_setups": {
     "Ranged": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Masori mask (f)" ],
         [ "Crystal helm" ],
         [ "Any Blessed coif" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
@@ -172,10 +172,10 @@
     },
     "Melee": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Torva full helm" ],
         [ "Neitiznot faceguard" ],
         [ "Helm of neitiznot" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [

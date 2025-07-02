@@ -44,8 +44,8 @@
   "gear_setups": {
     "Magic": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Facemask" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -130,8 +130,8 @@
     },
     "Melee": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Facemask" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]

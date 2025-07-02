@@ -48,11 +48,11 @@
   "gear_setups": {
     "Ranged": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Masori mask (f)" ],
         [ "Armadyl helmet" ],
         [ "Crystal helm" ],
-        [ "Void ranger helm" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Void ranger helm" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -134,10 +134,10 @@
     },
     "Solo Melee": {
       "Helmet": [
+        [ "Slayer helmet (i)", "Torva full helm" ],
         [ "Neitiznot faceguard" ],
         [ "Serpentine helm" ],
         [ "Helm of neitiznot" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
@@ -220,11 +220,11 @@
     },
     "Melee Tank": {
       "Helmet": [
+        [ "Slayer helmet (i)", "Torva full helm" ],
         [ "Justiciar faceguard" ],
         [ "Serpentine helm" ],
         [ "Neitiznot faceguard" ],
         [ "Guthan's helm" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
@@ -318,10 +318,10 @@
     },
     "Melee": {
       "Helmet": [
+        [ "Slayer helmet (i)", "Torva full helm" ],
         [ "Neitiznot faceguard" ],
         [ "Serpentine helm" ],
         [ "Helm of neitiznot" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
@@ -404,9 +404,9 @@
     },
     "Magic": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Ancestral hat" ],
         [ "Virtus mask" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [

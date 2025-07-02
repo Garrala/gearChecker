@@ -156,9 +156,8 @@
   "gear_setups": {
     "Ranged": {
       "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -168,7 +167,6 @@
         [ "Dragonbone necklace" ],
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
@@ -176,7 +174,6 @@
         [ "Ava's assembler" ],
         [ "Max cape", "Ranging cape (t)" ],
         [ "Ava's accumulator", "Ranging cape" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -184,7 +181,6 @@
         [ "Crystal body", "Eclipse moon chestplate" ],
         [ "Hueycoatl hide body" ],
         [ "Any Blessed body" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
@@ -192,7 +188,6 @@
         [ "Crystal legs", "Eclipse moon tassets" ],
         [ "Hueycoatl hide chaps" ],
         [ "Any Blessed chaps" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
@@ -200,15 +195,13 @@
         [ "Toxic blowpipe", "Dragon hunter crossbow" ],
         [ "Bow of Faerdhinen" ],
         [ "Eclipse atlatl" ],
-        [ "N/A" ],
-        [ "Toxic blowpipe" ]
+        [ "N/A" ]
       ],
       "Shield": [
         [ "Twisted buckler" ],
         [ "Dragonfire ward" ],
         [ "Odium ward" ],
         [ "Book of law" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
@@ -216,7 +209,6 @@
         [ "Ruby bolts (e)" ],
         [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
-        [ "Ruby bolts (e)" ],
         [ "N/A" ]
       ],
       "Gloves": [
@@ -224,7 +216,6 @@
         [ "Any Blessed vambraces", "Hueycoatl hide vambraces" ],
         [ "Barrows gloves" ],
         [ "Black d'hide vambraces" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
@@ -232,30 +223,27 @@
         [ "Devout boots" ],
         [ "Any Blessed boots", "Aranea boots" ],
         [ "Boots of brimstone" ],
-        [ "Boots of stone" ],
-        [ "N/A" ]
+        [ "Boots of stone" ]
       ],
       "Ring": [
         [ "Lightbearer" ],
         [ "Venator ring" ],
         [ "Ring of the gods (i)" ],
         [ "Ring of suffering (i)" ],
-        [ "Archers ring (i)" ],
-        [ "N/A" ]
+        [ "Archers ring (i)" ]
       ],
       "Special Attack": [
         [ "Tonalztics of ralos" ],
         [ "Toxic blowpipe" ],
         [ "Dragon warhammer" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ]
     },
     "Melee": {
       "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]

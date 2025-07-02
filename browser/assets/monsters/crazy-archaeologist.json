@@ -45,11 +45,11 @@
   "gear_setups": {
     "Magic": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Bloodbark helm" ],
         [ "Mitre" ],
         [ "Mystic hat" ],
-        [ "Xerician hat", "Fremennik hat" ],
-        [ "N/A" ]
+        [ "Xerician hat", "Fremennik hat" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],

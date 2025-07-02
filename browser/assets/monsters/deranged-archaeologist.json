@@ -57,13 +57,13 @@
         [ "Dragonbone necklace", "Bonecrusher necklace" ],
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
-        [ "N/A" ]
+        [ "Holy symbol" ]
       ],
       "Cape": [
         [ "Any Imbued God cape" ],
         [ "Soul cape" ],
-        [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ],
-        [ "Any Skillcape (t)" ],
+        [ "Ardougne cloak 2", "Any Skillcape (t)" ],
+        [ "Ardougne cloak 1" ],
         [ "N/A" ]
       ],
       "Body": [
