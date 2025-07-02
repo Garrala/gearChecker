@@ -98,8 +98,8 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3" ],
-        [ "Dragon arrows" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Dragon arrows", "Amethyst arrows" ],
         [ "Diamond bolts (e)" ],
         [ "Broad bolts" ]
       ],
@@ -200,7 +200,7 @@
         [ "Ultor ring", "Ring of suffering (i)" ],
         [ "Berserker ring (i)" ],
         [ "Ring of shadows" ],
-        [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ],
+        [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1", "Ring of recoil" ],
         [ "Ring of wealth (i)" ]
       ],
       "Special Attack": [
@@ -216,7 +216,10 @@
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
-      ]
+      ],
+      "mode": [],
+      "insert_at": [],
+      "item": []
     }
   }
 }

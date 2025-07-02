@@ -122,7 +122,7 @@
         [ "Berserker ring (i)" ],
         [ "Brimstone ring" ],
         [ "Lightbearer" ],
-        [ "Ring of suffering (i)" ]
+        [ "Ring of suffering (i)", "Ring of the gods (i)" ]
       ],
       "Special Attack": [
         [ "Dragon claws", "Elder maul" ],
@@ -179,7 +179,7 @@
         [ "Dragon arrows" ],
         [ "Amethyst arrows" ],
         [ "Rune arrows" ],
-        [ "Ruby dragon bolts (e)" ],
+        [ "Ruby dragon bolts (e)", "Diamond dragon bolts (e)" ],
         [ "Rada's blessing 4" ]
       ],
       "Gloves": [

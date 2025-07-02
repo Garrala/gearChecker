@@ -159,17 +159,20 @@
         [ "Slayer helmet (i)" ],
         [ "Black mask (i)" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
         [ "Dizana's quiver" ],
         [ "Ava's assembler", "Ava's accumulator" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -177,17 +180,20 @@
         [ "Masori body (f)" ],
         [ "Crystal body" ],
         [ "Any Blessed body", "Black d'hide body" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Crystal legs" ],
         [ "Any Blessed chaps", "Black d'hide chaps" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
         [ "Scorching bow" ],
         [ "Bow of Faerdhinen" ],
+        [ "Toxic blowpipe" ],
         [ "Webweaver bow", "Craw's bow" ],
         [ "Crystal bow" ]
       ],
@@ -195,15 +201,18 @@
         [ "Dragon arrows" ],
         [ "Amethyst arrows" ],
         [ "N/A" ],
-        [ "Amethyst darts" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
         [ "Any Blessed vambraces", "Black d'hide vambraces" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -213,15 +222,18 @@
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Shield": [
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Special Attack": [
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],

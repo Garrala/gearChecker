@@ -44,7 +44,7 @@
   "gear_setups": {
     "Ranged": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
+        [ "Slayer helmet (i)", "Black mask (i)" ],
         [ "Any Blessed coif" ],
         [ "Karil's coif" ],
         [ "Snakeskin bandana" ],
@@ -94,7 +94,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 3", "Rada's blessing 2" ],
-        [ "Dragon arrows" ],
+        [ "Dragon arrows", "Amethyst arrows", "Rune arrows" ],
         [ "Moonlight antler bolts" ],
         [ "Diamond dragon bolts (e)" ],
         [ "Diamond bolts (e)" ]
