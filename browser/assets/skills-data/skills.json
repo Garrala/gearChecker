@@ -11,43 +11,129 @@
       "members": [
         {
           "name": "Gnome Stronghold",
-          "minLevel": 1
+          "minLevel": 1,
+		  "maxLevel": 10,
+		  "intensity": "medium"
         },
         {
           "name": "Draynor Rooftop",
-          "minLevel": 10
+          "minLevel": 1,
+		  "maxLevel": 20,
+		  "intensity": "medium"
         },
         {
           "name": "Al Kharid Rooftop",
-          "minLevel": 20
+          "minLevel": 20,
+		  "maxLevel": 30,
+		  "intensity": "medium"
         },
         {
           "name": "Varrock Rooftop",
-          "minLevel": 30
+          "minLevel": 30,
+		  "maxLevel": 40,
+		  "intensity": "medium"
         },
         {
           "name": "Canifis Rooftop",
-          "minLevel": 40
+          "minLevel": 40,
+		  "maxLevel": 60,
+		  "intensity": "medium"
         },
         {
           "name": "Falador Rooftop",
-          "minLevel": 50
+          "minLevel": 50,
+		  "maxLevel": 60,
+		  "intensity": "medium"
         },
         {
           "name": "Seers Rooftop",
-          "minLevel": 60
+          "minLevel": 60,
+		  "maxLevel": 70,
+		  "intensity": "medium"
         },
         {
           "name": "Pollnivneach Rooftop",
-          "minLevel": 70
+          "minLevel": 70,
+		  "maxLevel": 90,
+		  "intensity": "medium"
+        },
+        {
+          "name": "Rellekka Rooftop",
+          "minLevel": 80,
+		  "maxLevel": 90,
+		  "intensity": "medium"
         },
         {
           "name": "Ardougne Rooftop",
-          "minLevel": 90
+          "minLevel": 90,
+		  "maxLevel": 99,
+		  "intensity": "medium"
         },
         {
           "name": "Hallowed Sepulchre",
-          "minLevel": 52
+          "minLevel": 62,
+		  "maxLevel": 99,
+		  "intensity": "high"
+        },
+        {
+          "name": "Brimhaven Agility Arena",
+          "minLevel": 20,
+		  "maxLevel": 47,
+		  "intensity": "low"
+        },
+        {
+          "name": "Wilderness Agility Course",
+          "minLevel": 47,
+		  "maxLevel": 62,
+		  "intensity": "high"
+        },
+        {
+          "name": "Edgeville Dungeon monkeybars",
+          "minLevel": 15,
+		  "maxLevel": 40,
+		  "intensity": "high"
+        },
+        {
+          "name": "Barbarian Fishing",
+          "minLevel": 15,
+		  "maxLevel": 74,
+		  "intensity": "low"
+        },
+        {
+          "name": "Agility Pyramid",
+          "minLevel": 30,
+		  "maxLevel": 99,
+		  "intensity": "medium"
+        },
+        {
+          "name": "Ape Atoll Agility Course",
+          "minLevel": 48,
+		  "maxLevel": 60,
+		  "intensity": "medium"
+        },
+        {
+          "name": "Shayzien Advanced Agility Course",
+          "minLevel": 45,
+		  "maxLevel": 60,
+		  "intensity": "medium"
+        },
+        {
+          "name": "Colossal Wyrm Agility Course",
+          "minLevel": 50,
+		  "maxLevel": 62,
+		  "intensity": "medium"
+        },
+        {
+          "name": "Werewolf Agility Course",
+          "minLevel": 60,
+		  "maxLevel": 90,
+		  "intensity": "medium"
+        },
+        {
+          "name": "Prifddinas Agility Course",
+          "minLevel": 75,
+		  "maxLevel": 99,
+		  "intensity": "medium"
         }
       ],
       "ironman": [
