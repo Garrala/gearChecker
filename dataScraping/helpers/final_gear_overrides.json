@@ -1,0 +1,229 @@
+{
+  "abyssal-sire": {
+    "Ranged": {
+      "Weapon": {
+        "mode": "patch",
+        "insert_at": 2,
+        "item": "Toxic blowpipe"
+      }
+    },
+    "alchemical-hydra": {
+      "Ranged": {
+        "Special Attack": {
+          "mode": "patch",
+          "insert_at": 0,
+          "item": "Zaryte crossbow"
+        },
+        "Ammo": [
+          {
+            "mode": "patch_join",
+            "insert_at": 0,
+            "item": "Ruby dragon bolts (e)"
+          },
+          {
+            "mode": "patch",
+            "insert_at": 2,
+            "item": "Rada's blessing 4"
+          },
+          {
+            "mode": "patch_join",
+            "insert_at": 3,
+            "item": "Rada's blessing 2"
+          }
+        ]
+      },
+      "Melee": {
+        "Body": [
+          {
+            "mode": "patch_join",
+            "insert_at": 1,
+            "item": "Blood moon chestplate"
+          },
+          {
+            "mode": "patch_join",
+            "insert_at": 1,
+            "item": "Fighter torso"
+          }
+        ],
+        "Legs": {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Blood moon tassets"
+        }
+      }
+    }
+  },
+  "araxxor": {
+    "Ranged": {
+      "Ring": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Archers ring (i)"
+      }
+    }
+  },
+  "artio": {
+    "Ranged": {
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Ruby bolts (e)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 4,
+          "item": "Rune arrows"
+        }
+      ]
+    }
+  },
+  "barrows": {
+    "Magic equipment": {
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Rada's blessing 3"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Rada's blessing 2"
+        }
+      ]
+    },
+    "Tank & Lower level": {
+      "Cape": {
+        "mode": "patch",
+        "insert_at": 4,
+        "item": "Any God vestment cloaks"
+      },
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Any God blessing"
+      }
+    },
+    "Ranged (Ahrim)": {
+      "Special Attack": {
+        "mode": "patch",
+        "insert_at": 1,
+        "item": "Magic shortbow (i)"
+      },
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 2,
+        "item": "Rune arrows"
+      }
+    }
+  },
+  "callisto": {
+    "Ranged": {
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Ruby bolts (e)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Rune arrows"
+        }
+      ]
+    }
+  },
+  "cerberus": {
+    "Melee": {
+      "Ring": {
+        "mode": "patch_join",
+        "insert_at": 4,
+        "item": "Ring of the gods (i)"
+      }
+    },
+    "Ranged": {
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 3,
+        "item": "Diamond dragon bolts (e)"
+      }
+    }
+  },
+  "chaos-elemental": {
+    "Ranged": {
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Rada's blessing 2"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Any God blessing"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Amethyst arrows"
+        }
+      ]
+    },
+    "Melee": {
+      "Ring": {
+        "mode": "patch_join",
+        "insert_at": 3,
+        "item": "Ring of recoil"
+      }
+    }
+  },
+  "chaos-fanatic": {
+    "Ranged": {
+      "Helmet": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Black mask (i)"
+      },
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Amethyst arrows"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Rune arrows"
+        }
+      ]
+    }
+  },
+  "commander-zilyana": {
+    "Ranged": {
+      "Helmet": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Slayer helm (i)"
+      },
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Diamond dragon bolts (e)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Any God blessing"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Diamond bolts (e)"
+        }
+      ]
+    }
+  }
+}
+

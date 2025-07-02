@@ -205,10 +205,10 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Atlatl darts" ],
+        [ "Dragon arrows", "Atlatl darts", "Ruby dragon bolts (e)" ],
         [ "Ruby bolts (e)" ],
-        [ "Rada's blessing 3", "Any God blessing" ],
-        [ "N/A" ],
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ]
       ],
       "Gloves": [
@@ -233,10 +233,10 @@
         [ "Archers ring (i)" ]
       ],
       "Special Attack": [
+        [ "Zaryte crossbow" ],
         [ "Tonalztics of ralos" ],
         [ "Toxic blowpipe" ],
         [ "Dragon warhammer" ],
-        [ "N/A" ],
         [ "N/A" ]
       ]
     },
@@ -264,14 +264,14 @@
       ],
       "Body": [
         [ "Torva platebody" ],
-        [ "Bandos chestplate" ],
+        [ "Bandos chestplate", "Blood moon chestplate", "Fighter torso" ],
         [ "Inquisitor's hauberk" ],
         [ "Mixed hide top" ],
         [ "Obsidian platebody" ]
       ],
       "Legs": [
         [ "Torva platelegs" ],
-        [ "Bandos tassets" ],
+        [ "Bandos tassets", "Blood moon tassets" ],
         [ "Inquisitor's plateskirt" ],
         [ "Mixed hide legs" ],
         [ "Obsidian platelegs" ]

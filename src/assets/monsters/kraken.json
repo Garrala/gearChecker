@@ -41,44 +41,6 @@
       "weaknesses": {
         "earth": "50%"
       }
-    },
-    {
-      "name": "kraken (whirlpool)",
-      "wiki_link": "https://oldschool.runescape.wiki/w/Kraken#Kraken",
-      "image": "assets/monster-icons/kraken_whirlpool.png",
-      "combat_level": 0,
-      "hp": 0,
-      "max_hit": {
-        "typeless": 28,
-        "magic": 28
-      },
-      "defense": {
-        "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
-        },
-        "magic": 130,
-        "ranged": {
-          "arrows": 300,
-          "bolts": 300,
-          "thrown": 300
-        }
-      },
-      "attack_styles": [ "Typeless", "Magic" ],
-      "attack_speed": {
-        "ticks": 4,
-        "seconds": 2.4
-      },
-      "aggressive": false,
-      "immunities": {
-        "poison": false,
-        "cannons": true,
-        "thralls": false
-      },
-      "weaknesses": {
-        "earth": "50%"
-      }
     }
   ],
   "gear_setups": {

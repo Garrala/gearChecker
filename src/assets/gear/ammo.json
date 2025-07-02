@@ -74,16 +74,6 @@
     "wiki": "https://oldschool.runescape.wiki/w/Ruby_bolts_(e)",
     "ammoType": "bolt"
   },
-  "Dragon darts": {
-    "image": "/assets/gear-icons/dragon-darts.png",
-    "wiki": "https://oldschool.runescape.wiki/w/Dragon_dart",
-    "ammoType": "dart"
-  },
-  "Amethyst darts": {
-    "image": "/assets/gear-icons/amethyst-darts.png",
-    "wiki": "https://oldschool.runescape.wiki/w/Amethyst_dart",
-    "ammoType": "dart"
-  },
   "Atlatl darts": {
     "image": "/assets/gear-icons/atlatl-darts.png",
     "wiki": "https://oldschool.runescape.wiki/w/Atlatl_dart",

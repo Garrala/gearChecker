@@ -321,11 +321,11 @@
   },
   "Explorer's Ring": {
     "correct_slot": "Ring",
-    "alias": [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
+    "alias": [ "Explorer's ring 4", "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
   },
   "Explorer's ring": {
     "correct_slot": "Ring",
-    "alias": [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
+    "alias": [ "Explorer's ring 4", "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
   },
   "Berserker ring(i)": {
     "correct_slot": "Ring",

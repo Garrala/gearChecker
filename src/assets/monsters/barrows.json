@@ -286,7 +286,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Any God blessing" ],
+        [ "Rada's blessing 2", "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -340,7 +340,7 @@
         [ "Any God cape" ],
         [ "Fire cape" ],
         [ "Ardougne cloak 3", "Ardougne cloak 4" ],
-        [ "N/A" ]
+        [ "Any God vestment cloaks" ]
       ],
       "Body": [
         [ "Any Barrows tank body" ],
@@ -371,7 +371,7 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 3", "Rada's blessing 2" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -452,7 +452,7 @@
       "Ammo": [
         [ "Rada's blessing 3", "Rada's blessing 2" ],
         [ "Moonlight antler bolts", "Sunlight antler bolts" ],
-        [ "Amethyst arrows" ],
+        [ "Amethyst arrows", "Rune arrows" ],
         [ "Bolt rack" ],
         [ "Adamant arrows", "Broad arrows" ]
       ],
@@ -479,8 +479,8 @@
       ],
       "Special Attack": [
         [ "Toxic blowpipe" ],
+        [ "Magic shortbow (i)" ],
         [ "Dragon dagger" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],

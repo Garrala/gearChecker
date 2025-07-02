@@ -12,8 +12,7 @@
       "hp": 115,
       "max_hit": {
         "magic": 16,
-        "melee": 16,
-        "poison": 8
+        "melee": 16
       },
       "defense": {
         "melee": {
@@ -28,7 +27,7 @@
           "thrown": 0
         }
       },
-      "attack_styles": [ "Magic", "Melee", "Poison" ],
+      "attack_styles": [ "Magic", "Melee" ],
       "attack_speed": {
         "ticks": 6
       },

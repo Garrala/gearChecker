@@ -203,7 +203,11 @@ fs.readdirSync(STAT_DIR).forEach(file => {
   }
 
   delete merged.unmatched_items;
-
+  if (merged.bosses) {
+    merged.bosses = merged.bosses.filter(boss =>
+      !(boss.name.toLowerCase().includes('whirlpool') && boss.name.toLowerCase().includes('kraken'))
+    );
+  }
   fs.writeFileSync(outputPath, compactStringify(merged, 2));
   console.log(`✅ Merged ${baseName}`);
 });
