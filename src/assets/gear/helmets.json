@@ -207,8 +207,24 @@
     "image": "/assets/gear-icons/oathplate-helm.png",
     "wiki": "https://oldschool.runescape.wiki/w/Oathplate_helm"
   },
-  " Obsidian helmet": {
+  "Obsidian helmet": {
     "image": "/assets/gear-icons/Obsidian_helmet.png",
     "wiki": "https://oldschool.runescape.wiki/w/Obsidian_helmet"
+  },
+  "Eclipse moon helm": {
+    "image": "/assets/gear-icons/Eclipse_moon_helm.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Eclipse_moon_helm"
+  },
+  "Proselyte sallet": {
+    "image": "/assets/gear-icons/Proselyte_sallet.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Proselyte_sallet"
+  },
+  "Initiate sallet": {
+    "image": "/assets/gear-icons/Initiate_sallet.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Initiate_sallet"
+  },
+  "Facemask": {
+    "image": "/assets/gear-icons/Facemask.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Facemask"
   }
 }

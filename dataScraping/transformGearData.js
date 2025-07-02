@@ -94,6 +94,12 @@ function transformGearData(scraped, bossName) {
 
           group.push(isNA ? 'N/A' : cleaned);
 
+          if (!cleaned || /^\d+$/.test(cleaned)) {
+            continue;
+          }
+
+          group.push(isNA ? 'N/A' : cleaned);
+
           if (!isValid && !isNA) {
             auditRows.push({
               boss: bossName,

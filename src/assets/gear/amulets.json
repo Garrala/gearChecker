@@ -82,5 +82,13 @@
   "3rd age amulet": {
     "image": "/assets/gear-icons/3rd-age-amulet.png",
     "wiki": "https://oldschool.runescape.wiki/w/3rd_age_amulet"
+  },
+  "Amulet of defence": {
+    "image": "/assets/gear-icons/Amulet_of_defence.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Amulet_of_defence"
+  },
+  "Any God stole": {
+    "image": "/assets/gear-icons/Ancient_stole.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Ancient_stole"
   }
 }

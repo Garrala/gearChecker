@@ -114,5 +114,9 @@
   "Granite ring (i)": {
     "image": "/assets/gear-icons/granite-ring-i.png",
     "wiki": "https://oldschool.runescape.wiki/w/Granite_ring_(i)"
+  },
+  "Steel ring": {
+    "image": "/assets/gear-icons/Steel_ring.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Steel_ring"
   }
 }

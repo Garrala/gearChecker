@@ -7,6 +7,10 @@
     "correct_slot": "Ammo",
     "alias": "Rune arrows"
   },
+  "Adamant arrow": {
+    "correct_slot": "Ammo",
+    "alias": "Adamant arrows"
+  },
   "Dragon arrow": {
     "correct_slot": "Ammo",
     "alias": "Dragon arrows"
@@ -27,9 +31,29 @@
     "correct_slot": "Ammo",
     "alias": "Diamond dragon bolts (e)"
   },
+  "Sapphire dragon bolts(e)": {
+    "correct_slot": "Ammo",
+    "alias": "Sapphire dragon bolts (e)"
+  },
+  "Sapphire bolts(e)": {
+    "correct_slot": "Ammo",
+    "alias": "Sapphire bolts (e)"
+  },
+  "Diamond dragon bolts": {
+    "correct_slot": "Ammo",
+    "alias": "Diamond dragon bolts (e)"
+  },
   "Diamond bolts(e)": {
     "correct_slot": "Ammo",
     "alias": "Diamond bolts (e)"
+  },
+  "Pearl dragon bolts(e)": {
+    "correct_slot": "Ammo",
+    "alias": "Pearl dragon bolts (e)"
+  },
+  "Opal dragon bolts(e)": {
+    "correct_slot": "Ammo",
+    "alias": "Opal dragon bolts (e)"
   },
   "amethyst darts": {
     "correct_slot": "Ammo",
@@ -37,7 +61,12 @@
   },
   "Rada's Blessing": {
     "correct_slot": "Ammo",
-    "alias": [ "Rada's blessing 3", "Rada's blessing 2", "Rada's blessing 1" ]
+    "alias": [ "Rada's blessing 3", "Rada's blessing 2" ]
+  },
+
+  "Rada's blessing": {
+    "correct_slot": "Ammo",
+    "alias": [ "Rada's blessing 3", "Rada's blessing 2" ]
   },
   "Any other blessing": {
     "correct_slot": "Ammo",
@@ -51,6 +80,22 @@
     "correct_slot": "Ammo",
     "alias": "Any God blessing"
   },
+  "Atlatl dart": {
+    "correct_slot": "Ammo",
+    "alias": "Atlatl darts"
+  },
+  "Blessing": {
+    "correct_slot": "Ammo",
+    "alias": [ "Rada's blessing 3", "Rada's blessing 2" ]
+  },
+  "Rada's blessing 2/3": {
+    "correct_slot": "Ammo",
+    "alias": [ "Rada's blessing 3", "Rada's blessing 2" ]
+  },
+  "Rada's blessing 2 or 3": {
+    "correct_slot": "Ammo",
+    "alias": [ "Rada's blessing 3", "Rada's blessing 2" ]
+  },
 
 
 
@@ -59,6 +104,14 @@
   "Salve amulet(e)": {
     "correct_slot": "Amulet",
     "alias": "Salve amulet (e)"
+  },
+  "Salve amulet(ei)": {
+    "correct_slot": "Amulet",
+    "alias": "Salve amulet (ei)"
+  },
+  "God stole": {
+    "correct_slot": "Amulet",
+    "alias": "Any God stole"
   },
 
 
@@ -88,6 +141,10 @@
     "correct_slot": "Cape",
     "alias": "Any Skillcape (t)"
   },
+  "Skillcape(t)": {
+    "correct_slot": "Cape",
+    "alias": "Any Skillcape (t)"
+  },
   "Imbued god cape": {
     "correct_slot": "Cape",
     "alias": "Any Imbued God cape"
@@ -100,6 +157,10 @@
     "correct_slot": "Cape",
     "alias": "Any God cape"
   },
+  "God cape": {
+    "correct_slot": "Cape",
+    "alias": "Any God cape"
+  },
   "Ava's device": {
     "correct_slot": "Cape",
     "alias": "Ava's accumulator"
@@ -108,7 +169,19 @@
     "correct_slot": "Cape",
     "alias": "Ranging cape (t)"
   },
+  "Hitpoints cape(t)": {
+    "correct_slot": "Cape",
+    "alias": "Hitpoints cape (t)"
+  },
   "Vestment cloak": {
+    "correct_slot": "Cape",
+    "alias": "Any God vestment cloaks"
+  },
+  "Defence cape": {
+    "correct_slot": "Cape",
+    "alias": "Defense cape"
+  },
+  "God vestment cloaks": {
     "correct_slot": "Cape",
     "alias": "Any God vestment cloaks"
   },
@@ -136,12 +209,20 @@
     "correct_slot": "Body",
     "alias": "Any Barrows tank body"
   },
+  "Barrows platebody": {
+    "correct_slot": "Body",
+    "alias": "Any Barrows tank body"
+  },
   "Masori body(f)": {
     "correct_slot": "Body",
     "alias": "Masori body (f)"
   },
 
   "Blessed boots": {
+    "correct_slot": "Boots",
+    "alias": "Any Blessed boots"
+  },
+  "Blessed d'hide boots": {
     "correct_slot": "Boots",
     "alias": "Any Blessed boots"
   },
@@ -155,6 +236,10 @@
 
 
   "Blessed vambraces": {
+    "correct_slot": "Gloves",
+    "alias": "Any Blessed vambraces"
+  },
+  "Blessed d'hide vambraces": {
     "correct_slot": "Gloves",
     "alias": "Any Blessed vambraces"
   },
@@ -189,6 +274,14 @@
     "correct_slot": "Helmets",
     "alias": "Slayer helmet (i)"
   },
+  "Helm of Neitiznot": {
+    "correct_slot": "Helmets",
+    "alias": "Helm of neitiznot"
+  },
+
+
+
+
 
   "Blessed chaps": {
     "correct_slot": "Legs",
@@ -202,10 +295,15 @@
     "correct_slot": "Legs",
     "alias": "Any Barrows tank legs"
   },
+  "Barrows platelegs": {
+    "correct_slot": "Legs",
+    "alias": "Any Barrows tank legs"
+  },
   "Masori chaps(f)": {
     "correct_slot": "Legs",
     "alias": "Masori chaps (f)"
   },
+
 
 
 
@@ -247,6 +345,10 @@
     "correct_slot": "Ring",
     "alias": "Tyrannical ring (i)"
   },
+  "Treasonous ring(i)": {
+    "correct_slot": "Ring",
+    "alias": "Treasonous ring (i)"
+  },
   "Seers ring(i)": {
     "correct_slot": "Ring",
     "alias": "Seers ring (i)"
@@ -271,8 +373,22 @@
     "correct_slot": "Shield",
     "alias": "Elidinis' ward (f)"
   },
-
-
+  "God book": {
+    "correct_slot": "Shield",
+    "alias": "Any God book"
+  },
+  "Tome of fire(Searing pages)": {
+    "correct_slot": "Shield",
+    "alias": "Tome of fire (Searing pages)"
+  },
+  "Tome of fire(Burnt pages)": {
+    "correct_slot": "Shield",
+    "alias": "Tome of fire (Burnt pages)"
+  },
+  "Blessed d'hide shields": {
+    "correct_slot": "Shield",
+    "alias": "Any Blessed d'hide shields"
+  },
 
 
   "Dragon dagger(p)": {
@@ -295,6 +411,14 @@
     "correct_slot": "Weapon",
     "alias": "Bow of Faerdhinen"
   },
+  "bow of Faerdhinen": {
+    "correct_slot": "Weapon",
+    "alias": "Bow of Faerdhinen"
+  },
+  "blowpipe": {
+    "correct_slot": "Weapon",
+    "alias": "Toxic blowpipe"
+  },
   "Scythe of vitur": {
     "correct_slot": "Weapon",
     "alias": "Scythe of Vitur"
@@ -307,8 +431,21 @@
     "correct_slot": "Weapon",
     "alias": "Magic shortbow (i)"
   },
+  "Abyssal dagger(p)": {
+    "correct_slot": "Weapon",
+    "alias": "Abyssal dagger"
+  },
+
+  "Bone dagger(p)": {
+    "correct_slot": "Weapon",
+    "alias": "Bone dagger"
+  },
   "Ursine chainmace(u)": {
     "correct_slot": "Weapon",
     "alias": "Ursine chainmace (u)"
+  },
+  "Slayer's staff(e)": {
+    "correct_slot": "Weapon",
+    "alias": "Slayer's staff (e)"
   }
 }

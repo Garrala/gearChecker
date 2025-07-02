@@ -142,5 +142,45 @@
   "Abyssal bludgeon": {
     "image": "/assets/gear-icons/abyssal-bludgeon.png",
     "wiki": "https://oldschool.runescape.wiki/w/Abyssal_bludgeon"
+  },
+  "Volatile nightmare staff": {
+    "image": "/assets/gear-icons/Volatile_nightmare_staff.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Volatile_nightmare_staff"
+  },
+  "Accursed sceptre (a)": {
+    "image": "/assets/gear-icons/Accursed_sceptre_%28a%29.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Accursed_sceptre_(a)#Charged"
+  },
+  "Scorching bow": {
+    "image": "/assets/gear-icons/scorching-bow.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Scorching_bow"
+  },
+  "Webweaver bow": {
+    "image": "/assets/gear-icons/webweaver-bow.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Webweaver_bow#Charged"
+  },
+  "Seercull": {
+    "image": "/assets/gear-icons/Seercull.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Seercull"
+  },
+  "Rune thrownaxe": {
+    "image": "/assets/gear-icons/Rune_thrownaxe.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Rune_thrownaxe"
+  },
+  "Dragon 2h sword": {
+    "image": "/assets/gear-icons/Dragon_2h_sword.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_2h_sword"
+  },
+  "Dark bow": {
+    "image": "/assets/gear-icons/Dark_bow.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Dark_bow"
+  },
+  "Dragon halberd": {
+    "image": "/assets/gear-icons/Dragon_halberd.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_halberd"
+  },
+  "Dinh's bulwark": {
+    "image": "/assets/gear-icons/Dinh%27s_bulwark.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Dinh%27s_bulwark"
   }
 }

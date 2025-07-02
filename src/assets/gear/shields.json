@@ -75,7 +75,7 @@
     "image": "/assets/gear-icons/odium-ward.png",
     "wiki": "https://oldschool.runescape.wiki/w/Odium_ward"
   },
-  "Blessed d'hide shield": {
+  "Any Blessed d'hide shields": {
     "image": "/assets/gear-icons/blessed-d-hide-shield.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ancient_d%27hide_shield"
   },
@@ -162,5 +162,17 @@
   "Any Blessed shield": {
     "image": "/assets/gear-icons/Ancient_d'hide_shield.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ancient_d%27hide_shield"
+  },
+  "Any God book": {
+    "image": "/assets/gear-icons/unholy-book.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Unholy_book"
+  },
+  "Mithril defender": {
+    "image": "/assets/gear-icons/Mithril_defender.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Mithril_defender"
+  },
+  "Tome of earth": {
+    "image": "/assets/gear-icons/Tome_of_earth.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Tome_of_earth#Charged"
   }
 }

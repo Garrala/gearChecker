@@ -49,11 +49,6 @@
     "wiki": "https://oldschool.runescape.wiki/w/Rada%27s_blessing_2",
     "ammoType": "blessing"
   },
-  "Rada's blessing 1": {
-    "image": "/assets/gear-icons/Rada's_blessing_1.png",
-    "wiki": "https://oldschool.runescape.wiki/w/Rada%27s_blessing_1",
-    "ammoType": "blessing"
-  },
   "Any God blessing": {
     "image": "/assets/gear-icons/god-blessing.png",
     "wiki": "https://oldschool.runescape.wiki/w/Peaceful_blessing",
@@ -144,6 +139,11 @@
     "wiki": "https://oldschool.runescape.wiki/w/War_blessing",
     "ammoType": "blessing"
   },
+  "Honourable blessing": {
+    "image": "/assets/gear-icons/Honourable_blessing.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Honourable_blessing",
+    "ammoType": "blessing"
+  },
   "Amethyst broad bolts": {
     "image": "/assets/gear-icons/amethyst-broad-bolts.png",
     "wiki": "https://oldschool.runescape.wiki/w/Amethyst_broad_bolts",
@@ -178,5 +178,30 @@
     "image": "/assets/gear-icons/tarromin-tar.png",
     "wiki": "https://oldschool.runescape.wiki/w/Tarromin_tar",
     "ammoType": "tar"
+  },
+  "Diamond dragon bolts(e)": {
+    "image": "/assets/gear-icons/Diamond_dragon_bolts_%28e%29_5.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Diamond_dragon_bolts_(e)",
+    "ammoType": "bolt"
+  },
+  "Diamond bolts(e)": {
+    "image": "/assets/gear-icons/Diamond_bolts_%28e%29_5.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Diamond_bolts_(e)",
+    "ammoType": "bolt"
+  },
+  "Mith grapple": {
+    "image": "/assets/gear-icons/Mith_grapple.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Mith_grapple",
+    "ammoType": "bolt"
+  },
+  "Sapphire dragon bolts (e)": {
+    "image": "/assets/gear-icons/Sapphire_dragon_bolts_%28e%29_5.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Sapphire_dragon_bolts_(e)",
+    "ammoType": "bolt"
+  },
+  "Sapphire bolts (e)": {
+    "image": "/assets/gear-icons/Sapphire_bolts_%28e%29_5.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Sapphire_bolts_(e)",
+    "ammoType": "bolt"
   }
 }
