@@ -46,6 +46,92 @@
     }
   ],
   "gear_setups": {
+    "Melee": {
+      "Helmet": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Amulet": [
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture" ],
+        [ "Amulet of blood fury" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ]
+      ],
+      "Cape": [
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Ardougne cloak 4" ],
+        [ "Ardougne cloak 3" ],
+        [ "Mythical cape" ]
+      ],
+      "Body": [
+        [ "Inquisitor's hauberk" ],
+        [ "Torva platebody" ],
+        [ "Oathplate chest", "Bandos chestplate" ],
+        [ "Justiciar chestguard", "Fighter torso" ],
+        [ "Any Barrows tank body" ]
+      ],
+      "Legs": [
+        [ "Inquisitor's plateskirt" ],
+        [ "Torva platelegs" ],
+        [ "Oathplate legs", "Bandos tassets" ],
+        [ "Justiciar legguards" ],
+        [ "Any Barrows tank legs" ]
+      ],
+      "Weapon": [
+        [ "Scythe of Vitur", "Emberlight" ],
+        [ "Soulreaper axe", "Inquisitor's mace" ],
+        [ "Arclight" ],
+        [ "Osmumten's fang", "Abyssal bludgeon" ],
+        [ "Ghrazi rapier" ]
+      ],
+      "Shield": [
+        [ "Avernic defender", "Spectral spirit shield" ],
+        [ "Dragon defender" ],
+        [ "Dragonfire shield" ],
+        [ "Rune defender" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Gloves": [
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves" ],
+        [ "Dragon gloves" ],
+        [ "Rune gloves" ],
+        [ "N/A" ]
+      ],
+      "Boots": [
+        [ "Primordial boots" ],
+        [ "Echo boots" ],
+        [ "Guardian boots" ],
+        [ "Dragon boots" ],
+        [ "Rune boots" ]
+      ],
+      "Ring": [
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "Brimstone ring" ],
+        [ "Lightbearer" ],
+        [ "Ring of suffering (i)" ]
+      ],
+      "Special Attack": [
+        [ "Dragon claws", "Elder maul" ],
+        [ "Voidwaker" ],
+        [ "Burning claws" ],
+        [ "Dragon warhammer", "Bandos godsword" ],
+        [ "Emberlight", "Saradomin godsword", "Dragon dagger" ]
+      ]
+    },
     "Ranged": {
       "Helmet": [
         [ "N/A" ],
@@ -93,7 +179,7 @@
         [ "Dragon arrows" ],
         [ "Amethyst arrows" ],
         [ "Rune arrows" ],
-        [ "Ruby dragon bolts", "Diamond dragon bolts" ],
+        [ "Ruby dragon bolts (e)" ],
         [ "Rada's blessing 4" ]
       ],
       "Gloves": [
@@ -107,7 +193,7 @@
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
         [ "Any Blessed boots" ],
-        [ "Shayzien boots(5)" ],
+        [ "Shayzien boots (5)" ],
         [ "Snakeskin boots" ]
       ],
       "Ring": [

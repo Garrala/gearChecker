@@ -179,28 +179,18 @@
     "wiki": "https://oldschool.runescape.wiki/w/Tarromin_tar",
     "ammoType": "tar"
   },
-  "Diamond dragon bolts(e)": {
-    "image": "/assets/gear-icons/Diamond_dragon_bolts_%28e%29_5.png",
-    "wiki": "https://oldschool.runescape.wiki/w/Diamond_dragon_bolts_(e)",
-    "ammoType": "bolt"
-  },
-  "Diamond bolts(e)": {
-    "image": "/assets/gear-icons/Diamond_bolts_%28e%29_5.png",
-    "wiki": "https://oldschool.runescape.wiki/w/Diamond_bolts_(e)",
-    "ammoType": "bolt"
-  },
   "Mith grapple": {
     "image": "/assets/gear-icons/Mith_grapple.png",
     "wiki": "https://oldschool.runescape.wiki/w/Mith_grapple",
     "ammoType": "bolt"
   },
   "Sapphire dragon bolts (e)": {
-    "image": "/assets/gear-icons/Sapphire_dragon_bolts_%28e%29_5.png",
+    "image": "/assets/gear-icons/Sapphire_dragon_bolts_e.png",
     "wiki": "https://oldschool.runescape.wiki/w/Sapphire_dragon_bolts_(e)",
     "ammoType": "bolt"
   },
   "Sapphire bolts (e)": {
-    "image": "/assets/gear-icons/Sapphire_bolts_%28e%29_5.png",
+    "image": "/assets/gear-icons/Sapphire_bolts_e.png",
     "wiki": "https://oldschool.runescape.wiki/w/Sapphire_bolts_(e)",
     "ammoType": "bolt"
   }

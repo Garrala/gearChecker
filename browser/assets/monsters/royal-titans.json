@@ -200,10 +200,10 @@
         [ "Magic shortbow (i)" ]
       ],
       "Ammo": [
-        [ "Atlatl dart", "Blessing" ],
-        [ "Ruby dragon bolts(e)", "Ruby bolts(e)" ],
+        [ "Atlatl darts" ],
+        [ "Ruby dragon bolts (e)" ],
         [ "Moonlight antler bolts", "Sunlight antler bolts" ],
-        [ "Bolt rack", "Amethyst arrows", "Rune arrow" ],
+        [ "Bolt rack", "Amethyst arrows" ],
         [ "N/A" ]
       ],
       "Gloves": [
@@ -434,9 +434,9 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 4", "Ruby dragon bolts(e)" ],
-        [ "Blessing" ],
-        [ "Atlatl dart" ],
+        [ "Rada's blessing 4", "Ruby dragon bolts (e)" ],
+        [ "Rada's blessing 3", "Rada's blessing 2" ],
+        [ "Atlatl darts" ],
         [ "N/A" ]
       ],
       "Gloves": [

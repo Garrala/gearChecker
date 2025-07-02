@@ -45,7 +45,7 @@
       "Helmet": [
         [ "Ancestral hat" ],
         [ "Virtus mask" ],
-        [ "Void mage helm", "Void Knight equipment" ],
+        [ "Void mage helm" ],
         [ "Ahrim's hood" ],
         [ "Infinity hat" ]
       ],
@@ -66,14 +66,14 @@
       "Body": [
         [ "Ancestral robe top" ],
         [ "Virtus robe top" ],
-        [ "Elite void top", "Void knight top", "Void Knight equipment" ],
+        [ "Elite void top", "Void knight top" ],
         [ "Ahrim's robetop" ],
         [ "Infinity top" ]
       ],
       "Legs": [
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ],
-        [ "Elite void robe", "Void knight robe", "Void Knight equipment" ],
+        [ "Elite void robe", "Void knight robe" ],
         [ "Ahrim's robeskirt" ],
         [ "Infinity bottoms" ]
       ],
@@ -93,14 +93,14 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 2 or 3", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
         [ "Tormented bracelet" ],
-        [ "Void knight gloves", "Void Knight equipment" ],
+        [ "Void knight gloves" ],
         [ "Barrows gloves" ],
         [ "Dragon gloves" ],
         [ "Rune gloves" ]
@@ -122,7 +122,7 @@
       "Special Attack": [
         [ "Voidwaker" ],
         [ "Dragon claws" ],
-        [ "Dragon dagger(p)" ],
+        [ "Dragon dagger" ],
         [ "N/A" ],
         [ "N/A" ]
       ]
@@ -130,8 +130,8 @@
     "Ranged": {
       "Helmet": [
         [ "Armadyl helmet", "Crystal helm" ],
-        [ "Void ranger helm", "Void Knight equipment" ],
-        [ "Blessed coif" ],
+        [ "Void ranger helm" ],
+        [ "Any Blessed coif" ],
         [ "Archer helm" ],
         [ "N/A" ]
       ],
@@ -152,22 +152,22 @@
       "Body": [
         [ "Masori body (f)" ],
         [ "Armadyl chestplate", "Crystal body" ],
-        [ "Elite void top", "Void knight top", "Void Knight equipment" ],
+        [ "Elite void top", "Void knight top" ],
         [ "Karil's leathertop" ],
         [ "Any Blessed body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Armadyl chainskirt", "Crystal legs" ],
-        [ "Elite void robe", "Void knight robe", "Void Knight equipment" ],
+        [ "Elite void robe", "Void knight robe" ],
         [ "Karil's leatherskirt" ],
         [ "Any Blessed chaps" ]
       ],
       "Weapon": [
-        [ "Twisted bow", "rune", "arrows" ],
-        [ "Toxic blowpipe", "amethyst", "darts" ],
+        [ "Twisted bow" ],
+        [ "Toxic blowpipe" ],
         [ "Bow of Faerdhinen" ],
-        [ "Toxic blowpipe", "adamant", "darts" ],
+        [ "Toxic blowpipe" ],
         [ "Zaryte crossbow", "Armadyl crossbow", "Dragon crossbow", "Rune crossbow" ]
       ],
       "Shield": [
@@ -178,8 +178,8 @@
         [ "Unholy book" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Amethyst arrow", "Rune arrow" ],
-        [ "Rada's blessing 4", "Rada's blessing 2 or 3", "Any God blessing" ],
+        [ "Dragon arrows" ],
+        [ "Rada's blessing 3", "Rada's blessing 2" ],
         [ "Diamond dragon bolts (e)", "Diamond bolts(e)" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -187,7 +187,7 @@
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
-        [ "Void knight gloves", "Void Knight equipment" ],
+        [ "Void knight gloves" ],
         [ "Ranger gloves" ],
         [ "Any Blessed vambraces" ]
       ],
@@ -208,7 +208,7 @@
       "Special Attack": [
         [ "Voidwaker" ],
         [ "Dragon claws" ],
-        [ "Dragon dagger(p)" ],
+        [ "Dragon dagger" ],
         [ "N/A" ],
         [ "N/A" ]
       ]

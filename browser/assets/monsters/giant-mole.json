@@ -49,7 +49,7 @@
         [ "Void ranger helm" ],
         [ "Crystal helm" ],
         [ "Robin hood hat" ],
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "N/A" ]
       ],
       "Amulet": [
@@ -82,14 +82,8 @@
       ],
       "Weapon": [
         [ "Twisted bow" ],
-        [
-          "Bow of Faerdhinen",
-          ""
-        ],
-        [
-          "Crystal bow",
-          ""
-        ],
+        [ "Bow of Faerdhinen" ],
+        [ "Crystal bow" ],
         [ "Zaryte crossbow" ],
         [ "Armadyl crossbow" ]
       ],
@@ -97,8 +91,8 @@
         [ "Dragon arrows" ],
         [ "Amethyst arrows" ],
         [ "Rune arrows" ],
-        [ "Diamond dragon bolts (e)", "Ruby dragon bolts(e)" ],
-        [ "Diamond bolts (e)", "Ruby bolts(e)" ]
+        [ "Diamond dragon bolts (e)" ],
+        [ "Diamond bolts (e)" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
@@ -117,7 +111,7 @@
       "Ring": [
         [ "Venator ring" ],
         [ "Lightbearer" ],
-        [ "Ring of the gods (i)", "Archers ring(i)" ],
+        [ "Ring of the gods (i)" ],
         [ "Ring of shadows", "Brimstone ring" ],
         [ "Ring of endurance" ]
       ],
@@ -174,30 +168,13 @@
       ],
       "Weapon": [
         [ "Tumeken's shadow" ],
-        [
-          "Harmonised nightmare staff",
-          ""
-        ],
-        [
-          "Kodai wand",
-          "",
-          "Mystic smoke staff",
-          "Twinflame staff",
-          ""
-        ],
+        [ "Harmonised nightmare staff" ],
+        [ "Kodai wand", "Mystic smoke staff", "Twinflame staff" ],
         [ "Sanguinesti staff" ],
-        [
-          "Ahrim's staff",
-          "",
-          "Mystic mist staff"
-        ]
+        [ "Ahrim's staff", "Mystic mist staff" ]
       ],
       "Shield": [
-        [
-          "Tome of water",
-          "",
-          "Elidinis' ward (f)"
-        ],
+        [ "Tome of water", "Elidinis' ward (f)" ],
         [ "Elidinis' ward", "Arcane spirit shield" ],
         [ "Malediction ward", "Ancient wyvern shield", "Mage's book" ],
         [ "Book of darkness" ],
@@ -205,7 +182,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -291,7 +268,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -344,8 +321,8 @@
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Mythical cape" ],
-        [ "Soul cape", "Ardougne cloak 4", "3" ],
-        [ "Skillcape(t)", "Ardougne cloak 2", "Any God vestment cloaks" ]
+        [ "Soul cape", "Ardougne cloak 4" ],
+        [ "Any Skillcape (t)", "Ardougne cloak 2" ]
       ],
       "Body": [
         [ "Dharok's platebody" ],

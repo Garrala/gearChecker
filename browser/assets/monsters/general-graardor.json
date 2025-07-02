@@ -304,7 +304,7 @@
     "Ranged Attacker": {
       "Helmet": [
         [ "Crystal helm" ],
-        [ "Blessed coif", "Armadyl helmet" ],
+        [ "Any Blessed coif", "Armadyl helmet" ],
         [ "Verac's helm" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -354,7 +354,7 @@
       "Ammo": [
         [ "Unholy blessing" ],
         [ "Diamond bolts (e)" ],
-        [ "Ruby bolts(e)" ],
+        [ "Ruby bolts (e)" ],
         [ "Runite bolts", "Amethyst broad bolts" ],
         [ "N/A" ]
       ],
@@ -406,8 +406,8 @@
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Max cape" ],
-        [ "Defence cape" ],
-        [ "Cape of Accomplishment", "Obsidian cape" ]
+        [ "Defense cape" ],
+        [ "Any Skillcape", "Obsidian cape" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
@@ -548,7 +548,7 @@
         [ "Magus ring" ],
         [ "Seers ring (i)" ],
         [ "Brimstone ring" ],
-        [ "Ring of the gods (i)", "Ring of suffering(ri)" ],
+        [ "Ring of the gods (i)" ],
         [ "N/A" ]
       ],
       "Special Attack": [
@@ -635,7 +635,7 @@
         [ "Archers ring (i)" ],
         [ "Ring of shadows" ],
         [ "Brimstone ring" ],
-        [ "Ring of the gods (i)", "Ring of suffering(ri)" ]
+        [ "Ring of the gods (i)" ]
       ],
       "Special Attack": [
         [ "Toxic blowpipe" ],

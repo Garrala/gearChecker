@@ -10,7 +10,9 @@
       "image": "assets/monster-icons/thermonuclear_smoke_devil.png",
       "combat_level": 301,
       "hp": 240,
-      "max_hit": {},
+      "max_hit": {
+        "magical ranged": 8
+      },
       "defense": {
         "melee": {
           "stab": 11,
@@ -24,7 +26,7 @@
           "thrown": 900
         }
       },
-      "attack_styles": [],
+      "attack_styles": [ "Magical ranged" ],
       "attack_speed": {
         "ticks": 2,
         "seconds": 1.2
@@ -63,20 +65,14 @@
         [ "Ardougne cloak 2" ]
       ],
       "Body": [
-        [
-          "Virtus robe top",
-          ""
-        ],
+        [ "Virtus robe top" ],
         [ "Ancestral robe top" ],
         [ "Ahrim's robetop" ],
         [ "Dagon'hai robe top" ],
         [ "Infinity top" ]
       ],
       "Legs": [
-        [
-          "Virtus robe bottom",
-          ""
-        ],
+        [ "Virtus robe bottom" ],
         [ "Ancestral robe bottom" ],
         [ "Ahrim's robeskirt" ],
         [ "Dagon'hai robe bottom" ],
@@ -84,24 +80,13 @@
       ],
       "Weapon": [
         [ "Tumeken's shadow" ],
-        [
-          "Harmonised nightmare staff",
-          ""
-        ],
+        [ "Harmonised nightmare staff" ],
         [ "Sanguinesti staff" ],
         [ "Trident of the swamp" ],
-        [
-          "Kodai wand",
-          "Nightmare staff",
-          ""
-        ]
+        [ "Kodai wand", "Nightmare staff" ]
       ],
       "Shield": [
-        [
-          "Elidinis' ward (f)",
-          "Tome of fire",
-          ""
-        ],
+        [ "Elidinis' ward (f)", "Tome of fire" ],
         [ "Arcane spirit shield" ],
         [ "Ancient wyvern shield" ],
         [ "Malediction ward", "Mage's book" ],
@@ -109,7 +94,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -133,7 +118,7 @@
         [ "Ring of suffering (i)" ],
         [ "Brimstone ring" ],
         [ "Seers ring (i)" ],
-        [ "Ring of shadows", "(uncharged)" ]
+        [ "Ring of shadows" ]
       ],
       "Special Attack": [
         [ "N/A" ],
@@ -166,32 +151,16 @@
         [ "Ardougne cloak 3" ]
       ],
       "Body": [
-        [
-          "Torva platebody",
-          "Oathplate chest",
-          ""
-        ],
-        [
-          "Inquisitor's hauberk",
-          "",
-          "Blood moon chestplate"
-        ],
+        [ "Torva platebody", "Oathplate chest" ],
+        [ "Inquisitor's hauberk", "Blood moon chestplate" ],
         [ "Bandos chestplate" ],
         [ "Masori body (f)" ],
         [ "Karil's leathertop" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
-        [
-          "Torva platelegs",
-          "Oathplate legs",
-          ""
-        ],
-        [
-          "Inquisitor's plateskirt",
-          "",
-          "Blood moon tassets"
-        ],
+        [ "Torva platelegs", "Oathplate legs" ],
+        [ "Inquisitor's plateskirt", "Blood moon tassets" ],
         [ "Karil's leatherskirt" ],
         [ "Elite void robe" ]
       ],
@@ -211,7 +180,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -231,10 +200,7 @@
         [ "Granite boots" ]
       ],
       "Ring": [
-        [
-          "Bellator ring",
-          ""
-        ],
+        [ "Bellator ring" ],
         [ "Ultor ring" ],
         [ "Berserker ring (i)" ],
         [ "Ring of suffering (i)" ],

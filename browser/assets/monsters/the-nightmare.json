@@ -9,10 +9,11 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/The_Nightmare",
       "image": "assets/monster-icons/the_nightmare.png",
       "combat_level": 814,
-      "hp": 2,
+      "hp": 2400,
       "max_hit": {
         "melee": 60,
-        "ranged and magic": 39
+        "ranged": 39,
+        "magic": 39
       },
       "defense": {
         "melee": {
@@ -83,7 +84,7 @@
         [ "Scythe of Vitur", "Inquisitor's mace" ],
         [ "Soulreaper axe" ],
         [ "Abyssal bludgeon" ],
-        [ "Dual macuahuitl", "Ursine chainmace(u)", "Sarachnis cudgel" ],
+        [ "Dual macuahuitl", "Ursine chainmace (u)", "Sarachnis cudgel" ],
         [ "Zombie axe", "Zamorakian hasta" ]
       ],
       "Shield": [

@@ -62,8 +62,8 @@
       "Cape": [
         [ "Any Imbued God cape" ],
         [ "Soul cape" ],
-        [ "Cape of Accomplishment(t)" ],
-        [ "N/A" ],
+        [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ],
+        [ "Any Skillcape (t)" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -88,11 +88,7 @@
         [ "Iban's staff" ]
       ],
       "Shield": [
-        [
-          "Tome of fire",
-          "",
-          "Elidinis' ward (f)"
-        ],
+        [ "Tome of fire", "Elidinis' ward (f)" ],
         [ "Elidinis' ward" ],
         [ "Arcane spirit shield" ],
         [ "Malediction ward" ],
@@ -124,10 +120,7 @@
         [ "Ring of the gods (i)" ],
         [ "Ring of suffering (i)" ],
         [ "Brimstone ring" ],
-        [
-          "Explorer's ring 4",
-          ""
-        ]
+        [ "Explorer's ring 4" ]
       ],
       "Special Attack": [
         [ "N/A" ],

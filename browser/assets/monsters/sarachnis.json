@@ -46,7 +46,7 @@
         [ "Torva full helm", "Inquisitor's great helm" ],
         [ "Neitiznot faceguard" ],
         [ "Serpentine helm" ],
-        [ "Helm of Neitiznot", "Blood moon helm" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
@@ -116,7 +116,7 @@
         [ "Ultor ring", "Bellator ring" ],
         [ "Berserker ring (i)" ],
         [ "Brimstone ring" ],
-        [ "Treasonous ring(i)", "Warrior ring (i)", "Tyrannical ring(i)" ],
+        [ "Treasonous ring (i)" ],
         [ "Ring of suffering (i)" ]
       ],
       "Special Attack": [
@@ -207,7 +207,7 @@
       "Cape": [
         [ "Infernal cape" ],
         [ "Fire cape" ],
-        [ "Cape of Accomplishment(t)" ],
+        [ "Any Skillcape (t)" ],
         [ "Obsidian cape" ],
         [ "Mythical cape" ]
       ],

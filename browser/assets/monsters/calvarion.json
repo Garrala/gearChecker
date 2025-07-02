@@ -9,16 +9,16 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Calvar%27ion",
       "image": "assets/monster-icons/calvarion_enraged.png",
       "combat_level": 264,
-      "hp": 0,
+      "hp": 150,
       "max_hit": {
         "slash": 26,
         "magic": 26
       },
       "defense": {
         "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
+          "stab": 130,
+          "slash": 128,
+          "crush": -10
         },
         "magic": 198,
         "ranged": {
@@ -46,16 +46,16 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Calvar%27ion",
       "image": "assets/monster-icons/calvarion_normal.png",
       "combat_level": 264,
-      "hp": 0,
+      "hp": 150,
       "max_hit": {
         "slash": 26,
         "magic": 26
       },
       "defense": {
         "melee": {
-          "stab": 0,
-          "slash": 0,
-          "crush": 0
+          "stab": 130,
+          "slash": 128,
+          "crush": -10
         },
         "magic": 198,
         "ranged": {
@@ -89,32 +89,22 @@
         [ "N/A" ]
       ],
       "Amulet": [
-        [ "Salve amulet(e)" ],
+        [ "Salve amulet (e)" ],
         [ "Salve amulet" ],
         [ "Amulet of strength" ],
         [ "Amulet of glory" ],
         [ "Amulet of power" ]
       ],
       "Cape": [
-        [
-          "Infernal cape",
-          "",
-          "Fire cape"
-        ],
+        [ "Infernal cape", "Fire cape" ],
         [ "Mythical cape" ],
         [ "Mixed hide cape" ],
-        [ "Cape of Accomplishment" ],
+        [ "Any Skillcape" ],
         [ "Ardougne cloak 4" ]
       ],
       "Body": [
-        [
-          "Fighter torso",
-          ""
-        ],
-        [
-          "Mixed hide top",
-          ""
-        ],
+        [ "Fighter torso" ],
+        [ "Mixed hide top" ],
         [ "Black d'hide body" ],
         [ "Proselyte hauberk" ],
         [ "Monk's robe top" ]
@@ -134,14 +124,8 @@
         [ "Leaf-bladed battleaxe", "Dragon mace" ]
       ],
       "Shield": [
-        [
-          "Avernic defender",
-          ""
-        ],
-        [
-          "Dragon defender",
-          ""
-        ],
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
         [ "Dragonfire shield" ],
         [ "Rune defender", "Toktz-ket-xil" ],
         [ "Book of war", "Falador shield 4" ]
@@ -171,29 +155,14 @@
         [ "Ultor ring" ],
         [ "Berserker ring (i)" ],
         [ "Ring of shadows" ],
-        [
-          "Ring of wealth (i)",
-          ""
-        ],
+        [ "Ring of wealth (i)" ],
         [ "Explorer's ring 4" ]
       ],
       "Special Attack": [
-        [
-          "Ursine chainmace",
-          ""
-        ],
-        [
-          "Abyssal bludgeon",
-          ""
-        ],
-        [
-          "Elder maul",
-          ""
-        ],
-        [
-          "Dragon mace",
-          ""
-        ],
+        [ "Ursine chainmace" ],
+        [ "Abyssal bludgeon" ],
+        [ "Elder maul" ],
+        [ "Dragon mace" ],
         [ "N/A" ]
       ]
     }

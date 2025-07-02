@@ -171,9 +171,9 @@
         [ "Crystal shield", "Toktz-ket-xil" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Amethyst arrow", "Moonlight antler bolts" ],
+        [ "Dragon arrows", "Moonlight antler bolts" ],
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -225,8 +225,8 @@
         [ "Any Imbued God cape" ],
         [ "Infernal cape", "Fire cape" ],
         [ "Any Skillcape" ],
-        [ "Any God vestment cloaks" ],
-        [ "N/A" ]
+        [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ],
+        [ "Any God vestment cloaks" ]
       ],
       "Body": [
         [ "Justiciar chestguard", "Torva platebody" ],
@@ -258,7 +258,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -278,7 +278,7 @@
         [ "Wizard boots", "Mystic boots" ]
       ],
       "Ring": [
-        [ "Ring of suffering (i)", "Granite ring(i)" ],
+        [ "Ring of suffering (i)" ],
         [ "Ring of the gods (i)" ],
         [ "Brimstone ring" ],
         [ "Ring of shadows" ],
@@ -329,7 +329,7 @@
         [ "Black d'hide chaps" ]
       ],
       "Weapon": [
-        [ "Twisted bow", "Bow of faerdhinen" ],
+        [ "Twisted bow" ],
         [ "Toxic blowpipe" ],
         [ "Crystal bow" ],
         [ "Hunters' sunlight crossbow" ],
@@ -343,8 +343,8 @@
         [ "Rune kiteshield" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Amethyst arrow" ],
-        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "Dragon arrows" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "Moonlight antler bolts" ],
         [ "Diamond bolts (e)" ],
         [ "Runite bolts" ]

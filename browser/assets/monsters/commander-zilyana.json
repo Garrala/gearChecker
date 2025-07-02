@@ -104,11 +104,7 @@
       "Amulet": [
         [ "Necklace of anguish" ],
         [ "Amulet of fury" ],
-        [
-          "Dragonbone necklace",
-          "Bonecrusher necklace",
-          ""
-        ],
+        [ "Dragonbone necklace", "Bonecrusher necklace" ],
         [ "Amulet of glory" ],
         [ "Holy symbol", "Unholy symbol" ]
       ],
@@ -135,15 +131,9 @@
       ],
       "Weapon": [
         [ "Twisted bow" ],
-        [
-          "Bow of Faerdhinen",
-          ""
-        ],
+        [ "Bow of Faerdhinen" ],
         [ "Zaryte crossbow" ],
-        [
-          "Hunters' sunlight crossbow",
-          ""
-        ],
+        [ "Hunters' sunlight crossbow" ],
         [ "Armadyl crossbow", "Dragon hunter crossbow", "Dragon crossbow", "Rune crossbow" ]
       ],
       "Shield": [
@@ -154,7 +144,7 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Diamond dragon bolts(e)", "Moonlight antler bolts", "God blessing" ],
+        [ "Dragon arrows", "Diamond dragon bolts(e)", "Moonlight antler bolts" ],
         [ "Amethyst arrows", "Diamond bolts(e)", "Sunlight antler bolts" ],
         [ "N/A" ],
         [ "N/A" ],

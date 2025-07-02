@@ -52,16 +52,16 @@
       ],
       "Amulet": [
         [ "Occult necklace" ],
-        [ "God stole" ],
+        [ "Any God stole" ],
         [ "Amulet of glory" ],
         [ "Amulet of power" ],
         [ "Unholy symbol" ]
       ],
       "Cape": [
         [ "Any Imbued God cape" ],
+        [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ],
         [ "Any God cape" ],
         [ "Any God vestment cloaks" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -89,7 +89,7 @@
         [ "Elidinis' ward (f)" ],
         [ "Elidinis' ward", "Malediction ward", "Ancient wyvern shield" ],
         [ "Book of darkness" ],
-        [ "God book" ],
+        [ "Any God book" ],
         [ "Broodoo shield" ]
       ],
       "Ammo": [
@@ -114,7 +114,7 @@
         [ "N/A" ]
       ],
       "Ring": [
-        [ "Ring of shadows", "(uncharged)" ],
+        [ "Ring of shadows" ],
         [ "Explorer's ring 4" ],
         [ "Beacon ring" ],
         [ "Ring of recoil" ],

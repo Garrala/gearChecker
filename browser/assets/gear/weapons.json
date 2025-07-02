@@ -564,7 +564,7 @@
     "usesAmmoType": "blessing"
   },
   "Slayer's staff (e)": {
-    "image": "/assets/gear-icons/Slayer%27s_staff_%28e%29.png",
+    "image": "/assets/gear-icons/Slayers_staff_e.png",
     "wiki": "https://oldschool.runescape.wiki/w/Slayer%27s_staff_(e)",
     "twoHanded": false,
     "usesAmmoType": "blessing"
@@ -600,7 +600,7 @@
     "usesAmmoType": "blessing"
   },
   "Torag's hammers": {
-    "image": "/assets/gear-icons/Torag%27s_hammers.png",
+    "image": "/assets/gear-icons/Torags_hammers.png",
     "wiki": "https://oldschool.runescape.wiki/w/Torag%27s_hammers",
     "twoHanded": true,
     "usesAmmoType": "blessing"
@@ -618,7 +618,7 @@
     "usesAmmoType": "blessing"
   },
   "Dinh's bulwark": {
-    "image": "/assets/gear-icons/Dinh%27s_bulwark.png",
+    "image": "/assets/gear-icons/Dinhs_bulwark.png",
     "wiki": "https://oldschool.runescape.wiki/w/Dinh%27s_bulwark",
     "twoHanded": true,
     "usesAmmoType": "blessing"

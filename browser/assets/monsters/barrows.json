@@ -233,5 +233,276 @@
       }
     }
   ],
-  "gear_setups": {}
+  "gear_setups": {
+    "Magic equipment": {
+      "Helmet": [
+        [ "Ancestral hat" ],
+        [ "Virtus mask" ],
+        [ "Ahrim's hood", "Infinity hat", "Dagon'hai hat" ],
+        [ "Bloodbark helm" ],
+        [ "Void mage helm" ]
+      ],
+      "Amulet": [
+        [ "Occult necklace" ],
+        [ "Amulet of fury", "Dragonbone necklace" ],
+        [ "Amulet of the damned", "Amulet of glory" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Cape": [
+        [ "Any Imbued God cape" ],
+        [ "Any God cape" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Body": [
+        [ "Ancestral robe top" ],
+        [ "Virtus robe top" ],
+        [ "Ahrim's robetop", "Infinity top", "Dagon'hai robe top" ],
+        [ "Bloodbark body" ],
+        [ "Elite void top", "Void knight top" ]
+      ],
+      "Legs": [
+        [ "Ancestral robe bottom" ],
+        [ "Virtus robe bottom" ],
+        [ "Ahrim's robeskirt", "Infinity bottoms", "Dagon'hai robe bottom" ],
+        [ "Bloodbark legs" ],
+        [ "Elite void robe", "Void knight robe" ]
+      ],
+      "Weapon": [
+        [ "Tumeken's shadow" ],
+        [ "Harmonised nightmare staff" ],
+        [ "Sanguinesti staff", "Trident of the swamp" ],
+        [ "Staff of the dead", "Twinflame staff" ],
+        [ "Smoke battlestaff", "Ahrim's staff" ]
+      ],
+      "Shield": [
+        [ "Elidinis' ward (f)", "Ghommal's hilt 2" ],
+        [ "Arcane spirit shield", "Elidinis' ward" ],
+        [ "Mage's book", "Malediction ward", "Ancient wyvern shield" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Gloves": [
+        [ "Tormented bracelet" ],
+        [ "Barrows gloves" ],
+        [ "Void knight gloves" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Boots": [
+        [ "Eternal boots" ],
+        [ "Infinity boots", "Aranea boots" ],
+        [ "Wizard boots" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ring": [
+        [ "Magus ring" ],
+        [ "Seers ring (i)" ],
+        [ "Ring of shadows" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Special Attack": [
+        [ "Dragon claws" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
+    },
+    "Tank & Lower level": {
+      "Helmet": [
+        [ "Any Barrows tank helm" ],
+        [ "Helm of neitiznot" ],
+        [ "Berserker helm" ],
+        [ "Rune full helm" ],
+        [ "N/A" ]
+      ],
+      "Amulet": [
+        [ "Occult necklace" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ],
+        [ "Holy symbol" ]
+      ],
+      "Cape": [
+        [ "Any Imbued God cape" ],
+        [ "Any God cape" ],
+        [ "Fire cape" ],
+        [ "Ardougne cloak 3", "Ardougne cloak 4" ],
+        [ "N/A" ]
+      ],
+      "Body": [
+        [ "N/A" ],
+        [ "Dragon chainbody" ],
+        [ "Rune platebody" ],
+        [ "Black d'hide body" ],
+        [ "N/A" ]
+      ],
+      "Legs": [
+        [ "Any Barrows tank legs" ],
+        [ "Dragon platelegs" ],
+        [ "Rune platelegs" ],
+        [ "Black d'hide chaps" ],
+        [ "N/A" ]
+      ],
+      "Weapon": [
+        [ "Trident of the swamp", "Twinflame staff" ],
+        [ "Smoke battlestaff" ],
+        [ "Ahrim's staff", "Ancient sceptre" ],
+        [ "Staff of air" ],
+        [ "Iban's staff (u)" ]
+      ],
+      "Shield": [
+        [ "Ghommal's hilt 2" ],
+        [ "Dragon defender" ],
+        [ "Rune defender" ],
+        [ "Rune kiteshield" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 3", "Rada's blessing 2" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Gloves": [
+        [ "Barrows gloves" ],
+        [ "Rune gloves" ],
+        [ "Combat bracelet" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Boots": [
+        [ "Dragon boots" ],
+        [ "Rune boots" ],
+        [ "Climbing boots" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ring": [
+        [ "Berserker ring (i)" ],
+        [ "Ring of dueling" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Special Attack": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
+    },
+    "Ranged (Ahrim)": {
+      "Helmet": [
+        [ "Void ranger helm" ],
+        [ "Any Blessed coif" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Amulet": [
+        [ "Necklace of anguish" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ],
+        [ "Holy symbol" ],
+        [ "N/A" ]
+      ],
+      "Cape": [
+        [ "Dizana's quiver" ],
+        [ "Ava's assembler" ],
+        [ "Ava's accumulator" ],
+        [ "Ava's attractor" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Body": [
+        [ "Masori body (f)", "Masori body" ],
+        [ "Elite void top" ],
+        [ "Void knight top" ],
+        [ "Any Blessed body" ],
+        [ "Black d'hide body" ],
+        [ "N/A" ]
+      ],
+      "Legs": [
+        [ "Masori chaps (f)", "Masori chaps" ],
+        [ "Elite void robe" ],
+        [ "Void knight robe" ],
+        [ "Any Blessed chaps" ],
+        [ "Black d'hide chaps" ],
+        [ "N/A" ]
+      ],
+      "Weapon": [
+        [ "Toxic blowpipe" ],
+        [ "Hunters' sunlight crossbow" ],
+        [ "Magic shortbow (i)" ],
+        [ "Karil's crossbow" ],
+        [ "Yew shortbow" ],
+        [ "Magic shortbow (i)" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 3", "Rada's blessing 2" ],
+        [ "Moonlight antler bolts", "Sunlight antler bolts" ],
+        [ "Amethyst arrows" ],
+        [ "Bolt rack" ],
+        [ "Adamant arrows", "Broad arrows" ],
+        [ "N/A" ]
+      ],
+      "Gloves": [
+        [ "Void knight gloves" ],
+        [ "Barrows gloves" ],
+        [ "Black d'hide vambraces" ],
+        [ "Combat bracelet" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Boots": [
+        [ "Any Blessed boots" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ring": [
+        [ "Ring of dueling" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Special Attack": [
+        [ "Toxic blowpipe" ],
+        [ "Dragon dagger" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Shield": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
+    }
+  }
 }
