@@ -133,9 +133,9 @@
       "Helmet": [
         [ "Justiciar faceguard" ],
         [ "Torva full helm" ],
+        [ "Masori mask (f)" ],
         [ "Verac's helm" ],
-        [ "Armadyl helmet" ],
-        [ "N/A" ]
+        [ "Armadyl helmet" ]
       ],
       "Amulet": [
         [ "Amulet of fury" ],
@@ -217,11 +217,11 @@
     },
     "Melee Attacker": {
       "Helmet": [
+        [ "Slayer helmet (i)", "Torva full helm" ],
         [ "Neitiznot faceguard" ],
         [ "Serpentine helm" ],
         [ "Helm of neitiznot" ],
-        [ "Guthan's helm", "Verac's helm" ],
-        [ "N/A" ]
+        [ "Guthan's helm", "Verac's helm" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
@@ -303,11 +303,11 @@
     },
     "Ranged Attacker": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Crystal helm" ],
+        [ "Masori mask (f)", "Masori mask" ],
         [ "Any Blessed coif", "Armadyl helmet" ],
-        [ "Verac's helm" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Verac's helm" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -475,10 +475,10 @@
     },
     "Solo (Magic)": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Ancestral hat" ],
         [ "Virtus mask" ],
         [ "Ahrim's hood" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
@@ -561,11 +561,11 @@
     },
     "Ranged (6:0)": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Masori mask (f)", "Masori mask" ],
         [ "Crystal helm", "Bandos coif" ],
         [ "Armadyl helmet" ],
-        [ "Karil's coif" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Karil's coif" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -647,8 +647,8 @@
     },
     "Ranged (7:0)": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Crystal helm" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]

@@ -233,7 +233,14 @@ async function fetchGearSetupsForBoss(bossName, meta) {
 (async () => {
   const allAuditIssues = [];
 
+  // Support CLI arg for a specific boss
+  const arg = process.argv[2];
+  const target = arg ? arg.toLowerCase().replace(/[_-]/g, ' ') : null;
+
   for (const [bossName, meta] of Object.entries(metadata)) {
+    const normalized = bossName.toLowerCase().replace(/\s+/g, ' ');
+    if (target && normalized !== target) continue;
+
     if (!meta.strategy_link || !meta.setups) continue;
     const fetchFn = customScraperOverrides[bossName] || fetchGearSetupsForBoss;
     const issues = await fetchFn(bossName, meta);

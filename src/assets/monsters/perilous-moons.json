@@ -119,11 +119,9 @@
         [ "Voidwaker", "Osmumten's fang", "Zamorakian hasta", "Abyssal dagger" ],
         [ "Abyssal whip", "Zombie axe", "Dragon scimitar" ],
         [ "Dharok's greataxe" ],
-        [ "Soulreaper axe" ],
-        [ "Noxious halberd", "Elder maul" ],
+        [ "Elder maul" ],
         [ "Crystal halberd", "Colossal blade" ],
-        [ "Zombie axe", "Barrelchest anchor" ],
-        [ "N/A" ]
+        [ "Barrelchest anchor" ]
       ],
       "Special Attack": [
         [ "Voidwaker", "Crystal halberd" ],
@@ -134,13 +132,9 @@
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -160,13 +154,9 @@
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -186,13 +176,9 @@
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -212,13 +198,9 @@
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -238,8 +220,6 @@
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
@@ -251,13 +231,9 @@
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Shield": [
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],

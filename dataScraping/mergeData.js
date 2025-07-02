@@ -107,25 +107,35 @@ function dedupeAndFilterInvalid(gearSetups) {
       const validSet = VALID_ITEMS_BY_SLOT[slot];
       if (!validSet) continue;
 
-      gearSetups[style][slot] = gearSetups[style][slot].map(group => {
-        const seen = new Set();
-        const cleaned = [];
+      const seenItems = new Set();
+      const dedupedRows = [];
+
+      for (const group of gearSetups[style][slot]) {
+        const cleanedGroup = [];
 
         for (const item of group) {
           const cleanedName = cleanItemName(item);
           const isNA = cleanedName.toLowerCase() === 'n/a';
 
-          if (isNA && !seen.has('N/A')) {
-            cleaned.push('N/A');
-            seen.add('N/A');
-          } else if (validSet.has(cleanedName) && !seen.has(cleanedName)) {
-            cleaned.push(cleanedName);
-            seen.add(cleanedName);
+          const key = isNA ? 'N/A' : cleanedName;
+
+          // Only allow N/A once OR valid items that haven't been seen
+          if (isNA && !seenItems.has('N/A')) {
+            cleanedGroup.push('N/A');
+            seenItems.add('N/A');
+          } else if (validSet.has(cleanedName) && !seenItems.has(cleanedName)) {
+            cleanedGroup.push(cleanedName);
+            seenItems.add(cleanedName);
           }
         }
 
-        return cleaned.length > 0 ? cleaned : ['N/A'];
-      });
+        if (cleanedGroup.length > 0) {
+          dedupedRows.push(cleanedGroup);
+        }
+      }
+
+      // If no rows made it through, just insert one fallback row
+      gearSetups[style][slot] = dedupedRows.length > 0 ? dedupedRows : [['N/A']];
     }
   }
 }

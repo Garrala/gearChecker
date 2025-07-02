@@ -48,9 +48,9 @@
   "gear_setups": {
     "Melee": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Helm of neitiznot", "Zombie helmet", "Dwarven helmet" ],
         [ "Proselyte sallet" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -134,17 +134,15 @@
     },
     "Ranged": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Any Blessed coif" ],
         [ "Archer helm" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
         [ "Amulet of glory" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -154,13 +152,11 @@
         [ "Ava's accumulator" ],
         [ "Ranging cape" ],
         [ "Ava's attractor" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
         [ "Any Blessed body", "Crystal body" ],
         [ "Black d'hide body" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -170,7 +166,6 @@
         [ "Black d'hide chaps" ],
         [ "N/A" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
@@ -178,22 +173,19 @@
         [ "Twisted bow" ],
         [ "Bow of Faerdhinen" ],
         [ "Zaryte crossbow", "Armadyl crossbow" ],
-        [ "Dragon crossbow", "Rune crossbow" ],
-        [ "Bow of Faerdhinen" ]
+        [ "Dragon crossbow", "Rune crossbow" ]
       ],
       "Shield": [
         [ "Twisted buckler" ],
         [ "Dragonfire ward", "Odium ward" ],
         [ "Book of law", "Unholy book" ],
         [ "Black d'hide shield" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 3", "Rada's blessing 2", "Diamond dragon bolts(e)", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "Diamond dragon bolts (e)" ],
         [ "Diamond bolts (e)" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -202,7 +194,6 @@
         [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
@@ -210,7 +201,6 @@
         [ "Mixed hide boots" ],
         [ "Shayzien boots (5)" ],
         [ "Snakeskin boots" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ring": [
@@ -218,13 +208,11 @@
         [ "Ring of shadows" ],
         [ "Ring of wealth (i)" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Special Attack": [
         [ "Zaryte crossbow" ],
         [ "Webweaver bow" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]

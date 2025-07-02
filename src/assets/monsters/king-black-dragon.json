@@ -379,9 +379,9 @@
     },
     "Suicide method": {
       "Helmet": [
+        [ "Masori mask (f)" ],
         [ "Any Blessed coif" ],
         [ "Karil's coif" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -428,8 +428,8 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Diamond dragon bolts(e)" ],
-        [ "Amethyst arrows", "Diamond bolts(e)" ],
+        [ "Dragon arrows" ],
+        [ "Amethyst arrows" ],
         [ "Runite bolts" ],
         [ "N/A" ],
         [ "N/A" ]

@@ -132,13 +132,10 @@
     },
     "Ranged": {
       "Helmet": [
+        [ "Masori mask (f)" ],
         [ "Armadyl helmet" ],
         [ "Any Blessed coif" ],
         [ "Void ranger helm" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
@@ -146,29 +143,20 @@
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
         [ "Amulet of power" ],
-        [ "Amulet of defence" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Amulet of defence" ]
       ],
       "Cape": [
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
         [ "Ava's accumulator" ],
         [ "Ava's attractor" ],
-        [ "Max cape", "Ranging cape (t)" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Max cape", "Ranging cape (t)" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
         [ "Armadyl chestplate" ],
         [ "Any Blessed body", "Black d'hide body" ],
         [ "Elite void top", "Void knight top" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
@@ -176,9 +164,6 @@
         [ "Armadyl chainskirt" ],
         [ "Any Blessed chaps", "Black d'hide chaps" ],
         [ "Elite void robe", "Void knight robe" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
@@ -186,70 +171,49 @@
         [ "Scorching bow" ],
         [ "Bow of Faerdhinen" ],
         [ "Toxic blowpipe" ],
-        [ "Armadyl crossbow", "Dragon crossbow" ],
-        [ "Bow of Faerdhinen" ],
-        [ "Bow of Faerdhinen" ],
-        [ "Bow of Faerdhinen" ]
+        [ "Armadyl crossbow", "Dragon crossbow" ]
       ],
       "Shield": [
-        [ "N/A" ],
         [ "Twisted buckler" ],
         [ "Odium ward" ],
         [ "Book of law" ],
         [ "Unholy book" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Diamond dragon bolts(e)" ],
-        [ "Amethyst arrows", "Diamond bolts(e)" ],
+        [ "Dragon arrows" ],
+        [ "Amethyst arrows" ],
         [ "Rune arrows", "Broad bolts" ],
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
         [ "Black d'hide vambraces", "Ranger gloves" ],
         [ "Dragon gloves" ],
-        [ "Rune gloves", "Void knight gloves" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Rune gloves", "Void knight gloves" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
         [ "Any Blessed boots" ],
         [ "Aranea boots" ],
-        [ "Boots of brimstone", "Mixed hide boots" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Boots of brimstone", "Mixed hide boots" ]
       ],
       "Ring": [
         [ "Venator ring" ],
         [ "Archers ring (i)" ],
         [ "Brimstone ring" ],
         [ "Ring of the gods (i)" ],
-        [ "Ring of suffering (i)" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Ring of suffering (i)" ]
       ],
       "Special Attack": [
         [ "Elder maul" ],
         [ "Bandos godsword" ],
         [ "Voidwaker", "Burning claws" ],
         [ "Dragon warhammer" ],
-        [ "Dragon claws", "Arclight" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Dragon claws", "Arclight" ]
       ]
     }
   }

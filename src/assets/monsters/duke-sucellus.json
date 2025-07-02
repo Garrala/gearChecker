@@ -119,11 +119,11 @@
   "gear_setups": {
     "Melee": {
       "Helmet": [
+        [ "Slayer helmet (i)", "Oathplate helm", "Serpentine helm" ],
         [ "Torva full helm", "Neitiznot faceguard" ],
         [ "Void melee helm" ],
         [ "Blood moon helm" ],
         [ "Helm of neitiznot" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [

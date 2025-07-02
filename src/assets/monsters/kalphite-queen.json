@@ -86,11 +86,11 @@
   "gear_setups": {
     "High DPS (Phase 1 (Melee))": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Torva full helm", "Inquisitor's great helm" ],
         [ "Neitiznot faceguard" ],
         [ "Serpentine helm" ],
-        [ "Helm of neitiznot" ],
-        [ "N/A" ]
+        [ "Helm of neitiznot" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
@@ -172,18 +172,16 @@
     },
     "High DPS (Phase 2 (Ranged))": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Masori mask (f)" ],
         [ "Armadyl helmet" ],
         [ "Crystal helm" ],
-        [ "Robin hood hat", "Archer helm" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Robin hood hat", "Archer helm" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -192,47 +190,41 @@
         [ "Ava's assembler" ],
         [ "Max cape" ],
         [ "Ava's accumulator" ],
-        [ "Ranging cape" ],
-        [ "N/A" ]
+        [ "Ranging cape" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
         [ "Crystal body", "Armadyl chestplate" ],
         [ "Any Blessed body" ],
         [ "Karil's leathertop" ],
-        [ "Black d'hide body" ],
-        [ "N/A" ]
+        [ "Black d'hide body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Crystal legs", "Armadyl chainskirt" ],
         [ "Any Blessed chaps" ],
         [ "Karil's leatherskirt" ],
-        [ "Black d'hide chaps" ],
-        [ "N/A" ]
+        [ "Black d'hide chaps" ]
       ],
       "Weapon": [
         [ "Toxic blowpipe" ],
         [ "Twisted bow" ],
         [ "Bow of Faerdhinen" ],
         [ "Armadyl crossbow" ],
-        [ "N/A" ],
-        [ "Bow of Faerdhinen" ]
+        [ "N/A" ]
       ],
       "Shield": [
         [ "Twisted buckler" ],
         [ "Dragonfire ward" ],
         [ "Odium ward" ],
         [ "Book of law" ],
-        [ "Unholy book" ],
-        [ "N/A" ]
+        [ "Unholy book" ]
       ],
       "Ammo": [
         [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "Diamond dragon bolts (e)" ],
         [ "Amethyst broad bolts", "Amethyst arrows" ],
         [ "Runite bolts", "Rune arrows" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
@@ -240,14 +232,12 @@
         [ "Barrows gloves" ],
         [ "Dragon gloves" ],
         [ "Regen bracelet" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
         [ "Any Blessed boots" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -256,11 +246,9 @@
         [ "Venator ring" ],
         [ "Archers ring (i)" ],
         [ "Brimstone ring" ],
-        [ "Ring of shadows" ],
-        [ "N/A" ]
+        [ "Ring of shadows" ]
       ],
       "Special Attack": [
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -270,10 +258,10 @@
     },
     "Phase 1 (Melee)": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Zombie helmet" ],
         [ "Dwarven helmet" ],
         [ "Helm of neitiznot" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -368,10 +356,9 @@
     },
     "Phase 2 (Ranged)": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Any Blessed coif" ],
         [ "Archer helm" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -380,7 +367,6 @@
         [ "Dragonbone necklace", "Bonecrusher necklace" ],
         [ "Amulet of glory" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
@@ -388,14 +374,12 @@
         [ "Ava's accumulator" ],
         [ "Ranging cape" ],
         [ "Ava's attractor" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
         [ "Any Blessed body" ],
         [ "Black d'hide body" ],
         [ "Karil's leathertop" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -404,7 +388,6 @@
         [ "Black d'hide chaps" ],
         [ "Karil's leatherskirt" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
@@ -412,13 +395,11 @@
         [ "Magic shortbow (i)" ],
         [ "Magic shortbow" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "Bone dagger" ]
       ],
       "Shield": [
         [ "Book of law" ],
         [ "Unholy book" ],
-        [ "N/A" ],
         [ "Black d'hide shield" ],
         [ "Broodoo shield" ],
         [ "N/A" ]
@@ -428,13 +409,11 @@
         [ "Runite bolts", "Rune arrows" ],
         [ "N/A" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
         [ "Dragon gloves" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -444,14 +423,12 @@
         [ "Boots of brimstone" ],
         [ "Shayzien boots (5)" ],
         [ "Snakeskin boots" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ring": [
         [ "Ring of recoil" ],
         [ "Berserker ring (i)" ],
         [ "Ring of shadows" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -460,17 +437,16 @@
         [ "Darklight" ],
         [ "Barrelchest anchor" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ]
     },
     "Max Mage (0 switches)": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ],
         [ "Ancestral hat" ],
         [ "Virtus mask" ],
-        [ "Blue moon helm", "Ahrim's hood" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Blue moon helm", "Ahrim's hood" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
@@ -638,9 +614,9 @@
     },
     "Flinching": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Blue moon helm" ],
         [ "Helm of neitiznot" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -736,10 +712,10 @@
     },
     "Mid-game (Phase 1 (Melee))": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Zombie helmet" ],
         [ "Dwarven helmet" ],
         [ "Helm of neitiznot" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -834,10 +810,9 @@
     },
     "Mid-game (Phase 2 (Ranged))": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Any Blessed coif" ],
         [ "Archer helm" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -846,7 +821,6 @@
         [ "Dragonbone necklace", "Bonecrusher necklace" ],
         [ "Amulet of glory" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
@@ -854,14 +828,12 @@
         [ "Ava's accumulator" ],
         [ "Ranging cape" ],
         [ "Ava's attractor" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
         [ "Any Blessed body" ],
         [ "Black d'hide body" ],
         [ "Karil's leathertop" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -870,7 +842,6 @@
         [ "Black d'hide chaps" ],
         [ "Karil's leatherskirt" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
@@ -878,13 +849,11 @@
         [ "Magic shortbow (i)" ],
         [ "Magic shortbow" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "Bone dagger" ]
       ],
       "Shield": [
         [ "Book of law" ],
         [ "Unholy book" ],
-        [ "N/A" ],
         [ "Black d'hide shield" ],
         [ "Broodoo shield" ],
         [ "N/A" ]
@@ -894,13 +863,11 @@
         [ "Runite bolts", "Rune arrows" ],
         [ "N/A" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
         [ "Dragon gloves" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -910,14 +877,12 @@
         [ "Boots of brimstone" ],
         [ "Shayzien boots (5)" ],
         [ "Snakeskin boots" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ring": [
         [ "Ring of recoil" ],
         [ "Berserker ring (i)" ],
         [ "Ring of shadows" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -926,15 +891,14 @@
         [ "Darklight" ],
         [ "Barrelchest anchor" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ]
     },
     "Pre-diary": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Neitiznot faceguard" ],
         [ "Helm of neitiznot" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],

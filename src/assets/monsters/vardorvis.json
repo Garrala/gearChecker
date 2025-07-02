@@ -117,11 +117,11 @@
   "gear_setups": {
     "Melee": {
       "Helmet": [
+        [ "Slayer helmet (i)", "Oathplate helm" ],
         [ "Torva full helm" ],
         [ "Neitiznot faceguard" ],
         [ "Serpentine helm" ],
-        [ "Justiciar faceguard" ],
-        [ "N/A" ]
+        [ "Justiciar faceguard" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],

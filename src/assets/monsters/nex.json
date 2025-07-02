@@ -51,9 +51,9 @@
   "gear_setups": {
     "Ranged": {
       "Helmet": [
+        [ "Masori mask (f)" ],
         [ "Armadyl helmet" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Slayer helmet (i)" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],

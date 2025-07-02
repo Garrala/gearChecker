@@ -134,11 +134,11 @@
   "gear_setups": {
     "Magic": {
       "Helmet": [
+        [ "Slayer helmet (i)", "Ancestral hat" ],
         [ "Virtus mask" ],
         [ "Ahrim's hood", "Blue moon helm", "Bloodbark helm" ],
         [ "Void mage helm" ],
-        [ "Dagon'hai hat", "Elder chaos hood" ],
-        [ "N/A" ]
+        [ "Dagon'hai hat", "Elder chaos hood" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],

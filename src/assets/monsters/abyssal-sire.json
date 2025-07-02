@@ -156,10 +156,8 @@
   "gear_setups": {
     "Ranged": {
       "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -167,15 +165,11 @@
         [ "Necklace of anguish" ],
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
         [ "Dizana's quiver" ],
         [ "Ava's assembler", "Ava's accumulator" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -183,31 +177,23 @@
         [ "Masori body (f)" ],
         [ "Crystal body" ],
         [ "Any Blessed body", "Black d'hide body" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Crystal legs" ],
         [ "Any Blessed chaps", "Black d'hide chaps" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
         [ "Scorching bow" ],
         [ "Bow of Faerdhinen" ],
         [ "Webweaver bow", "Craw's bow" ],
-        [ "Crystal bow" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Crystal bow" ]
       ],
       "Ammo": [
         [ "Dragon arrows" ],
         [ "Amethyst arrows" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "Amethyst darts" ]
       ],
@@ -215,13 +201,9 @@
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
         [ "Any Blessed vambraces", "Black d'hide vambraces" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -231,13 +213,9 @@
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Shield": [
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -247,15 +225,13 @@
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ]
     },
     "Magic": {
       "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -340,8 +316,8 @@
     },
     "Melee": {
       "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -426,8 +402,8 @@
     },
     "Melee - No defence reduction": {
       "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -512,8 +488,8 @@
     },
     "Melee - Defence reduction": {
       "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -598,8 +574,8 @@
     },
     "Magic - Tumeken's Shadow": {
       "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -672,8 +648,8 @@
     },
     "Phase 2 Ranged": {
       "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -711,7 +687,7 @@
         [ "Twisted bow" ],
         [ "Toxic blowpipe" ],
         [ "Bow of Faerdhinen" ],
-        [ "Toxic blowpipe" ]
+        [ "N/A" ]
       ],
       "Ammo": [
         [ "Dragon arrows" ],

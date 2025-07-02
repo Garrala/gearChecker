@@ -48,8 +48,8 @@
   "gear_setups": {
     "Melee": {
       "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -134,8 +134,8 @@
     },
     "Ranged": {
       "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]

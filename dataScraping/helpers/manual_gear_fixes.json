@@ -213,10 +213,16 @@
     "correct_slot": "Body",
     "alias": "Any Barrows tank body"
   },
+  "Barrows chestplate": {
+    "correct_slot": "Body",
+    "alias": "Any Barrows tank body"
+  },
   "Masori body(f)": {
     "correct_slot": "Body",
     "alias": "Masori body (f)"
   },
+
+
 
   "Blessed boots": {
     "correct_slot": "Boots",
@@ -263,19 +269,19 @@
   },
 
   "Black mask(i)": {
-    "correct_slot": "Helmets",
+    "correct_slot": "Helmet",
     "alias": "Black mask (i)"
   },
   "Masori mask(f)": {
-    "correct_slot": "Helmets",
+    "correct_slot": "Helmet",
     "alias": "Masori mask (f)"
   },
   "Slayer helmet(i)": {
-    "correct_slot": "Helmets",
+    "correct_slot": "Helmet",
     "alias": "Slayer helmet (i)"
   },
   "Helm of Neitiznot": {
-    "correct_slot": "Helmets",
+    "correct_slot": "Helmet",
     "alias": "Helm of neitiznot"
   },
 
@@ -414,10 +420,6 @@
   "bow of Faerdhinen": {
     "correct_slot": "Weapon",
     "alias": "Bow of Faerdhinen"
-  },
-  "blowpipe": {
-    "correct_slot": "Weapon",
-    "alias": "Toxic blowpipe"
   },
   "Scythe of vitur": {
     "correct_slot": "Weapon",

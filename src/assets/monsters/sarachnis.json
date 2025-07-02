@@ -43,11 +43,11 @@
   "gear_setups": {
     "Melee": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Torva full helm", "Inquisitor's great helm" ],
         [ "Neitiznot faceguard" ],
         [ "Serpentine helm" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Helm of neitiznot", "Blood moon helm" ]
       ],
       "Amulet": [
         [ "Amulet of blood fury" ],
@@ -129,9 +129,9 @@
     },
     "Magic (Tumeken's Shadow)": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Ancestral hat" ],
-        [ "Virtus mask" ],
-        [ "N/A" ]
+        [ "Virtus mask" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
@@ -191,9 +191,9 @@
     },
     "Tank": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Justiciar faceguard" ],
         [ "Torag's helm" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],

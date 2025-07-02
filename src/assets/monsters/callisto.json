@@ -48,10 +48,10 @@
   "gear_setups": {
     "Ranged": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Crystal helm" ],
         [ "Karil's coif" ],
         [ "Archer helm" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
@@ -90,10 +90,10 @@
         [ "Magic shortbow (i)" ]
       ],
       "Shield": [
-        [ "N/A" ],
         [ "Twisted buckler" ],
         [ "Dragonfire ward", "Odium ward" ],
         [ "Book of law", "Unholy book" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
@@ -134,10 +134,10 @@
     },
     "Magic": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Ancestral hat" ],
         [ "Farseer helm" ],
         [ "Mitre" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [

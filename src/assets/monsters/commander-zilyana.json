@@ -95,11 +95,11 @@
     },
     "Ranged": {
       "Helmet": [
+        [ "Masori mask (f)" ],
         [ "Crystal helm" ],
         [ "Justiciar faceguard" ],
         [ "Verac's helm", "Saradomin coif" ],
-        [ "Helm of neitiznot" ],
-        [ "N/A" ]
+        [ "Helm of neitiznot" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -144,8 +144,8 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Diamond dragon bolts(e)", "Moonlight antler bolts" ],
-        [ "Amethyst arrows", "Diamond bolts(e)", "Sunlight antler bolts" ],
+        [ "Dragon arrows", "Moonlight antler bolts" ],
+        [ "Amethyst arrows", "Sunlight antler bolts" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]

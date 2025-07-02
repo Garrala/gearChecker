@@ -48,10 +48,10 @@
   "gear_setups": {
     "Tumeken's Shadow": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Ancestral hat" ],
         [ "Virtus mask" ],
-        [ "Ahrim's hood" ],
-        [ "N/A" ]
+        [ "Ahrim's hood" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
@@ -122,11 +122,11 @@
     },
     "Chinchompas": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Justiciar faceguard" ],
         [ "Verac's helm" ],
         [ "Armadyl helmet" ],
-        [ "Karil's coif" ],
-        [ "N/A" ]
+        [ "Karil's coif" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -171,8 +171,8 @@
         [ "Crystal shield" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Diamond dragon bolts(e)" ],
-        [ "Amethyst arrows", "Diamond bolts(e)" ],
+        [ "Dragon arrows" ],
+        [ "Amethyst arrows" ],
         [ "Mith grapple" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -208,11 +208,11 @@
     },
     "Ranged Tank": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
         [ "Justiciar faceguard" ],
         [ "Verac's helm" ],
-        [ "Armadyl helmet" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Masori mask (f)" ],
+        [ "Armadyl helmet" ]
       ],
       "Amulet": [
         [ "Amulet of fury" ],
@@ -257,8 +257,8 @@
         [ "Odium ward" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Diamond dragon bolts(e)" ],
-        [ "Amethyst arrows", "Diamond bolts(e)" ],
+        [ "Dragon arrows" ],
+        [ "Amethyst arrows" ],
         [ "Broad bolts" ],
         [ "Ruby bolts (e)" ],
         [ "N/A" ]
@@ -294,9 +294,9 @@
     },
     "Tbow / Bowfa": {
       "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Masori mask (f)" ],
         [ "Crystal helm" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
