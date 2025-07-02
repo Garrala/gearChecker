@@ -9,9 +9,9 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Vardorvis",
       "image": "assets/monster-icons/vardorvis_awakened.png",
       "combat_level": 0,
-      "hp": 0,
+      "hp": 1400,
       "max_hit": {
-        "melee": 4661,
+        "slash": 61,
         "axes": 96
       },
       "defense": {
@@ -46,9 +46,9 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Vardorvis",
       "image": "assets/monster-icons/vardorvis_post_quest.png",
       "combat_level": 784,
-      "hp": 0,
+      "hp": 700,
       "max_hit": {
-        "melee": 3243
+        "slash": 43
       },
       "defense": {
         "melee": {
@@ -82,9 +82,9 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Vardorvis",
       "image": "assets/monster-icons/vardorvis_quest.png",
       "combat_level": 572,
-      "hp": 0,
+      "hp": 500,
       "max_hit": {
-        "melee": 3037
+        "slash": 37
       },
       "defense": {
         "melee": {
@@ -135,7 +135,7 @@
         [ "Fire cape" ],
         [ "Mythical cape" ],
         [ "Ardougne cloak 4" ],
-        [ "Cape of Accomplishment(t)" ]
+        [ "Any Skillcape (t)" ]
       ],
       "Body": [
         [ "Oathplate chest" ],

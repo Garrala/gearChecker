@@ -61,11 +61,11 @@
       "Cape": [
         [ "Fire cape" ],
         [ "Mixed hide cape" ],
-        [ "N/A" ],
+        [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ],
         [ "N/A" ]
       ],
       "Body": [
-        [ "(or)" ],
+        [ "N/A" ],
         [ "Any Barrows tank body" ],
         [ "Black d'hide body" ],
         [ "N/A" ]
@@ -143,7 +143,7 @@
       ],
       "Body": [
         [ "Oathplate chest", "Torva platebody" ],
-        [ "(or)" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -222,7 +222,7 @@
       ],
       "Cape": [
         [ "Any Imbued God cape" ],
-        [ "God cape" ],
+        [ "Any God cape" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -246,7 +246,7 @@
         [ "Staff of the dead" ],
         [ "Purging staff" ],
         [ "Ancient sceptre" ],
-        [ "(or)" ]
+        [ "N/A" ]
       ],
       "Shield": [
         [ "Tome of fire" ],

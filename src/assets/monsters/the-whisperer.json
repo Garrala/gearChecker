@@ -9,7 +9,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/The_Whisperer",
       "image": "assets/monster-icons/the_whisperer_awakened.png",
       "combat_level": 0,
-      "hp": 0,
+      "hp": 2700,
       "max_hit": {
         "melee": 57,
         "ranged": 53,
@@ -30,7 +30,7 @@
           "thrown": 300
         }
       },
-      "attack_styles": [],
+      "attack_styles": [ "Melee", "Ranged", "Magic" ],
       "attack_speed": {
         "ticks": 10,
         "seconds": 6
@@ -51,7 +51,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/The_Whisperer",
       "image": "assets/monster-icons/the_whisperer_post_quest.png",
       "combat_level": 791,
-      "hp": 0,
+      "hp": 900,
       "max_hit": {
         "melee": 42,
         "ranged": 40,
@@ -72,7 +72,7 @@
           "thrown": 300
         }
       },
-      "attack_styles": [],
+      "attack_styles": [ "Melee", "Ranged", "Magic" ],
       "attack_speed": {
         "ticks": 10,
         "seconds": 6
@@ -93,7 +93,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/The_Whisperer",
       "image": "assets/monster-icons/the_whisperer_quest.png",
       "combat_level": 587,
-      "hp": 0,
+      "hp": 660,
       "max_hit": {
         "melee": 30,
         "ranged": 28,
@@ -114,7 +114,7 @@
           "thrown": 300
         }
       },
-      "attack_styles": [],
+      "attack_styles": [ "Melee", "Ranged", "Magic" ],
       "attack_speed": {
         "ticks": 10,
         "seconds": 6
@@ -151,7 +151,7 @@
         [ "Any Imbued God cape" ],
         [ "Any God cape" ],
         [ "Ardougne cloak 4" ],
-        [ "Cape of Accomplishment" ],
+        [ "Any Skillcape" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -183,8 +183,8 @@
         [ "Unholy book" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 4", "arrow" ],
-        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]

@@ -21,7 +21,7 @@
         },
         "magic": 280,
         "ranged": {
-          "arrows": 80,
+          "arrows": 50,
           "bolts": 80,
           "thrown": 80
         }
@@ -44,7 +44,7 @@
   "gear_setups": {
     "Ranged": {
       "Helmet": [
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Karil's coif" ],
         [ "Snakeskin bandana" ],
         [ "Coif" ],
@@ -100,8 +100,8 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's Blessing 3", "Rada's Blessing 2", "Rada's Blessing 1" ],
-        [ "Dragon arrows", "Amethyst arrow", "Rune arrow" ],
+        [ "Rada's blessing 3", "Rada's blessing 2" ],
+        [ "Dragon arrows" ],
         [ "Moonlight antler bolts" ],
         [ "Diamond dragon bolts (e)" ],
         [ "Diamond bolts (e)" ],
@@ -118,7 +118,7 @@
       "Boots": [
         [ "Any Blessed boots" ],
         [ "Mixed hide boots" ],
-        [ "Shayzien boots(5)" ],
+        [ "Shayzien boots (5)" ],
         [ "Snakeskin boots" ],
         [ "Bloodbark boots" ],
         [ "N/A" ]

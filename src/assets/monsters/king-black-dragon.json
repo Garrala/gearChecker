@@ -62,9 +62,9 @@
       ],
       "Cape": [
         [ "Infernal cape", "Fire cape" ],
+        [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ],
         [ "Mythical cape" ],
         [ "Any Skillcape" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -86,7 +86,7 @@
         [ "Ghrazi rapier" ],
         [ "Noxious halberd" ],
         [ "Zamorakian hasta" ],
-        [ "Abyssal dagger(p)" ]
+        [ "Abyssal dagger" ]
       ],
       "Shield": [
         [ "Dragonfire shield" ],
@@ -97,7 +97,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -118,7 +118,7 @@
       ],
       "Ring": [
         [ "Ultor ring" ],
-        [ "Treasonous ring(i)" ],
+        [ "Treasonous ring (i)" ],
         [ "Brimstone ring" ],
         [ "Berserker ring (i)" ],
         [ "N/A" ]
@@ -133,7 +133,7 @@
     },
     "Melee Suicide method": {
       "Helmet": [
-        [ "Slayer helmet", "task", "Torva full helm" ],
+        [ "Slayer helmet", "Torva full helm" ],
         [ "Serpentine helm", "Neitiznot faceguard" ],
         [ "Helm of neitiznot" ],
         [ "Berserker helm", "Obsidian helmet" ],
@@ -148,9 +148,9 @@
       ],
       "Cape": [
         [ "Infernal cape", "Fire cape" ],
+        [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ],
         [ "Mythical cape" ],
         [ "Any Skillcape" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -172,7 +172,7 @@
         [ "Osmumten's fang" ],
         [ "Ghrazi rapier" ],
         [ "Zamorakian hasta" ],
-        [ "Abyssal dagger(p)" ]
+        [ "Abyssal dagger" ]
       ],
       "Shield": [
         [ "Avernic defender", "Dragonfire shield" ],
@@ -183,7 +183,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -204,7 +204,7 @@
       ],
       "Ring": [
         [ "Ultor ring" ],
-        [ "Treasonous ring(i)" ],
+        [ "Treasonous ring (i)" ],
         [ "Brimstone ring" ],
         [ "Berserker ring (i)" ],
         [ "N/A" ]
@@ -219,10 +219,10 @@
     },
     "Twisted Bow / BOWFA": {
       "Helmet": [
+        [ "Any Blessed coif" ],
         [ "Crystal helm" ],
         [ "Karil's coif" ],
-        [ "Archer helm" ],
-        [ "N/A" ]
+        [ "Archer helm" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -257,7 +257,7 @@
       "Ammo": [
         [ "Dragon arrows" ],
         [ "Amethyst arrows" ],
-        [ "Rada's blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2" ],
         [ "N/A" ]
       ],
       "Gloves": [
@@ -293,9 +293,9 @@
     },
     "Crossbow & shield": {
       "Helmet": [
+        [ "Any Blessed coif" ],
         [ "Karil's coif" ],
         [ "Archer helm" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -358,7 +358,7 @@
       "Boots": [
         [ "Any Blessed boots" ],
         [ "Mixed hide boots" ],
-        [ "Shayzien boots(5)" ],
+        [ "Shayzien boots (5)" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -379,7 +379,7 @@
     },
     "Suicide method": {
       "Helmet": [
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Karil's coif" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -428,8 +428,8 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "twisted bow", "Diamond dragon bolts(e)" ],
-        [ "Amethyst arrows", "twisted bow", "Diamond bolts(e)" ],
+        [ "Dragon arrows", "Diamond dragon bolts(e)" ],
+        [ "Amethyst arrows", "Diamond bolts(e)" ],
         [ "Runite bolts" ],
         [ "N/A" ],
         [ "N/A" ]

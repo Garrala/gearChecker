@@ -28,7 +28,7 @@
           "thrown": 200
         }
       },
-      "attack_styles": [ "Ranged" ],
+      "attack_styles": [ "Ranged", "Ranged magic", "Magical melee" ],
       "attack_speed": {
         "ticks": 3,
         "seconds": 1.8
@@ -85,7 +85,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Honourable blessing", "Rada's blessing 3", "2" ],
+        [ "Honourable blessing", "Rada's blessing 3" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -260,7 +260,7 @@
         [ "Dragon arrows", "Diamond dragon bolts(e)" ],
         [ "Amethyst arrows", "Diamond bolts(e)" ],
         [ "Broad bolts" ],
-        [ "Ruby bolts(e)" ],
+        [ "Ruby bolts (e)" ],
         [ "N/A" ]
       ],
       "Gloves": [
@@ -353,13 +353,13 @@
         [ "Pegasian boots" ],
         [ "Armadyl d'hide boots", "Ranger boots" ],
         [ "Guardian boots", "Boots of brimstone" ],
-        [ "Shayzien boots(5)", "Bandos boots" ],
+        [ "Shayzien boots (5)", "Bandos boots" ],
         [ "Devout boots" ]
       ],
       "Ring": [
         [ "Ring of suffering (i)" ],
         [ "Venator ring", "Lightbearer" ],
-        [ "Archers ring (i)", "Ring of the gods(i)" ],
+        [ "Archers ring (i)" ],
         [ "Ring of shadows" ],
         [ "Brimstone ring" ]
       ],

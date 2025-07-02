@@ -9,8 +9,10 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
       "image": "assets/monster-icons/zulrah_magma.png",
       "combat_level": 725,
-      "hp": 0,
-      "max_hit": {},
+      "hp": 500,
+      "max_hit": {
+        "typeless": 30
+      },
       "defense": {
         "melee": {
           "stab": 0,
@@ -24,7 +26,7 @@
           "thrown": 300
         }
       },
-      "attack_styles": [],
+      "attack_styles": [ "Typeless" ],
       "attack_speed": {
         "ticks": 3,
         "seconds": 1.8
@@ -43,7 +45,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
       "image": "assets/monster-icons/zulrah_serpentine.png",
       "combat_level": 725,
-      "hp": 0,
+      "hp": 500,
       "max_hit": {
         "ranged": 41
       },
@@ -81,7 +83,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
       "image": "assets/monster-icons/zulrah_tanzanite.png",
       "combat_level": 725,
-      "hp": 0,
+      "hp": 500,
       "max_hit": {
         "magic": 41,
         "ranged": 41
@@ -137,7 +139,7 @@
         [ "Any God cape" ],
         [ "Ardougne cloak 4" ],
         [ "Ardougne cloak 3" ],
-        [ "Cape of Accomplishment" ]
+        [ "Any Skillcape" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
@@ -161,15 +163,15 @@
         [ "Iban's staff", "Warped sceptre" ]
       ],
       "Shield": [
-        [ "Tome of fire(Searing pages)", "Elidinis' ward (f)" ],
-        [ "Tome of fire(Burnt pages)", "Arcane spirit shield" ],
+        [ "Tome of fire (Searing pages)" ],
+        [ "Tome of fire (Burnt pages)", "Arcane spirit shield" ],
         [ "Elidinis' ward", "Mage's book" ],
         [ "Ancient wyvern shield", "Malediction ward" ],
         [ "Book of the dead", "Book of darkness" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -207,7 +209,7 @@
       "Helmet": [
         [ "Crystal helm", "Masori mask" ],
         [ "Serpentine helm" ],
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Void ranger helm", "Archer helm" ],
         [ "N/A" ]
       ],
@@ -249,7 +251,7 @@
       "Ammo": [
         [ "Dragon arrows" ],
         [ "Amethyst arrows" ],
-        [ "Moonlight antler bolts", "Sunlight antler bolts", "Atlatl dart" ],
+        [ "Moonlight antler bolts", "Sunlight antler bolts", "Atlatl darts" ],
         [ "Rune arrows" ],
         [ "Bolt rack" ]
       ],
@@ -333,7 +335,7 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Atlatl dart" ],
+        [ "Atlatl darts" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],

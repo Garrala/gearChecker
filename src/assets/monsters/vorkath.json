@@ -95,12 +95,12 @@
       "Helmet": [
         [ "Void ranger helm" ],
         [ "Crystal helm", "Serpentine helm" ],
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
-        [ "Salve amulet(ei)" ],
+        [ "Salve amulet (ei)" ],
         [ "Necklace of anguish" ],
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
@@ -142,9 +142,9 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Ruby dragon bolts(e)", "Diamond dragon bolts (e)" ],
-        [ "Ruby bolts(e)", "Diamond bolts (e)" ],
-        [ "Opal dragon bolts(e)", "Pearl dragon bolts(e)" ],
+        [ "Ruby dragon bolts (e)", "Diamond dragon bolts(e)" ],
+        [ "Ruby bolts (e)", "Diamond bolts(e)" ],
+        [ "Opal dragon bolts (e)" ],
         [ "Dragon bolts" ],
         [ "Runite bolts" ]
       ],
@@ -186,7 +186,7 @@
         [ "N/A" ]
       ],
       "Amulet": [
-        [ "Salve amulet(ei)", "Salve amulet(e)" ],
+        [ "Salve amulet (ei)" ],
         [ "Amulet of rancour" ],
         [ "Amulet of torture" ],
         [ "Amulet of fury" ],
@@ -197,20 +197,20 @@
         [ "Fire cape" ],
         [ "Ardougne cloak 4" ],
         [ "Ardougne cloak 3" ],
-        [ "Cape of Accomplishment(t)" ]
+        [ "Any Skillcape (t)" ]
       ],
       "Body": [
         [ "Torva platebody" ],
         [ "Bandos chestplate", "Oathplate chest" ],
         [ "Justiciar chestguard", "Blood moon chestplate" ],
-        [ "Barrows platebody", "Fighter torso" ],
+        [ "Any Barrows tank body", "Fighter torso" ],
         [ "Obsidian platebody" ]
       ],
       "Legs": [
         [ "Torva platelegs" ],
         [ "Bandos tassets", "Oathplate legs" ],
         [ "Justiciar legguards", "Blood moon tassets" ],
-        [ "Barrows platelegs" ],
+        [ "Any Barrows tank legs" ],
         [ "Obsidian platelegs" ]
       ],
       "Weapon": [

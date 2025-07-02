@@ -9,7 +9,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Scurrius",
       "image": "assets/monster-icons/scurrius_group.png",
       "combat_level": 250,
-      "hp": 0,
+      "hp": 1500,
       "max_hit": {
         "melee": 13,
         "magic": 14,
@@ -29,7 +29,7 @@
           "thrown": 20
         }
       },
-      "attack_styles": [],
+      "attack_styles": [ "Melee", "Ranged", "Magic" ],
       "attack_speed": {
         "ticks": 4,
         "seconds": 2.4
@@ -46,7 +46,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Scurrius",
       "image": "assets/monster-icons/scurrius_solo.png",
       "combat_level": 200,
-      "hp": 0,
+      "hp": 500,
       "max_hit": {
         "melee": 13,
         "magic": 8,
@@ -66,7 +66,7 @@
           "thrown": 20
         }
       },
-      "attack_styles": [],
+      "attack_styles": [ "Melee", "Ranged", "Magic" ],
       "attack_speed": {
         "ticks": 4,
         "seconds": 2.4
@@ -82,10 +82,7 @@
   "gear_setups": {
     "Melee (mid level)": {
       "Helmet": [
-        [
-          "Void melee helm",
-          ""
-        ],
+        [ "Void melee helm" ],
         [ "Helm of neitiznot", "Blood moon helm" ],
         [ "Berserker helm" ],
         [ "Rune full helm" ],
@@ -102,24 +99,18 @@
         [ "Fire cape" ],
         [ "Obsidian cape" ],
         [ "Cape of legends" ],
-        [ "God vestment cloaks" ],
+        [ "Any God vestment cloaks" ],
         [ "Any team cape" ]
       ],
       "Body": [
-        [
-          "Void knight top",
-          ""
-        ],
+        [ "Void knight top" ],
         [ "Fighter torso" ],
         [ "Proselyte hauberk" ],
         [ "Granite body" ],
         [ "Rune platebody" ]
       ],
       "Legs": [
-        [
-          "Void knight robe",
-          ""
-        ],
+        [ "Void knight robe" ],
         [ "Dragon platelegs" ],
         [ "Proselyte cuisse" ],
         [ "Granite legs" ],
@@ -140,17 +131,14 @@
         [ "Rune kiteshield" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 2/3", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
-        [
-          "Void knight gloves",
-          ""
-        ],
+        [ "Void knight gloves" ],
         [ "Barrows gloves" ],
         [ "Rune gloves" ],
         [ "Regen bracelet" ],
@@ -171,7 +159,7 @@
         [ "Ring of life" ]
       ],
       "Special Attack": [
-        [ "Dragon dagger(p)" ],
+        [ "Dragon dagger" ],
         [ "Crystal halberd" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -180,11 +168,8 @@
     },
     "Ranged (mid level)": {
       "Helmet": [
-        [
-          "Void ranger helm",
-          ""
-        ],
-        [ "Blessed coif" ],
+        [ "Void ranger helm" ],
+        [ "Any Blessed coif" ],
         [ "Archer helm" ],
         [ "Snakeskin bandana" ],
         [ "Coif" ]
@@ -204,20 +189,14 @@
         [ "Cape of legends" ]
       ],
       "Body": [
-        [
-          "Void knight top",
-          ""
-        ],
+        [ "Void knight top" ],
         [ "Any Blessed body" ],
         [ "Black d'hide body" ],
         [ "Red d'hide body" ],
         [ "Blue d'hide body" ]
       ],
       "Legs": [
-        [
-          "Void knight robe",
-          ""
-        ],
+        [ "Void knight robe" ],
         [ "Any Blessed chaps" ],
         [ "Black d'hide chaps" ],
         [ "Red d'hide chaps" ],
@@ -241,15 +220,12 @@
         [ "Amethyst arrows" ],
         [ "Moonlight antler bolts" ],
         [ "Rune arrows" ],
-        [ "Adamant arrow" ],
+        [ "Adamant arrows" ],
         [ "N/A" ]
       ],
       "Gloves": [
-        [
-          "Void knight gloves",
-          ""
-        ],
-        [ "Blessed bracers" ],
+        [ "Void knight gloves" ],
+        [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ],
         [ "Red d'hide vambraces" ],
         [ "Dragon gloves" ]
@@ -257,7 +233,7 @@
       "Boots": [
         [ "Any Blessed boots" ],
         [ "Mixed hide boots" ],
-        [ "Shayzien boots(5)" ],
+        [ "Shayzien boots (5)" ],
         [ "Snakeskin boots" ],
         [ "N/A" ]
       ],
@@ -296,24 +272,18 @@
         [ "Fire cape" ],
         [ "Obsidian cape" ],
         [ "Cape of legends" ],
-        [ "God vestment cloaks" ]
+        [ "Any God vestment cloaks" ]
       ],
       "Body": [
         [ "Bloodbark body" ],
-        [
-          "Elder chaos top",
-          ""
-        ],
+        [ "Elder chaos top" ],
         [ "Mystic robe top" ],
         [ "Xerician top" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Bloodbark legs" ],
-        [
-          "Elder chaos robe",
-          ""
-        ],
+        [ "Elder chaos robe" ],
         [ "Mystic robe bottom" ],
         [ "Xerician robe" ],
         [ "N/A" ]
@@ -333,7 +303,7 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 2/3", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -373,10 +343,7 @@
         [ "Torva full helm" ],
         [ "Neitiznot faceguard" ],
         [ "Serpentine helm" ],
-        [
-          "Void melee helm",
-          ""
-        ]
+        [ "Void melee helm" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
@@ -388,39 +355,24 @@
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Mythical cape" ],
-        [ "God vestment cloaks" ]
+        [ "Any God vestment cloaks" ]
       ],
       "Body": [
         [ "Torva platebody" ],
         [ "Bandos chestplate", "Blood moon chestplate" ],
         [ "Fighter torso" ],
-        [
-          "Elite void top",
-          ""
-        ]
+        [ "Elite void top" ]
       ],
       "Legs": [
         [ "Torva platelegs" ],
         [ "Bandos tassets", "Blood moon tassets" ],
         [ "Obsidian platelegs" ],
-        [
-          "Elite void robe",
-          ""
-        ]
+        [ "Elite void robe" ]
       ],
       "Weapon": [
         [ "Scythe of Vitur" ],
-        [
-          "Soulreaper axe",
-          "Inquisitor's mace",
-          ""
-        ],
-        [
-          "Bone mace",
-          "",
-          "Blade of Saeldor",
-          "Ghrazi rapier"
-        ],
+        [ "Soulreaper axe", "Inquisitor's mace" ],
+        [ "Bone mace", "Blade of Saeldor", "Ghrazi rapier" ],
         [ "Abyssal tentacle", "Abyssal whip" ]
       ],
       "Shield": [
@@ -439,10 +391,7 @@
         [ "Ferocious gloves" ],
         [ "Barrows gloves" ],
         [ "Dragon gloves" ],
-        [
-          "Void knight gloves",
-          ""
-        ]
+        [ "Void knight gloves" ]
       ],
       "Boots": [
         [ "Primordial boots" ],
@@ -465,10 +414,7 @@
     },
     "Ranged (high level)": {
       "Helmet": [
-        [
-          "Void ranger helm",
-          ""
-        ],
+        [ "Void ranger helm" ],
         [ "Armadyl helmet" ],
         [ "Karil's coif" ],
         [ "N/A" ]
@@ -487,27 +433,18 @@
       ],
       "Body": [
         [ "Masori body (f)" ],
-        [
-          "Elite void top",
-          ""
-        ],
+        [ "Elite void top" ],
         [ "Armadyl chestplate" ],
         [ "Karil's leathertop" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
-        [
-          "Elite void robe",
-          ""
-        ],
+        [ "Elite void robe" ],
         [ "Armadyl chainskirt" ],
         [ "Karil's leatherskirt" ]
       ],
       "Weapon": [
-        [
-          "Toxic blowpipe",
-          ""
-        ],
+        [ "Toxic blowpipe" ],
         [ "Bone shortbow" ],
         [ "Twisted bow" ],
         [ "Zaryte crossbow" ]
@@ -516,27 +453,24 @@
         [ "Twisted buckler" ],
         [ "Dragonfire ward" ],
         [ "Odium ward" ],
-        [ "Blessed d'hide shields" ]
+        [ "Any Blessed d'hide shields" ]
       ],
       "Ammo": [
         [ "Amethyst arrows" ],
         [ "Dragon arrows" ],
-        [ "Ruby dragon bolts(e)" ],
-        [ "Ruby bolts(e)" ]
+        [ "Ruby dragon bolts (e)" ],
+        [ "Ruby bolts (e)" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
-        [
-          "Void knight gloves",
-          ""
-        ],
+        [ "Void knight gloves" ],
         [ "Barrows gloves" ],
-        [ "Blessed d'hide vambraces" ]
+        [ "Any Blessed vambraces" ]
       ],
       "Boots": [
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
-        [ "Blessed d'hide boots" ],
+        [ "Any Blessed boots" ],
         [ "Aranea boots" ]
       ],
       "Ring": [
@@ -568,7 +502,7 @@
       "Cape": [
         [ "Any Imbued God cape" ],
         [ "Any God cape" ],
-        [ "N/A" ],
+        [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -615,19 +549,13 @@
       ],
       "Ring": [
         [ "Magus ring" ],
-        [ "Seers ring (i)", "Ring of the gods(i)" ],
+        [ "Seers ring (i)" ],
         [ "Ring of shadows" ],
         [ "Brimstone ring" ]
       ],
       "Special Attack": [
-        [
-          "Zaryte crossbow",
-          ""
-        ],
-        [
-          "Accursed sceptre",
-          ""
-        ],
+        [ "Zaryte crossbow" ],
+        [ "Accursed sceptre" ],
         [ "N/A" ],
         [ "N/A" ]
       ]

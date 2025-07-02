@@ -1,10 +1,11 @@
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
-const { extractGearFromSlice, ensureAllSlotsPresent, auditLog } = require('./helpers/gear_helpers');
+const { extractGearFromSlice, ensureAllSlotsPresent } = require('./helpers/gear_helpers');
 
 const metadata = require('../boss_metadata.json');
 const gearOutputPath = path.join(__dirname, 'staging', 'boss_gear_scrape');
+
 if (fs.existsSync(gearOutputPath)) {
   fs.rmSync(gearOutputPath, { recursive: true, force: true });
 }
@@ -27,10 +28,8 @@ function fetchGearTabberHtml(bossName) {
   const $ = cheerio.load(rawHtml);
   const gearSlices = [];
 
-  // Tabber tabs
   $('.tabbertab').each((_, el) => gearSlices.push($(el)));
 
-  // Captioned tables fallback
   $('table.wikitable').each((_, el) => {
     const caption = $(el).find('caption').text().toLowerCase();
     const isValid = caption.includes('recommended equipment') || caption.includes('recommended gear');
@@ -43,7 +42,6 @@ function fetchGearTabberHtml(bossName) {
     }
   });
 
-  // Final fallback: H2 Equipment header
   if (gearSlices.length === 0) {
     const equipmentHeader = $('h2 span.mw-headline#Equipment').parent();
     if (equipmentHeader.length) {
@@ -62,6 +60,102 @@ function fetchGearTabberHtml(bossName) {
 
   return gearSlices;
 }
+
+async function fetchCorporealGearSetups(bossName, meta) {
+  console.log(`\n🔧 Using custom handler for ${bossName}`);
+  const gearSlices = fetchGearTabberHtml(bossName);
+
+  const styles = {
+    'Stat Draining': 'Stat Draining',
+    'Quick-Pool': 'Quick-Pool',
+    'Dolo': 'Dolo',
+    'Fewer stat drains': 'Fewer stat drains',
+    '3–7 players strategy': '3–7 Players',
+    'Mass strategy': 'Mass',
+    'Ranged': 'Ranged'
+  };
+
+  const gear_setups = {};
+  const auditIssues = [];
+
+  for (const [labelMatch, styleName] of Object.entries(styles)) {
+    const slice = gearSlices.find(slice => slice.attr('data-title')?.includes(labelMatch));
+    if (!slice) {
+      auditIssues.push({ boss: bossName, issue: `Missing gear tab "${labelMatch}"` });
+      continue;
+    }
+
+    const $tab = cheerio.load(slice.html());
+    const gear = extractGearFromSlice($tab, styleName, bossName);
+    ensureAllSlotsPresent(gear, styleName, bossName, metadata);
+    gear_setups[styleName] = gear;
+  }
+
+  const output = {
+    name: bossName,
+    category: meta.category || '',
+    wiki_link: meta.wiki_link,
+    gear_setups,
+    missing_styles: []
+  };
+
+  const fileName = bossName.replace(/\s+/g, '-').toLowerCase() + '.json';
+  fs.writeFileSync(path.join(gearOutputPath, fileName), JSON.stringify(output, null, 2));
+  console.log(`💾 Custom gear saved for ${bossName}: ${fileName}`);
+
+  return auditIssues;
+}
+
+async function fetchKalphiteQueenGearSetups(bossName, meta) {
+  console.log(`\n🔧 Using custom handler for ${bossName}`);
+  const rawHtml = fs.readFileSync(
+    path.join(__dirname, 'staging', 'strategy_html_dumps', 'kalphite_queen', 'strategy.html'),
+    'utf8'
+  );
+  const $ = cheerio.load(rawHtml);
+  const gear_setups = {};
+  const auditIssues = [];
+
+  $('.tabbertab').each((_, tab) => {
+    const $tab = cheerio.load($(tab).html());
+    const label = $(tab).attr('data-title')?.trim() || 'Unknown';
+    const subPhases = $tab('.tabbertab');
+
+    if (subPhases.length) {
+      subPhases.each((__, subTab) => {
+        const subLabel = $(subTab).attr('data-title')?.trim() || 'Unknown';
+        const combinedLabel = `${label} (${subLabel})`;
+        const $innerTab = cheerio.load($(subTab).html());
+        const gear = extractGearFromSlice($innerTab, combinedLabel, bossName);
+        ensureAllSlotsPresent(gear, combinedLabel, bossName, metadata);
+        gear_setups[combinedLabel] = gear;
+      });
+    } else {
+      const gear = extractGearFromSlice($tab, label, bossName);
+      ensureAllSlotsPresent(gear, label, bossName, metadata);
+      gear_setups[label] = gear;
+    }
+  });
+
+  const output = {
+    name: bossName,
+    category: meta.category || '',
+    wiki_link: meta.wiki_link,
+    gear_setups,
+    missing_styles: []
+  };
+
+  const fileName = bossName.replace(/\s+/g, '-').toLowerCase() + '.json';
+  fs.writeFileSync(path.join(gearOutputPath, fileName), JSON.stringify(output, null, 2));
+  console.log(`💾 Custom gear saved for ${bossName}: ${fileName}`);
+
+  return auditIssues;
+}
+
+const customScraperOverrides = {
+  'Corporeal Beast': fetchCorporealGearSetups,
+  'Kalphite Queen': fetchKalphiteQueenGearSetups
+};
 
 async function fetchGearSetupsForBoss(bossName, meta) {
   const expectedSetups = meta.setups || [];
@@ -88,7 +182,6 @@ async function fetchGearSetupsForBoss(bossName, meta) {
 
     matchCounts[normalized] = (matchCounts[normalized] || 0) + 1;
     const seenCount = matchCounts[normalized];
-    console.log(`🔍 Found tab: "${rawLabel}" → normalized: "${normalized}" (seen ${seenCount}x)`);
 
     let matchIndex = -1;
     let seenOfThatType = 0;
@@ -110,7 +203,6 @@ async function fetchGearSetupsForBoss(bossName, meta) {
 
     const styleName = expectedSetups[matchIndex];
     expectedUsed[matchIndex] = true;
-    console.log(`✅ Matched tab "${rawLabel}" to setup "${styleName}"`);
 
     const gear = extractGearFromSlice($tab, rawLabel, bossName);
     ensureAllSlotsPresent(gear, styleName, bossName, metadata);
@@ -143,7 +235,8 @@ async function fetchGearSetupsForBoss(bossName, meta) {
 
   for (const [bossName, meta] of Object.entries(metadata)) {
     if (!meta.strategy_link || !meta.setups) continue;
-    const issues = await fetchGearSetupsForBoss(bossName, meta);
+    const fetchFn = customScraperOverrides[bossName] || fetchGearSetupsForBoss;
+    const issues = await fetchFn(bossName, meta);
     if (issues && issues.length) allAuditIssues.push(...issues);
   }
 

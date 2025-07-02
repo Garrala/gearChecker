@@ -11,7 +11,7 @@
       "combat_level": 329,
       "hp": 500,
       "max_hit": {
-        "typeless": 3
+        "slash": 60
       },
       "defense": {
         "melee": {
@@ -26,7 +26,7 @@
           "thrown": 500
         }
       },
-      "attack_styles": [],
+      "attack_styles": [ "Slash" ],
       "attack_speed": {
         "ticks": 6,
         "seconds": 3.6
@@ -46,7 +46,7 @@
       "combat_level": 329,
       "hp": 500,
       "max_hit": {
-        "typeless": 3
+        "slash": 60
       },
       "defense": {
         "melee": {
@@ -61,7 +61,7 @@
           "thrown": 500
         }
       },
-      "attack_styles": [],
+      "attack_styles": [ "Slash" ],
       "attack_speed": {
         "ticks": 6,
         "seconds": 3.6
@@ -81,7 +81,7 @@
       "combat_level": 329,
       "hp": 500,
       "max_hit": {
-        "typeless": 3
+        "slash": 60
       },
       "defense": {
         "melee": {
@@ -96,7 +96,7 @@
           "thrown": 500
         }
       },
-      "attack_styles": [],
+      "attack_styles": [ "Slash" ],
       "attack_speed": {
         "ticks": 6,
         "seconds": 3.6
@@ -121,9 +121,9 @@
         [ "Dharok's greataxe" ],
         [ "Soulreaper axe" ],
         [ "Noxious halberd", "Elder maul" ],
-        [ "Crystal halberd", "Godsword", "Colossal blade" ],
+        [ "Crystal halberd", "Colossal blade" ],
         [ "Zombie axe", "Barrelchest anchor" ],
-        [ "Standard attack weapon" ]
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Voidwaker", "Crystal halberd" ],
@@ -274,7 +274,7 @@
         [ "Scythe of Vitur" ],
         [ "Dual macuahuitl", "Glacial temotli" ],
         [ "Inquisitor's mace", "Soulreaper axe" ],
-        [ "Ursine chainmace(u)", "Zamorakian hasta", "Abyssal bludgeon" ],
+        [ "Ursine chainmace (u)", "Zamorakian hasta", "Abyssal bludgeon" ],
         [ "Sarachnis cudgel", "Zombie axe", "Torag's hammers" ]
       ],
       "Special Attack": [

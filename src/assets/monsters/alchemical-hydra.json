@@ -9,7 +9,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Alchemical_Hydra#Serpentine",
       "image": "assets/monster-icons/alchemical_hydra_electric.png",
       "combat_level": 426,
-      "hp": 0,
+      "hp": 1100,
       "max_hit": {
         "default": 35,
         "empowered": 2
@@ -46,7 +46,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Alchemical_Hydra#Serpentine",
       "image": "assets/monster-icons/alchemical_hydra_extinguished.png",
       "combat_level": 426,
-      "hp": 0,
+      "hp": 1100,
       "max_hit": {
         "ranged": 55,
         "magic": 55
@@ -83,7 +83,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Alchemical_Hydra#Serpentine",
       "image": "assets/monster-icons/alchemical_hydra_fire.png",
       "combat_level": 426,
-      "hp": 0,
+      "hp": 1100,
       "max_hit": {
         "default": 35,
         "empowered": 52
@@ -120,7 +120,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Alchemical_Hydra#Serpentine",
       "image": "assets/monster-icons/alchemical_hydra_serpentine.png",
       "combat_level": 426,
-      "hp": 0,
+      "hp": 1100,
       "max_hit": {
         "default": 2,
         "empowered": 2
@@ -160,6 +160,7 @@
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
@@ -167,6 +168,7 @@
         [ "Dragonbone necklace" ],
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
@@ -174,6 +176,7 @@
         [ "Ava's assembler" ],
         [ "Max cape", "Ranging cape (t)" ],
         [ "Ava's accumulator", "Ranging cape" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -181,6 +184,7 @@
         [ "Crystal body", "Eclipse moon chestplate" ],
         [ "Hueycoatl hide body" ],
         [ "Any Blessed body" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
@@ -188,6 +192,7 @@
         [ "Crystal legs", "Eclipse moon tassets" ],
         [ "Hueycoatl hide chaps" ],
         [ "Any Blessed chaps" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
@@ -195,27 +200,31 @@
         [ "Toxic blowpipe", "Dragon hunter crossbow" ],
         [ "Bow of Faerdhinen" ],
         [ "Eclipse atlatl" ],
-        [ "N/A" ]
+        [ "N/A" ],
+        [ "Toxic blowpipe" ]
       ],
       "Shield": [
         [ "Twisted buckler" ],
         [ "Dragonfire ward" ],
         [ "Odium ward" ],
         [ "Book of law" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Twisted bow", "Ruby dragon bolts(e)", "Atlatl darts" ],
-        [ "Ruby bolts(e)" ],
-        [ "Rada's blessing 4", "blowpipe", "bow of Faerdhinen" ],
-        [ "Any god blessing", "Rada's blessing 3", "blowpipe", "bow of Faerdhinen" ],
+        [ "Dragon arrows", "Atlatl darts" ],
+        [ "Ruby bolts (e)" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
+        [ "N/A" ],
+        [ "Ruby bolts (e)" ],
         [ "N/A" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
-        [ "Blessed bracers", "Hueycoatl hide vambraces" ],
+        [ "Any Blessed vambraces", "Hueycoatl hide vambraces" ],
         [ "Barrows gloves" ],
         [ "Black d'hide vambraces" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
@@ -223,20 +232,23 @@
         [ "Devout boots" ],
         [ "Any Blessed boots", "Aranea boots" ],
         [ "Boots of brimstone" ],
-        [ "Boots of stone" ]
+        [ "Boots of stone" ],
+        [ "N/A" ]
       ],
       "Ring": [
-        [ "Lightbearer", "Zaryte crossbow" ],
+        [ "Lightbearer" ],
         [ "Venator ring" ],
         [ "Ring of the gods (i)" ],
         [ "Ring of suffering (i)" ],
-        [ "Archers ring (i)" ]
+        [ "Archers ring (i)" ],
+        [ "N/A" ]
       ],
       "Special Attack": [
-        [ "Zaryte crossbow", "Ruby dragon bolts(e)" ],
         [ "Tonalztics of ralos" ],
         [ "Toxic blowpipe" ],
         [ "Dragon warhammer" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ]
     },
@@ -292,7 +304,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Any god blessing", "Rada's blessing 3" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -315,7 +327,7 @@
         [ "Lightbearer", "Ultor ring" ],
         [ "Berserker ring (i)" ],
         [ "Brimstone ring" ],
-        [ "Treasonous ring(i)", "Ring of shadows" ],
+        [ "Treasonous ring (i)", "Ring of shadows" ],
         [ "Ring of the gods (i)" ]
       ],
       "Special Attack": [

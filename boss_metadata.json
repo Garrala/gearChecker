@@ -84,7 +84,7 @@
       "https://oldschool.runescape.wiki/w/Torag_the_Corrupted",
       "https://oldschool.runescape.wiki/w/Verac_the_Defiled"
     ],
-    "setups": [],
+    "setups": ["Magic equipment", "Tank & Lower level", "Ranged (Ahrim)"],
     "missing_slots": {}
   },
   "Callisto": {
@@ -108,7 +108,7 @@
     "wiki_link": "https://oldschool.runescape.wiki/w/Cerberus",
     "strategy_link": "https://oldschool.runescape.wiki/w/Cerberus/Strategies",
     "scrape_mode": "simple",
-    "setups": ["Magic", "Ranged"],
+    "setups": ["Melee", "Ranged"],
     "missing_slots": {}
   },
   "Chaos Elemental": {

@@ -12,7 +12,8 @@
       "hp": 250,
       "max_hit": {
         "magic": 28,
-        "ranged": 28
+        "ranged": 28,
+        "melee": 28
       },
       "defense": {
         "melee": {
@@ -27,7 +28,7 @@
           "thrown": 70
         }
       },
-      "attack_styles": [ "Magic", "Ranged" ],
+      "attack_styles": [ "Magic", "Ranged", "Melee" ],
       "attack_speed": {
         "ticks": 4,
         "seconds": 2.4
@@ -39,13 +40,15 @@
         "cannons": true,
         "thralls": true
       },
-      "weaknesses": "none"
+      "weaknesses": {
+        "air": "50%"
+      }
     }
   ],
   "gear_setups": {
     "Ranged": {
       "Helmet": [
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Karil's coif" ],
         [ "Archer helm" ],
         [ "Snakeskin bandana" ],
@@ -61,7 +64,7 @@
       "Cape": [
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
-        [ "Ava's accumulator", "Ardougne cloak 4", "Webweaver", "Craw's bow" ],
+        [ "Ava's accumulator", "Ardougne cloak 4" ],
         [ "Ranging cape (t)" ],
         [ "Any God vestment cloaks" ]
       ],
@@ -87,7 +90,7 @@
         [ "Armadyl crossbow" ]
       ],
       "Shield": [
-        [ "None if using a two-handed weapon" ],
+        [ "N/A" ],
         [ "Book of law" ],
         [ "Unholy book" ],
         [ "Black d'hide shield" ],
@@ -96,7 +99,7 @@
       "Ammo": [
         [ "Rada's blessing 4" ],
         [ "Rada's blessing 3" ],
-        [ "Dragon arrows", "Amethyst arrow" ],
+        [ "Dragon arrows" ],
         [ "Diamond bolts (e)" ],
         [ "Broad bolts" ]
       ],
@@ -148,7 +151,7 @@
         [ "Infernal cape" ],
         [ "Mythical cape", "Fire cape" ],
         [ "Ardougne cloak 4" ],
-        [ "Cape of Accomplishment(t)" ],
+        [ "Any Skillcape (t)" ],
         [ "Any God vestment cloaks" ]
       ],
       "Body": [
@@ -204,7 +207,7 @@
         [ "Ursine chainmace" ],
         [ "Voidwaker" ],
         [ "Dragon claws" ],
-        [ "Dragon dagger(p)" ],
+        [ "Dragon dagger" ],
         [ "Crystal halberd" ]
       ],
       "Ammo": [

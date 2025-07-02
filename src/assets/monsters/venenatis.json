@@ -134,7 +134,7 @@
     },
     "Ranged": {
       "Helmet": [
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "Archer helm" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -190,18 +190,7 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [
-          "Rada's blessing 3",
-          "Rada's blessing 2",
-          "Craw's bow",
-          "Webweaver bow",
-          "Bow of faerdhinen",
-          "Diamond dragon bolts(e)",
-          "Zaryte crossbow",
-          "Dragon arrow",
-          "twisted bow",
-          "Any God blessing"
-        ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Diamond dragon bolts(e)", "Any God blessing" ],
         [ "Diamond dragon bolts (e)" ],
         [ "Diamond bolts (e)" ],
         [ "N/A" ],
@@ -218,7 +207,7 @@
       ],
       "Boots": [
         [ "Any Blessed boots" ],
-        [ "Shayzien boots(5)" ],
+        [ "Shayzien boots (5)" ],
         [ "Snakeskin boots" ],
         [ "N/A" ],
         [ "N/A" ],

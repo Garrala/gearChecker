@@ -335,7 +335,7 @@
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Max cape", "Hitpoints cape" ],
-        [ "Cape of Accomplishment(t)" ],
+        [ "Any Skillcape (t)" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -465,7 +465,7 @@
       ],
       "Ring": [
         [ "Magus ring" ],
-        [ "Ring of suffering (i)", "Seers ring(i)" ],
+        [ "Ring of suffering (i)" ],
         [ "N/A" ],
         [ "N/A" ]
       ],

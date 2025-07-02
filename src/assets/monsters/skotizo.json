@@ -50,7 +50,7 @@
         [ "Torva full helm" ],
         [ "Neitiznot faceguard", "Serpentine helm" ],
         [ "Blood moon helm", "Helm of neitiznot" ],
-        [ "Berserker helm", "Obsidian helmet", "Void melee helm", "void" ]
+        [ "Berserker helm", "Obsidian helmet", "Void melee helm" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
@@ -133,8 +133,8 @@
     "Ranged": {
       "Helmet": [
         [ "Armadyl helmet" ],
-        [ "Blessed coif" ],
-        [ "Void ranger helm", "void" ],
+        [ "Any Blessed coif" ],
+        [ "Void ranger helm" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -192,7 +192,7 @@
         [ "Bow of Faerdhinen" ]
       ],
       "Shield": [
-        [ "None if using a two-handed weapon" ],
+        [ "N/A" ],
         [ "Twisted buckler" ],
         [ "Odium ward" ],
         [ "Book of law" ],
@@ -202,9 +202,9 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Dragon dart", "Diamond dragon bolts(e)" ],
-        [ "Amethyst arrows", "Rune dart", "Diamond bolts(e)" ],
-        [ "Rune arrows", "Adamant dart", "Broad bolts" ],
+        [ "Dragon arrows", "Diamond dragon bolts(e)" ],
+        [ "Amethyst arrows", "Diamond bolts(e)" ],
+        [ "Rune arrows", "Broad bolts" ],
         [ "Rada's blessing 4" ],
         [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],

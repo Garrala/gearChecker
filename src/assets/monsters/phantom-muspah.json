@@ -9,7 +9,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Phantom_Muspah",
       "image": "assets/monster-icons/phantom_muspah_melee.png",
       "combat_level": 741,
-      "hp": 0,
+      "hp": 850,
       "max_hit": {
         "stab": 34
       },
@@ -47,7 +47,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Phantom_Muspah",
       "image": "assets/monster-icons/phantom_muspah_post_shield.png",
       "combat_level": 741,
-      "hp": 0,
+      "hp": 850,
       "max_hit": {
         "ranged": 72,
         "magic": 79
@@ -86,7 +86,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Phantom_Muspah",
       "image": "assets/monster-icons/phantom_muspah_ranged.png",
       "combat_level": 741,
-      "hp": 0,
+      "hp": 850,
       "max_hit": {
         "ranged": 61,
         "magic": 72
@@ -125,7 +125,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Phantom_Muspah",
       "image": "assets/monster-icons/phantom_muspah_shielded.png",
       "combat_level": 741,
-      "hp": 0,
+      "hp": 75,
       "max_hit": {
         "ranged": 72,
         "magic": 79,
@@ -165,7 +165,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Phantom_Muspah",
       "image": "assets/monster-icons/phantom_muspah_teleporting.png",
       "combat_level": 741,
-      "hp": 0,
+      "hp": 850,
       "max_hit": {
         "lightningcloud": 20
       },
@@ -182,7 +182,7 @@
           "thrown": 56
         }
       },
-      "attack_styles": [],
+      "attack_styles": [ "Typeless" ],
       "attack_speed": {
         "ticks": 5,
         "seconds": 3
@@ -289,7 +289,7 @@
     "Ranged": {
       "Helmet": [
         [ "Crystal helm" ],
-        [ "Blessed coif" ],
+        [ "Any Blessed coif" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -326,7 +326,7 @@
         [ "Twisted bow" ],
         [ "Bow of Faerdhinen" ],
         [ "Zaryte crossbow", "Armadyl crossbow", "Toxic blowpipe" ],
-        [ "Other crossbows" ],
+        [ "N/A" ],
         [ "Hunters' sunlight crossbow" ]
       ],
       "Shield": [
@@ -337,11 +337,11 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Sapphire dragon bolts(e)", "Ruby dragon bolts(e)", "Moonlight antler bolts" ],
-        [ "Amethyst arrows", "Diamond dragon bolts(e)", "Sapphire bolts(e)", "Sunlight antler bolts" ],
+        [ "Dragon arrows", "Moonlight antler bolts" ],
+        [ "Amethyst arrows", "Diamond dragon bolts(e)", "Sunlight antler bolts" ],
         [ "Rune arrows", "Diamond bolts(e)" ],
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "2", "Any God blessing" ]
+        [ "Rada's blessing 3", "Any God blessing" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
@@ -424,7 +424,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]

@@ -4,7 +4,7 @@ const https = require('https');
 
 // List your rogue URLs here
 const imageUrls = [
-  'https://oldschool.runescape.wiki/images/Red_spiky_vambraces.png?db71c',
+  'https://oldschool.runescape.wiki/images/Granite_ring_%28i%29.png?99c22',
   
   // Add more rogue links here
 ];

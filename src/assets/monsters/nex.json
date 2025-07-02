@@ -9,7 +9,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Nex",
       "image": "assets/monster-icons/nex.png",
       "combat_level": 1,
-      "hp": 3,
+      "hp": 3400,
       "max_hit": {
         "magic": 33,
         "ranged": 60,
@@ -86,8 +86,8 @@
         [ "Dragonfire ward", "Odium ward" ]
       ],
       "Ammo": [
-        [ "Ruby dragon bolts(e)", "Dragon arrows" ],
-        [ "Ruby bolts(e)" ],
+        [ "Ruby dragon bolts (e)" ],
+        [ "Ruby bolts (e)" ],
         [ "N/A" ]
       ],
       "Gloves": [
@@ -149,7 +149,7 @@
       ],
       "Ammo": [
         [ "Dragon arrows" ],
-        [ "Ruby dragon bolts(e)" ],
+        [ "Ruby dragon bolts (e)" ],
         [ "N/A" ]
       ],
       "Gloves": [

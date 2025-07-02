@@ -9,8 +9,9 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Kraken#Kraken",
       "image": "assets/monster-icons/kraken_kraken.png",
       "combat_level": 291,
-      "hp": 0,
+      "hp": 255,
       "max_hit": {
+        "typeless": 28,
         "magic": 28
       },
       "defense": {
@@ -26,7 +27,7 @@
           "thrown": 300
         }
       },
-      "attack_styles": [ "Magic" ],
+      "attack_styles": [ "Typeless", "Magic" ],
       "attack_speed": {
         "ticks": 4,
         "seconds": 2.4
@@ -48,6 +49,7 @@
       "combat_level": 0,
       "hp": 0,
       "max_hit": {
+        "typeless": 28,
         "magic": 28
       },
       "defense": {
@@ -63,7 +65,7 @@
           "thrown": 300
         }
       },
-      "attack_styles": [ "Magic" ],
+      "attack_styles": [ "Typeless", "Magic" ],
       "attack_speed": {
         "ticks": 4,
         "seconds": 2.4
@@ -97,10 +99,10 @@
       ],
       "Cape": [
         [ "Any Imbued God cape" ],
-        [ "God cape" ],
+        [ "Any God cape" ],
         [ "Infernal cape", "Fire cape" ],
-        [ "Hitpoints cape(t)" ],
-        [ "N/A" ]
+        [ "Hitpoints cape (t)" ],
+        [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
@@ -121,7 +123,7 @@
         [ "Sanguinesti staff" ],
         [ "Trident of the swamp" ],
         [ "Trident of the seas" ],
-        [ "Harmonised nightmare staff", "Warped sceptre", "Slayer's staff(e)" ]
+        [ "Harmonised nightmare staff", "Warped sceptre", "Slayer's staff (e)" ]
       ],
       "Shield": [
         [ "Elidinis' ward (f)", "Tome of fire" ],
@@ -132,7 +134,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -156,13 +158,13 @@
         [ "Ring of suffering (i)" ],
         [ "Seers ring (i)" ],
         [ "Brimstone ring" ],
-        [ "Ring of shadows", "(uncharged)" ]
+        [ "Ring of shadows" ]
       ],
       "Special Attack": [
         [ "Volatile nightmare staff" ],
         [ "Eldritch nightmare staff" ],
         [ "Toxic blowpipe" ],
-        [ "Accursed sceptre(a)" ],
+        [ "N/A" ],
         [ "N/A" ]
       ]
     }

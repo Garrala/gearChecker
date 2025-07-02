@@ -9,7 +9,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Araxxor",
       "image": "assets/monster-icons/araxxor_enraged.png",
       "combat_level": 890,
-      "hp": 0,
+      "hp": 1020,
       "max_hit": {
         "melee": 38,
         "magic": 21,
@@ -28,7 +28,7 @@
           "thrown": 218
         }
       },
-      "attack_styles": [],
+      "attack_styles": [ "Crush", "Magic", "Ranged" ],
       "attack_speed": {
         "ticks": 4,
         "seconds": 2.4
@@ -49,7 +49,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/Araxxor",
       "image": "assets/monster-icons/araxxor_in_combat.png",
       "combat_level": 890,
-      "hp": 0,
+      "hp": 1020,
       "max_hit": {
         "melee": 38,
         "magic": 21,
@@ -105,7 +105,7 @@
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Mythical cape" ],
-        [ "N/A" ],
+        [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -125,7 +125,7 @@
       "Weapon": [
         [ "Scythe of Vitur" ],
         [ "Soulreaper axe", "Inquisitor's mace" ],
-        [ "Abyssal bludgeon", "Ursine chainmace(u)" ],
+        [ "Abyssal bludgeon", "Ursine chainmace (u)" ],
         [ "Saradomin's blessed sword", "Zamorakian hasta", "Sarachnis cudgel" ],
         [ "Dual macuahuitl", "Saradomin sword", "Zombie axe" ]
       ],
@@ -229,7 +229,7 @@
       ],
       "Ring": [
         [ "Lightbearer" ],
-        [ "Ring of the gods (i)", "Archers ring(i)" ],
+        [ "Ring of the gods (i)" ],
         [ "N/A" ],
         [ "N/A" ]
       ],

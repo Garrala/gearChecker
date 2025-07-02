@@ -12,7 +12,8 @@
       "hp": 450,
       "max_hit": {
         "slash": 15,
-        "ranged": 15
+        "ranged": 15,
+        "magic": 15
       },
       "defense": {
         "melee": {
@@ -27,7 +28,7 @@
           "thrown": 0
         }
       },
-      "attack_styles": [ "Slash", "Ranged" ],
+      "attack_styles": [ "Slash", "Ranged", "Magic" ],
       "attack_speed": {
         "ticks": 6,
         "seconds": 3.6
@@ -46,7 +47,8 @@
       "combat_level": 248,
       "hp": 450,
       "max_hit": {
-        "special attack": 33
+        "slash": 15,
+        "special": 33
       },
       "defense": {
         "melee": {
@@ -61,7 +63,7 @@
           "thrown": 0
         }
       },
-      "attack_styles": [],
+      "attack_styles": [ "Slash" ],
       "attack_speed": {
         "ticks": 6,
         "seconds": 3.6
@@ -143,12 +145,12 @@
         [ "Ultor ring" ],
         [ "Bellator ring", "Berserker ring (i)", "Lightbearer" ],
         [ "Brimstone ring" ],
-        [ "Ring of suffering (i)", "Archers ring(i)" ],
-        [ "Treasonous ring(i)", "Warrior ring (i)", "Tyrannical ring(i)" ]
+        [ "Ring of suffering (i)" ],
+        [ "Treasonous ring (i)" ]
       ],
       "Special Attack": [
         [ "Dragon claws", "Burning claws" ],
-        [ "Dragon dagger(p)" ],
+        [ "Dragon dagger" ],
         [ "Toxic blowpipe" ],
         [ "Saradomin godsword" ],
         [ "Crystal halberd" ]
@@ -206,10 +208,10 @@
       ],
       "Ammo": [
         [ "Dragon arrows" ],
-        [ "Atlatl dart" ],
+        [ "Atlatl darts" ],
         [ "Rada's blessing 4" ],
         [ "Moonlight antler bolts", "Sunlight antler bolts" ],
-        [ "Amethyst arrows", "Rune arrow" ]
+        [ "Amethyst arrows" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],

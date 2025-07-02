@@ -4,13 +4,50 @@ const path = require('path');
 const STAT_DIR = path.join(__dirname, 'staging', 'boss_stat_scrape');
 const GEAR_DIR = path.join(__dirname, 'staging', 'boss_gear_final');
 const OUTPUT_DIR = path.join(__dirname, 'staging', 'merged_boss_data');
+const GEAR_SOURCE_DIR = path.join(__dirname, '..', 'src', 'assets', 'gear');
 
 const ALL_SLOTS = [
   'Weapon', 'Special Attack', 'Shield', 'Helmet', 'Amulet',
   'Cape', 'Body', 'Legs', 'Gloves', 'Boots', 'Ring', 'Ammo'
 ];
 
-// Ensure output directory exists
+const SLOT_FILENAME_MAP = {
+  ammo: 'Ammo',
+  amulets: 'Amulet',
+  body: 'Body',
+  boots: 'Boots',
+  capes: 'Cape',
+  gloves: 'Gloves',
+  helmets: 'Helmet',
+  legs: 'Legs',
+  rings: 'Ring',
+  shields: 'Shield',
+  special_attack: 'Special Attack',
+  weapons: 'Weapon',
+};
+
+function cleanItemName(name) {
+  return name
+    .replace(/\[[^\]]+\]/g, '')
+    .replace(/[^a-zA-Z0-9()/\s'-]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function loadValidItemsBySlot() {
+  const slotMap = {};
+  const files = fs.readdirSync(GEAR_SOURCE_DIR).filter(f => f.endsWith('.json'));
+  for (const file of files) {
+    const slotKey = SLOT_FILENAME_MAP[file.replace('.json', '')];
+    if (!slotKey) continue;
+    const full = JSON.parse(fs.readFileSync(path.join(GEAR_SOURCE_DIR, file), 'utf-8'));
+    slotMap[slotKey] = new Set(Object.keys(full).map(cleanItemName));
+  }
+  return slotMap;
+}
+
+const VALID_ITEMS_BY_SLOT = loadValidItemsBySlot();
+
 if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR);
 
 function loadJsonSafe(filePath) {
@@ -64,6 +101,35 @@ function padSlotArraysToUniformLength(gearSetups) {
   }
 }
 
+function dedupeAndFilterInvalid(gearSetups) {
+  for (const style of Object.keys(gearSetups)) {
+    for (const slot of Object.keys(gearSetups[style])) {
+      const validSet = VALID_ITEMS_BY_SLOT[slot];
+      if (!validSet) continue;
+
+      gearSetups[style][slot] = gearSetups[style][slot].map(group => {
+        const seen = new Set();
+        const cleaned = [];
+
+        for (const item of group) {
+          const cleanedName = cleanItemName(item);
+          const isNA = cleanedName.toLowerCase() === 'n/a';
+
+          if (isNA && !seen.has('N/A')) {
+            cleaned.push('N/A');
+            seen.add('N/A');
+          } else if (validSet.has(cleanedName) && !seen.has(cleanedName)) {
+            cleaned.push(cleanedName);
+            seen.add(cleanedName);
+          }
+        }
+
+        return cleaned.length > 0 ? cleaned : ['N/A'];
+      });
+    }
+  }
+}
+
 function compactStringify(obj, indent = 2) {
   const json = JSON.stringify(obj, null, indent);
   return json.replace(/\[\s+((?:\s*"[^"]+",?\s*){1,6})\s+\]/g, (match, inner) => {
@@ -98,6 +164,7 @@ function mergeGearData(originalData, gearData) {
     moveAnyGodBlessingToEnd(merged.gear_setups[style]);
   }
 
+  dedupeAndFilterInvalid(merged.gear_setups);
   padSlotArraysToUniformLength(merged.gear_setups);
   return merged;
 }
