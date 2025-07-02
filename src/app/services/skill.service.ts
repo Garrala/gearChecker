@@ -5,8 +5,8 @@ import { Observable } from 'rxjs';
 export interface TrainingMethod {
   name: string;
   minLevel?: number;
-  xpHr?: number;
-  notes?: string;
+  maxLevel?: number;
+  intensity?: 'afk' | 'low' | 'medium' | 'high';
   disabled?: boolean; 
 }
 

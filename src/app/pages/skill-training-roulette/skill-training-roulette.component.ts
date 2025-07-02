@@ -35,6 +35,10 @@ export class SkillTrainingRouletteComponent implements OnInit {
   selectedAccountType: AccountType = 'members';
   highlightedMethodIndex: number | null = null;
   rolling: boolean = false;
+  currentLevel: number | null = null;
+  showAllMethods: boolean = false;
+  intensityOptions = ['afk', 'low', 'medium', 'high'];
+  selectedIntensity: string | null = null;
   
   isSkillListLoading = true;
   isRoulettePhase = false;
@@ -81,6 +85,7 @@ export class SkillTrainingRouletteComponent implements OnInit {
 	  this.carouselQueue = [];
 	  this.hasSpunSkill = false;
 	  this.hasSpunMethods = false;
+	  this.currentLevel = null;
 	}
   
 	spinTrainingMethods(): void {
@@ -140,7 +145,6 @@ export class SkillTrainingRouletteComponent implements OnInit {
   this.carouselQueue = [];
   this.hasSpunSkill = false;
   this.hasSpunMethods = false;
-
   const spinLength = 20;
   const rollPool = [...this.selectedSkills];
   for (let i = 0; i < spinLength; i++) {
@@ -174,6 +178,60 @@ setAccountType(type: AccountType): void {
 getWikiLink(): string {
   return this.selectedCard?.wikiLinks?.[this.selectedAccountType] || '#';
 }
+
+filterAvailableMethods(): void {
+  if (!this.selectedCard || this.currentLevel === null) return;
+
+  this.availableMethods = this.availableMethods.map(method => {
+    const min = method.minLevel ?? 1;
+    const max = method.maxLevel ?? 99;
+
+    return {
+      ...method,
+      disabled: this.currentLevel! < min || this.currentLevel! > max
+    };
+  });
+}
+
+onLevelInputChange(): void {
+  if (!this.selectedCard) return;
+
+  const methods = this.selectedCard.methods?.[this.selectedAccountType] || [];
+
+  this.availableMethods = methods.map(method => {
+    const min = method.minLevel ?? 1;
+    const max = method.maxLevel ?? 99;
+    const levelValid = !this.currentLevel || (this.currentLevel >= min && this.currentLevel <= max);
+    const intensityValid = !this.selectedIntensity || method.intensity === this.selectedIntensity;
+
+    return {
+      ...method,
+      disabled: !(levelValid && intensityValid),
+    };
+  });
+}
+
+
+toggleShowAllMethods(): void {
+  if (!this.selectedCard) return;
+
+  const methods = this.selectedCard.methods?.[this.selectedAccountType] || [];
+
+  if (this.showAllMethods) {
+    this.availableMethods = methods.map(method => ({
+      ...method,
+      disabled: false,
+    }));
+  } else {
+    this.onLevelInputChange();
+  }
+}
+
+setIntensity(value: string | null): void {
+  this.selectedIntensity = value;
+  this.onLevelInputChange(); // Re-filter methods
+}
+
 
 launchConfetti() {
     confetti({
