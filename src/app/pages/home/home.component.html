@@ -1,51 +1,18 @@
+<div class="homepage-wrapper" [ngStyle]="{'background-image': 'url(' + current.bg + ')'}">
+  <div class="overlay"></div>
+  <div class="center-content">
+    <ng-container *ngIf="hoveredIndex === 0; else featureContent">
+      <img src="./assets/misc-icons/Dragon_med_helm.png" alt="App Logo" class="logo" />
+      <h1 class="title">Gear Check</h1>
+      <p class="tagline">Know what to wear, before you’re there.</p>
+    </ng-container>
 
-<div class="home-container">
-  <div class="hero">
-    <img src="./assets/misc-icons/Dragon_med_helm.png" alt="App Logo" />
-    <h1>Gear Check</h1>
-    <p class="tagline">Know what to wear, before you’re there.</p>
-  </div>
-
-  <div class="feature-grid">
-    <!-- Gear Management -->
-    <div class="feature-card">
-      <h2>
-        <img class="feature-icon" src="./assets/misc-icons/Worn_Equipment.png" />
-        <span>Gear Management</span>
-      </h2>
-      <p>
-        Mark the weapons, armor, and gear you own.
-        Instantly see which setups work best for your inventory.
-        Import or export your gear list anytime.
-      </p>
-      <a routerLink="/gear" (click)="navigate('/gear', $event)" class="nav-link">Manage My Gear</a>
-    </div>
-
-    <!-- Beastiary -->
-    <div class="feature-card">
-      <h2>
-        <img class="feature-icon" src="./assets/misc-icons/Mr._Mordaut_chathead.png" />
-        <span>Beastiary</span>
-      </h2>
-      <p>
-        Browse every boss with detailed stats, weaknesses, and gear recommendations.
-        Tap any monster to dive into optimal setups and loadouts.
-      </p>
-      <a routerLink="/monster" (click)="navigate('/monster', $event)" class="nav-link">View Monsters</a>
-    </div>
-
-    <!-- Boss Roulette -->
-    <div class="feature-card">
-      <h2>
-        <img class="feature-icon" src="./assets/misc-icons/Mystery_box_detail.png" />
-        <span>Boss Roulette</span>
-      </h2>
-      <p>
-        Can't decide who to fight? Let the Mysterious Old Man choose for you.
-        Pick a few bosses and spin the wheel to reveal your next target.
-      </p>
-      <a routerLink="/roulette" (click)="navigate('/roulette', $event)" class="nav-link">Try the Roulette</a>
-    </div>
+    <ng-template #featureContent>
+      <h1 class="title">{{ current.title }}</h1>
+      <p class="description">{{ current.description }}</p>
+      <a class="action-button" (click)="navigate(current.link, $event)">
+        {{ current.cta }}
+      </a>
+    </ng-template>
   </div>
 </div>
-

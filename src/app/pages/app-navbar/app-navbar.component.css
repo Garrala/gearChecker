@@ -1,0 +1,64 @@
+.top-menu-bar {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 52px; /* fixed height for consistent layout */
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+
+.top-menu {
+  display: flex;
+  gap: 28px;
+  align-items: stretch; /* stretch children to fill height */
+  justify-content: center;
+  height: 100%; /* take full height of .top-menu-bar */
+}
+
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px; /* remove vertical padding */
+  height: 100%; /* full height of parent */
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+
+  .menu-item img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 2px;
+  }
+
+  .menu-item:hover,
+  .menu-item.active {
+    background: rgba(0, 100, 0, 0.85); /* much darker green with low transparency */
+    box-shadow: 0 0 6px rgba(0, 255, 0, 0.2);
+  }
+
+  .menu-item span {
+    transition: color 0.3s;
+  }
+
+  .menu-item.active span {
+    color: #b1fcb1;
+    text-shadow: 0 0 6px limegreen;
+  }
+
+.navbar-spacer {
+  display: block;
+  margin-bottom: 80px;
+}

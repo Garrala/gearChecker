@@ -1,162 +1,84 @@
-
-
-.home-container {
-  padding: 40px 20px;
+.homepage-wrapper {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   text-align: center;
-  max-width: 1600px;
-  width: 100%;
-  z-index: 1;
+  color: white;
 }
 
-.background-overlay {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 0;
-}
-
-.background-image {
-  position: relative;
-}
-
-.home-container {
-  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust darkness here */
   z-index: 1;
 }
 
-.hero img {
-  width: 64px;
-  height: 64px;
+.center-content {
+  position: relative;
+  z-index: 2;
 }
 
-.hero h1 {
+.center-content h1 {
   font-size: 3rem;
-  margin: 10px 0 0;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px #000;
 }
 
-.tagline {
-  font-style: italic;
-  color: #ccc;
+.center-content p {
+  max-width: 600px;
   font-size: 1.2rem;
-  margin-bottom: 40px;
+  text-shadow: 0 0 6px #000;
+  color: #e0e0e0;
+  margin: 0 auto 1.5rem;
 }
 
-/* 🟩 Three Columns on Desktop */
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  justify-content: center;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* 🧱 Card Style */
-.feature-card {
-  background-color: rgba(30, 30, 30, 0.95);
-  border: 1px solid #444;
-  border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0 0 10px #000;
-  transition: transform 0.2s ease-in-out;
-}
-
-  .feature-card:hover {
-    transform: scale(1.03);
-  }
-
-  .feature-card h2 {
-    color: limegreen;
-    font-size: 1.4rem;
-  }
-
-  .feature-card span {
-    color: white;
-  }
-
-  .feature-card p {
-    color: #ccc;
-    margin: 15px 0 25px;
-  }
-
-.nav-link {
-  display: block; /* make it a block element so width applies */
-  width: 90%;
-  max-width: 300px;
-  margin: 0 auto; /* center horizontally */
-  padding: 12px 18px;
-  background: linear-gradient(to bottom, #333, #111);
+.action-button {
+  padding: 12px 20px;
+  background: rgba(0, 0, 0, 0.7);
   color: white;
-  text-align: center;
-  border: 2px solid #666;
   border-radius: 6px;
-  font-weight: bold;
   text-decoration: none;
-  font-size: 14px;
-  text-transform: uppercase;
-  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
 
-  .nav-link:hover {
-    background: linear-gradient(to bottom, #444, #222);
-    border-color: rgba(0, 255, 0, 0.3);
-    color: white;
+  .action-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px limegreen;
   }
 
-  .nav-link:active {
-    background: rgba(0, 255, 0, 0.3);
-    border-color: rgba(0, 255, 0, 0.3);
-    transform: scale(1.05);
-    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5);
+.logo {
+  width: 80px; /* Increase size */
+  height: 80px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 8px black); /* Optional: helps it pop on dark bg */
+  transition: transform 0.3s ease;
+}
+
+  .logo:hover {
+    transform: scale(1.1); /* Optional: subtle hover effect */
   }
 
-
-.feature-icon {
-  width: 40px;
-  height: 40px;
-  vertical-align: middle;
-  margin-right: 8px;
-  border-radius: 4px;
-  object-fit: contain;
-}
-
-.home-button {
-  width: 100%;
-  max-width: 220px;
-  min-width: 180px;
-}
-
-button.home-button {
-  text-align: center;
-  margin: 0 auto;
-}
 .tagline {
-  font-style: italic;
-  color: #b1fcb1; /* light mint green */
-  font-size: 1.4rem;
-  text-shadow: 0 0 6px #59d659; /* cooler, less neon glow */
-  min-height: 1.5em;
-  transition: opacity 0.4s ease-in-out;
+  max-width: 600px;
+  font-size: 1.2rem;
+  margin: 0 auto 1.5rem;
+  color: #e0e0e0;
+  text-shadow: 0 0 6px #000, /* base dark glow for contrast */
+  0 0 12px limegreen, /* main glow effect */
+  0 0 16px limegreen;
+  transition: text-shadow 0.3s ease;
 }
 
-
-/* 📱 Mobile: Stack feature cards vertically */
-@media (max-width: 768px) {
-  .feature-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .tagline:hover {
+    text-shadow: 0 0 8px #000, 0 0 18px limegreen, 0 0 24px limegreen;
   }
-
-  .feature-card {
-    width: 70%;
-    max-width: 90vw;
-  }
-
-  .home-container {
-    padding: 0px;
-  }
-}

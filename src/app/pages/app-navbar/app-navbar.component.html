@@ -1,0 +1,14 @@
+<div [class.navbar-spacer]="!isHome"></div>
+
+<div class="top-menu-bar">
+  <div class="top-menu">
+    <div class="menu-item"
+         *ngFor="let f of features; let i = index"
+         [class.active]="isActive(i)"
+         (mouseover)="handleHover(i)"
+         (click)="router.navigate([f.link])">
+      <img [src]="f.icon" [alt]="f.title + ' Icon'" />
+      <span>{{ f.title }}</span>
+    </div>
+  </div>
+</div>
