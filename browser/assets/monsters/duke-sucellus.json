@@ -123,23 +123,20 @@
         [ "Torva full helm", "Neitiznot faceguard" ],
         [ "Void melee helm" ],
         [ "Blood moon helm" ],
-        [ "Helm of neitiznot" ],
-        [ "N/A" ]
+        [ "Helm of neitiznot" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
         [ "Amulet of torture" ],
         [ "Amulet of blood fury" ],
         [ "Amulet of fury" ],
-        [ "Amulet of glory" ],
-        [ "N/A" ]
+        [ "Amulet of glory" ]
       ],
       "Cape": [
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Soul cape", "Mythical cape" ],
         [ "Ardougne cloak 4" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -147,37 +144,32 @@
         [ "Torva platebody" ],
         [ "Bandos chestplate" ],
         [ "Elite void top", "Void knight top" ],
-        [ "Obsidian platebody" ],
-        [ "N/A" ]
+        [ "Obsidian platebody" ]
       ],
       "Legs": [
         [ "Oathplate legs" ],
         [ "Torva platelegs" ],
         [ "Bandos tassets" ],
         [ "Elite void robe", "Void knight robe" ],
-        [ "Obsidian platelegs" ],
-        [ "N/A" ]
+        [ "Obsidian platelegs" ]
       ],
       "Weapon": [
         [ "Scythe of Vitur" ],
         [ "Emberlight", "Soulreaper axe" ],
         [ "Noxious halberd", "Blade of Saeldor" ],
         [ "Arclight", "Zombie axe", "Abyssal whip" ],
-        [ "N/A" ],
-        [ "Abyssal dagger" ]
+        [ "N/A" ]
       ],
       "Shield": [
         [ "Avernic defender" ],
         [ "Dragon defender" ],
         [ "Dragonfire shield" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4", "Ghommal's lucky penny" ],
         [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -187,7 +179,6 @@
         [ "Barrows gloves", "Void knight gloves" ],
         [ "Rune gloves", "Regen bracelet" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
@@ -195,24 +186,21 @@
         [ "Echo boots" ],
         [ "Guardian boots" ],
         [ "Dragon boots" ],
-        [ "Climbing boots" ],
-        [ "N/A" ]
+        [ "Climbing boots" ]
       ],
       "Ring": [
         [ "Bellator ring", "Lightbearer" ],
         [ "Ultor ring" ],
         [ "Berserker ring (i)" ],
         [ "Ring of suffering (i)" ],
-        [ "Ring of shadows" ],
-        [ "N/A" ]
+        [ "Ring of shadows" ]
       ],
       "Special Attack": [
         [ "Bandos godsword" ],
         [ "Voidwaker" ],
         [ "Dragon claws", "Burning claws" ],
         [ "Crystal halberd", "Saradomin godsword" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Abyssal dagger", "Dragon dagger" ]
       ]
     }
   }
