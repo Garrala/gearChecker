@@ -1,14 +1,18 @@
 <div [class.navbar-spacer]="!isHome"></div>
+<button class="hamburger" (click)="toggleMenu()">
+  &#9776; <!-- Unicode hamburger menu icon -->
+</button>
 
-<div class="top-menu-bar">
-  <div class="top-menu">
+<div class="top-menu-bar" [class.open]="isMenuOpen">
+  <div class="top-menu" [class.open]="isMenuOpen">
     <div class="menu-item"
          *ngFor="let f of features; let i = index"
          [class.active]="isActive(i)"
          (mouseover)="handleHover(i)"
-         (click)="router.navigate([f.link])">
+         (click)="router.navigate([f.link]); isMenuOpen = false">
       <img [src]="f.icon" [alt]="f.title + ' Icon'" />
       <span>{{ f.title }}</span>
     </div>
   </div>
 </div>
+

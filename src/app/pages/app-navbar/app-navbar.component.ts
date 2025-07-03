@@ -14,6 +14,7 @@ export class AppNavbarComponent implements OnInit {
   @Input() isHome: boolean = false;
   @Input() hoveredIndex: number = 0;
   @Output() hoveredIndexChange = new EventEmitter<number>();
+  isMenuOpen: boolean = false;
 
   currentIndex: number = 0;
 
@@ -61,6 +62,9 @@ export class AppNavbarComponent implements OnInit {
     };
   }
 
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
   handleHover(index: number) {
     if (this.isHome) {
