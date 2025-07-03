@@ -46,7 +46,7 @@
   "gear_setups": {
     "Ranged": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
+        [ "Slayer helmet (i)", "Masori mask (f)" ],
         [ "Void ranger helm" ],
         [ "Crystal helm" ],
         [ "Robin hood hat" ],
@@ -91,8 +91,8 @@
         [ "Dragon arrows" ],
         [ "Amethyst arrows" ],
         [ "Rune arrows" ],
-        [ "Diamond dragon bolts (e)" ],
-        [ "Diamond bolts (e)" ]
+        [ "Diamond dragon bolts (e)", "Ruby dragon bolts (e)" ],
+        [ "Diamond bolts (e)", "Ruby bolts (e)" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
@@ -111,7 +111,7 @@
       "Ring": [
         [ "Venator ring" ],
         [ "Lightbearer" ],
-        [ "Ring of the gods (i)" ],
+        [ "Ring of the gods (i)", "Archers ring (i)" ],
         [ "Ring of shadows", "Brimstone ring" ],
         [ "Ring of endurance" ]
       ],
@@ -182,7 +182,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -268,7 +268,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -321,7 +321,7 @@
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Mythical cape" ],
-        [ "Soul cape", "Ardougne cloak 4" ],
+        [ "Soul cape", "Ardougne cloak 4", "Ardougne cloak 3" ],
         [ "Any Skillcape (t)", "Ardougne cloak 2" ]
       ],
       "Body": [
@@ -390,7 +390,7 @@
     },
     "Melee (Budget)": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
+        [ "Slayer helmet (i)", "Black mask (i)" ],
         [ "Helm of neitiznot" ],
         [ "N/A" ],
         [ "N/A" ],

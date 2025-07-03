@@ -65,30 +65,66 @@ async function fetchCorporealGearSetups(bossName, meta) {
   console.log(`\n🔧 Using custom handler for ${bossName}`);
   const gearSlices = fetchGearTabberHtml(bossName);
 
-  const styles = {
-    'Stat Draining': 'Stat Draining',
-    'Quick-Pool': 'Quick-Pool',
-    'Dolo': 'Dolo',
-    'Fewer stat drains': 'Fewer stat drains',
-    '3–7 players strategy': '3–7 Players',
-    'Mass strategy': 'Mass',
-    'Ranged': 'Ranged'
-  };
+  const expectedMappings = [
+    { from: 'solo melee', to: 'Stat Draining' },
+    { from: 'solo melee', to: 'Quick-Pool' },
+    { from: 'dolo', to: 'Dolo' },
+    { from: 'fewer stat drains', to: 'Fewer stat drains' },
+    { from: 'team melee', to: '3–7 players strategy' },
+    { from: 'melee masses', to: 'Mass strategy' },
+    { from: 'ranged masses', to: 'Ranged' }
+  ];
+
+  const normalize = s => s.toLowerCase().replace(/\s+/g, ' ').trim();
 
   const gear_setups = {};
   const auditIssues = [];
+  const used = new Array(expectedMappings.length).fill(false);
+  const matchCounts = {}; // Tracks how many of each label we've seen
 
-  for (const [labelMatch, styleName] of Object.entries(styles)) {
-    const slice = gearSlices.find(slice => slice.attr('data-title')?.includes(labelMatch));
-    if (!slice) {
-      auditIssues.push({ boss: bossName, issue: `Missing gear tab "${labelMatch}"` });
+  for (let i = 0; i < gearSlices.length; i++) {
+    const tab = gearSlices[i];
+    const rawLabel = tab.attr('data-title')?.trim() || `Unknown ${i + 1}`;
+    const normalized = normalize(rawLabel);
+
+    matchCounts[normalized] = (matchCounts[normalized] || 0) + 1;
+    const seenCount = matchCounts[normalized];
+
+    // Match based on order of appearance
+    let matchIndex = -1;
+    let seenSoFar = 0;
+    for (let j = 0; j < expectedMappings.length; j++) {
+      if (normalize(expectedMappings[j].from) === normalized) {
+        seenSoFar++;
+        if (seenSoFar === seenCount && !used[j]) {
+          matchIndex = j;
+          break;
+        }
+      }
+    }
+
+
+    if (matchIndex === -1) {
+      auditIssues.push({ boss: bossName, issue: `Unexpected or duplicate tab "${rawLabel}"` });
       continue;
     }
 
-    const $tab = cheerio.load(slice.html());
+    const styleName = expectedMappings[matchIndex].to;
+    used[matchIndex] = true;
+
+    const $tab = cheerio.load(tab.html());
     const gear = extractGearFromSlice($tab, styleName, bossName);
     ensureAllSlotsPresent(gear, styleName, bossName, metadata);
     gear_setups[styleName] = gear;
+  }
+
+  const missingStyles = expectedMappings
+    .map((map, idx) => (!used[idx] ? map.to : null))
+    .filter(Boolean);
+
+  if (missingStyles.length > 0) {
+    auditIssues.push({ boss: bossName, missing_tabs: missingStyles });
+    console.warn(`⚠️ Missing tabs for ${bossName}:`, missingStyles);
   }
 
   const output = {
@@ -96,7 +132,7 @@ async function fetchCorporealGearSetups(bossName, meta) {
     category: meta.category || '',
     wiki_link: meta.wiki_link,
     gear_setups,
-    missing_styles: []
+    missing_styles: missingStyles
   };
 
   const fileName = bossName.replace(/\s+/g, '-').toLowerCase() + '.json';
@@ -105,6 +141,10 @@ async function fetchCorporealGearSetups(bossName, meta) {
 
   return auditIssues;
 }
+
+
+
+
 
 async function fetchKalphiteQueenGearSetups(bossName, meta) {
   console.log(`\n🔧 Using custom handler for ${bossName}`);

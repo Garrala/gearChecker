@@ -122,7 +122,7 @@
   "gear_setups": {
     "Tribrid (Solo)": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
+        [ "Slayer helmet (i)", "Black mask (i)" ],
         [ "Torva full helm", "Serpentine helm" ],
         [ "Neitiznot faceguard" ],
         [ "Crystal helm" ],
@@ -158,7 +158,7 @@
       ],
       "Weapon": [
         [ "Scythe of Vitur", "Tumeken's shadow", "Twisted bow" ],
-        [ "Sanguinesti staff", "Toxic blowpipe" ],
+        [ "Sanguinesti staff", "Toxic blowpipe", "Inquisitor's mace", "Ghrazi rapier", "Noxious halberd" ],
         [ "Osmumten's fang", "Abyssal tentacle", "Trident of the swamp", "Bow of Faerdhinen" ],
         [ "Abyssal whip", "Trident of the seas", "Eclipse atlatl", "Hunters' sunlight crossbow" ],
         [ "Zombie axe", "Warped sceptre", "Iban's staff", "Crystal bow", "Magic shortbow (i)" ]
@@ -171,9 +171,9 @@
         [ "Crystal shield", "Toktz-ket-xil" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Moonlight antler bolts" ],
+        [ "Dragon arrows", "Moonlight antler bolts", "Amethyst arrows" ],
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -208,7 +208,7 @@
     },
     "Magic (Rex only)": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
+        [ "Slayer helmet (i)", "Black mask (i)" ],
         [ "Justiciar faceguard" ],
         [ "Serpentine helm" ],
         [ "Any Barrows tank helm" ],
@@ -258,7 +258,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -282,7 +282,7 @@
         [ "Ring of the gods (i)" ],
         [ "Brimstone ring" ],
         [ "Ring of shadows" ],
-        [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
+        [ "Explorer's ring 4", "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
       ],
       "Special Attack": [
         [ "N/A" ],
@@ -294,7 +294,7 @@
     },
     "Ranged (Prime only)": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
+        [ "Slayer helmet (i)", "Black mask (i)" ],
         [ "Masori mask (f)", "Justiciar faceguard" ],
         [ "Crystal helm" ],
         [ "Any Barrows tank helm" ],
@@ -329,7 +329,7 @@
         [ "Black d'hide chaps" ]
       ],
       "Weapon": [
-        [ "Twisted bow" ],
+        [ "Twisted bow", "Bow of Faerdhinen" ],
         [ "Toxic blowpipe" ],
         [ "Crystal bow" ],
         [ "Hunters' sunlight crossbow" ],
@@ -343,8 +343,8 @@
         [ "Rune kiteshield" ]
       ],
       "Ammo": [
-        [ "Dragon arrows" ],
-        [ "Rada's blessing 3", "Any God blessing" ],
+        [ "Dragon arrows", "Amethyst arrows" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "Moonlight antler bolts" ],
         [ "Diamond bolts (e)" ],
         [ "Runite bolts" ]
@@ -368,7 +368,7 @@
         [ "Archers ring (i)", "Ring of shadows" ],
         [ "Brimstone ring" ],
         [ "Ring of the gods (i)" ],
-        [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
+        [ "Explorer's ring 4", "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
       ],
       "Special Attack": [
         [ "Toxic blowpipe" ],

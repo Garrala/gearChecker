@@ -128,6 +128,10 @@
     "correct_slot": "Cape",
     "alias": [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ]
   },
+  "Ardougne cloak 4/3": {
+    "correct_slot": "Cape",
+    "alias": [ "Ardougne cloak 4", "Ardougne cloak 3" ]
+  },
 
   "Cape of accomplishment": {
     "correct_slot": "Cape",
@@ -401,6 +405,10 @@
     "correct_slot": "Special Attack",
     "alias": "Dragon dagger"
   },
+  "Abyssal dagger(p)": {
+    "correct_slot": "Special Attack",
+    "alias": "Abyssal dagger"
+  },
 
 
 
@@ -433,11 +441,6 @@
     "correct_slot": "Weapon",
     "alias": "Magic shortbow (i)"
   },
-  "Abyssal dagger(p)": {
-    "correct_slot": "Weapon",
-    "alias": "Abyssal dagger"
-  },
-
   "Bone dagger(p)": {
     "correct_slot": "Weapon",
     "alias": "Bone dagger"

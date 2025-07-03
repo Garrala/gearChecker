@@ -86,7 +86,7 @@
         [ "Ghrazi rapier" ],
         [ "Noxious halberd" ],
         [ "Zamorakian hasta" ],
-        [ "Abyssal dagger" ]
+        [ "N/A" ]
       ],
       "Shield": [
         [ "Dragonfire shield" ],
@@ -125,7 +125,7 @@
       ],
       "Special Attack": [
         [ "N/A" ],
-        [ "N/A" ],
+        [ "Abyssal dagger" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -172,7 +172,7 @@
         [ "Osmumten's fang" ],
         [ "Ghrazi rapier" ],
         [ "Zamorakian hasta" ],
-        [ "Abyssal dagger" ]
+        [ "N/A" ]
       ],
       "Shield": [
         [ "Avernic defender", "Dragonfire shield" ],
@@ -211,7 +211,7 @@
       ],
       "Special Attack": [
         [ "N/A" ],
-        [ "N/A" ],
+        [ "Abyssal dagger" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]

@@ -10,6 +10,7 @@ const steps = [
   { name: 'Initial gear transform (for audit)', script: 'transformGearData.js' },
   { name: 'Apply manual fixes', script: 'applyManualFixes.js' },
   { name: 'Final gear transform (after fixes)', script: 'transformGearData.js' },
+  { name: 'Final override', script: 'applyFinalOverrides.js' },
   { name: 'Merging stats + gear', script: 'mergeData.js' },
   { name: 'Replacing final gear files', script: 'replaceWithFinalGear.js' },
   { name: 'Cleanup staging files', script: 'cleanupStaging.js' }
@@ -59,7 +60,7 @@ function diffPreviewDir(newDir, oldDir) {
 
 (async () => {
   // Fetch and parse data
-  runStep(steps[0].name, steps[0].script); // HTML dumps
+  //runStep(steps[0].name, steps[0].script); // HTML dumps
   runStep(steps[1].name, steps[1].script); // Boss stats
   runStep(steps[2].name, steps[2].script); // Gear setups
 
@@ -73,8 +74,8 @@ function diffPreviewDir(newDir, oldDir) {
   runStep(steps[5].name, steps[5].script); // Final transform
 
   // Merge and preview
-  runStep(steps[6].name, steps[6].script); // Merge stats + gear
-
+  runStep(steps[6].name, steps[6].script); // final gear overrides
+  runStep(steps[7].name, steps[7].script); // Merge stats + gear
   const newDir = path.join(__dirname, 'staging', 'merged_boss_data');
   const currentDir = path.join(__dirname, '..', 'src', 'assets', 'monsters');
   diffPreviewDir(newDir, currentDir);
@@ -82,8 +83,8 @@ function diffPreviewDir(newDir, oldDir) {
   await pause('Final review before replacing live monster files');
 
   // Replace and cleanup
-  runStep(steps[7].name, steps[7].script); // Replace live files
-  runStep(steps[8].name, steps[8].script); // Cleanup
+  runStep(steps[8].name, steps[8].script); // Replace live files
+  //runStep(steps[9].name, steps[9].script); // Cleanup
 
   console.log('\n🎉 Pipeline complete.');
   rl.close();

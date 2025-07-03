@@ -224,6 +224,236 @@
         }
       ]
     }
+  },
+  "dagannoth-kings": {
+    "Tribrid (Solo)": {
+      "Helmet": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Black mask (i)"
+      },
+      "Weapon": [
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Inquisitor's mace"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Ghrazi rapier"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Blade of saeldor"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Noxious halberd"
+        }
+      ],
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Amethyst arrows"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Rada's blessing 2"
+        }
+      ]
+    },
+    "Magic (Rex only)": {
+      "Helmet": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Black mask (i)"
+      },
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Rada's blessing 2"
+      }
+    },
+    "Ranged (Prime only)": {
+      "Helmet": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Black mask (i)"
+      },
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Amethyst arrows"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Rada's blessing 2"
+        }
+      ],
+      "Weapon": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Bow of Faerdhinen"
+      }
+    }
+  },
+  "deranged-archaeologist": {
+    "Cape": [
+      {
+        "mode": "patch_join",
+        "insert_at": 2,
+        "item": "Ardougne cloak 4"
+      },
+      {
+        "mode": "patch_join",
+        "insert_at": 2,
+        "item": "Ardougne cloak 3"
+      }
+    ]
+  },
+  "duke-sucellus": {
+    "Melee": {
+      "Special Attack": {
+        "mode": "patch_join",
+        "insert_at": 4,
+        "item": "Dragon dagger"
+      }
+    }
+  },
+  "general-graardor": {
+    "Solo (Magic)": {
+      "Helmet": [
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Blue moon helm"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Dagon'hai hat"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Bloodbark helm"
+        }
+      ],
+      "Body": [
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Blue moon chestplate"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Dagon'hai robe top"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Bloodbark body"
+        }
+      ],
+      "Legs": [
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Blue moon tassets"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Dagon'hai robe bottom"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Bloodbark legs"
+        }
+      ],
+      "Ring": {
+        "mode": "patch_join",
+        "insert_at": 3,
+        "item": "Ring of suffering (i)"
+      }
+    },
+    "Ranged (6:0)": {
+      "Ring": {
+        "mode": "patch_join",
+        "insert_at": 4,
+        "item": "Ring of suffering (i)"
+      }
+    }
+  },
+  "giant-mole": {
+    "Ranged": {
+      "Helmet": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Masori mask (f)"
+      },
+      "Ring": {
+        "mode": "patch_join",
+        "insert_at": 2,
+        "item": "Archers ring (i)"
+      },
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Ruby dragon bolts (e)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 4,
+          "item": "Ruby bolts (e)"
+        }
+      ]
+    },
+    "Magic": {
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Rada's blessing 2"
+      }
+    },
+    "Melee": {
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Rada's blessing 2"
+      }
+    },
+    "Melee (Dharok's)": {
+      "Cape": [
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Ardougne cloak 3"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 4,
+          "item": "Any God vestament cloak"
+        }
+      ]
+    },
+    "Melee (Budget)": {
+      "Helmet": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Black mask (i)"
+      }
+    }
   }
 }
 

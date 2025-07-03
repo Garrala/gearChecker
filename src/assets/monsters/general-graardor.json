@@ -39,7 +39,9 @@
         "cannons": true,
         "thralls": true
       },
-      "weaknesses": "none"
+      "weaknesses": {
+        "earth": "40%"
+      }
     }
   ],
   "gear_setups": {
@@ -478,7 +480,7 @@
         [ "Slayer helmet (i)" ],
         [ "Ancestral hat" ],
         [ "Virtus mask" ],
-        [ "Ahrim's hood" ],
+        [ "Ahrim's hood", "Blue moon helm", "Dagon'hai hat", "Bloodbark helm" ],
         [ "N/A" ]
       ],
       "Amulet": [
@@ -499,14 +501,14 @@
         [ "Ancestral robe top" ],
         [ "Virtus robe top" ],
         [ "Ahrim's robetop" ],
-        [ "N/A" ],
+        [ "N/A", "Blue moon chestplate", "Dagon'hai robe top", "Bloodbark body" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ],
         [ "Ahrim's robeskirt" ],
-        [ "N/A" ],
+        [ "N/A", "Blue moon tassets", "Dagon'hai robe bottom", "Bloodbark legs" ],
         [ "N/A" ]
       ],
       "Weapon": [
@@ -548,7 +550,7 @@
         [ "Magus ring" ],
         [ "Seers ring (i)" ],
         [ "Brimstone ring" ],
-        [ "Ring of the gods (i)" ],
+        [ "Ring of the gods (i)", "Ring of suffering (i)" ],
         [ "N/A" ]
       ],
       "Special Attack": [
@@ -635,7 +637,7 @@
         [ "Archers ring (i)" ],
         [ "Ring of shadows" ],
         [ "Brimstone ring" ],
-        [ "Ring of the gods (i)" ]
+        [ "Ring of the gods (i)", "Ring of suffering (i)" ]
       ],
       "Special Attack": [
         [ "Toxic blowpipe" ],
