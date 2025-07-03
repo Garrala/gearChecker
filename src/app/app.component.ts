@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router'
 import { Router } from '@angular/router'
 import { CommonModule } from '@angular/common';
 import { AppNavbarComponent } from './pages/app-navbar/app-navbar.component';
-import { NavbarStateService } from './services/NavbarStateService';
+import { NavbarStateService } from './services/navbarStateService';
 
 
 @Component({

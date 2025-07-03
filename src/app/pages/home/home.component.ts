@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { AppNavbarComponent } from '../app-navbar/app-navbar.component';
-import { NavbarStateService } from '../../services/NavbarStateService';
+import { NavbarStateService } from '../../services/navbarStateService';
 
 
 @Component({
