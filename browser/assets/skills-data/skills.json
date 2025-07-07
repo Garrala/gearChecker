@@ -2,6 +2,7 @@
   {
     "name": "Agility",
     "icon": "assets/misc-icons/Agility_icon.png",
+    "slotIndex": 4,
     "wikiLinks": {
       "members": "https://oldschool.runescape.wiki/w/Agility_training_(members)",
       "ironman": "https://oldschool.runescape.wiki/w/Agility_training_(Ironman)",
@@ -12,128 +13,128 @@
         {
           "name": "Gnome Stronghold",
           "minLevel": 1,
-		  "maxLevel": 10,
-		  "intensity": "medium"
+          "maxLevel": 10,
+          "intensity": "medium"
         },
         {
           "name": "Draynor Rooftop",
           "minLevel": 1,
-		  "maxLevel": 20,
-		  "intensity": "medium"
+          "maxLevel": 20,
+          "intensity": "medium"
         },
         {
           "name": "Al Kharid Rooftop",
           "minLevel": 20,
-		  "maxLevel": 30,
-		  "intensity": "medium"
+          "maxLevel": 30,
+          "intensity": "medium"
         },
         {
           "name": "Varrock Rooftop",
           "minLevel": 30,
-		  "maxLevel": 40,
-		  "intensity": "medium"
+          "maxLevel": 40,
+          "intensity": "medium"
         },
         {
           "name": "Canifis Rooftop",
           "minLevel": 40,
-		  "maxLevel": 60,
-		  "intensity": "medium"
+          "maxLevel": 60,
+          "intensity": "medium"
         },
         {
           "name": "Falador Rooftop",
           "minLevel": 50,
-		  "maxLevel": 60,
-		  "intensity": "medium"
+          "maxLevel": 60,
+          "intensity": "medium"
         },
         {
           "name": "Seers Rooftop",
           "minLevel": 60,
-		  "maxLevel": 70,
-		  "intensity": "medium"
+          "maxLevel": 70,
+          "intensity": "medium"
         },
         {
           "name": "Pollnivneach Rooftop",
           "minLevel": 70,
-		  "maxLevel": 90,
-		  "intensity": "medium"
+          "maxLevel": 90,
+          "intensity": "medium"
         },
         {
           "name": "Rellekka Rooftop",
           "minLevel": 80,
-		  "maxLevel": 90,
-		  "intensity": "medium"
+          "maxLevel": 90,
+          "intensity": "medium"
         },
         {
           "name": "Ardougne Rooftop",
           "minLevel": 90,
-		  "maxLevel": 99,
-		  "intensity": "medium"
+          "maxLevel": 99,
+          "intensity": "medium"
         },
         {
           "name": "Hallowed Sepulchre",
           "minLevel": 62,
-		  "maxLevel": 99,
-		  "intensity": "high"
+          "maxLevel": 99,
+          "intensity": "high"
         },
         {
           "name": "Brimhaven Agility Arena",
           "minLevel": 20,
-		  "maxLevel": 47,
-		  "intensity": "low"
+          "maxLevel": 47,
+          "intensity": "low"
         },
         {
           "name": "Wilderness Agility Course",
           "minLevel": 47,
-		  "maxLevel": 62,
-		  "intensity": "high"
+          "maxLevel": 62,
+          "intensity": "high"
         },
         {
           "name": "Edgeville Dungeon monkeybars",
           "minLevel": 15,
-		  "maxLevel": 40,
-		  "intensity": "high"
+          "maxLevel": 40,
+          "intensity": "high"
         },
         {
           "name": "Barbarian Fishing",
           "minLevel": 15,
-		  "maxLevel": 74,
-		  "intensity": "low"
+          "maxLevel": 74,
+          "intensity": "low"
         },
         {
           "name": "Agility Pyramid",
           "minLevel": 30,
-		  "maxLevel": 99,
-		  "intensity": "medium"
+          "maxLevel": 99,
+          "intensity": "medium"
         },
         {
           "name": "Ape Atoll Agility Course",
           "minLevel": 48,
-		  "maxLevel": 60,
-		  "intensity": "medium"
+          "maxLevel": 60,
+          "intensity": "medium"
         },
         {
           "name": "Shayzien Advanced Agility Course",
           "minLevel": 45,
-		  "maxLevel": 60,
-		  "intensity": "medium"
+          "maxLevel": 60,
+          "intensity": "medium"
         },
         {
           "name": "Colossal Wyrm Agility Course",
           "minLevel": 50,
-		  "maxLevel": 62,
-		  "intensity": "medium"
+          "maxLevel": 62,
+          "intensity": "medium"
         },
         {
           "name": "Werewolf Agility Course",
           "minLevel": 60,
-		  "maxLevel": 90,
-		  "intensity": "medium"
+          "maxLevel": 90,
+          "intensity": "medium"
         },
         {
           "name": "Prifddinas Agility Course",
           "minLevel": 75,
-		  "maxLevel": 99,
-		  "intensity": "medium"
+          "maxLevel": 99,
+          "intensity": "medium"
         }
       ],
       "ironman": [
@@ -161,6 +162,7 @@
   {
     "name": "Firemaking",
     "icon": "assets/misc-icons/Firemaking_icon.png",
+    "slotIndex": 14,
     "wikiLinks": {
       "members": "https://oldschool.runescape.wiki/w/Firemaking_training",
       "ironman": "https://oldschool.runescape.wiki/w/Firemaking_training_(Ironman)",
@@ -201,6 +203,7 @@
   {
     "name": "Cooking",
     "icon": "assets/misc-icons/Cooking_icon.png",
+    "slotIndex": 11,
     "wikiLinks": {
       "members": "https://oldschool.runescape.wiki/w/Cooking_training",
       "ironman": "https://oldschool.runescape.wiki/w/Cooking_training_(Ironman)",
@@ -232,6 +235,347 @@
           "minLevel": 15
         }
       ]
+    }
+  },
+  {
+    "name": "Attack",
+    "icon": "assets/misc-icons/Attack_icon.png",
+    "slotIndex": 0,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Attack_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Attack_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Attack_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Attack_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Strength",
+    "icon": "assets/misc-icons/Strength_icon.png",
+    "slotIndex": 3,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Strength_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Strength_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Strength_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Strength_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Defence",
+    "icon": "assets/misc-icons/Defence_icon.png",
+    "slotIndex": 6,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Defence_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Defence_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Defence_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Defence_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Ranged",
+    "icon": "assets/misc-icons/Ranged_icon.png",
+    "slotIndex": 9,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Ranged_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Ranged_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Ranged_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Ranged_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Prayer",
+    "icon": "assets/misc-icons/Prayer_icon.png",
+    "slotIndex": 12,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Prayer_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Prayer_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Prayer_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Prayer_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Magic",
+    "icon": "assets/misc-icons/Magic_icon.png",
+    "slotIndex": 15,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Magic_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Magic_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Magic_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Magic_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Runecraft",
+    "icon": "assets/misc-icons/Runecraft_icon.png",
+    "slotIndex": 18,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Runecraft_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Runecraft_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Runecraft_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Runecraft_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Construction",
+    "icon": "assets/misc-icons/Construction_icon.png",
+    "slotIndex": 21,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Construction_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Construction_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Construction_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Construction_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Hitpoints",
+    "icon": "assets/misc-icons/Hitpoints_icon.png",
+    "slotIndex": 1,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Hitpoints_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Hitpoints_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Hitpoints_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Hitpoints_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Crafting",
+    "icon": "assets/misc-icons/Crafting_icon.png",
+    "slotIndex": 13,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Crafting_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Crafting_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Crafting_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Crafting_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Mining",
+    "icon": "assets/misc-icons/Mining_icon.png",
+    "slotIndex": 2,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Mining_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Mining_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Mining_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Mining_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Smithing",
+    "icon": "assets/misc-icons/Smithing_icon.png",
+    "slotIndex": 5,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Smithing_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Smithing_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Smithing_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Smithing_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Fishing",
+    "icon": "assets/misc-icons/Fishing_icon.png",
+    "slotIndex": 8,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Fishing_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Fishing_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Fishing_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Fishing_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+
+  {
+    "name": "Woodcutting",
+    "icon": "assets/misc-icons/Woodcutting_icon.png",
+    "slotIndex": 17,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Woodcutting_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Woodcutting_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Woodcutting_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Woodcutting_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Fletching",
+    "icon": "assets/misc-icons/Fletching_icon.png",
+    "slotIndex": 16,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Fletching_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Fletching_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Fletching_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Fletching_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Slayer",
+    "icon": "assets/misc-icons/Slayer_icon.png",
+    "slotIndex": 19,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Slayer_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Slayer_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Slayer_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Slayer_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Hunter",
+    "icon": "assets/misc-icons/Hunter_icon.png",
+    "slotIndex": 22,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Hunter_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Hunter_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Hunter_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Hunter_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Thieving",
+    "icon": "assets/misc-icons/Thieving_icon.png",
+    "slotIndex": 10,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Thieving_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Thieving_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Thieving_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Thieving_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Farming",
+    "icon": "assets/misc-icons/Farming_icon.png",
+    "slotIndex": 20,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Farming_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Farming_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Farming_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Farming_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
+    }
+  },
+  {
+    "name": "Herblore",
+    "icon": "assets/misc-icons/Herblore_icon.png",
+    "slotIndex": 7,
+    "wikiLinks": {
+      "members": "https://oldschool.runescape.wiki/w/Herblore_training",
+      "ironman": "https://oldschool.runescape.wiki/w/Herblore_training_(Ironman)",
+      "ultimate": "https://oldschool.runescape.wiki/w/Herblore_training_(Ultimate_Ironman)",
+      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Herblore_training"
+    },
+    "methods": {
+      "members": [],
+      "ironman": [],
+      "ultimate": [],
+      "f2p": []
     }
   }
 ]
