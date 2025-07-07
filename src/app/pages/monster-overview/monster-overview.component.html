@@ -41,13 +41,12 @@
 
     <!-- Boss Selector -->
     <div class="boss-picker">
-      <div
-        *ngFor="let monster of filteredMonsters()"
-        class="monster-box"
-        [class.selected]="monster === selectedMonster"
-        (click)="selectMonster(monster)"
-      >
-        <img [src]="monster.image" alt="{{ monster.name }}" />
+      <div *ngFor="let monster of filteredMonsters()"
+           class="monster-box"
+           [class.selected]="monster === selectedMonster"
+           (click)="selectMonster(monster)">
+        <img [src]="getMonsterImage(monster)" alt="{{ monster.name }}" (error)="handleImageError($event)" />
+
         <p>{{ getCleanBossName(monster.name) }}</p>
       </div>
     </div>
@@ -72,10 +71,9 @@
           </button>
         </div>
         <div class="icon-container">
-          <img
-            [src]="getSelectedBoss()?.image"
-            alt="{{ getSelectedBoss()?.name }}"
-          />
+          <img [src]="getSafeBossImage(getSelectedBoss())"
+               alt="{{ getSelectedBoss()?.name }}"
+               (error)="handleImageError($event)" />
           <a
             [href]="getSelectedBoss()?.wiki_link"
             target="_blank"

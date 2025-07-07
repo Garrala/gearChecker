@@ -416,9 +416,12 @@ export class MonsterOverviewComponent implements OnInit {
   }
 
   handleImageError(event: Event) {
-    const target = event.target as HTMLImageElement
-    target.src = 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c' // Replace with your fallback image
+    const target = event.target as HTMLImageElement;
+    const brokenSrc = target.src;
+    console.warn(`Image failed to load: ${brokenSrc}`);
+    target.src = 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c'; // or your local fallback
   }
+
 
   /** ✅ Checks if the selected monster has multiple bosses **/
   isMultiBoss(monster: Monster | null): boolean {
@@ -655,6 +658,16 @@ export class MonsterOverviewComponent implements OnInit {
       const idxB = override.findIndex(s => b.name.toLowerCase().includes(s));
       return idxA - idxB;
     });
+  }
+
+  getMonsterImage(monster: Monster): string {
+    // Return first boss phase image if available
+    const primaryPhase = this.getOrderedBossPhases(monster)[0];
+    return primaryPhase?.image || monster.image;
+  }
+
+  getSafeBossImage(boss: Monster['bosses'][0] | null): string {
+    return boss?.image || 'https://oldschool.runescape.wiki/images/Bank_filler.png?f928c';
   }
 
   handleKeyDown(event: KeyboardEvent) {
