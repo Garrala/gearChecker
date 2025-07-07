@@ -1,153 +1,116 @@
 <!-- Skill Selection Phase -->
 <div *ngIf="!isRoulettePhase">
-  <div *ngIf="isSkillListLoading" class="spinner-container">
-    <div class="spinner"></div>
-  </div>
-
-  <div *ngIf="!isSkillListLoading">
-    <h1>Select Skills for the Roulette</h1>
-
-    <div class="start-roulette-container">
-      <button class="app-button" [disabled]="selectedSkills.length < 1" (click)="startRoulette()">
-        Start Roulette
-      </button>
-    </div>
-
-    <div class="skill-picker">
-      <div
-        *ngFor="let skill of skills"
-        class="skill-box"
-        [class.selected]="skill.selected"
-        (click)="toggleSkillSelection(skill)"
-      >
-        <img [src]="skill.icon" [alt]="skill.name" />
-        <span>{{ skill.name }}</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Roulette Phase -->
-<div *ngIf="isRoulettePhase">
-  <!-- Spinning Animation -->
-  <div class="roulette-carousel" *ngIf="!selectedCard">
-    <div class="carousel-track" [class.spin]="isSpinning">
-      <div class="carousel-item" *ngFor="let skill of carouselQueue">
-        <img [src]="skill.icon" [alt]="skill.name" />
-        <p>{{ skill.name }}</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- After Skill Is Selected -->
-  <div *ngIf="selectedCard" class="training-methods">
-    <h2 class="selected-skill-heading">
-	  Selected Skill: {{ selectedCard.name }}
-	</h2>
-	<img
-		[src]="selectedCard.icon"
-		[alt]="selectedCard.name"
-		width="32"
-		height="32"
-		class="skill-box"
-	  />
-
-
-    <p>Select your account type:</p>
-    <div class="category-selector">
-      <button
-        *ngFor="let type of accountTypes"
-        [class.active]="selectedAccountType === type"
-        (click)="setAccountType(type)"
-      >
-        {{ type | titlecase }}
-      </button>
-    </div>
-	
-	<div class="intensity-buttons">
-	  <p>Filter by Intensity:</p>
-	  <div class="category-selector">
-		<button
-		  [class.active]="selectedIntensity === null"
-		  (click)="setIntensity(null)"
-		>
-		  All
-		</button>
-		<button
-		  *ngFor="let intensity of intensityOptions"
-		  [class.active]="selectedIntensity === intensity"
-		  (click)="setIntensity(intensity)"
-		>
-		  {{
-			intensity === 'afk' ? '💤 AFK' :
-			intensity === 'low' ? '🟢 Low' :
-			intensity === 'medium' ? '🟡 Medium' :
-			'🔴 High'
-		  }}
-		</button>
-	  </div>
+	<div *ngIf="isSkillListLoading" class="spinner-container">
+		<div class="spinner"></div>
 	</div>
 
-
-    <a
-      class="wiki-link"
-      [href]="getWikiLink()"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      📖 View Full Wiki Guide
-    </a>
-	
-	<div class="level-input">
-	  <label>
-		Your current level in {{ selectedCard.name }}:
-		<input
-		  type="number"
-		  min="1"
-		  max="99"
-		  [(ngModel)]="currentLevel"
-		  (ngModelChange)="onLevelInputChange()"
-		  placeholder="e.g. 52"
-		/>
-	  </label>
+	<div *ngIf="!isSkillListLoading">
+		<h1>Select Skills for the Roulette</h1>
+		<div class="start-roulette-container">
+			<button class="app-button" [disabled]="selectedSkills.length < 1" (click)="startSlotMachine()">Start Roulette</button>
+		</div>
+		<div class="skill-picker">
+			<div *ngFor="let skill of skills" class="skill-box" [class.selected]="skill.selected" (click)="toggleSkillSelection(skill)">
+				<img [src]="skill.icon" [alt]="skill.name" />
+				<span>{{ skill.name }}</span>
+			</div>
+		</div>
 	</div>
-	
-    <p>Select which methods you're willing to do:</p>
-
-    <ng-container *ngFor="let method of availableMethods">
-	  <div
-		class="method-row"
-		*ngIf="showAllMethods || currentLevel === null || (method.minLevel ?? 1) <= currentLevel && currentLevel <= (method.maxLevel ?? 99)"
-		[class.selected]="!method.disabled"
-		[class.highlighted]="isMethodHighlighted(method)"
-		(click)="method.disabled = !method.disabled"
-	  >
-		<label style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-		  <!-- Left side: intensity icon and name -->
-		  <div>
-			<span class="method-intensity" *ngIf="method.intensity" style="margin-right: 10px; color: #ccc;">
-			  {{
-				method.intensity === 'afk' ? '💤' :
-				method.intensity === 'low' ? '🟢' :
-				method.intensity === 'medium' ? '🟡' :
-				method.intensity === 'high' ? '🔴' :
-				method.intensity
-			  }}
-			</span>
-			<span class="method-name">{{ method.name }}</span>
-		  </div>
-
-		  <!-- Right side: level range -->
-		  <div class="method-level" style="color: #ccc;">
-			Lvl {{ method.minLevel ?? '?' }} – {{ method.maxLevel ?? '?' }}
-		  </div>
-		</label>
-	  </div>
-	</ng-container>
-
-    <div class="category-selector">
-      <button (click)="spinTrainingMethods()">🎲 Spin for Training Method</button>
-      <button (click)="resetRoulette()">Back to Skill Select</button>
-    </div>
-  </div>
 </div>
+
+<!-- Roulette Slot Machine Phase -->
+<div *ngIf="isRoulettePhase" class="slot-wrapper">
+	<div class="slot-machine">
+		<!--<div class="selection-line"></div>-->
+		<div class="reel" *ngFor="let reel of [0,1,2]; let i = index">
+			<div class="reel-track"
+					 [style.transform]="getReelTransform(i)"
+					 [style.transition]="reelTransitionActive[i] ? 'transform 1s ease-out' : 'none'">
+				<div class="reel-item" *ngFor="let skill of reelQueue[i]">
+					<img [src]="skill.icon" />
+					<p>{{ skill.name }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<img class="crank-handle" src="/assets/misc-icons/crank.png" (click)="startSlotMachine()" alt="Pull Crank" />
+	<p>Reroll</p>
+</div>
+
+<!-- Final Skill and Method Phase -->
+<div *ngIf="resultReady && selectedCard" class="training-methods">
+	<div class="final-selected-card">
+		<img [src]="selectedCard.icon" [alt]="selectedCard.name" />
+		<h2>Selected Skill: {{ selectedCard.name }}</h2>
+	</div>
+
+	<div class="category-selector">
+		<button (click)="resetRoulette()">Back to Skill Select</button>
+	</div>
+
+		<p>Select your account type:</p>
+		<div class="category-selector">
+			<button *ngFor="let type of accountTypes"
+							[class.active]="selectedAccountType === type"
+							(click)="setAccountType(type)">
+				{{ type | titlecase }}
+			</button>
+		</div>
+
+		<div class="intensity-buttons">
+			<p>Filter by Intensity:</p>
+			<div class="category-selector">
+				<button [class.active]="selectedIntensity === null" (click)="setIntensity(null)">All</button>
+				<button *ngFor="let intensity of intensityOptions"
+								[class.active]="selectedIntensity === intensity"
+								(click)="setIntensity(intensity)">
+					{{
+          intensity === 'afk' ? '💤 AFK' :
+          intensity === 'low' ? '🟢 Low' :
+          intensity === 'medium' ? '🟡 Medium' :
+          '🔴 High'
+					}}
+				</button>
+			</div>
+		</div>
+
+		<a class="wiki-link" [href]="getWikiLink()" target="_blank" rel="noopener noreferrer">📖 View Full Wiki Guide</a>
+
+		<div class="level-input">
+			<label>
+				Your current level in {{ selectedCard.name }}:
+				<input type="number" min="1" max="99" [(ngModel)]="currentLevel" (ngModelChange)="onLevelInputChange()" placeholder="e.g. 52" />
+			</label>
+		</div>
+
+		<p>Select which methods you're willing to do:</p>
+		<ng-container *ngFor="let method of availableMethods">
+			<div class="method-row"
+					 [class.selected]="!method.disabled"
+					 [class.highlighted]="isMethodHighlighted(method)"
+					 (click)="method.disabled = !method.disabled">
+				<label style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+					<div>
+						<span class="method-intensity" *ngIf="method.intensity" style="margin-right: 10px; color: #ccc;">
+							{{
+              method.intensity === 'afk' ? '💤' :
+              method.intensity === 'low' ? '🟢' :
+              method.intensity === 'medium' ? '🟡' :
+              method.intensity === 'high' ? '🔴' :
+              method.intensity
+							}}
+						</span>
+						<span class="method-name">{{ method.name }}</span>
+					</div>
+					<div class="method-level" style="color: #ccc;">
+						Lvl {{ method.minLevel ?? '?' }} – {{ method.maxLevel ?? '?' }}
+					</div>
+				</label>
+			</div>
+		</ng-container>
+
+		<div class="category-selector">
+			<button (click)="spinTrainingMethods()">🎲 Spin for Training Method</button>
+			<button (click)="resetRoulette()">Back to Skill Select</button>
+		</div>
+	</div>

@@ -22,247 +22,207 @@ type AccountType = 'members' | 'ironman' | 'ultimate' | 'f2p';
 export class SkillTrainingRouletteComponent implements OnInit {
   skills: Skill[] = [];
   selectedSkills: Skill[] = [];
-  rouletteChoices: Skill[] = [];
-  revealedSkills: Skill[] = [];
   selectedCard: Skill | null = null;
-  carouselQueue: Skill[] = [];
-  isSpinning = false;
+  reelQueue: Skill[][] = [[], [], []];
+  reelOffsets: number[] = [0, 0, 0];
+  reelTransitionActive: boolean[] = [false, false, false];
+  resultReady = false;
+  isSkillListLoading = true;
+  isRoulettePhase = false;
   availableMethods: ExtendedTrainingMethod[] = [];
   selectedMethods: ExtendedTrainingMethod[] = [];
-  hasSpunSkill: boolean = false;
-  hasSpunMethods: boolean = false;
+  hasSpunMethods = false;
   accountTypes: AccountType[] = ['members', 'ironman', 'ultimate', 'f2p'];
   selectedAccountType: AccountType = 'members';
   highlightedMethodIndex: number | null = null;
-  rolling: boolean = false;
+  rolling = false;
   currentLevel: number | null = null;
-  showAllMethods: boolean = false;
+  showAllMethods = false;
   intensityOptions = ['afk', 'low', 'medium', 'high'];
   selectedIntensity: string | null = null;
-  
-  isSkillListLoading = true;
-  isRoulettePhase = false;
 
-  constructor(private http: HttpClient, private skillService: SkillService) {}
+  constructor(private http: HttpClient, private skillService: SkillService) { }
+
   ngOnInit(): void {
-  this.skillService.getSkills().subscribe((data) => {
-    this.skills = data.map(skill => ({ ...skill, selected: false }));
-    this.isSkillListLoading = false;
-  });
-}
+    this.skillService.getSkills().subscribe((data) => {
+      this.skills = data.map(skill => ({ ...skill, selected: false }));
+      this.isSkillListLoading = false;
+    });
+  }
 
   toggleSkillSelection(skill: Skill): void {
     skill.selected = !skill.selected;
     this.selectedSkills = this.skills.filter((s) => s.selected);
   }
 
-  revealSkill(skill: Skill): void {
-    if (this.selectedCard) return;
-
-    this.selectedCard = skill;
-    this.revealedSkills = [skill];
-    this.selectedMethods = this.randomizeMethods(skill);
-
-    setTimeout(() => {
-      this.revealedSkills = [...this.rouletteChoices];
-      
-    }, 500);
+  resetRoulette(): void {
+    this.isRoulettePhase = false;
+    this.selectedCard = null;
+    this.selectedMethods = [];
+    this.availableMethods = [];
+    this.hasSpunMethods = false;
+    this.currentLevel = null;
+    this.resultReady = false;
   }
 
-  
-  randomizeMethods(skill: Skill, count: number = 3): TrainingMethod[] {
-    const methodsForType = skill.methods?.[this.selectedAccountType] || [];
-    const shuffled = [...methodsForType].sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, Math.min(count, shuffled.length));
+  startSlotMachine(): void {
+    if (this.selectedSkills.length < 1) return;
+
+    this.isRoulettePhase = true;
+    this.selectedCard = null;
+    this.resultReady = false;
+    this.reelQueue = [[], [], []];
+    this.reelOffsets = [0, 0, 0];
+    this.reelTransitionActive = [false, false, false];
+
+    const winningSkill = this.selectedSkills[Math.floor(Math.random() * this.selectedSkills.length)];
+    this.selectedCard = winningSkill;
+
+    const visibleRows = 3;
+    const minFullSpins = 3;
+    const reelItemHeight = 100;
+    const selectedRow = 1; // Always middle row for clarity
+    const insertIndex = visibleRows * minFullSpins + selectedRow;
+
+    for (let i = 0; i < 3; i++) {
+      const filler = [];
+
+      // Make sure we never scroll past this index
+      while (filler.length < insertIndex + visibleRows) {
+        filler.push(...this.selectedSkills.filter(s => s !== winningSkill).sort(() => 0.5 - Math.random()));
+      }
+
+      // Inject winning skill at the chosen visible row
+      filler.splice(insertIndex, 0, winningSkill);
+
+      this.reelQueue[i] = filler;
+      this.reelOffsets[i] = 0;
+      this.reelTransitionActive[i] = false;
+
+      const delay = i * 600;
+      setTimeout(() => {
+        this.reelOffsets[i] = -insertIndex * reelItemHeight;
+        this.reelTransitionActive[i] = true;
+
+        if (i === 2) {
+          setTimeout(() => {
+            this.resultReady = true;
+            this.launchConfetti();
+          }, 1000);
+        }
+      }, delay);
+    }
   }
 
 
-    resetRoulette(): void {
-	  this.isRoulettePhase = false;
-	  this.selectedCard = null;
-	  this.selectedMethods = [];
-	  this.availableMethods = [];
-	  this.carouselQueue = [];
-	  this.hasSpunSkill = false;
-	  this.hasSpunMethods = false;
-	  this.currentLevel = null;
-	}
-  
-	spinTrainingMethods(): void {
-	  if (this.rolling) return;
-	  const enabled = this.availableMethods.filter((m) => !m.disabled);
-	  if (enabled.length === 0) return;
 
-	  this.rolling = true;
-	  this.highlightedMethodIndex = null;
-	  this.hasSpunMethods = false;
-
-	  const totalCycles = 2;
-	  const finalIndex = Math.floor(Math.random() * enabled.length);
-	  const totalSteps = totalCycles * enabled.length + finalIndex + 1;
-
-	  let currentStep = 0;
-
-	  // Updated easing curve (faster start)
-	  const easeOutQuad = (t: number) => t * (2 - t);
-
-	  const spinStep = () => {
-		const progress = currentStep / totalSteps;
-
-		// 🔧 Lower base delay + smaller range = faster spin
-		const easedDelay = 20 + easeOutQuad(progress) * 150;
-
-		this.highlightedMethodIndex = currentStep % enabled.length;
-		currentStep++;
-
-		if (currentStep < totalSteps) {
-		  setTimeout(spinStep, easedDelay);
-		} else {
-		  this.highlightedMethodIndex = finalIndex;
-		  this.rolling = false;
-		  this.hasSpunMethods = true;
-		   setTimeout(() => {
-			this.launchConfetti();
-		  }, 400);
-		}
-	  };
-
-	  spinStep();
-	}
-
-	isMethodHighlighted(method: TrainingMethod): boolean {
-	  if (this.highlightedMethodIndex === null) return false;
-	  const enabled = this.availableMethods.filter(m => !m.disabled);
-	  return method === enabled[this.highlightedMethodIndex];
-	}
-
-  startRoulette(): void {
-  if (this.selectedSkills.length < 1) return;
-
-  this.isRoulettePhase = true;
-  this.selectedCard = null;
-  this.selectedMethods = [];
-  this.carouselQueue = [];
-  this.hasSpunSkill = false;
-  this.hasSpunMethods = false;
-  const spinLength = 20;
-  const rollPool = [...this.selectedSkills];
-  for (let i = 0; i < spinLength; i++) {
-    const pick = rollPool[Math.floor(Math.random() * rollPool.length)];
-    this.carouselQueue.push(pick);
+  getReelTransform(index: number): string {
+    return `translateY(${this.reelOffsets[index]}px)`;
   }
 
-  this.isSpinning = true;
-
-  setTimeout(() => {
-    this.isSpinning = false;
-    this.selectedCard = this.carouselQueue[this.carouselQueue.length - 1];
-    const methodsForType = this.selectedCard.methods?.[this.selectedAccountType] || [];
-	this.availableMethods = methodsForType.map((m) => ({
-		...m,
-		disabled: false,
-	}));
-    this.hasSpunSkill = true;
-  }, 1500);
-}
-
-
-setAccountType(type: AccountType): void {
+  setAccountType(type: AccountType): void {
     this.selectedAccountType = type;
     const methodsForType = this.selectedCard?.methods?.[type] || [];
     this.availableMethods = methodsForType.map((m) => ({ ...m, disabled: false }));
     this.selectedMethods = [];
     this.hasSpunMethods = false;
+    this.onLevelInputChange(); // Filter based on level + intensity
   }
 
-getWikiLink(): string {
-  return this.selectedCard?.wikiLinks?.[this.selectedAccountType] || '#';
-}
+  getWikiLink(): string {
+    return this.selectedCard?.wikiLinks?.[this.selectedAccountType] || '#';
+  }
 
-filterAvailableMethods(): void {
-  if (!this.selectedCard || this.currentLevel === null) return;
+  onLevelInputChange(): void {
+    if (!this.selectedCard) return;
 
-  this.availableMethods = this.availableMethods.map(method => {
-    const min = method.minLevel ?? 1;
-    const max = method.maxLevel ?? 99;
+    const methods = this.selectedCard.methods?.[this.selectedAccountType] || [];
 
-    return {
-      ...method,
-      disabled: this.currentLevel! < min || this.currentLevel! > max
-    };
-  });
-}
+    this.availableMethods = methods.map(method => {
+      const min = method.minLevel ?? 1;
+      const max = method.maxLevel ?? 99;
+      const levelValid = !this.currentLevel || (this.currentLevel >= min && this.currentLevel <= max);
+      const intensityValid = !this.selectedIntensity || method.intensity === this.selectedIntensity;
 
-onLevelInputChange(): void {
-  if (!this.selectedCard) return;
+      return {
+        ...method,
+        disabled: !(levelValid && intensityValid),
+      };
+    });
+  }
 
-  const methods = this.selectedCard.methods?.[this.selectedAccountType] || [];
-
-  this.availableMethods = methods.map(method => {
-    const min = method.minLevel ?? 1;
-    const max = method.maxLevel ?? 99;
-    const levelValid = !this.currentLevel || (this.currentLevel >= min && this.currentLevel <= max);
-    const intensityValid = !this.selectedIntensity || method.intensity === this.selectedIntensity;
-
-    return {
-      ...method,
-      disabled: !(levelValid && intensityValid),
-    };
-  });
-}
-
-
-toggleShowAllMethods(): void {
-  if (!this.selectedCard) return;
-
-  const methods = this.selectedCard.methods?.[this.selectedAccountType] || [];
-
-  if (this.showAllMethods) {
+  toggleShowAllMethods(): void {
+    if (!this.selectedCard) return;
+    const methods = this.selectedCard.methods?.[this.selectedAccountType] || [];
     this.availableMethods = methods.map(method => ({
       ...method,
-      disabled: false,
+      disabled: !this.showAllMethods && this.currentLevel !== null && (
+        this.currentLevel < (method.minLevel ?? 1) || this.currentLevel > (method.maxLevel ?? 99)
+      )
     }));
-  } else {
+  }
+
+  setIntensity(value: string | null): void {
+    this.selectedIntensity = value;
     this.onLevelInputChange();
   }
-}
 
-setIntensity(value: string | null): void {
-  this.selectedIntensity = value;
-  this.onLevelInputChange(); // Re-filter methods
-}
+  spinTrainingMethods(): void {
+    if (this.rolling) return;
+    const enabled = this.availableMethods.filter(m => !m.disabled);
+    if (enabled.length === 0) return;
 
+    this.rolling = true;
+    this.highlightedMethodIndex = null;
+    this.hasSpunMethods = false;
 
-launchConfetti() {
-    confetti({
-      particleCount: 300, // More particles
-      spread: 180, // Wider spread across the screen
-      origin: { x: 0.5, y: 1.2 }, // Center it and start from bottom
-      startVelocity: 50, // Faster initial explosion
-      scalar: 2.5, // Large confetti pieces
-      ticks: 200, // Longer lifespan for each particle
-      colors: ['#ffcc00', '#ff5733', '#33ff57', '#3383ff', '#ff33a6'],
-    })
+    const totalCycles = 2;
+    const finalIndex = Math.floor(Math.random() * enabled.length);
+    const totalSteps = totalCycles * enabled.length + finalIndex + 1;
 
-    // Fire multiple bursts from different points
-    confetti({
-      particleCount: 150,
-      spread: 160,
-      origin: { x: 0.2, y: 1 }, // Left side
-      startVelocity: 40,
-      scalar: 2.8,
-      ticks: 180,
-      colors: ['#ffcc00', '#ff5733', '#33ff57', '#3383ff', '#ff33a6'],
-    })
+    let currentStep = 0;
+    const easeOutQuad = (t: number) => t * (2 - t);
 
-    confetti({
-      particleCount: 150,
-      spread: 160,
-      origin: { x: 0.8, y: 1 }, // Right side
-      startVelocity: 40,
-      scalar: 2.8,
-      ticks: 180,
-      colors: ['#ffcc00', '#ff5733', '#33ff57', '#3383ff', '#ff33a6'],
-    })
+    const spinStep = () => {
+      const progress = currentStep / totalSteps;
+      const easedDelay = 20 + easeOutQuad(progress) * 150;
+
+      this.highlightedMethodIndex = currentStep % enabled.length;
+      currentStep++;
+
+      if (currentStep < totalSteps) {
+        setTimeout(spinStep, easedDelay);
+      } else {
+        this.highlightedMethodIndex = finalIndex;
+        this.rolling = false;
+        this.hasSpunMethods = true;
+        setTimeout(() => this.launchConfetti(), 400);
+      }
+    };
+
+    spinStep();
+  }
+
+  isMethodHighlighted(method: TrainingMethod): boolean {
+    if (this.highlightedMethodIndex === null) return false;
+    const enabled = this.availableMethods.filter(m => !m.disabled);
+    return method === enabled[this.highlightedMethodIndex];
+  }
+
+  launchConfetti() {
+    const burst = (x: number) =>
+      confetti({
+        particleCount: 150,
+        spread: 180,
+        origin: { x, y: 1 },
+        startVelocity: 40,
+        scalar: 2.5,
+        ticks: 200,
+        colors: ['#ffcc00', '#ff5733', '#33ff57', '#3383ff', '#ff33a6'],
+      });
+
+    burst(0.5);
+    burst(0.2);
+    burst(0.8);
   }
 }

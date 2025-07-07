@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 
 export interface TrainingMethod {
   name: string;
@@ -20,6 +20,7 @@ export interface WikiLinks {
 export interface Skill {
   name: string;
   icon: string;
+  slotIndex: number;
   selected?: boolean;
   wikiLinks?: WikiLinks;
   methods: {
@@ -39,6 +40,12 @@ export class SkillService {
   constructor(private http: HttpClient) {}
 
   getSkills(): Observable<Skill[]> {
-    return this.http.get<Skill[]>(this.skillListUrl);
+    return this.http.get<Skill[]>(this.skillListUrl).pipe(
+      map(skills => skills
+        .map(skill => ({ ...skill, selected: false }))
+        .sort((a, b) => (a.slotIndex ?? 0) - (b.slotIndex ?? 0))
+      )
+    );
   }
+
 }

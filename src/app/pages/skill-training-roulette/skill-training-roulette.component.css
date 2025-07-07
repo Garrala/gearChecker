@@ -118,44 +118,54 @@
 }
 
 .skill-picker {
-  display: flex;
-  justify-content: center; /* Centers bosses in a row */
-  align-items: center;
-  gap: 15px; /* Space between each boss box */
-  flex-wrap: wrap; /* Allows wrapping if screen size is small */
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  justify-content: center;
+  max-width: 625px;
+  margin: 0 auto;
 }
 
 .skill-box {
-  width: 120px; /* Keep them smaller */
-  height: 140px;
-  background: rgba(255, 255, 255, 0.1);
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px;
+  width: 100%;
+  max-width: 180px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 6px 8px;
   cursor: pointer;
-  transition: 0.3s;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 12px;
+  transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+  border: 2px solid transparent;
 }
 
-.skill-box img {
-  width: 80px; /* Increase image size for better visibility */
-  height: 80px;
-  object-fit: contain;
-  border-radius: 5px;
-}
+  .skill-box img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
 
-.skill-box.selected {
-  border-color: limegreen;
-  background: rgba(0, 255, 0, 0.3);
-}
+  .skill-box span {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    flex-grow: 1;
+    text-align: left;
+  }
 
-.skill-box:hover {
-  transform: scale(1.1);
-}
+
+  .skill-box.selected {
+    background: rgba(0, 255, 0, 0.15);
+    border-color: limegreen;
+  }
+
+  .skill-box:hover {
+    transform: scale(1.03);
+    background: rgba(0, 255, 0, 0.15);
+  }
 
 .training-methods {
   display: flex;
@@ -463,14 +473,16 @@ button {
 
 .carousel-track {
   display: flex;
+  width: fit-content;
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
 
-.carousel-track.spin {
-  animation-name: slideLeft;
-}
+  .carousel-track.spin {
+    animation: slideLeft 2.5s linear infinite;
+  }
+
 
 @keyframes slideLeft {
   0% {
@@ -486,11 +498,48 @@ button {
   margin: 0 10px;
   text-align: center;
   color: white;
+  flex-shrink: 0; /* prevent collapsing on wrap */
 }
 
 .carousel-item img {
   width: 64px;
   height: 64px;
+}
+
+.final-selected-card {
+  margin-top: 24px;
+  text-align: center;
+  animation: pop 0.4s ease-in-out;
+}
+
+  .final-selected-card img {
+    width: 64px;
+    height: 64px;
+    border: 4px solid limegreen;
+    box-shadow: 0 0 12px limegreen;
+    border-radius: 6px;
+    background-color: #222;
+  }
+
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.carousel-item.final-selected {
+  border: 3px solid limegreen;
+  background-color: rgba(0, 255, 0, 0.1);
+  box-shadow: 0 0 15px limegreen;
+  border-radius: 8px;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
 
 .method-row {
@@ -558,6 +607,93 @@ button {
 }
 
 
+.slot-machine {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  height: 300px; /* shows 3 items */
+  overflow: hidden;
+  position: relative;
+  padding-left: 122px;
+}
+
+.reel {
+  width: 100px;
+  height: 98%;
+  overflow: hidden;
+  background-color: #222;
+  border: 2px solid #555;
+  border-radius: 10px;
+}
+
+.reel-track {
+  display: flex;
+  flex-direction: column;
+  transition: transform 1s ease-out;
+}
+
+.reel-item {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+  .reel-item img {
+    width: 48px;
+    height: 48px;
+  }
+
+.slot-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crank-handle {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+  margin-left: 20px;
+  animation: idle-wiggle 1.5s ease-in-out infinite;
+}
+
+@keyframes idle-wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-15deg);
+  }
+}
+
+.selection-line {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  border: 3px solid limegreen;
+  border-radius: 4px;
+  box-shadow: 0 0 15px limegreen;
+  pointer-events: none;
+  animation: pulse-glow 1s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px limegreen;
+  }
+
+  50% {
+    box-shadow: 0 0 25px limegreen;
+  }
+}
+
 
 @media (max-width: 768px) {
   .roulette-cards {
@@ -597,9 +733,9 @@ button {
     gap: 10px;
   }
 
-    .category-selector button {
-      width: 90%;
-      max-width: 300px;
-    }
+  .category-selector button {
+    width: 90%;
+    max-width: 300px;
+  }
 }
 
