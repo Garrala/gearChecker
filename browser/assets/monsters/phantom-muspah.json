@@ -204,7 +204,7 @@
       "Helmet": [
         [ "Slayer helmet (i)", "Ancestral hat" ],
         [ "Virtus mask" ],
-        [ "Ahrim's hood" ],
+        [ "Ahrim's hood", "Dagon'hai hat", "Bloodbark helm", "Infinity hat" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -225,14 +225,14 @@
       "Body": [
         [ "Ancestral robe top" ],
         [ "Virtus robe top" ],
-        [ "Ahrim's robetop" ],
+        [ "Ahrim's robetop", "Blue moon chestplate", "Dagon'hai robe top", "Bloodbark body", "Infinity top" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ],
-        [ "Ahrim's robeskirt" ],
+        [ "Ahrim's robeskirt", "Blue moon tassets", "Dagon'hai robe bottom", "Bloodbark legs", "Infinity bottoms" ],
         [ "N/A" ],
         [ "N/A" ]
       ],

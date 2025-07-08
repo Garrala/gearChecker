@@ -640,5 +640,35 @@
     "wiki": "https://oldschool.runescape.wiki/w/Bone_dagger#Poison++",
     "twoHanded": false,
     "usesAmmoType": "blessing"
+  },
+  "Dragon hunter wand": {
+    "image": "/assets/gear-icons/Dragon_hunter_wand.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_hunter_wand",
+    "twoHanded": false,
+    "usesAmmoType": "blessing"
+  },
+  "Blue moon spear": {
+    "image": "/assets/gear-icons/Blue_moon_spear.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Blue_moon_spear",
+    "twoHanded": true,
+    "usesAmmoType": "blessing"
+  },
+  "Master wand": {
+    "image": "/assets/gear-icons/Master_wand.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Master_wand",
+    "twoHanded": false,
+    "usesAmmoType": "blessing"
+  },
+  "Mystic fire staff": {
+    "image": "/assets/gear-icons/Mystic_fire_staff.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Mystic_fire_staff",
+    "twoHanded": false,
+    "usesAmmoType": "blessing"
+  },
+  "Ancient staff": {
+    "image": "/assets/gear-icons/Ancient_staff.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Ancient_staff",
+    "twoHanded": false,
+    "usesAmmoType": "blessing"
   }
 }

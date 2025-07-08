@@ -226,5 +226,9 @@
   "Facemask": {
     "image": "/assets/gear-icons/Facemask.png",
     "wiki": "https://oldschool.runescape.wiki/w/Facemask"
+  },
+  "Ancient coif": {
+    "image": "/assets/gear-icons/blessed-coif.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Ancient_coif"
   }
 }

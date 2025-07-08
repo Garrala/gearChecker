@@ -135,52 +135,74 @@
         [ "N/A" ]
       ],
       "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Torva full helm", "Oathplate helm" ],
+        [ "Justiciar faceguard", "Serpentine helm" ],
+        [ "Neitiznot faceguard" ],
+        [ "Any Barrows tank helm" ],
+        [ "Blood moon helm", "Helm of neitiznot", "Berserker helm" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture", "Amulet of fury" ],
+        [ "Amulet of strength" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Mythical cape" ],
+        [ "Any Skillcape (t)" ],
+        [ "Obsidian cape", "Any Skillcape" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Torva platebody", "Oathplate chest" ],
+        [ "Justiciar chestguard" ],
+        [ "Bandos chestplate" ],
+        [ "Dharok's platebody", "Guthan's platebody", "Torag's platebody" ],
+        [ "Fighter torso", "Verac's brassard", "Dragon chainbody" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
+        [ "Torva platelegs", "Oathplate legs" ],
+        [ "Justiciar legguards" ],
+        [ "Bandos tassets" ],
+        [ "Any Barrows tank legs" ],
+        [ "Dragon platelegs" ],
         [ "N/A" ],
         [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Shield": [
+        [ "Avernic defender", "Dragonfire shield" ],
+        [ "Dragon defender" ],
+        [ "Toktz-ket-xil" ],
+        [ "Rune defender", "Blessed spirit shield", "Dragon sq shield", "Crystal shield" ],
+        [ "Rune kiteshield" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -190,55 +212,33 @@
         [ "N/A" ]
       ],
       "Gloves": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves" ],
+        [ "Dragon gloves" ],
+        [ "Rune gloves" ],
+        [ "Regen bracelet", "Granite gloves" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Primordial boots", "Echo boots" ],
+        [ "Dragon boots" ],
+        [ "Guardian boots" ],
+        [ "Granite boots" ],
+        [ "Spiked manacles", "Rune boots" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Ring": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Ammo": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Shield": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "Ring of suffering (i)", "Steel ring" ],
+        [ "Lightbearer" ],
+        [ "Brimstone ring", "Warrior ring (i)" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -261,74 +261,74 @@
         [ "N/A" ]
       ],
       "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Torva full helm", "Oathplate helm" ],
+        [ "Justiciar faceguard", "Serpentine helm" ],
+        [ "Neitiznot faceguard" ],
+        [ "Any Barrows tank helm" ],
+        [ "Blood moon helm", "Helm of neitiznot", "Berserker helm" ]
       ],
       "Amulet": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture", "Amulet of fury" ],
+        [ "Amulet of strength" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ]
       ],
       "Cape": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Mythical cape" ],
+        [ "Any Skillcape (t)" ],
+        [ "Obsidian cape", "Any Skillcape" ]
       ],
       "Body": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Torva platebody", "Oathplate chest" ],
+        [ "Justiciar chestguard" ],
+        [ "Bandos chestplate" ],
+        [ "Dharok's platebody", "Guthan's platebody", "Torag's platebody" ],
+        [ "Fighter torso", "Verac's brassard", "Dragon chainbody" ]
       ],
       "Legs": [
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Torva platelegs", "Oathplate legs" ],
+        [ "Justiciar legguards" ],
+        [ "Bandos tassets" ],
+        [ "Any Barrows tank legs" ],
+        [ "Dragon platelegs" ]
+      ],
+      "Shield": [
+        [ "Avernic defender", "Dragonfire shield" ],
+        [ "Dragon defender" ],
+        [ "Toktz-ket-xil" ],
+        [ "Rune defender", "Blessed spirit shield", "Dragon sq shield", "Crystal shield" ],
+        [ "Rune kiteshield" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves" ],
+        [ "Dragon gloves" ],
+        [ "Rune gloves" ],
+        [ "Regen bracelet", "Granite gloves" ]
       ],
       "Boots": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Primordial boots", "Echo boots" ],
+        [ "Dragon boots" ],
+        [ "Guardian boots" ],
+        [ "Granite boots" ],
+        [ "Spiked manacles", "Rune boots" ]
       ],
       "Ring": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Ammo": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Shield": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "Ring of suffering (i)", "Steel ring" ],
+        [ "Lightbearer" ],
+        [ "Brimstone ring", "Warrior ring (i)" ]
       ]
     },
     "Blood Moon weapon": {
@@ -347,74 +347,74 @@
         [ "Dragon mace" ]
       ],
       "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Torva full helm", "Oathplate helm" ],
+        [ "Justiciar faceguard", "Serpentine helm" ],
+        [ "Neitiznot faceguard" ],
+        [ "Any Barrows tank helm" ],
+        [ "Blood moon helm", "Helm of neitiznot", "Berserker helm" ]
       ],
       "Amulet": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Amulet of rancour" ],
+        [ "Amulet of torture", "Amulet of fury" ],
+        [ "Amulet of strength" ],
+        [ "Amulet of glory" ],
+        [ "Amulet of power" ]
       ],
       "Cape": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Infernal cape" ],
+        [ "Fire cape" ],
+        [ "Mythical cape" ],
+        [ "Any Skillcape (t)" ],
+        [ "Obsidian cape", "Any Skillcape" ]
       ],
       "Body": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Torva platebody", "Oathplate chest" ],
+        [ "Justiciar chestguard" ],
+        [ "Bandos chestplate" ],
+        [ "Dharok's platebody", "Guthan's platebody", "Torag's platebody" ],
+        [ "Fighter torso", "Verac's brassard", "Dragon chainbody" ]
       ],
       "Legs": [
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Torva platelegs", "Oathplate legs" ],
+        [ "Justiciar legguards" ],
+        [ "Bandos tassets" ],
+        [ "Any Barrows tank legs" ],
+        [ "Dragon platelegs" ]
+      ],
+      "Shield": [
+        [ "Avernic defender", "Dragonfire shield" ],
+        [ "Dragon defender" ],
+        [ "Toktz-ket-xil" ],
+        [ "Rune defender", "Blessed spirit shield", "Dragon sq shield", "Crystal shield" ],
+        [ "Rune kiteshield" ]
+      ],
+      "Ammo": [
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Ferocious gloves" ],
+        [ "Barrows gloves" ],
+        [ "Dragon gloves" ],
+        [ "Rune gloves" ],
+        [ "Regen bracelet", "Granite gloves" ]
       ],
       "Boots": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Primordial boots", "Echo boots" ],
+        [ "Dragon boots" ],
+        [ "Guardian boots" ],
+        [ "Granite boots" ],
+        [ "Spiked manacles", "Rune boots" ]
       ],
       "Ring": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Ammo": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Shield": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Ultor ring" ],
+        [ "Berserker ring (i)" ],
+        [ "Ring of suffering (i)", "Steel ring" ],
+        [ "Lightbearer" ],
+        [ "Brimstone ring", "Warrior ring (i)" ]
       ]
     }
   }

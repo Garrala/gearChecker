@@ -86,7 +86,7 @@
         [ "Ghrazi rapier" ],
         [ "Noxious halberd" ],
         [ "Zamorakian hasta" ],
-        [ "N/A" ]
+        [ "Abyssal dagger" ]
       ],
       "Shield": [
         [ "Dragonfire shield" ],
@@ -97,7 +97,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -125,7 +125,7 @@
       ],
       "Special Attack": [
         [ "N/A" ],
-        [ "Abyssal dagger" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -172,7 +172,7 @@
         [ "Osmumten's fang" ],
         [ "Ghrazi rapier" ],
         [ "Zamorakian hasta" ],
-        [ "N/A" ]
+        [ "Abyssal dagger" ]
       ],
       "Shield": [
         [ "Avernic defender", "Dragonfire shield" ],
@@ -183,7 +183,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -211,7 +211,7 @@
       ],
       "Special Attack": [
         [ "N/A" ],
-        [ "Abyssal dagger" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -219,7 +219,7 @@
     },
     "Twisted Bow / BOWFA": {
       "Helmet": [
-        [ "Any Blessed coif" ],
+        [ "Any Blessed coif", "Slayer helmet (i)" ],
         [ "Crystal helm" ],
         [ "Karil's coif" ],
         [ "Archer helm" ]
@@ -293,7 +293,7 @@
     },
     "Crossbow & shield": {
       "Helmet": [
-        [ "Any Blessed coif" ],
+        [ "Any Blessed coif", "Slayer helmet (i)" ],
         [ "Karil's coif" ],
         [ "Archer helm" ],
         [ "N/A" ],
@@ -379,7 +379,7 @@
     },
     "Suicide method": {
       "Helmet": [
-        [ "Masori mask (f)" ],
+        [ "Masori mask (f)", "Slayer helmet (i)" ],
         [ "Any Blessed coif" ],
         [ "Karil's coif" ],
         [ "N/A" ],
@@ -428,8 +428,8 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows" ],
-        [ "Amethyst arrows" ],
+        [ "Dragon arrows", "Diamond dragon bolts (e)" ],
+        [ "Amethyst arrows", "Diamond bolts (e)" ],
         [ "Runite bolts" ],
         [ "N/A" ],
         [ "N/A" ]
