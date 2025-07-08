@@ -85,7 +85,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Honourable blessing", "Rada's blessing 3" ],
+        [ "Honourable blessing", "Rada's blessing 3", "Rada's blessing 2" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -171,8 +171,8 @@
         [ "Crystal shield" ]
       ],
       "Ammo": [
-        [ "Dragon arrows" ],
-        [ "Amethyst arrows" ],
+        [ "Dragon arrows", "Diamond dragon bolts (e)" ],
+        [ "Amethyst arrows", "Diamond bolts (e)" ],
         [ "Mith grapple" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -257,8 +257,8 @@
         [ "Odium ward" ]
       ],
       "Ammo": [
-        [ "Dragon arrows" ],
-        [ "Amethyst arrows" ],
+        [ "Dragon arrows", "Diamond dragon bolts (e)" ],
+        [ "Amethyst arrows", "Diamond bolts (e)" ],
         [ "Broad bolts" ],
         [ "Ruby bolts (e)" ],
         [ "N/A" ]
@@ -359,7 +359,7 @@
       "Ring": [
         [ "Ring of suffering (i)" ],
         [ "Venator ring", "Lightbearer" ],
-        [ "Archers ring (i)" ],
+        [ "Archers ring (i)", "Ring of the gods (i)" ],
         [ "Ring of shadows" ],
         [ "Brimstone ring" ]
       ],

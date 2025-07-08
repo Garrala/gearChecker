@@ -96,7 +96,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -126,7 +126,7 @@
         [ "Volatile nightmare staff" ],
         [ "Eldritch nightmare staff" ],
         [ "Toxic blowpipe" ],
-        [ "N/A" ],
+        [ "Accursed sceptre (a)" ],
         [ "N/A" ]
       ]
     }

@@ -53,7 +53,7 @@
       "Helmet": [
         [ "Masori mask (f)" ],
         [ "Armadyl helmet" ],
-        [ "Slayer helmet (i)" ]
+        [ "Slayer helmet (i)", "Ancient coif" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -86,7 +86,7 @@
         [ "Dragonfire ward", "Odium ward" ]
       ],
       "Ammo": [
-        [ "Ruby dragon bolts (e)" ],
+        [ "Ruby dragon bolts (e)", "Dragon arrows" ],
         [ "Ruby bolts (e)" ],
         [ "N/A" ]
       ],

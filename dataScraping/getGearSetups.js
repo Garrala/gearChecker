@@ -162,15 +162,18 @@ async function fetchKalphiteQueenGearSetups(bossName, meta) {
     const subPhases = $tab('.tabbertab');
 
     if (subPhases.length) {
-      subPhases.each((__, subTab) => {
-        const subLabel = $(subTab).attr('data-title')?.trim() || 'Unknown';
-        const combinedLabel = `${label} (${subLabel})`;
-        const $innerTab = cheerio.load($(subTab).html());
-        const gear = extractGearFromSlice($innerTab, combinedLabel, bossName);
-        ensureAllSlotsPresent(gear, combinedLabel, bossName, metadata);
-        gear_setups[combinedLabel] = gear;
+      subPhases.each((_, subTab) => {
+        const subLabel = $(subTab).attr('data-title')?.trim();
+        if (!subLabel) return;
+        const fullLabel = `${label.trim()} ${subLabel}`.replace(/\s+/g, ' ');
+        const subTab$ = cheerio.load($(subTab).html());
+
+        const gear = extractGearFromSlice(subTab$, fullLabel, bossName);
+        ensureAllSlotsPresent(gear, fullLabel, bossName, metadata);
+        gear_setups[fullLabel] = gear;
       });
-    } else {
+    } else if (!label.match(/^Phase \d/)) {
+      // Only extract if it's not a generic phase tab on its own
       const gear = extractGearFromSlice($tab, label, bossName);
       ensureAllSlotsPresent(gear, label, bossName, metadata);
       gear_setups[label] = gear;
@@ -192,9 +195,89 @@ async function fetchKalphiteQueenGearSetups(bossName, meta) {
   return auditIssues;
 }
 
+async function fetchPerilousMoonsGearSetups(bossName, meta) {
+  console.log(`\n🔧 Using custom handler for ${bossName}`);
+  const rawHtml = fs.readFileSync(
+    path.join(__dirname, 'staging', 'strategy_html_dumps', 'perilous_moons', 'strategy.html'),
+    'utf8'
+  );
+  const $ = cheerio.load(rawHtml);
+  const gear_setups = {};
+  const auditIssues = [];
+
+  // 🔹 Step 1: Extract shared armor
+  let sharedArmor = {};
+  $('table.wikitable').each((_, el) => {
+    const caption = $(el).find('caption').text().toLowerCase();
+    if (caption.includes('moons of peril armour')) {
+      const armor$ = cheerio.load($(el).html());
+      sharedArmor = extractSharedArmor($, bossName);
+    }
+  });
+
+  if (Object.keys(sharedArmor).length === 0) {
+    console.warn(`⚠️ Could not find shared armor table for ${bossName}`);
+    auditIssues.push({ boss: bossName, issue: 'Missing shared armor table' });
+  }
+
+  // 🔹 Step 2: Handle each moon tab
+  $('.tabbertab').each((_, tab) => {
+    const label = $(tab).attr('data-title')?.trim() || 'Unknown';
+    const tab$ = cheerio.load($(tab).html());
+    const gear = extractGearFromSlice(tab$, label, bossName);
+
+    // Add shared armor into every tab
+    for (const [slot, items] of Object.entries(sharedArmor)) {
+      if (!gear[slot]) {
+        gear[slot] = items;
+      }
+    }
+
+    ensureAllSlotsPresent(gear, label, bossName, metadata);
+    gear_setups[label] = gear;
+  });
+
+  const output = {
+    name: bossName,
+    category: meta.category || '',
+    wiki_link: meta.wiki_link,
+    gear_setups,
+    missing_styles: []
+  };
+
+  const fileName = bossName.replace(/\s+/g, '-').toLowerCase() + '.json';
+  fs.writeFileSync(path.join(gearOutputPath, fileName), JSON.stringify(output, null, 2));
+  console.log(`💾 Custom gear saved for ${bossName}: ${fileName}`);
+
+  return auditIssues;
+}
+
+function extractSharedArmor($, bossName) {
+  const armorTable = $('caption')
+    .filter((_, el) =>
+      $(el).text().toLowerCase().includes('moons of peril armour')
+    )
+    .closest('table.wikitable');
+
+  if (!armorTable.length) {
+    console.warn(`⚠️ Could not find shared armor table for ${bossName}`);
+    return {};
+  }
+
+  // Rebuild a fake page with only the armor table so extractGearFromSlice works properly
+  const armor$ = cheerio.load('<table>' + armorTable.html() + '</table>');
+
+  const gear = extractGearFromSlice(armor$, 'Shared Armour', bossName);
+  return gear;
+}
+
+
+
+
 const customScraperOverrides = {
   'Corporeal Beast': fetchCorporealGearSetups,
-  'Kalphite Queen': fetchKalphiteQueenGearSetups
+  'Kalphite Queen': fetchKalphiteQueenGearSetups,
+  'Perilous Moons': fetchPerilousMoonsGearSetups
 };
 
 async function fetchGearSetupsForBoss(bossName, meta) {

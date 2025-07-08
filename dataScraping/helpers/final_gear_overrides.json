@@ -454,6 +454,491 @@
         "item": "Black mask (i)"
       }
     }
+  },
+  "grotesque-guardians": {
+    "Melee": {
+      "Ring": [
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Archers ring (i)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 4,
+          "item": "Warrior ring (i)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 4,
+          "item": "Tyrannical ring (i)"
+        }
+      ]
+    }
+  },
+  "hespori": {
+    "Entry level": {
+      "Body": [
+        {
+          "mode": "patch",
+          "insert_at": 0,
+          "item": "Blood moon chestplate"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Fighter torso"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Bandos chestplate"
+        }
+      ],
+      "Legs": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Bandos tassets"
+      }
+    },
+    "Best-in-slot": {
+      "Body": [
+        {
+          "mode": "patch",
+          "insert_at": 1,
+          "item": "Blood moon chestplate"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Fighter torso"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Bandos chestplate"
+        }
+      ],
+      "Legs": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Bandos tassets"
+      }
+    },
+    "Mage": {
+      "Helmet": [
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Blue moon hood"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Dagon'hai hat"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Bloodbark helm"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Infinity hat"
+        }
+      ],
+      "Body": [
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Blue moon chestplate"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Dagon'hai robe top"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Bloodbark body"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Infinity top"
+        }
+      ],
+      "Legs": [
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Blue moon tassets"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Dagon'hai robe bottom"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Bloodbark legs"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Infinity bottoms"
+        }
+      ],
+      "Weapon": [
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Smoke battlestaff"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Nightmare staff"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Kodai wand"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Toxic staff of the dead"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Dragon hunter wand"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Ahrim's staff"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Blue moon spear"
+        },
+        {
+          "mode": "patch",
+          "insert_at": 4,
+          "item": "Ancient staff"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 4,
+          "item": "Master wand"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 4,
+          "item": "Slayer's staff (e)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 4,
+          "item": "Mystic fire staff"
+        }
+      ]
+    }
+  },
+  "kalphite-queen": {
+    "High DPS Phase 1 (Melee)": {
+      "Ring": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Ring of suffering (i)"
+      }
+    },
+    "High DPS Phase 2 (Ranged)": {
+      "Ammo": [
+        {
+          "mode": "patch",
+          "insert_at": 0,
+          "item": "Rada's blessing 4"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Dragon arrows"
+        }
+      ]
+    },
+    "Flinching": {
+      "Weapon": {
+        "mode": "remove",
+        "insert_at": 5,
+        "item": "Bone dagger"
+      },
+      "Special Attack": {
+        "mode": "patch",
+        "insert_at": 0,
+        "item": "Bone dagger"
+      }
+    },
+    "Mid-game Phase 1 (Melee)": {
+      "Weapon": {
+        "mode": "remove",
+        "insert_at": 5,
+        "item": "Bone dagger"
+      },
+      "Special Attack": {
+        "mode": "patch",
+        "insert_at": 0,
+        "item": "Bone dagger"
+      }
+    },
+    "Mid-game Phase 2 (Ranged)": {
+      "Weapon": {
+        "mode": "remove",
+        "insert_at": 5,
+        "item": "Bone dagger"
+      },
+      "Special Attack": {
+        "mode": "patch",
+        "insert_at": 0,
+        "item": "Bone dagger"
+      },
+      "Shield": {
+        "mode": "patch",
+        "insert_at": 2,
+        "item": "Any Blessed shield"
+      },
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Amethyst arrows"
+      }
+    }
+  },
+  "king-black-dragon": {
+    "Melee": {
+      "Weapon": {
+        "mode": "patch",
+        "insert_at": 4,
+        "item": "Abyssal dagger"
+      },
+      "Special Attack": {
+        "mode": "remove",
+        "insert_at": 0,
+        "item": "Abyssal dagger"
+      },
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Rada's blessing 2"
+      }
+    },
+    "Melee Suicide method": {
+      "Weapon": {
+        "mode": "patch",
+        "insert_at": 4,
+        "item": "Abyssal dagger"
+      },
+      "Special Attack": {
+        "mode": "remove",
+        "insert_at": 0,
+        "item": "Abyssal dagger"
+      },
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Rada's blessing 2"
+      }
+    },
+    "Twisted Bow / BOWFA": {
+      "Helmet": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Slayer helmet (i)"
+      }
+    },
+    "Crossbow & shield": {
+      "Helmet": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Slayer helmet (i)"
+      }
+    },
+    "Suicide method": {
+      "Helmet": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Slayer helmet (i)"
+      },
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Diamond dragon bolts (e)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Diamond bolts (e)"
+        }
+      ]
+    }
+  },
+  "kraken": {
+    "Magic": {
+      "Special Attack": {
+        "mode": "patch",
+        "insert_at": 3,
+        "item": "Accursed sceptre (a)"
+      },
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Rada's blessing 2"
+      }
+    }
+  },
+  "kreearra": {
+    "Tumeken's Shadow": {
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Rada's blessing 2"
+      }
+    },
+    "Chinchompas": {
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Diamond dragon bolts (e)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Diamond bolts (e)"
+        }
+      ]
+    },
+    "Ranged Tank": {
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Diamond dragon bolts (e)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Diamond bolts (e)"
+        }
+      ]
+    },
+    "Tbow / Bowfa": {
+      "Ring": {
+        "mode": "patch_join",
+        "insert_at": 2,
+        "item": "Ring of the gods (i)"
+      }
+    }
+  },
+  "kril-tsutsaroth": {
+    "Magic": {
+      "Ring": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Seers ring (i)"
+      }
+    }
+  },
+  "nex": {
+    "Ranged": {
+      "Helmet": {
+        "mode": "patch_join",
+        "insert_at": 2,
+        "item": "Ancient coif"
+      },
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Dragon arrows"
+      }
+    }
+  },
+  "phantom-muspah": {
+    "Magic": {
+      "Helmet": [
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Blue moon hood"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Dagon'hai hat"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Bloodbark helm"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Infinity hat"
+        }
+      ],
+      "Body": [
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Blue moon chestplate"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Dagon'hai robe top"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Bloodbark body"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Infinity top"
+        }
+      ],
+      "Legs": [
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Blue moon tassets"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Dagon'hai robe bottom"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Bloodbark legs"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Infinity bottoms"
+        }
+      ]
+    }
   }
 }
 

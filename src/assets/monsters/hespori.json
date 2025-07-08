@@ -65,13 +65,13 @@
         [ "N/A" ]
       ],
       "Body": [
+        [ "Blood moon chestplate", "Fighter torso", "Bandos chestplate" ],
         [ "Any Barrows tank body" ],
         [ "Black d'hide body" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
-        [ "Blood moon tassets" ],
+        [ "Blood moon tassets", "Bandos tassets" ],
         [ "Any Barrows tank legs" ],
         [ "Black d'hide chaps" ],
         [ "N/A" ]
@@ -143,14 +143,14 @@
       ],
       "Body": [
         [ "Oathplate chest", "Torva platebody" ],
-        [ "N/A" ],
+        [ "Blood moon chestplate", "Fighter torso", "Bandos chestplate" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Oathplate legs", "Torva platelegs" ],
-        [ "Blood moon tassets" ],
+        [ "Blood moon tassets", "Bandos tassets" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -209,7 +209,7 @@
       "Helmet": [
         [ "Ancestral hat" ],
         [ "Virtus mask" ],
-        [ "Ahrim's hood" ],
+        [ "Ahrim's hood", "Dagon'hai hat", "Bloodbark helm", "Infinity hat" ],
         [ "Void mage helm" ],
         [ "N/A" ]
       ],
@@ -230,23 +230,23 @@
       "Body": [
         [ "Ancestral robe top" ],
         [ "Virtus robe top" ],
-        [ "Ahrim's robetop" ],
+        [ "Ahrim's robetop", "Blue moon chestplate", "Dagon'hai robe top", "Bloodbark body", "Infinity top" ],
         [ "Elite void top" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ],
-        [ "Ahrim's robeskirt" ],
+        [ "Ahrim's robeskirt", "Blue moon tassets", "Dagon'hai robe bottom", "Bloodbark legs", "Infinity bottoms" ],
         [ "Elite void robe" ],
         [ "N/A" ]
       ],
       "Weapon": [
-        [ "Harmonised nightmare staff", "Twinflame staff" ],
-        [ "Staff of the dead" ],
-        [ "Purging staff" ],
-        [ "Ancient sceptre" ],
-        [ "N/A" ]
+        [ "Harmonised nightmare staff", "Twinflame staff", "Smoke battlestaff" ],
+        [ "Staff of the dead", "Nightmare staff", "Kodai wand", "Toxic staff of the dead" ],
+        [ "Purging staff", "Dragon hunter wand" ],
+        [ "Ancient sceptre", "Ahrim's staff", "Blue moon spear" ],
+        [ "Ancient staff", "Master wand", "Slayer's staff (e)", "Mystic fire staff" ]
       ],
       "Shield": [
         [ "Tome of fire" ],

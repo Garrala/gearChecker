@@ -90,6 +90,26 @@ files.forEach(file => {
           }
         }
 
+        else if (rule.mode === 'remove') {
+          const before = slotGroups.length;
+
+          // Filter out any group that includes the item to remove
+          const filtered = slotGroups
+            .map(group => group.filter(item => item !== rule.item))
+            .filter(group => group.length > 0); // Remove empty groups
+
+          const after = filtered.length;
+          const removed = before !== after || JSON.stringify(slotGroups) !== JSON.stringify(filtered);
+
+          if (removed) {
+            console.log(`    ❌ Removed "${rule.item}" from slot`);
+            json.gear_setups[style][slot] = filtered;
+            patchCount++;
+          } else {
+            console.log(`    ⚠️ "${rule.item}" not found — nothing removed`);
+          }
+        }
+
         else {
           console.log(`    ⚠️ Unknown mode "${rule.mode}" for ${slot} — skipping.`);
         }
