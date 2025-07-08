@@ -132,11 +132,11 @@
     },
     "Ranged": {
       "Helmet": [
-        [ "Masori mask (f)" ],
+        [ "Masori mask (f)", "Slayer helmet (i)" ],
         [ "Armadyl helmet" ],
+        [ "Crystal helm" ],
         [ "Any Blessed coif" ],
-        [ "Void ranger helm" ],
-        [ "N/A" ]
+        [ "Void ranger helm" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -155,16 +155,16 @@
       "Body": [
         [ "Masori body (f)" ],
         [ "Armadyl chestplate" ],
+        [ "Crystal body" ],
         [ "Any Blessed body", "Black d'hide body" ],
-        [ "Elite void top", "Void knight top" ],
-        [ "N/A" ]
+        [ "Elite void top", "Void knight top" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Armadyl chainskirt" ],
+        [ "Crystal legs" ],
         [ "Any Blessed chaps", "Black d'hide chaps" ],
-        [ "Elite void robe", "Void knight robe" ],
-        [ "N/A" ]
+        [ "Elite void robe", "Void knight robe" ]
       ],
       "Weapon": [
         [ "Twisted bow" ],
@@ -181,8 +181,8 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows" ],
-        [ "Amethyst arrows" ],
+        [ "Dragon arrows", "Diamond dragon bolts (e)" ],
+        [ "Amethyst arrows", "Diamond bolts (e)" ],
         [ "Rune arrows", "Broad bolts" ],
         [ "Rada's blessing 4" ],
         [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]

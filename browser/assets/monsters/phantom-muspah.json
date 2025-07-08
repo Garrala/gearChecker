@@ -288,7 +288,7 @@
     },
     "Ranged": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
+        [ "Slayer helmet (i)", "Masori mask (f)" ],
         [ "Crystal helm" ],
         [ "Any Blessed coif" ],
         [ "N/A" ],
@@ -311,23 +311,23 @@
       "Body": [
         [ "Masori body (f)" ],
         [ "Crystal body" ],
-        [ "Any Blessed body" ],
+        [ "Any Blessed body", "Hueycoatl hide body", "Eclipse moon chestplate" ],
         [ "Karil's leathertop" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Crystal legs" ],
-        [ "Any Blessed chaps" ],
+        [ "Any Blessed chaps", "Hueycoatl hide chaps", "Eclipse moon tassets" ],
         [ "Karil's leatherskirt" ],
         [ "N/A" ]
       ],
       "Weapon": [
         [ "Twisted bow" ],
+        [ "Zaryte crossbow" ],
         [ "Bow of Faerdhinen" ],
-        [ "Zaryte crossbow", "Armadyl crossbow", "Toxic blowpipe" ],
-        [ "Hunters' sunlight crossbow" ],
-        [ "N/A" ]
+        [ "Armadyl crossbow", "Dragon crossbow" ],
+        [ "Rune crossbow" ]
       ],
       "Shield": [
         [ "Twisted buckler" ],
@@ -337,11 +337,11 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Moonlight antler bolts" ],
-        [ "Amethyst arrows", "Sunlight antler bolts" ],
-        [ "Rune arrows" ],
+        [ "Dragon arrows", "Sapphire dragon bolts (e)", "Ruby dragon bolts (e)" ],
+        [ "Amethyst arrows", "Diamond dragon bolts (e)", "Sapphire bolts (e)" ],
+        [ "Rune arrows", "Diamond bolts (e)" ],
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Any God blessing" ]
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
@@ -424,7 +424,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]

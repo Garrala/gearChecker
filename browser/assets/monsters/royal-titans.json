@@ -194,10 +194,10 @@
         [ "Karil's crossbow", "Magic shortbow (i)" ]
       ],
       "Ammo": [
-        [ "Atlatl darts" ],
-        [ "Ruby dragon bolts (e)" ],
+        [ "Atlatl darts", "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Ruby dragon bolts (e)", "Ruby bolts (e)" ],
         [ "Moonlight antler bolts", "Sunlight antler bolts" ],
-        [ "Bolt rack", "Amethyst arrows" ]
+        [ "Bolt rack", "Amethyst arrows", "Rune arrows" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
@@ -219,7 +219,7 @@
       ],
       "Special Attack": [
         [ "Toxic blowpipe" ],
-        [ "N/A" ],
+        [ "N/A", "Magic shortbow (i)" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -423,7 +423,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4", "Ruby dragon bolts (e)" ],
-        [ "Rada's blessing 3", "Rada's blessing 2" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "Atlatl darts" ],
         [ "N/A" ]
       ],
