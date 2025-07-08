@@ -86,9 +86,11 @@ function collectMonsterHtmlFiles(dir) {
     try {
       const rawHtml = fs.readFileSync(filePath, 'utf8');
       const $ = cheerio.load(rawHtml);
-      const monsterInfos = await fetchMonsterStats($, bossName, displayPhase);
-      if (!monsterInfos) {
-        console.warn(`⚠️ No monster data returned for ${bossName}`);
+      let monsterInfos = await fetchMonsterStats($, bossName, displayPhase);
+      monsterInfos = (monsterInfos || []).filter(Boolean);
+
+      if (!monsterInfos.length) {
+        console.warn(`⚠️ No valid monster data returned for ${bossName}`);
         continue;
       }
 
@@ -182,8 +184,10 @@ function collectMonsterHtmlFiles(dir) {
       boss.hp > 0 &&
       Array.isArray(boss.attack_styles) && boss.attack_styles.length > 0 &&
       boss.max_hit && Object.keys(boss.max_hit).length > 0 &&
-      boss.immunities && Object.keys(boss.immunities).length > 0
+      boss.immunities && Object.keys(boss.immunities).length > 0 &&
+      (boss.attack_speed === null || typeof boss.attack_speed === 'object')
     );
+
 
     (allComplete ? scrapeReport.complete : scrapeReport.missing).push(data.name);
   }

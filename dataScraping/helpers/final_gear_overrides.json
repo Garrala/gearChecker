@@ -938,6 +938,336 @@
           "item": "Infinity bottoms"
         }
       ]
+    },
+    "Ranged": {
+      "Weapon": [
+        {
+          "mode": "remove",
+          "insert_at": 3,
+          "item": "Zaryte crossbow"
+        },
+        {
+          "mode": "patch",
+          "insert_at": 1,
+          "item": "Zaryte crossbow"
+        },
+        {
+          "mode": "remove",
+          "insert_at": 3,
+          "item": "Toxic blowpipe"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Dragon crossbow"
+        },
+        {
+          "mode": "patch",
+          "insert_at": 4,
+          "item": "Rune crossbow"
+        },
+        {
+          "mode": "remove",
+          "insert_at": 6,
+          "item": "Hunters' sunlight crossbow"
+        }
+      ],
+      "Helmet": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Masori mask (f)"
+      },
+      "Body": [
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Hueycoatl hide body"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Eclipse moon chestplate"
+        }
+      ],
+      "Legs": [
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Hueycoatl hide chaps"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Eclipse moon tassets"
+        }
+      ],
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Sapphire dragon bolts (e)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Ruby dragon bolts (e)"
+        },
+        {
+          "mode": "remove",
+          "insert_at": 0,
+          "item": "Moonlight antler bolts"
+        },
+        {
+          "mode": "remove",
+          "insert_at": 1,
+          "item": "Sunlight antler bolts"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Diamond dragon bolts (e)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Sapphire bolts (e)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Diamond bolts (e)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 4,
+          "item": "Rada's blessing 2"
+        }
+      ]
+    },
+    "Melee": {
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Rada's blessing 2"
+      }
+    }
+  },
+  "royal-titans": {
+    "Ranged (Low Level)": {
+      "Special Attack": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Magic shortbow (i)"
+      },
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Rada's blessing 3"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Rada's blessing 2"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Any God blessing"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Ruby bolts (e)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Rune arrows"
+        }
+      ]
+    },
+    "Ranged (High Level)": {
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Rada's blessing 2"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Any God blessing"
+        }
+      ]
+    }
+  },
+  "sarachnis": {
+    "Melee": {
+      "Ring": [
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Warrior ring (i)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Tyrannical ring (i)"
+        }
+      ]
+    }
+  },
+  "scurrius": {
+    "Melee (mid level)": {
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Any God blessing"
+      }
+    },
+    "Magic (mid level)": {
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Any God blessing"
+      }
+    },
+    "Melee (high level)": {
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Rada's blessing 2"
+      }
+    },
+    "Magic (high level)": {
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Rada's blessing 2"
+      },
+      "Ring": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Ring of the gods (i)"
+      }
+    }
+  },
+  "skotizo": {
+    "Ranged": {
+      "Helmet": [
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Slayer helmet (i)"
+        },
+        {
+          "mode": "patch",
+          "insert_at": 2,
+          "item": "Crystal helm"
+        }
+      ],
+      "Body": {
+        "mode": "patch",
+        "insert_at": 2,
+        "item": "Crystal body"
+      },
+      "Legs": {
+        "mode": "patch",
+        "insert_at": 2,
+        "item": "Crystal legs"
+      },
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Diamond dragon bolts (e)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Diamond bolts (e)"
+        }
+      ]
+    }
+  },
+  "spindel": {
+    "Ranged": {
+      "Ammo": [
+        {
+          "mode": "patch",
+          "insert_at": 0,
+          "item": "Rada's blessing 4"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Dragon arrows"
+        }
+      ]
+    }
+  },
+  "the-hueycoatl": {
+    "Melee": {
+      "Weapon": [
+        {
+          "mode": "remove",
+          "insert_at": 3,
+          "item": "Ursine chainmace(u)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 3,
+          "item": "Ursine chainmace (u)"
+        }
+      ]
+    }
+  },
+  "the-leviathan": {
+    "Ranged": {
+      "Helmet": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Masori mask (f)"
+      }
+    }
+  },
+  "the-mimic": {
+    "Magic": {
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Any God blessing"
+      }
+    },
+    "Ranged": {
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Amethyst arrows"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Rune arrows"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Any God blessing"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Rada's blessing 4"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Diamond bolts (e)"
+        }
+      ]
     }
   }
 }

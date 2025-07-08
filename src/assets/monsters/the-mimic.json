@@ -93,7 +93,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -178,9 +178,9 @@
         [ "Unholy book" ]
       ],
       "Ammo": [
-        [ "Dragon arrows" ],
-        [ "Rada's blessing 3", "Rada's blessing 2" ],
-        [ "Diamond dragon bolts (e)" ],
+        [ "Dragon arrows", "Amethyst arrows", "Rune arrows" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Rada's blessing 4", "Any God blessing" ],
+        [ "Diamond dragon bolts (e)", "Diamond bolts (e)" ],
         [ "N/A" ],
         [ "N/A" ]
       ],

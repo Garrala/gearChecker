@@ -9,7 +9,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/The_Hueycoatl#Normal",
       "image": "assets/monster-icons/the_hueycoatl_normal_body.png",
       "combat_level": 642,
-      "hp": 0,
+      "hp": 2500,
       "max_hit": {
         "melee": 14,
         "magic": 14,
@@ -46,7 +46,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/The_Hueycoatl#Normal",
       "image": "assets/monster-icons/the_hueycoatl_normal_head.png",
       "combat_level": 642,
-      "hp": 0,
+      "hp": 2500,
       "max_hit": {
         "melee": 14,
         "magic": 14,
@@ -83,7 +83,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/The_Hueycoatl#Normal",
       "image": "assets/monster-icons/the_hueycoatl_normal_tail.png",
       "combat_level": 642,
-      "hp": 0,
+      "hp": 2500,
       "max_hit": {
         "melee": 14,
         "magic": 14,
@@ -136,7 +136,7 @@
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Mythical cape" ],
-        [ "N/A" ],
+        [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -157,7 +157,7 @@
         [ "Scythe of Vitur", "Dragon hunter lance" ],
         [ "Inquisitor's mace", "Soulreaper axe" ],
         [ "Dual macuahuitl" ],
-        [ "Abyssal bludgeon", "Zamorakian hasta", "Ursine chainmace(u)" ],
+        [ "Abyssal bludgeon", "Zamorakian hasta", "Ursine chainmace (u)" ],
         [ "Sarachnis cudgel", "Zombie axe", "Dragon mace" ]
       ],
       "Shield": [
@@ -193,7 +193,7 @@
         [ "Berserker ring (i)" ],
         [ "Lightbearer" ],
         [ "Ring of shadows" ],
-        [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
+        [ "Explorer's ring 4", "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
       ],
       "Special Attack": [
         [ "Dragon claws" ],

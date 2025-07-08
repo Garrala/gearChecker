@@ -9,8 +9,12 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/The_Leviathan",
       "image": "assets/monster-icons/the_leviathan_awakened.png",
       "combat_level": 0,
-      "hp": 0,
-      "max_hit": {},
+      "hp": 2700,
+      "max_hit": {
+        "melee": 86,
+        "ranged": 86,
+        "magic": 86
+      },
       "defense": {
         "melee": {
           "stab": 260,
@@ -24,7 +28,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": [],
+      "attack_styles": [ "Melee", "Ranged", "Magic" ],
       "attack_speed": null,
       "aggressive": true,
       "immunities": {
@@ -38,7 +42,7 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/The_Leviathan",
       "image": "assets/monster-icons/the_leviathan_post_quest.png",
       "combat_level": 798,
-      "hp": 0,
+      "hp": 900,
       "max_hit": {
         "meleeorbbite": 50,
         "rangedorb": 24,
@@ -58,7 +62,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": [],
+      "attack_styles": [ "Melee", "Ranged", "Magic" ],
       "attack_speed": null,
       "aggressive": true,
       "immunities": {
@@ -72,8 +76,12 @@
       "wiki_link": "https://oldschool.runescape.wiki/w/The_Leviathan",
       "image": "assets/monster-icons/the_leviathan_quest.png",
       "combat_level": 593,
-      "hp": 0,
-      "max_hit": {},
+      "hp": 720,
+      "max_hit": {
+        "melee": 34,
+        "ranged": 34,
+        "magic": 34
+      },
       "defense": {
         "melee": {
           "stab": 200,
@@ -87,7 +95,7 @@
           "thrown": 50
         }
       },
-      "attack_styles": [],
+      "attack_styles": [ "Melee", "Ranged", "Magic" ],
       "attack_speed": null,
       "aggressive": true,
       "immunities": {
@@ -100,11 +108,11 @@
   "gear_setups": {
     "Ranged": {
       "Helmet": [
+        [ "Slayer helmet (i)", "Masori mask (f)" ],
         [ "Crystal helm", "Masori mask" ],
         [ "Void ranger helm" ],
-        [ "Karil's coif", "Blessed coif" ],
-        [ "Archer helm" ],
-        [ "N/A" ]
+        [ "Karil's coif", "Any Blessed coif" ],
+        [ "Archer helm" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
@@ -139,7 +147,7 @@
         [ "Armadyl crossbow", "Bow of Faerdhinen" ],
         [ "Dragon crossbow", "Dragon hunter crossbow" ],
         [ "Rune crossbow" ],
-        [ "Toxic blowpipe" ]
+        [ "N/A" ]
       ],
       "Shield": [
         [ "Twisted buckler" ],
@@ -149,8 +157,8 @@
         [ "Unholy book" ]
       ],
       "Ammo": [
-        [ "Ruby dragon bolts(e)" ],
-        [ "Ruby bolts(e)" ],
+        [ "Ruby dragon bolts (e)" ],
+        [ "Ruby bolts (e)" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -167,7 +175,7 @@
         [ "Ranger boots" ],
         [ "Any Blessed boots", "Aranea boots" ],
         [ "Boots of brimstone" ],
-        [ "Shayzien boots(5)" ]
+        [ "Shayzien boots (5)" ]
       ],
       "Ring": [
         [ "Lightbearer" ],

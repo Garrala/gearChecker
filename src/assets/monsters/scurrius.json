@@ -131,7 +131,7 @@
         [ "Rune kiteshield" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 3", "Rada's blessing 2" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -303,7 +303,7 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 3", "Rada's blessing 2" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -383,7 +383,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -531,7 +531,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -549,7 +549,7 @@
       ],
       "Ring": [
         [ "Magus ring" ],
-        [ "Seers ring (i)" ],
+        [ "Seers ring (i)", "Ring of the gods (i)" ],
         [ "Ring of shadows" ],
         [ "Brimstone ring" ]
       ],

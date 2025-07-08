@@ -1073,11 +1073,12 @@ function logParsedBoss(info) {
   console.log(`   Ranged Defense: ${logDefenseBlock(info.defense.ranged)}`);
   console.log(`   Attack Styles: ${info.attack_styles?.join(', ') || 'N/A'}`);
   console.log(`   Max Hit: ${JSON.stringify(info.max_hit)}`);
-  console.log(`   Attack Speed: ${typeof info.attack_speed === 'object' ? `${info.attack_speed.ticks} ticks` : info.attack_speed}`);
+  console.log(`   Attack Speed: ${info.attack_speed?.ticks ?? 'Varies'}`);
   console.log(`   Aggressive: ${info.aggressive ? 'Yes' : 'No'}`);
   console.log(`   Immunities:`, info.immunities);
   console.log(`   Weaknesses:`, info.weaknesses);
 }
+
 
 
 async function parseInfoboxData($, phase, bossName) {
