@@ -142,9 +142,9 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Ruby dragon bolts (e)" ],
-        [ "Ruby bolts (e)" ],
-        [ "Opal dragon bolts (e)" ],
+        [ "Ruby dragon bolts (e)", "Diamond dragon bolts (e)" ],
+        [ "Ruby bolts (e)", "Diamond bolts (e)" ],
+        [ "Opal dragon bolts (e)", "Pearl dragon bolts (e)" ],
         [ "Dragon bolts" ],
         [ "Runite bolts" ]
       ],
@@ -186,7 +186,7 @@
         [ "Any Barrows tank helm" ]
       ],
       "Amulet": [
-        [ "Salve amulet (ei)" ],
+        [ "Salve amulet (ei)", "Salve amulet (e)" ],
         [ "Amulet of rancour" ],
         [ "Amulet of torture" ],
         [ "Amulet of fury" ],
