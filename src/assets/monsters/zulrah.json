@@ -163,7 +163,7 @@
         [ "Iban's staff", "Warped sceptre" ]
       ],
       "Shield": [
-        [ "Tome of fire (Searing pages)" ],
+        [ "Tome of fire (Searing pages)", "Elidinis' ward (f)" ],
         [ "Tome of fire (Burnt pages)", "Arcane spirit shield" ],
         [ "Elidinis' ward", "Mage's book" ],
         [ "Ancient wyvern shield", "Malediction ward" ],
@@ -171,7 +171,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -207,7 +207,7 @@
     },
     "Ranged": {
       "Helmet": [
-        [ "Slayer helmet (i)" ],
+        [ "Slayer helmet (i)", "Masori mask (f)" ],
         [ "Crystal helm", "Masori mask" ],
         [ "Serpentine helm" ],
         [ "Any Blessed coif" ],
@@ -350,7 +350,7 @@
       ],
       "Boots": [
         [ "Primordial boots", "Echo boots" ],
-        [ "Dragon boots" ],
+        [ "Dragon boots", "Spiked manacles", "Aranea boots", "Guardian boots" ],
         [ "Bandos boots" ],
         [ "N/A" ],
         [ "N/A" ]

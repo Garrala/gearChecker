@@ -1269,6 +1269,149 @@
         }
       ]
     }
+  },
+  "thermonuclear-smoke-devil": {
+    "Magic": {
+      "Shield": [
+        {
+          "mode": "remove",
+          "insert_at": 0,
+          "item": "Tome of fire"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Elidinis' ward"
+        }
+      ],
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Rada's blessing 2"
+      }
+    },
+    "Melee": {
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Rada's blessing 2"
+      }
+    }
+  },
+  "the-whisperer": {
+    "Magic": {
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Rada's blessing 2"
+      }
+    }
+  },
+  "venenatis": {
+    "Ranged": {
+      "Weapon": [
+        {
+          "mode": "remove",
+          "insert_at": 2,
+          "item": "Bow of Faerdhinen"
+        },
+        {
+          "mode": "patch",
+          "insert_at": 2,
+          "item": "Toxic blowpipe"
+        }
+      ],
+      "Body": {
+        "mode": "remove",
+        "insert_at": 0,
+        "item": "Crystal body"
+      },
+      "Legs": {
+        "mode": "remove",
+        "insert_at": 0,
+        "item": "Crystal legs"
+      },
+      "Ammo": [
+        {
+          "mode": "patch",
+          "insert_at": 0,
+          "item": "Rada's blessing 4"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Dragon arrows"
+        }
+      ]
+    }
+  },
+  "vorkath": {
+    "Ranged": {
+      "Ammo": [
+        {
+          "mode": "patch_join",
+          "insert_at": 0,
+          "item": "Diamond dragon bolts (e)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Diamond bolts (e)"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 2,
+          "item": "Pearl dragon bolts (e)"
+        }
+      ]
+    },
+    "Melee": {
+      "Amulet": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Salve amulet (e)"
+      }
+    }
+  },
+  "zulrah": {
+    "Magic": {
+      "Shield": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Elidinis' ward (f)"
+      },
+      "Ammo": {
+        "mode": "patch_join",
+        "insert_at": 1,
+        "item": "Rada's blessing 2"
+      }
+    },
+    "Ranged": {
+      "Helmet": {
+        "mode": "patch_join",
+        "insert_at": 0,
+        "item": "Masori mask (f)"
+      }
+    },
+    "Melee": {
+      "Boots": [
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Spiked manacles"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Aranea boots"
+        },
+        {
+          "mode": "patch_join",
+          "insert_at": 1,
+          "item": "Guardian boots"
+        }
+      ]
+    }
   }
 }
 

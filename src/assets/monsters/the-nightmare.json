@@ -215,44 +215,6 @@
         [ "N/A" ],
         [ "N/A" ]
       ]
-    },
-    "Solo": {
-      "Helmet": [
-        [ "N/A" ]
-      ],
-      "Amulet": [
-        [ "N/A" ]
-      ],
-      "Cape": [
-        [ "N/A" ]
-      ],
-      "Body": [
-        [ "N/A" ]
-      ],
-      "Legs": [
-        [ "N/A" ]
-      ],
-      "Gloves": [
-        [ "N/A" ]
-      ],
-      "Boots": [
-        [ "N/A" ]
-      ],
-      "Ring": [
-        [ "N/A" ]
-      ],
-      "Ammo": [
-        [ "N/A" ]
-      ],
-      "Shield": [
-        [ "N/A" ]
-      ],
-      "Weapon": [
-        [ "N/A" ]
-      ],
-      "Special Attack": [
-        [ "N/A" ]
-      ]
     }
   }
 }

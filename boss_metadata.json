@@ -431,7 +431,7 @@
     "wiki_link": "https://oldschool.runescape.wiki/w/The_Nightmare",
     "strategy_link": "https://oldschool.runescape.wiki/w/The_Nightmare/Strategies",
     "scrape_mode": "simple",
-    "setups": ["Melee", "Mage", "Solo"],
+    "setups": ["Melee", "Mage"],
     "missing_slots": {}
   },
   "Thermonuclear Smoke Devil": {

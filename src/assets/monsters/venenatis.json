@@ -155,14 +155,14 @@
         [ "N/A" ]
       ],
       "Body": [
-        [ "Any Blessed body", "Crystal body" ],
+        [ "Any Blessed body" ],
         [ "Black d'hide body" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
-        [ "Any Blessed chaps", "Crystal legs" ],
+        [ "Any Blessed chaps" ],
         [ "Black d'hide chaps" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -171,7 +171,7 @@
       "Weapon": [
         [ "Webweaver bow", "Craw's bow" ],
         [ "Twisted bow" ],
-        [ "Bow of Faerdhinen" ],
+        [ "Toxic blowpipe" ],
         [ "Zaryte crossbow", "Armadyl crossbow" ],
         [ "Dragon crossbow", "Rune crossbow" ]
       ],
@@ -183,10 +183,10 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 4" ],
+        [ "Rada's blessing 3", "Rada's blessing 2", "Dragon arrows", "Any God blessing" ],
         [ "Diamond dragon bolts (e)" ],
         [ "Diamond bolts (e)" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
