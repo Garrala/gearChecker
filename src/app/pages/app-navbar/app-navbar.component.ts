@@ -22,7 +22,7 @@ export class AppNavbarComponent implements OnInit {
     { title: 'Home', link: '/', icon: './assets/misc-icons/Dragon_med_helm.png' },
     { title: 'Gear Management', link: '/gear', icon: './assets/misc-icons/Worn_Equipment.png' },
     { title: 'Boss Beastiary', link: '/monster', icon: './assets/misc-icons/Mr._Mordaut_chathead.png' },
-    { title: 'Slayer Beastiary', link: '/slayer', icon: './assets/misc-icons/Slayer_icon.png' },
+    //{ title: 'Slayer Beastiary', link: '/slayer', icon: './assets/misc-icons/Slayer_icon.png' },
     { title: 'Boss Roulette', link: '/roulette', icon: './assets/misc-icons/Mystery_box_detail.png' },
     { title: 'Skill Training', link: '/skill-training-roulette', icon: './assets/misc-icons/Stats_icon.png' },
   ];

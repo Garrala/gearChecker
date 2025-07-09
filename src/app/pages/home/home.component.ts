@@ -37,18 +37,18 @@ export class HomeComponent {
       title: 'Boss Beastiary',
       icon: './assets/misc-icons/Mr._Mordaut_chathead.png',
       description: 'Browse every boss with detailed stats, weaknesses, and gear recommendations.',
-      bg: './assets/cerberus.jpeg',
+      bg: './assets/abyssalSire.jpeg',
       link: '/monster',
       cta: 'View Monsters'
     },
-    {
-      title: 'Slayer Beastiary',
-      icon: './assets/misc-icons/Slayer_icon.png',
-      description: 'Track Slayer tasks and monster weaknesses to maximize your combat efficiency.',
-      bg: './assets/abyssalSire.jpeg',
-      link: '/slayer',
-      cta: 'Browse Slayer Monsters'
-    },
+    //{
+    //  title: 'Slayer Beastiary',
+    //  icon: './assets/misc-icons/Slayer_icon.png',
+    //  description: 'Track Slayer tasks and monster weaknesses to maximize your combat efficiency.',
+    //  bg: './assets/abyssalSire.jpeg',
+    //  link: '/slayer',
+    //  cta: 'Browse Slayer Monsters'
+    //},
     {
       title: 'Boss Roulette',
       icon: './assets/misc-icons/Mystery_box_detail.png',
