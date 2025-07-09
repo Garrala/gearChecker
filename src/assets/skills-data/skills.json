@@ -13,148 +13,241 @@
         {
           "name": "Gnome Stronghold",
           "minLevel": 1,
-          "maxLevel": 10,
-          "intensity": "medium"
+          "maxLevel": 1
         },
         {
           "name": "Draynor Rooftop",
           "minLevel": 1,
-          "maxLevel": 20,
-          "intensity": "medium"
+          "maxLevel": 20
         },
         {
           "name": "Al Kharid Rooftop",
           "minLevel": 20,
-          "maxLevel": 30,
-          "intensity": "medium"
+          "maxLevel": 30
         },
         {
           "name": "Varrock Rooftop",
           "minLevel": 30,
-          "maxLevel": 40,
-          "intensity": "medium"
+          "maxLevel": 40
         },
         {
           "name": "Canifis Rooftop",
           "minLevel": 40,
-          "maxLevel": 60,
-          "intensity": "medium"
+          "maxLevel": 60
         },
         {
           "name": "Falador Rooftop",
           "minLevel": 50,
-          "maxLevel": 60,
-          "intensity": "medium"
+          "maxLevel": 60
         },
         {
           "name": "Seers Rooftop",
           "minLevel": 60,
-          "maxLevel": 70,
-          "intensity": "medium"
+          "maxLevel": 70
         },
         {
           "name": "Pollnivneach Rooftop",
           "minLevel": 70,
-          "maxLevel": 90,
-          "intensity": "medium"
+          "maxLevel": 90
         },
         {
           "name": "Rellekka Rooftop",
           "minLevel": 80,
-          "maxLevel": 90,
-          "intensity": "medium"
+          "maxLevel": 90
         },
         {
           "name": "Ardougne Rooftop",
           "minLevel": 90,
-          "maxLevel": 99,
-          "intensity": "medium"
+          "maxLevel": 99
         },
         {
           "name": "Hallowed Sepulchre",
           "minLevel": 62,
-          "maxLevel": 99,
-          "intensity": "high"
+          "maxLevel": 99
         },
         {
           "name": "Brimhaven Agility Arena",
           "minLevel": 20,
-          "maxLevel": 47,
-          "intensity": "low"
+          "maxLevel": 47
         },
         {
           "name": "Wilderness Agility Course",
           "minLevel": 47,
-          "maxLevel": 62,
-          "intensity": "high"
+          "maxLevel": 62
         },
         {
           "name": "Edgeville Dungeon monkeybars",
           "minLevel": 15,
-          "maxLevel": 40,
-          "intensity": "high"
+          "maxLevel": 40
         },
         {
           "name": "Barbarian Fishing",
           "minLevel": 15,
-          "maxLevel": 74,
-          "intensity": "low"
+          "maxLevel": 74
         },
         {
           "name": "Agility Pyramid",
           "minLevel": 30,
-          "maxLevel": 99,
-          "intensity": "medium"
+          "maxLevel": 99
         },
         {
           "name": "Ape Atoll Agility Course",
           "minLevel": 48,
-          "maxLevel": 60,
-          "intensity": "medium"
+          "maxLevel": 60
         },
         {
           "name": "Shayzien Advanced Agility Course",
           "minLevel": 45,
-          "maxLevel": 60,
-          "intensity": "medium"
+          "maxLevel": 60
         },
         {
           "name": "Colossal Wyrm Agility Course",
           "minLevel": 50,
-          "maxLevel": 62,
-          "intensity": "medium"
+          "maxLevel": 62
         },
         {
           "name": "Werewolf Agility Course",
           "minLevel": 60,
-          "maxLevel": 90,
-          "intensity": "medium"
+          "maxLevel": 90
         },
         {
           "name": "Prifddinas Agility Course",
           "minLevel": 75,
-          "maxLevel": 99,
-          "intensity": "medium"
+          "maxLevel": 99
         }
       ],
       "ironman": [
         {
+          "name": "Gnome Stronghold",
+          "minLevel": 1,
+          "maxLevel": 10
+        },
+        {
+          "name": "Draynor Rooftop",
+          "minLevel": 1,
+          "maxLevel": 20
+        },
+        {
+          "name": "Al Kharid Rooftop",
+          "minLevel": 20,
+          "maxLevel": 30
+        },
+        {
+          "name": "Varrock Rooftop",
+          "minLevel": 30,
+          "maxLevel": 40
+        },
+        {
           "name": "Canifis Rooftop",
-          "minLevel": 40
+          "minLevel": 40,
+          "maxLevel": 60
+        },
+        {
+          "name": "Falador Rooftop",
+          "minLevel": 50,
+          "maxLevel": 60
+        },
+        {
+          "name": "Seers Rooftop",
+          "minLevel": 60,
+          "maxLevel": 70
+        },
+        {
+          "name": "Pollnivneach Rooftop",
+          "minLevel": 70,
+          "maxLevel": 90
+        },
+        {
+          "name": "Rellekka Rooftop",
+          "minLevel": 80,
+          "maxLevel": 90
+        },
+        {
+          "name": "Ardougne Rooftop",
+          "minLevel": 90,
+          "maxLevel": 99
         },
         {
           "name": "Hallowed Sepulchre",
-          "minLevel": 52
+          "minLevel": 62,
+          "maxLevel": 99
+        },
+        {
+          "name": "Agility Pyramid",
+          "minLevel": 30,
+          "maxLevel": 99
+        },
+        {
+          "name": "Colossal Wyrm Agility Course",
+          "minLevel": 50,
+          "maxLevel": 75
+        },
+        {
+          "name": "Prifddinas Agility Course",
+          "minLevel": 75,
+          "maxLevel": 99
         }
       ],
       "ultimate": [
         {
+          "name": "Gnome Stronghold",
+          "minLevel": 1,
+          "maxLevel": 10
+        },
+        {
           "name": "Draynor Rooftop",
-          "minLevel": 10
+          "minLevel": 1,
+          "maxLevel": 20
+        },
+        {
+          "name": "Al Kharid Rooftop",
+          "minLevel": 20,
+          "maxLevel": 30
+        },
+        {
+          "name": "Varrock Rooftop",
+          "minLevel": 30,
+          "maxLevel": 40
+        },
+        {
+          "name": "Canifis Rooftop",
+          "minLevel": 40,
+          "maxLevel": 60
         },
         {
           "name": "Falador Rooftop",
-          "minLevel": 50
+          "minLevel": 50,
+          "maxLevel": 60
+        },
+        {
+          "name": "Seers Rooftop",
+          "minLevel": 60,
+          "maxLevel": 70
+        },
+        {
+          "name": "Pollnivneach Rooftop",
+          "minLevel": 70,
+          "maxLevel": 90
+        },
+        {
+          "name": "Rellekka Rooftop",
+          "minLevel": 80,
+          "maxLevel": 90
+        },
+        {
+          "name": "Ardougne Rooftop",
+          "minLevel": 90,
+          "maxLevel": 99
+        },
+        {
+          "name": "Hallowed Sepulchre",
+          "minLevel": 52,
+          "maxLevel": 99
+        },
+        {
+          "name": "Prifddinas Agility Course",
+          "minLevel": 75,
+          "maxLevel": 99
         }
       ]
     }
@@ -172,18 +265,86 @@
     "methods": {
       "members": [
         {
-          "name": "Wintertodt",
-          "minLevel": 50
+          "name": "Burning Logs",
+          "minLevel": 1,
+          "maxLevel": 15
         },
         {
-          "name": "Redwood Logs",
-          "minLevel": 90
+          "name": "Burning Oak Logs",
+          "minLevel": 15,
+          "maxLevel": 30
+        },
+        {
+          "name": "Burning Willow Logs",
+          "minLevel": 30,
+          "maxLevel": 45
+        },
+        {
+          "name": "Burning Maple Logs",
+          "minLevel": 45,
+          "maxLevel": 60
+        },
+        {
+          "name": "Burning Yew Logs",
+          "minLevel": 60,
+          "maxLevel": 90
+        },
+        {
+          "name": "Burning Magic Logs",
+          "minLevel": 75,
+          "maxLevel": 90
+        },
+        {
+          "name": "Burning Redwood Logs",
+          "minLevel": 90,
+          "maxLevel": 99
+        },
+        {
+          "name": "Wintertodt",
+          "minLevel": 50,
+          "maxLevel": 99
         }
       ],
       "ironman": [
         {
-          "name": "Willow Logs",
-          "minLevel": 30
+          "name": "Burning Logs",
+          "minLevel": 1,
+          "maxLevel": 15
+        },
+        {
+          "name": "Burning Oak Logs",
+          "minLevel": 15,
+          "maxLevel": 30
+        },
+        {
+          "name": "Burning Willow Logs",
+          "minLevel": 30,
+          "maxLevel": 45
+        },
+        {
+          "name": "Burning Maple Logs",
+          "minLevel": 45,
+          "maxLevel": 60
+        },
+        {
+          "name": "Burning Yew Logs",
+          "minLevel": 60,
+          "maxLevel": 90
+        },
+        {
+          "name": "Burning Magic Logs",
+          "minLevel": 75,
+          "maxLevel": 90
+        },
+        {
+          "name": "Burning Redwood Logs",
+          "minLevel": 90,
+          "maxLevel": 99
+        },
+        {
+          "name": "Wintertodt",
+          "minLevel": 50,
+          "maxLevel": 99
         }
       ],
       "ultimate": [
