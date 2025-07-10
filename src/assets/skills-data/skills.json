@@ -4,9 +4,7 @@
     "icon": "assets/misc-icons/Agility_icon.png",
     "slotIndex": 4,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Agility_training_(members)",
-      "ironman": "https://oldschool.runescape.wiki/w/Agility_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Agility_training_(Ultimate_Ironman)"
+      "members": "https://oldschool.runescape.wiki/w/Agility_training"
     },
     "methods": {
       "members": [
@@ -115,140 +113,6 @@
           "minLevel": 75,
           "maxLevel": 99
         }
-      ],
-      "ironman": [
-        {
-          "name": "Gnome Stronghold",
-          "minLevel": 1,
-          "maxLevel": 10
-        },
-        {
-          "name": "Draynor Rooftop",
-          "minLevel": 1,
-          "maxLevel": 20
-        },
-        {
-          "name": "Al Kharid Rooftop",
-          "minLevel": 20,
-          "maxLevel": 30
-        },
-        {
-          "name": "Varrock Rooftop",
-          "minLevel": 30,
-          "maxLevel": 40
-        },
-        {
-          "name": "Canifis Rooftop",
-          "minLevel": 40,
-          "maxLevel": 60
-        },
-        {
-          "name": "Falador Rooftop",
-          "minLevel": 50,
-          "maxLevel": 60
-        },
-        {
-          "name": "Seers Rooftop",
-          "minLevel": 60,
-          "maxLevel": 70
-        },
-        {
-          "name": "Pollnivneach Rooftop",
-          "minLevel": 70,
-          "maxLevel": 90
-        },
-        {
-          "name": "Rellekka Rooftop",
-          "minLevel": 80,
-          "maxLevel": 90
-        },
-        {
-          "name": "Ardougne Rooftop",
-          "minLevel": 90,
-          "maxLevel": 99
-        },
-        {
-          "name": "Hallowed Sepulchre",
-          "minLevel": 62,
-          "maxLevel": 99
-        },
-        {
-          "name": "Agility Pyramid",
-          "minLevel": 30,
-          "maxLevel": 99
-        },
-        {
-          "name": "Colossal Wyrm Agility Course",
-          "minLevel": 50,
-          "maxLevel": 75
-        },
-        {
-          "name": "Prifddinas Agility Course",
-          "minLevel": 75,
-          "maxLevel": 99
-        }
-      ],
-      "ultimate": [
-        {
-          "name": "Gnome Stronghold",
-          "minLevel": 1,
-          "maxLevel": 10
-        },
-        {
-          "name": "Draynor Rooftop",
-          "minLevel": 1,
-          "maxLevel": 20
-        },
-        {
-          "name": "Al Kharid Rooftop",
-          "minLevel": 20,
-          "maxLevel": 30
-        },
-        {
-          "name": "Varrock Rooftop",
-          "minLevel": 30,
-          "maxLevel": 40
-        },
-        {
-          "name": "Canifis Rooftop",
-          "minLevel": 40,
-          "maxLevel": 60
-        },
-        {
-          "name": "Falador Rooftop",
-          "minLevel": 50,
-          "maxLevel": 60
-        },
-        {
-          "name": "Seers Rooftop",
-          "minLevel": 60,
-          "maxLevel": 70
-        },
-        {
-          "name": "Pollnivneach Rooftop",
-          "minLevel": 70,
-          "maxLevel": 90
-        },
-        {
-          "name": "Rellekka Rooftop",
-          "minLevel": 80,
-          "maxLevel": 90
-        },
-        {
-          "name": "Ardougne Rooftop",
-          "minLevel": 90,
-          "maxLevel": 99
-        },
-        {
-          "name": "Hallowed Sepulchre",
-          "minLevel": 52,
-          "maxLevel": 99
-        },
-        {
-          "name": "Prifddinas Agility Course",
-          "minLevel": 75,
-          "maxLevel": 99
-        }
       ]
     }
   },
@@ -257,10 +121,7 @@
     "icon": "assets/misc-icons/Firemaking_icon.png",
     "slotIndex": 14,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Firemaking_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Firemaking_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Firemaking_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Firemaking_training"
+      "members": "https://oldschool.runescape.wiki/w/Firemaking_training"
     },
     "methods": {
       "members": [
@@ -303,60 +164,6 @@
           "name": "Wintertodt",
           "minLevel": 50,
           "maxLevel": 99
-        }
-      ],
-      "ironman": [
-        {
-          "name": "Burning Logs",
-          "minLevel": 1,
-          "maxLevel": 15
-        },
-        {
-          "name": "Burning Oak Logs",
-          "minLevel": 15,
-          "maxLevel": 30
-        },
-        {
-          "name": "Burning Willow Logs",
-          "minLevel": 30,
-          "maxLevel": 45
-        },
-        {
-          "name": "Burning Maple Logs",
-          "minLevel": 45,
-          "maxLevel": 60
-        },
-        {
-          "name": "Burning Yew Logs",
-          "minLevel": 60,
-          "maxLevel": 90
-        },
-        {
-          "name": "Burning Magic Logs",
-          "minLevel": 75,
-          "maxLevel": 90
-        },
-        {
-          "name": "Burning Redwood Logs",
-          "minLevel": 90,
-          "maxLevel": 99
-        },
-        {
-          "name": "Wintertodt",
-          "minLevel": 50,
-          "maxLevel": 99
-        }
-      ],
-      "ultimate": [
-        {
-          "name": "Maple Logs",
-          "minLevel": 45
-        }
-      ],
-      "f2p": [
-        {
-          "name": "Normal Logs at GE",
-          "minLevel": 1
         }
       ]
     }
@@ -366,34 +173,94 @@
     "icon": "assets/misc-icons/Cooking_icon.png",
     "slotIndex": 11,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Cooking_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Cooking_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Cooking_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Cooking_training"
+      "members": "https://oldschool.runescape.wiki/w/Cooking_training"
     },
     "methods": {
       "members": [
         {
-          "name": "Sharks at Hosidius",
-          "minLevel": 80
-        }
-      ],
-      "ironman": [
+          "name": "Poison Karambwan",
+          "minLevel": 1,
+          "maxLevel": 30
+        },
         {
-          "name": "Wines",
-          "minLevel": 35
-        }
-      ],
-      "ultimate": [
+          "name": "Cooking Sardines",
+          "minLevel": 1,
+          "maxLevel": 5
+        },
         {
-          "name": "Cooked Fish from Fishing",
-          "minLevel": 1
-        }
-      ],
-      "f2p": [
+          "name": "Cooking Herring",
+          "minLevel": 5,
+          "maxLevel": 10
+        },
         {
-          "name": "Trout and Salmon",
-          "minLevel": 15
+          "name": "Cooking Mackerel",
+          "minLevel": 10,
+          "maxLevel": 15
+        },
+        {
+          "name": "Cooking Trout",
+          "minLevel": 15,
+          "maxLevel": 20
+        },
+        {
+          "name": "Cooking Pike",
+          "minLevel": 20,
+          "maxLevel": 25
+        },
+        {
+          "name": "Cooking Salmon",
+          "minLevel": 25,
+          "maxLevel": 30
+        },
+        {
+          "name": "Cooking Karambwans",
+          "minLevel": 30,
+          "maxLevel": 99
+        },
+        {
+          "name": "Bake Pie",
+          "minLevel": 10,
+          "maxLevel": 99
+        },
+        {
+          "name": "Jugs of Wine",
+          "minLevel": 35,
+          "maxLevel": 99
+        },
+        {
+          "name": "Cooking Tuna",
+          "minLevel": 30,
+          "maxLevel": 40
+        },
+        {
+          "name": "Cooking Lobster",
+          "minLevel": 40,
+          "maxLevel": 68
+        },
+        {
+          "name": "Cooking Swordfish",
+          "minLevel": 68,
+          "maxLevel": 80
+        },
+        {
+          "name": "Cooking Monkfish",
+          "minLevel": 68,
+          "maxLevel": 80
+        },
+        {
+          "name": "Cooking Sharks",
+          "minLevel": 80,
+          "maxLevel": 84
+        },
+        {
+          "name": "Cooking Anglerfish",
+          "minLevel": 84,
+          "maxLevel": 99
+        },
+        {
+          "name": "Cooking Manta rays",
+          "minLevel": 91,
+          "maxLevel": 99
         }
       ]
     }
@@ -403,16 +270,96 @@
     "icon": "assets/misc-icons/Attack_icon.png",
     "slotIndex": 0,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Attack_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Attack_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Attack_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Attack_training"
+      "members": "https://oldschool.runescape.wiki/w/Pay-to-play_melee_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": [
+        {
+          "name": "Ammonite Crabs",
+          "minLevel": 30,
+          "maxLevel": 50
+        },
+        {
+          "name": "Sand Crabs",
+          "minLevel": 30,
+          "maxLevel": 50
+        },
+        {
+          "name": "Nightmare Zone Normal Rumble",
+          "minLevel": 50,
+          "maxLevel": 70
+        },
+        {
+          "name": "Nightmare Zone Hard Rumble",
+          "minLevel": 70,
+          "maxLevel": 99
+        },
+        {
+          "name": "Chickens",
+          "minLevel": 1,
+          "maxLevel": 10
+        },
+        {
+          "name": "Rock Crabs",
+          "minLevel": 10,
+          "maxLevel": 60
+        },
+        {
+          "name": "Chaos Druids",
+          "minLevel": 30,
+          "maxLevel": 60
+        },
+        {
+          "name": "Ogres",
+          "minLevel": 30,
+          "maxLevel": 81
+        },
+        {
+          "name": "Moss Giants",
+          "minLevel": 40,
+          "maxLevel": 60
+        },
+        {
+          "name": "Wilderness Slayer",
+          "minLevel": 60,
+          "maxLevel": 70
+        },
+        {
+          "name": "Green Dragons",
+          "minLevel": 60,
+          "maxLevel": 70
+        },
+        {
+          "name": "Slayer",
+          "minLevel": 70,
+          "maxLevel": 99
+        },
+        {
+          "name": "Gargoyles",
+          "minLevel": 70,
+          "maxLevel": 99
+        },
+        {
+          "name": "Scurrius",
+          "minLevel": 60,
+          "maxLevel": 99
+        },
+        {
+          "name": "Sulphur Naguas",
+          "minLevel": 60,
+          "maxLevel": 99
+        },
+        {
+          "name": "Pest Control",
+          "minLevel": 60,
+          "maxLevel": 99
+        },
+        {
+          "name": "Rune Dragons",
+          "minLevel": 90,
+          "maxLevel": 99
+        }
+      ]
     }
   },
   {
@@ -420,16 +367,96 @@
     "icon": "assets/misc-icons/Strength_icon.png",
     "slotIndex": 3,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Strength_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Strength_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Strength_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Strength_training"
+      "members": "https://oldschool.runescape.wiki/w/Pay-to-play_melee_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": [
+        {
+          "name": "Ammonite Crabs",
+          "minLevel": 30,
+          "maxLevel": 50
+        },
+        {
+          "name": "Sand Crabs",
+          "minLevel": 30,
+          "maxLevel": 50
+        },
+        {
+          "name": "Nightmare Zone Normal Rumble",
+          "minLevel": 50,
+          "maxLevel": 70
+        },
+        {
+          "name": "Nightmare Zone Hard Rumble",
+          "minLevel": 70,
+          "maxLevel": 99
+        },
+        {
+          "name": "Chickens",
+          "minLevel": 1,
+          "maxLevel": 10
+        },
+        {
+          "name": "Rock Crabs",
+          "minLevel": 10,
+          "maxLevel": 60
+        },
+        {
+          "name": "Chaos Druids",
+          "minLevel": 30,
+          "maxLevel": 60
+        },
+        {
+          "name": "Ogres",
+          "minLevel": 30,
+          "maxLevel": 81
+        },
+        {
+          "name": "Moss Giants",
+          "minLevel": 40,
+          "maxLevel": 60
+        },
+        {
+          "name": "Wilderness Slayer",
+          "minLevel": 60,
+          "maxLevel": 70
+        },
+        {
+          "name": "Green Dragons",
+          "minLevel": 60,
+          "maxLevel": 70
+        },
+        {
+          "name": "Slayer",
+          "minLevel": 70,
+          "maxLevel": 99
+        },
+        {
+          "name": "Gargoyles",
+          "minLevel": 70,
+          "maxLevel": 99
+        },
+        {
+          "name": "Scurrius",
+          "minLevel": 60,
+          "maxLevel": 99
+        },
+        {
+          "name": "Sulphur Naguas",
+          "minLevel": 60,
+          "maxLevel": 99
+        },
+        {
+          "name": "Pest Control",
+          "minLevel": 60,
+          "maxLevel": 99
+        },
+        {
+          "name": "Rune Dragons",
+          "minLevel": 90,
+          "maxLevel": 99
+        }
+      ]
     }
   },
   {
@@ -437,16 +464,96 @@
     "icon": "assets/misc-icons/Defence_icon.png",
     "slotIndex": 6,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Defence_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Defence_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Defence_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Defence_training"
+      "members": "https://oldschool.runescape.wiki/w/Pay-to-play_melee_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": [
+        {
+          "name": "Ammonite Crabs",
+          "minLevel": 30,
+          "maxLevel": 50
+        },
+        {
+          "name": "Sand Crabs",
+          "minLevel": 30,
+          "maxLevel": 50
+        },
+        {
+          "name": "Nightmare Zone Normal Rumble",
+          "minLevel": 50,
+          "maxLevel": 70
+        },
+        {
+          "name": "Nightmare Zone Hard Rumble",
+          "minLevel": 70,
+          "maxLevel": 99
+        },
+        {
+          "name": "Chickens",
+          "minLevel": 1,
+          "maxLevel": 10
+        },
+        {
+          "name": "Rock Crabs",
+          "minLevel": 10,
+          "maxLevel": 60
+        },
+        {
+          "name": "Chaos Druids",
+          "minLevel": 30,
+          "maxLevel": 60
+        },
+        {
+          "name": "Ogres",
+          "minLevel": 30,
+          "maxLevel": 81
+        },
+        {
+          "name": "Moss Giants",
+          "minLevel": 40,
+          "maxLevel": 60
+        },
+        {
+          "name": "Wilderness Slayer",
+          "minLevel": 60,
+          "maxLevel": 70
+        },
+        {
+          "name": "Green Dragons",
+          "minLevel": 60,
+          "maxLevel": 70
+        },
+        {
+          "name": "Slayer",
+          "minLevel": 70,
+          "maxLevel": 99
+        },
+        {
+          "name": "Gargoyles",
+          "minLevel": 70,
+          "maxLevel": 99
+        },
+        {
+          "name": "Scurrius",
+          "minLevel": 60,
+          "maxLevel": 99
+        },
+        {
+          "name": "Sulphur Naguas",
+          "minLevel": 60,
+          "maxLevel": 99
+        },
+        {
+          "name": "Pest Control",
+          "minLevel": 60,
+          "maxLevel": 99
+        },
+        {
+          "name": "Rune Dragons",
+          "minLevel": 90,
+          "maxLevel": 99
+        }
+      ]
     }
   },
   {
@@ -454,16 +561,61 @@
     "icon": "assets/misc-icons/Ranged_icon.png",
     "slotIndex": 9,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Ranged_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Ranged_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Ranged_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Ranged_training"
+      "members": "https://oldschool.runescape.wiki/w/Ranged_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": [
+        {
+          "name": "Dwarf Multicannon",
+          "minLevel": 1,
+          "maxLevel": 45
+        },
+        {
+          "name": "Chinning Maniacal Monkeys",
+          "minLevel": 45,
+          "maxLevel": 99
+        },
+        {
+          "name": "Sand Crabs",
+          "minLevel": 1,
+          "maxLevel": 70
+        },
+        {
+          "name": "Ammonite Crabs",
+          "minLevel": 1,
+          "maxLevel": 70
+        },
+        {
+          "name": "Swamp Crabs",
+          "minLevel": 1,
+          "maxLevel": 70
+        },
+        {
+          "name": "Rock Crabs",
+          "minLevel": 1,
+          "maxLevel": 70
+        },
+        {
+          "name": "Chinning Skeletal Monkeys",
+          "minLevel": 45,
+          "maxLevel": 99
+        },
+        {
+          "name": "Pest Control",
+          "minLevel": 70,
+          "maxLevel": 99
+        },
+        {
+          "name": "Nightmare Zone Normal Rumble",
+          "minLevel": 70,
+          "maxLevel": 99
+        },
+        {
+          "name": "Slayer",
+          "minLevel": 75,
+          "maxLevel": 99
+        }
+      ]
     }
   },
   {
@@ -471,16 +623,46 @@
     "icon": "assets/misc-icons/Prayer_icon.png",
     "slotIndex": 12,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Prayer_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Prayer_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Prayer_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Prayer_training"
+      "members": "https://oldschool.runescape.wiki/w/Prayer_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": [
+        {
+          "name": "Gilded Altar Offering",
+          "minLevel": 1,
+          "maxLevel": 99
+        },
+        {
+          "name": "Blessed Bone Shards Offering",
+          "minLevel": 30,
+          "maxLevel": 99
+        },
+        {
+          "name": "Chaos Temple Offering",
+          "minLevel": 1,
+          "maxLevel": 99
+        },
+        {
+          "name": "Reanimating Ensouled Heads",
+          "minLevel": 1,
+          "maxLevel": 99
+        },
+        {
+          "name": "Sinister Offering",
+          "minLevel": 1,
+          "maxLevel": 99
+        },
+        {
+          "name": "Demonic Offering",
+          "minLevel": 1,
+          "maxLevel": 99
+        },
+        {
+          "name": "Ectofunctus",
+          "minLevel": 1,
+          "maxLevel": 99
+        }
+      ]
     }
   },
   {
@@ -488,16 +670,111 @@
     "icon": "assets/misc-icons/Magic_icon.png",
     "slotIndex": 15,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Magic_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Magic_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Magic_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Magic_training"
+      "members": "https://oldschool.runescape.wiki/w/Magic_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": [
+        {
+          "name": "Enchanting Bolts",
+          "minLevel": 4,
+          "maxLevel": 99
+        },
+        {
+          "name": "Lvl-1 Enchant",
+          "minLevel": 7,
+          "maxLevel": 21
+        },
+        {
+          "name": "Low Level Alchemy",
+          "minLevel": 21,
+          "maxLevel": 55
+        },
+        {
+          "name": "Killing Crabs",
+          "minLevel": 1,
+          "maxLevel": 55
+        },
+        {
+          "name": "Exploiting Elemental Weaknesses",
+          "minLevel": 1,
+          "maxLevel": 55
+        },
+        {
+          "name": "Splashing Combat Spells",
+          "minLevel": 1,
+          "maxLevel": 55
+        },
+        {
+          "name": "Superheat Item",
+          "minLevel": 43,
+          "maxLevel": 55
+        },
+        {
+          "name": "Camelot Teleport",
+          "minLevel": 45,
+          "maxLevel": 55
+        },
+        {
+          "name": "High Level Alchemy",
+          "minLevel": 55,
+          "maxLevel": 99
+        },
+        {
+          "name": "Bake Pie",
+          "minLevel": 65,
+          "maxLevel": 99
+        },
+        {
+          "name": "Magic Imbue",
+          "minLevel": 82,
+          "maxLevel": 99
+        },
+        {
+          "name": "Bursting / Barraging Slayer",
+          "minLevel": 62,
+          "maxLevel": 99
+        },
+        {
+          "name": "Bursting / Barraging Maniacal Monkeys",
+          "minLevel": 62,
+          "maxLevel": 99
+        },
+        {
+          "name": "Bursting / Barraging Bandits (Bandit Camp)",
+          "minLevel": 62,
+          "maxLevel": 99
+        },
+        {
+          "name": "Lunar Spell: Cure Me",
+          "minLevel": 71,
+          "maxLevel": 99
+        },
+        {
+          "name": "Lunar Spell: Potion Share",
+          "minLevel": 81,
+          "maxLevel": 99
+        },
+        {
+          "name": "Lunar Spell: String Jewellery",
+          "minLevel": 80,
+          "maxLevel": 99
+        },
+        {
+          "name": "Lunar Spell: Plank Make",
+          "minLevel": 86,
+          "maxLevel": 99
+        },
+        {
+          "name": "Tele-Alching",
+          "minLevel": 55,
+          "maxLevel": 80
+        },
+        {
+          "name": "Stun-Alching",
+          "minLevel": 80,
+          "maxLevel": 99
+        }
+      ]
     }
   },
   {
@@ -505,16 +782,91 @@
     "icon": "assets/misc-icons/Runecraft_icon.png",
     "slotIndex": 18,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Runecraft_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Runecraft_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Runecraft_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Runecraft_training"
+      "members": "https://oldschool.runescape.wiki/w/Runecraft_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": [
+        {
+          "name": "Making Talisman Tiaras",
+          "minLevel": 1,
+          "maxLevel": 50
+        },
+        {
+          "name": "Lava Runes (Solo)",
+          "minLevel": 23,
+          "maxLevel": 99
+        },
+        {
+          "name": "Lava Runes (with Runners)",
+          "minLevel": 23,
+          "maxLevel": 99
+        },
+        {
+          "name": "Guardians of the Rift",
+          "minLevel": 27,
+          "maxLevel": 99
+        },
+        {
+          "name": "Ourania Altar",
+          "minLevel": 1,
+          "maxLevel": 99
+        },
+        {
+          "name": "Blood Runes at Arceuus",
+          "minLevel": 77,
+          "maxLevel": 99
+        },
+        {
+          "name": "Soul Runes at Arceuus",
+          "minLevel": 90,
+          "maxLevel": 99
+        },
+        {
+          "name": "Arceuus Library",
+          "minLevel": 1,
+          "maxLevel": 99
+        },
+        {
+          "name": "Other Combination Runes",
+          "minLevel": 15,
+          "maxLevel": 99
+        },
+        {
+          "name": "Imbuing Desiccated Pages",
+          "minLevel": 50,
+          "maxLevel": 99
+        },
+        {
+          "name": "Double Cosmic Runes",
+          "minLevel": 59,
+          "maxLevel": 91
+        },
+        {
+          "name": "Double Astral Runes",
+          "minLevel": 82,
+          "maxLevel": 99
+        },
+        {
+          "name": "Double Nature Runes",
+          "minLevel": 91,
+          "maxLevel": 99
+        },
+        {
+          "name": "Double Law Runes",
+          "minLevel": 95,
+          "maxLevel": 99
+        },
+        {
+          "name": "Aether Runes",
+          "minLevel": 90,
+          "maxLevel": 99
+        },
+        {
+          "name": "Wrath Runes",
+          "minLevel": 95,
+          "maxLevel": 99
+        }
+      ]
     }
   },
   {
@@ -522,16 +874,81 @@
     "icon": "assets/misc-icons/Construction_icon.png",
     "slotIndex": 21,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Construction_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Construction_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Construction_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Construction_training"
+      "members": "https://oldschool.runescape.wiki/w/Construction_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": [
+        { 
+          "name": "Crude wooden chair",
+          "minLevel": 1,
+          "maxLevel": 4
+        },
+        {
+          "name": "Wooden bookcase",
+          "minLevel": 4,
+          "maxLevel": 9
+        },
+        {
+          "name": "Wooden Larders",
+          "minLevel": 9,
+          "maxLevel": 15
+        },
+        {
+          "name": "Repair Benchs",
+          "minLevel": 15,
+          "maxLevel": 16
+        },
+        {
+          "name": "Crafting Table 1",
+          "minLevel": 16,
+          "maxLevel": 22
+        },
+        {
+          "name": "Oak Dining Table",
+          "minLevel": 22,
+          "maxLevel": 31
+        },
+        {
+          "name": "Carved Oak Table",
+          "minLevel": 31,
+          "maxLevel": 33
+        },
+        {
+          "name": "Oak Larders",
+          "minLevel": 33,
+          "maxLevel": 74
+        },
+        {
+          "name": "Mahogany Table",
+          "minLevel": 52,
+          "maxLevel": 99
+        },
+        {
+          "name": "Gnome Bench",
+          "minLevel": 77,
+          "maxLevel": 99
+        },
+        {
+          "name": "Mahogany Homes",
+          "minLevel": 1,
+          "maxLevel": 99
+        },
+        {
+          "name": "Mounted Mythical Capes",
+          "minLevel": 50,
+          "maxLevel": 99
+        },
+        {
+          "name": "Teak Garden Benches",
+          "minLevel": 66,
+          "maxLevel": 99
+        },
+        {
+          "name": "Oak Dungeon Doors",
+          "minLevel": 74,
+          "maxLevel": 99
+        } 
+      ]
     }
   },
   {
@@ -539,16 +956,96 @@
     "icon": "assets/misc-icons/Hitpoints_icon.png",
     "slotIndex": 1,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Hitpoints_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Hitpoints_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Hitpoints_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Hitpoints_training"
+      "members": "https://oldschool.runescape.wiki/w/Hitpoints_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": [
+        {
+          "name": "Ammonite Crabs",
+          "minLevel": 30,
+          "maxLevel": 50
+        },
+        {
+          "name": "Sand Crabs",
+          "minLevel": 30,
+          "maxLevel": 50
+        },
+        {
+          "name": "Nightmare Zone Normal Rumble",
+          "minLevel": 50,
+          "maxLevel": 70
+        },
+        {
+          "name": "Nightmare Zone Hard Rumble",
+          "minLevel": 70,
+          "maxLevel": 99
+        },
+        {
+          "name": "Chickens",
+          "minLevel": 1,
+          "maxLevel": 10
+        },
+        {
+          "name": "Rock Crabs",
+          "minLevel": 10,
+          "maxLevel": 60
+        },
+        {
+          "name": "Chaos Druids",
+          "minLevel": 30,
+          "maxLevel": 60
+        },
+        {
+          "name": "Ogres",
+          "minLevel": 30,
+          "maxLevel": 81
+        },
+        {
+          "name": "Moss Giants",
+          "minLevel": 40,
+          "maxLevel": 60
+        },
+        {
+          "name": "Wilderness Slayer",
+          "minLevel": 60,
+          "maxLevel": 70
+        },
+        {
+          "name": "Green Dragons",
+          "minLevel": 60,
+          "maxLevel": 70
+        },
+        {
+          "name": "Slayer",
+          "minLevel": 70,
+          "maxLevel": 99
+        },
+        {
+          "name": "Gargoyles",
+          "minLevel": 70,
+          "maxLevel": 99
+        },
+        {
+          "name": "Scurrius",
+          "minLevel": 60,
+          "maxLevel": 99
+        },
+        {
+          "name": "Sulphur Naguas",
+          "minLevel": 60,
+          "maxLevel": 99
+        },
+        {
+          "name": "Pest Control",
+          "minLevel": 60,
+          "maxLevel": 99
+        },
+        {
+          "name": "Rune Dragons",
+          "minLevel": 90,
+          "maxLevel": 99
+        }
+      ]
     }
   },
   {
@@ -556,16 +1053,161 @@
     "icon": "assets/misc-icons/Crafting_icon.png",
     "slotIndex": 13,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Crafting_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Crafting_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Crafting_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Crafting_training"
+      "members": "https://oldschool.runescape.wiki/w/Crafting_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": [
+        {
+          "name": "Leather gloves",
+          "minLevel": 1,
+          "maxLevel": 7
+        },
+        {
+          "name": "Leather boots",
+          "minLevel": 7,
+          "maxLevel": 9
+        },
+        {
+          "name": "Leather cowls",
+          "minLevel": 9,
+          "maxLevel": 11
+        },
+        {
+          "name": "Leather vambraces",
+          "minLevel": 11,
+          "maxLevel": 14
+        },
+        {
+          "name": "Leather bodies",
+          "minLevel": 14,
+          "maxLevel": 20
+        },
+        {
+          "name": "Cutting sapphires",
+          "minLevel": 20,
+          "maxLevel": 99
+        },
+        {
+          "name": "Cutting emeralds",
+          "minLevel": 27,
+          "maxLevel": 99
+        },
+        {
+          "name": "Cutting rubies",
+          "minLevel": 34,
+          "maxLevel": 99
+        },
+        {
+          "name": "Cutting diamonds",
+          "minLevel": 43,
+          "maxLevel": 99
+        },
+        {
+          "name": "Cutting dragonstones",
+          "minLevel": 55,
+          "maxLevel": 99
+        },
+        {
+          "name": "Crafting water battlestaves",
+          "minLevel": 54,
+          "maxLevel": 99
+        },
+        {
+          "name": "Crafting earth battlestaves",
+          "minLevel": 58,
+          "maxLevel": 99
+        },
+        {
+          "name": "Crafting fire battlestaves",
+          "minLevel": 63,
+          "maxLevel": 99
+        },
+        {
+          "name": "Crafting air battlestaves",
+          "minLevel": 71,
+          "maxLevel": 99
+        },
+        {
+          "name": "Green d'hide bodies",
+          "minLevel": 63,
+          "maxLevel": 99
+        },
+        {
+          "name": "Blue d'hide bodies",
+          "minLevel": 71,
+          "maxLevel": 99
+        },
+        {
+          "name": "Red d'hide bodies",
+          "minLevel": 77,
+          "maxLevel": 99
+        },
+        {
+          "name": "Black d'hide bodies",
+          "minLevel": 84,
+          "maxLevel": 99
+        },
+        {
+          "name": "Glassblow Beer glass",
+          "minLevel": 1,
+          "maxLevel": 4
+        },
+        {
+          "name": "Glassblow Empty candle lantern",
+          "minLevel": 4,
+          "maxLevel": 12
+        },
+        {
+          "name": "Glassblow Oil lamp",
+          "minLevel": 12,
+          "maxLevel": 33
+        },
+        {
+          "name": "Glassblow Vial",
+          "minLevel": 33,
+          "maxLevel": 42
+        },
+        {
+          "name": "Glassblow Empty Fishbowl",
+          "minLevel": 42,
+          "maxLevel": 46
+        },
+        {
+          "name": "Glassblow Unpowered Orbs",
+          "minLevel": 46,
+          "maxLevel": 49
+        },
+        {
+          "name": "Glassblow Lantern lens",
+          "minLevel": 49,
+          "maxLevel": 87
+        },
+        {
+          "name": "Glassblow Light orbs",
+          "minLevel": 87,
+          "maxLevel": 99
+        },
+        {
+          "name": "Crafting jewellery",
+          "minLevel": 5,
+          "maxLevel": 99
+        },
+        {
+          "name": "Crafting drift nets",
+          "minLevel": 26,
+          "maxLevel": 46
+        },
+        {
+          "name": "Superglass Make",
+          "minLevel": 61,
+          "maxLevel": 99
+        },
+        {
+          "name": "Cutting amethyst",
+          "minLevel": 83,
+          "maxLevel": 99
+        }
+      ]
     }
   },
   {
@@ -573,16 +1215,66 @@
     "icon": "assets/misc-icons/Mining_icon.png",
     "slotIndex": 2,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Mining_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Mining_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Mining_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Mining_training"
+      "members": "https://oldschool.runescape.wiki/w/Mining_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": [
+        {
+          "name": "Copper/Tin ore",
+          "minLevel": 1,
+          "maxLevel": 15
+        },
+        {
+          "name": "Iron ore",
+          "minLevel": 15,
+          "maxLevel": 70
+        },
+        {
+          "name": "Granite",
+          "minLevel": 45,
+          "maxLevel": 99
+        },
+        {
+          "name": "Motherlode Mine",
+          "minLevel": 30,
+          "maxLevel": 99
+        },
+        {
+          "name": "Gem rocks",
+          "minLevel": 40,
+          "maxLevel": 99
+        },
+        {
+          "name": "Calcified rocks",
+          "minLevel": 41,
+          "maxLevel": 99
+        },
+        {
+          "name": "Crashed stars",
+          "minLevel": 60,
+          "maxLevel": 99
+        },
+        {
+          "name": "Volcanic Mine",
+          "minLevel": 70,
+          "maxLevel": 99
+        },
+        {
+          "name": "Zalcano",
+          "minLevel": 70,
+          "maxLevel": 99
+        },
+        {
+          "name": "Blast Mine",
+          "minLevel": 75,
+          "maxLevel": 99
+        },
+        {
+          "name": "Amethyst",
+          "minLevel": 92,
+          "maxLevel": 99
+        }
+      ]
     }
   },
   {
@@ -590,16 +1282,126 @@
     "icon": "assets/misc-icons/Smithing_icon.png",
     "slotIndex": 5,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Smithing_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Smithing_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Smithing_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Smithing_training"
+      "members": "https://oldschool.runescape.wiki/w/Smithing_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": [
+        {
+          "name": "Bronze dagger",
+          "minLevel": 1,
+          "maxLevel": 5
+        },
+        {
+          "name": "Bronze scimitar",
+          "minLevel": 5,
+          "maxLevel": 9
+        },
+        {
+          "name": "Bronze warhammer",
+          "minLevel": 9,
+          "maxLevel": 18
+        },
+        {
+          "name": "Bronze platebody",
+          "minLevel": 18,
+          "maxLevel": 24
+        },
+        {
+          "name": "Iron warhammer",
+          "minLevel": 24,
+          "maxLevel": 33
+        },
+        {
+          "name": "Iron platebody",
+          "minLevel": 33,
+          "maxLevel": 39
+        },
+        {
+          "name": "Steel warhammer",
+          "minLevel": 39,
+          "maxLevel": 40
+        },
+        {
+          "name": "Blast Furnace (Gold bars)",
+          "minLevel": 40,
+          "maxLevel": 99
+        },
+        {
+          "name": "Giants' Foundry",
+          "minLevel": 15,
+          "maxLevel": 99
+        },
+        {
+          "name": "Blast Furnace (non-gold)",
+          "minLevel": 15,
+          "maxLevel": 99
+        },
+        {
+          "name": "Bronze dart tips",
+          "minLevel": 4,
+          "maxLevel": 19
+        },
+        {
+          "name": "Iron dart tips",
+          "minLevel": 19,
+          "maxLevel": 34
+        },
+        {
+          "name": "Steel dart tips",
+          "minLevel": 34,
+          "maxLevel": 54
+        },
+        {
+          "name": "Mithril dart tips",
+          "minLevel": 54,
+          "maxLevel": 74
+        },
+        {
+          "name": "Adamant dart tips",
+          "minLevel": 74,
+          "maxLevel": 89
+        },
+        {
+          "name": "Rune dart tips",
+          "minLevel": 89,
+          "maxLevel": 99
+        },
+        {
+          "name": "Smithing cannonballs",
+          "minLevel": 35,
+          "maxLevel": 99
+        },
+        {
+          "name": "Steel platebody",
+          "minLevel": 48,
+          "maxLevel": 68
+        },
+        {
+          "name": "Mithril platelegs",
+          "minLevel": 66,
+          "maxLevel": 68
+        },
+        {
+          "name": "Mithril plateskirt",
+          "minLevel": 66,
+          "maxLevel": 68
+        },
+        {
+          "name": "Mithril platebody",
+          "minLevel": 68,
+          "maxLevel": 88
+        },
+        {
+          "name": "Adamant platebody",
+          "minLevel": 88,
+          "maxLevel": 99
+        },
+        {
+          "name": "3-bar rune items",
+          "minLevel": 95,
+          "maxLevel": 99
+        }
+      ]
     }
   },
   {
@@ -607,34 +1409,148 @@
     "icon": "assets/misc-icons/Fishing_icon.png",
     "slotIndex": 8,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Fishing_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Fishing_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Fishing_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Fishing_training"
+      "members": "https://oldschool.runescape.wiki/w/Fishing_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": [
+        {
+          "name": "Shrimp fishing",
+          "minLevel": 1,
+          "maxLevel": 20
+        },
+        {
+          "name": "Fly fishing",
+          "minLevel": 20,
+          "maxLevel": 58
+        },
+        {
+          "name": "Drift net fishing",
+          "minLevel": 47,
+          "maxLevel": 99
+        },
+        {
+          "name": "Barbarian Fishing",
+          "minLevel": 58,
+          "maxLevel": 99
+        },
+        {
+          "name": "2-tick harpooning swordfish/tuna",
+          "minLevel": 71,
+          "maxLevel": 99
+        },
+        {
+          "name": "Tempoross",
+          "minLevel": 35,
+          "maxLevel": 99
+        },
+        {
+          "name": "Aerial fishing",
+          "minLevel": 43,
+          "maxLevel": 99
+        },
+        {
+          "name": "Monkfish",
+          "minLevel": 62,
+          "maxLevel": 99
+        },
+        {
+          "name": "Karambwan",
+          "minLevel": 65,
+          "maxLevel": 99
+        },
+        {
+          "name": "Infernal eel",
+          "minLevel": 80,
+          "maxLevel": 99
+        },
+        {
+          "name": "Minnows",
+          "minLevel": 82,
+          "maxLevel": 99
+        },
+        {
+          "name": "Anglerfish",
+          "minLevel": 82,
+          "maxLevel": 99
+        },
+        {
+          "name": "Dark crabs",
+          "minLevel": 85,
+          "maxLevel": 99
+        },
+        {
+          "name": "Sacred eel",
+          "minLevel": 87,
+          "maxLevel": 99
+        }
+      ]
     }
   },
-
   {
     "name": "Woodcutting",
     "icon": "assets/misc-icons/Woodcutting_icon.png",
     "slotIndex": 17,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Woodcutting_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Woodcutting_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Woodcutting_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Woodcutting_training"
+      "members": "https://oldschool.runescape.wiki/w/Woodcutting_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": [
+        {
+          "name": "Regular trees",
+          "minLevel": 1,
+          "maxLevel": 15
+        },
+        {
+          "name": "Oak trees",
+          "minLevel": 15,
+          "maxLevel": 30
+        },
+        {
+          "name": "Willow trees",
+          "minLevel": 30,
+          "maxLevel": 35
+        },
+        {
+          "name": "Teak trees",
+          "minLevel": 35,
+          "maxLevel": 99
+        },
+        {
+          "name": "Maple trees",
+          "minLevel": 45,
+          "maxLevel": 50
+        },
+        {
+          "name": "Mahogany trees",
+          "minLevel": 50,
+          "maxLevel": 60
+        },
+        {
+          "name": "Yew trees",
+          "minLevel": 60,
+          "maxLevel": 75
+        },
+        {
+          "name": "Magic trees",
+          "minLevel": 75,
+          "maxLevel": 90
+        },
+        {
+          "name": "Redwood trees",
+          "minLevel": 90,
+          "maxLevel": 99
+        },
+        {
+          "name": "Blisterwood trees",
+          "minLevel": 62,
+          "maxLevel": 90
+        },
+        {
+          "name": "Sulliuscep",
+          "minLevel": 65,
+          "maxLevel": 99
+        }
+      ]
     }
   },
   {
@@ -642,16 +1558,10 @@
     "icon": "assets/misc-icons/Fletching_icon.png",
     "slotIndex": 16,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Fletching_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Fletching_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Fletching_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Fletching_training"
+      "members": "https://oldschool.runescape.wiki/w/Fletching_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": []
     }
   },
   {
@@ -659,16 +1569,10 @@
     "icon": "assets/misc-icons/Slayer_icon.png",
     "slotIndex": 19,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Slayer_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Slayer_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Slayer_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Slayer_training"
+      "members": "https://oldschool.runescape.wiki/w/Slayer_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": []
     }
   },
   {
@@ -676,16 +1580,10 @@
     "icon": "assets/misc-icons/Hunter_icon.png",
     "slotIndex": 22,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Hunter_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Hunter_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Hunter_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Hunter_training"
+      "members": "https://oldschool.runescape.wiki/w/Hunter_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": []
     }
   },
   {
@@ -693,16 +1591,10 @@
     "icon": "assets/misc-icons/Thieving_icon.png",
     "slotIndex": 10,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Thieving_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Thieving_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Thieving_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Thieving_training"
+      "members": "https://oldschool.runescape.wiki/w/Thieving_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": []
     }
   },
   {
@@ -710,16 +1602,10 @@
     "icon": "assets/misc-icons/Farming_icon.png",
     "slotIndex": 20,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Farming_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Farming_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Farming_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Farming_training"
+      "members": "https://oldschool.runescape.wiki/w/Farming_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": []
     }
   },
   {
@@ -727,16 +1613,10 @@
     "icon": "assets/misc-icons/Herblore_icon.png",
     "slotIndex": 7,
     "wikiLinks": {
-      "members": "https://oldschool.runescape.wiki/w/Herblore_training",
-      "ironman": "https://oldschool.runescape.wiki/w/Herblore_training_(Ironman)",
-      "ultimate": "https://oldschool.runescape.wiki/w/Herblore_training_(Ultimate_Ironman)",
-      "f2p": "https://oldschool.runescape.wiki/w/Free-to-play_Herblore_training"
+      "members": "https://oldschool.runescape.wiki/w/Herblore_training"
     },
     "methods": {
-      "members": [],
-      "ironman": [],
-      "ultimate": [],
-      "f2p": []
+      "members": []
     }
   }
 ]

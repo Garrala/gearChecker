@@ -7,7 +7,7 @@
 	<div *ngIf="!isSkillListLoading">
 		<h1>Select Skills for the Roulette</h1>
 		<div class="start-roulette-container">
-			<button class="app-button" [disabled]="selectedSkills.length < 1" (click)="startSlotMachine()">Start Roulette</button>
+			<button class="app-button" [disabled]="selectedSkills.length < 2" (click)="startSlotMachine()">Start Roulette</button>
 		</div>
 		<div class="skill-picker">
 			<div *ngFor="let skill of skills" class="skill-box" [class.selected]="skill.selected" (click)="toggleSkillSelection(skill)">
@@ -48,32 +48,6 @@
 		<button (click)="resetRoulette()">Back to Skill Select</button>
 	</div>
 
-		<p>Select your account type:</p>
-		<div class="category-selector">
-			<button *ngFor="let type of accountTypes"
-							[class.active]="selectedAccountType === type"
-							(click)="setAccountType(type)">
-				{{ type | titlecase }}
-			</button>
-		</div>
-
-		<div class="intensity-buttons">
-			<p>Filter by Intensity:</p>
-			<div class="category-selector">
-				<button [class.active]="selectedIntensity === null" (click)="setIntensity(null)">All</button>
-				<button *ngFor="let intensity of intensityOptions"
-								[class.active]="selectedIntensity === intensity"
-								(click)="setIntensity(intensity)">
-					{{
-          intensity === 'afk' ? '💤 AFK' :
-          intensity === 'low' ? '🟢 Low' :
-          intensity === 'medium' ? '🟡 Medium' :
-          '🔴 High'
-					}}
-				</button>
-			</div>
-		</div>
-
 		<a class="wiki-link" [href]="getWikiLink()" target="_blank" rel="noopener noreferrer">📖 View Full Wiki Guide</a>
 
 		<div class="level-input">
@@ -91,15 +65,6 @@
 					 (click)="method.disabled = !method.disabled">
 				<label style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
 					<div>
-						<span class="method-intensity" *ngIf="method.intensity" style="margin-right: 10px; color: #ccc;">
-							{{
-              method.intensity === 'afk' ? '💤' :
-              method.intensity === 'low' ? '🟢' :
-              method.intensity === 'medium' ? '🟡' :
-              method.intensity === 'high' ? '🔴' :
-              method.intensity
-							}}
-						</span>
 						<span class="method-name">{{ method.name }}</span>
 					</div>
 					<div class="method-level" style="color: #ccc;">

@@ -32,14 +32,11 @@ export class SkillTrainingRouletteComponent implements OnInit {
   availableMethods: ExtendedTrainingMethod[] = [];
   selectedMethods: ExtendedTrainingMethod[] = [];
   hasSpunMethods = false;
-  accountTypes: AccountType[] = ['members', 'ironman', 'ultimate', 'f2p'];
-  selectedAccountType: AccountType = 'members';
+  readonly selectedAccountType: AccountType = 'members';
   highlightedMethodIndex: number | null = null;
   rolling = false;
   currentLevel: number | null = null;
   showAllMethods = false;
-  intensityOptions = ['afk', 'low', 'medium', 'high'];
-  selectedIntensity: string | null = null;
 
   constructor(private http: HttpClient, private skillService: SkillService) { }
 
@@ -77,6 +74,7 @@ export class SkillTrainingRouletteComponent implements OnInit {
 
     const winningSkill = this.selectedSkills[Math.floor(Math.random() * this.selectedSkills.length)];
     this.selectedCard = winningSkill;
+    this.onLevelInputChange();
 
     const visibleRows = 3;
     const minFullSpins = 3;
@@ -120,14 +118,6 @@ export class SkillTrainingRouletteComponent implements OnInit {
     return `translateY(${this.reelOffsets[index]}px)`;
   }
 
-  setAccountType(type: AccountType): void {
-    this.selectedAccountType = type;
-    const methodsForType = this.selectedCard?.methods?.[type] || [];
-    this.availableMethods = methodsForType.map((m) => ({ ...m, disabled: false }));
-    this.selectedMethods = [];
-    this.hasSpunMethods = false;
-    this.onLevelInputChange(); // Filter based on level + intensity
-  }
 
   getWikiLink(): string {
     return this.selectedCard?.wikiLinks?.[this.selectedAccountType] || '#';
@@ -136,24 +126,27 @@ export class SkillTrainingRouletteComponent implements OnInit {
   onLevelInputChange(): void {
     if (!this.selectedCard) return;
 
-    const methods = this.selectedCard.methods?.[this.selectedAccountType] || [];
+    let methods = this.selectedCard.methods?.['members'] || [];
+
+    // Sort by minLevel (default to 1 if undefined)
+    methods = methods.sort((a, b) => (a.minLevel ?? 1) - (b.minLevel ?? 1));
 
     this.availableMethods = methods.map(method => {
       const min = method.minLevel ?? 1;
       const max = method.maxLevel ?? 99;
-      const levelValid = !this.currentLevel || (this.currentLevel >= min && this.currentLevel <= max);
-      const intensityValid = !this.selectedIntensity || method.intensity === this.selectedIntensity;
+
+      const levelValid = this.currentLevel == null || (this.currentLevel >= min && this.currentLevel <= max);
 
       return {
         ...method,
-        disabled: !(levelValid && intensityValid),
+        disabled: !levelValid,
       };
     });
   }
 
   toggleShowAllMethods(): void {
     if (!this.selectedCard) return;
-    const methods = this.selectedCard.methods?.[this.selectedAccountType] || [];
+    const methods = this.selectedCard.methods?.['members'] || [];
     this.availableMethods = methods.map(method => ({
       ...method,
       disabled: !this.showAllMethods && this.currentLevel !== null && (
@@ -162,10 +155,6 @@ export class SkillTrainingRouletteComponent implements OnInit {
     }));
   }
 
-  setIntensity(value: string | null): void {
-    this.selectedIntensity = value;
-    this.onLevelInputChange();
-  }
 
   spinTrainingMethods(): void {
     if (this.rolling) return;
