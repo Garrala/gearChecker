@@ -46,8 +46,10 @@
              class="monster-box"
              [class.selected]="boss.selected"
              (click)="toggleBossSelection(boss)">
-          <img [src]="boss.image" alt="{{ boss.name }}" />
-          <span>{{ boss.name }}</span>
+          <img [src]="getMonsterImage(boss)"
+               [alt]="getCleanBossName(boss.name)"
+               (error)="handleImageError($event)" />
+          <span>{{ getCleanBossName(boss.name) }}</span>
         </div>
       </div>
     </div>
@@ -76,8 +78,8 @@
       <img
         *ngIf="revealedBosses.includes(boss)"
         class="show"
-        [src]="boss.image"
-        alt="{{ boss.name }}"
+        [src]="getMonsterImage(boss)"
+        alt="{{ getCleanBossName(boss.name) }}"
       />
       <div *ngIf="!revealedBosses.includes(boss)" class="hidden-card">
         <img
@@ -88,7 +90,7 @@
   </div>
 
   <div *ngIf="selectedCard" class="result-container">
-    <h3>You got {{ selectedCard.name }}!</h3>
+    <h3>You got {{ getCleanBossName(selectedCard.name) }}!</h3>
 	<div class="button-row">
 	  <button (click)="goToBeastiary(selectedCard)">View in Beastiary</button>
       <button (click)="resetRoulette()">Try Again</button>
