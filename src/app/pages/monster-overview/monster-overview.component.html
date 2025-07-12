@@ -108,6 +108,22 @@
                        title="Melee"
                        src="./assets/misc-icons/Strength_icon.png"
                        alt="Melee" />
+                  <img *ngIf="key === 'normal'"
+                       title="Normal"
+                       src="./assets/misc-icons/Attack_icon.png"
+                       alt="Normal" />
+                  <img *ngIf="key === 'slash'"
+                       title="Slash"
+                       src="./assets/misc-icons/Attack_icon.png"
+                       alt="Slash" />
+                  <img *ngIf="key === 'stab'"
+                       title="Stab"
+                       src="./assets/misc-icons/Attack_icon.png"
+                       alt="Stab" />
+                  <img *ngIf="key === 'crush'"
+                       title="Crush"
+                       src="./assets/misc-icons/Strength_icon.png"
+                       alt="Crush" />
                   <img *ngIf="key === 'magic'"
                        title="Magic"
                        src="./assets/misc-icons/Magic_icon.png"
@@ -116,7 +132,19 @@
                        title="Ranged"
                        src="./assets/misc-icons/Ranged_icon.png"
                        alt="Ranged" />
+                  <img *ngIf="key === 'range'"
+                       title="Ranged"
+                       src="./assets/misc-icons/Ranged_icon.png"
+                       alt="Ranged" />
                   <img *ngIf="key === 'special attack'"
+                       title="Special Attack"
+                       src="./assets/misc-icons/Special_attack_orb.png"
+                       alt="Special Attack" />
+                  <img *ngIf="key === 'special'"
+                       title="Special Attack"
+                       src="./assets/misc-icons/Special_attack_orb.png"
+                       alt="Special Attack" />
+                  <img *ngIf="key === 'special direct hit'"
                        title="Special Attack"
                        src="./assets/misc-icons/Special_attack_orb.png"
                        alt="Special Attack" />
@@ -126,7 +154,7 @@
                        alt="Rockfall" />
                   <img *ngIf="key === 'typeless'"
                        title="Typeless"
-                       src="./assets/misc-icons/Protect_from_Melee_overhead.png"
+                       src="./assets/misc-icons/Protect_from_all.png"
                        alt="Typeless" />
                   <img *ngIf="key === 'dragonfire'"
                        title="Dragonfire"
@@ -152,15 +180,15 @@
                        title="Empowered"
                        src="./assets/misc-icons/Smite.png"
                        alt="Empowered" />
-                  <img *ngIf="key === 'Icicle Crash'"
+                  <img *ngIf="key === 'icicle crash'"
                        title="Icicle Crash"
                        src="./assets/misc-icons/Ice_Barrage.png"
                        alt="Icicle Crash" />
-                  <img *ngIf="key === 'Pray Melee'"
+                  <img *ngIf="key === 'protect from melee'"
                        title="Pray Melee"
                        src="./assets/misc-icons/Protect_from_Melee_overhead.png"
                        alt="Pray Melee" />
-                  <img *ngIf="key === '1 Hp'"
+                  <img *ngIf="key === 'at 1 hitpoints'"
                        title="1 Hp"
                        src="./assets/misc-icons/Vengeance.png"
                        alt="1 Hp" />
@@ -172,6 +200,74 @@
                        title="Stomp"
                        src="./assets/misc-icons/Hunter_icon.png"
                        alt="Stomp" />
+                  <img *ngIf="key === 'withexplosion'"
+                       title="Explosion"
+                       src="./assets/misc-icons/Retribution.png"
+                       alt="Explosion" />
+                  <img *ngIf="key === 'standard'"
+                       title="Standard"
+                       src="./assets/misc-icons/Magic_icon.png"
+                       alt="Standard" />
+                  <img *ngIf="key === 'gaze'"
+                       title="Gaze"
+                       src="./assets/misc-icons/Curse.png"
+                       alt="Gaze" />
+                  <img *ngIf="key === 'smoke dash'"
+                       title="Smoke dash"
+                       src="./assets/misc-icons/Smoke_Barrage.png"
+                       alt="Smoke dash" />
+                  <img *ngIf="key === 'shadow smash'"
+                       title="Shadow Smash"
+                       src="./assets/misc-icons/Shadow_Barrage.png"
+                       alt="Shadow Smash" />
+                  <img *ngIf="key === 'blood sacrifice'"
+                       title="Blood Sacrifice"
+                       src="./assets/misc-icons/Blood_Barrage.png"
+                       alt="Blood Sacrifice" />
+                  <img *ngIf="key === 'containment'"
+                       title="Containment"
+                       src="./assets/misc-icons/Snare.png"
+                       alt="Containment" />
+                  <img *ngIf="key === 'ice prison'"
+                       title="Ice prison"
+                       src="./assets/misc-icons/Ice_Barrage.png"
+                       alt="Ice prison" />
+                  <img *ngIf="key === 'lightningcloud'"
+                       title="Lightning Cloud"
+                       src="./assets/misc-icons/lightning.png"
+                       alt="Lightning Cloud" />
+                  <img *ngIf="key === 'shockwave'"
+                       title="Shockwave"
+                       src="./assets/misc-icons/Shockwave.png"
+                       alt="Shockwave" />
+                  <img *ngIf="key === 'wall'"
+                       title="Wall"
+                       src="./assets/misc-icons/wall.png"
+                       alt="Wall" />
+                  <img *ngIf="key === 'magical ranged'"
+                       title="Magical Ranged"
+                       src="./assets/misc-icons/magical_ranged.png"
+                       alt="Magical Ranged" />
+                  <img *ngIf="key === 'soulsiphon'"
+                       title="Soul Siphon"
+                       src="./assets/misc-icons/Resurrect_Greater_Ghost.png"
+                       alt="Soul Siphon" />
+                  <img *ngIf="key === 'screech'"
+                       title="Screech"
+                       src="./assets/misc-icons/Shockwave.png"
+                       alt="Screech" />
+                  <img *ngIf="key === 'axes'"
+                       title="Axes"
+                       src="./assets/gear-icons/soulreaper-axe.png"
+                       alt="Axes" />
+                  <img *ngIf="key === 'rapidfirespecial'"
+                       title="Rapid Fire Special"
+                       src="./assets/misc-icons/Vorkath_acid_pool_attack.png"
+                       alt="Rapid Fire Special" />
+                  <img *ngIf="key === 'dragonfirebombspecial'"
+                       title="Dragon Firebomb Special"
+                       src="./assets/misc-icons/wall.png"
+                       alt="Dragon Firebomb Special" />
                   {{ getSelectedBoss()?.max_hit?.[key] ?? 'N/A' }}
                 </span>
               </div>
@@ -236,6 +332,34 @@
                    src="./assets/misc-icons/Venom_hitsplat.png"
                    alt="Venom"
                    title="Venom"
+                   class="attack-style-icon" />
+              <img *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Crush')
+                "
+                   src="./assets/misc-icons/Strength_icon.png"
+                   alt="Crush"
+                   title="Crush"
+                   class="attack-style-icon" />
+              <img *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Slash')
+                "
+                   src="./assets/misc-icons/Attack_icon.png"
+                   alt="Slash"
+                   title="Slash"
+                   class="attack-style-icon" />
+              <img *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Stab')
+                "
+                   src="./assets/misc-icons/Attack_icon.png"
+                   alt="Stab"
+                   title="Stab"
+                   class="attack-style-icon" />
+              <img *ngIf="
+                  (getSelectedBoss()?.attack_styles || []).includes('Magical ranged')
+                "
+                   src="./assets/misc-icons/magical_ranged.png"
+                   alt="Magical Ranged"
+                   title="Magical Ranged"
                    class="attack-style-icon" />
 
 

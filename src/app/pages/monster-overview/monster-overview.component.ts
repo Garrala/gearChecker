@@ -578,13 +578,15 @@ export class MonsterOverviewComponent implements OnInit {
 
   getCleanBossName(rawName?: string): string {
     if (!rawName) return 'Unknown';
-
+    console.log(rawName)
     // Manual cleanup rules
     const replacements: { [key: string]: string } = {
       'duke sucellus (sucellus awake awakened)': 'Duke Sucellus (Awakened)',
       'duke sucellus (sucellus awake post quest)': 'Duke Sucellus (Post Quest)',
       'duke sucellus (sucellus awake quest)': 'Duke Sucellus (Quest)',
-      'the leviathan (leviathan awakened)': 'The Leviathan',
+      'the leviathan (leviathan awakened)': 'The Leviathan (Awakened)',
+      'the leviathan (leviathan post quest)': 'The Leviathan (Post Quest)',
+      'the leviathan (leviathan quest)': 'The Leviathan (Quest)',
       'kalphite queen (queen airborne)': 'Kalphite Queen (Airborne)',
       'kalphite queen (queen crawling)': 'Kalphite Queen (Crawling)',
       'abyssal sire (sire phase 1)': 'Abyssal Sire (Phase 1)',
@@ -598,6 +600,17 @@ export class MonsterOverviewComponent implements OnInit {
       'araxxor (in combat)': 'Araxxor',
       'calvarion (normal)': 'Calvar\'ion',
       'calvarion (enraged)': 'Calvar\'ion (Enraged)',
+      'chaos elemental (elemental)': 'Chaos Elemental',
+      'chaos fanatic (fanatic)': 'Chaos Fanatic',
+      'commander zilyana (zilyana)': 'Commander Zilyana',
+      'corporeal beast (beast)': 'Corporeal Beast',
+      'crazy archaeologist (archaeologist)': 'Crazy Archaeologist',
+      'deranged archaeologist (archaeologist)': 'Deranged Archaeologist',
+      'general graardor (graardor)': 'General Graardor',
+      'giant mole (mole)': 'Giant Mole',
+      'king black dragon (black dragon)': 'King Black Dragon',
+      'kraken (kraken)': 'Kraken',
+      'kril tsutsaroth (tsutsaroth)':'Kril Tsutsaroth',
       'phantom muspah (muspah melee)': 'Phantom Muspah (Melee)',
       'phantom muspah (muspah post shield)': 'Phantom Muspah (Post Shield)',
       'phantom muspah (muspah ranged)': 'Phantom Muspah (Ranged)',
@@ -606,9 +619,15 @@ export class MonsterOverviewComponent implements OnInit {
       'the hueycoatl (hueycoatl normal head)': 'The Hueycoatl',
       'the hueycoatl (hueycoatl normal body)': 'The Hueycoatl (Body)',
       'the hueycoatl (hueycoatl normal tail)': 'The Hueycoatl (Tail)',
+      'the mimic (mimic)': 'The Mimic',
+      'the nightmare (nightmare)': 'The Nightmare',
+      'thermonuclear smoke devil (smoke devil)': 'Thermonuclear Smoke Devil',
+      'the whisperer (whisperer awakened)': 'The Whisperer (Awakened)',
+      'the whisperer (whisperer post quest)': 'The Whisperer (Post Quest)',
+      'the whisperer (whisperer quest)': 'The Whisperer (Quest)',
       'vetion (normal)': 'Vet\'ion',
       'vetion (enraged)': 'Vet\'ion (Enraged)',
-      'vorkath (dragon slayer ii)': 'Vorkath (Dragon Slayer II)'
+      'vorkath (dragon slayer ii)': 'Vorkath (Dragon Slayer 2)'
       // Add more cleanup cases here as needed
     };
 

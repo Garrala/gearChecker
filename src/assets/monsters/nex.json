@@ -8,7 +8,7 @@
       "name": "nex",
       "wiki_link": "https://oldschool.runescape.wiki/w/Nex",
       "image": "assets/monster-icons/nex.png",
-      "combat_level": 1,
+      "combat_level": 1001,
       "hp": 3400,
       "max_hit": {
         "magic": 33,

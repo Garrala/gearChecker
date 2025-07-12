@@ -8,24 +8,29 @@
       "name": "Obor",
       "image": "assets/monster-icons/obor.png",
       "wiki_link": "https://oldschool.runescape.wiki/w/Obor",
-      "combat_level": 725,
-      "hp": 500,
-      "max_hit": 41,
-      "weaknesses": [ "Magic (50% Weakness) Water", "Stab" ],
+      "combat_level": 106,
+      "hp": 120,
+      "max_hit": {
+        "melee": 22,
+        "ranged": 28
+      },
+      "weaknesses": {
+        "earth": "20%"
+      },
       "defense": {
         "melee": {
-          "stab": 150,
-          "slash": 150,
-          "crush": 200
+          "stab": 35,
+          "slash": 40,
+          "crush": 45
         },
-        "magic": 200,
+        "magic": 20,
         "ranged": {
-          "arrows": 50,
-          "bolts": 50,
-          "thrown": 50
+          "arrows": 20,
+          "bolts": 20,
+          "thrown": 20
         }
       },
-      "attack_styles": [ "Magic", "Ranged", "Venom" ],
+      "attack_styles": [ "Melee", "Ranged" ],
       "attack_speed": {
         "ticks": 6
       },

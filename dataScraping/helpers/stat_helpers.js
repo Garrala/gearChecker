@@ -665,11 +665,13 @@ function parseCombatLevel($, info) {
     const th = $(tr).find('th').text().trim().toLowerCase();
     const td = $(tr).find('td').text().trim();
     if (th.includes('combat level')) {
-      info.combat_level = parseInt(td);
+      const numericText = td.replace(/,/g, '');
+      info.combat_level = parseInt(numericText);
       //console.log('⚔️ Combat Level:', info.combat_level);
     }
   });
 }
+
 
 function extractCombatLevel($) {
   const anchor = $('a[title="Combat level"]').first();
@@ -692,7 +694,10 @@ function extractCombatLevel($) {
       text = $(node).text().trim();
     }
 
-    // 🧠 Try to find just a number
+    // Remove commas so 1,001 becomes 1001
+    text = text.replace(/,/g, '');
+
+    // 🧠 Try to find just a number (now without commas)
     const match = text.match(/^(\d{1,4})$/);
     if (match) {
       const level = parseInt(match[1], 10);
@@ -707,6 +712,7 @@ function extractCombatLevel($) {
   console.warn('⚠️ Failed to extract Combat Level after anchor.');
   return 0;
 }
+
 
 function parseAttackStyles($, info) {
   const overrideMap = {
