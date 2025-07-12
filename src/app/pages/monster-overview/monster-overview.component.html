@@ -6,6 +6,7 @@
 
   <div *ngIf="!isMonsterListLoading">
     <h1>Beastiary</h1>
+    <p class="page-subtitle">Browse every boss with detailed stats, weaknesses, and gear recommendations.</p>
     <!-- Item Search -->
     <div class="item-filter">
       <input type="text"
@@ -30,11 +31,9 @@
     </div>
     <!-- Category Selector -->
     <div class="category-selector">
-      <button
-        *ngFor="let category of bossCategories"
-        (click)="toggleCategory(category)"
-        [class.active]="selectedCategories.includes(category)"
-      >
+      <button *ngFor="let category of bossCategories"
+              (click)="toggleCategory(category)"
+              [class.active]="selectedCategories.includes(category)">
         {{ category }}
       </button>
     </div>
@@ -43,7 +42,7 @@
     <div class="boss-picker">
       <div *ngFor="let monster of filteredMonsters()"
            class="monster-box"
-           [class.selected]="monster === selectedMonster"
+           [class.selected]="monster.slug === selectedMonster?.slug"
            (click)="selectMonster(monster)">
         <img [src]="getMonsterImage(monster)" alt="{{ monster.name }}" (error)="handleImageError($event)" />
 
@@ -854,7 +853,7 @@
     <!-- Recommended Gear Table -->
     <div class="table-scroll-wrapper">
       <table class="gear-table"
-              *ngIf="selectedMonster && !isMonsterDetailsLoading">
+             *ngIf="selectedMonster && !isMonsterDetailsLoading">
         <thead>
           <tr>
             <th>Slot</th>
@@ -872,28 +871,28 @@
             <td *ngFor="let group of getFilledItemGroups(slot, selectedMonster!)">
               <div class="gear-item-wrapper">
                 <div class="gear-item"
-                      *ngFor="let item of group"
-                      [ngClass]="{ 'best-owned': isBestOwnedItem(slot, item) }">
+                     *ngFor="let item of group"
+                     [ngClass]="{ 'best-owned': isBestOwnedItem(slot, item) }">
                   <div class="icon-container">
                     <img *ngIf="
                       gearData?.[gearService.getGearCategory(slot)]?.[item]
                     "
-                          [src]="
+                         [src]="
                       gearData?.[gearService.getGearCategory(slot)]?.[item]
                         ?.image
                     "
-                          [alt]="item"
-                          class="item-icon" />
+                         [alt]="item"
+                         class="item-icon" />
                     <a *ngIf="
                       gearData?.[gearService.getGearCategory(slot)]?.[item]
                         ?.wiki
                     "
-                        [href]="
+                       [href]="
                       gearData?.[gearService.getGearCategory(slot)]?.[item]
                         ?.wiki
                     "
-                        target="_blank"
-                        class="wiki-link">🔍</a>
+                       target="_blank"
+                       class="wiki-link">🔍</a>
                   </div>
                   <p>{{ item }}</p>
                 </div>
@@ -902,6 +901,11 @@
           </tr>
         </tbody>
       </table>
+      <div *ngIf="selectedMonster && !isMonsterDetailsLoading" class="wiki-credit-wrapper">
+        <p class="wiki-credit">
+          Data sourced from the&nbsp;<a href="https://oldschool.runescape.wiki/" target="_blank">OSRS Wiki</a>
+        </p>
       </div>
+    </div>
     </div>
   </div>

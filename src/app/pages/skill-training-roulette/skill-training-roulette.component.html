@@ -6,6 +6,9 @@
 
 	<div *ngIf="!isSkillListLoading">
 		<h1>Select Skills for the Roulette</h1>
+		<p class="page-subtitle">
+			Choose the skills you’re willing to train, then let the slots pick one for you.
+		</p>
 		<div class="start-roulette-container">
 			<button class="app-button" [disabled]="selectedSkills.length < 2" (click)="startSlotMachine()">Start Roulette</button>
 		</div>

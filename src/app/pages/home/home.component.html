@@ -2,9 +2,11 @@
   <div class="overlay"></div>
   <div class="center-content">
     <ng-container *ngIf="hoveredIndex === 0; else featureContent">
-      <img src="./assets/misc-icons/Dragon_med_helm.png" alt="App Logo" class="logo" />
-      <h1 class="title">Gear Check</h1>
-      <p class="tagline">Know what to wear, before you’re there.</p>
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img src="./assets/misc-icons/Dragon_med_helm.png" alt="App Logo" class="logo" />
+        <h1 class="title">Gear Check</h1>
+        <p class="tagline">Know what to wear, before you’re there.</p>
+      </div>
     </ng-container>
 
     <ng-template #featureContent>

@@ -28,7 +28,7 @@ export class HomeComponent {
     {
       title: 'Gear Management',
       icon: './assets/misc-icons/Worn_Equipment.png',
-      description: 'Mark the weapons, armor, and gear you own. Instantly see which setups work best for your inventory.',
+      description: 'Track the weapons and armor you own for optimized gear setups.',
       bg: './assets/gearManagement.jpeg',
       link: '/gear',
       cta: 'Manage My Gear'
@@ -36,10 +36,10 @@ export class HomeComponent {
     {
       title: 'Boss Beastiary',
       icon: './assets/misc-icons/Mr._Mordaut_chathead.png',
-      description: 'Browse every boss with detailed stats, weaknesses, and gear recommendations.',
+      description: 'Browse boss stats, weaknesses, and gear recommendations.',
       bg: './assets/abyssalSire.jpeg',
       link: '/monster',
-      cta: 'View Monsters'
+      cta: 'View Bosses'
     },
     //{
     //  title: 'Slayer Beastiary',
@@ -52,7 +52,7 @@ export class HomeComponent {
     {
       title: 'Boss Roulette',
       icon: './assets/misc-icons/Mystery_box_detail.png',
-      description: 'Can’t decide who to fight? Let the Mysterious Old Man choose for you!',
+      description: 'Can’t decide who to fight? Let fate decide!',
       bg: './assets/Alchemical_Hydra_art.jpg',
       link: '/roulette',
       cta: 'Try the Roulette'
@@ -60,7 +60,7 @@ export class HomeComponent {
     {
       title: 'Skill Training',
       icon: './assets/misc-icons/Stats_icon.png',
-      description: 'Use the roulette to choose your next skill training goal and stay motivated.',
+      description: 'Use the roulette to pick your next skill to train.',
       bg: './assets/skillroulette.jpg',
       link: '/skill-training-roulette',
       cta: 'Train a Skill'

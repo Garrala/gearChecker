@@ -37,10 +37,10 @@
   border-radius: 5px;
 }
 
-.monster-box.selected {
-  border-color: limegreen;
-  background: rgba(0, 255, 0, 0.3);
-}
+  .monster-box.selected {
+    border-color: limegreen;
+    background: rgba(0, 255, 0, 0.3);
+  }
 
 .monster-box:hover {
   transform: scale(1.1);
@@ -763,6 +763,24 @@ h1 {
   text-align: center;
   width: 100%;
 }
+
+.wiki-credit-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.wiki-credit {
+  font-size: .9em;
+  color: #ccc;
+}
+
+  .wiki-credit a {
+    color: #ffd700; /* gold-yellow */
+    text-decoration: underline;
+  }
+
 
 /*mobile stuff*/
 @media (max-width: 768px) {

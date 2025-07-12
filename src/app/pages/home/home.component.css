@@ -49,20 +49,27 @@
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
 }
 
   .action-button:hover {
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 10px limegreen;
+    background: rgba(0, 255, 0, 0.2); /* subtle green glow */
+    box-shadow: 0 0 12px 4px limegreen;
+    border: 2px solid limegreen;
+    color: #fff;
   }
 
+
 .logo {
-  width: 80px; /* Increase size */
+  width: 80px;
   height: 80px;
-  margin-bottom: 1rem;
-  filter: drop-shadow(0 0 8px black); /* Optional: helps it pop on dark bg */
+  margin: 0 auto 1rem auto;
+  display: block;
+  filter: drop-shadow(0 0 8px black);
+  padding-right: 32px;
   transition: transform 0.3s ease;
 }
+
 
   .logo:hover {
     transform: scale(1.1); /* Optional: subtle hover effect */

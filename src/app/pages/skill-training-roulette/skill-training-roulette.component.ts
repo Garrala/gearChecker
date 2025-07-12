@@ -79,18 +79,22 @@ export class SkillTrainingRouletteComponent implements OnInit {
     const visibleRows = 3;
     const minFullSpins = 3;
     const reelItemHeight = 100;
-    const selectedRow = 1; // Always middle row for clarity
+
+    // Always land on the middle row
+    const selectedRow = 1;
     const insertIndex = visibleRows * minFullSpins + selectedRow;
 
     for (let i = 0; i < 3; i++) {
-      const filler = [];
+      const nonWinning = this.selectedSkills.filter(s => s !== winningSkill);
+      const filler: Skill[] = [];
 
-      // Make sure we never scroll past this index
+      // Fill with randomized skills (excluding winner)
       while (filler.length < insertIndex + visibleRows) {
-        filler.push(...this.selectedSkills.filter(s => s !== winningSkill).sort(() => 0.5 - Math.random()));
+        const shuffled = [...nonWinning].sort(() => 0.5 - Math.random());
+        filler.push(...shuffled);
       }
 
-      // Inject winning skill at the chosen visible row
+      // Inject the winning skill so it appears on the selected row
       filler.splice(insertIndex, 0, winningSkill);
 
       this.reelQueue[i] = filler;
@@ -98,8 +102,9 @@ export class SkillTrainingRouletteComponent implements OnInit {
       this.reelTransitionActive[i] = false;
 
       const delay = i * 600;
+
       setTimeout(() => {
-        this.reelOffsets[i] = -insertIndex * reelItemHeight;
+        this.reelOffsets[i] = -(insertIndex - selectedRow) * reelItemHeight;
         this.reelTransitionActive[i] = true;
 
         if (i === 2) {
@@ -111,8 +116,6 @@ export class SkillTrainingRouletteComponent implements OnInit {
       }, delay);
     }
   }
-
-
 
   getReelTransform(index: number): string {
     return `translateY(${this.reelOffsets[index]}px)`;

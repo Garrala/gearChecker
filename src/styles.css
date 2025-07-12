@@ -119,6 +119,14 @@ body {
     background-color: rgba(0, 255, 0, 0.1);
   }
 
+.page-subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0 0 6px #000;
+}
+
 /* Responsive: Mobile first */
 @media (max-width: 768px) {
   .navbar {
