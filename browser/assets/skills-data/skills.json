@@ -1561,7 +1561,380 @@
       "members": "https://oldschool.runescape.wiki/w/Fletching_training"
     },
     "methods": {
-      "members": []
+      "members": [
+        {
+          "name": "Arrow shafts",
+          "minLevel": 1,
+          "maxLevel": 10
+        },
+        {
+          "name": "Headless arrows",
+          "minLevel": 1,
+          "maxLevel": 5
+        },
+        {
+          "name": "Bronze arrows",
+          "minLevel": 1,
+          "maxLevel": 15
+        },
+        {
+          "name": "Iron arrows",
+          "minLevel": 15,
+          "maxLevel": 30
+        },
+        {
+          "name": "Steel arrows",
+          "minLevel": 30,
+          "maxLevel": 45
+        },
+        {
+          "name": "Mithril arrows",
+          "minLevel": 45,
+          "maxLevel": 52
+        },
+        {
+          "name": "Broad arrows",
+          "minLevel": 52,
+          "maxLevel": 60
+        },
+        {
+          "name": "Adamant arrows",
+          "minLevel": 60,
+          "maxLevel": 75
+        },
+        {
+          "name": "Rune arrows",
+          "minLevel": 75,
+          "maxLevel": 82
+        },
+        {
+          "name": "Amethyst arrows",
+          "minLevel": 82,
+          "maxLevel": 90
+        },
+        {
+          "name": "Dragon arrows",
+          "minLevel": 90,
+          "maxLevel": 99
+        },
+
+        {
+          "name": "Bronze bolts",
+          "minLevel": 9,
+          "maxLevel": 24
+        },
+        {
+          "name": "Blurite bolts",
+          "minLevel": 24,
+          "maxLevel": 39
+        },
+        {
+          "name": "Iron bolts",
+          "minLevel": 39,
+          "maxLevel": 43
+        },
+        {
+          "name": "Silver bolts",
+          "minLevel": 43,
+          "maxLevel": 46
+        },
+        {
+          "name": "Steel bolts",
+          "minLevel": 46,
+          "maxLevel": 54
+        },
+        {
+          "name": "Mithril bolts",
+          "minLevel": 54,
+          "maxLevel": 55
+        },
+        {
+          "name": "Broad bolts",
+          "minLevel": 55,
+          "maxLevel": 61
+        },
+        {
+          "name": "Adamant bolts",
+          "minLevel": 61,
+          "maxLevel": 69
+        },
+        {
+          "name": "Rune bolts",
+          "minLevel": 69,
+          "maxLevel": 84
+        },
+        {
+          "name": "Dragon bolts",
+          "minLevel": 84,
+          "maxLevel": 99
+        },
+
+        {
+          "name": "Opal-tipped bronze bolts",
+          "minLevel": 11,
+          "maxLevel": 26
+        },
+        {
+          "name": "Jade-tipped blurite bolts",
+          "minLevel": 26,
+          "maxLevel": 41
+        },
+        {
+          "name": "Pearl-tipped iron bolts",
+          "minLevel": 41,
+          "maxLevel": 48
+        },
+        {
+          "name": "Red topaz-tipped steel bolts",
+          "minLevel": 48,
+          "maxLevel": 51
+        },
+        {
+          "name": "Barb-tipped bronze bolts",
+          "minLevel": 51,
+          "maxLevel": 56
+        },
+        {
+          "name": "Sapphire-tipped mithril bolts",
+          "minLevel": 56,
+          "maxLevel": 58
+        },
+        {
+          "name": "Emerald-tipped mithril bolts",
+          "minLevel": 58,
+          "maxLevel": 63
+        },
+        {
+          "name": "Ruby-tipped adamant bolts",
+          "minLevel": 63,
+          "maxLevel": 65
+        },
+        {
+          "name": "Diamond-tipped adamant bolts",
+          "minLevel": 65,
+          "maxLevel": 71
+        },
+        {
+          "name": "Dragonstone-tipped runite bolts",
+          "minLevel": 71,
+          "maxLevel": 73
+        },
+        {
+          "name": "Onyx-tipped runite bolts",
+          "minLevel": 73,
+          "maxLevel": 76
+        },
+        {
+          "name": "Amethyst-tipped broad bolts",
+          "minLevel": 76,
+          "maxLevel": 84
+        },
+
+        {
+          "name": "Opal dragon bolts",
+          "minLevel": 84,
+          "maxLevel": 84
+        },
+        {
+          "name": "Jade dragon bolts",
+          "minLevel": 84,
+          "maxLevel": 84
+        },
+        {
+          "name": "Pearl dragon bolts",
+          "minLevel": 84,
+          "maxLevel": 84
+        },
+        {
+          "name": "Red topaz dragon bolts",
+          "minLevel": 84,
+          "maxLevel": 84
+        },
+        {
+          "name": "Sapphire dragon bolts",
+          "minLevel": 84,
+          "maxLevel": 84
+        },
+        {
+          "name": "Emerald dragon bolts",
+          "minLevel": 84,
+          "maxLevel": 84
+        },
+        {
+          "name": "Ruby dragon bolts",
+          "minLevel": 84,
+          "maxLevel": 84
+        },
+        {
+          "name": "Diamond dragon bolts",
+          "minLevel": 84,
+          "maxLevel": 84
+        },
+        {
+          "name": "Dragonstone dragon bolts",
+          "minLevel": 84,
+          "maxLevel": 84
+        },
+        {
+          "name": "Onyx dragon bolts",
+          "minLevel": 84,
+          "maxLevel": 84
+        },
+
+        {
+          "name": "Bronze darts",
+          "minLevel": 10,
+          "maxLevel": 22
+        },
+        {
+          "name": "Iron darts",
+          "minLevel": 22,
+          "maxLevel": 37
+        },
+        {
+          "name": "Steel darts",
+          "minLevel": 37,
+          "maxLevel": 52
+        },
+        {
+          "name": "Mithril darts",
+          "minLevel": 52,
+          "maxLevel": 67
+        },
+        {
+          "name": "Adamant darts",
+          "minLevel": 67,
+          "maxLevel": 81
+        },
+        {
+          "name": "Rune darts",
+          "minLevel": 81,
+          "maxLevel": 90
+        },
+        {
+          "name": "Amethyst darts",
+          "minLevel": 90,
+          "maxLevel": 95
+        },
+        {
+          "name": "Dragon darts",
+          "minLevel": 95,
+          "maxLevel": 99
+        },
+
+        {
+          "name": "Bronze javelins",
+          "minLevel": 3,
+          "maxLevel": 17
+        },
+        {
+          "name": "Iron javelins",
+          "minLevel": 17,
+          "maxLevel": 32
+        },
+        {
+          "name": "Steel javelins",
+          "minLevel": 32,
+          "maxLevel": 47
+        },
+        {
+          "name": "Mithril javelins",
+          "minLevel": 47,
+          "maxLevel": 62
+        },
+        {
+          "name": "Adamant javelins",
+          "minLevel": 62,
+          "maxLevel": 77
+        },
+        {
+          "name": "Rune javelins",
+          "minLevel": 77,
+          "maxLevel": 84
+        },
+        {
+          "name": "Amethyst javelins",
+          "minLevel": 84,
+          "maxLevel": 92
+        },
+        {
+          "name": "Dragon javelins",
+          "minLevel": 92,
+          "maxLevel": 99
+        },
+
+        {
+          "name": "Shortbow",
+          "minLevel": 5,
+          "maxLevel": 10
+        },
+        {
+          "name": "Longbow",
+          "minLevel": 10,
+          "maxLevel": 20
+        },
+        {
+          "name": "Oak shortbow",
+          "minLevel": 20,
+          "maxLevel": 25
+        },
+        {
+          "name": "Oak longbow",
+          "minLevel": 25,
+          "maxLevel": 35
+        },
+        {
+          "name": "Willow shortbow",
+          "minLevel": 35,
+          "maxLevel": 40
+        },
+        {
+          "name": "Willow longbow",
+          "minLevel": 40,
+          "maxLevel": 50
+        },
+        {
+          "name": "Maple shortbow",
+          "minLevel": 50,
+          "maxLevel": 55
+        },
+        {
+          "name": "Maple longbow",
+          "minLevel": 55,
+          "maxLevel": 65
+        },
+        {
+          "name": "Yew shortbow",
+          "minLevel": 65,
+          "maxLevel": 70
+        },
+        {
+          "name": "Yew longbow",
+          "minLevel": 70,
+          "maxLevel": 80
+        },
+        {
+          "name": "Magic shortbow",
+          "minLevel": 80,
+          "maxLevel": 85
+        },
+        {
+          "name": "Magic longbow",
+          "minLevel": 85,
+          "maxLevel": 99
+        },
+
+        {
+          "name": "Battlestaves",
+          "minLevel": 40,
+          "maxLevel": 80
+        },
+        {
+          "name": "Redwood shields",
+          "minLevel": 92,
+          "maxLevel": 99
+        }
+      ]
     }
   },
   {
@@ -1572,7 +1945,54 @@
       "members": "https://oldschool.runescape.wiki/w/Slayer_training"
     },
     "methods": {
-      "members": []
+      "members": [
+        {
+          "name": "Turael/Aya",
+          "minLevel": 1,
+          "maxLevel": 20
+        },
+        {
+          "name": "Spria",
+          "minLevel": 1,
+          "maxLevel": 20
+        },
+        {
+          "name": "Krystilia",
+          "minLevel": 1,
+          "maxLevel": 99
+        },
+        {
+          "name": "Mazchna/Achtryn",
+          "minLevel": 1,
+          "maxLevel": 99
+        },
+        {
+          "name": "Vannaka",
+          "minLevel": 1,
+          "maxLevel": 99
+        },
+        {
+          "name": "Chaeldar",
+          "minLevel": 1,
+          "maxLevel": 99
+        },
+        {
+          "name": "Konar",
+          "minLevel": 1,
+          "maxLevel": 99
+        },
+        {
+          "name": "Nieve/Steve",
+          "minLevel": 1,
+          "maxLevel": 99
+        },
+        {
+          "name": "Duradel/Kuradal",
+          "minLevel": 50,
+          "maxLevel": 99
+
+        }
+      ]
     }
   },
   {
@@ -1583,7 +2003,98 @@
       "members": "https://oldschool.runescape.wiki/w/Hunter_training"
     },
     "methods": {
-      "members": []
+      "members": [
+        {
+          "name": "Natural History Quiz",
+          "minLevel": 1,
+          "maxLevel": 9
+        },
+        {
+          "name": "Bird house trapping",
+          "minLevel": 9,
+          "maxLevel": 99
+        },
+        {
+          "name": "Hunters' Rumours",
+          "minLevel": 46,
+          "maxLevel": 99
+        },
+        {
+          "name": "Drift net fishing",
+          "minLevel": 44,
+          "maxLevel": 99
+        },
+        {
+          "name": "Feldip weasels",
+          "minLevel": 9,
+          "maxLevel": 25
+        },
+        {
+          "name": "Desert devils",
+          "minLevel": 13,
+          "maxLevel": 25
+        },
+        {
+          "name": "Sapphire glacialis",
+          "minLevel": 25,
+          "maxLevel": 43
+        },
+        {
+          "name": "Swamp lizards",
+          "minLevel": 29,
+          "maxLevel": 43
+        },
+        {
+          "name": "Falconry",
+          "minLevel": 43,
+          "maxLevel": 60
+        },
+        {
+          "name": "Razor-backed kebbits",
+          "minLevel": 49,
+          "maxLevel": 73
+        },
+        {
+          "name": "Red salamanders",
+          "minLevel": 60,
+          "maxLevel": 67
+        },
+        {
+          "name": "Black salamanders",
+          "minLevel": 67,
+          "maxLevel": 73
+        },
+        {
+          "name": "Black chinchompas",
+          "minLevel": 73,
+          "maxLevel": 99
+        },
+        {
+          "name": "Aerial Fishing",
+          "minLevel": 35,
+          "maxLevel": 99
+        },
+        {
+          "name": "Orange salamanders",
+          "minLevel": 47,
+          "maxLevel": 59
+        },
+        {
+          "name": "Maniacal monkeys",
+          "minLevel": 60,
+          "maxLevel": 99
+        },
+        {
+          "name": "Carnivorous chinchompas",
+          "minLevel": 63,
+          "maxLevel": 99
+        },
+        {
+          "name": "Herbiboar",
+          "minLevel": 80,
+          "maxLevel": 99
+        }
+      ]
     }
   },
   {
@@ -1594,7 +2105,93 @@
       "members": "https://oldschool.runescape.wiki/w/Thieving_training"
     },
     "methods": {
-      "members": []
+      "members": [
+        {
+          "name": "Chambers of Xeric thieving room",
+          "minLevel": 1,
+          "maxLevel": 45
+        },
+        {
+          "name": "Pickpocketing Men/Women",
+          "minLevel": 1,
+          "maxLevel": 5
+        },
+        {
+          "name": "Bakery stalls",
+          "minLevel": 5,
+          "maxLevel": 25
+        },
+        {
+          "name": "Fruit stalls",
+          "minLevel": 25,
+          "maxLevel": 45
+        },
+        {
+          "name": "Blackjacking",
+          "minLevel": 45,
+          "maxLevel": 99
+        },
+        {
+          "name": "Stealing artefacts",
+          "minLevel": 49,
+          "maxLevel": 99
+        },
+        {
+          "name": "Stealing from Rogues' Castle chests",
+          "minLevel": 84,
+          "maxLevel": 99
+        },
+        {
+          "name": "Pyramid Plunder",
+          "minLevel": 91,
+          "maxLevel": 99
+        },
+        {
+          "name": "Stealing valuables in Varlamore",
+          "minLevel": 50,
+          "maxLevel": 99
+        },
+        {
+          "name": "Underwater thieving",
+          "minLevel": 25,
+          "maxLevel": 99
+        },
+        {
+          "name": "Knights of Ardougne",
+          "minLevel": 55,
+          "maxLevel": 99
+        },
+        {
+          "name": "Dorgesh-Kaan rich chests",
+          "minLevel": 78,
+          "maxLevel": 99
+        },
+        {
+          "name": "Sorceress's Garden",
+          "minLevel": 1,
+          "maxLevel": 99
+        },
+        {
+          "name": "Pickpocketing vyres",
+          "minLevel": 82,
+          "maxLevel": 99
+        },
+        {
+          "name": "Pickpocketing elves",
+          "minLevel": 85,
+          "maxLevel": 99
+        },
+        {
+          "name": "Master Farmers",
+          "minLevel": 94,
+          "maxLevel": 99
+        },
+        {
+          "name": "TzHaar-Hur",
+          "minLevel": 99,
+          "maxLevel": 99
+        }
+      ]
     }
   },
   {
@@ -1605,7 +2202,43 @@
       "members": "https://oldschool.runescape.wiki/w/Farming_training"
     },
     "methods": {
-      "members": []
+      "members": [
+        {
+          "name": "Bagged plants",
+          "minLevel": 1,
+          "maxLevel": 15
+        },
+        {
+          "name": "Making supercompost/ultracompost",
+          "minLevel": 1,
+          "maxLevel": 15
+        },
+        {
+          "name": "Farming allotments",
+          "minLevel": 1,
+          "maxLevel": 15
+        },
+        {
+          "name": "Sorceress's Garden",
+          "minLevel": 1,
+          "maxLevel": 15
+        },
+        {
+          "name": "Tree runs",
+          "minLevel": 15,
+          "maxLevel": 99
+        },
+        {
+          "name": "Tithe Farm",
+          "minLevel": 34,
+          "maxLevel": 99
+        },
+        {
+          "name": "Herb runs",
+          "minLevel": 1,
+          "maxLevel": 99
+        }
+      ]
     }
   },
   {
@@ -1616,7 +2249,235 @@
       "members": "https://oldschool.runescape.wiki/w/Herblore_training"
     },
     "methods": {
-      "members": []
+      "members": [
+        {
+          "name": "Attack potion",
+          "minLevel": 3,
+          "maxLevel": 3
+        },
+        {
+          "name": "Antipoison",
+          "minLevel": 5,
+          "maxLevel": 5
+        },
+        {
+          "name": "Strength potion",
+          "minLevel": 12,
+          "maxLevel": 12
+        },
+        {
+          "name": "Serum 207",
+          "minLevel": 15,
+          "maxLevel": 15
+        },
+        {
+          "name": "Compost potion",
+          "minLevel": 22,
+          "maxLevel": 22
+        },
+        {
+          "name": "Restore potion",
+          "minLevel": 22,
+          "maxLevel": 22
+        },
+        {
+          "name": "Energy potion",
+          "minLevel": 26,
+          "maxLevel": 26
+        },
+        {
+          "name": "Agility potion",
+          "minLevel": 34,
+          "maxLevel": 34
+        },
+        {
+          "name": "Combat potion",
+          "minLevel": 36,
+          "maxLevel": 36
+        },
+        {
+          "name": "Prayer potion",
+          "minLevel": 38,
+          "maxLevel": 38
+        },
+        {
+          "name": "Super attack",
+          "minLevel": 45,
+          "maxLevel": 45
+        },
+        {
+          "name": "Superantipoison",
+          "minLevel": 48,
+          "maxLevel": 48
+        },
+        {
+          "name": "Fishing potion",
+          "minLevel": 50,
+          "maxLevel": 50
+        },
+        {
+          "name": "Super energy",
+          "minLevel": 52,
+          "maxLevel": 52
+        },
+        {
+          "name": "Hunter potion",
+          "minLevel": 53,
+          "maxLevel": 53
+        },
+        {
+          "name": "Goading potion",
+          "minLevel": 54,
+          "maxLevel": 54
+        },
+        {
+          "name": "Super strength",
+          "minLevel": 55,
+          "maxLevel": 55
+        },
+        {
+          "name": "Prayer regeneration potion",
+          "minLevel": 58,
+          "maxLevel": 58
+        },
+        {
+          "name": "Super restore",
+          "minLevel": 63,
+          "maxLevel": 63
+        },
+        {
+          "name": "Super defence",
+          "minLevel": 66,
+          "maxLevel": 66
+        },
+        {
+          "name": "Antifire potion",
+          "minLevel": 69,
+          "maxLevel": 69
+        },
+        {
+          "name": "Ranging potion",
+          "minLevel": 72,
+          "maxLevel": 72
+        },
+        {
+          "name": "Magic potion",
+          "minLevel": 76,
+          "maxLevel": 76
+        },
+        {
+          "name": "Stamina potion",
+          "minLevel": 77,
+          "maxLevel": 77
+        },
+        {
+          "name": "Bastion potion",
+          "minLevel": 80,
+          "maxLevel": 80
+        },
+        {
+          "name": "Battlemage potion",
+          "minLevel": 80,
+          "maxLevel": 80
+        },
+        {
+          "name": "Saradomin brew",
+          "minLevel": 81,
+          "maxLevel": 81
+        },
+        {
+          "name": "Surge potion",
+          "minLevel": 81,
+          "maxLevel": 81
+        },
+        {
+          "name": "Extended antifire",
+          "minLevel": 84,
+          "maxLevel": 84
+        },
+        {
+          "name": "Ancient brew",
+          "minLevel": 85,
+          "maxLevel": 85
+        },
+        {
+          "name": "Anti-venom",
+          "minLevel": 87,
+          "maxLevel": 87
+        },
+        {
+          "name": "Menaphite remedy",
+          "minLevel": 88,
+          "maxLevel": 88
+        },
+        {
+          "name": "Super combat potion",
+          "minLevel": 90,
+          "maxLevel": 90
+        },
+        {
+          "name": "Forgotten brew",
+          "minLevel": 91,
+          "maxLevel": 91
+        },
+        {
+          "name": "Super antifire potion",
+          "minLevel": 92,
+          "maxLevel": 92
+        },
+        {
+          "name": "Anti-venom+",
+          "minLevel": 94,
+          "maxLevel": 94
+        },
+        {
+          "name": "Extended anti-venom+",
+          "minLevel": 94,
+          "maxLevel": 94
+        },
+        {
+          "name": "Extended super antifire",
+          "minLevel": 98,
+          "maxLevel": 98
+        },
+
+        {
+          "name": "Guam tar",
+          "minLevel": 19,
+          "maxLevel": 31
+        },
+        {
+          "name": "Marrentill tar",
+          "minLevel": 31,
+          "maxLevel": 39
+        },
+        {
+          "name": "Tarromin tar",
+          "minLevel": 39,
+          "maxLevel": 44
+        },
+        {
+          "name": "Harralander tar",
+          "minLevel": 44,
+          "maxLevel": 55
+        },
+        {
+          "name": "Irit tar",
+          "minLevel": 55,
+          "maxLevel": 99
+        },
+
+        {
+          "name": "Herb cleaning",
+          "minLevel": 3,
+          "maxLevel": 99
+        },
+        {
+          "name": "Mastering Mixology",
+          "minLevel": 60,
+          "maxLevel": 99
+        }
+      ]
     }
   }
 ]
