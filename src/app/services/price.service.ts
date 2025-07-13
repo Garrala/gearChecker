@@ -152,7 +152,7 @@ export class PriceService {
     const normalizedName = this.normalizeItemName(itemName);
     const recipe = recipes[normalizedName];
 
-    console.log(`📦 Checking composite recipe for "${normalizedName}":`, recipe);
+    //console.log(`📦 Checking composite recipe for "${normalizedName}":`, recipe);
 
     if (!recipe) return null;
 
@@ -162,8 +162,8 @@ export class PriceService {
     for (const { name, quantity } of recipe) {
       const normalizedComponent = this.normalizeItemName(name);
       const componentPrice = this.getItemPrice(name);
-      console.log(`   🔩 Component: "${name}" → Normalized: "${normalizedComponent}"`);
-      console.log(`   💰 Price:`, componentPrice);
+      //console.log(`   🔩 Component: "${name}" → Normalized: "${normalizedComponent}"`);
+      //console.log(`   💰 Price:`, componentPrice);
 
       if (!componentPrice) {
         console.warn(`   ⚠️ Missing price for component: "${name}"`);

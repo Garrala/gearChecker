@@ -27,6 +27,7 @@ export class MonsterOverviewComponent implements OnInit {
   } = {} //  Store data from multiple JSONs
   ownedGear: { [key: string]: string[] } = {} //  Store multiple items per slot
   recommendedGear: { [key: string]: string[] } = {}
+  effectiveLoadout: { [slot: string]: string[] } = {};
   isMonsterListLoading: boolean = true
   isMonsterDetailsLoading: boolean = false
   isSlayerHelmEnabled: boolean = true
@@ -366,6 +367,8 @@ export class MonsterOverviewComponent implements OnInit {
 
     // ✅ Check if the weapon is two-handed and clear the shield slot
     const equippedWeapon = characterLoadout['Weapon']?.[0]
+    this.effectiveLoadout = { ...characterLoadout };
+
     if (
       equippedWeapon &&
       this.gearData['weapons']?.[equippedWeapon]?.twoHanded
@@ -380,18 +383,10 @@ export class MonsterOverviewComponent implements OnInit {
   }
 
   isBestOwnedItem(slot: string, item: string): boolean {
-    
-
-    const characterLoadout = JSON.parse(
-      localStorage.getItem('characterLoadout') || '{}'
-    )
-
-    // ✅ Compare against an array instead of a single string
-    return (
-      Array.isArray(characterLoadout[slot]) &&
-      characterLoadout[slot].includes(item)
-    )
+    const bestItems = this.effectiveLoadout?.[slot] || [];
+    return bestItems.includes(item);
   }
+
 
   toggleSlayerHelm() {
     this.isSlayerHelmEnabled = !this.isSlayerHelmEnabled // ✅ Toggle state
@@ -713,46 +708,35 @@ export class MonsterOverviewComponent implements OnInit {
   }
 
   getItemPriceDisplay(itemName: string, slotName: string): string {
-    console.log(`🔍 Checking price for item: "${itemName}" in slot: "${slotName}"`);
 
     if (slotName.toLowerCase() === 'ammo') {
-      console.log('🧨 Skipping Ammo slot.');
       return '';
     }
 
     if (itemName.trim().toLowerCase() === 'n/a') {
-      console.log('🚫 Item is N/A, skipping.');
       return '';
     }
 
     const baseName = this.priceService.normalizeItemName(itemName);
-    console.log(`🧹 Normalized item name: "${baseName}"`);
 
     const directPrice = this.priceService.getItemPrice(itemName);
-    console.log(`🔗 Direct price lookup for "${itemName}":`, directPrice);
 
     const normalizedPrice = this.priceService.getItemPrice(baseName);
-    console.log(`🔗 Normalized price lookup for "${baseName}":`, normalizedPrice);
 
     const price = directPrice || normalizedPrice;
     if (price) {
-      console.log(`✅ Found price: ${price.high}`);
       return this.formatPrice(price.high);
     }
 
     if (this.priceService.isInBlocklist(baseName)) {
-      console.log(`🛑 Item "${baseName}" is blocklisted.`);
       return 'Untradable';
     }
 
     const fallbackId = this.priceService.findClosestMatch(baseName);
-    console.log(`🆗 Fallback ID for "${baseName}":`, fallbackId);
 
     const fallbackPrice = fallbackId ? this.priceService.getPriceById(fallbackId) : null;
-    console.log(`📦 Fallback price:`, fallbackPrice);
 
     const result = fallbackPrice ? this.formatPrice(fallbackPrice.high) : 'Untradable';
-    console.log(`🎯 Final price result: ${result}`);
     return result;
   }
 
