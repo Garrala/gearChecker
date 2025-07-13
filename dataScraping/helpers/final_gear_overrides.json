@@ -331,7 +331,7 @@
     "Solo (Magic)": {
       "Helmet": [
         {
-          "mode": "patch_join",
+          "mode": "patch",
           "insert_at": 3,
           "item": "Blue moon helm"
         },
@@ -348,7 +348,7 @@
       ],
       "Body": [
         {
-          "mode": "patch_join",
+          "mode": "patch",
           "insert_at": 3,
           "item": "Blue moon chestplate"
         },
@@ -365,7 +365,7 @@
       ],
       "Legs": [
         {
-          "mode": "patch_join",
+          "mode": "patch",
           "insert_at": 3,
           "item": "Blue moon tassets"
         },

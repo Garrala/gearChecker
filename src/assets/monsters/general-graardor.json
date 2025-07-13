@@ -480,11 +480,13 @@
         [ "Slayer helmet (i)" ],
         [ "Ancestral hat" ],
         [ "Virtus mask" ],
-        [ "Ahrim's hood", "Blue moon helm", "Dagon'hai hat", "Bloodbark helm" ],
+        [ "Blue moon helm", "Dagon'hai hat", "Bloodbark helm" ],
+        [ "Ahrim's hood" ],
         [ "N/A" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -495,26 +497,30 @@
         [ "Zamorak cape" ],
         [ "Ardougne cloak 4" ],
         [ "Ardougne cloak 3" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
         [ "Virtus robe top" ],
         [ "Ahrim's robetop" ],
-        [ "N/A", "Blue moon chestplate", "Dagon'hai robe top", "Bloodbark body" ],
+        [ "Blue moon chestplate", "Dagon'hai robe top", "Bloodbark body" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ],
         [ "Ahrim's robeskirt" ],
-        [ "N/A", "Blue moon tassets", "Dagon'hai robe bottom", "Bloodbark legs" ],
+        [ "Blue moon tassets", "Dagon'hai robe bottom", "Bloodbark legs" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
         [ "Tumeken's shadow" ],
         [ "Sanguinesti staff" ],
         [ "Trident of the swamp" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -523,10 +529,12 @@
         [ "Arcane spirit shield" ],
         [ "Ancient wyvern shield" ],
         [ "Mage's book" ],
-        [ "Malediction ward", "Book of darkness" ]
+        [ "Malediction ward", "Book of darkness" ],
+        [ "N/A" ]
       ],
       "Ammo": [
         [ "War blessing" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -537,12 +545,14 @@
         [ "Barrows gloves" ],
         [ "N/A" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
         [ "Eternal boots" ],
         [ "Infinity boots", "Aranea boots" ],
         [ "Devout boots" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -551,10 +561,12 @@
         [ "Seers ring (i)" ],
         [ "Brimstone ring" ],
         [ "Ring of the gods (i)", "Ring of suffering (i)" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Special Attack": [
         [ "Accursed sceptre" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],

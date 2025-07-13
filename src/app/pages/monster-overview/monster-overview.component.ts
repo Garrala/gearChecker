@@ -6,6 +6,7 @@ import { NgFor, NgIf } from '@angular/common'
 import { FormsModule } from '@angular/forms'
 import { ActivatedRoute, Router } from '@angular/router';
 import { ViewChild, ElementRef, ViewChildren, QueryList } from '@angular/core';
+import { PriceService } from '../../services/price.service'
 
 @Component({
   selector: 'app-monster-overview',
@@ -81,11 +82,15 @@ export class MonsterOverviewComponent implements OnInit {
   allItems: { name: string; image: string }[] = []
   highlightedIndex: number = -1;
 
+  itemPrices: { [id: string]: { high: number; low: number } } = {};
+
+
   @ViewChild('monsterDetails') monsterDetailsRef!: ElementRef;
   @ViewChildren('itemRef') itemElements!: QueryList<ElementRef>;
 
   constructor(
     private monsterService: MonsterService,
+    private priceService: PriceService,
     public gearService: GearService,
     private cdRef: ChangeDetectorRef, 
 	  private route: ActivatedRoute,
@@ -93,33 +98,27 @@ export class MonsterOverviewComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    this.priceService.loadPrices().subscribe(() => {
+      this.monsterService.getMonsters().subscribe((data) => {
+        this.monsters = data;
+        this.filteredBosses = data;
+        this.extractAllItems();
+        this.isMonsterListLoading = false;
 
-    this.monsterService.getMonsters().subscribe((data) => {
-      this.monsters = data
-      this.filteredBosses = data
-      this.extractAllItems()
-      this.isMonsterListLoading = false //  Boss list loaded
-	  
-	  this.route.paramMap.subscribe((params) => {
-        const monsterName = params.get('name');
-        if (monsterName) {
-          const decoded = decodeURIComponent(monsterName);
-          const match = this.monsters.find(m => m.slug === monsterName);
-          if (match) {
-            this.selectMonster(match);
+        this.route.paramMap.subscribe((params) => {
+          const monsterName = params.get('name');
+          if (monsterName) {
+            const match = this.monsters.find(m => m.slug === monsterName);
+            if (match) this.selectMonster(match);
           }
-        }
+        });
       });
-    })
-	
-	
 
-    const savedGear = localStorage.getItem('ownedGear')
-    if (savedGear) {
-      this.ownedGear = JSON.parse(savedGear)
-    }
+      const savedGear = localStorage.getItem('ownedGear');
+      if (savedGear) this.ownedGear = JSON.parse(savedGear);
 
-    this.loadGearData() //  Load multiple gear files
+      this.loadGearData();
+    }); //  Load multiple gear files
   }
 
   /**  Select a monster and reset boss index **/
@@ -578,7 +577,6 @@ export class MonsterOverviewComponent implements OnInit {
 
   getCleanBossName(rawName?: string): string {
     if (!rawName) return 'Unknown';
-    console.log(rawName)
     // Manual cleanup rules
     const replacements: { [key: string]: string } = {
       'duke sucellus (sucellus awake awakened)': 'Duke Sucellus (Awakened)',
@@ -713,4 +711,59 @@ export class MonsterOverviewComponent implements OnInit {
       }
     }, 0);
   }
+
+  getItemPriceDisplay(itemName: string, slotName: string): string {
+    console.log(`🔍 Checking price for item: "${itemName}" in slot: "${slotName}"`);
+
+    if (slotName.toLowerCase() === 'ammo') {
+      console.log('🧨 Skipping Ammo slot.');
+      return '';
+    }
+
+    if (itemName.trim().toLowerCase() === 'n/a') {
+      console.log('🚫 Item is N/A, skipping.');
+      return '';
+    }
+
+    const baseName = this.priceService.normalizeItemName(itemName);
+    console.log(`🧹 Normalized item name: "${baseName}"`);
+
+    const directPrice = this.priceService.getItemPrice(itemName);
+    console.log(`🔗 Direct price lookup for "${itemName}":`, directPrice);
+
+    const normalizedPrice = this.priceService.getItemPrice(baseName);
+    console.log(`🔗 Normalized price lookup for "${baseName}":`, normalizedPrice);
+
+    const price = directPrice || normalizedPrice;
+    if (price) {
+      console.log(`✅ Found price: ${price.high}`);
+      return this.formatPrice(price.high);
+    }
+
+    if (this.priceService.isInBlocklist(baseName)) {
+      console.log(`🛑 Item "${baseName}" is blocklisted.`);
+      return 'Untradable';
+    }
+
+    const fallbackId = this.priceService.findClosestMatch(baseName);
+    console.log(`🆗 Fallback ID for "${baseName}":`, fallbackId);
+
+    const fallbackPrice = fallbackId ? this.priceService.getPriceById(fallbackId) : null;
+    console.log(`📦 Fallback price:`, fallbackPrice);
+
+    const result = fallbackPrice ? this.formatPrice(fallbackPrice.high) : 'Untradable';
+    console.log(`🎯 Final price result: ${result}`);
+    return result;
+  }
+
+
+
+
+  formatPrice(value: number): string {
+    if (value >= 1_000_000_000) return (value / 1_000_000_000).toFixed(2) + 'b';
+    if (value >= 1_000_000) return (value / 1_000_000).toFixed(1) + 'm';
+    if (value >= 1_000) return (value / 1_000).toFixed(1) + 'k';
+    return value.toLocaleString();
+  }
+
 }

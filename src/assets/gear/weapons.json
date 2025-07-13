@@ -569,13 +569,13 @@
     "twoHanded": false,
     "usesAmmoType": "blessing"
   },
-  "Black chinchompas": {
+  "Black chinchompa": {
     "image": "/assets/gear-icons/Black_chinchompa.png",
     "wiki": "https://oldschool.runescape.wiki/w/Black_chinchompa",
     "twoHanded": false,
     "usesAmmoType": "blessing"
   },
-  "Red chinchompas": {
+  "Red chinchompa": {
     "image": "/assets/gear-icons/Red_chinchompa.png",
     "wiki": "https://oldschool.runescape.wiki/w/Red_chinchompa",
     "twoHanded": false,

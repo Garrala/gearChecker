@@ -452,5 +452,13 @@
   "Slayer's staff(e)": {
     "correct_slot": "Weapon",
     "alias": "Slayer's staff (e)"
+  },
+  "Black chinchompas": {
+    "correct_slot": "Weapon",
+    "alias": "Black chinchompa"
+  },
+  "Red chinchompas": {
+    "correct_slot": "Weapon",
+    "alias": "Red chinchompa"
   }
 }

@@ -894,7 +894,10 @@
                        target="_blank"
                        class="wiki-link">🔍</a>
                   </div>
-                  <p>{{ item }}</p>
+                  <p class="item-name">{{ item }}</p>
+                  <p class="item-price" *ngIf="getItemPriceDisplay(item, slot)">
+                    {{ getItemPriceDisplay(item, slot) }}
+                  </p>
                 </div>
               </div>
             </td>

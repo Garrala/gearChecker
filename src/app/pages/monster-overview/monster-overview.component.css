@@ -781,6 +781,15 @@ h1 {
     text-decoration: underline;
   }
 
+.item-price {
+  font-size: 0.75rem;
+  color: #a0ffa0;
+  margin-top: 2px;
+}
+
+.item-name {
+  margin: 0;
+}
 
 /*mobile stuff*/
 @media (max-width: 768px) {
