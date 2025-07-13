@@ -84,7 +84,10 @@ export class MonsterOverviewComponent implements OnInit {
   highlightedIndex: number = -1;
 
   itemPrices: { [id: string]: { high: number; low: number } } = {};
-
+  selectedUpgradeSlot: string | null = null;
+  upgradePath: string[] = [];
+  sortedUpgradePaths: { [slot: string]: string[] } = {};
+  cachedUpgradeList: string[] = [];
 
   @ViewChild('monsterDetails') monsterDetailsRef!: ElementRef;
   @ViewChildren('itemRef') itemElements!: QueryList<ElementRef>;
@@ -718,9 +721,7 @@ export class MonsterOverviewComponent implements OnInit {
     }
 
     const baseName = this.priceService.normalizeItemName(itemName);
-
     const directPrice = this.priceService.getItemPrice(itemName);
-
     const normalizedPrice = this.priceService.getItemPrice(baseName);
 
     const price = directPrice || normalizedPrice;
@@ -733,15 +734,10 @@ export class MonsterOverviewComponent implements OnInit {
     }
 
     const fallbackId = this.priceService.findClosestMatch(baseName);
-
     const fallbackPrice = fallbackId ? this.priceService.getPriceById(fallbackId) : null;
-
     const result = fallbackPrice ? this.formatPrice(fallbackPrice.high) : 'Untradable';
     return result;
   }
-
-
-
 
   formatPrice(value: number): string {
     if (value >= 1_000_000_000) return (value / 1_000_000_000).toFixed(2) + 'b';
@@ -749,5 +745,89 @@ export class MonsterOverviewComponent implements OnInit {
     if (value >= 1_000) return (value / 1_000).toFixed(1) + 'k';
     return value.toLocaleString();
   }
+
+  selectUpgradeSlot(slot: string) {
+    console.log("selected upgrade slot ", slot);
+    if (this.selectedUpgradeSlot === slot) {
+      this.selectedUpgradeSlot = null;
+      this.cachedUpgradeList = [];
+    } else {
+      this.selectedUpgradeSlot = slot;
+      this.cachedUpgradeList = this.getUpgradePathForSlot(slot);
+    }
+  }
+
+
+  getUpgradePathForSlot(slotName: string): string[] {
+    console.log(`\n--- [UPGRADE PATH DEBUG] Slot: ${slotName} ---`);
+
+    if (!this.selectedMonster || !this.selectedSetup) {
+      console.log(`[UPGRADE PATH] No monster or setup selected.`);
+      return [];
+    }
+
+    const slotItemsRaw =
+      this.selectedMonster.gear_setups[this.selectedSetup]?.[slotName] || [];
+    console.log('[RAW ITEMS]', slotItemsRaw);
+
+    const allRecommendedItems = slotItemsRaw.flatMap((group) =>
+      Array.isArray(group) ? group : [group]
+    );
+    console.log('[FLATTENED ITEMS]', allRecommendedItems);
+
+    const ownedItems: string[] = this.ownedGear[slotName] || [];
+    console.log('[OWNED ITEMS]', ownedItems);
+
+    const upgradeCandidates = allRecommendedItems
+      .filter((item) => item !== 'N/A' && !ownedItems.includes(item))
+      .map((item) => {
+        const priceDisplay = this.getItemPriceDisplay(item, slotName);
+
+        let price = Infinity;
+        if (
+          priceDisplay &&
+          !priceDisplay.includes('Untradable') &&
+          !priceDisplay.includes('❌')
+        ) {
+          if (priceDisplay.endsWith('b')) {
+            price = parseFloat(priceDisplay) * 1_000_000_000;
+          } else if (priceDisplay.endsWith('m')) {
+            price = parseFloat(priceDisplay) * 1_000_000;
+          } else if (priceDisplay.endsWith('k')) {
+            price = parseFloat(priceDisplay) * 1_000;
+          } else {
+            const numeric = priceDisplay.replace(/,/g, '').replace(/[^\d]/g, '');
+            price = parseInt(numeric) || Infinity;
+          }
+        }
+
+        console.log(
+          `→ [CANDIDATE] ${item}: ${priceDisplay || '❌ No price'} → ${isFinite(price) ? price.toLocaleString() + ' gp' : '❌ Not sortable'
+          }`
+        );
+
+        return { item, price };
+      })
+      .sort((a, b) => a.price - b.price);
+
+    console.log('[SORTED LIST]');
+    upgradeCandidates.forEach(({ item, price }, i) => {
+      const priceLabel = isFinite(price)
+        ? `${price.toLocaleString()} gp`
+        : '❌ No price';
+      console.log(`  ${i + 1}. ${item} - ${priceLabel}`);
+    });
+
+    return upgradeCandidates.map((entry) => entry.item);
+  }
+
+
+
+
+
+
+
+
+
 
 }

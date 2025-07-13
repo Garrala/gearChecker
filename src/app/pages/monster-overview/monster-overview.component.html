@@ -73,12 +73,9 @@
           <img [src]="getSafeBossImage(getSelectedBoss())"
                alt="{{ getSelectedBoss()?.name }}"
                (error)="handleImageError($event)" />
-          <a
-            [href]="getSelectedBoss()?.wiki_link"
-            target="_blank"
-            class="boss-link"
-            >🔍</a
-          >
+          <a [href]="getSelectedBoss()?.wiki_link"
+             target="_blank"
+             class="boss-link">🔍</a>
         </div>
       </div>
 
@@ -626,219 +623,267 @@
       <h3>
         Your Loadout <span class="setup-name">- {{ selectedSetup }}</span>
       </h3>
+      <p>Click on a slot to see your upgrade path</p>
       <label>
-        <input
-          type="checkbox"
-          [checked]="isSlayerHelmEnabled"
-          (change)="toggleSlayerHelm()"
-        />
+        <input type="checkbox"
+               [checked]="isSlayerHelmEnabled"
+               (change)="toggleSlayerHelm()" />
         Toggle Slayer Helm
       </label>
 
-      <div class="gear-grid">
-        <!-- Row 1 -->
-        <div class="gear-slot blank"></div>
-        <div class="gear-slot helmet">
-          <img
-            [src]="
-              ownedGear['Helmet']?.length
-                ? gearData['helmets']?.[ownedGear['Helmet'][0]]?.image
-                : './assets/misc-icons/Bank_filler.png'
-            "
-            [alt]="
-              ownedGear['Helmet']?.length ? ownedGear['Helmet'][0] : 'No Helmet'
-            "
-            [attr.title]="
-              ownedGear['Helmet']?.length ? ownedGear['Helmet'][0] : 'No Helmet'
-            "
-            (error)="handleImageError($event)"
-          />
-        </div>
-        <div class="gear-slot blank"></div>
+      <div class="gear-upgrade-wrapper" [class.upgrading]="selectedUpgradeSlot">
+        <div class="gear-grid">
+          <!-- Row 1 -->
+          <div class="gear-slot blank"></div>
+          <div class="gear-slot helmet" (click)="selectUpgradeSlot('Helmet')">
+            <img [src]="
+                ownedGear['Helmet']?.length
+                  ? gearData['helmets']?.[ownedGear['Helmet'][0]]?.image
+                  : './assets/misc-icons/Bank_filler.png'
+              "
+                 [alt]="
+                ownedGear['Helmet']?.length ? ownedGear['Helmet'][0] : 'No Helmet'
+              "
+                 [attr.title]="
+                ownedGear['Helmet']?.length ? ownedGear['Helmet'][0] : 'No Helmet'
+              "
+                 (error)="handleImageError($event)" />
+          </div>
+          <div class="gear-slot blank"></div>
 
-        <!-- Row 2 -->
-        <div class="gear-slot cape">
-          <img
-            [src]="
-              ownedGear['Cape']?.[0]
-                ? gearData['capes']?.[ownedGear['Cape'][0]]?.image
-                : './assets/misc-icons/Bank_filler.png'
-            "
-            [alt]="ownedGear['Cape'][0][0] || 'No Cape'"
-            [attr.title]="
-              ownedGear['Cape'][0]?.length ? ownedGear['Cape'][0] : 'No Cape'
-            "
-            (error)="handleImageError($event)"
-          />
-        </div>
-        <div class="gear-slot amulet">
-          <img
-            [src]="
-              ownedGear['Amulet']?.[0]
-                ? gearData['amulets']?.[ownedGear['Amulet'][0]]?.image
-                : './assets/misc-icons/Bank_filler.png'
-            "
-            [alt]="ownedGear['Amulet'][0] || 'No Amulet'"
-            [attr.title]="
-              ownedGear['Amulet'][0]?.length
-                ? ownedGear['Amulet'][0]
-                : 'No Amulet'
-            "
-            (error)="handleImageError($event)"
-          />
-        </div>
-        <div class="gear-slot ammo">
-          <img
-            [src]="
-              ownedGear['Ammo']?.[0]
-                ? gearData['ammo']?.[ownedGear['Ammo'][0]]?.image
-                : './assets/misc-icons/Bank_filler.png'
-            "
-            [alt]="ownedGear['Ammo'][0] || 'No Ammo'"
-            [attr.title]="
-              ownedGear['Ammo'][0]?.length ? ownedGear['Ammo'][0] : 'No Ammo'
-            "
-            (error)="handleImageError($event)"
-          />
+          <!-- Row 2 -->
+          <div class="gear-slot cape" (click)="selectUpgradeSlot('Cape')">
+            <img [src]="
+                ownedGear['Cape']?.[0]
+                  ? gearData['capes']?.[ownedGear['Cape'][0]]?.image
+                  : './assets/misc-icons/Bank_filler.png'
+              "
+                 [alt]="ownedGear['Cape'][0][0] || 'No Cape'"
+                 [attr.title]="
+                ownedGear['Cape'][0]?.length ? ownedGear['Cape'][0] : 'No Cape'
+              "
+                 (error)="handleImageError($event)" />
+          </div>
+          <div class="gear-slot amulet" (click)="selectUpgradeSlot('Amulet')">
+            <img [src]="
+                ownedGear['Amulet']?.[0]
+                  ? gearData['amulets']?.[ownedGear['Amulet'][0]]?.image
+                  : './assets/misc-icons/Bank_filler.png'
+              "
+                 [alt]="ownedGear['Amulet'][0] || 'No Amulet'"
+                 [attr.title]="
+                ownedGear['Amulet'][0]?.length
+                  ? ownedGear['Amulet'][0]
+                  : 'No Amulet'
+              "
+                 (error)="handleImageError($event)" />
+          </div>
+          <div class="gear-slot ammo" (click)="selectUpgradeSlot('Ammo')">
+            <img [src]="
+                ownedGear['Ammo']?.[0]
+                  ? gearData['ammo']?.[ownedGear['Ammo'][0]]?.image
+                  : './assets/misc-icons/Bank_filler.png'
+              "
+                 [alt]="ownedGear['Ammo'][0] || 'No Ammo'"
+                 [attr.title]="
+                ownedGear['Ammo'][0]?.length ? ownedGear['Ammo'][0] : 'No Ammo'
+              "
+                 (error)="handleImageError($event)" />
+          </div>
+
+          <!-- Row 3 -->
+          <div class="gear-slot weapon" (click)="selectUpgradeSlot('Weapon')">
+            <img [src]="
+                ownedGear['Weapon']?.[0]
+                  ? gearData['weapons']?.[ownedGear['Weapon'][0]]?.image
+                  : './assets/misc-icons/Bank_filler.png'
+              "
+                 [alt]="ownedGear['Weapon'][0] || 'No Weapon'"
+                 [attr.title]="
+                ownedGear['Weapon'][0]?.length
+                  ? ownedGear['Weapon'][0]
+                  : 'No Weapon'
+              "
+                 (error)="handleImageError($event)" />
+          </div>
+          <div class="gear-slot body" (click)="selectUpgradeSlot('Body')">
+            <img [src]="
+                ownedGear['Body']?.[0]
+                  ? gearData['body']?.[ownedGear['Body'][0]]?.image
+                  : './assets/misc-icons/Bank_filler.png'
+              "
+                 [alt]="ownedGear['Body'][0] || 'No Body Armor'"
+                 [attr.title]="
+                ownedGear['Body'][0]?.length ? ownedGear['Body'][0] : 'No Body'
+              "
+                 (error)="handleImageError($event)" />
+          </div>
+          <!-- ✅ Conditionally hide the shield slot if weapon is two-handed -->
+          <div class="gear-slot shield" (click)="selectUpgradeSlot('Shield')">
+            <img [src]="
+                ownedGear['Shield']?.length
+                  ? gearData['shields']?.[ownedGear['Shield'][0]]?.image
+                  : './assets/misc-icons/Bank_filler.png'
+              "
+                 [alt]="
+                ownedGear['Shield']?.length ? ownedGear['Shield'][0] : 'No Shield'
+              "
+                 [attr.title]="
+                ownedGear['Shield'][0]?.length
+                  ? ownedGear['Shield'][0]
+                  : 'No Shield'
+              "
+                 (error)="handleImageError($event)" />
+          </div>
+
+          <!-- Row 4 -->
+          <div class="gear-slot special" (click)="selectUpgradeSlot('Special Attack')">
+            <img [src]="
+                ownedGear['Special Attack']?.length
+                  ? gearData['special_attack']?.[ownedGear['Special Attack'][0]]
+                      ?.image
+                  : './assets/misc-icons/Bank_filler.png'
+              "
+                 [alt]="
+                ownedGear['Special Attack']?.length
+                  ? ownedGear['Special Attack'][0]
+                  : 'No Special Attack Weapon'
+              "
+                 [attr.title]="
+                ownedGear['Special Attack'][0]?.length
+                  ? ownedGear['Special Attack'][0]
+                  : 'No Special Attack'
+              "
+                 (error)="handleImageError($event)" />
+          </div>
+          <div class="gear-slot legs" (click)="selectUpgradeSlot('Legs')">
+            <img [src]="
+                ownedGear['Legs']?.[0]
+                  ? gearData['legs']?.[ownedGear['Legs'][0]]?.image
+                  : './assets/misc-icons/Bank_filler.png'
+              "
+                 [alt]="ownedGear['Legs'][0] || 'No Leg Armor'"
+                 [attr.title]="
+                ownedGear['Legs'][0]?.length ? ownedGear['Legs'][0] : 'No Legs'
+              "
+                 (error)="handleImageError($event)" />
+          </div>
+          <div class="gear-slot blank2"></div>
+
+          <!-- Row 5 -->
+          <div class="gear-slot gloves" (click)="selectUpgradeSlot('Gloves')">
+            <img [src]="
+                ownedGear['Gloves']?.[0]
+                  ? gearData['gloves']?.[ownedGear['Gloves'][0]]?.image
+                  : './assets/misc-icons/Bank_filler.png'
+              "
+                 [alt]="ownedGear['Gloves'][0] || 'No Gloves'"
+                 [attr.title]="
+                ownedGear['Gloves'][0]?.length
+                  ? ownedGear['Gloves'][0]
+                  : 'No Gloves'
+              "
+                 (error)="handleImageError($event)" />
+          </div>
+          <div class="gear-slot boots" (click)="selectUpgradeSlot('Boots')">
+            <img [src]="
+                ownedGear['Boots']?.[0]
+                  ? gearData['boots']?.[ownedGear['Boots'][0]]?.image
+                  : './assets/misc-icons/Bank_filler.png'
+              "
+                 [alt]="ownedGear['Boots'][0] || 'No Boots'"
+                 [attr.title]="
+                ownedGear['Boots'][0]?.length ? ownedGear['Boots'][0] : 'No Boots'
+              "
+                 (error)="handleImageError($event)" />
+          </div>
+          <div class="gear-slot ring" (click)="selectUpgradeSlot('Ring')">
+            <img [src]="
+                ownedGear['Ring']?.[0]
+                  ? gearData['rings']?.[ownedGear['Ring'][0]]?.image
+                  : './assets/misc-icons/Bank_filler.png'
+              "
+                 [alt]="ownedGear['Ring'][0] || 'No Ring'"
+                 [attr.title]="
+                ownedGear['Ring'][0]?.length ? ownedGear['Ring'][0] : 'No Ring'
+              "
+                 (error)="handleImageError($event)" />
+          </div>
         </div>
 
-        <!-- Row 3 -->
-        <div class="gear-slot weapon">
-          <img
-            [src]="
-              ownedGear['Weapon']?.[0]
-                ? gearData['weapons']?.[ownedGear['Weapon'][0]]?.image
-                : './assets/misc-icons/Bank_filler.png'
-            "
-            [alt]="ownedGear['Weapon'][0] || 'No Weapon'"
-            [attr.title]="
-              ownedGear['Weapon'][0]?.length
-                ? ownedGear['Weapon'][0]
-                : 'No Weapon'
-            "
-            (error)="handleImageError($event)"
-          />
-        </div>
-        <div class="gear-slot body">
-          <img
-            [src]="
-              ownedGear['Body']?.[0]
-                ? gearData['body']?.[ownedGear['Body'][0]]?.image
-                : './assets/misc-icons/Bank_filler.png'
-            "
-            [alt]="ownedGear['Body'][0] || 'No Body Armor'"
-            [attr.title]="
-              ownedGear['Body'][0]?.length ? ownedGear['Body'][0] : 'No Body'
-            "
-            (error)="handleImageError($event)"
-          />
-        </div>
-        <!-- ✅ Conditionally hide the shield slot if weapon is two-handed -->
-        <div class="gear-slot shield">
-          <img
-            [src]="
-              ownedGear['Shield']?.length
-                ? gearData['shields']?.[ownedGear['Shield'][0]]?.image
-                : './assets/misc-icons/Bank_filler.png'
-            "
-            [alt]="
-              ownedGear['Shield']?.length ? ownedGear['Shield'][0] : 'No Shield'
-            "
-            [attr.title]="
-              ownedGear['Shield'][0]?.length
-                ? ownedGear['Shield'][0]
-                : 'No Shield'
-            "
-            (error)="handleImageError($event)"
-          />
+        <!-- Upgrade Panel Wrapper -->
+        <div class="gear-upgrade-wrapper" [class.upgrading]="selectedUpgradeSlot">
+          <ng-container *ngIf="selectedUpgradeSlot as slot">
+            <ng-container *ngIf="getUpgradePathForSlot(slot) as upgradeList">
+
+              <div class="upgrade-panel">
+                <h4>Upgrade Path for: {{ slot }}</h4>
+
+                <p class="upgrade-warning">
+                  *Currently gear is sorted by price not stats.
+                </p>
+
+                <!-- Store equipped item -->
+                <ng-container *ngIf="ownedGear?.[slot]?.[0] as equippedItem">
+
+                  <!-- Show currently equipped item -->
+                  <div class="upgrade-row equipped-item">
+                    <img [src]="gearData[gearService.getGearCategory(slot) ?? '']?.[equippedItem]?.image || './assets/misc-icons/Bank_filler.png'"
+                         [alt]="equippedItem"
+                         class="upgrade-preview" />
+                    <p>{{ equippedItem }}</p>
+                    <p class="owned-label">Currently Equipped</p>
+                  </div>
+
+                  <!-- If it's BiS -->
+                  <div class="upgrade-row no-upgrade"
+                       *ngIf="upgradeList.length > 0 && equippedItem === upgradeList[0]">
+                    <img src="./assets/misc-icons/Bank_filler.png"
+                         alt="BiS Already Equipped"
+                         class="upgrade-preview" />
+                    <p>You already have the best-in-slot item!</p>
+                  </div>
+
+                  <!-- Otherwise, show the upgrades -->
+                  <hr *ngIf="upgradeList.length > 0 && equippedItem !== upgradeList[0]" />
+
+                  <div class="upgrade-row"
+                       *ngFor="let item of upgradeList | slice:0:5"
+                       [class.dimmed]="item === equippedItem">
+                    <img [src]="gearData[gearService.getGearCategory(slot) ?? '']?.[item]?.image || './assets/misc-icons/Bank_filler.png'"
+                         [alt]="item"
+                         class="upgrade-preview" />
+                    <p>{{ item }}</p>
+                    <p class="price">{{ getItemPriceDisplay(item, slot) }}</p>
+                  </div>
+
+                </ng-container>
+
+                <!-- If no item is equipped -->
+                <div class="upgrade-row no-upgrade"
+                     *ngIf="!ownedGear?.[slot]?.[0] && upgradeList.length === 0">
+                  <img src="./assets/misc-icons/Bank_filler.png"
+                       alt="No Upgrades Found"
+                       class="upgrade-preview" />
+                  <p>No upgrades found for this slot.</p>
+                </div>
+
+              </div>
+
+            </ng-container>
+          </ng-container>
         </div>
 
-        <!-- Row 4 -->
-        <div class="gear-slot special">
-          <img
-            [src]="
-              ownedGear['Special Attack']?.length
-                ? gearData['special_attack']?.[ownedGear['Special Attack'][0]]
-                    ?.image
-                : './assets/misc-icons/Bank_filler.png'
-            "
-            [alt]="
-              ownedGear['Special Attack']?.length
-                ? ownedGear['Special Attack'][0]
-                : 'No Special Attack Weapon'
-            "
-            [attr.title]="
-              ownedGear['Special Attack'][0]?.length
-                ? ownedGear['Special Attack'][0]
-                : 'No Special Attack'
-            "
-            (error)="handleImageError($event)"
-          />
-        </div>
-        <div class="gear-slot legs">
-          <img
-            [src]="
-              ownedGear['Legs']?.[0]
-                ? gearData['legs']?.[ownedGear['Legs'][0]]?.image
-                : './assets/misc-icons/Bank_filler.png'
-            "
-            [alt]="ownedGear['Legs'][0] || 'No Leg Armor'"
-            [attr.title]="
-              ownedGear['Legs'][0]?.length ? ownedGear['Legs'][0] : 'No Legs'
-            "
-            (error)="handleImageError($event)"
-          />
-        </div>
-        <div class="gear-slot blank2"></div>
 
-        <!-- Row 5 -->
-        <div class="gear-slot gloves">
-          <img
-            [src]="
-              ownedGear['Gloves']?.[0]
-                ? gearData['gloves']?.[ownedGear['Gloves'][0]]?.image
-                : './assets/misc-icons/Bank_filler.png'
-            "
-            [alt]="ownedGear['Gloves'][0] || 'No Gloves'"
-            [attr.title]="
-              ownedGear['Gloves'][0]?.length
-                ? ownedGear['Gloves'][0]
-                : 'No Gloves'
-            "
-            (error)="handleImageError($event)"
-          />
-        </div>
-        <div class="gear-slot boots">
-          <img
-            [src]="
-              ownedGear['Boots']?.[0]
-                ? gearData['boots']?.[ownedGear['Boots'][0]]?.image
-                : './assets/misc-icons/Bank_filler.png'
-            "
-            [alt]="ownedGear['Boots'][0] || 'No Boots'"
-            [attr.title]="
-              ownedGear['Boots'][0]?.length ? ownedGear['Boots'][0] : 'No Boots'
-            "
-            (error)="handleImageError($event)"
-          />
-        </div>
-        <div class="gear-slot ring">
-          <img
-            [src]="
-              ownedGear['Ring']?.[0]
-                ? gearData['rings']?.[ownedGear['Ring'][0]]?.image
-                : './assets/misc-icons/Bank_filler.png'
-            "
-            [alt]="ownedGear['Ring'][0] || 'No Ring'"
-            [attr.title]="
-              ownedGear['Ring'][0]?.length ? ownedGear['Ring'][0] : 'No Ring'
-            "
-            (error)="handleImageError($event)"
-          />
-        </div>
+
+
+
+
+
+
       </div>
     </div>
-  </div>
+</div>
 
   <div class="recommended-gear-table">
     <!-- Gear Setup Tabs -->
