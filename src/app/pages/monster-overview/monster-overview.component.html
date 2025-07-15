@@ -854,10 +854,13 @@
                          [alt]="item"
                          class="upgrade-preview" />
                     <p>{{ item }}</p>
-                    <p class="price">{{ getItemPriceDisplay(item, slot) }}</p>
+                    <p class="price"
+                       [class.untradable]="!getItemPriceDisplay(item, slot)">
+                      {{ getItemPriceDisplay(item, slot) || 'Untradable' }}
+                    </p>
                   </div>
 
-                </ng-container>
+                </ng-container> 
 
                 <!-- If no item is equipped -->
                 <div class="upgrade-row no-upgrade"

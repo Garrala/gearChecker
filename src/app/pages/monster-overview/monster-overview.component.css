@@ -867,6 +867,13 @@ h1 {
   color: #a0ffa0;
 }
 
+.price.untradable {
+  color: #ffaa00; /* Goldish color to stand out */
+  
+}
+
+
+
 /*mobile stuff*/
 @media (max-width: 768px) {
   .main-content {

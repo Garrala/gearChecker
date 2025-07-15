@@ -778,9 +778,21 @@ export class MonsterOverviewComponent implements OnInit {
     const ownedItems: string[] = this.ownedGear[slotName] || [];
     console.log('[OWNED ITEMS]', ownedItems);
 
+    const equippedItem = ownedItems?.[0] ?? '';
+    const equippedIndex = allRecommendedItems.findIndex(
+      (item) => item === equippedItem
+    );
+
+    console.log(`Equipped item: "${equippedItem}" at index ${equippedIndex}`);
+
     const upgradeCandidates = allRecommendedItems
-      .filter((item) => item !== 'N/A' && !ownedItems.includes(item))
-      .map((item) => {
+      .map((item, index) => ({ item, index }))
+      .filter(({ item, index }) =>
+        item !== 'N/A' &&
+        !ownedItems.includes(item) &&
+        (equippedIndex === -1 || index < equippedIndex)
+      )
+      .map(({ item }) => {
         const priceDisplay = this.getItemPriceDisplay(item, slotName);
 
         let price = Infinity;
@@ -801,25 +813,21 @@ export class MonsterOverviewComponent implements OnInit {
           }
         }
 
-        console.log(
-          `→ [CANDIDATE] ${item}: ${priceDisplay || '❌ No price'} → ${isFinite(price) ? price.toLocaleString() + ' gp' : '❌ Not sortable'
-          }`
-        );
-
-        return { item, price };
+        return { item, price, priceDisplay };
       })
       .sort((a, b) => a.price - b.price);
 
-    console.log('[SORTED LIST]');
+    console.log('[SORTED UPGRADE LIST]');
     upgradeCandidates.forEach(({ item, price }, i) => {
-      const priceLabel = isFinite(price)
-        ? `${price.toLocaleString()} gp`
-        : '❌ No price';
-      console.log(`  ${i + 1}. ${item} - ${priceLabel}`);
+      console.log(`  ${i + 1}. ${item} - ${isFinite(price) ? price.toLocaleString() + ' gp' : '❌'}`);
     });
 
-    return upgradeCandidates.map((entry) => entry.item);
+    return upgradeCandidates.map(({ item }) => item);
   }
+
+
+
+
 
 
 
