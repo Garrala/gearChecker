@@ -342,7 +342,7 @@ export class MonsterOverviewComponent implements OnInit {
       )
       if (!this.isSlayerHelmEnabled) {
         bestItems = bestItems.filter(
-          (item) => !['Slayer helmet (i)', 'Black mask (i)'].includes(item)
+          (item) => !['Slayer helmet (i)', 'Black mask (i)', 'Slayer helmet', 'Black mask'].includes(item)
         )
       }
 
