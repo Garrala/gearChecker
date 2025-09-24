@@ -1,0 +1,112 @@
+<div class="character-sheet">
+  <!-- Tabs -->
+  <div class="tabs">
+    <button *ngFor="let tab of tabs" 
+            [class.active]="activeTab === tab" 
+            (click)="activeTab = tab">
+      {{ tab }}
+    </button>
+  </div>
+
+  <!-- Tab Content -->
+  <div class="tab-content">
+    <!-- Core -->
+    <div *ngIf="activeTab === 'Core'" class="tab-section core-tab">
+
+      <!-- Portrait + Name -->
+      <div class="portrait-section">
+        <img class="character-portrait"
+             [src]="character.image || '/assets/default-avatar.png'"
+             alt="Portrait" />
+        <h2 class="character-name">{{ character.name }}</h2>
+      </div>
+
+      <!-- Class / Race / Level -->
+      <div class="character-fields">
+        <div><label>Class</label><input [(ngModel)]="character.class" /></div>
+        <div><label>Race</label><input [(ngModel)]="character.race" /></div>
+        <div><label>Level</label><input type="number" [(ngModel)]="character.level" /></div>
+      </div>
+
+      <hr />
+
+      <!-- Combat -->
+      <div class="section combat">
+  <h3>Combat</h3>
+  <div class="grid">
+    <div><label>HP</label><input type="number" [(ngModel)]="character.hp" /></div>
+    <div><label>AC</label><input type="number" [(ngModel)]="character.ac" /></div>
+    <div><label>Initiative</label><input type="number" [(ngModel)]="character.initiative" /></div>
+    <div><label>Speed</label><input type="number" [(ngModel)]="character.speed" /></div>
+  </div>
+</div>
+
+
+      <hr />
+
+      <!-- Abilities -->
+      <div class="section abilities">
+  <h3>Abilities</h3>
+  <div class="grid">
+    <div *ngFor="let ability of abilityList" class="ability-box">
+      <label>{{ ability.label }}</label>
+      <input type="number" [(ngModel)]="character.abilities[ability.key]" />
+      <div class="modifier">Mod: {{ getAbilityModifier(character.abilities[ability.key]) }}</div>
+    </div>
+  </div>
+</div>
+
+      <hr />
+
+      <!-- Proficiencies & Languages -->
+      <div class="section">
+        <h3>Proficiencies & Languages</h3>
+        <textarea [(ngModel)]="character.proficiencies" placeholder="Proficiencies..."></textarea>
+        <textarea [(ngModel)]="character.languages" placeholder="Languages..."></textarea>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div *ngIf="activeTab === 'Skills'" class="tab-section">
+      <h3>Skills</h3>
+      <div class="skills-grid">
+        <div *ngFor="let skill of skillList" class="skill-box">
+          <label>{{ skill.name }} ({{ skill.ability | uppercase }})</label>
+          <div class="skill-values">
+            <span class="modifier">{{ getAbilityModifier(character.abilities[skill.ability]) }}</span>
+            <span>+</span>
+            <input type="number" [(ngModel)]="character.skills[skill.name]" />
+            <span>=</span>
+            <span class="total">
+              {{ getAbilityModifier(character.abilities[skill.ability]) + (character.skills[skill.name] || 0) }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spells -->
+    <div *ngIf="activeTab === 'Spells'" class="tab-section">
+      <h3>Spells</h3>
+      <p>Coming soon — SRD integration planned.</p>
+    </div>
+
+    <!-- Gear -->
+    <div *ngIf="activeTab === 'Gear'" class="tab-section">
+      <h3>Gear</h3>
+      <textarea [(ngModel)]="character.gear"></textarea>
+    </div>
+
+    <!-- Other Items -->
+    <div *ngIf="activeTab === 'Other Items'" class="tab-section">
+      <h3>Other Items</h3>
+      <textarea [(ngModel)]="character.otherItems"></textarea>
+    </div>
+
+    <!-- Notes -->
+    <div *ngIf="activeTab === 'Notes'" class="tab-section">
+      <h3>Notes</h3>
+      <textarea [(ngModel)]="character.notes"></textarea>
+    </div>
+  </div>
+</div>

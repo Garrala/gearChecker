@@ -1,0 +1,70 @@
+<h2>D&D Board ({{ role }})</h2>
+<button (click)="toggleSnap()">Snap to Grid: {{ snapToGrid ? 'ON' : 'OFF' }}</button>
+
+<div class="dnd-layout">
+  <!-- Main board -->
+  <div
+    class="board"
+    (dragover)="allowDrop($event)"
+    (drop)="onDrop($event)"
+  >
+    <!-- Party cards floating over board -->
+    <div class="party-overlay" *ngIf="party.length > 0">
+      <div class="party-card" *ngFor="let member of party">
+        <img
+          *ngIf="member.data?.image"
+          [src]="member.data.image"
+          class="party-portrait"
+        />
+        <div class="party-info">
+          <strong>{{ member.name }}</strong>
+          <div>HP: {{ member.data?.hp }}</div>
+          <div>AC: {{ member.data?.ac }}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tokens -->
+    <div
+      *ngFor="let token of tokens"
+      class="token"
+      [style.left.px]="token.x"
+      [style.top.px]="token.y"
+      draggable="true"
+      (dragstart)="onDragStart($event, token)"
+    >
+      <img
+        [src]="token.image || '/assets/default-avatar.png'"
+        class="token-img"
+      />
+    </div>
+  </div>
+
+  <!-- Collapsible character sheet -->
+<div class="sheet-sidebar" [class.hidden]="sheetHidden">
+  <ng-container *ngIf="role === 'player' && character">
+    <app-dnd-character
+      [character]="character"
+      (save)="saveCharacter($event)"
+    ></app-dnd-character>
+  </ng-container>
+
+  <ng-container *ngIf="role === 'dm' && allCharacters.length > 0">
+    <div *ngFor="let char of allCharacters">
+      <app-dnd-character
+        [character]="char.data"
+        (save)="saveCharacter($event)"
+      ></app-dnd-character>
+    </div>
+  </ng-container>
+</div>
+
+
+
+</div>
+
+<!-- Toolbar -->
+<app-toolbar 
+  [isSheetHidden]="sheetHidden" 
+  (toggleSheet)="toggleSheet()">
+</app-toolbar>

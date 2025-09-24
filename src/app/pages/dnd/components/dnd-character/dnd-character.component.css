@@ -1,0 +1,173 @@
+:host {
+  display: block;
+  height: 100%;
+  color: black;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+
+.character-sheet {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: black;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tabs button {
+  padding: 6px 12px;
+  border: 1px solid #aaa;
+  border-radius: 4px 4px 0 0;
+  background: #eee;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: #fff;
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+}
+
+.tab-content {
+  flex: 1;
+  overflow-y: auto;
+  border: 1px solid #aaa;
+  border-top: none;
+  padding: 12px;
+  background: #fdfdfd;
+}
+
+/* Portrait section */
+.portrait-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.character-portrait {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #666;
+  background: white;
+}
+
+.character-name {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Fields */
+.character-fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Sections */
+.section {
+  margin-top: 20px;
+  padding: 12px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.section h3 {
+  font-size: 16px;
+  margin-bottom: 12px;  /* ensures header is on its own row */
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+  font-weight: bold;
+}
+
+.section .grid {
+  display: grid;
+  gap: 12px;
+}
+
+/* Divider line */
+hr {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+}
+
+/* Combat layout */
+.combat .grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Abilities layout */
+.abilities .grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.ability-box {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.ability-box .modifier {
+  font-size: 13px;
+  color: #555;
+  margin-top: 4px;
+  text-align: center;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.skill-values {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.skill-values input {
+  width: 40px;
+  text-align: center;
+}
+
+.skill-values .modifier,
+.skill-values .total {
+  font-weight: bold;
+}
+
+/* Inputs + Textareas */
+input, textarea {
+  width: 100%;
+  padding: 4px 6px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 70px;
+  resize: vertical;
+}

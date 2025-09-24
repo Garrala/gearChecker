@@ -1,0 +1,14 @@
+<div class="party-overlay" *ngIf="party.length > 0">
+  <div class="party-card" *ngFor="let member of party">
+    <img
+      *ngIf="member.image"
+      [src]="member.image"
+      class="party-portrait"
+    />
+    <div class="party-info">
+      <strong>{{ member.name }}</strong>
+      <div>HP: {{ member.hp }}</div>
+      <div>AC: {{ member.ac }}</div>
+    </div>
+  </div>
+</div>

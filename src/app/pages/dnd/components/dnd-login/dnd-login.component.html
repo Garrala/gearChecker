@@ -1,0 +1,22 @@
+<div class="login-container">
+  <h2>D&D Login</h2>
+
+  <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+
+  <label>
+    Name:
+    <input type="text" [(ngModel)]="name" />
+  </label>
+
+  <label>
+    Password:
+    <input type="password" [(ngModel)]="password" />
+  </label>
+
+  <button (click)="login()">Login</button>
+
+  <p class="hint">
+    Players: enter your character name + room password<br>
+    DM: enter <strong>DM</strong> + DM password
+  </p>
+</div>

@@ -1,0 +1,9 @@
+<div class="toolbar">
+  <button>Attack</button>
+  <button>Bonus Action</button>
+  <button>Move</button>
+  <button>End Turn</button>
+  <button (click)="toggleSheet.emit()">
+    {{ isSheetHidden ? 'Show Character Sheet' : 'Hide Character Sheet' }}
+  </button>
+</div>
