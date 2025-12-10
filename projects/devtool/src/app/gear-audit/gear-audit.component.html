@@ -1,0 +1,25 @@
+<div class="toolbar">
+  <button (click)="runAudit()">Run Full Audit</button>
+  <button (click)="reprocess()">Reprocess After Fixes</button>
+  <button (click)="loadAudit()">Refresh Audit</button>
+
+  <span *ngIf="loading" class="loading">Processing...</span>
+</div>
+
+<div class="layout">
+  <div class="left-panel">
+    <manual-fix-editor
+      [fixes]="manualFixes"
+      [selectedKey]="selectedFixKey"
+      (saveFixes)="onSaveFixes($event)"
+    ></manual-fix-editor>
+  </div>
+
+  <div class="right-panel">
+    <audit-list
+      [auditItems]="auditList"
+      [existingFixes]="manualFixes"
+      (selectItem)="onSelectItem($event)"
+    ></audit-list>
+  </div>
+</div>

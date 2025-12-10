@@ -114,5 +114,9 @@
   "Ancient bracers": {
     "image": "/assets/gear-icons/blessed-vambraces.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ancient_bracers"
+  },
+  "Confliction gauntlets": {
+    "image": "/assets/gear-icons/blessed-vambraces.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Confliction_gauntlets"
   }
 }

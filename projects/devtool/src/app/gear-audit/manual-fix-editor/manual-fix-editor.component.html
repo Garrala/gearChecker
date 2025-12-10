@@ -1,0 +1,31 @@
+<div class="editor-container" *ngIf="selectedKey; else noSelection">
+  <h3>Editing: {{ selectedKey }}</h3>
+
+  <!-- SLOT -->
+  <label>Correct Slot:</label>
+  <input [(ngModel)]="fixes[selectedKey].correct_slot" class="input" />
+
+  <!-- ALIASES -->
+  <label>Alias / Aliases:</label>
+
+  <!-- ARRAY MODE -->
+  <div *ngIf="isArray(fixes[selectedKey].alias); else singleAlias">
+    <div *ngFor="let a of fixes[selectedKey].alias; let i = index; trackBy: trackByIdx">
+      <input [(ngModel)]="fixes[selectedKey].alias[i]" class="input" />
+    </div>
+
+    <button (click)="addAlias()" class="btn-small">+ Add Alias</button>
+  </div>
+
+  <!-- SINGLE STRING MODE -->
+  <ng-template #singleAlias>
+    <input [(ngModel)]="fixes[selectedKey].alias" class="input" />
+    <button (click)="convertToArray()" class="btn-small">Convert to list</button>
+  </ng-template>
+
+  <button (click)="onSave()" class="btn-save">Save Fixes</button>
+</div>
+
+<ng-template #noSelection>
+  <p>Select an item from the audit list to edit or create a fix.</p>
+</ng-template>

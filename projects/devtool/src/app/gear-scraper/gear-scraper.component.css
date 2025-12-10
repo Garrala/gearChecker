@@ -1,0 +1,33 @@
+.status {
+  margin-top: 0.5rem;
+  color: #a33;
+}
+
+.file-list {
+  list-style: none;
+  padding: 0;
+  width: 300px;
+}
+
+.file-list li {
+  padding: 6px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.file-list li:hover {
+  background: #f3f3f3;
+}
+
+.file-list li.active {
+  background: #cfe0ff;
+  font-weight: bold;
+}
+
+.viewer {
+  margin-top: 1rem;
+  background: #fafafa;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+}

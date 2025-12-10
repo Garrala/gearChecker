@@ -1,0 +1,503 @@
+{
+  "Abyssal Sire": {
+    "category": "Slayer Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Abyssal_Sire/Strategies",
+    "scrape_mode": "phased",
+    "setups": [
+      "Ranged",
+      "Magic",
+      "Melee",
+      "Melee - No defence reduction",
+      "Melee - Defence reduction",
+      "Magic - Tumeken's Shadow",
+      "Phase 2 Ranged"
+    ],
+    "missing_slots": {
+      "Ranged": [
+        "Boots",
+        "Ring",
+        "Shield",
+        "Special Attack"
+      ],
+      "Magic": [
+        "Boots",
+        "Ring",
+        "Ammo",
+        "Special Attack"
+      ],
+      "Melee": [
+        "Shield",
+        "Special Attack"
+      ],
+      "Phase 2 Ranged": [
+        "Shield"
+      ]
+    }
+  },
+
+  "Alchemical Hydra": {
+    "category": "Slayer Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Alchemical_Hydra#Serpentine",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Alchemical_Hydra/Strategies",
+    "scrape_mode": "phased",
+    "setups": [
+      "Ranged",
+      "Melee"
+    ],
+    "missing_slots": {}
+  },
+  "Amoxliatl": {
+    "category": "Instanced Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Amoxliatl",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Amoxliatl/Strategies",
+    "scrape_mode": "simple",
+    "setups": ["Melee"],
+    "missing_slots": {}
+  },
+  "Araxxor": {
+    "category": "Slayer Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Araxxor",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Araxxor/Strategies",
+    "scrape_mode": "top_tabs",
+    "setups": [ "Melee", "Ranged" ],
+    "missing_slots": {}
+  },
+  "Artio": {
+    "category": "Wilderness Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Artio",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Artio/Strategies",
+    "scrape_mode": "simple",
+    "setups": ["Ranged", "Magic"],
+    "missing_slots": {}
+  },
+  "Barrows": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Dharok_the_Wretched",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Barrows/Strategies",
+    "scrape_mode": "multi_monster",
+    "monster_links": [
+      "https://oldschool.runescape.wiki/w/Dharok_the_Wretched",
+      "https://oldschool.runescape.wiki/w/Ahrim_the_Blighted",
+      "https://oldschool.runescape.wiki/w/Guthan_the_Infested",
+      "https://oldschool.runescape.wiki/w/Karil_the_Tainted",
+      "https://oldschool.runescape.wiki/w/Torag_the_Corrupted",
+      "https://oldschool.runescape.wiki/w/Verac_the_Defiled"
+    ],
+    "setups": ["Magic equipment", "Tank & Lower level", "Ranged (Ahrim)"],
+    "missing_slots": {}
+  },
+  "Callisto": {
+    "category": "Wilderness Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Callisto",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Callisto/Strategies",
+    "scrape_mode": "simple",
+    "setups": ["Ranged", "Magic"],
+    "missing_slots": {}
+  },
+  "Calvarion": {
+    "category": "Wilderness Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Calvar%27ion",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Calvar%27ion/Strategies",
+    "scrape_mode": "phased",
+    "setups": ["Melee"],
+    "missing_slots": {}
+  },
+  "Cerberus": {
+    "category": "Slayer Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Cerberus",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Cerberus/Strategies",
+    "scrape_mode": "simple",
+    "setups": ["Melee", "Ranged"],
+    "missing_slots": {}
+  },
+  "Chaos Elemental": {
+    "category": "Wilderness Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Elemental",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Chaos_Elemental/Strategies",
+    "scrape_mode": "simple",
+    "setups": ["Ranged", "Melee"],
+    "missing_slots": {}
+  },
+  "Chaos Fanatic": {
+    "category": "Wilderness Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Chaos_Fanatic",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Chaos_Fanatic/Strategies",
+    "scrape_mode": "simple",
+    "setups": [ "Ranged" ],
+    "missing_slots": {
+      "Ranged": [ "Special Attack" ]
+    }
+  },
+  "Commander Zilyana": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Commander_Zilyana",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Commander_Zilyana/Strategies",
+    "scrape_mode": "simple",
+    "setups": [ "Magic", "Ranged" ]
+  },
+
+  "Corporeal Beast": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Corporeal_Beast",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Corporeal_Beast/Strategies",
+    "scrape_mode": "simple",
+    "setups": ["Stat Draining", "Quick-Pool", "Duo", "Fewer stat drains", "Best in slot", "Mass Melee", "Mass Ranged"],
+    "missing_slots": {}
+  },
+  "Crazy Archaeologist": {
+    "category": "Wilderness Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Crazy_archaeologist/Strategies",
+    "scrape_mode": "simple",
+    "setups": [ "Magic" ],
+    "missing_slots": {
+      "Magic": [ "Special Attack" ]
+    }
+  },
+  "Dagannoth Kings": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Dagannoth_Kings",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Dagannoth_Kings/Strategies",
+    "scrape_mode": "multi_monster",
+    "monster_links": [
+      "https://oldschool.runescape.wiki/w/Dagannoth_Rex",
+      "https://oldschool.runescape.wiki/w/Dagannoth_Prime",
+      "https://oldschool.runescape.wiki/w/Dagannoth_Supreme"
+    ],
+    "setups": [
+      "Tribrid (Solo)",
+      "Magic (Rex only)",
+      "Ranged (Prime only)"
+    ],
+    "missing_slots": {
+      "Magic (Rex only)": [ "Special Attack" ]
+    }
+  },
+  "Deranged Archaeologist": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Deranged_archaeologist/Strategies",
+    "scrape_mode": "simple",
+    "setups": [ "Magic" ],
+    "missing_slots": {
+      "Magic": [ "Special Attack" ]
+    }
+  },
+  "Duke Sucellus": {
+    "category": "Desert Treasure II",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Duke_Sucellus",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Duke_Sucellus/Strategies",
+    "scrape_mode": "nested_tabs",
+    "setups": [ "Melee" ]
+  },
+  "General Graardor": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/General_Graardor",
+    "strategy_link": "https://oldschool.runescape.wiki/w/General_Graardor/Strategies",
+    "scrape_mode": "simple",
+    "setups": [
+      "Melee Tank",
+      "Ranged Tank",
+      "Melee Attacker",
+      "Ranged Attacker",
+      "Solo (Melee)",
+      "Solo (Magic)",
+      "Ranged (6:0)",
+      "Ranged (7:0)"
+    ],
+    "missing_slots": {
+      "Ranged Tank": [ "Special Attack" ],
+      "Ranged (7:0)": [ "Shield" ]
+    }
+  },
+  "Giant Mole": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Giant_Mole",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Giant_Mole/Strategies",
+    "scrape_mode": "simple",
+    "setups": [
+      "Ranged",
+      "Magic",
+      "Melee",
+      "Melee (Dharok's)",
+      "Melee (Budget)"
+    ],
+    "missing_slots": {
+      "Magic": [ "Special Attack" ]
+    }
+  },
+
+  "Grotesque Guardians": {
+    "category": "Slayer Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Grotesque_Guardians",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Grotesque_Guardians/Strategies",
+    "scrape_mode": "multi_monster",
+    "monster_links": [
+      "https://oldschool.runescape.wiki/w/Dusk",
+      "https://oldschool.runescape.wiki/w/Dawn"
+    ],
+    "setups": [ "Melee", "Ranged switches" ],
+    "missing_slots": {}
+  },
+  "Hespori": {
+    "category": "Sporadic Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Hespori",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Hespori/Strategies",
+    "scrape_mode": "simple",
+    "setups": [ "Entry level", "Best-in-slot", "Mage" ],
+    "missing_slots": {
+      "Mage": [ "Special Attack" ]
+    }
+  },
+  "Kalphite Queen": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Kalphite_Queen/Strategies",
+    "scrape_mode": "phased",
+    "setups": [
+      "High DPS Phase 1 (Melee)",
+      "High DPS Phase 2 (Ranged)",
+      "Max Mage (0 switches)",
+      "Verac's",
+      "Flinching",
+      "Mid-game Players Phase 1 (Melee)",
+      "Mid-game Players Phase 2 (Ranged)",
+      "Pre-diary Method"
+    ],
+    "missing_slots": {
+      "Pre-diary Method": [ "Special Attack" ],
+      "Verac's": [ "Shield", "Special Attack" ]
+    }
+  },
+  "King Black Dragon": {
+    "category": "Wilderness Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/King_Black_Dragon",
+    "strategy_link": "https://oldschool.runescape.wiki/w/King_Black_Dragon/Strategies",
+    "scrape_mode": "simple",
+    "setups": [
+      "Melee",
+      "Melee Suicide method",
+      "Twisted Bow / BOWFA",
+      "Crossbow & shield",
+      "Suicide method"
+    ],
+    "missing_slots": {
+      "Melee": [ "Special Attack" ],
+      "Melee Suicide method": [ "Special Attack" ],
+      "Twisted Bow / BOWFA": [ "Special Attack" ],
+      "Crossbow & shield": [ "Special Attack" ],
+      "Suicide method": [ "Special Attack" ]
+    }
+  },
+
+  "Kraken": {
+    "category": "Slayer Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Kraken#Kraken",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Kraken/Strategies",
+    "scrape_mode": "phased",
+    "setups": ["Magic"],
+    "missing_slots": {}
+  },
+  "Kreearra": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Kree%27arra",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Kree%27arra/Strategies",
+    "scrape_mode": "simple",
+    "setups": ["Tumeken's Shadow", "Chinchompas", "Ranged Tank", "Tbow / Bowfa"],
+    "missing_slots": {}
+  },
+  "Kril Tsutsaroth": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/K%27ril_Tsutsaroth",
+    "strategy_link": "https://oldschool.runescape.wiki/w/K%27ril_Tsutsaroth/Strategies",
+    "scrape_mode": "simple",
+    "setups": ["Ranged", "Solo Melee", "Melee Tank", "Melee", "Magic"],
+    "missing_slots": {}
+  },
+  "Nex": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Nex",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Nex/Strategies",
+    "scrape_mode": "simple",
+    "setups": ["Ranged", "Hybrid"],
+    "missing_slots": {}
+  },
+  "Perilous Moons": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Moons_of_Peril",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Moons_of_Peril/Strategies",
+    "scrape_mode": "multi_monster",
+    "monster_links": [
+      "https://oldschool.runescape.wiki/w/Eclipse_Moon",
+      "https://oldschool.runescape.wiki/w/Blue_Moon",
+      "https://oldschool.runescape.wiki/w/Blood_Moon"
+    ],
+    "setups": ["Eclipse Moon weapon", "Blue Moon weapon", "Blood Moon weapon"],
+    "missing_slots": {}
+  },
+  "Phantom Muspah": {
+    "category": "Instanced Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Phantom_Muspah",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Phantom_Muspah/Strategies",
+    "scrape_mode": "phased",
+    "setups": ["Magic", "Ranged", "Melee"],
+    "missing_slots": {}
+  },
+  "Royal Titans": {
+    "category": "Instanced Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Royal_Titans",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Royal_Titans/Strategies",
+    "scrape_mode": "multi_monster",
+    "monster_links": [
+      "https://oldschool.runescape.wiki/w/Eldric_the_Ice_King",
+      "https://oldschool.runescape.wiki/w/Branda_the_Fire_Queen"
+    ],
+    "setups": [
+      "Melee (Low Level)",
+      "Ranged (Low Level)",
+      "Minimal gear switching",
+      "Melee (High Level)",
+      "Ranged (High Level)"
+    ],
+    "missing_slots": {}
+  },
+  "Sarachnis": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Sarachnis",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Sarachnis/Strategies",
+    "scrape_mode": "simple",
+    "setups": ["Melee", "Magic (Tumeken's Shadow)", "Tank"],
+    "missing_slots": {}
+  },
+  "Scorpia": {
+    "category": "Wilderness Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Scorpia",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Scorpia/Strategies",
+    "scrape_mode": "simple",
+    "setups": ["Magic"],
+    "missing_slots": {}
+  },
+  "Scurrius": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Scurrius",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Scurrius/Strategies",
+    "scrape_mode": "phased",
+    "setups": [ "Melee (mid level)", "Ranged (mid level)", "Magic (mid level)", "Melee (high level)", "Ranged (high level)", "Magic (high level)" ],
+    "missing_slots": {}
+  },
+  "Skotizo": {
+    "category": "Sporadic Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Skotizo",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Skotizo/Strategies",
+    "scrape_mode": "simple",
+    "setups": ["Melee", "Ranged"],
+    "missing_slots": {}
+  },
+  "Spindel": {
+    "category": "Wilderness Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Spindel",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Spindel/Strategies",
+    "scrape_mode": "simple",
+    "setups": ["Melee", "Ranged"],
+    "missing_slots": {}
+  },
+  "The Hueycoatl": {
+    "category": "World Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/The_Hueycoatl#Normal",
+    "strategy_link": "https://oldschool.runescape.wiki/w/The_Hueycoatl/Strategies",
+    "scrape_mode": "nested_tabs",
+    "setups": ["Melee"],
+    "missing_slots": {}
+  },
+  "The Leviathan": {
+    "category": "Desert Treasure II",
+    "wiki_link": "https://oldschool.runescape.wiki/w/The_Leviathan",
+    "strategy_link": "https://oldschool.runescape.wiki/w/The_Leviathan/Strategies",
+    "scrape_mode": "phased",
+    "setups": ["Ranged", "Magic (Tumeken's Shadow)"],
+    "missing_slots": {}
+  },
+  "The Mimic": {
+    "category": "Sporadic Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/The_Mimic",
+    "strategy_link": "https://oldschool.runescape.wiki/w/The_Mimic/Strategies",
+    "scrape_mode": "simple",
+    "setups": ["Magic", "Ranged"],
+    "missing_slots": {}
+  },
+  "The Nightmare": {
+    "category": "Instanced Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/The_Nightmare",
+    "strategy_link": "https://oldschool.runescape.wiki/w/The_Nightmare/Strategies",
+    "scrape_mode": "simple",
+    "setups": ["Melee", "Mage"],
+    "missing_slots": {}
+  },
+  "Thermonuclear Smoke Devil": {
+    "category": "Slayer Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Thermonuclear_smoke_devil",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Thermonuclear_smoke_devil/Strategies",
+    "scrape_mode": "simple",
+    "setups": ["Magic", "Melee"],
+    "missing_slots": {}
+  },
+  "The Whisperer": {
+    "category": "Desert Treasure II",
+    "wiki_link": "https://oldschool.runescape.wiki/w/The_Whisperer",
+    "strategy_link": "https://oldschool.runescape.wiki/w/The_Whisperer/Strategies",
+    "scrape_mode": "phased",
+    "setups": ["Magic"],
+    "missing_slots": {}
+  },
+  "Vardorvis": {
+    "category": "Desert Treasure II",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Vardorvis",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Vardorvis/Strategies",
+    "scrape_mode": "phased",
+    "setups": ["Melee"],
+    "missing_slots": {}
+  },
+  "Venenatis": {
+    "category": "Wilderness Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Venenatis",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Venenatis/Strategies",
+    "scrape_mode": "simple",
+    "setups": [ "Melee", "Ranged" ],
+    "missing_slots": {}
+  },
+  "Vetion": {
+    "category": "Wilderness Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Vet%27ion",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Vet%27ion/Strategies",
+    "scrape_mode": "phased",
+    "setups": ["Melee"],
+    "missing_slots": {}
+  },
+  "Vorkath": {
+    "category": "Instanced Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Vorkath",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Vorkath/Strategies",
+    "scrape_mode": "top_tabs",
+    "setups": [ "Ranged", "Melee" ]
+  },
+  "Zulrah": {
+    "category": "Instanced Bosses",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Zulrah",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Zulrah/Strategies",
+    "scrape_mode": "phased",
+    "setups": ["Magic", "Ranged", "Melee"],
+    "missing_slots": {}
+  },
+  "Wyrm": {
+    "category": "Slayer Monster",
+    "wiki_link": "https://oldschool.runescape.wiki/w/Wyrm",
+    "strategy_link": "https://oldschool.runescape.wiki/w/Slayer_task/Wyrms",
+    "scrape_mode": "phased",
+    "setups": [ "Ranged", "Melee" ],
+    "missing_slots": {
+      "Ranged": [ "Special Attack" ]
+    }
+  }
+
+}

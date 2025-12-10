@@ -1,0 +1,18 @@
+<div class="audit-container">
+  <h3>Audit Problems</h3>
+
+  <div *ngFor="let group of grouped">
+    <div class="audit-item" [class.fixed]="hasFix(group[0])">
+      <div class="audit-header">
+        <span>{{ group[0] }}</span>
+        <button (click)="chooseItem(group[0])">Add / Edit Fix</button>
+      </div>
+
+      <div class="audit-details">
+        <p *ngFor="let row of group[1]">
+          {{ row.boss }} — {{ row.slot }} — "{{ row.raw }}"
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

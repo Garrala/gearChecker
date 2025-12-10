@@ -1,0 +1,65 @@
+<div class="layout">
+  <!-- LEFT SIDEBAR -->
+  <nav class="sidebar">
+    <h2>Gear Checker Devtool</h2>
+    <p class="subtitle">Pipeline steps</p>
+
+    <ul class="step-list">
+      <li
+        *ngFor="let step of steps"
+        (click)="selectStep(step.id)"
+        [class.active]="step.id === activeStep"
+      >
+        {{ step.label }}
+      </li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <section class="content">
+    <ng-container [ngSwitch]="activeStep">
+      <!-- STEP 1: Boss Metadata -->
+      <ng-container *ngSwitchCase="'boss-metadata'">
+        <h3>Boss metadata</h3>
+        <p class="description">
+          Source-of-truth JSON for which bosses to scrape, their modes, setups, and missing slots.
+        </p>
+        <app-boss-metadata></app-boss-metadata>
+      </ng-container>
+
+      <!-- STEP 2: Raw HTML viewer (debug) -->
+      <ng-container *ngSwitchCase="'raw-html'">
+        <h3>Raw HTML scrape (debug)</h3>
+        <p class="description">
+          Quick check that the staged HTML files are being served correctly.
+        </p>
+
+        <app-html-downloader></app-html-downloader>
+      </ng-container>
+
+      <ng-container *ngSwitchCase="'stat-scraper'">
+	    <app-stat-scraper></app-stat-scraper>
+	  </ng-container>
+
+
+  	  <ng-container *ngSwitchCase="'gear-scraper'">
+	    <app-gear-scraper></app-gear-scraper>
+	  </ng-container>
+
+
+	  <ng-container *ngSwitchCase="'gear-audit'">
+	    <h3>Gear Audit & Fixes</h3>
+	    <p class="description">
+	      Compare scraped gear with known valid items, create or update manual fixes,
+	      and re-run the gear transformation pipeline.
+	    </p>
+	    <app-gear-audit></app-gear-audit>
+	  </ng-container>
+
+      <!-- DEFAULT (shouldn’t hit often) -->
+      <ng-container *ngSwitchDefault>
+        <p>Select a step from the left.</p>
+      </ng-container>
+    </ng-container>
+  </section>
+</div>

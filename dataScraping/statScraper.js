@@ -5,7 +5,7 @@ const { fetchMonsterStats } = require('./helpers/stat_helpers');
 const metadata = require('../boss_metadata.json');
 const { normalizeImageFilename } = require('./helpers/download_images');
 
-const htmlDumpPath = path.join(__dirname, 'staging', 'boss_html_dumps');
+const htmlDumpPath = path.join(__dirname, 'staging', 'boss_html_dump');
 const statOutputPath = path.join(__dirname, 'staging', 'boss_stat_scrape');
 
 const monsterArg = process.argv[2]?.toLowerCase();

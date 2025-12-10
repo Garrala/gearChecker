@@ -182,5 +182,13 @@
   "Dinh's bulwark": {
     "image": "/assets/gear-icons/Dinhs_bulwark.png",
     "wiki": "https://oldschool.runescape.wiki/w/Dinh%27s_bulwark"
+  },
+  "Arkan blade": {
+    "image": "/assets/gear-icons/Dinhs_bulwark.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Arkan_blade"
+  },
+  "Eye of ayak": {
+    "image": "/assets/gear-icons/Ancient_staff.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Eye_of_ayak#Charged"
   }
 }

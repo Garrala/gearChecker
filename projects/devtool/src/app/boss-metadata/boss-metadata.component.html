@@ -1,0 +1,24 @@
+<h2>Boss Metadata Viewer</h2>
+
+<button (click)="loadMetadata()">Reload Metadata</button>
+
+<div *ngIf="error" class="error">{{ error }}</div>
+
+<div *ngIf="metadata">
+  <div *ngFor="let bossName of bossNames" class="boss-entry">
+
+    <!-- Expand/Collapse header -->
+    <div class="boss-header" (click)="toggle(bossName)">
+      <strong>{{ bossName }}</strong>
+      <span class="chevron">{{ expanded[bossName] ? "▼" : "▶" }}</span>
+    </div>
+
+    <!-- Expanded content -->
+    <div *ngIf="expanded[bossName]" class="boss-body">
+
+      <pre>{{ metadata[bossName] | json }}</pre>
+
+    </div>
+
+  </div>
+</div>

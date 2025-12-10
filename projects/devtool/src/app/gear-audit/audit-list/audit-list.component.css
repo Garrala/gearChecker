@@ -1,0 +1,30 @@
+.audit-container {
+  padding: 10px;
+  color: white;
+}
+
+.audit-item {
+  padding: 8px;
+  background: #2b2b2b;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.audit-item.fixed {
+  border-left: 4px solid #4caf50;
+}
+
+.audit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 4px 10px;
+  background: #444;
+  color: white;
+  border: 1px solid #666;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -17,7 +17,7 @@ function normalizeLabel(label) {
 
 function fetchGearTabberHtml(bossName) {
   const safeFolderName = bossName.toLowerCase().replace(/\s+/g, '_');
-  const filePath = path.join(__dirname, 'staging', 'strategy_html_dumps', safeFolderName, 'strategy.html');
+  const filePath = path.join(__dirname, 'staging', 'strategy_html_dump', safeFolderName, 'strategy.html');
 
   if (!fs.existsSync(filePath)) {
     console.warn(`❌ Strategy file not found for ${bossName}: ${filePath}`);
@@ -149,7 +149,7 @@ async function fetchCorporealGearSetups(bossName, meta) {
 async function fetchKalphiteQueenGearSetups(bossName, meta) {
   console.log(`\n🔧 Using custom handler for ${bossName}`);
   const rawHtml = fs.readFileSync(
-    path.join(__dirname, 'staging', 'strategy_html_dumps', 'kalphite_queen', 'strategy.html'),
+    path.join(__dirname, 'staging', 'strategy_html_dump', 'kalphite_queen', 'strategy.html'),
     'utf8'
   );
   const $ = cheerio.load(rawHtml);
@@ -198,7 +198,7 @@ async function fetchKalphiteQueenGearSetups(bossName, meta) {
 async function fetchPerilousMoonsGearSetups(bossName, meta) {
   console.log(`\n🔧 Using custom handler for ${bossName}`);
   const rawHtml = fs.readFileSync(
-    path.join(__dirname, 'staging', 'strategy_html_dumps', 'perilous_moons', 'strategy.html'),
+    path.join(__dirname, 'staging', 'strategy_html_dump', 'perilous_moons', 'strategy.html'),
     'utf8'
   );
   const $ = cheerio.load(rawHtml);

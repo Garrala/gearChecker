@@ -1,0 +1,24 @@
+.editor-container {
+  padding: 12px;
+  background: #202020;
+  border-radius: 8px;
+  color: white;
+}
+
+.input {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background: #333;
+  color: white;
+}
+
+.btn-save {
+  padding: 8px 14px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

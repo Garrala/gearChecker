@@ -6,8 +6,8 @@ const cheerio = require('cheerio');
 
 const metadata = require('../boss_metadata.json');
 
-const OUTPUT_DIR = path.join(__dirname, 'staging', 'boss_html_dumps');
-const STRATEGY_DIR = path.join(__dirname, 'staging', 'strategy_html_dumps');
+const OUTPUT_DIR = path.join(__dirname, 'staging', 'boss_html_dump');
+const STRATEGY_DIR = path.join(__dirname, 'staging', 'strategy_html_dump');
 
 for (const dir of [OUTPUT_DIR, STRATEGY_DIR]) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });

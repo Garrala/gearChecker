@@ -1,0 +1,14 @@
+<h2>Raw HTML Downloader</h2>
+
+<p>
+  Downloads boss infobox HTML for *all bosses* according to the metadata.
+  Data is placed in the staging folder, not committed.
+</p>
+
+<button (click)="startDownload()" [disabled]="loading">
+  {{ loading ? 'Running...' : 'Start HTML Download' }}
+</button>
+
+<div style="margin-top:1rem; white-space:pre-wrap;">
+  {{ status }}
+</div>

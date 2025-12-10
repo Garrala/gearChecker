@@ -1,0 +1,23 @@
+<h2>Boss Gear Scraper</h2>
+
+<button (click)="runScraper()" [disabled]="loading">
+  {{ loading ? "Running..." : "Run Gear Scraper" }}
+</button>
+
+<div class="status">{{ status }}</div>
+
+<hr>
+
+<h3>Gear Files</h3>
+<ul class="file-list">
+  <li *ngFor="let f of files"
+      (click)="loadFile(f)"
+      [class.active]="selectedFile === f">
+    {{ f }}
+  </li>
+</ul>
+
+<div *ngIf="fileContent" class="viewer">
+  <h3>{{ selectedFile }}</h3>
+  <pre>{{ fileContent | json }}</pre>
+</div>
