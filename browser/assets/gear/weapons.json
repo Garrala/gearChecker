@@ -672,8 +672,32 @@
     "usesAmmoType": "blessing"
   },
   "Eye of ayak": {
-    "image": "/assets/gear-icons/Ancient_staff.png",
+    "image": "/assets/gear-icons/Eye_of_ayak.png",
     "wiki": "https://oldschool.runescape.wiki/w/Eye_of_ayak#Charged",
+    "twoHanded": false,
+    "usesAmmoType": "blessing"
+  },
+  "Arkan blade": {
+    "image": "/assets/gear-icons/Arkan_blade.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Arkan_blade",
+    "twoHanded": false,
+    "usesAmmoType": "blessing"
+  },
+  "Dragon hasta": {
+    "image": "/assets/gear-icons/Dragon_hasta.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Dragon_hasta",
+    "twoHanded": false,
+    "usesAmmoType": "blessing"
+  },
+  "Mystic dust staff": {
+    "image": "/assets/gear-icons/Mystic_dust_staff.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Mystic_dust_staff",
+    "twoHanded": false,
+    "usesAmmoType": "blessing"
+  },
+  "Toktz-xil-ak": {
+    "image": "/assets/gear-icons/Toktz-xil-ak.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Toktz-xil-ak",
     "twoHanded": false,
     "usesAmmoType": "blessing"
   }

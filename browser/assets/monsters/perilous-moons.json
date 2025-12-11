@@ -37,7 +37,9 @@
         "venom": true,
         "cannons": true
       },
-      "weaknesses": "none"
+      "weaknesses": {
+        "air": "15%"
+      }
     },
     {
       "name": "Blue Moon",
@@ -72,7 +74,9 @@
         "venom": true,
         "cannons": true
       },
-      "weaknesses": "none"
+      "weaknesses": {
+        "air": "15%"
+      }
     },
     {
       "name": "Eclipse Moon",
@@ -107,7 +111,9 @@
         "venom": true,
         "cannons": true
       },
-      "weaknesses": "none"
+      "weaknesses": {
+        "air": "15%"
+      }
     }
   ],
   "gear_setups": {
@@ -117,10 +123,10 @@
         [ "Ghrazi rapier", "Scythe of Vitur" ],
         [ "Blade of Saeldor", "Noxious halberd" ],
         [ "Voidwaker", "Osmumten's fang", "Zamorakian hasta", "Abyssal dagger" ],
-        [ "Abyssal whip", "Zombie axe", "Dragon scimitar" ],
+        [ "Zombie axe", "Dragon sword", "Arkan blade", "Dragon hasta", "Abyssal whip" ],
         [ "Dharok's greataxe" ],
-        [ "Elder maul" ],
-        [ "Crystal halberd", "Colossal blade" ],
+        [ "Elder maul", "Colossal blade" ],
+        [ "Crystal halberd" ],
         [ "Barrelchest anchor" ]
       ],
       "Special Attack": [
@@ -223,11 +229,11 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (pr)" ],
         [ "Primordial boots", "Echo boots" ],
         [ "Dragon boots" ],
         [ "Guardian boots" ],
         [ "Granite boots" ],
-        [ "Spiked manacles", "Rune boots" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -317,11 +323,11 @@
         [ "Regen bracelet", "Granite gloves" ]
       ],
       "Boots": [
+        [ "Avernic treads (pr)" ],
         [ "Primordial boots", "Echo boots" ],
         [ "Dragon boots" ],
         [ "Guardian boots" ],
-        [ "Granite boots" ],
-        [ "Spiked manacles", "Rune boots" ]
+        [ "Granite boots" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
@@ -335,9 +341,9 @@
       "Weapon": [
         [ "Scythe of Vitur" ],
         [ "Soulreaper axe" ],
-        [ "Blade of Saeldor", "Ghrazi rapier", "Abyssal tentacle" ],
-        [ "Noxious halberd", "Abyssal whip", "Zamorakian hasta" ],
-        [ "Dragon scimitar", "Sulphur blades", "Zombie axe" ]
+        [ "Noxious halberd", "Blade of Saeldor" ],
+        [ "Ghrazi rapier", "Abyssal tentacle", "Abyssal whip", "Sulphur blades" ],
+        [ "Zombie axe", "Zamorakian hasta", "Dragon scimitar", "Arkan blade" ]
       ],
       "Special Attack": [
         [ "Dragon claws", "Crystal halberd" ],
@@ -403,11 +409,11 @@
         [ "Regen bracelet", "Granite gloves" ]
       ],
       "Boots": [
+        [ "Avernic treads (pr)" ],
         [ "Primordial boots", "Echo boots" ],
         [ "Dragon boots" ],
         [ "Guardian boots" ],
-        [ "Granite boots" ],
-        [ "Spiked manacles", "Rune boots" ]
+        [ "Granite boots" ]
       ],
       "Ring": [
         [ "Ultor ring" ],

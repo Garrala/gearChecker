@@ -49,74 +49,62 @@
       "Helmet": [
         [ "Helm of neitiznot" ],
         [ "Berserker helm" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of fury" ],
         [ "Amulet of strength" ],
-        [ "Amulet of glory" ],
-        [ "N/A" ]
+        [ "Amulet of glory" ]
       ],
       "Cape": [
         [ "Fire cape" ],
         [ "Mixed hide cape" ],
-        [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ],
-        [ "N/A" ]
+        [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ]
       ],
       "Body": [
-        [ "Blood moon chestplate", "Fighter torso", "Bandos chestplate" ],
+        [ "Blood moon chestplate" ],
         [ "Any Barrows tank body" ],
-        [ "Black d'hide body" ],
-        [ "N/A" ]
+        [ "Black d'hide body" ]
       ],
       "Legs": [
-        [ "Blood moon tassets", "Bandos tassets" ],
+        [ "Blood moon tassets" ],
         [ "Any Barrows tank legs" ],
-        [ "Black d'hide chaps" ],
-        [ "N/A" ]
+        [ "Black d'hide chaps" ]
       ],
       "Weapon": [
         [ "Dragon scimitar" ],
         [ "Zombie axe" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Shield": [
         [ "Dragon defender" ],
         [ "Rune defender" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
         [ "Any God blessing" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
         [ "Combat bracelet" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
         [ "Dragon boots" ],
         [ "Mixed hide boots" ],
-        [ "Climbing boots" ],
-        [ "N/A" ]
+        [ "Climbing boots" ]
       ],
       "Ring": [
         [ "Berserker ring (i)" ],
-        [ "Ring of recoil" ],
         [ "Warrior ring (i)" ],
-        [ "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
+        [ "N/A" ]
       ],
       "Special Attack": [
+        [ "Arkan blade" ],
         [ "Dragon dagger" ],
-        [ "Crystal halberd" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Crystal halberd" ]
       ]
     },
     "Best-in-slot": {
@@ -143,14 +131,14 @@
       ],
       "Body": [
         [ "Oathplate chest", "Torva platebody" ],
-        [ "Blood moon chestplate", "Fighter torso", "Bandos chestplate" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Oathplate legs", "Torva platelegs" ],
-        [ "Blood moon tassets", "Bandos tassets" ],
+        [ "Blood moon tassets" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -184,9 +172,9 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -209,7 +197,7 @@
       "Helmet": [
         [ "Ancestral hat" ],
         [ "Virtus mask" ],
-        [ "Ahrim's hood", "Dagon'hai hat", "Bloodbark helm", "Infinity hat" ],
+        [ "Ahrim's hood" ],
         [ "Void mage helm" ],
         [ "N/A" ]
       ],
@@ -230,23 +218,23 @@
       "Body": [
         [ "Ancestral robe top" ],
         [ "Virtus robe top" ],
-        [ "Ahrim's robetop", "Blue moon chestplate", "Dagon'hai robe top", "Bloodbark body", "Infinity top" ],
+        [ "Ahrim's robetop" ],
         [ "Elite void top" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ],
-        [ "Ahrim's robeskirt", "Blue moon tassets", "Dagon'hai robe bottom", "Bloodbark legs", "Infinity bottoms" ],
+        [ "Ahrim's robeskirt" ],
         [ "Elite void robe" ],
         [ "N/A" ]
       ],
       "Weapon": [
-        [ "Harmonised nightmare staff", "Twinflame staff", "Smoke battlestaff" ],
-        [ "Staff of the dead", "Nightmare staff", "Kodai wand", "Toxic staff of the dead" ],
-        [ "Purging staff", "Dragon hunter wand" ],
-        [ "Ancient sceptre", "Ahrim's staff", "Blue moon spear" ],
-        [ "Ancient staff", "Master wand", "Slayer's staff (e)", "Mystic fire staff" ]
+        [ "Harmonised nightmare staff", "Twinflame staff" ],
+        [ "Staff of the dead" ],
+        [ "Purging staff" ],
+        [ "Ancient sceptre" ],
+        [ "N/A" ]
       ],
       "Shield": [
         [ "Tome of fire" ],
@@ -263,16 +251,16 @@
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
         [ "Void knight gloves" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Eternal boots" ],
         [ "Infinity boots", "Aranea boots" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],

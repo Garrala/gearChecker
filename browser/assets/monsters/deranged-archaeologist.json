@@ -81,7 +81,7 @@
         [ "Monk's robe" ]
       ],
       "Weapon": [
-        [ "Tumeken's shadow" ],
+        [ "Tumeken's shadow", "Eye of ayak" ],
         [ "Harmonised nightmare staff" ],
         [ "Sanguinesti staff", "Trident of the swamp", "Trident of the seas" ],
         [ "Warped sceptre" ],
@@ -102,24 +102,24 @@
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
         [ "Holy wraps" ],
         [ "Barrows gloves" ],
-        [ "Dragon gloves", "Rune gloves" ],
-        [ "Adamant gloves", "Bloodbark gauntlets", "Combat bracelet" ]
+        [ "Dragon gloves", "Rune gloves" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Devout boots" ],
         [ "Holy sandals" ],
         [ "Eternal boots" ],
-        [ "Aranea boots" ],
-        [ "Infinity boots" ]
+        [ "Aranea boots" ]
       ],
       "Ring": [
         [ "Magus ring" ],
         [ "Ring of the gods (i)" ],
         [ "Ring of suffering (i)" ],
-        [ "Brimstone ring" ],
+        [ "Brimstone ring", "Ring of shadows" ],
         [ "Explorer's ring 4" ]
       ],
       "Special Attack": [

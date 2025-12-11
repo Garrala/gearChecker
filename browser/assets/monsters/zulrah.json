@@ -124,22 +124,22 @@
         [ "Slayer helmet (i)", "Ancestral hat" ],
         [ "Virtus mask" ],
         [ "Serpentine helm", "Ahrim's hood", "Blue moon helm" ],
-        [ "Infinity hat", "Bloodbark helm" ],
+        [ "Dagon'hai hat", "Infinity hat", "Bloodbark helm" ],
         [ "Void mage helm", "Mystic hat" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
-        [ "Amulet of fury" ],
+        [ "Amulet of fury", "Amulet of glory", "Amulet of power" ],
         [ "Bonecrusher necklace" ],
-        [ "Amulet of glory" ],
-        [ "Amulet of power" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Any Imbued God cape" ],
-        [ "Any God cape" ],
-        [ "Ardougne cloak 4" ],
-        [ "Ardougne cloak 3" ],
-        [ "Any Skillcape" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
@@ -156,39 +156,39 @@
         [ "Elite void robe", "Mystic robe bottom" ]
       ],
       "Weapon": [
-        [ "Tumeken's shadow", "Harmonised nightmare staff" ],
+        [ "Tumeken's shadow", "Eye of ayak" ],
+        [ "Harmonised nightmare staff" ],
         [ "Sanguinesti staff", "Staff of the dead" ],
         [ "Trident of the swamp", "Smoke battlestaff", "Purging staff", "Twinflame staff" ],
-        [ "Ahrim's staff", "Trident of the seas" ],
-        [ "Iban's staff", "Warped sceptre" ]
+        [ "N/A" ]
       ],
       "Shield": [
-        [ "Tome of fire (Searing pages)", "Elidinis' ward (f)" ],
-        [ "Tome of fire (Burnt pages)", "Arcane spirit shield" ],
+        [ "Tome of fire", "Elidinis' ward (f)" ],
+        [ "Arcane spirit shield" ],
         [ "Elidinis' ward", "Mage's book" ],
         [ "Ancient wyvern shield", "Malediction ward" ],
         [ "Book of the dead", "Book of darkness" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
-        [ "Barrows gloves" ],
-        [ "Regen bracelet", "Combat bracelet" ],
         [ "Void knight gloves" ],
+        [ "Barrows gloves" ],
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Eternal boots", "Echo boots" ],
         [ "Infinity boots", "Aranea boots" ],
-        [ "Boots of brimstone" ],
-        [ "Bloodbark boots" ],
-        [ "Wizard boots" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Magus ring", "Ring of suffering (i)" ],
@@ -211,13 +211,13 @@
         [ "Crystal helm", "Masori mask" ],
         [ "Serpentine helm" ],
         [ "Any Blessed coif" ],
-        [ "Void ranger helm", "Archer helm" ]
+        [ "Void ranger helm" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
-        [ "Amulet of fury" ],
+        [ "Amulet of fury", "Amulet of glory" ],
         [ "Bonecrusher necklace", "Dragonbone necklace" ],
-        [ "Amulet of glory" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
@@ -258,16 +258,16 @@
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
-        [ "Dragon gloves" ],
-        [ "Any Blessed vambraces" ],
-        [ "Void knight gloves", "Black d'hide vambraces" ]
+        [ "Void knight gloves" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Echo boots", "Pegasian boots" ],
-        [ "Ranger boots" ],
         [ "Any Blessed boots" ],
         [ "Aranea boots" ],
-        [ "Boots of brimstone" ]
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Ring of suffering (i)", "Venator ring" ],
@@ -309,8 +309,8 @@
       "Cape": [
         [ "Infernal cape" ],
         [ "Fire cape" ],
-        [ "Mixed hide cape" ],
-        [ "Ranging cape (t)" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -328,7 +328,7 @@
         [ "Any Barrows tank legs" ]
       ],
       "Weapon": [
-        [ "Noxious halberd" ],
+        [ "Noxious halberd", "Eclipse atlatl" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -344,14 +344,14 @@
       "Gloves": [
         [ "Ferocious gloves" ],
         [ "Barrows gloves", "Void knight gloves" ],
-        [ "Regen bracelet" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots", "Echo boots" ],
-        [ "Dragon boots", "Spiked manacles", "Aranea boots", "Guardian boots" ],
-        [ "Bandos boots" ],
+        [ "Dragon boots" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -359,8 +359,8 @@
         [ "Ring of suffering (i)", "Bellator ring" ],
         [ "Ultor ring" ],
         [ "Berserker ring (i)", "Lightbearer" ],
-        [ "Warrior ring (i)" ],
-        [ "Ring of recoil" ]
+        [ "Ring of recoil" ],
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Crystal halberd" ],

@@ -11,7 +11,7 @@
       "combat_level": 1146,
       "hp": 2700,
       "max_hit": {
-        "melee": 57,
+        "melee": 70,
         "ranged": 53,
         "magic": 45,
         "screech": 70,
@@ -138,20 +138,20 @@
         [ "Virtus mask" ],
         [ "Ahrim's hood", "Blue moon helm", "Bloodbark helm" ],
         [ "Void mage helm" ],
-        [ "Dagon'hai hat", "Elder chaos hood" ]
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
-        [ "Amulet of fury", "Amulet of glory" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
         [ "Any Imbued God cape" ],
-        [ "Any God cape" ],
-        [ "Ardougne cloak 4" ],
-        [ "Any Skillcape" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -159,49 +159,49 @@
         [ "Virtus robe top" ],
         [ "Ahrim's robetop", "Blue moon chestplate", "Bloodbark body" ],
         [ "Elite void top" ],
-        [ "Dagon'hai robe top", "Elder chaos top" ]
+        [ "N/A" ]
       ],
       "Legs": [
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ],
         [ "Ahrim's robeskirt", "Blue moon tassets", "Bloodbark legs" ],
         [ "Elite void robe" ],
-        [ "Dagon'hai robe bottom", "Elder chaos robe" ]
+        [ "N/A" ]
       ],
       "Weapon": [
         [ "Tumeken's shadow", "Venator bow" ],
-        [ "Harmonised nightmare staff" ],
+        [ "Eye of ayak", "Harmonised nightmare staff" ],
         [ "Sanguinesti staff", "Trident of the swamp" ],
-        [ "Mystic smoke staff", "Twinflame staff", "Mystic earth staff" ],
-        [ "Trident of the seas", "Warped sceptre" ]
+        [ "Mystic smoke staff", "Twinflame staff" ],
+        [ "N/A" ]
       ],
       "Shield": [
         [ "Tome of earth", "Elidinis' ward (f)" ],
         [ "Arcane spirit shield", "Elidinis' ward" ],
         [ "Ancient wyvern shield", "Malediction ward", "Mage's book" ],
         [ "Book of darkness" ],
-        [ "Unholy book" ]
+        [ "N/A" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
         [ "Void knight gloves" ],
-        [ "Barrows gloves" ],
-        [ "Regen bracelet" ],
-        [ "Combat bracelet" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Eternal boots" ],
         [ "Infinity boots", "Aranea boots" ],
-        [ "Bloodbark boots" ],
-        [ "Boots of brimstone" ],
-        [ "Wizard boots" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Magus ring" ],
@@ -212,7 +212,7 @@
       ],
       "Special Attack": [
         [ "Eldritch nightmare staff" ],
-        [ "Accursed sceptre" ],
+        [ "Accursed sceptre", "Eye of ayak" ],
         [ "Toxic blowpipe", "Seercull" ],
         [ "Rune thrownaxe" ],
         [ "N/A" ]

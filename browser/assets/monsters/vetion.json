@@ -82,9 +82,9 @@
   "gear_setups": {
     "Melee": {
       "Helmet": [
-        [ "Helm of neitiznot" ],
-        [ "Berserker helm" ],
+        [ "Helm of neitiznot", "Berserker helm" ],
         [ "Dwarven helmet" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -118,7 +118,7 @@
       ],
       "Weapon": [
         [ "Ursine chainmace", "Viggora's chainmace" ],
-        [ "Inquisitor's mace" ],
+        [ "Soulreaper axe", "Inquisitor's mace" ],
         [ "Abyssal bludgeon", "Zamorakian hasta", "Zombie axe" ],
         [ "Sarachnis cudgel", "Elder maul", "Dual macuahuitl" ],
         [ "Leaf-bladed battleaxe", "Dragon mace" ]
@@ -146,17 +146,17 @@
       ],
       "Boots": [
         [ "Dragon boots" ],
-        [ "Rune boots" ],
-        [ "Mixed hide boots" ],
+        [ "Mixed hide boots", "Rune boots" ],
         [ "Climbing boots" ],
-        [ "Fremennik sea boots 4" ]
+        [ "Fremennik sea boots 4" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
         [ "Berserker ring (i)" ],
         [ "Ring of shadows" ],
         [ "Ring of wealth (i)" ],
-        [ "Explorer's ring 4" ]
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Elder maul" ],

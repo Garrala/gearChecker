@@ -86,38 +86,38 @@
         [ "Helm of neitiznot", "Blood moon helm" ],
         [ "Berserker helm" ],
         [ "Rune full helm" ],
-        [ "Adamant full helm" ]
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
         [ "Amulet of strength" ],
-        [ "Amulet of power" ],
-        [ "Amulet of accuracy" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Fire cape" ],
-        [ "Obsidian cape" ],
-        [ "Cape of legends" ],
         [ "Any God vestment cloaks" ],
-        [ "Any team cape" ]
+        [ "Any team cape" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Void knight top" ],
         [ "Fighter torso" ],
         [ "Proselyte hauberk" ],
-        [ "Granite body" ],
-        [ "Rune platebody" ]
+        [ "Rune platebody" ],
+        [ "N/A" ]
       ],
       "Legs": [
         [ "Void knight robe" ],
         [ "Dragon platelegs" ],
         [ "Proselyte cuisse" ],
-        [ "Granite legs" ],
-        [ "Rune plateskirt" ]
+        [ "Rune plateskirt" ],
+        [ "N/A" ]
       ],
       "Weapon": [
-        [ "Bone mace" ],
+        [ "Bone mace", "Abyssal tentacle", "Abyssal whip" ],
         [ "Sarachnis cudgel" ],
         [ "Dragon scimitar" ],
         [ "Granite hammer" ],
@@ -127,11 +127,11 @@
         [ "Dragon defender" ],
         [ "Rune defender" ],
         [ "Toktz-ket-xil" ],
-        [ "Granite shield" ],
-        [ "Rune kiteshield" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -146,17 +146,17 @@
       ],
       "Boots": [
         [ "Dragon boots" ],
-        [ "Granite boots" ],
         [ "Rune boots" ],
         [ "Spiked manacles" ],
-        [ "Mixed hide boots" ]
+        [ "Mixed hide boots", "Climbing boots" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Berserker ring (i)" ],
         [ "Lightbearer" ],
         [ "Steel ring" ],
-        [ "Ring of recoil" ],
-        [ "Ring of life" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Dragon dagger" ],
@@ -172,21 +172,21 @@
         [ "Any Blessed coif" ],
         [ "Archer helm" ],
         [ "Snakeskin bandana" ],
-        [ "Coif" ]
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of fury" ],
         [ "Amulet of glory" ],
         [ "Amulet of power" ],
-        [ "Amulet of accuracy" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
         [ "Ava's accumulator" ],
         [ "Ava's attractor" ],
-        [ "Fire cape" ],
-        [ "Obsidian cape" ],
-        [ "Cape of legends" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Void knight top" ],
@@ -228,7 +228,7 @@
         [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ],
         [ "Red d'hide vambraces" ],
-        [ "Dragon gloves" ]
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Any Blessed boots" ],
@@ -239,8 +239,8 @@
       ],
       "Ring": [
         [ "Archers ring (i)", "Steel ring" ],
-        [ "Ring of recoil" ],
-        [ "Ring of life" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -265,14 +265,14 @@
         [ "Amulet of glory" ],
         [ "Amulet of magic" ],
         [ "Amulet of power" ],
-        [ "Amulet of accuracy" ]
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Any God cape" ],
+        [ "Any God vestment cloaks" ],
         [ "Fire cape" ],
-        [ "Obsidian cape" ],
-        [ "Cape of legends" ],
-        [ "Any God vestment cloaks" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Bloodbark body" ],
@@ -303,7 +303,7 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -325,8 +325,8 @@
       ],
       "Ring": [
         [ "Seers ring (i)", "Steel ring" ],
-        [ "Ring of recoil" ],
-        [ "Ring of life" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -343,57 +343,67 @@
         [ "Torva full helm" ],
         [ "Neitiznot faceguard" ],
         [ "Serpentine helm" ],
-        [ "Void melee helm" ]
+        [ "Void melee helm" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
         [ "Amulet of torture" ],
         [ "Amulet of fury" ],
-        [ "Amulet of glory" ]
+        [ "Amulet of glory" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Mythical cape" ],
-        [ "Any God vestment cloaks" ]
+        [ "Any God vestment cloaks" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Torva platebody" ],
         [ "Bandos chestplate", "Blood moon chestplate" ],
         [ "Fighter torso" ],
-        [ "Elite void top" ]
+        [ "Elite void top" ],
+        [ "N/A" ]
       ],
       "Legs": [
         [ "Torva platelegs" ],
         [ "Bandos tassets", "Blood moon tassets" ],
         [ "Obsidian platelegs" ],
-        [ "Elite void robe" ]
+        [ "Elite void robe" ],
+        [ "N/A" ]
       ],
       "Weapon": [
         [ "Scythe of Vitur" ],
-        [ "Soulreaper axe", "Inquisitor's mace" ],
-        [ "Bone mace", "Blade of Saeldor", "Ghrazi rapier" ],
+        [ "Soulreaper axe" ],
+        [ "Inquisitor's mace", "Bone mace" ],
+        [ "Blade of Saeldor", "Ghrazi rapier", "Dual macuahuitl" ],
         [ "Abyssal tentacle", "Abyssal whip" ]
       ],
       "Shield": [
         [ "Avernic defender" ],
         [ "Dragon defender" ],
         [ "Rune defender" ],
-        [ "Toktz-ket-xil" ]
+        [ "Toktz-ket-xil" ],
+        [ "N/A" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
         [ "Ferocious gloves" ],
         [ "Barrows gloves" ],
-        [ "Dragon gloves" ],
-        [ "Void knight gloves" ]
+        [ "Dragon gloves", "Regen bracelet" ],
+        [ "Void knight gloves" ],
+        [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots", "Aranea boots" ],
         [ "Guardian boots" ],
@@ -403,13 +413,15 @@
         [ "Ultor ring" ],
         [ "Bellator ring" ],
         [ "Berserker ring (i)" ],
-        [ "Lightbearer", "Ring of shadows" ]
+        [ "Lightbearer", "Ring of shadows" ],
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Burning claws", "Dragon claws" ],
         [ "Dragon dagger" ],
         [ "Voidwaker" ],
-        [ "Crystal halberd" ]
+        [ "Crystal halberd" ],
+        [ "N/A" ]
       ]
     },
     "Ranged (high level)": {
@@ -468,10 +480,10 @@
         [ "Any Blessed vambraces" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
-        [ "Any Blessed boots" ],
-        [ "Aranea boots" ]
+        [ "Any Blessed boots" ]
       ],
       "Ring": [
         [ "Venator ring" ],
@@ -491,71 +503,83 @@
         [ "Ancestral hat" ],
         [ "Virtus mask" ],
         [ "Ahrim's hood" ],
-        [ "Bloodbark helm" ]
+        [ "Bloodbark helm" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
         [ "Amulet of fury" ],
         [ "Bonecrusher necklace" ],
-        [ "Amulet of glory" ]
+        [ "Amulet of glory" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Any Imbued God cape" ],
         [ "Any God cape" ],
         [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
         [ "Virtus robe top" ],
         [ "Ahrim's robetop" ],
-        [ "Bloodbark body" ]
+        [ "Bloodbark body" ],
+        [ "N/A" ]
       ],
       "Legs": [
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ],
         [ "Ahrim's robeskirt" ],
-        [ "Bloodbark legs" ]
+        [ "Bloodbark legs" ],
+        [ "N/A" ]
       ],
       "Weapon": [
         [ "Bone staff" ],
         [ "Tumeken's shadow" ],
-        [ "Kodai wand" ],
-        [ "Trident of the seas" ]
+        [ "Eye of ayak" ],
+        [ "Trident of the swamp", "Harmonised nightmare staff" ],
+        [ "Trident of the seas", "Kodai wand" ]
       ],
       "Shield": [
         [ "Elidinis' ward (f)" ],
         [ "Arcane spirit shield" ],
         [ "Elidinis' ward" ],
-        [ "Ancient wyvern shield" ]
+        [ "Ancient wyvern shield" ],
+        [ "Malediction ward", "Mage's book" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
         [ "Barrows gloves" ],
         [ "Dragon gloves" ],
-        [ "Infinity gloves" ]
+        [ "Rune gloves" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Eternal boots" ],
         [ "Infinity boots", "Aranea boots" ],
         [ "Bloodbark boots" ],
-        [ "Mystic boots" ]
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Magus ring" ],
         [ "Seers ring (i)", "Ring of the gods (i)" ],
-        [ "Ring of shadows" ],
-        [ "Brimstone ring" ]
+        [ "Ring of shadows", "Brimstone ring" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Zaryte crossbow" ],
         [ "Accursed sceptre" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ]

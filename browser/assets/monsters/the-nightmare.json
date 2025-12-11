@@ -50,7 +50,7 @@
         [ "Torva full helm" ],
         [ "Neitiznot faceguard" ],
         [ "Serpentine helm", "Blood moon helm" ],
-        [ "Helm of neitiznot" ]
+        [ "Helm of neitiznot", "Zombie helmet" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
@@ -85,14 +85,14 @@
         [ "Soulreaper axe" ],
         [ "Abyssal bludgeon" ],
         [ "Dual macuahuitl", "Ursine chainmace (u)", "Sarachnis cudgel" ],
-        [ "Zombie axe", "Zamorakian hasta" ]
+        [ "Zombie axe", "Zamorakian hasta", "Osmumten's fang" ]
       ],
       "Shield": [
         [ "Avernic defender" ],
         [ "Dragon defender" ],
-        [ "Rune defender" ],
-        [ "Dragonfire shield" ],
-        [ "Toktz-ket-xil" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
@@ -109,25 +109,25 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots" ],
         [ "Echo boots" ],
-        [ "Guardian boots" ],
-        [ "N/A" ]
+        [ "Guardian boots" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
         [ "Berserker ring (i)" ],
-        [ "Brimstone ring" ],
-        [ "Tyrannical ring (i)", "Ring of shadows" ],
-        [ "Ring of suffering (i)" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Elder maul", "Saradomin godsword" ],
         [ "Dragon warhammer" ],
         [ "Bandos godsword" ],
         [ "Dragon claws" ],
-        [ "Dragon mace" ]
+        [ "N/A" ]
       ]
     },
     "Mage": {
@@ -167,7 +167,7 @@
         [ "N/A" ]
       ],
       "Weapon": [
-        [ "Tumeken's shadow", "Harmonised nightmare staff" ],
+        [ "Tumeken's shadow", "Eye of ayak", "Harmonised nightmare staff" ],
         [ "Sanguinesti staff" ],
         [ "Twinflame staff" ],
         [ "Trident of the swamp" ],
@@ -188,15 +188,15 @@
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Eternal boots" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]

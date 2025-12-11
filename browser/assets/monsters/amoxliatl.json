@@ -46,7 +46,7 @@
   "gear_setups": {
     "Melee": {
       "Helmet": [
-        [ "Slayer helmet", "Inquisitor's great helm", "Torva full helm" ],
+        [ "Slayer helmet (i)", "Inquisitor's great helm", "Torva full helm" ],
         [ "Blood moon helm" ],
         [ "Neitiznot faceguard" ],
         [ "Zombie helmet", "Helm of neitiznot" ],
@@ -84,7 +84,7 @@
         [ "Scythe of Vitur" ],
         [ "Dual macuahuitl", "Inquisitor's mace" ],
         [ "Soulreaper axe", "Abyssal bludgeon", "Ursine chainmace (u)", "Zamorakian hasta" ],
-        [ "Sarachnis cudgel", "Glacial temotli", "Saradomin sword" ],
+        [ "Sarachnis cudgel", "Glacial temotli", "Ghrazi rapier", "Saradomin sword" ],
         [ "Zombie axe", "Dragon mace" ]
       ],
       "Shield": [
@@ -109,25 +109,25 @@
         [ "Combat bracelet" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Aranea boots", "Dragon boots", "Spiked manacles" ],
         [ "Echo boots", "Guardian boots", "Granite boots" ],
-        [ "Mixed hide boots", "Rune boots", "Climbing boots" ],
-        [ "N/A" ]
+        [ "Mixed hide boots", "Rune boots", "Climbing boots" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
         [ "Berserker ring (i)" ],
         [ "Lightbearer" ],
         [ "Tyrannical ring (i)" ],
-        [ "Explorer's ring 4", "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
+        [ "Ring of shadows" ]
       ],
       "Special Attack": [
         [ "Burning claws", "Dragon claws" ],
+        [ "Voidwaker", "Arkan blade" ],
         [ "Dragon dagger" ],
         [ "Crystal halberd", "Saradomin godsword" ],
-        [ "Dragon mace" ],
-        [ "N/A" ]
+        [ "Dragon mace" ]
       ]
     }
   }

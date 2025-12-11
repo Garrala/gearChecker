@@ -38,7 +38,9 @@
         "poison": true,
         "venom": true
       },
-      "weaknesses": "none"
+      "weaknesses": {
+        "earth": "70%"
+      }
     },
     {
       "name": "Dusk",
@@ -63,7 +65,7 @@
           "thrown": 0
         }
       },
-      "attack_styles": [ "Slash" ],
+      "attack_styles": [],
       "attack_speed": {
         "ticks": 6,
         "seconds": 3.6
@@ -73,16 +75,18 @@
         "poison": true,
         "venom": true
       },
-      "weaknesses": "none"
+      "weaknesses": {
+        "earth": "40%"
+      }
     }
   ],
   "gear_setups": {
     "Melee": {
       "Helmet": [
         [ "Slayer helmet (i)" ],
-        [ "Black mask (i)" ],
-        [ "Slayer helmet" ],
-        [ "Black mask" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
@@ -115,8 +119,8 @@
       ],
       "Weapon": [
         [ "Scythe of Vitur" ],
-        [ "Soulreaper axe", "Ghrazi rapier", "Blade of Saeldor", "Inquisitor's mace" ],
-        [ "Noxious halberd", "Abyssal tentacle" ],
+        [ "Granite hammer", "Soulreaper axe" ],
+        [ "Ghrazi rapier", "Noxious halberd", "Abyssal tentacle" ],
         [ "Osmumten's fang", "Abyssal whip", "Abyssal bludgeon" ],
         [ "Zamorakian hasta", "Dragon scimitar" ]
       ],
@@ -135,11 +139,11 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots", "Aranea boots" ],
         [ "Echo boots", "Guardian boots" ],
-        [ "Rune boots", "Mixed hide boots" ],
-        [ "Climbing boots" ]
+        [ "Rune boots", "Mixed hide boots" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
@@ -149,11 +153,11 @@
         [ "Treasonous ring (i)", "Warrior ring (i)", "Tyrannical ring (i)" ]
       ],
       "Special Attack": [
-        [ "Dragon claws", "Burning claws" ],
+        [ "Dragon claws" ],
+        [ "Crystal halberd" ],
+        [ "Burning claws" ],
         [ "Dragon dagger" ],
-        [ "Toxic blowpipe" ],
-        [ "Saradomin godsword" ],
-        [ "Crystal halberd" ]
+        [ "Saradomin godsword" ]
       ],
       "Ammo": [
         [ "N/A" ],
@@ -164,6 +168,13 @@
       ]
     },
     "Ranged switches": {
+      "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
       "Amulet": [
         [ "Necklace of anguish" ],
         [ "N/A" ],
@@ -211,7 +222,7 @@
         [ "Atlatl darts" ],
         [ "Rada's blessing 4" ],
         [ "Moonlight antler bolts", "Sunlight antler bolts" ],
-        [ "Amethyst arrows" ]
+        [ "Amethyst arrows", "Rune arrows" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
@@ -221,11 +232,11 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
         [ "Aranea boots" ],
-        [ "Any Blessed boots" ],
-        [ "N/A" ]
+        [ "Any Blessed boots" ]
       ],
       "Ring": [
         [ "Venator ring" ],
@@ -234,15 +245,8 @@
         [ "N/A" ],
         [ "N/A" ]
       ],
-      "Helmet": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
       "Special Attack": [
-        [ "N/A" ],
+        [ "Toxic blowpipe" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],

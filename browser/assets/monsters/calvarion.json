@@ -112,13 +112,13 @@
       "Legs": [
         [ "Black d'hide chaps" ],
         [ "Proselyte cuisse", "Proselyte tasset" ],
-        [ "Monk's robe" ],
+        [ "Initiate cuisse", "Monk's robe" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
         [ "Ursine chainmace", "Viggora's chainmace" ],
-        [ "Inquisitor's mace" ],
+        [ "Soulreaper axe", "Inquisitor's mace" ],
         [ "Abyssal bludgeon", "Zamorakian hasta", "Zombie axe" ],
         [ "Sarachnis cudgel", "Elder maul", "Dual macuahuitl" ],
         [ "Leaf-bladed battleaxe", "Dragon mace" ]

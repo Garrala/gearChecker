@@ -102,10 +102,10 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
-        [ "Echo boots" ],
-        [ "Dragon boots" ],
-        [ "N/A" ]
+        [ "Echo boots", "Guardian boots" ],
+        [ "Dragon boots" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
@@ -176,9 +176,9 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ring": [
@@ -191,178 +191,6 @@
         [ "Arclight" ],
         [ "Bandos godsword" ],
         [ "Osmumten's fang" ],
-        [ "N/A" ]
-      ]
-    },
-    "Stat Draining": {
-      "Helmet": [
-        [ "Torva full helm" ],
-        [ "Neitiznot faceguard" ],
-        [ "Serpentine helm", "Inquisitor's great helm" ],
-        [ "Void melee helm" ],
-        [ "Helm of neitiznot" ]
-      ],
-      "Amulet": [
-        [ "Amulet of rancour" ],
-        [ "Amulet of torture" ],
-        [ "Amulet of fury" ],
-        [ "Amulet of strength" ],
-        [ "Amulet of glory" ]
-      ],
-      "Cape": [
-        [ "Infernal cape" ],
-        [ "Fire cape" ],
-        [ "Mythical cape" ],
-        [ "Ardougne cloak 4" ],
-        [ "Ardougne cloak 3" ]
-      ],
-      "Body": [
-        [ "Masori body (f)" ],
-        [ "Eclipse moon chestplate" ],
-        [ "Karil's leathertop" ],
-        [ "Elite void top", "Void knight top" ],
-        [ "Any Blessed body" ]
-      ],
-      "Legs": [
-        [ "Masori chaps (f)" ],
-        [ "Blood moon tassets" ],
-        [ "Karil's leatherskirt" ],
-        [ "Elite void robe", "Void knight robe" ],
-        [ "Any Blessed chaps" ]
-      ],
-      "Weapon": [
-        [ "Noxious halberd" ],
-        [ "Zamorakian spear" ],
-        [ "Osmumten's fang" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Gloves": [
-        [ "Ferocious gloves" ],
-        [ "Barrows gloves", "Void knight gloves" ],
-        [ "Dragon gloves" ],
-        [ "Rune gloves" ],
-        [ "Regen bracelet" ]
-      ],
-      "Boots": [
-        [ "Primordial boots" ],
-        [ "Dragon boots" ],
-        [ "Spiked manacles" ],
-        [ "Guardian boots" ],
-        [ "Granite boots" ]
-      ],
-      "Ring": [
-        [ "Ultor ring" ],
-        [ "Berserker ring (i)" ],
-        [ "Brimstone ring" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Special Attack": [
-        [ "Osmumten's fang" ],
-        [ "Crystal halberd" ],
-        [ "Bandos godsword" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Shield": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ]
-    },
-    "Quick-Pool": {
-      "Helmet": [
-        [ "Torva full helm", "Inquisitor's great helm" ],
-        [ "Neitiznot faceguard", "Zombie helmet" ],
-        [ "Serpentine helm" ],
-        [ "Blood moon helm" ],
-        [ "Helm of neitiznot" ]
-      ],
-      "Amulet": [
-        [ "Amulet of blood fury", "Amulet of rancour" ],
-        [ "Amulet of torture" ],
-        [ "Amulet of fury" ],
-        [ "Amulet of glory" ],
-        [ "Amulet of power" ]
-      ],
-      "Cape": [
-        [ "Infernal cape", "Mythical cape" ],
-        [ "Fire cape" ],
-        [ "Any Skillcape" ],
-        [ "Obsidian cape" ],
-        [ "N/A" ]
-      ],
-      "Body": [
-        [ "Masori body (f)", "Inquisitor's hauberk" ],
-        [ "Eclipse moon chestplate", "Blood moon chestplate" ],
-        [ "Armadyl chestplate" ],
-        [ "Karil's leathertop" ],
-        [ "Any Blessed body" ]
-      ],
-      "Legs": [
-        [ "Masori chaps (f)", "Inquisitor's plateskirt" ],
-        [ "Blood moon tassets" ],
-        [ "Armadyl chainskirt" ],
-        [ "Karil's leatherskirt" ],
-        [ "Any Blessed chaps" ]
-      ],
-      "Weapon": [
-        [ "Osmumten's fang" ],
-        [ "Noxious halberd" ],
-        [ "Zamorakian spear" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Shield": [
-        [ "Avernic defender" ],
-        [ "Dragon defender" ],
-        [ "Dragonfire shield" ],
-        [ "Elysian spirit shield" ],
-        [ "N/A" ]
-      ],
-      "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Gloves": [
-        [ "Ferocious gloves" ],
-        [ "Barrows gloves" ],
-        [ "Rune gloves" ],
-        [ "Regen bracelet" ],
-        [ "Combat bracelet" ]
-      ],
-      "Boots": [
-        [ "Primordial boots" ],
-        [ "Echo boots", "Dragon boots" ],
-        [ "Spiked manacles" ],
-        [ "Guardian boots" ],
-        [ "Granite boots" ]
-      ],
-      "Ring": [
-        [ "Ring of suffering (i)", "Ultor ring" ],
-        [ "Berserker ring (i)" ],
-        [ "Brimstone ring" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Special Attack": [
-        [ "Elder maul", "Voidwaker" ],
-        [ "Dragon warhammer", "Osmumten's fang" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ]
     },
@@ -424,11 +252,11 @@
         [ "Regen bracelet" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots" ],
         [ "Spiked manacles" ],
-        [ "Guardian boots" ],
-        [ "Granite boots" ]
+        [ "Guardian boots" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
@@ -510,11 +338,11 @@
         [ "Regen bracelet" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots" ],
         [ "Spiked manacles" ],
-        [ "Guardian boots" ],
-        [ "Granite boots" ]
+        [ "Guardian boots" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
@@ -603,11 +431,11 @@
         [ "Red d'hide vambraces" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
         [ "Any Blessed boots" ],
-        [ "Boots of brimstone" ],
-        [ "Snakeskin boots" ]
+        [ "Boots of brimstone" ]
       ],
       "Ring": [
         [ "Venator ring" ],

@@ -69,56 +69,56 @@
       "Body": [
         [ "Ancestral robe top" ],
         [ "Virtus robe top" ],
-        [ "Ahrim's robetop", "Blue moon chestplate" ],
         [ "Masori body (f)" ],
-        [ "Hueycoatl hide body", "Karil's leathertop", "Any Blessed body", "Elite void top" ]
+        [ "Hueycoatl hide body", "Karil's leathertop", "Any Blessed body", "Elite void top" ],
+        [ "Ahrim's robetop", "Blue moon chestplate" ]
       ],
       "Legs": [
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ],
-        [ "Ahrim's robeskirt", "Blue moon tassets" ],
         [ "Masori chaps (f)" ],
-        [ "Hueycoatl hide chaps", "Karil's leatherskirt", "Elite void robe", "Any Blessed chaps" ]
+        [ "Hueycoatl hide chaps", "Karil's leatherskirt", "Elite void robe", "Any Blessed chaps" ],
+        [ "Blue moon tassets", "Ahrim's robeskirt" ]
       ],
       "Weapon": [
-        [ "Tumeken's shadow" ],
-        [ "Sanguinesti staff" ],
-        [ "Trident of the swamp" ],
-        [ "Trident of the seas" ],
-        [ "Harmonised nightmare staff", "Warped sceptre", "Slayer's staff (e)" ]
+        [ "Eye of ayak", "Tumeken's shadow" ],
+        [ "Harmonised nightmare staff", "Sanguinesti staff" ],
+        [ "Trident of the swamp", "Staff of the dead" ],
+        [ "Trident of the seas", "Twinflame staff" ],
+        [ "Warped sceptre", "Slayer's staff (e)" ]
       ],
       "Shield": [
-        [ "Elidinis' ward (f)", "Tome of fire" ],
+        [ "Elidinis' ward (f)", "Tome of earth" ],
         [ "Elidinis' ward", "Arcane spirit shield" ],
-        [ "Malediction ward", "Ancient wyvern shield", "Mage's book" ],
+        [ "Ancient wyvern shield", "Mage's book", "Malediction ward" ],
         [ "Elysian spirit shield", "Spectral spirit shield" ],
         [ "Dragonfire ward" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 4", "Ghommal's lucky penny" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
-        [ "Tormented bracelet", "Bracelet of slaughter" ],
+        [ "Confliction gauntlets", "Bracelet of slaughter" ],
+        [ "Tormented bracelet" ],
         [ "Regen bracelet" ],
         [ "Barrows gloves" ],
-        [ "Infinity gloves" ],
-        [ "Combat bracelet" ]
+        [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Eternal boots" ],
         [ "Infinity boots", "Aranea boots" ],
         [ "Boots of brimstone" ],
-        [ "Silly jester boots", "Bloodbark boots" ],
-        [ "Mystic boots", "Wizard boots" ]
+        [ "Silly jester boots", "Bloodbark boots" ]
       ],
       "Ring": [
         [ "Magus ring" ],
         [ "Ring of suffering (i)" ],
-        [ "Seers ring (i)" ],
+        [ "Seers ring (i)", "Lightbearer" ],
         [ "Brimstone ring" ],
         [ "Ring of shadows" ]
       ],
@@ -126,7 +126,7 @@
         [ "Volatile nightmare staff" ],
         [ "Eldritch nightmare staff" ],
         [ "Toxic blowpipe" ],
-        [ "Accursed sceptre (a)" ],
+        [ "Accursed sceptre (a)", "Eye of ayak" ],
         [ "N/A" ]
       ]
     }

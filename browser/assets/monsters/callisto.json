@@ -135,8 +135,8 @@
     "Magic": {
       "Helmet": [
         [ "Slayer helmet (i)" ],
-        [ "Ancestral hat" ],
-        [ "Farseer helm" ],
+        [ "Bloodbark helm", "Ahrim's hood" ],
+        [ "Mystic hat" ],
         [ "Mitre" ],
         [ "N/A" ]
       ],
@@ -144,33 +144,33 @@
         [ "Occult necklace" ],
         [ "Amulet of glory" ],
         [ "Amulet of power" ],
-        [ "Amulet of magic" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
         [ "Any Imbued God cape" ],
         [ "Any God cape" ],
-        [ "Ardougne cloak 4" ],
+        [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ],
         [ "Any God vestment cloaks" ],
         [ "N/A" ]
       ],
       "Body": [
-        [ "Ancestral robe top" ],
-        [ "Virtus robe top" ],
-        [ "Ahrim's robetop" ],
-        [ "Mystic robe top", "Masori body (f)", "Armadyl chestplate" ],
+        [ "Bloodbark body", "Ahrim's robetop" ],
+        [ "Mystic robe top" ],
+        [ "Monk's robe top" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
-        [ "Ancestral robe bottom" ],
-        [ "Virtus robe bottom" ],
-        [ "Ahrim's robeskirt" ],
-        [ "Mystic robe bottom", "Masori chaps (f)", "Armadyl chainskirt" ],
+        [ "Bloodbark legs", "Ahrim's robeskirt" ],
+        [ "Mystic robe bottom" ],
+        [ "Monk's robe" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
-        [ "Accursed sceptre" ],
-        [ "Thammaron's sceptre", "Tumeken's shadow" ],
+        [ "Accursed sceptre", "Thammaron's sceptre" ],
+        [ "Eye of ayak" ],
         [ "Sanguinesti staff", "Trident of the swamp" ],
         [ "Trident of the seas" ],
         [ "Warped sceptre" ]
@@ -190,11 +190,11 @@
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
         [ "Barrows gloves" ],
         [ "Rune gloves" ],
-        [ "Combat bracelet" ],
-        [ "N/A" ]
+        [ "Combat bracelet" ]
       ],
       "Boots": [
         [ "Bloodbark boots" ],
@@ -206,13 +206,13 @@
       "Ring": [
         [ "Ring of shadows" ],
         [ "Explorer's ring 4" ],
-        [ "Beacon ring" ],
+        [ "Beacon ring", "Lunar ring" ],
         [ "Ring of wealth (i)" ],
         [ "N/A" ]
       ],
       "Special Attack": [
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Accursed sceptre" ],
+        [ "Eye of ayak" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]

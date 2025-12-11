@@ -81,7 +81,7 @@
       ],
       "Weapon": [
         [ "Accursed sceptre", "Thammaron's sceptre" ],
-        [ "Sanguinesti staff" ],
+        [ "Eye of ayak", "Sanguinesti staff" ],
         [ "Trident of the swamp" ],
         [ "Trident of the seas" ],
         [ "Warped sceptre", "Iban's staff (u)" ]
@@ -101,11 +101,11 @@
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
         [ "Barrows gloves" ],
         [ "Dragon gloves" ],
-        [ "Rune gloves" ],
-        [ "N/A" ]
+        [ "Rune gloves" ]
       ],
       "Boots": [
         [ "Mystic boots" ],
@@ -117,7 +117,7 @@
       "Ring": [
         [ "Ring of shadows" ],
         [ "Explorer's ring 4", "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ],
-        [ "Beacon ring" ],
+        [ "Beacon ring", "Lunar ring" ],
         [ "Ring of wealth (i)" ],
         [ "N/A" ]
       ],

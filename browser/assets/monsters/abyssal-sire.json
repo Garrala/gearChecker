@@ -37,7 +37,7 @@
         "poison": true,
         "venom": true,
         "cannons": false,
-        "thralls": false
+        "thralls": true
       },
       "weaknesses": "none"
     },
@@ -74,7 +74,7 @@
         "poison": true,
         "venom": true,
         "cannons": false,
-        "thralls": false
+        "thralls": true
       },
       "weaknesses": "none"
     },
@@ -111,7 +111,7 @@
         "poison": true,
         "venom": true,
         "cannons": false,
-        "thralls": false
+        "thralls": true
       },
       "weaknesses": "none"
     },
@@ -148,98 +148,12 @@
         "poison": true,
         "venom": true,
         "cannons": false,
-        "thralls": false
+        "thralls": true
       },
       "weaknesses": "none"
     }
   ],
   "gear_setups": {
-    "Ranged": {
-      "Helmet": [
-        [ "Slayer helmet (i)" ],
-        [ "Black mask (i)" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Amulet": [
-        [ "Necklace of anguish" ],
-        [ "Amulet of fury" ],
-        [ "Amulet of glory" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Cape": [
-        [ "Dizana's quiver" ],
-        [ "Ava's assembler", "Ava's accumulator" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Body": [
-        [ "Masori body (f)" ],
-        [ "Crystal body" ],
-        [ "Any Blessed body", "Black d'hide body" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Legs": [
-        [ "Masori chaps (f)" ],
-        [ "Crystal legs" ],
-        [ "Any Blessed chaps", "Black d'hide chaps" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Weapon": [
-        [ "Scorching bow" ],
-        [ "Bow of Faerdhinen" ],
-        [ "Toxic blowpipe" ],
-        [ "Webweaver bow", "Craw's bow" ],
-        [ "Crystal bow" ]
-      ],
-      "Ammo": [
-        [ "Dragon arrows" ],
-        [ "Amethyst arrows" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Gloves": [
-        [ "Zaryte vambraces" ],
-        [ "Barrows gloves" ],
-        [ "Any Blessed vambraces", "Black d'hide vambraces" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Boots": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Ring": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Shield": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Special Attack": [
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ]
-    },
     "Magic": {
       "Helmet": [
         [ "Slayer helmet (i)" ],
@@ -291,9 +205,9 @@
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
         [ "Bloodbark gauntlets" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -312,6 +226,92 @@
         [ "N/A" ]
       ],
       "Ammo": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Special Attack": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ]
+    },
+    "Ranged": {
+      "Helmet": [
+        [ "Slayer helmet (i)" ],
+        [ "Black mask (i)" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Amulet": [
+        [ "Necklace of anguish" ],
+        [ "Amulet of fury" ],
+        [ "Amulet of glory" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Cape": [
+        [ "Dizana's quiver" ],
+        [ "Ava's assembler", "Ava's accumulator" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Body": [
+        [ "Masori body (f)" ],
+        [ "Crystal body" ],
+        [ "Hueycoatl hide body", "Any Blessed body" ],
+        [ "Black d'hide body" ],
+        [ "N/A" ]
+      ],
+      "Legs": [
+        [ "Masori chaps (f)" ],
+        [ "Crystal legs" ],
+        [ "Hueycoatl hide chaps", "Any Blessed chaps" ],
+        [ "Black d'hide chaps" ],
+        [ "N/A" ]
+      ],
+      "Weapon": [
+        [ "Scorching bow" ],
+        [ "Bow of Faerdhinen" ],
+        [ "Webweaver bow", "Craw's bow" ],
+        [ "Crystal bow" ],
+        [ "N/A" ]
+      ],
+      "Ammo": [
+        [ "Dragon arrows" ],
+        [ "Amethyst arrows" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Gloves": [
+        [ "Zaryte vambraces" ],
+        [ "Barrows gloves" ],
+        [ "Any Blessed vambraces", "Black d'hide vambraces" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Boots": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Ring": [
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
+      "Shield": [
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -345,7 +345,7 @@
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Max cape", "Hitpoints cape" ],
-        [ "N/A" ],
+        [ "Mixed hide cape" ],
         [ "N/A" ]
       ],
       "Body": [
@@ -384,10 +384,10 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots" ],
         [ "Rune boots" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ring": [
@@ -477,11 +477,11 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots" ],
         [ "Echo boots" ],
-        [ "Guardian boots" ],
-        [ "Rune boots" ]
+        [ "Guardian boots" ]
       ],
       "Ring": [
         [ "Lightbearer" ],
@@ -563,11 +563,11 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots" ],
         [ "Echo boots" ],
-        [ "Guardian boots" ],
-        [ "Rune boots" ]
+        [ "Guardian boots" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
@@ -634,16 +634,16 @@
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Eternal boots" ],
         [ "Echo boots" ],
-        [ "Guardian boots" ],
-        [ "N/A" ]
+        [ "Guardian boots" ]
       ],
       "Ring": [
         [ "Magus ring", "Lightbearer" ],
@@ -716,11 +716,11 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
         [ "Any Blessed boots" ],
-        [ "Aranea boots" ],
-        [ "Mixed hide boots" ]
+        [ "Aranea boots" ]
       ],
       "Ring": [
         [ "Venator ring" ],
