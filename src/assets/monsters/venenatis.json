@@ -136,12 +136,14 @@
       "Helmet": [
         [ "Slayer helmet (i)" ],
         [ "Any Blessed coif" ],
+        [ "Karil's coif" ],
         [ "Archer helm" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
+        [ "Dragonbone necklace" ],
         [ "Amulet of glory" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -149,12 +151,14 @@
       ],
       "Cape": [
         [ "Ava's assembler" ],
+        [ "Mixed hide cape" ],
         [ "Ava's accumulator" ],
-        [ "Ranging cape" ],
         [ "Ava's attractor" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
+        [ "Masori body (f)" ],
         [ "Any Blessed body" ],
         [ "Black d'hide body" ],
         [ "N/A" ],
@@ -162,6 +166,7 @@
         [ "N/A" ]
       ],
       "Legs": [
+        [ "Masori chaps (f)" ],
         [ "Any Blessed chaps" ],
         [ "Black d'hide chaps" ],
         [ "N/A" ],
@@ -173,20 +178,23 @@
         [ "Twisted bow" ],
         [ "Toxic blowpipe" ],
         [ "Zaryte crossbow", "Armadyl crossbow" ],
-        [ "Dragon crossbow", "Rune crossbow" ]
+        [ "Dragon crossbow", "Rune crossbow" ],
+        [ "Bow of Faerdhinen" ]
       ],
       "Shield": [
         [ "Twisted buckler" ],
         [ "Dragonfire ward", "Odium ward" ],
         [ "Book of law", "Unholy book" ],
         [ "Black d'hide shield" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Dragon arrows", "Any God blessing" ],
         [ "Diamond dragon bolts (e)" ],
         [ "Diamond bolts (e)" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
@@ -194,9 +202,11 @@
         [ "Any Blessed vambraces" ],
         [ "Black d'hide vambraces" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Mixed hide boots" ],
         [ "Any Blessed boots" ],
         [ "Shayzien boots (5)" ],
         [ "Snakeskin boots" ],
@@ -204,15 +214,17 @@
         [ "N/A" ]
       ],
       "Ring": [
-        [ "Ring of suffering (i)" ],
         [ "Ring of shadows" ],
         [ "Ring of wealth (i)" ],
+        [ "Explorer's ring 4", "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Special Attack": [
         [ "Zaryte crossbow" ],
         [ "Webweaver bow" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]

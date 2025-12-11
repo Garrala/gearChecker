@@ -230,5 +230,9 @@
   "Ancient coif": {
     "image": "/assets/gear-icons/blessed-coif.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ancient_coif"
+  },
+  "Hueycoatl hide coif": {
+    "image": "/assets/gear-icons/Hueycoatl_hide_coif.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Hueycoatl_hide_coif"
   }
 }

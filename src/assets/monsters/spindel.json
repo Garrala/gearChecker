@@ -111,7 +111,7 @@
         [ "N/A" ]
       ],
       "Boots": [
-        [ "Dragon boots" ],
+        [ "Dragon boots", "Aranea boots" ],
         [ "Mixed hide boots" ],
         [ "Rune boots" ],
         [ "Climbing boots" ],
@@ -183,10 +183,10 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Dragon arrows", "Any God blessing" ],
         [ "Diamond dragon bolts (e)" ],
         [ "Diamond bolts (e)" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
@@ -197,16 +197,16 @@
         [ "N/A" ]
       ],
       "Boots": [
-        [ "Any Blessed boots" ],
+        [ "Any Blessed boots", "Aranea boots" ],
         [ "Mixed hide boots" ],
         [ "Shayzien boots (5)" ],
         [ "Snakeskin boots" ],
         [ "N/A" ]
       ],
       "Ring": [
-        [ "Ring of suffering (i)" ],
         [ "Ring of shadows" ],
         [ "Ring of wealth (i)" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],

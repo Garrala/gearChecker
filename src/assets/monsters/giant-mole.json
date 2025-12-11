@@ -39,7 +39,7 @@
         "thralls": true
       },
       "weaknesses": {
-        "water": "50%"
+        "earth": "50%"
       }
     }
   ],
@@ -102,11 +102,11 @@
         [ "Black d'hide vambraces" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Pegasian boots" ],
         [ "Ranger boots", "Devout boots" ],
         [ "Any Blessed boots" ],
-        [ "Aranea boots" ],
-        [ "Mixed hide boots" ]
+        [ "Aranea boots" ]
       ],
       "Ring": [
         [ "Venator ring" ],
@@ -171,10 +171,10 @@
         [ "Harmonised nightmare staff" ],
         [ "Kodai wand", "Mystic smoke staff", "Twinflame staff" ],
         [ "Sanguinesti staff" ],
-        [ "Ahrim's staff", "Mystic mist staff" ]
+        [ "Ahrim's staff", "Mystic dust staff" ]
       ],
       "Shield": [
-        [ "Tome of water", "Elidinis' ward (f)" ],
+        [ "Tome of earth", "Elidinis' ward (f)" ],
         [ "Elidinis' ward", "Arcane spirit shield" ],
         [ "Malediction ward", "Ancient wyvern shield", "Mage's book" ],
         [ "Book of darkness" ],
@@ -182,23 +182,23 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
         [ "Barrows gloves" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Eternal boots" ],
         [ "Infinity boots", "Aranea boots" ],
         [ "Devout boots" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ring": [
@@ -219,10 +219,10 @@
     "Melee": {
       "Helmet": [
         [ "Slayer helmet (i)", "Torva full helm" ],
-        [ "Neitiznot faceguard" ],
+        [ "Neitiznot faceguard", "Serpentine helm" ],
         [ "Void melee helm" ],
-        [ "Serpentine helm" ],
-        [ "Helm of neitiznot" ]
+        [ "Helm of neitiznot" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
@@ -243,13 +243,13 @@
         [ "Bandos chestplate" ],
         [ "Elite void top" ],
         [ "Fighter torso" ],
-        [ "Proselyte hauberk", "Obsidian platebody" ]
+        [ "Proselyte hauberk", "Mixed hide top" ]
       ],
       "Legs": [
         [ "Torva platelegs" ],
         [ "Bandos tassets" ],
         [ "Elite void robe" ],
-        [ "Proselyte cuisse", "Obsidian platelegs" ],
+        [ "Proselyte cuisse", "Mixed hide legs" ],
         [ "N/A" ]
       ],
       "Weapon": [
@@ -268,7 +268,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -281,10 +281,10 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots" ],
         [ "Spiked manacles" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ring": [
@@ -298,8 +298,8 @@
         [ "Voidwaker" ],
         [ "Dragon claws" ],
         [ "Burning claws" ],
-        [ "Osmumten's fang" ],
-        [ "Dragon dagger" ]
+        [ "Arkan blade" ],
+        [ "Osmumten's fang" ]
       ]
     },
     "Melee (Dharok's)": {
@@ -321,8 +321,8 @@
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Mythical cape" ],
-        [ "Soul cape", "Ardougne cloak 4", "Ardougne cloak 3" ],
-        [ "Any Skillcape (t)", "Ardougne cloak 2" ]
+        [ "Soul cape", "Ardougne cloak 4" ],
+        [ "Any Skillcape (t)", "Ardougne cloak 2", "Any God vestment cloaks" ]
       ],
       "Body": [
         [ "Dharok's platebody" ],
@@ -360,10 +360,10 @@
         [ "Combat bracelet" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots" ],
         [ "Climbing boots" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ring": [
@@ -390,7 +390,7 @@
     },
     "Melee (Budget)": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Black mask (i)" ],
+        [ "Slayer helmet (i)" ],
         [ "Helm of neitiznot" ],
         [ "N/A" ],
         [ "N/A" ],

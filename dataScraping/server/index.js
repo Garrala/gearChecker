@@ -9,6 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
 // -----------------------------
 // DIRECTORY PATHS
 // -----------------------------
@@ -21,10 +22,29 @@ const METADATA_PATH = path.join(__dirname, "data", "boss_metadata.json");
 const STAT_SCRAPE_DIR = path.join(__dirname, "..", "staging", "boss_stat_scrape");
 const GEAR_SCRAPE_DIR = path.join(__dirname, "..", "staging", "boss_gear_scrape");
 
+// -----------------------------
+// RELEASE PIPELINE PATHS
+// -----------------------------
+const MERGED_DIR = path.join(__dirname, "..", "staging", "merged_boss_data");
+const LIVE_MONSTER_DIR = path.resolve(
+  __dirname,
+  "..", "..", "src", "assets", "monsters"
+).replace(/\//g, "\\");
+
 
 // Ensure metadata folder exists
 const metadataDir = path.dirname(METADATA_PATH);
 if (!fs.existsSync(metadataDir)) fs.mkdirSync(metadataDir, { recursive: true });
+
+// Ensure folders exist
+if (!fs.existsSync(MERGED_DIR)) fs.mkdirSync(MERGED_DIR, { recursive: true });
+if (!fs.existsSync(LIVE_MONSTER_DIR)) fs.mkdirSync(LIVE_MONSTER_DIR, { recursive: true });
+
+// -----------------------------
+// DEBUG LOGS FOR PATH VALIDATION
+// -----------------------------
+console.log("LIVE_MONSTER_DIR =", LIVE_MONSTER_DIR);
+console.log("Exists?", fs.existsSync(LIVE_MONSTER_DIR));
 
 
 // -----------------------------
@@ -356,10 +376,188 @@ app.post("/api/gear/manual-fixes", (req, res) => {
 });
 
 
+function diffPreview(newDir, oldDir) {
+  const summary = {
+    added: [],
+    removed: [],
+    changed: []
+  };
+
+  const newFiles = fs.existsSync(newDir)
+    ? fs.readdirSync(newDir).filter(f => f.endsWith(".json"))
+    : [];
+
+  const oldFiles = fs.existsSync(oldDir)
+    ? fs.readdirSync(oldDir).filter(f => f.endsWith(".json"))
+    : [];
+
+  const oldSet = new Set(oldFiles);
+
+  // Added or changed
+  for (const file of newFiles) {
+    if (!oldSet.has(file)) {
+      summary.added.push(file);
+      continue;
+    }
+
+    const newData = fs.readFileSync(path.join(newDir, file), "utf8");
+    const oldData = fs.readFileSync(path.join(oldDir, file), "utf8");
+
+    if (newData !== oldData) {
+      summary.changed.push(file);
+    }
+  }
+
+  // Removed files
+  for (const file of oldFiles) {
+    if (!newFiles.includes(file)) {
+      summary.removed.push(file);
+    }
+  }
+
+  return summary;
+}
+
+// -----------------------------
+// MERGE STEP - run mergeData.js
+// -----------------------------
+app.post("/api/pipeline/merge", async (req, res) => {
+  try {
+    console.log("⚡ Running mergeData.js...");
+
+    const result = await runScript("mergeData.js");
+
+    res.json({
+      success: true,
+      output: result
+    });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.toString() });
+  }
+});
+
+
+// -----------------------------
+// DIFF SUMMARY (added/removed/changed)
+// -----------------------------
+app.get("/api/pipeline/diff", (req, res) => {
+  try {
+    const summary = diffPreview(MERGED_DIR, LIVE_MONSTER_DIR);
+    res.json(summary);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+
+// -----------------------------
+// INDIVIDUAL FILE DIFF CONTENT
+// -----------------------------
+app.get("/api/pipeline/diff/:file", (req, res) => {
+  const file = req.params.file;
+
+  const staged = path.join(MERGED_DIR, file);
+  const live = path.join(LIVE_MONSTER_DIR, file);
+
+  const result = { file };
+
+  try {
+    result.new = fs.existsSync(staged)
+      ? JSON.parse(fs.readFileSync(staged, "utf8"))
+      : null;
+
+    result.old = fs.existsSync(live)
+      ? JSON.parse(fs.readFileSync(live, "utf8"))
+      : null;
+
+    res.json(result);
+
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+
+// -----------------------------
+// APPROVE SINGLE FILE
+// Copies from staging → live assets
+// -----------------------------
+app.post("/api/pipeline/approve/:file", (req, res) => {
+  const file = req.params.file;
+
+  const stagedPath = path.join(MERGED_DIR, file);
+  const livePath = path.join(LIVE_MONSTER_DIR, file);
+
+  try {
+    if (!fs.existsSync(stagedPath)) {
+      return res.status(404).json({ error: "Not found in staging" });
+    }
+    console.log("Approving:", file);
+    console.log("Copy:", stagedPath, "→", livePath);
+
+    fs.copyFileSync(stagedPath, livePath);
+
+    res.json({
+      success: true,
+      message: `Approved ${file}`
+    });
+
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+function cleanStaging() {
+  const baseDir = path.join(__dirname, "..", "staging");
+
+  const foldersToWipe = [
+    "boss_html_dump",
+    "boss_stat_scrape",
+    "boss_gear_scrape",
+    "boss_gear_final",
+    "boss_gear_combined",
+    "strategy_html_dump",
+    "merged_boss_data"
+  ];
+
+  const results = [];
+
+  foldersToWipe.forEach(folder => {
+    const fullPath = path.join(baseDir, folder);
+
+    if (fs.existsSync(fullPath)) {
+      fs.rmSync(fullPath, { recursive: true, force: true });
+      results.push({ folder, deleted: true });
+    } else {
+      results.push({ folder, deleted: false, message: "Not found" });
+    }
+  });
+
+  return results;
+}
+
+app.post("/api/pipeline/cleanup", (req, res) => {
+  try {
+    console.log("⚙️ Running staging cleanup...");
+
+    const result = cleanStaging();
+
+    res.json({
+      success: true,
+      cleaned: result
+    });
+
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      error: err.toString()
+    });
+  }
+});
+
 // -----------------------------
 // START SERVER
 // -----------------------------
 const PORT = 3001;
 app.listen(PORT, () =>
-  console.log(`📡 Datascraping server running at http://localhost:${PORT}`)
+  console.log(`Datascraping server running at http://localhost:${PORT}`)
 );

@@ -45,57 +45,69 @@
   "gear_setups": {
     "Magic": {
       "Helmet": [
-        [ "Ancestral hat" ],
-        [ "Virtus mask" ]
+        [ "Ancestral hat", "Slayer helmet (i)" ],
+        [ "Virtus mask" ],
+        [ "N/A" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
         [ "Imbued saradomin cape" ],
-        [ "Max cape" ]
+        [ "Max cape" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
-        [ "Virtus robe top" ]
+        [ "Virtus robe top" ],
+        [ "N/A" ]
       ],
       "Legs": [
         [ "Ancestral robe bottom" ],
-        [ "Virtus robe bottom" ]
+        [ "Virtus robe bottom" ],
+        [ "N/A" ]
       ],
       "Weapon": [
         [ "Tumeken's shadow" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Shield": [
         [ "Elidinis' ward (f)" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
         [ "Unholy blessing" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Eternal boots" ],
         [ "Infinity boots", "Aranea boots" ]
       ],
       "Ring": [
         [ "Magus ring" ],
-        [ "Lightbearer" ]
+        [ "Lightbearer" ],
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Eldritch nightmare staff" ],
-        [ "Accursed sceptre" ]
+        [ "Accursed sceptre" ],
+        [ "Eye of ayak" ]
       ]
     },
     "Ranged": {
       "Helmet": [
-        [ "Masori mask (f)" ],
+        [ "Masori mask (f)", "Slayer helmet (i)" ],
         [ "Crystal helm" ],
         [ "Justiciar faceguard" ],
         [ "Verac's helm", "Saradomin coif" ],
@@ -104,16 +116,16 @@
       "Amulet": [
         [ "Necklace of anguish" ],
         [ "Amulet of fury" ],
-        [ "Dragonbone necklace", "Bonecrusher necklace" ],
-        [ "Amulet of glory" ],
-        [ "Holy symbol", "Unholy symbol" ]
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Dizana's quiver" ],
         [ "Ava's assembler" ],
         [ "Max cape", "Ranging cape (t)" ],
-        [ "Ava's accumulator" ],
-        [ "Ava's attractor" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
@@ -144,8 +156,8 @@
         [ "N/A" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Moonlight antler bolts", "Diamond dragon bolts (e)", "Any God blessing" ],
-        [ "Amethyst arrows", "Sunlight antler bolts", "Diamond bolts (e)" ],
+        [ "Dragon arrows", "Diamond dragon bolts (e)", "Moonlight antler bolts", "Any God blessing" ],
+        [ "Amethyst arrows", "Diamond bolts (e)", "Sunlight antler bolts" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -158,24 +170,24 @@
         [ "N/A" ]
       ],
       "Boots": [
-        [ "Pegasian boots" ],
-        [ "Saradomin d'hide boots", "Zamorak d'hide boots" ],
-        [ "Aranea boots" ],
-        [ "Ranger boots" ],
-        [ "Boots of brimstone" ]
+        [ "Avernic treads (max)" ],
+        [ "Pegasian boots", "Saradomin d'hide boots", "Zamorak d'hide boots" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ring": [
         [ "Ring of suffering (i)" ],
-        [ "Ring of endurance" ],
         [ "Venator ring" ],
         [ "Ring of the gods (i)" ],
-        [ "Explorer's ring 4" ]
+        [ "Explorer's ring 4" ],
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Toxic blowpipe" ],
         [ "Zaryte crossbow" ],
         [ "Armadyl crossbow", "Tonalztics of ralos" ],
-        [ "Dragon crossbow", "Dragon thrownaxe" ],
+        [ "N/A" ],
         [ "N/A" ]
       ]
     }

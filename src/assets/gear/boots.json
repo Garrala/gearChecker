@@ -156,7 +156,11 @@
     "wiki": "https://oldschool.runescape.wiki/w/Adamant_boots"
   },
   "Avernic treads (max)": {
-    "image": "/assets/gear-icons/Adamant_boots.png",
+    "image": "/assets/gear-icons/Avernic_treads_(max).png",
     "wiki": "https://oldschool.runescape.wiki/w/Avernic_treads_(max)"
+  },
+  "Avernic treads (pr)": {
+    "image": "/assets/gear-icons/Avernic_treads_(max).png",
+    "wiki": "https://oldschool.runescape.wiki/w/Avernic_treads_(pr)"
   }
 }

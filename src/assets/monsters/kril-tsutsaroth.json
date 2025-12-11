@@ -72,14 +72,14 @@
         [ "Masori body (f)" ],
         [ "Armadyl chestplate" ],
         [ "Crystal body" ],
-        [ "Karil's leathertop" ],
+        [ "Karil's leathertop", "Hueycoatl hide body" ],
         [ "Elite void top" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Armadyl chainskirt" ],
         [ "Crystal legs" ],
-        [ "Karil's leatherskirt" ],
+        [ "Karil's leatherskirt", "Hueycoatl hide chaps" ],
         [ "Elite void robe" ]
       ],
       "Weapon": [
@@ -104,11 +104,11 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Pegasian boots" ],
         [ "Echo boots" ],
         [ "Ranger boots" ],
-        [ "Any Blessed boots" ],
-        [ "N/A" ]
+        [ "Any Blessed boots" ]
       ],
       "Ring": [
         [ "Lightbearer" ],
@@ -156,17 +156,17 @@
       ],
       "Body": [
         [ "Masori body (f)" ],
-        [ "Karil's leathertop" ],
+        [ "Blood moon chestplate", "Karil's leathertop" ],
         [ "Crystal body", "Any Blessed body" ],
         [ "Elite void top" ],
-        [ "Black d'hide body" ]
+        [ "Black d'hide body", "Mixed hide top" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
-        [ "Crystal legs" ],
+        [ "Crystal legs", "Blood moon tassets" ],
         [ "Karil's leatherskirt", "Elite void robe" ],
         [ "Any Blessed chaps" ],
-        [ "Black d'hide chaps" ]
+        [ "Black d'hide chaps", "Mixed hide legs" ]
       ],
       "Weapon": [
         [ "Emberlight" ],
@@ -197,10 +197,10 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
-        [ "Echo boots" ],
-        [ "Guardian boots", "Dragon boots" ],
-        [ "N/A" ],
+        [ "Echo boots", "Guardian boots" ],
+        [ "Dragon boots" ],
         [ "N/A" ]
       ],
       "Ring": [
@@ -292,11 +292,11 @@
         [ "N/A" ]
       ],
       "Boots": [
-        [ "Echo boots" ],
-        [ "Guardian boots" ],
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
+        [ "Echo boots", "Guardian boots" ],
         [ "Dragon boots" ],
-        [ "Rune boots" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ring": [
@@ -381,11 +381,11 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots" ],
         [ "Guardian boots" ],
-        [ "Rune boots" ],
-        [ "N/A" ]
+        [ "Rune boots" ]
       ],
       "Ring": [
         [ "Bellator ring" ],
@@ -452,16 +452,16 @@
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
         [ "Barrows gloves" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Eternal boots" ],
         [ "Infinity boots", "Aranea boots" ],
-        [ "Bloodbark boots" ],
-        [ "N/A" ]
+        [ "Bloodbark boots" ]
       ],
       "Ring": [
         [ "Magus ring" ],

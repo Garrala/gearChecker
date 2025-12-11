@@ -47,7 +47,7 @@
   "gear_setups": {
     "Melee": {
       "Helmet": [
-        [ "Slayer helmet", "Helm of neitiznot" ],
+        [ "Slayer helmet (i)", "Helm of neitiznot" ],
         [ "Berserker helm" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -86,18 +86,18 @@
         [ "Ghrazi rapier" ],
         [ "Noxious halberd" ],
         [ "Zamorakian hasta" ],
-        [ "Abyssal dagger" ]
+        [ "N/A" ]
       ],
       "Shield": [
-        [ "Dragonfire shield" ],
+        [ "Avernic defender" ],
+        [ "Dragon defender" ],
+        [ "Dragonfire shield", "Antler guard" ],
         [ "Anti-dragon shield" ],
-        [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -118,22 +118,22 @@
       ],
       "Ring": [
         [ "Ultor ring" ],
-        [ "Treasonous ring (i)" ],
-        [ "Brimstone ring" ],
+        [ "Ring of shadows" ],
         [ "Berserker ring (i)" ],
+        [ "Brimstone ring" ],
         [ "N/A" ]
       ],
       "Special Attack": [
+        [ "Voidwaker", "Burning claws" ],
+        [ "Arkan blade" ],
         [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Abyssal dagger" ],
         [ "N/A" ]
       ]
     },
     "Melee Suicide method": {
       "Helmet": [
-        [ "Slayer helmet", "Torva full helm" ],
+        [ "Slayer helmet (i)", "Torva full helm" ],
         [ "Serpentine helm", "Neitiznot faceguard" ],
         [ "Helm of neitiznot" ],
         [ "Berserker helm", "Obsidian helmet" ],
@@ -172,7 +172,7 @@
         [ "Osmumten's fang" ],
         [ "Ghrazi rapier" ],
         [ "Zamorakian hasta" ],
-        [ "Abyssal dagger" ]
+        [ "N/A" ]
       ],
       "Shield": [
         [ "Avernic defender", "Dragonfire shield" ],
@@ -183,7 +183,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -196,24 +196,24 @@
         [ "Regen bracelet" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots", "Spiked manacles" ],
         [ "Guardian boots" ],
-        [ "Granite boots" ],
-        [ "Rune boots", "Climbing boots", "Mixed hide boots" ]
+        [ "Granite boots" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
-        [ "Treasonous ring (i)" ],
-        [ "Brimstone ring" ],
         [ "Berserker ring (i)" ],
+        [ "Brimstone ring", "Treasonous ring (i)" ],
+        [ "Ring of shadows" ],
         [ "N/A" ]
       ],
       "Special Attack": [
+        [ "Voidwaker", "Burning claws" ],
+        [ "Arkan blade" ],
         [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
-        [ "N/A" ],
+        [ "Abyssal dagger" ],
         [ "N/A" ]
       ]
     },
@@ -442,11 +442,11 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Pegasian boots" ],
         [ "Any Blessed boots" ],
         [ "Boots of brimstone" ],
-        [ "Mixed hide boots" ],
-        [ "N/A" ]
+        [ "Mixed hide boots" ]
       ],
       "Ring": [
         [ "Venator ring" ],

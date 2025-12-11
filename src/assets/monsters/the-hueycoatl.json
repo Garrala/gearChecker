@@ -182,11 +182,11 @@
         [ "Combat bracelet" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots" ],
         [ "Aranea boots" ],
-        [ "Rune boots" ],
-        [ "Mixed hide boots" ]
+        [ "Rune boots" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
@@ -199,8 +199,8 @@
         [ "Dragon claws" ],
         [ "Burning claws" ],
         [ "Ursine chainmace" ],
-        [ "Dragon dagger" ],
-        [ "N/A" ]
+        [ "Arkan blade", "Dragon mace" ],
+        [ "Dragon dagger" ]
       ]
     }
   }

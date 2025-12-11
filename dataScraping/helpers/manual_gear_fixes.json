@@ -450,5 +450,25 @@
   "Avernic treads(max)": {
     "correct_slot": "Boots",
     "alias": "Avernic treads (max)"
+  },
+  "Ring of shadows(uncharged)": {
+    "correct_slot": "Ring",
+    "alias": "Ring of shadows"
+  },
+  "Accursed sceptre(a)": {
+    "correct_slot": "Special Attack",
+    "alias": "Accursed sceptre (a)"
+  },
+  "Blessed dizana's quiver(l)": {
+    "correct_slot": "Cape",
+    "alias": "Blessed dizana's quiver"
+  },
+  "Avernic treads(pr)": {
+    "correct_slot": "Boots",
+    "alias": "Avernic treads (pr)"
+  },
+  "climbing boots": {
+    "correct_slot": "Boots",
+    "alias": "Climbing boots"
   }
 }

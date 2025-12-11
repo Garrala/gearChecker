@@ -3,7 +3,7 @@ const path = require('path');
 const cheerio = require('cheerio');
 const { downloadImage, normalizeImageFilename } = require('./helpers/download_images');
 
-const INPUT_DIR = path.join(__dirname, 'staging', 'boss_html_dumps');
+const INPUT_DIR = path.join(__dirname, 'staging', 'boss_html_dump');
 const IMAGE_DIR = path.join(__dirname, '..', 'src', 'assets', 'monster-icons');
 
 if (!fs.existsSync(IMAGE_DIR)) fs.mkdirSync(IMAGE_DIR, { recursive: true });

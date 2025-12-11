@@ -111,11 +111,11 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Echo boots" ],
         [ "Guardian boots" ],
-        [ "Dragon boots" ],
-        [ "Rune boots" ]
+        [ "Dragon boots" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
@@ -126,10 +126,10 @@
       ],
       "Special Attack": [
         [ "Dragon claws", "Elder maul" ],
-        [ "Voidwaker" ],
-        [ "Burning claws" ],
+        [ "Voidwaker", "Burning claws" ],
         [ "Dragon warhammer", "Bandos godsword" ],
-        [ "Emberlight", "Saradomin godsword", "Dragon dagger" ]
+        [ "Emberlight", "Saradomin godsword", "Dragon dagger" ],
+        [ "Arclight", "Dragon mace" ]
       ]
     },
     "Ranged": {
@@ -190,11 +190,11 @@
         [ "Combat bracelet" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
         [ "Any Blessed boots" ],
-        [ "Shayzien boots (5)" ],
-        [ "Snakeskin boots" ]
+        [ "Shayzien boots (5)" ]
       ],
       "Ring": [
         [ "Ring of suffering (i)" ],

@@ -187,7 +187,7 @@ fs.readdirSync(STAT_DIR).forEach(file => {
   const kebabName = toKebabCase(baseName);
   const statPath = path.join(STAT_DIR, file);
   const gearPath = path.join(GEAR_DIR, kebabName + '.json');
-  const outputPath = path.join(OUTPUT_DIR, baseName + '.json');
+  const outputPath = path.join(OUTPUT_DIR, kebabName + '.json');
 
   const statData = loadJsonSafe(statPath);
   const gearData = loadJsonSafe(gearPath);

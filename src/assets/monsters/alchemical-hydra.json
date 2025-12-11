@@ -201,13 +201,13 @@
         [ "Twisted buckler" ],
         [ "Dragonfire ward" ],
         [ "Odium ward" ],
-        [ "Book of law" ],
-        [ "N/A" ]
+        [ "Antler guard" ],
+        [ "Book of law" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Atlatl darts" ],
         [ "Ruby bolts (e)" ],
-        [ "Rada's blessing 3", "Any God blessing" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -219,11 +219,11 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Pegasian boots" ],
         [ "Devout boots" ],
         [ "Any Blessed boots", "Aranea boots" ],
-        [ "Boots of brimstone" ],
-        [ "Boots of stone" ]
+        [ "Boots of brimstone" ]
       ],
       "Ring": [
         [ "Lightbearer" ],
@@ -263,14 +263,14 @@
         [ "N/A" ]
       ],
       "Body": [
-        [ "Torva platebody" ],
+        [ "Torva platebody", "Oathplate chest" ],
         [ "Bandos chestplate" ],
         [ "Inquisitor's hauberk" ],
         [ "Mixed hide top" ],
         [ "Obsidian platebody" ]
       ],
       "Legs": [
-        [ "Torva platelegs" ],
+        [ "Torva platelegs", "Oathplate legs" ],
         [ "Bandos tassets" ],
         [ "Inquisitor's plateskirt" ],
         [ "Mixed hide legs" ],
@@ -286,9 +286,9 @@
       "Shield": [
         [ "Avernic defender" ],
         [ "Dragon defender" ],
+        [ "Dragonfire shield" ],
         [ "Rune defender" ],
-        [ "Adamant defender" ],
-        [ "Dragonfire shield" ]
+        [ "N/A" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
@@ -300,16 +300,16 @@
       "Gloves": [
         [ "Ferocious gloves" ],
         [ "Barrows gloves" ],
-        [ "Dragon gloves" ],
         [ "Regen bracelet" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Aranea boots", "Dragon boots", "Echo boots" ],
         [ "Granite boots" ],
-        [ "Devout boots" ],
-        [ "Boots of brimstone" ]
+        [ "Devout boots" ]
       ],
       "Ring": [
         [ "Lightbearer", "Ultor ring" ],

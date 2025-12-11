@@ -79,10 +79,10 @@
       ],
       "Weapon": [
         [ "Tumeken's shadow" ],
+        [ "Eye of ayak" ],
         [ "Sanguinesti staff" ],
         [ "Trident of the swamp" ],
-        [ "Trident of the seas" ],
-        [ "N/A" ]
+        [ "Trident of the seas" ]
       ],
       "Shield": [
         [ "Elidinis' ward (f)" ],
@@ -93,35 +93,35 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
         [ "Void knight gloves" ],
         [ "Barrows gloves" ],
-        [ "Dragon gloves" ],
-        [ "Rune gloves" ]
+        [ "Dragon gloves" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Eternal boots" ],
         [ "Infinity boots", "Aranea boots" ],
         [ "Bloodbark boots", "Wizard boots" ],
-        [ "Mystic boots" ],
-        [ "Splitbark boots" ]
+        [ "Mystic boots" ]
       ],
       "Ring": [
         [ "Magus ring" ],
         [ "Seers ring (i)" ],
         [ "Brimstone ring" ],
         [ "Ring of suffering (i)" ],
-        [ "Lunar ring", "Ring of the gods (i)" ]
+        [ "Lunar ring", "Beacon ring", "Ring of the gods (i)" ]
       ],
       "Special Attack": [
         [ "Voidwaker" ],
-        [ "Dragon claws" ],
+        [ "Dragon claws", "Burning claws" ],
         [ "Dragon dagger" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -179,7 +179,7 @@
       ],
       "Ammo": [
         [ "Dragon arrows", "Amethyst arrows", "Rune arrows" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Rada's blessing 4", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2" ],
         [ "Diamond dragon bolts (e)", "Diamond bolts (e)" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -192,11 +192,11 @@
         [ "Any Blessed vambraces" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Pegasian boots" ],
         [ "Ranger boots" ],
         [ "Any Blessed boots" ],
-        [ "Aranea boots" ],
-        [ "Mixed hide boots" ]
+        [ "Aranea boots" ]
       ],
       "Ring": [
         [ "Venator ring" ],
@@ -207,7 +207,7 @@
       ],
       "Special Attack": [
         [ "Voidwaker" ],
-        [ "Dragon claws" ],
+        [ "Dragon claws", "Burning claws" ],
         [ "Dragon dagger" ],
         [ "N/A" ],
         [ "N/A" ]

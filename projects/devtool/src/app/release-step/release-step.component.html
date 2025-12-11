@@ -1,0 +1,63 @@
+<div class="release-container">
+  <h3>Compare & Release</h3>
+  <p>Review differences and approve files individually.</p>
+
+  <!-- SUMMARY LISTS -->
+  <div class="diff-summary" *ngIf="diffSummary">
+
+    <div class="diff-block" *ngIf="diffSummary.added.length">
+      <h4>Added</h4>
+      <ul>
+        <li *ngFor="let f of diffSummary.added"
+            (click)="selectFile(f)"
+            [class.active]="f === selectedFile">
+          {{ f }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="diff-block" *ngIf="diffSummary.changed.length">
+      <h4>Changed</h4>
+      <ul>
+        <li *ngFor="let f of diffSummary.changed"
+            (click)="selectFile(f)"
+            [class.active]="f === selectedFile">
+          {{ f }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="diff-block" *ngIf="diffSummary.removed.length">
+      <h4>Removed</h4>
+      <ul>
+        <li *ngFor="let f of diffSummary.removed"
+            (click)="selectFile(f)"
+            [class.active]="f === selectedFile">
+          {{ f }}
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- DETAILS PANEL -->
+  <div class="file-details" *ngIf="selectedFile">
+
+    <h4>Review: {{ selectedFile }}</h4>
+
+    <div *ngIf="loadingDetails">Loading...</div>
+
+    <!-- SIDE-BY-SIDE DIFF OUTPUT -->
+    <div *ngIf="!loadingDetails">
+      <h5>Differences</h5>
+
+      <!-- diffHtml already includes the two columns -->
+      <div [innerHTML]="diffHtml" class="side-by-side-wrapper"></div>
+    </div>
+
+    <button (click)="approve()" [disabled]="approving">
+      {{ approving ? "Approving..." : "Approve File" }}
+    </button>
+
+  </div>
+</div>

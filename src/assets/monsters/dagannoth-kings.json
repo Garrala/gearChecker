@@ -122,7 +122,7 @@
   "gear_setups": {
     "Tribrid (Solo)": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Black mask (i)" ],
+        [ "Slayer helmet (i)" ],
         [ "Torva full helm", "Serpentine helm" ],
         [ "Neitiznot faceguard" ],
         [ "Crystal helm" ],
@@ -130,10 +130,10 @@
       ],
       "Amulet": [
         [ "Amulet of rancour", "Occult necklace", "Necklace of anguish" ],
-        [ "Amulet of torture" ],
         [ "Amulet of blood fury", "Amulet of fury" ],
         [ "Bonecrusher necklace", "Dragonbone necklace" ],
-        [ "Amulet of glory" ]
+        [ "Amulet of glory" ],
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Infernal cape", "Blessed dizana's quiver" ],
@@ -144,21 +144,21 @@
       ],
       "Body": [
         [ "Torva platebody", "Masori body (f)" ],
-        [ "Bandos chestplate", "Armadyl chestplate" ],
+        [ "Bandos chestplate", "Masori body" ],
         [ "Crystal body", "Eclipse moon chestplate" ],
         [ "Any Blessed body" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Torva platelegs", "Masori chaps (f)" ],
-        [ "Bandos tassets", "Armadyl chainskirt" ],
+        [ "Bandos tassets", "Masori chaps" ],
         [ "Crystal legs", "Eclipse moon tassets" ],
         [ "Verac's plateskirt", "Any Blessed chaps" ],
         [ "N/A" ]
       ],
       "Weapon": [
-        [ "Scythe of Vitur", "Tumeken's shadow", "Twisted bow" ],
-        [ "Sanguinesti staff", "Toxic blowpipe", "Inquisitor's mace", "Ghrazi rapier", "Noxious halberd" ],
+        [ "Scythe of Vitur", "Eye of ayak", "Twisted bow" ],
+        [ "Toxic blowpipe" ],
         [ "Osmumten's fang", "Abyssal tentacle", "Trident of the swamp", "Bow of Faerdhinen" ],
         [ "Abyssal whip", "Trident of the seas", "Eclipse atlatl", "Hunters' sunlight crossbow" ],
         [ "Zombie axe", "Warped sceptre", "Iban's staff", "Crystal bow", "Magic shortbow (i)" ]
@@ -171,31 +171,31 @@
         [ "Crystal shield", "Toktz-ket-xil" ]
       ],
       "Ammo": [
-        [ "Dragon arrows", "Moonlight antler bolts", "Amethyst arrows" ],
+        [ "Dragon arrows", "Amethyst arrows", "Moonlight antler bolts" ],
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
-        [ "Ferocious gloves", "Tormented bracelet", "Zaryte vambraces" ],
-        [ "Barrows gloves" ],
+        [ "Ferocious gloves", "Confliction gauntlets", "Zaryte vambraces" ],
+        [ "Tormented bracelet", "Barrows gloves" ],
         [ "Regen bracelet" ],
         [ "Combat bracelet" ],
         [ "N/A" ]
       ],
       "Boots": [
-        [ "Primordial boots", "Pegasian boots" ],
+        [ "Avernic treads (max)" ],
+        [ "Primordial boots" ],
         [ "Aranea boots", "Echo boots", "Guardian boots" ],
         [ "Dragon boots", "Granite boots" ],
-        [ "Devout boots" ],
         [ "Any Blessed boots", "Boots of brimstone", "Bandos boots" ]
       ],
       "Ring": [
         [ "Lightbearer" ],
         [ "Ring of the gods (i)" ],
         [ "Brimstone ring" ],
-        [ "Ring of suffering (i)" ],
+        [ "Ring of suffering (i)", "Granite ring (i)" ],
         [ "Berserker ring (i)" ]
       ],
       "Special Attack": [
@@ -208,7 +208,7 @@
     },
     "Magic (Rex only)": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Black mask (i)" ],
+        [ "Slayer helmet (i)" ],
         [ "Justiciar faceguard" ],
         [ "Serpentine helm" ],
         [ "Any Barrows tank helm" ],
@@ -243,7 +243,7 @@
         [ "Rune platelegs" ]
       ],
       "Weapon": [
-        [ "Sanguinesti staff" ],
+        [ "Eye of ayak", "Sanguinesti staff" ],
         [ "Trident of the swamp", "Trident of the seas" ],
         [ "Toxic staff of the dead" ],
         [ "Void knight mace", "Warped sceptre" ],
@@ -258,27 +258,27 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
         [ "Regen bracelet" ],
         [ "Barrows gloves" ],
-        [ "Combat bracelet" ],
-        [ "N/A" ]
+        [ "Combat bracelet" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Echo boots", "Guardian boots" ],
         [ "Eternal boots", "Bandos boots" ],
         [ "Boots of brimstone" ],
-        [ "Bloodbark boots" ],
-        [ "Wizard boots", "Mystic boots" ]
+        [ "Bloodbark boots" ]
       ],
       "Ring": [
-        [ "Ring of suffering (i)" ],
+        [ "Ring of suffering (i)", "Granite ring (i)" ],
         [ "Ring of the gods (i)" ],
         [ "Brimstone ring" ],
         [ "Ring of shadows" ],
@@ -294,17 +294,17 @@
     },
     "Ranged (Prime only)": {
       "Helmet": [
-        [ "Slayer helmet (i)", "Black mask (i)" ],
+        [ "Slayer helmet (i)" ],
         [ "Masori mask (f)", "Justiciar faceguard" ],
-        [ "Crystal helm" ],
+        [ "Crystal helm", "Masori mask" ],
         [ "Any Barrows tank helm" ],
         [ "N/A" ]
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
         [ "Amulet of fury" ],
+        [ "Bonecrusher necklace", "Dragonbone necklace" ],
         [ "Amulet of glory" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
@@ -317,19 +317,19 @@
       "Body": [
         [ "Masori body (f)", "Justiciar chestguard" ],
         [ "Crystal body", "Any Barrows tank body" ],
-        [ "Armadyl chestplate", "Karil's leathertop" ],
-        [ "Any Blessed body" ],
+        [ "Masori body" ],
+        [ "Any Blessed body", "Karil's leathertop" ],
         [ "Black d'hide body" ]
       ],
       "Legs": [
         [ "Masori chaps (f)", "Justiciar legguards" ],
         [ "Crystal legs", "Any Barrows tank legs" ],
-        [ "Armadyl chainskirt", "Karil's leatherskirt" ],
-        [ "Any Blessed chaps" ],
+        [ "Masori chaps" ],
+        [ "Any Blessed chaps", "Karil's leatherskirt" ],
         [ "Black d'hide chaps" ]
       ],
       "Weapon": [
-        [ "Twisted bow", "Bow of Faerdhinen" ],
+        [ "Twisted bow" ],
         [ "Toxic blowpipe" ],
         [ "Crystal bow" ],
         [ "Hunters' sunlight crossbow" ],
@@ -344,7 +344,7 @@
       ],
       "Ammo": [
         [ "Dragon arrows", "Amethyst arrows" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "Moonlight antler bolts" ],
         [ "Diamond bolts (e)" ],
         [ "Runite bolts" ]
@@ -357,17 +357,17 @@
         [ "Combat bracelet" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Pegasian boots" ],
         [ "Any Blessed boots" ],
         [ "Boots of brimstone" ],
-        [ "Ranger boots" ],
         [ "Bandos boots" ]
       ],
       "Ring": [
         [ "Venator ring" ],
-        [ "Archers ring (i)", "Ring of shadows" ],
-        [ "Brimstone ring" ],
         [ "Ring of the gods (i)" ],
+        [ "Brimstone ring", "Ring of shadows" ],
+        [ "Ring of suffering (i)", "Granite ring (i)" ],
         [ "Explorer's ring 4", "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
       ],
       "Special Attack": [

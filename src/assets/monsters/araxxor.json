@@ -99,32 +99,32 @@
         [ "Amulet of torture" ],
         [ "Amulet of blood fury" ],
         [ "Amulet of fury" ],
-        [ "Amulet of glory" ]
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Mythical cape" ],
-        [ "Ardougne cloak 3", "Ardougne cloak 2", "Ardougne cloak 1" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
         [ "Inquisitor's hauberk" ],
-        [ "Torva platebody", "Oathplate chest" ],
-        [ "Bandos chestplate" ],
+        [ "Torva platebody" ],
+        [ "Bandos chestplate", "Oathplate chest" ],
         [ "Blood moon chestplate", "Fighter torso" ],
         [ "Any Barrows tank body" ]
       ],
       "Legs": [
         [ "Inquisitor's plateskirt" ],
-        [ "Torva platelegs", "Oathplate legs" ],
-        [ "Bandos tassets" ],
+        [ "Torva platelegs" ],
+        [ "Bandos tassets", "Oathplate legs" ],
         [ "Blood moon tassets" ],
         [ "Any Barrows tank legs" ]
       ],
       "Weapon": [
         [ "Scythe of Vitur" ],
-        [ "Soulreaper axe", "Inquisitor's mace" ],
+        [ "Inquisitor's mace", "Soulreaper axe" ],
         [ "Abyssal bludgeon", "Ursine chainmace (u)" ],
         [ "Saradomin's blessed sword", "Zamorakian hasta", "Sarachnis cudgel" ],
         [ "Dual macuahuitl", "Saradomin sword", "Zombie axe" ]
@@ -132,7 +132,7 @@
       "Shield": [
         [ "Avernic defender" ],
         [ "Dragon defender" ],
-        [ "Rune defender", "Toktz-ket-xil" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -146,35 +146,36 @@
       "Gloves": [
         [ "Ferocious gloves" ],
         [ "Barrows gloves" ],
-        [ "Dragon gloves" ],
-        [ "Rune gloves" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots", "Aranea boots" ],
         [ "Echo boots", "Guardian boots" ],
-        [ "Rune boots", "Mixed hide boots" ],
         [ "N/A" ]
       ],
       "Ring": [
         [ "Ultor ring" ],
         [ "Berserker ring (i)" ],
-        [ "Ring of suffering (i)" ],
-        [ "Lightbearer" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Special Attack": [
         [ "Elder maul", "Dragon claws" ],
         [ "Dragon warhammer", "Burning claws" ],
-        [ "Voidwaker" ],
+        [ "Voidwaker", "Arkan blade" ],
         [ "Bandos godsword" ],
-        [ "Saradomin godsword", "Ancient godsword", "Ancient mace" ]
+        [ "Saradomin godsword", "Ancient godsword", "Dinh's bulwark" ]
       ]
     },
     "Ranged": {
       "Helmet": [
         [ "Slayer helmet (i)" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -183,16 +184,19 @@
         [ "Necklace of anguish" ],
         [ "Amulet of fury" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
         [ "Dizana's quiver" ],
         [ "Ava's assembler", "Ava's accumulator" ],
         [ "Max cape", "Ranging cape (t)" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
         [ "Masori body (f)" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -201,10 +205,12 @@
         [ "Masori chaps (f)" ],
         [ "N/A" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
         [ "Twisted bow" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -213,17 +219,20 @@
         [ "Dragon arrows" ],
         [ "Amethyst arrows" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
         [ "Any Blessed vambraces" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
-        [ "Aranea boots" ],
+        [ "Avernic treads (max)" ],
         [ "Pegasian boots" ],
+        [ "Aranea boots" ],
         [ "Ranger boots", "Devout boots" ],
         [ "Any Blessed boots" ]
       ],
@@ -231,15 +240,18 @@
         [ "Lightbearer" ],
         [ "Ring of the gods (i)", "Archers ring (i)" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Special Attack": [
         [ "Elder maul" ],
         [ "Dragon warhammer" ],
         [ "Zaryte crossbow" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Shield": [
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],

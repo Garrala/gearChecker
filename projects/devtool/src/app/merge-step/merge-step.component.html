@@ -1,0 +1,18 @@
+<div class="merge-container">
+  <h3>Merge Data</h3>
+  <p>This runs mergeData.js to produce fully merged boss files.</p>
+
+  <button (click)="runMerge()" [disabled]="isRunning">
+    {{ isRunning ? "Merging..." : "Run Merge" }}
+  </button>
+
+  <div *ngIf="output" class="success-box">
+    <h4>Merge Output</h4>
+    <pre>{{ output }}</pre>
+  </div>
+
+  <div *ngIf="error" class="error-box">
+    <h4>Error</h4>
+    <pre>{{ error }}</pre>
+  </div>
+</div>

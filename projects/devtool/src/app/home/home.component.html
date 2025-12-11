@@ -5,11 +5,9 @@
     <p class="subtitle">Pipeline steps</p>
 
     <ul class="step-list">
-      <li
-        *ngFor="let step of steps"
-        (click)="selectStep(step.id)"
-        [class.active]="step.id === activeStep"
-      >
+      <li *ngFor="let step of steps"
+          (click)="selectStep(step.id)"
+          [class.active]="step.id === activeStep">
         {{ step.label }}
       </li>
     </ul>
@@ -18,7 +16,8 @@
   <!-- MAIN CONTENT -->
   <section class="content">
     <ng-container [ngSwitch]="activeStep">
-      <!-- STEP 1: Boss Metadata -->
+
+      <!-- STEP 1 -->
       <ng-container *ngSwitchCase="'boss-metadata'">
         <h3>Boss metadata</h3>
         <p class="description">
@@ -27,39 +26,64 @@
         <app-boss-metadata></app-boss-metadata>
       </ng-container>
 
-      <!-- STEP 2: Raw HTML viewer (debug) -->
+      <!-- STEP 2 -->
       <ng-container *ngSwitchCase="'raw-html'">
         <h3>Raw HTML scrape (debug)</h3>
         <p class="description">
           Quick check that the staged HTML files are being served correctly.
         </p>
-
         <app-html-downloader></app-html-downloader>
       </ng-container>
 
+      <!-- STEP 3 -->
       <ng-container *ngSwitchCase="'stat-scraper'">
-	    <app-stat-scraper></app-stat-scraper>
-	  </ng-container>
+        <app-stat-scraper></app-stat-scraper>
+      </ng-container>
 
+      <!-- STEP 4 -->
+      <ng-container *ngSwitchCase="'gear-scraper'">
+        <app-gear-scraper></app-gear-scraper>
+      </ng-container>
 
-  	  <ng-container *ngSwitchCase="'gear-scraper'">
-	    <app-gear-scraper></app-gear-scraper>
-	  </ng-container>
+      <!-- STEP 5 -->
+      <ng-container *ngSwitchCase="'gear-audit'">
+        <h3>Gear Audit & Fixes</h3>
+        <p class="description">
+          Compare scraped gear with known valid items, create or update manual fixes,
+          and re-run the gear transformation pipeline.
+        </p>
+        <app-gear-audit></app-gear-audit>
+      </ng-container>
 
+      <!-- STEP 6 -->
+      <ng-container *ngSwitchCase="'merge-step'">
+        <app-merge-step></app-merge-step>
+      </ng-container>
 
-	  <ng-container *ngSwitchCase="'gear-audit'">
-	    <h3>Gear Audit & Fixes</h3>
-	    <p class="description">
-	      Compare scraped gear with known valid items, create or update manual fixes,
-	      and re-run the gear transformation pipeline.
-	    </p>
-	    <app-gear-audit></app-gear-audit>
-	  </ng-container>
+      <!-- STEP 7 -->
+      <ng-container *ngSwitchCase="'release-step'">
+        <app-release-step></app-release-step>
+      </ng-container>
 
-      <!-- DEFAULT (shouldn’t hit often) -->
+      <!-- STEP 8: CLEANUP -->
+      <ng-container *ngSwitchCase="'cleanup'">
+        <h3>Cleanup Staging</h3>
+        <p class="description">
+          Deletes all temporary scrape & merge folders inside the staging directory.
+        </p>
+
+        <button (click)="runCleanup()" [disabled]="cleanupLoading">
+          {{ cleanupLoading ? "Cleaning..." : "Run Cleanup" }}
+        </button>
+
+        <pre *ngIf="cleanupResult">{{ cleanupResult }}</pre>
+      </ng-container>
+
+      <!-- DEFAULT -->
       <ng-container *ngSwitchDefault>
         <p>Select a step from the left.</p>
       </ng-container>
+
     </ng-container>
   </section>
 </div>

@@ -38,7 +38,9 @@
         "cannons": true,
         "thralls": true
       },
-      "weaknesses": "none"
+      "weaknesses": {
+        "fire": "35%"
+      }
     }
   ],
   "gear_setups": {
@@ -80,10 +82,10 @@
       ],
       "Weapon": [
         [ "Accursed sceptre", "Thammaron's sceptre" ],
-        [ "Sanguinesti staff" ],
-        [ "Trident of the swamp" ],
+        [ "Eye of ayak" ],
+        [ "Sanguinesti staff", "Trident of the swamp" ],
         [ "Trident of the seas" ],
-        [ "Iban's staff" ]
+        [ "Warped sceptre" ]
       ],
       "Shield": [
         [ "Elidinis' ward (f)" ],
@@ -100,11 +102,11 @@
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
         [ "Barrows gloves", "Dragon gloves" ],
         [ "Rune gloves", "Adamant gloves" ],
-        [ "Combat bracelet" ],
-        [ "N/A" ]
+        [ "Combat bracelet" ]
       ],
       "Boots": [
         [ "Bloodbark boots", "Mystic boots" ],
@@ -116,7 +118,7 @@
       "Ring": [
         [ "Ring of shadows" ],
         [ "Explorer's ring 4" ],
-        [ "Beacon ring" ],
+        [ "Beacon ring", "Lunar ring" ],
         [ "Ring of recoil" ],
         [ "Ring of wealth (i)" ]
       ],

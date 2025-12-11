@@ -87,17 +87,20 @@
         [ "Slayer helmet (i)" ],
         [ "Blood moon helm" ],
         [ "Helm of neitiznot", "Eclipse moon helm" ],
+        [ "Obsidian helmet" ],
         [ "N/A" ]
       ],
       "Amulet": [
-        [ "Amulet of fury" ],
+        [ "Amulet of fury", "Amulet of strength" ],
         [ "Amulet of glory" ],
+        [ "Berserker necklace" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
         [ "Fire cape" ],
         [ "Mythical cape" ],
+        [ "Ardougne cloak 4" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -105,51 +108,60 @@
         [ "Blood moon chestplate" ],
         [ "Fighter torso" ],
         [ "Eclipse moon chestplate", "Blue moon chestplate" ],
+        [ "Obsidian platebody" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Blood moon tassets" ],
         [ "Eclipse moon tassets", "Blue moon tassets" ],
         [ "Obsidian platelegs" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
         [ "Dual macuahuitl" ],
-        [ "Abyssal tentacle", "Abyssal whip" ],
+        [ "Abyssal tentacle", "Abyssal whip", "Saradomin's blessed sword" ],
+        [ "Toktz-xil-ak" ],
         [ "Zombie axe", "Sarachnis cudgel" ],
         [ "Dragon scimitar" ]
       ],
       "Shield": [
-        [ "Dragon defender" ],
+        [ "Dragon defender", "Antler guard" ],
         [ "Rune defender" ],
+        [ "Toktz-ket-xil" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
         [ "Barrows gloves" ],
+        [ "Dragon gloves", "Rune gloves" ],
+        [ "Regen bracelet" ],
         [ "Combat bracelet" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
         [ "Dragon boots" ],
         [ "Rune boots", "Climbing boots" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ring": [
         [ "Berserker ring (i)" ],
         [ "Lightbearer" ],
-        [ "Warrior ring (i)" ],
-        [ "Explorer's ring 4", "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ]
+        [ "Brimstone ring", "Warrior ring (i)" ],
+        [ "Explorer's ring 4", "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ],
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Dragon dagger", "Crystal halberd" ],
         [ "Dragon halberd" ],
         [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -177,13 +189,13 @@
       ],
       "Body": [
         [ "Eclipse moon chestplate" ],
-        [ "Ancient d'hide body", "Hueycoatl hide body" ],
+        [ "Hueycoatl hide body", "Ancient d'hide body" ],
         [ "Karil's leathertop" ],
         [ "Black d'hide body" ]
       ],
       "Legs": [
         [ "Eclipse moon tassets" ],
-        [ "Ancient chaps", "Hueycoatl hide chaps" ],
+        [ "Hueycoatl hide chaps", "Ancient chaps" ],
         [ "Karil's leatherskirt" ],
         [ "Black d'hide chaps" ]
       ],
@@ -193,8 +205,14 @@
         [ "Hunters' sunlight crossbow" ],
         [ "Karil's crossbow", "Magic shortbow (i)" ]
       ],
+      "Shield": [
+        [ "Antler guard" ],
+        [ "N/A" ],
+        [ "N/A" ],
+        [ "N/A" ]
+      ],
       "Ammo": [
-        [ "Atlatl darts", "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2" ],
         [ "Ruby dragon bolts (e)", "Ruby bolts (e)" ],
         [ "Moonlight antler bolts", "Sunlight antler bolts" ],
         [ "Bolt rack", "Amethyst arrows", "Rune arrows" ]
@@ -219,12 +237,6 @@
       ],
       "Special Attack": [
         [ "Toxic blowpipe" ],
-        [ "N/A", "Magic shortbow (i)" ],
-        [ "N/A" ],
-        [ "N/A" ]
-      ],
-      "Shield": [
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -258,8 +270,8 @@
       ],
       "Shield": [
         [ "Dragon defender", "Mage's book" ],
-        [ "Unholy book", "Book of darkness" ],
-        [ "N/A" ]
+        [ "Antler guard" ],
+        [ "Unholy book", "Book of darkness" ]
       ],
       "Gloves": [
         [ "Void knight gloves" ],
@@ -357,10 +369,10 @@
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Aranea boots" ],
         [ "Dragon boots" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ring": [
@@ -423,7 +435,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4", "Ruby dragon bolts (e)" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Rada's blessing 2" ],
         [ "Atlatl darts" ],
         [ "N/A" ]
       ],
@@ -433,14 +445,14 @@
         [ "N/A" ],
         [ "N/A" ]
       ],
-      "Special Attack": [
-        [ "Zaryte crossbow" ],
+      "Boots": [
+        [ "Avernic treads (max)" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
-      "Boots": [
-        [ "N/A" ],
+      "Special Attack": [
+        [ "Zaryte crossbow" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]

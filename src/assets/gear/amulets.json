@@ -90,5 +90,9 @@
   "Any God stole": {
     "image": "/assets/gear-icons/Ancient_stole.png",
     "wiki": "https://oldschool.runescape.wiki/w/Ancient_stole"
+  },
+  "Berserker necklace": {
+    "image": "/assets/gear-icons/Berserker_necklace.png",
+    "wiki": "https://oldschool.runescape.wiki/w/Berserker_necklace"
   }
 }

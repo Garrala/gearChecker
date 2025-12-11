@@ -38,7 +38,9 @@
         "cannons": true,
         "thralls": true
       },
-      "weaknesses": "none"
+      "weaknesses": {
+        "air": "20%"
+      }
     }
   ],
   "gear_setups": {
@@ -80,9 +82,9 @@
       ],
       "Weapon": [
         [ "Tumeken's shadow" ],
+        [ "Eye of ayak" ],
         [ "Harmonised nightmare staff" ],
-        [ "Sanguinesti staff" ],
-        [ "Trident of the swamp" ],
+        [ "Sanguinesti staff", "Trident of the swamp" ],
         [ "Kodai wand", "Nightmare staff" ]
       ],
       "Shield": [
@@ -94,24 +96,24 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
         [ "Barrows gloves" ],
         [ "Infinity gloves" ],
-        [ "Rune gloves" ],
-        [ "Combat bracelet" ]
+        [ "Rune gloves" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Eternal boots" ],
         [ "Infinity boots", "Aranea boots" ],
         [ "Wizard boots", "Bloodbark boots" ],
-        [ "Boots of brimstone" ],
-        [ "Mystic boots" ]
+        [ "Boots of brimstone" ]
       ],
       "Ring": [
         [ "Magus ring" ],
@@ -155,13 +157,13 @@
         [ "Inquisitor's hauberk", "Blood moon chestplate" ],
         [ "Bandos chestplate" ],
         [ "Masori body (f)" ],
-        [ "Karil's leathertop" ]
+        [ "Eclipse moon chestplate", "Karil's leathertop" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Torva platelegs", "Oathplate legs" ],
         [ "Inquisitor's plateskirt", "Blood moon tassets" ],
-        [ "Karil's leatherskirt" ],
+        [ "Eclipse moon tassets", "Karil's leatherskirt" ],
         [ "Elite void robe" ]
       ],
       "Weapon": [
@@ -180,7 +182,7 @@
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
@@ -193,11 +195,11 @@
         [ "Regen bracelet" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Dragon boots", "Aranea boots" ],
         [ "Spiked manacles" ],
-        [ "Guardian boots" ],
-        [ "Granite boots" ]
+        [ "Guardian boots" ]
       ],
       "Ring": [
         [ "Bellator ring" ],
@@ -208,9 +210,9 @@
       ],
       "Special Attack": [
         [ "Dragon claws", "Burning claws" ],
-        [ "Elder maul" ],
-        [ "Dragon dagger" ],
-        [ "Osmumten's fang" ],
+        [ "Voidwaker" ],
+        [ "Arkan blade" ],
+        [ "Dragon dagger", "Osmumten's fang" ],
         [ "Saradomin godsword" ]
       ]
     }

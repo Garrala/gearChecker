@@ -204,41 +204,41 @@
       "Helmet": [
         [ "Slayer helmet (i)", "Ancestral hat" ],
         [ "Virtus mask" ],
-        [ "Ahrim's hood", "Dagon'hai hat", "Bloodbark helm", "Infinity hat" ],
+        [ "Ahrim's hood" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Amulet": [
         [ "Occult necklace" ],
-        [ "Amulet of fury" ],
-        [ "Amulet of glory" ],
+        [ "Amulet of fury", "Amulet of glory" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
         [ "Any Imbued God cape" ],
-        [ "Any God cape" ],
-        [ "Ardougne cloak 4" ],
+        [ "N/A" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Body": [
         [ "Ancestral robe top" ],
         [ "Virtus robe top" ],
-        [ "Ahrim's robetop", "Blue moon chestplate", "Dagon'hai robe top", "Bloodbark body", "Infinity top" ],
+        [ "Ahrim's robetop" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ],
-        [ "Ahrim's robeskirt", "Blue moon tassets", "Dagon'hai robe bottom", "Bloodbark legs", "Infinity bottoms" ],
+        [ "Ahrim's robeskirt" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
         [ "Tumeken's shadow" ],
-        [ "Harmonised nightmare staff", "Sanguinesti staff" ],
+        [ "Harmonised nightmare staff", "Eye of ayak", "Sanguinesti staff" ],
         [ "Mystic smoke staff", "Twinflame staff" ],
         [ "Trident of the swamp", "Trident of the seas" ],
         [ "N/A" ]
@@ -247,20 +247,20 @@
         [ "Elidinis' ward (f)" ],
         [ "Arcane spirit shield" ],
         [ "Ancient wyvern shield", "Elidinis' ward" ],
-        [ "Mage's book" ],
-        [ "Malediction ward" ]
+        [ "Mage's book", "Malediction ward" ],
+        [ "Book of the dead" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
         [ "Barrows gloves" ],
-        [ "Regen bracelet" ],
-        [ "Combat bracelet" ],
+        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Eternal boots" ],
         [ "Aranea boots", "Infinity boots" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -269,10 +269,10 @@
         [ "Magus ring" ],
         [ "Ring of suffering (i)" ],
         [ "Ring of shadows" ],
-        [ "Brimstone ring" ]
+        [ "N/A" ]
       ],
       "Special Attack": [
-        [ "Accursed sceptre" ],
+        [ "Accursed sceptre", "Eye of ayak" ],
         [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ],
@@ -296,8 +296,8 @@
       ],
       "Amulet": [
         [ "Necklace of anguish" ],
-        [ "Amulet of fury" ],
-        [ "Amulet of glory" ],
+        [ "Amulet of fury", "Amulet of glory" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -311,22 +311,22 @@
       "Body": [
         [ "Masori body (f)" ],
         [ "Crystal body" ],
-        [ "Any Blessed body", "Hueycoatl hide body", "Eclipse moon chestplate" ],
+        [ "Any Blessed body" ],
         [ "Karil's leathertop" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Masori chaps (f)" ],
         [ "Crystal legs" ],
-        [ "Any Blessed chaps", "Hueycoatl hide chaps", "Eclipse moon tassets" ],
+        [ "Any Blessed chaps" ],
         [ "Karil's leatherskirt" ],
         [ "N/A" ]
       ],
       "Weapon": [
         [ "Twisted bow" ],
-        [ "Zaryte crossbow" ],
+        [ "Toxic blowpipe" ],
         [ "Bow of Faerdhinen" ],
-        [ "Armadyl crossbow", "Dragon crossbow" ],
+        [ "Zaryte crossbow", "Armadyl crossbow", "Dragon crossbow" ],
         [ "Rune crossbow" ]
       ],
       "Shield": [
@@ -341,20 +341,20 @@
         [ "Amethyst arrows", "Diamond dragon bolts (e)", "Sapphire bolts (e)" ],
         [ "Rune arrows", "Diamond bolts (e)" ],
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ]
+        [ "Rada's blessing 3", "Any God blessing" ]
       ],
       "Gloves": [
         [ "Zaryte vambraces" ],
         [ "Barrows gloves" ],
-        [ "Regen bracelet" ],
+        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Pegasian boots" ],
         [ "Ranger boots", "Aranea boots" ],
         [ "Any Blessed boots" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ring": [
@@ -362,14 +362,14 @@
         [ "Venator ring" ],
         [ "Archers ring (i)" ],
         [ "Ring of suffering (i)" ],
-        [ "Ring of shadows" ]
+        [ "N/A" ]
       ],
       "Special Attack": [
         [ "Zaryte crossbow" ],
-        [ "Armadyl crossbow" ],
-        [ "Elder maul" ],
-        [ "Dragon warhammer" ],
-        [ "N/A" ]
+        [ "Tonalztics of ralos" ],
+        [ "Elder maul", "Dragon warhammer" ],
+        [ "Toxic blowpipe" ],
+        [ "Armadyl crossbow", "Bone dagger" ]
       ]
     },
     "Melee": {
@@ -377,20 +377,17 @@
         [ "Slayer helmet (i)", "Oathplate helm" ],
         [ "Torva full helm" ],
         [ "Neitiznot faceguard" ],
-        [ "Serpentine helm", "Inquisitor's great helm" ],
-        [ "N/A" ]
+        [ "Serpentine helm", "Inquisitor's great helm" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
         [ "Amulet of torture" ],
-        [ "N/A" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
       "Cape": [
         [ "Infernal cape" ],
         [ "Fire cape" ],
-        [ "Mythical cape" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -398,34 +395,29 @@
         [ "Oathplate chest" ],
         [ "Torva platebody" ],
         [ "Bandos chestplate", "Inquisitor's hauberk" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Oathplate legs" ],
         [ "Torva platelegs" ],
         [ "Bandos tassets", "Inquisitor's plateskirt" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Weapon": [
         [ "Scythe of Vitur" ],
         [ "Inquisitor's mace" ],
         [ "Soulreaper axe" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Shield": [
         [ "Avernic defender" ],
         [ "Dragon defender" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
-        [ "N/A" ],
+        [ "Rada's blessing 3", "Any God blessing" ],
         [ "N/A" ],
         [ "N/A" ]
       ],
@@ -433,27 +425,23 @@
         [ "Ferocious gloves" ],
         [ "N/A" ],
         [ "N/A" ],
-        [ "N/A" ],
         [ "N/A" ]
       ],
       "Boots": [
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
         [ "Echo boots" ],
-        [ "Dragon boots" ],
-        [ "N/A" ],
-        [ "N/A" ]
+        [ "Dragon boots" ]
       ],
       "Ring": [
         [ "Bellator ring" ],
         [ "Ultor ring" ],
         [ "Berserker ring (i)" ],
-        [ "Ring of suffering (i)" ],
         [ "Lightbearer" ]
       ],
       "Special Attack": [
         [ "Elder maul" ],
         [ "Dragon warhammer" ],
-        [ "Voidwaker" ],
         [ "N/A" ],
         [ "N/A" ]
       ]

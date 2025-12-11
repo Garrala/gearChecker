@@ -39,7 +39,9 @@
         "cannons": true,
         "thralls": false
       },
-      "weaknesses": "none"
+      "weaknesses": {
+        "fire": "35%"
+      }
     },
     {
       "name": "vardorvis (post quest)",
@@ -75,7 +77,9 @@
         "cannons": true,
         "thralls": false
       },
-      "weaknesses": "none"
+      "weaknesses": {
+        "fire": "35%"
+      }
     },
     {
       "name": "vardorvis (quest)",
@@ -111,7 +115,9 @@
         "cannons": true,
         "thralls": false
       },
-      "weaknesses": "none"
+      "weaknesses": {
+        "fire": "35%"
+      }
     }
   ],
   "gear_setups": {
@@ -119,86 +125,74 @@
       "Helmet": [
         [ "Slayer helmet (i)", "Oathplate helm" ],
         [ "Torva full helm" ],
-        [ "Neitiznot faceguard" ],
-        [ "Serpentine helm" ],
+        [ "Neitiznot faceguard", "Serpentine helm" ],
         [ "Justiciar faceguard" ]
       ],
       "Amulet": [
         [ "Amulet of rancour" ],
-        [ "Amulet of torture" ],
-        [ "Amulet of blood fury" ],
+        [ "Amulet of blood fury", "Amulet of torture" ],
         [ "Amulet of fury" ],
-        [ "Amulet of glory" ]
+        [ "N/A" ]
       ],
       "Cape": [
         [ "Infernal cape" ],
         [ "Fire cape" ],
         [ "Mythical cape" ],
-        [ "Ardougne cloak 4" ],
-        [ "Any Skillcape (t)" ]
+        [ "Mixed hide cape" ]
       ],
       "Body": [
         [ "Oathplate chest" ],
         [ "Torva platebody" ],
-        [ "Bandos chestplate" ],
-        [ "Fighter torso", "Blood moon chestplate" ],
-        [ "Justiciar chestguard" ]
+        [ "Bandos chestplate", "Fighter torso", "Blood moon chestplate" ],
+        [ "Justiciar chestguard", "Any Barrows tank body" ]
       ],
       "Legs": [
         [ "Oathplate legs" ],
         [ "Torva platelegs" ],
-        [ "Bandos tassets", "Justiciar legguards" ],
-        [ "Blood moon tassets", "Any Barrows tank legs" ],
-        [ "Obsidian platelegs", "Dragon platelegs" ]
+        [ "Bandos tassets", "Blood moon tassets" ],
+        [ "Justiciar legguards", "Any Barrows tank legs" ]
       ],
       "Weapon": [
         [ "Soulreaper axe", "Scythe of Vitur" ],
         [ "Blade of Saeldor", "Noxious halberd" ],
         [ "Abyssal tentacle" ],
-        [ "Abyssal whip" ],
-        [ "Zombie axe" ]
+        [ "Abyssal whip", "Zombie axe" ]
       ],
       "Shield": [
         [ "Avernic defender" ],
         [ "Dragon defender" ],
-        [ "Dragonfire shield" ],
-        [ "Rune defender" ],
-        [ "Adamant defender" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Ammo": [
         [ "Rada's blessing 4" ],
-        [ "Ghommal's lucky penny" ],
         [ "Rada's blessing 3", "Rada's blessing 2", "Any God blessing" ],
-        [ "N/A" ],
+        [ "Ghommal's lucky penny" ],
         [ "N/A" ]
       ],
       "Gloves": [
         [ "Ferocious gloves" ],
         [ "Barrows gloves" ],
-        [ "Dragon gloves" ],
-        [ "Rune gloves" ],
-        [ "Regen bracelet" ]
+        [ "N/A" ],
+        [ "N/A" ]
       ],
       "Boots": [
         [ "Echo boots" ],
+        [ "Avernic treads (max)" ],
         [ "Primordial boots" ],
-        [ "Dragon boots", "Guardian boots" ],
-        [ "Aranea boots", "Spiked manacles", "Granite boots" ],
-        [ "Rune boots" ]
+        [ "Dragon boots", "Guardian boots" ]
       ],
       "Ring": [
-        [ "Bellator ring" ],
-        [ "Ultor ring" ],
+        [ "Bellator ring", "Ultor ring" ],
         [ "Berserker ring (i)" ],
         [ "Ring of suffering (i)" ],
-        [ "Lightbearer", "Steel ring" ]
+        [ "Lightbearer" ]
       ],
       "Special Attack": [
         [ "Dragon claws", "Burning claws" ],
         [ "Voidwaker" ],
-        [ "Ancient godsword" ],
-        [ "Saradomin godsword", "Ursine chainmace" ],
-        [ "Abyssal dagger", "Dragon dagger" ]
+        [ "Ancient godsword", "Arkan blade" ],
+        [ "Saradomin godsword", "Dragon dagger" ]
       ]
     }
   }

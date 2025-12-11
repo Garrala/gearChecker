@@ -63,7 +63,7 @@
         [ "Ava's assembler" ],
         [ "Ava's accumulator" ],
         [ "Any Imbued God cape" ],
-        [ "Ava's attractor" ],
+        [ "Ardougne cloak 4" ],
         [ "Any God cape" ]
       ],
       "Body": [
@@ -90,8 +90,8 @@
       "Shield": [
         [ "Twisted buckler" ],
         [ "Dragonfire ward", "Odium ward" ],
-        [ "Book of law", "Unholy book" ],
-        [ "N/A" ],
+        [ "Book of law" ],
+        [ "Unholy book" ],
         [ "N/A" ]
       ],
       "Ammo": [
@@ -117,7 +117,7 @@
       ],
       "Ring": [
         [ "Ring of shadows" ],
-        [ "Lunar ring" ],
+        [ "Beacon ring", "Lunar ring" ],
         [ "Explorer's ring 4", "Explorer's ring 3", "Explorer's ring 2", "Explorer's ring 1" ],
         [ "Ring of wealth (i)" ],
         [ "N/A" ]
@@ -156,22 +156,22 @@
         [ "Ancestral robe top" ],
         [ "Virtus robe top" ],
         [ "Bloodbark body" ],
-        [ "Mystic robe top", "Masori body (f)", "Armadyl chestplate" ],
+        [ "Mystic robe top" ],
         [ "N/A" ]
       ],
       "Legs": [
         [ "Ancestral robe bottom" ],
         [ "Virtus robe bottom" ],
         [ "Bloodbark legs" ],
-        [ "Mystic robe bottom", "Masori chaps (f)", "Armadyl chainskirt" ],
+        [ "Mystic robe bottom" ],
         [ "N/A" ]
       ],
       "Weapon": [
-        [ "Accursed sceptre" ],
-        [ "Thammaron's sceptre", "Tumeken's shadow" ],
+        [ "Accursed sceptre", "Thammaron's sceptre" ],
+        [ "Eye of ayak" ],
+        [ "Tumeken's shadow" ],
         [ "Sanguinesti staff", "Trident of the swamp" ],
-        [ "Trident of the seas" ],
-        [ "Warped sceptre" ]
+        [ "Trident of the seas", "Warped sceptre" ]
       ],
       "Shield": [
         [ "Elidinis' ward (f)" ],
@@ -188,11 +188,11 @@
         [ "N/A" ]
       ],
       "Gloves": [
+        [ "Confliction gauntlets" ],
         [ "Tormented bracelet" ],
         [ "Barrows gloves" ],
         [ "Rune gloves" ],
-        [ "Combat bracelet" ],
-        [ "N/A" ]
+        [ "Combat bracelet" ]
       ],
       "Boots": [
         [ "Bloodbark boots" ],
@@ -204,7 +204,7 @@
       "Ring": [
         [ "Ring of shadows" ],
         [ "Explorer's ring 4" ],
-        [ "Beacon ring" ],
+        [ "Beacon ring", "Lunar ring" ],
         [ "Ring of wealth (i)" ],
         [ "N/A" ]
       ],

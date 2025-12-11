@@ -1,0 +1,56 @@
+/* REMOVE ALL diff2html STYLES — not used anymore */
+
+/* FILE LIST */
+.diff-summary ul li {
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+  .diff-summary ul li.active {
+    background: #0047ff;
+    color: #fff;
+  }
+
+/* SIDE-BY-SIDE LAYOUT */
+.side-by-side {
+  display: flex;
+  gap: 16px;
+}
+
+  .side-by-side .column {
+    width: 50%;
+    background: #1e1e1e;
+    padding: 12px;
+    border-radius: 6px;
+    overflow-x: auto;
+    border: 1px solid #333;
+  }
+
+/* LINES */
+pre {
+  margin: 0;
+  padding: 4px 6px;
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 13px;
+  border-bottom: 1px solid #333;
+}
+
+  /* REMOVED (left) */
+  pre.removed {
+    background: rgba(255, 0, 0, 0.25);
+    color: #ffb3b3;
+  }
+
+  /* ADDED (right) */
+  pre.added {
+    background: rgba(0, 255, 0, 0.25);
+    color: #b3ffb3;
+  }
+
+  /* EMPTY (placeholder) */
+  pre.empty {
+    background: transparent;
+    color: transparent;
+  }
