@@ -12,6 +12,9 @@ import { DndBoardComponent } from './pages/dnd/components/dnd-board/dnd-board.co
 import { DndCharacterComponent } from './pages/dnd/components/dnd-character/dnd-character.component';
 import { DndDmComponent } from './pages/dnd/components/dnd-dm/dnd-dm.component';
 
+// Gallery
+import { GalleryComponent } from './pages/gallery/gallery.component'
+
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'gear', component: GearManagementComponent },
@@ -27,6 +30,8 @@ export const routes: Routes = [
   { path: 'dnd/board', component: DndBoardComponent },
   { path: 'dnd/character/:name', component: DndCharacterComponent },
   { path: 'dnd/dm', component: DndDmComponent },
+
+  { path: 'gallery', component: GalleryComponent },
   
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ]

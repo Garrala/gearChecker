@@ -1,0 +1,30 @@
+<div class="gallery-container">
+  <div class="gallery-grid">
+    <button class="gallery-item"
+            *ngFor="let item of items"
+            (click)="open(item)">
+      <img [src]="item.src"
+           [alt]="item.title || item.id"
+           loading="lazy" />
+    </button>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" *ngIf="activeItem" (click)="close()">
+  <button class="nav prev"
+          (click)="prev(); $event.stopPropagation()"
+          aria-label="Previous image">
+    ‹
+  </button>
+
+  <img [src]="activeItem.src"
+       [alt]="activeItem.title || activeItem.id"
+       (click)="$event.stopPropagation()" />
+
+  <button class="nav next"
+          (click)="next(); $event.stopPropagation()"
+          aria-label="Next image">
+    ›
+  </button>
+</div>
